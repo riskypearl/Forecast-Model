@@ -14,11 +14,13 @@ probabilities and a chance of chamber control.
 2. **Fundamentals:** lean + national environment (generic ballot) + incumbency +
    candidate quality + a demographic adjustment (groups that swung hard in 2024 are
    assumed to partly swing back).
-3. **Polling average:** recency-, sample-size- and quality-weighted; partisan-sponsored
-   polls count for half; pollster house effects are estimated and removed.
+3. **Polling average:** undecided voters are allocated the way the state usually votes
+   ("coming home"); polls are then recency-, sample-size- and quality-weighted;
+   partisan-sponsored polls count for half; pollster house effects are estimated and removed.
 4. **Blend:** the more recent polling a race has, the more the polls count.
 5. **Simulation:** one national error shared by every race plus one error per race.
-   Uncertainty is wider for races with little polling and further from election day.
+   Uncertainty is wider for races with little polling and further from election day, and
+   errors come from a fat-tailed distribution so upsets aren't treated as near-impossible.
 
 Every assumption is a named setting at the top of `forecast.py`.
 
@@ -39,5 +41,7 @@ Each run writes `results.csv`, a dated copy in `history/`, and a line in
 
 - Polls: New York Times poll database via [PollResults.org](https://pollresults.org/) (CC BY 4.0)
 - Demographics: 2020 US Census redistricting data (table P4)
+- Group swings 2020-2024: Pew Research Center validated voter studies
+- Pollster ratings: ElectIndex
 - Presidential results: state results 2016-2024
 - Methodology inspired by the ElectIndex 2026 forecast's published methodology

@@ -37,6 +37,8 @@ DEMOGRAPHIC_REVERSION = 0.25
 
 # Points an incumbent gets just for being the incumbent.
 INCUMBENCY_BONUS = 2.5
+# Appointed senators (never won the seat themselves) historically get less.
+APPOINTED_INCUMBENCY_BONUS = 1.25
 
 # Polls: more polls -> trust them more, up to this cap.
 MAX_POLL_WEIGHT = 0.85
@@ -50,9 +52,11 @@ PARTISAN_POLL_WEIGHT = 0.5
 # Likely voters are the best guess at who actually turns up.
 POPULATION_WEIGHT = {"lv": 1.0, "rv": 0.8, "v": 0.8, "a": 0.5}
 
-# Pollster quality: data/pollster_ratings.csv (columns: pollster,weight).
-# Pollsters not listed there get this weight.
-DEFAULT_POLLSTER_WEIGHT = 1.0
+# Pollster quality: data/pollster_ratings.csv (columns: pollster,rating,banned).
+# Ratings are scaled so the best pollster = 1.0. Pollsters not listed get this
+# weight - roughly middle of the scale, so an unknown pollster isn't treated
+# as top quality.
+DEFAULT_POLLSTER_WEIGHT = 0.5
 
 # Uncertainty. A national error moves every race the same way (polls miss
 # together); a state error is specific to one race.
@@ -63,6 +67,10 @@ STATE_ERROR_SD_UNPOLLED = 8.0   # a race with none - fundamentals only
 NATIONAL_SD_PER_DAY = 0.03
 STATE_SD_PER_DAY = 0.05
 SIMULATIONS = 10_000
+# Fat tails: errors drawn from a t-distribution with this many degrees of
+# freedom, so big upsets are less rare than a normal curve says.
+# Lower = fatter tails; very large (e.g. 1000) = basically a normal curve.
+TAIL_DF = 5
 ELECTION_DAY = date(2026, 11, 3)
 
 # Senate seats NOT up in 2026 (Dem total includes the two independents who
@@ -93,7 +101,8 @@ def partisan_lean(row):
 def fundamentals(row, lean, environment, demo):
     incumbency = 0.0
     if row["incumbent_running"] == "1":
-        incumbency = INCUMBENCY_BONUS if row["incumbent_party"] == "D" else -INCUMBENCY_BONUS
+        bonus = APPOINTED_INCUMBENCY_BONUS if row.get("incumbent_appointed") == "1" else INCUMBENCY_BONUS
+        incumbency = bonus if row["incumbent_party"] == "D" else -bonus
     return lean + environment + demo + incumbency + float(row["candidate_adj"])
 
 
@@ -151,7 +160,7 @@ def polling_average(polls, pollster_weights, half_life=POLL_HALF_LIFE_DAYS):
     for poll in polls:
         age_days = (TODAY - date.fromisoformat(poll["end_date"])).days
         recency = 0.5 ** (age_days / half_life)
-        quality = pollster_weights.get(poll["pollster"], DEFAULT_POLLSTER_WEIGHT)
+        quality = pollster_weight(poll["pollster"], pollster_weights)
         quality *= POPULATION_WEIGHT.get(poll.get("population", "lv"), 0.8)
         if poll.get("partisan") in ("DEM", "REP"):
             quality *= PARTISAN_POLL_WEIGHT
@@ -164,6 +173,25 @@ def polling_average(polls, pollster_weights, half_life=POLL_HALF_LIFE_DAYS):
     if total_weight == 0:
         return None, 0.0
     return weighted_sum / total_weight, effective_polls
+
+
+def allocate_undecided(polls, baselines):
+    """
+    Undecided voters "come home": they split the way the state usually votes
+    (its baseline = lean + national environment + demographics), not 50/50.
+    Candidate quality is left out of the baseline on purpose - a weak
+    candidate already shows up in how the decided voters answer.
+    """
+    out = []
+    for p in polls:
+        q = dict(p)
+        undecided = float(p.get("undecided") or 0)
+        baseline = baselines.get(p["state"], 0.0)
+        dem_share = min(max(0.5 + baseline / 200, 0.0), 1.0)
+        q["dem_pct"] = float(p["dem_pct"]) + undecided * dem_share
+        q["rep_pct"] = float(p["rep_pct"]) + undecided * (1 - dem_share)
+        out.append(q)
+    return out
 
 
 def house_effects(polls):
@@ -229,6 +257,14 @@ def national_error_sd():
     return math.sqrt(NATIONAL_ERROR_SD ** 2 + (NATIONAL_SD_PER_DAY * DAYS_LEFT) ** 2)
 
 
+def fat_tailed_error(sd):
+    """A random error with standard deviation sd, from a t-distribution."""
+    z = random.gauss(0, 1)
+    chi2 = random.gammavariate(TAIL_DF / 2, 2)
+    t = z / math.sqrt(chi2 / TAIL_DF)
+    return sd * t * math.sqrt((TAIL_DF - 2) / TAIL_DF)   # rescale so the SD stays sd
+
+
 def rating(dem_win_prob):
     p = dem_win_prob
     if p >= 0.95: return "Safe D"
@@ -286,7 +322,7 @@ def load_pollster_weights(path):
     ratings = [float(r["rating"]) for r in rows if r.get("rating")]
     best = max(ratings) if ratings else 1.0
     for r in rows:
-        if r.get("banned") == "1":
+        if r.get("banned") and float(r["banned"]) == 1:
             weights[r["pollster"]] = 0.0
         elif r.get("weight"):
             weights[r["pollster"]] = float(r["weight"])
@@ -295,19 +331,39 @@ def load_pollster_weights(path):
     return weights
 
 
+def pollster_weight(name, pollster_weights):
+    """
+    Exact match first. Joint polls ("Fabrizio Ward/Impact Research") get the
+    average of whichever partners are rated - but a banned partner bans the poll.
+    """
+    if name in pollster_weights:
+        return pollster_weights[name]
+    partners = [pollster_weights[p.strip()] for p in name.split("/") if p.strip() in pollster_weights]
+    if not partners:
+        return DEFAULT_POLLSTER_WEIGHT
+    if 0.0 in partners:
+        return 0.0
+    return sum(partners) / len(partners)
+
+
 def main():
     states = load_csv("data/states.csv")
-    polls = load_csv("data/polls.csv")
-    effects = house_effects(polls)
-    polls = debias(polls, effects)
     pollster_weights = load_pollster_weights("data/pollster_ratings.csv")
     environment = national_environment(pollster_weights)
     demographics = load_demographics()
 
+    leans = {row["state"]: partisan_lean(row) for row in states}
+    demos = {row["state"]: demographic_adjustment(row["state"], demographics) for row in states}
+    baselines = {st: leans[st] + environment + demos[st] for st in leans}
+
+    polls = load_csv("data/polls.csv")
+    polls = allocate_undecided(polls, baselines)
+    effects = house_effects(polls)
+    polls = debias(polls, effects)
+
     races = []
     for row in states:
-        lean = partisan_lean(row)
-        demo = demographic_adjustment(row["state"], demographics)
+        lean, demo = leans[row["state"]], demos[row["state"]]
         fund = fundamentals(row, lean, environment, demo)
         state_polls = [p for p in polls if p["state"] == row["state"]]
         poll_avg, n = polling_average(state_polls, pollster_weights)
@@ -324,10 +380,10 @@ def main():
     dem_seat_counts = []
     national_sd = national_error_sd()
     for _ in range(SIMULATIONS):
-        national_error = random.gauss(0, national_sd)
+        national_error = fat_tailed_error(national_sd)
         dem_seats = SEATS_NOT_UP["D"]
         for race in races:
-            result = race["margin"] + national_error + random.gauss(0, race["sd"])
+            result = race["margin"] + national_error + fat_tailed_error(race["sd"])
             if result > 0:
                 race["dem_wins"] += 1
                 dem_seats += 1

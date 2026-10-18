@@ -66,6 +66,18 @@ def two_sides(answers):
     return max(dems), max(reps)
 
 
+def undecided_share(answers):
+    """
+    "Don't know" answers, plus anything unaccounted for (a poll whose answers
+    add to 85% left 15% undecided or refused without listing them). Voters
+    choosing "someone else" or "would not vote" are not undecided.
+    """
+    explicit = sum(a["pct"] for a in answers
+                   if a["party"] == "NONE" and (a["answer"].startswith("Don't know") or a["answer"].startswith("DK")))
+    unlisted = max(0.0, 100 - sum(a["pct"] for a in answers))
+    return round(explicit + unlisted, 1)
+
+
 def main():
     with open("data/states.csv", newline="") as f:
         our_states = {row["state"] for row in csv.DictReader(f)}
@@ -88,6 +100,7 @@ def main():
             "end_date": end_date.isoformat(),
             "dem_pct": sides[0],
             "rep_pct": sides[1],
+            "undecided": undecided_share(q["answers"]),
             "sample_size": q["sampleSize"],
             "population": q["population"],
             "partisan": poll["partisan"],   # DEM / REP = sponsored by a partisan group

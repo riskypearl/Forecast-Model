@@ -1,6 +1,6 @@
 group,swing_2020_2024,source
-white,-1,VERIFY - approx. Pew validated voters (2020 R+11 -> 2024 R+12)
-black,-16,VERIFY - approx. Pew validated voters (2020 D+84 -> 2024 D+68)
-hispanic,-18,VERIFY - approx. Pew validated voters (2020 D+21 -> 2024 D+3); ElectIndex EI estimate is -23.1
-asian,-20,VERIFY - rough estimate; check Pew 2024 validated voter report
-other,-10,VERIFY - rough placeholder
+white,-1,Pew validated voters: Trump 55% of White voters in both 2020 and 2024 - roughly no change
+black,-16,Pew validated voters: 2020 Biden 92-8 -> 2024 Harris 83-15
+hispanic,-22,Pew validated voters: 2020 Biden 61-36 -> 2024 Harris 51-48
+asian,-23,Pew validated voters: 2020 Biden 70-30 -> 2024 Harris 57-40
+other,-10,Placeholder - no Pew figure for this group

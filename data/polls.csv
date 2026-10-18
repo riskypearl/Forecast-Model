@@ -1,484 +1,484 @@
-state,pollster,end_date,dem_pct,rep_pct,sample_size,population,partisan
-AK,Alaska Survey Research,2023-04-25,44,41,1261,lv,
-AK,Data for Progress,2025-07-27,45,46,678,lv,
-AK,Alaska Survey Research,2025-08-01,42.5,46.7,1613,lv,
-AK,Alaska Survey Research,2025-10-15,47.7,45.9,1708,lv,
-AK,Data for Progress,2025-10-23,46,45,823,rv,
-AK,The Tyson Group,2025-11-13,43,39,600,lv,
-AK,Alaska Survey Research,2026-01-11,48,46.4,1681,lv,
-AK,Public Policy Polling,2026-01-17,49,47,611,rv,DEM
-AK,Alaska Survey Research,2026-04-19,50.2,43.6,1946,lv,
-AK,Alaska Survey Research,2026-05-17,48.4,43.8,1401,lv,
-AK,Alaska Survey Research,2026-06-07,49.4,44.2,1393,lv,
-AK,The New York Times/Siena University,2026-06-29,45.06,47.47,593,lv,
-AK,Data for Progress,2026-08-04,47,41,605,lv,
-AK,Alaska Survey Research,2026-08-05,50.8,49.2,1371,lv,
-AK,Alaska Survey Research,2026-08-23,50.6,49.4,1495,lv,
-AK,Fabrizio Ward/Impact Research,2026-09-11,53,47,800,lv,
-AK,Alaska Survey Research,2026-09-12,51.9,48.1,1352,lv,
-AK,co/efficient,2026-09-17,46,49,799,lv,
-AK,Trafalgar Group,2026-09-24,45.5,46.8,1079,lv,REP
-AK,Quantus Insights,2026-09-30,46.2,46.5,758,lv,
-AK,The New York Times/Siena University,2026-10-01,50.07,43.07,504,lv,
-AK,Alaska Survey Research,2026-10-03,51,49,1512,lv,
-AK,InsiderAdvantage,2026-10-10,48.2,42.6,1200,lv,
-AL,yes. every kid. foundation.,2026-07-11,32,47,601,lv,
-AL,RMG Research,2026-09-25,33,54,800,rv,REP
-AR,GrayHouse,2026-02-09,36,58,550,lv,REP
-AR,2040 Strategy Group,2026-07-25,43,46,586,lv,DEM
-AR,Hendrix College,2026-08-12,47.4,44,1217,lv,
-AR,J.L. Partners,2026-08-18,35,51,803,lv,
-AR,GrayHouse,2026-10-04,39,50,550,lv,REP
-AR,Hendrix College,2026-10-13,41,50,709,lv,
-FL,The Tyson Group,2025-10-03,37,44,800,lv,
-FL,University of North Florida,2025-10-25,38,49,728,lv,DEM
-FL,University of North Florida,2026-03-02,38,45,772,lv,
-FL,Emerson College,2026-03-31,36.3,47.3,1125,lv,
-FL,MDW Communications,2026-04-03,42.2,43.4,1834,lv,
-FL,Public Policy Polling,2026-04-03,40,43,574,rv,DEM
-FL,Echelon Insights,2026-04-09,43,50,406,lv,
-FL,Stetson University Center for Public Opinion Research,2026-04-13,42,49,434,lv,
-FL,Cherry Communications,2026-05-09,40,48,604,lv,REP
-FL,Change Research,2026-05-16,47,45,1593,lv,OTH
-FL,Global Strategy Group,2026-05-21,43,46,1000,lv,DEM
-FL,Change Research,2026-06-14,46,46,1015,lv,OTH
-FL,University of North Florida,2026-07-17,41.6,50,848,lv,
-FL,Change Research,2026-09-09,47,47,1107,lv,OTH
-FL,Quantus Insights,2026-09-10,43,50.4,733,lv,
-FL,St. Pete Polls,2026-09-17,44.8,45.2,913,lv,
-FL,Stetson University Center for Public Opinion Research,2026-09-21,40,51,830,lv,
-FL,InsiderAdvantage,2026-09-21,41.8,49.3,600,lv,
-FL,Change Research,2026-09-27,47,48,1063,lv,OTH
-FL,"Mason-Dixon Polling & Research, Inc.",2026-10-01,40,50,625,lv,
-FL,Targoz Market Research,2026-10-04,42,52,847,lv,
-FL,YouGov,2026-10-05,44,49,3812,lv,
-FL,St. Pete Polls,2026-10-07,44.9,46.8,836,lv,
-FL,Stetson University Center for Public Opinion Research,2026-10-09,41,52,716,lv,
-FL,MDW Communications,2026-10-10,42.4,47.6,2351,lv,
-FL,ActiVote,2026-10-15,46.9,53.1,400,lv,
-GA,WPA Intelligence,2025-01-15,46,32,500,lv,REP
-GA,The Tyson Group,2025-01-31,51,39,600,lv,
-GA,Quantus Insights,2025-02-13,44.5,48.3,800,rv,REP
-GA,Cygnal Political,2025-03-10,43.7,43.9,600,lv,
-GA,University of Georgia,2025-04-24,48.4,38.8,1000,rv,
-GA,Trafalgar Group,2025-04-27,46.4,37.5,1426,lv,REP
-GA,Cygnal Political,2025-05-17,44.7,42.1,800,rv,
-GA,Cygnal Political,2025-06-18,49.8,40,610,lv,REP
-GA,TIPP Insights,2025-08-01,45.16,42,2395,lv,REP
-GA,Quantus Insights,2025-09-12,42.1,35.4,624,rv,
-GA,Emerson College,2026-03-02,47.1,43.7,1000,lv,
-GA,Echelon Insights,2026-04-09,51,44,407,lv,
-GA,Beacon Research/Shaw & Company Research,2026-06-27,56,43,1002,rv,
-GA,Wick,2026-06-30,46.7,42.9,1175,lv,
-GA,Fabrizio Ward/Impact Research,2026-07-16,52,43,1060,lv,
-GA,InsiderAdvantage,2026-08-17,50.1,42.6,800,lv,
-GA,Trafalgar Group,2026-09-12,49.4,42.8,1091,lv,REP
-GA,Quantus Insights,2026-09-16,49,44.9,645,lv,
-GA,YouGov,2026-09-18,52,42,3301,lv,
-GA,InsiderAdvantage,2026-09-23,50,42,1200,lv,
-GA,Big Data Poll,2026-09-23,55.4,44.6,678,lv,
-GA,Wedgewood Polls,2026-10-03,55,45,600,lv,
-GA,Trafalgar Group,2026-10-09,51,43,1101,lv,REP
-IA,Public Policy Polling,2025-06-03,43,45,568,rv,DEM
-IA,Public Policy Polling,2025-08-19,43,44,572,rv,DEM
-IA,Change Research,2026-01-11,41,44,1108,lv,
-IA,GBAO,2026-03-16,44,47,1200,lv,DEM
-IA,Echelon Insights,2026-04-09,46,45,377,lv,
-IA,Public Policy Polling,2026-06-04,46,46,557,rv,DEM
-IA,Global Strategy Group,2026-06-11,47,45,1000,lv,DEM
-IA,Cygnal Political,2026-06-19,44.2,46,600,lv,REP
-IA,Beacon Research/Shaw & Company Research,2026-06-27,50,46,1003,rv,
-IA,The New York Times/Siena University,2026-06-27,46.01,48.48,600,lv,
-IA,Emerson College,2026-08-04,44.98,47.52,712,lv,
-IA,Suffolk University,2026-08-23,40.8,45.4,500,lv,
-IA,Abacus Data,2026-08-28,48,41,323,lv,
-IA,Wedgewood Polls,2026-08-29,48,50,600,lv,
-IA,Global Strategy Group,2026-08-31,46,42,800,lv,DEM
-IA,Emerson College,2026-09-01,45.05,49.47,750,lv,
-IA,YouGov,2026-09-08,45,43,2127,lv,
-IA,Cygnal Political,2026-09-11,42.9,42.9,500,lv,REP
-IA,co/efficient,2026-09-16,43,48,831,lv,
-IA,Trafalgar Group,2026-09-18,42.1,44,1089,lv,REP
-IA,Marist University,2026-09-20,50,42,1050,rv,
-IA,InsiderAdvantage,2026-09-23,47.4,45.7,1200,lv,
-IA,Beacon Research/Shaw & Company Research,2026-09-28,49,47,1008,lv,
-IA,Quantus Insights,2026-09-29,48.8,51.2,738,lv,
-IA,The New York Times/Siena University,2026-10-01,46.96,47.83,606,lv,
-IA,Suffolk University,2026-10-04,48,43.6,500,lv,
-IA,CNN/SSRS,2026-10-05,43,45,801,lv,
-IA,Emerson College,2026-10-06,45,46.6,650,lv,
-IA,Marist University,2026-10-11,48,45,1100,lv,
-IA,YouGov,2026-10-12,47,46,2245,lv,
-IA,Trafalgar Group,2026-10-15,44.2,45.9,1094,lv,REP
-ID,Public Policy Polling,2026-03-17,34,48,639,rv,IND
-ID,The Bullfinch Group,2026-06-01,36,40,774,rv,IND
-ID,Peak Insights,2026-06-07,15,55,500,lv,REP
-ID,The Bullfinch Group,2026-08-07,38,33,608,lv,IND
-ID,Peak Insights,2026-08-13,18,52,500,lv,REP
-ID,Peak Insights,2026-09-30,24,49,500,lv,REP
-IL,Public Policy Polling,2026-10-01,49,36,569,rv,
-KS,GQR,2026-04-27,45,49,500,lv,DEM
-KS,GBAO,2026-07-13,43,47,600,lv,DEM
-KS,Global Strategy Group,2026-08-16,44,43,800,lv,DEM
-KS,co/efficient,2026-09-10,45,51,915,lv,
-KS,Global Strategy Group,2026-09-16,49,47,800,lv,DEM
-KS,Emerson College,2026-09-16,44.75,43.3,750,lv,
-KS,Wedgewood Polls,2026-09-24,50,48,500,lv,
-KS,The New York Times/Siena University,2026-09-30,46.39,46.67,605,lv,
-KS,Trafalgar Group,2026-10-01,44.4,43.5,1095,lv,REP
-KS,GBAO,2026-10-04,46,41,600,lv,DEM
-KS,YouGov,2026-10-04,48,45,2253,lv,
-KS,InsiderAdvantage,2026-10-10,47.5,46.7,1200,lv,
-KS,InsiderAdvantage,2026-10-14,47,48,1200,lv,
-KY,Public Policy Polling,2025-12-19,40,41,650,rv,DEM
-KY,Global Strategy Group,2026-08-27,40,49,600,lv,DEM
-LA,Public Policy Polling,2026-07-22,37,41,518,rv,DEM
-LA,Hart Research Associates,2026-09-19,44,48,500,lv,DEM
-MA,MassINC Polling Group,2024-11-01,34,40,582,lv,
-MA,YouGov,2025-02-20,35,33,700,a,
-MA,SurveyUSA,2025-03-04,45,26,775,rv,
-MA,Suffolk University,2025-11-23,52,29,500,rv,
-MA,Cygnal Political,2026-01-25,54,30,800,lv,REP
-MA,University of New Hampshire,2026-02-16,56,27,616,lv,
-MA,University of New Hampshire,2026-04-20,55,32,603,lv,
-MA,Suffolk University,2026-06-12,53.8,26.2,500,rv,
-MA,University of New Hampshire,2026-06-23,50,34,618,lv,
-MA,YouGov,2026-08-12,49,25,800,rv,
-MA,University of New Hampshire,2026-08-24,49,30,906,lv,
-MA,University of New Hampshire,2026-09-21,53,30,556,lv,
-MA,MassINC Polling Group,2026-09-22,54,28,800,lv,
-ME,Upswing Research,2025-03-25,42,43,600,lv,DEM
-ME,Public Policy Polling,2025-09-09,44,35,642,rv,DEM
-ME,Zenith Research,2025-10-10,42,37,501,lv,
-ME,Maine People's Resource Center,2025-10-29,41.7,45.8,783,rv,
-ME,Cygnal Political,2025-11-11,49,41,600,lv,
-ME,Pan Atlantic SMS Group,2025-12-07,43,42,820,lv,
-ME,Workbench Strategy,2025-12-16,48.6,51.4,900,lv,DEM
-ME,"Fabrizio, Lee & Associates",2026-01-24,44,45,800,lv,REP
-ME,University of New Hampshire,2026-02-16,49,38,1105,lv,
-ME,Pan Atlantic SMS Group,2026-03-02,44,40,810,lv,
-ME,OnMessage Inc.,2026-03-08,44,42,600,lv,
-ME,Emerson College,2026-03-23,46.2,42.5,1075,lv,
-ME,Maine People's Resource Center,2026-03-31,41.9,45,1167,lv,
-ME,Echelon Insights,2026-04-09,48,46,378,lv,
-ME,Pan Atlantic SMS Group,2026-05-18,48,41,827,lv,DEM
-ME,University of New Hampshire,2026-05-25,51,42,1250,lv,
-ME,University of Massachusetts Lowell Center for Public Opinion/YouGov,2026-05-26,48,43,650,lv,
-ME,"Fabrizio, Lee & Associates",2026-06-03,46,46,800,lv,REP
-ME,Public Policy Polling,2026-06-03,49,45,670,rv,DEM
-ME,Tavern Research,2026-06-08,55,45,1642,lv,
-ME,Quantus Insights,2026-06-11,46,45,870,lv,
-ME,Wick,2026-06-14,47.6,45.4,1008,lv,
-ME,The New York Times/Siena University,2026-06-26,49.2,47.02,608,lv,
-ME,Beacon Research/Shaw & Company Research,2026-06-27,47,50,1003,rv,
-ME,Wedgewood Polls,2026-07-06,47,47,405,lv,
-ME,Tavern Research,2026-07-06,52,48,1074,lv,
-ME,Public Policy Polling,2026-07-07,37,48,785,rv,DEM
-ME,University of New Hampshire,2026-07-20,49,46,1178,lv,
-ME,Hart Research Associates,2026-08-01,49,45,802,lv,DEM
-ME,Beacon Research/Shaw & Company Research,2026-08-10,48,46,1000,rv,
-ME,Abacus Data,2026-08-28,50,42,327,lv,
-ME,CNN/SSRS,2026-09-06,48,45,880,lv,
-ME,YouGov,2026-09-08,48,44,1335,lv,
-ME,University of Massachusetts Lowell Center for Public Opinion/YouGov,2026-09-14,48,43,650,lv,
-ME,Quantus Insights,2026-09-15,47.4,47.6,621,lv,
-ME,University of New Hampshire,2026-09-21,51,47,1301,lv,
-ME,Fabrizio Ward/Impact Research,2026-09-22,50,47,982,lv,
-ME,The New York Times/Siena University,2026-09-22,45.92,48.66,619,lv,
-ME,InsiderAdvantage,2026-09-23,46.4,45.6,1200,lv,
-ME,Maine People's Resource Center,2026-09-29,49.3,46.5,684,lv,
-ME,co/efficient,2026-09-30,46,48,1240,lv,
-ME,Trafalgar Group,2026-10-01,46.2,45.9,1091,lv,REP
-ME,YouGov,2026-10-01,50,50,1136,lv,
-ME,Wedgewood Polls,2026-10-01,52,48,400,lv,
-ME,Marist University,2026-10-04,51,47,1505,rv,
-ME,The Washington Post/George Mason University Schar School of Policy and Government,2026-10-05,50,46,800,lv,
-ME,Suffolk University,2026-10-11,49,47,500,lv,
-ME,InsiderAdvantage,2026-10-14,49,47,1200,lv,
-MI,"Glengariff Group, Inc.",2025-05-08,45.1,39.1,600,rv,
-MI,"Normington, Petts & Associates",2025-06-16,47,45,700,lv,DEM
-MI,EPIC-MRA,2025-11-11,43,42,600,lv,
-MI,Mitchell Research & Communications,2025-11-21,40,42,616,lv,
-MI,"Glengariff Group, Inc.",2026-01-06,41.6,48,600,lv,
-MI,Emerson College,2026-01-25,42.5,42.8,1000,lv,
-MI,"Glengariff Group, Inc.",2026-05-01,41.5,43.8,600,lv,
-MI,Mitchell Research & Communications,2026-05-07,41,42,607,lv,
-MI,TIPP Insights,2026-05-23,45.16,41.6,1163,lv,REP
-MI,Tulchin Research,2026-06-04,46,41,500,lv,DEM
-MI,Mitchell Research & Communications,2026-06-13,47,42,827,lv,
-MI,Zenith Research,2026-06-14,43,42,602,lv,DEM
-MI,Data for Progress,2026-06-22,45,46,709,lv,DEM
-MI,Wedgewood Polls,2026-06-28,41,48,602,lv,
-MI,Quantus Insights,2026-06-30,45.1,43.7,947,lv,
-MI,"Glengariff Group, Inc.",2026-07-24,38.7,49,600,lv,
-MI,SoCal Strategies,2026-07-30,44,40,640,lv,REP
-MI,EPIC-MRA,2026-07-31,43,46,600,lv,
-MI,TIPP Insights,2026-08-10,45.44,42.27,1215,lv,REP
-MI,GBAO,2026-08-10,50,44,800,lv,DEM
-MI,Beacon Research/Shaw & Company Research,2026-08-10,47,51,1006,rv,
-MI,Fabrizio Ward/Impact Research,2026-08-11,48,47,877,lv,
-MI,"Susquehanna Polling & Research, Inc.",2026-08-17,46,39,800,rv,
-MI,Michigan State University Institute for Public Policy and Social Research/YouGov,2026-08-20,50,45,779,lv,
-MI,Abacus Data,2026-08-28,47,42,332,lv,
-MI,EPIC-MRA,2026-08-28,47,43,600,lv,
-MI,"Glengariff Group, Inc.",2026-09-03,44.4,45.8,600,lv,
-MI,CNN/SSRS,2026-09-06,47,44,843,lv,
-MI,Trafalgar Group,2026-09-09,46.3,44.8,1079,lv,REP
-MI,The Washington Post/George Mason University Schar School of Policy and Government,2026-09-14,48,45,803,lv,
-MI,Emerson College,2026-09-14,48.19,45.72,1000,lv,
-MI,InsiderAdvantage,2026-09-17,46.6,44.7,1200,lv,
-MI,Torchlight Strategies,2026-09-19,43.1,44.4,643,lv,REP
-MI,Suffolk University,2026-09-20,46.8,39.6,500,lv,
-MI,Cygnal/Beacon Research,2026-09-21,45,40,600,lv,
-MI,GBAO,2026-09-22,48,44,800,lv,DEM
-MI,The New York Times/Siena University,2026-09-22,49.45,44.5,605,lv,
-MI,co/efficient,2026-09-23,47,46,843,lv,
-MI,Big Data Poll,2026-09-24,46.7,42.1,678,lv,
-MI,The Tyson Group,2026-09-27,44,43,600,lv,REP
-MI,Guidant Polling and Strategy,2026-09-27,49,45,800,lv,OTH
-MI,Marist University,2026-09-27,51,44,1235,rv,
-MI,Beacon Research/Shaw & Company Research,2026-09-28,50,49,1028,lv,
-MI,Trafalgar Group,2026-09-30,46.9,45.1,1085,lv,REP
-MI,Z to A Research,2026-10-01,49,42,483,lv,DEM
-MI,Mitchell Research & Communications,2026-10-01,45.6,41.4,682,lv,
-MI,YouGov,2026-10-04,49,48,3947,lv,
-MI,Quantus Insights,2026-10-06,48.4,47.2,744,lv,
-MI,The Tyson Group,2026-10-08,44,46,600,lv,REP
-MI,Wedgewood Polls,2026-10-09,53,47,607,lv,
-MI,InsiderAdvantage,2026-10-10,47.8,45.5,1200,lv,
-MN,Impact Research,2025-07-11,48,45,604,lv,DEM
-MN,Public Policy Polling,2025-09-16,47,43,1015,lv,
-MN,Emerson College,2026-02-08,46.6,40.2,1000,lv,
-MN,Impact Research,2026-05-28,51,44,808,lv,DEM
-MN,"Mason-Dixon Polling & Research, Inc.",2026-06-10,49,41,800,lv,
-MN,SurveyUSA,2026-08-17,46,41,661,lv,
-MN,TIPP Insights,2026-09-02,43.96,41.86,1192,lv,REP
-MN,Quantus Insights,2026-09-10,48.9,45.4,720,lv,
-MN,SurveyUSA,2026-09-14,42,42,654,lv,
-MN,co/efficient,2026-09-15,46,47,833,lv,
-MN,InsiderAdvantage,2026-09-29,46,45,1200,lv,
-MN,Big Data Poll,2026-09-30,45.8,43.6,622,lv,
-MN,GQR,2026-10-04,53,44,800,lv,DEM
-MN,"Mason-Dixon Polling & Research, Inc.",2026-10-07,47,43,800,lv,
-MN,Morning Consult,2026-10-07,45,41,1000,rv,
-MN,SurveyUSA,2026-10-12,45,42,718,lv,
-MN,Trafalgar Group,2026-10-15,48.1,44.6,1079,lv,REP
-MS,Impact Research,2025-06-22,46,38,500,lv,DEM
-MS,Impact Research,2026-04-12,39,42,500,lv,DEM
-MS,Data for Progress,2026-08-15,41,47,1018,lv,DEM
-MS,Wedgewood Polls,2026-10-14,48,52,511,lv,
-MT,yes. every kid. foundation.,2026-01-26,19,43,500,rv,
-MT,American Pulse Research & Polling,2026-02-18,40,53.9,607,lv,
-MT,Change Research,2026-03-20,35.06,36.84,616,lv,IND
-MT,Tavern Research,2026-05-18,44,56,607,lv,IND
-MT,Public Opinion Strategies,2026-06-11,25,44,500,lv,REP
-MT,Hart Research Associates,2026-06-24,43,49,800,lv,DEM
-MT,GrayHouse,2026-06-24,25,41,500,lv,
-MT,The Bullfinch Group,2026-07-16,22,36,793,lv,IND
-MT,GQR,2026-07-26,50,44,500,lv,IND
-MT,Hart Research Associates,2026-08-04,38,52,800,lv,IND
-MT,Peak Insights,2026-08-25,19,44,600,lv,REP
-MT,Rutgers-Eagleton,2026-09-07,16,38,845,rv,
-MT,Aspect Strategic,2026-09-15,14,44,715,lv,IND
-MT,Quantus Insights,2026-09-15,24.4,45.3,625,lv,
-MT,American Pulse Research & Polling,2026-09-24,18.9,45.1,604,lv,
-MT,Peak Insights,2026-10-12,12,44,500,lv,REP
-NC,Public Policy Polling,2025-03-05,47,43,662,rv,
-NC,Change Research,2025-04-04,48,45,867,lv,DEM
-NC,Victory Insights,2025-07-30,44.4,43.5,600,lv,
-NC,Emerson College,2025-07-30,46.7,41.4,1000,rv,
-NC,Harper Polling,2025-08-12,47.3,39.1,600,lv,
-NC,Change Research,2025-09-08,48,41,855,lv,DEM
-NC,Harper Polling,2025-09-15,46.1,41.9,600,lv,
-NC,Harper Polling,2025-11-10,47.3,38.6,600,lv,
-NC,TIPP Insights,2026-01-15,48.4,24.2,1512,rv,REP
-NC,Change Research,2026-02-04,50,40,1069,rv,DEM
-NC,Public Policy Polling,2026-03-14,47,44,556,rv,
-NC,YouGov,2026-03-18,48,34,872,lv,
-NC,Harper Polling,2026-03-23,48.9,41.1,600,lv,
-NC,Quantus Insights,2026-04-01,48.6,43.8,987,lv,
-NC,High Point University,2026-04-06,50,42,703,lv,
-NC,Opinion Diagnostics,2026-04-24,50.4,41.4,830,rv,
-NC,Opinion Diagnostics,2026-04-24,50.4,41.4,830,rv,
-NC,Change Research,2026-05-08,49.29,42.42,957,lv,DEM
-NC,Harper Polling,2026-05-11,49.8,38.7,600,lv,
-NC,YouGov,2026-06-10,47.73,34.03,905,lv,
-NC,The New York Times/Siena University,2026-06-27,50,43.19,601,lv,
-NC,Public Policy Polling,2026-07-11,48,44,759,rv,
-NC,Beacon Research/Shaw & Company Research,2026-07-27,53,44,1005,rv,
-NC,YouGov,2026-07-31,53,42,466,lv,
-NC,Change Research,2026-08-01,50,41,967,rv,DEM
-NC,Change Research,2026-08-06,50.05,42.93,915,lv,DEM
-NC,Harper Polling,2026-08-10,51.5,39,600,lv,
-NC,High Point University,2026-08-12,50,45,660,lv,
-NC,YouGov,2026-08-31,49,38,565,lv,
-NC,East Carolina University Center for Survey Research,2026-09-03,51.7,43.6,675,lv,
-NC,Trafalgar Group,2026-09-10,48.2,42.3,1084,lv,REP
-NC,YouGov,2026-09-15,48,37,885,lv,
-NC,Harper Polling,2026-09-15,49.2,34.1,608,lv,
-NC,High Point University,2026-09-16,50,42,706,lv,
-NC,InsiderAdvantage,2026-09-17,48.4,42.5,1200,lv,
-NC,YouGov,2026-09-18,53,41,3742,lv,
-NC,Fabrizio Ward/Impact Research,2026-09-20,53,42,1115,lv,
-NC,Opinion Diagnostics,2026-09-20,51.7,43.5,857,lv,
-NC,Quantus Insights,2026-09-22,48.4,43.3,686,lv,
-NC,Big Data Poll,2026-09-29,50.8,38.5,642,lv,
-NC,East Carolina University Center for Survey Research,2026-10-03,50,43,810,lv,
-NC,Change Research,2026-10-07,50,40,829,lv,DEM
-NC,Trafalgar Group,2026-10-10,48.8,40.9,1091,lv,REP
-NC,SurveyUSA,2026-10-11,54,40,643,lv,
-NE,Change Research,2025-04-01,45,46,524,lv,DEM
-NE,Impact Research,2026-02-05,47,48,600,lv,DEM
-NE,GBAO,2026-04-20,46,45,800,lv,IND
-NE,Tavern Research,2026-05-11,34,50,1165,lv,IND
-NE,GBAO,2026-07-26,47,47,800,lv,IND
-NE,Impact Research,2026-08-13,47,47,600,lv,DEM
-NE,GBAO,2026-09-08,47,46,800,lv,IND
-NE,SurveyUSA,2026-09-13,46,42,503,lv,
-NE,Wedgewood Polls,2026-09-16,48,52,500,lv,
-NE,co/efficient,2026-09-30,44,47,1113,lv,
-NE,YouGov,2026-10-03,48,47,1808,lv,
-NH,Praecones Analytica,2025-03-01,58.9,41.1,626,rv,
-NH,Quantus Insights,2025-03-19,44,53,650,rv,REP
-NH,1892 Polling,2025-09-04,45,43,500,lv,REP
-NH,co/efficient,2025-09-12,48,42,904,lv,
-NH,University of New Hampshire,2025-09-23,49,43,1225,lv,
-NH,co/efficient,2025-10-13,49,39,1034,lv,
-NH,St. Anselm,2025-11-19,44,41,2212,rv,
-NH,Praecones Analytica,2025-12-28,42.3,35.6,603,rv,
-NH,University of New Hampshire,2026-01-19,50,45,2038,lv,
-NH,yes. every kid. foundation.,2026-01-29,45,41,563,lv,
-NH,St. Anselm,2026-03-18,46,43,1491,rv,
-NH,Emerson College,2026-03-23,47.8,39.3,1100,lv,
-NH,University of New Hampshire,2026-06-23,47,44,2157,lv,
-NH,St. Anselm,2026-06-25,47,41,1614,rv,
-NH,Peak Insights,2026-06-27,43,42,500,lv,REP
-NH,St. Anselm,2026-08-18,48,41,1411,lv,
-NH,University of New Hampshire,2026-08-24,45,40,1846,lv,
-NH,"Fabrizio, Lee & Associates",2026-08-30,36,37,600,lv,REP
-NH,co/efficient,2026-09-11,46,46,958,lv,
-NH,InsiderAdvantage,2026-09-17,47.8,39.9,1200,lv,
-NH,University of New Hampshire,2026-09-21,50,42,1392,lv,
-NH,The New York Times/Siena University,2026-09-22,49.82,44.82,613,lv,
-NH,Trafalgar Group,2026-09-27,47.4,40.5,1082,lv,REP
-NH,St. Anselm,2026-09-29,51,44,1042,lv,
-NH,YouGov,2026-10-05,51,43,1519,lv,
-NM,Research & Polling Inc.,2026-08-28,53,38,516,lv,
-NM,SurveyUSA,2026-09-30,54,36,567,lv,
-NM,Research & Polling Inc.,2026-10-09,53,37,1125,lv,
-OH,Bowling Green State University Democracy and Public Policy Research Network/YouGov,2025-02-21,38,45,800,rv,
-OH,Bowling Green State University Democracy and Public Policy Research Network/YouGov,2025-04-24,44,50,800,rv,
-OH,Emerson College,2025-08-19,43.7,49.5,1000,rv,
-OH,Bowling Green State University Democracy and Public Policy Research Network/YouGov,2025-10-14,49,48,800,rv,
-OH,Emerson College,2025-12-08,46.3,48.8,850,rv,
-OH,EMC Research,2026-02-22,51,47,1343,lv,DEM
-OH,OnMessage Inc.,2026-03-08,47,45,600,lv,
-OH,Quantus Insights,2026-03-14,44.4,45.5,784,lv,
-OH,Echelon Insights,2026-04-09,45,51,413,lv,
-OH,Bowling Green State University Democracy and Public Policy Research Network/YouGov,2026-04-14,47,50,1000,rv,
-OH,Beacon Research/Shaw & Company Research,2026-06-01,53,45,1015,rv,
-OH,Tulchin Research,2026-06-04,46,42,600,lv,DEM
-OH,Fabrizio Ward/Impact Research,2026-06-16,48,45,800,lv,
-OH,The New York Times/Siena University,2026-06-28,47,49.8,601,lv,
-OH,Tulchin Research,2026-08-04,47,43,600,lv,DEM
-OH,Beacon Research/Shaw & Company Research,2026-08-10,53,45,1008,rv,
-OH,Wedgewood Polls,2026-08-13,48,44,800,lv,
-OH,Abacus Data,2026-08-28,46,41,306,lv,
-OH,InsiderAdvantage,2026-09-09,47.3,41.9,1200,lv,
-OH,YouGov,2026-09-10,48,45,1000,lv,
-OH,Trafalgar Group,2026-09-16,45.4,41.5,1085,lv,REP
-OH,Quantus Insights,2026-09-23,47.6,47.2,695,lv,
-OH,Big Data Poll,2026-09-27,46.3,42.6,680,lv,
-OH,Suffolk University,2026-09-27,46.6,44,500,lv,
-OH,Marist University,2026-09-27,51,43,1298,rv,
-OH,InsiderAdvantage,2026-09-29,43.8,42.5,1200,lv,
-OH,YouGov,2026-09-30,49,45,3777,lv,
-OH,The New York Times/Siena University,2026-10-01,48.76,46.09,616,lv,
-OH,CNN/SSRS,2026-10-05,49,43,760,lv,
-OH,co/efficient,2026-10-06,45,46,925,lv,
-OH,Bowling Green State University Democracy and Public Policy Research Network/YouGov,2026-10-09,48,42,1000,lv,
-OK,Cole Hargrave,2026-08-06,27,48,500,rv,
-RI,University of New Hampshire,2026-04-20,52,34,556,lv,
-RI,University of New Hampshire,2026-06-23,52,35,627,lv,
-RI,University of New Hampshire,2026-09-21,53,33,595,lv,
-RI,Emerson College,2026-10-11,59.13,25.44,800,lv,
-SC,Public Policy Polling,2025-11-22,36,42,704,rv,DEM
-SC,Impact Research,2026-03-01,42,47,700,lv,DEM
-SC,Impact Research,2026-06-22,45,48,700,lv,DEM
-SC,Public Policy Polling,2026-07-17,42,36,577,rv,DEM
-SC,Impact Research,2026-08-24,41,41,700,lv,DEM
-SC,Abacus Data,2026-08-28,38,51,306,lv,
-SC,InsiderAdvantage,2026-09-09,43.2,45.1,1200,lv,
-SC,Trafalgar Group,2026-09-25,42.3,43.4,1087,lv,REP
-SC,InsiderAdvantage,2026-09-29,45,46,1200,lv,
-SD,Public Policy Polling,2025-07-31,28,41,552,rv,IND
-SD,Public Policy Polling,2025-11-14,31,44,814,rv,IND
-SD,Public Policy Polling,2026-02-18,32,49,685,rv,IND
-SD,Public Policy Polling,2026-05-30,18,43,726,rv,IND
-SD,Public Opinion Strategies,2026-07-09,33,56,500,lv,REP
-SD,Impact Research,2026-08-17,44,44,500,lv,IND
-SD,Lake Research Partners,2026-08-30,51,41,500,lv,DEM
-SD,Public Policy Polling,2026-09-09,42,45,629,rv,IND
-SD,Zenith Research,2026-09-27,47,53,500,lv,IND
-TN,Targoz Market Research,2026-08-26,33,58,607,lv,
-TX,Barbara Jordan Public Policy Research and Survey Center,2025-05-19,46,48,1200,rv,
-TX,Emerson College,2025-08-12,40.6,45.9,1000,rv,
-TX,GBAO,2025-08-18,49,47,800,lv,DEM
-TX,Slingshot Strategies,2025-08-29,43,48,843,rv,
-TX,University of Texas at Tyler Center for Opinion Research,2025-09-24,37,38,1032,rv,
-TX,University of Houston Hobby School of Public Affairs/Texas Southern University School of Public Affairs,2025-10-01,47,48,1183,lv,
-TX,Cygnal Political,2025-10-06,40,47,600,lv,
-TX,Ragnar Research Partners,2025-11-17,44,44,1000,lv,
-TX,Change Research,2025-11-26,42,50,1189,rv,DEM
-TX,Emerson College,2026-01-12,43.6,47.1,1165,rv,
-TX,University of Houston Hobby School of Public Affairs,2026-01-31,42,46,1502,lv,
-TX,Hart Research Associates,2026-02-12,49,45,803,lv,DEM
-TX,Public Policy Polling,2026-03-05,47,45,576,rv,DEM
-TX,YouGov,2026-04-20,42,34,1200,rv,
-TX,Slingshot Strategies,2026-04-20,46,41,1018,lv,
-TX,Barbara Jordan Public Policy Research and Survey Center,2026-05-06,45,45,1223,lv,
-TX,Public Policy Polling,2026-05-23,45,38,643,rv,DEM
-TX,Slingshot Strategies,2026-05-28,47,44,1670,lv,
-TX,ReconMR/Siena Research Institute,2026-06-04,46,46,807,lv,
-TX,Quantus Insights,2026-06-04,43,45,800,lv,
-TX,YouGov,2026-06-12,42,43,1200,rv,
-TX,SoCal Strategies,2026-06-21,47.05,48.53,800,lv,REP
-TX,The New York Times/Siena University,2026-06-27,46.57,46.67,656,lv,
-TX,A2 Insights,2026-06-28,48.4,46.1,618,lv,
-TX,Slingshot Strategies,2026-07-17,45,40,1048,lv,
-TX,Beacon Research/Shaw & Company Research,2026-07-27,51,48,1006,rv,
-TX,ReconMR/Siena Research Institute,2026-07-30,47,43,619,lv,
-TX,Barbara Jordan Public Policy Research and Survey Center,2026-07-30,47,45,1200,lv,
-TX,YouGov Blue,2026-07-31,48,45,1001,lv,
-TX,Wedgewood Polls,2026-07-31,48,46,800,lv,
-TX,Emerson College,2026-08-10,46.25,47.25,1000,lv,
-TX,YouGov,2026-08-13,42,39,1200,rv,
-TX,Slingshot Strategies,2026-08-24,48,42,1000,lv,
-TX,Overton Insights,2026-08-26,50,50,1167,lv,
-TX,Fabrizio Ward/Impact Research,2026-09-01,48,44,895,lv,
-TX,YouGov,2026-09-04,48,43,1000,rv,
-TX,InsiderAdvantage,2026-09-09,47.1,45.6,1200,lv,
-TX,"Mason-Dixon Polling & Research, Inc.",2026-09-10,46,43,625,lv,
-TX,ReconMR/Siena Research Institute,2026-09-11,49,43,614,lv,
-TX,SoCal Strategies,2026-09-13,50,45,649,lv,
-TX,Emerson College,2026-09-14,47.35,46.35,1000,lv,
-TX,Trafalgar Group,2026-09-17,46.4,45.2,1079,lv,REP
-TX,Barbara Jordan Public Policy Research and Survey Center,2026-09-19,47,46,1800,lv,
-TX,Marist University,2026-09-20,50,44,1139,rv,
-TX,Slingshot Strategies,2026-09-22,49,44,1007,lv,
-TX,Stratus Intelligence,2026-09-24,48,48,865,lv,REP
-TX,Big Data Poll,2026-09-26,46.8,44.9,698,lv,
-TX,Pulse Decision Science,2026-09-27,45,48,800,lv,REP
-TX,University of Massachusetts Lowell Center for Public Opinion/YouGov,2026-09-28,45,45,850,lv,
-TX,Guidant Polling and Strategy,2026-09-28,47,44,800,lv,OTH
-TX,Beacon Research/Shaw & Company Research,2026-09-28,51,49,881,lv,
-TX,The New York Times/Siena University,2026-09-30,50.8,45.09,615,lv,
-TX,YouGov,2026-10-05,50,47,861,lv,
-TX,YouGov,2026-10-05,50,44,3623,lv,
-TX,ReconMR/Siena Research Institute,2026-10-08,48,44,617,lv,
-TX,Trafalgar Group,2026-10-08,47.1,43.6,1086,lv,REP
-TX,Marist University,2026-10-11,47,45,1196,lv,
-TX,Quantus Insights,2026-10-11,46.7,47.2,854,lv,
-TX,InsiderAdvantage,2026-10-14,48,49,1200,lv,
-TX,ActiVote,2026-10-14,51.9,48.1,400,lv,
-VA,Responsive Management,2025-01-15,45,38,806,a,
+state,pollster,end_date,dem_pct,rep_pct,undecided,sample_size,population,partisan
+AK,Alaska Survey Research,2023-04-25,44,41,15.0,1261,lv,
+AK,Data for Progress,2025-07-27,45,46,4.0,678,lv,
+AK,Alaska Survey Research,2025-08-01,42.5,46.7,10.9,1613,lv,
+AK,Alaska Survey Research,2025-10-15,47.7,45.9,6.4,1708,lv,
+AK,Data for Progress,2025-10-23,46,45,4.0,823,rv,
+AK,The Tyson Group,2025-11-13,43,39,18,600,lv,
+AK,Alaska Survey Research,2026-01-11,48,46.4,5.6,1681,lv,
+AK,Public Policy Polling,2026-01-17,49,47,4.0,611,rv,DEM
+AK,Alaska Survey Research,2026-04-19,50.2,43.6,0.0,1946,lv,
+AK,Alaska Survey Research,2026-05-17,48.4,43.8,0.0,1401,lv,
+AK,Alaska Survey Research,2026-06-07,49.4,44.2,0.0,1393,lv,
+AK,The New York Times/Siena University,2026-06-29,45.06,47.47,5.4,593,lv,
+AK,Data for Progress,2026-08-04,47,41,5.0,605,lv,
+AK,Alaska Survey Research,2026-08-05,50.8,49.2,0.0,1371,lv,
+AK,Alaska Survey Research,2026-08-23,50.6,49.4,0.0,1495,lv,
+AK,Fabrizio Ward/Impact Research,2026-09-11,53,47,0.0,800,lv,
+AK,Alaska Survey Research,2026-09-12,51.9,48.1,0.0,1352,lv,
+AK,co/efficient,2026-09-17,46,49,5.0,799,lv,
+AK,Trafalgar Group,2026-09-24,45.5,46.8,4.2,1079,lv,REP
+AK,Quantus Insights,2026-09-30,46.2,46.5,4.8,758,lv,
+AK,The New York Times/Siena University,2026-10-01,50.07,43.07,6.3,504,lv,
+AK,Alaska Survey Research,2026-10-03,51,49,0.0,1512,lv,
+AK,InsiderAdvantage,2026-10-10,48.2,42.6,5.3,1200,lv,
+AL,yes. every kid. foundation.,2026-07-11,32,47,20.0,601,lv,
+AL,RMG Research,2026-09-25,33,54,9.0,800,rv,REP
+AR,GrayHouse,2026-02-09,36,58,7.0,550,lv,REP
+AR,2040 Strategy Group,2026-07-25,43,46,12.0,586,lv,DEM
+AR,Hendrix College,2026-08-12,47.4,44,5.7,1217,lv,
+AR,J.L. Partners,2026-08-18,35,51,11.0,803,lv,
+AR,GrayHouse,2026-10-04,39,50,7.0,550,lv,REP
+AR,Hendrix College,2026-10-13,41,50,4.5,709,lv,
+FL,The Tyson Group,2025-10-03,37,44,19.0,800,lv,
+FL,University of North Florida,2025-10-25,38,49,11.0,728,lv,DEM
+FL,University of North Florida,2026-03-02,38,45,15.0,772,lv,
+FL,Emerson College,2026-03-31,36.3,47.3,15.5,1125,lv,
+FL,MDW Communications,2026-04-03,42.2,43.4,14.4,1834,lv,
+FL,Public Policy Polling,2026-04-03,40,43,17.0,574,rv,DEM
+FL,Echelon Insights,2026-04-09,43,50,7.0,406,lv,
+FL,Stetson University Center for Public Opinion Research,2026-04-13,42,49,8.0,434,lv,
+FL,Cherry Communications,2026-05-09,40,48,12,604,lv,REP
+FL,Change Research,2026-05-16,47,45,7.0,1593,lv,OTH
+FL,Global Strategy Group,2026-05-21,43,46,12.0,1000,lv,DEM
+FL,Change Research,2026-06-14,46,46,8,1015,lv,OTH
+FL,University of North Florida,2026-07-17,41.6,50,6.1,848,lv,
+FL,Change Research,2026-09-09,47,47,6,1107,lv,OTH
+FL,Quantus Insights,2026-09-10,43,50.4,3.3,733,lv,
+FL,St. Pete Polls,2026-09-17,44.8,45.2,7.1,913,lv,
+FL,Stetson University Center for Public Opinion Research,2026-09-21,40,51,6,830,lv,
+FL,InsiderAdvantage,2026-09-21,41.8,49.3,6.5,600,lv,
+FL,Change Research,2026-09-27,47,48,5.0,1063,lv,OTH
+FL,"Mason-Dixon Polling & Research, Inc.",2026-10-01,40,50,8.0,625,lv,
+FL,Targoz Market Research,2026-10-04,42,52,4.0,847,lv,
+FL,YouGov,2026-10-05,44,49,5.0,3812,lv,
+FL,St. Pete Polls,2026-10-07,44.9,46.8,6.0,836,lv,
+FL,Stetson University Center for Public Opinion Research,2026-10-09,41,52,6.0,716,lv,
+FL,MDW Communications,2026-10-10,42.4,47.6,10.0,2351,lv,
+FL,ActiVote,2026-10-15,46.9,53.1,0.0,400,lv,
+GA,WPA Intelligence,2025-01-15,46,32,23.0,500,lv,REP
+GA,The Tyson Group,2025-01-31,51,39,10,600,lv,
+GA,Quantus Insights,2025-02-13,44.5,48.3,7.2,800,rv,REP
+GA,Cygnal Political,2025-03-10,43.7,43.9,12.4,600,lv,
+GA,University of Georgia,2025-04-24,48.4,38.8,9.5,1000,rv,
+GA,Trafalgar Group,2025-04-27,46.4,37.5,6.1,1426,lv,REP
+GA,Cygnal Political,2025-05-17,44.7,42.1,13.3,800,rv,
+GA,Cygnal Political,2025-06-18,49.8,40,10.3,610,lv,REP
+GA,TIPP Insights,2025-08-01,45.16,42,9.6,2395,lv,REP
+GA,Quantus Insights,2025-09-12,42.1,35.4,22.5,624,rv,
+GA,Emerson College,2026-03-02,47.1,43.7,9.2,1000,lv,
+GA,Echelon Insights,2026-04-09,51,44,5.0,407,lv,
+GA,Beacon Research/Shaw & Company Research,2026-06-27,56,43,1.0,1002,rv,
+GA,Wick,2026-06-30,46.7,42.9,10.4,1175,lv,
+GA,Fabrizio Ward/Impact Research,2026-07-16,52,43,5.0,1060,lv,
+GA,InsiderAdvantage,2026-08-17,50.1,42.6,7.3,800,lv,
+GA,Trafalgar Group,2026-09-12,49.4,42.8,6.5,1091,lv,REP
+GA,Quantus Insights,2026-09-16,49,44.9,5.2,645,lv,
+GA,YouGov,2026-09-18,52,42,5.0,3301,lv,
+GA,InsiderAdvantage,2026-09-23,50,42,8.0,1200,lv,
+GA,Big Data Poll,2026-09-23,55.4,44.6,0.0,678,lv,
+GA,Wedgewood Polls,2026-10-03,55,45,0.0,600,lv,
+GA,Trafalgar Group,2026-10-09,51,43,6.0,1101,lv,REP
+IA,Public Policy Polling,2025-06-03,43,45,12.0,568,rv,DEM
+IA,Public Policy Polling,2025-08-19,43,44,13,572,rv,DEM
+IA,Change Research,2026-01-11,41,44,14.0,1108,lv,
+IA,GBAO,2026-03-16,44,47,9.0,1200,lv,DEM
+IA,Echelon Insights,2026-04-09,46,45,9.0,377,lv,
+IA,Public Policy Polling,2026-06-04,46,46,8,557,rv,DEM
+IA,Global Strategy Group,2026-06-11,47,45,8.0,1000,lv,DEM
+IA,Cygnal Political,2026-06-19,44.2,46,9.8,600,lv,REP
+IA,Beacon Research/Shaw & Company Research,2026-06-27,50,46,4.0,1003,rv,
+IA,The New York Times/Siena University,2026-06-27,46.01,48.48,5.2,600,lv,
+IA,Emerson College,2026-08-04,44.98,47.52,6.1,712,lv,
+IA,Suffolk University,2026-08-23,40.8,45.4,9.8,500,lv,
+IA,Abacus Data,2026-08-28,48,41,11.0,323,lv,
+IA,Wedgewood Polls,2026-08-29,48,50,2.0,600,lv,
+IA,Global Strategy Group,2026-08-31,46,42,6.0,800,lv,DEM
+IA,Emerson College,2026-09-01,45.05,49.47,4.7,750,lv,
+IA,YouGov,2026-09-08,45,43,10.0,2127,lv,
+IA,Cygnal Political,2026-09-11,42.9,42.9,10.6,500,lv,REP
+IA,co/efficient,2026-09-16,43,48,9,831,lv,
+IA,Trafalgar Group,2026-09-18,42.1,44,10.5,1089,lv,REP
+IA,Marist University,2026-09-20,50,42,6,1050,rv,
+IA,InsiderAdvantage,2026-09-23,47.4,45.7,4.4,1200,lv,
+IA,Beacon Research/Shaw & Company Research,2026-09-28,49,47,3,1008,lv,
+IA,Quantus Insights,2026-09-29,48.8,51.2,0.0,738,lv,
+IA,The New York Times/Siena University,2026-10-01,46.96,47.83,5.1,606,lv,
+IA,Suffolk University,2026-10-04,48,43.6,6.2,500,lv,
+IA,CNN/SSRS,2026-10-05,43,45,1,801,lv,
+IA,Emerson College,2026-10-06,45,46.6,7.0,650,lv,
+IA,Marist University,2026-10-11,48,45,5.0,1100,lv,
+IA,YouGov,2026-10-12,47,46,5,2245,lv,
+IA,Trafalgar Group,2026-10-15,44.2,45.9,6.4,1094,lv,REP
+ID,Public Policy Polling,2026-03-17,34,48,18,639,rv,IND
+ID,The Bullfinch Group,2026-06-01,36,40,24,774,rv,IND
+ID,Peak Insights,2026-06-07,15,55,15,500,lv,REP
+ID,The Bullfinch Group,2026-08-07,38,33,29.0,608,lv,IND
+ID,Peak Insights,2026-08-13,18,52,18,500,lv,REP
+ID,Peak Insights,2026-09-30,24,49,16,500,lv,REP
+IL,Public Policy Polling,2026-10-01,49,36,15.0,569,rv,
+KS,GQR,2026-04-27,45,49,6.0,500,lv,DEM
+KS,GBAO,2026-07-13,43,47,10,600,lv,DEM
+KS,Global Strategy Group,2026-08-16,44,43,8,800,lv,DEM
+KS,co/efficient,2026-09-10,45,51,4.0,915,lv,
+KS,Global Strategy Group,2026-09-16,49,47,4,800,lv,DEM
+KS,Emerson College,2026-09-16,44.75,43.3,8.2,750,lv,
+KS,Wedgewood Polls,2026-09-24,50,48,0.0,500,lv,
+KS,The New York Times/Siena University,2026-09-30,46.39,46.67,6.6,605,lv,
+KS,Trafalgar Group,2026-10-01,44.4,43.5,10.1,1095,lv,REP
+KS,GBAO,2026-10-04,46,41,6,600,lv,DEM
+KS,YouGov,2026-10-04,48,45,5.0,2253,lv,
+KS,InsiderAdvantage,2026-10-10,47.5,46.7,2.4,1200,lv,
+KS,InsiderAdvantage,2026-10-14,47,48,5,1200,lv,
+KY,Public Policy Polling,2025-12-19,40,41,19.0,650,rv,DEM
+KY,Global Strategy Group,2026-08-27,40,49,11,600,lv,DEM
+LA,Public Policy Polling,2026-07-22,37,41,22.0,518,rv,DEM
+LA,Hart Research Associates,2026-09-19,44,48,8.0,500,lv,DEM
+MA,MassINC Polling Group,2024-11-01,34,40,20.0,582,lv,
+MA,YouGov,2025-02-20,35,33,33.0,700,a,
+MA,SurveyUSA,2025-03-04,45,26,30.0,775,rv,
+MA,Suffolk University,2025-11-23,52,29,20.0,500,rv,
+MA,Cygnal Political,2026-01-25,54,30,16,800,lv,REP
+MA,University of New Hampshire,2026-02-16,56,27,15.0,616,lv,
+MA,University of New Hampshire,2026-04-20,55,32,12.0,603,lv,
+MA,Suffolk University,2026-06-12,53.8,26.2,20.0,500,rv,
+MA,University of New Hampshire,2026-06-23,50,34,16.0,618,lv,
+MA,YouGov,2026-08-12,49,25,23,800,rv,
+MA,University of New Hampshire,2026-08-24,49,30,13,906,lv,
+MA,University of New Hampshire,2026-09-21,53,30,8.0,556,lv,
+MA,MassINC Polling Group,2026-09-22,54,28,11.0,800,lv,
+ME,Upswing Research,2025-03-25,42,43,15.0,600,lv,DEM
+ME,Public Policy Polling,2025-09-09,44,35,21.0,642,rv,DEM
+ME,Zenith Research,2025-10-10,42,37,12.0,501,lv,
+ME,Maine People's Resource Center,2025-10-29,41.7,45.8,12.5,783,rv,
+ME,Cygnal Political,2025-11-11,49,41,11.0,600,lv,
+ME,Pan Atlantic SMS Group,2025-12-07,43,42,15.0,820,lv,
+ME,Workbench Strategy,2025-12-16,48.6,51.4,0.0,900,lv,DEM
+ME,"Fabrizio, Lee & Associates",2026-01-24,44,45,11.0,800,lv,REP
+ME,University of New Hampshire,2026-02-16,49,38,9.0,1105,lv,
+ME,Pan Atlantic SMS Group,2026-03-02,44,40,16.0,810,lv,
+ME,OnMessage Inc.,2026-03-08,44,42,14.0,600,lv,
+ME,Emerson College,2026-03-23,46.2,42.5,3.4,1075,lv,
+ME,Maine People's Resource Center,2026-03-31,41.9,45,13.1,1167,lv,
+ME,Echelon Insights,2026-04-09,48,46,6.0,378,lv,
+ME,Pan Atlantic SMS Group,2026-05-18,48,41,11.0,827,lv,DEM
+ME,University of New Hampshire,2026-05-25,51,42,6.0,1250,lv,
+ME,University of Massachusetts Lowell Center for Public Opinion/YouGov,2026-05-26,48,43,6.0,650,lv,
+ME,"Fabrizio, Lee & Associates",2026-06-03,46,46,8.0,800,lv,REP
+ME,Public Policy Polling,2026-06-03,49,45,6.0,670,rv,DEM
+ME,Tavern Research,2026-06-08,55,45,0.0,1642,lv,
+ME,Quantus Insights,2026-06-11,46,45,7.0,870,lv,
+ME,Wick,2026-06-14,47.6,45.4,7.0,1008,lv,
+ME,The New York Times/Siena University,2026-06-26,49.2,47.02,3.5,608,lv,
+ME,Beacon Research/Shaw & Company Research,2026-06-27,47,50,3,1003,rv,
+ME,Wedgewood Polls,2026-07-06,47,47,6.0,405,lv,
+ME,Tavern Research,2026-07-06,52,48,0.0,1074,lv,
+ME,Public Policy Polling,2026-07-07,37,48,15.0,785,rv,DEM
+ME,University of New Hampshire,2026-07-20,49,46,3.0,1178,lv,
+ME,Hart Research Associates,2026-08-01,49,45,6.0,802,lv,DEM
+ME,Beacon Research/Shaw & Company Research,2026-08-10,48,46,5,1000,rv,
+ME,Abacus Data,2026-08-28,50,42,4.0,327,lv,
+ME,CNN/SSRS,2026-09-06,48,45,0.0,880,lv,
+ME,YouGov,2026-09-08,48,44,7,1335,lv,
+ME,University of Massachusetts Lowell Center for Public Opinion/YouGov,2026-09-14,48,43,7,650,lv,
+ME,Quantus Insights,2026-09-15,47.4,47.6,3.5,621,lv,
+ME,University of New Hampshire,2026-09-21,51,47,1.0,1301,lv,
+ME,Fabrizio Ward/Impact Research,2026-09-22,50,47,3.0,982,lv,
+ME,The New York Times/Siena University,2026-09-22,45.92,48.66,4.9,619,lv,
+ME,InsiderAdvantage,2026-09-23,46.4,45.6,5.4,1200,lv,
+ME,Maine People's Resource Center,2026-09-29,49.3,46.5,4.2,684,lv,
+ME,co/efficient,2026-09-30,46,48,6.0,1240,lv,
+ME,Trafalgar Group,2026-10-01,46.2,45.9,7.9,1091,lv,REP
+ME,YouGov,2026-10-01,50,50,0.0,1136,lv,
+ME,Wedgewood Polls,2026-10-01,52,48,0.0,400,lv,
+ME,Marist University,2026-10-04,51,47,1.0,1505,rv,
+ME,The Washington Post/George Mason University Schar School of Policy and Government,2026-10-05,50,46,3.0,800,lv,
+ME,Suffolk University,2026-10-11,49,47,4.0,500,lv,
+ME,InsiderAdvantage,2026-10-14,49,47,4,1200,lv,
+MI,"Glengariff Group, Inc.",2025-05-08,45.1,39.1,15.8,600,rv,
+MI,"Normington, Petts & Associates",2025-06-16,47,45,8.0,700,lv,DEM
+MI,EPIC-MRA,2025-11-11,43,42,15.0,600,lv,
+MI,Mitchell Research & Communications,2025-11-21,40,42,18.0,616,lv,
+MI,"Glengariff Group, Inc.",2026-01-06,41.6,48,10.4,600,lv,
+MI,Emerson College,2026-01-25,42.5,42.8,14.7,1000,lv,
+MI,"Glengariff Group, Inc.",2026-05-01,41.5,43.8,14.7,600,lv,
+MI,Mitchell Research & Communications,2026-05-07,41,42,17.0,607,lv,
+MI,TIPP Insights,2026-05-23,45.16,41.6,8.4,1163,lv,REP
+MI,Tulchin Research,2026-06-04,46,41,13.0,500,lv,DEM
+MI,Mitchell Research & Communications,2026-06-13,47,42,11.0,827,lv,
+MI,Zenith Research,2026-06-14,43,42,15,602,lv,DEM
+MI,Data for Progress,2026-06-22,45,46,9.0,709,lv,DEM
+MI,Wedgewood Polls,2026-06-28,41,48,11.0,602,lv,
+MI,Quantus Insights,2026-06-30,45.1,43.7,8.4,947,lv,
+MI,"Glengariff Group, Inc.",2026-07-24,38.7,49,10.7,600,lv,
+MI,SoCal Strategies,2026-07-30,44,40,16,640,lv,REP
+MI,EPIC-MRA,2026-07-31,43,46,11,600,lv,
+MI,TIPP Insights,2026-08-10,45.44,42.27,5.7,1215,lv,REP
+MI,GBAO,2026-08-10,50,44,6,800,lv,DEM
+MI,Beacon Research/Shaw & Company Research,2026-08-10,47,51,2.0,1006,rv,
+MI,Fabrizio Ward/Impact Research,2026-08-11,48,47,5.0,877,lv,
+MI,"Susquehanna Polling & Research, Inc.",2026-08-17,46,39,11.0,800,rv,
+MI,Michigan State University Institute for Public Policy and Social Research/YouGov,2026-08-20,50,45,5,779,lv,
+MI,Abacus Data,2026-08-28,47,42,5.0,332,lv,
+MI,EPIC-MRA,2026-08-28,47,43,10.0,600,lv,
+MI,"Glengariff Group, Inc.",2026-09-03,44.4,45.8,9.8,600,lv,
+MI,CNN/SSRS,2026-09-06,47,44,1,843,lv,
+MI,Trafalgar Group,2026-09-09,46.3,44.8,6.8,1079,lv,REP
+MI,The Washington Post/George Mason University Schar School of Policy and Government,2026-09-14,48,45,2.0,803,lv,
+MI,Emerson College,2026-09-14,48.19,45.72,4.4,1000,lv,
+MI,InsiderAdvantage,2026-09-17,46.6,44.7,5.4,1200,lv,
+MI,Torchlight Strategies,2026-09-19,43.1,44.4,8.6,643,lv,REP
+MI,Suffolk University,2026-09-20,46.8,39.6,11.0,500,lv,
+MI,Cygnal/Beacon Research,2026-09-21,45,40,14,600,lv,
+MI,GBAO,2026-09-22,48,44,8,800,lv,DEM
+MI,The New York Times/Siena University,2026-09-22,49.45,44.5,5.2,605,lv,
+MI,co/efficient,2026-09-23,47,46,7.0,843,lv,
+MI,Big Data Poll,2026-09-24,46.7,42.1,11.2,678,lv,
+MI,The Tyson Group,2026-09-27,44,43,13,600,lv,REP
+MI,Guidant Polling and Strategy,2026-09-27,49,45,6,800,lv,OTH
+MI,Marist University,2026-09-27,51,44,4.0,1235,rv,
+MI,Beacon Research/Shaw & Company Research,2026-09-28,50,49,1.0,1028,lv,
+MI,Trafalgar Group,2026-09-30,46.9,45.1,5.1,1085,lv,REP
+MI,Z to A Research,2026-10-01,49,42,4,483,lv,DEM
+MI,Mitchell Research & Communications,2026-10-01,45.6,41.4,6.0,682,lv,
+MI,YouGov,2026-10-04,49,48,2.0,3947,lv,
+MI,Quantus Insights,2026-10-06,48.4,47.2,2.7,744,lv,
+MI,The Tyson Group,2026-10-08,44,46,10,600,lv,REP
+MI,Wedgewood Polls,2026-10-09,53,47,0.0,607,lv,
+MI,InsiderAdvantage,2026-10-10,47.8,45.5,5.4,1200,lv,
+MN,Impact Research,2025-07-11,48,45,7.0,604,lv,DEM
+MN,Public Policy Polling,2025-09-16,47,43,10,1015,lv,
+MN,Emerson College,2026-02-08,46.6,40.2,8.8,1000,lv,
+MN,Impact Research,2026-05-28,51,44,5,808,lv,DEM
+MN,"Mason-Dixon Polling & Research, Inc.",2026-06-10,49,41,9.0,800,lv,
+MN,SurveyUSA,2026-08-17,46,41,11.0,661,lv,
+MN,TIPP Insights,2026-09-02,43.96,41.86,8.0,1192,lv,REP
+MN,Quantus Insights,2026-09-10,48.9,45.4,2.7,720,lv,
+MN,SurveyUSA,2026-09-14,42,42,12.0,654,lv,
+MN,co/efficient,2026-09-15,46,47,7.0,833,lv,
+MN,InsiderAdvantage,2026-09-29,46,45,6.0,1200,lv,
+MN,Big Data Poll,2026-09-30,45.8,43.6,0.0,622,lv,
+MN,GQR,2026-10-04,53,44,3,800,lv,DEM
+MN,"Mason-Dixon Polling & Research, Inc.",2026-10-07,47,43,9.4,800,lv,
+MN,Morning Consult,2026-10-07,45,41,12.0,1000,rv,
+MN,SurveyUSA,2026-10-12,45,42,9.0,718,lv,
+MN,Trafalgar Group,2026-10-15,48.1,44.6,5.4,1079,lv,REP
+MS,Impact Research,2025-06-22,46,38,16.0,500,lv,DEM
+MS,Impact Research,2026-04-12,39,42,14.0,500,lv,DEM
+MS,Data for Progress,2026-08-15,41,47,12.0,1018,lv,DEM
+MS,Wedgewood Polls,2026-10-14,48,52,0.0,511,lv,
+MT,yes. every kid. foundation.,2026-01-26,19,43,20.0,500,rv,
+MT,American Pulse Research & Polling,2026-02-18,40,53.9,6.1,607,lv,
+MT,Change Research,2026-03-20,35.06,36.84,25.9,616,lv,IND
+MT,Tavern Research,2026-05-18,44,56,0.0,607,lv,IND
+MT,Public Opinion Strategies,2026-06-11,25,44,7.0,500,lv,REP
+MT,Hart Research Associates,2026-06-24,43,49,8,800,lv,DEM
+MT,GrayHouse,2026-06-24,25,41,13.0,500,lv,
+MT,The Bullfinch Group,2026-07-16,22,36,17.0,793,lv,IND
+MT,GQR,2026-07-26,50,44,6,500,lv,IND
+MT,Hart Research Associates,2026-08-04,38,52,10,800,lv,IND
+MT,Peak Insights,2026-08-25,19,44,12.0,600,lv,REP
+MT,Rutgers-Eagleton,2026-09-07,16,38,0.0,845,rv,
+MT,Aspect Strategic,2026-09-15,14,44,7.0,715,lv,IND
+MT,Quantus Insights,2026-09-15,24.4,45.3,2.5,625,lv,
+MT,American Pulse Research & Polling,2026-09-24,18.9,45.1,7.2,604,lv,
+MT,Peak Insights,2026-10-12,12,44,10.0,500,lv,REP
+NC,Public Policy Polling,2025-03-05,47,43,10,662,rv,
+NC,Change Research,2025-04-04,48,45,5.0,867,lv,DEM
+NC,Victory Insights,2025-07-30,44.4,43.5,12.2,600,lv,
+NC,Emerson College,2025-07-30,46.7,41.4,11.9,1000,rv,
+NC,Harper Polling,2025-08-12,47.3,39.1,9.8,600,lv,
+NC,Change Research,2025-09-08,48,41,9.0,855,lv,DEM
+NC,Harper Polling,2025-09-15,46.1,41.9,8.4,600,lv,
+NC,Harper Polling,2025-11-10,47.3,38.6,10.1,600,lv,
+NC,TIPP Insights,2026-01-15,48.4,24.2,27.4,1512,rv,REP
+NC,Change Research,2026-02-04,50,40,10,1069,rv,DEM
+NC,Public Policy Polling,2026-03-14,47,44,9.0,556,rv,
+NC,YouGov,2026-03-18,48,34,14.0,872,lv,
+NC,Harper Polling,2026-03-23,48.9,41.1,6.1,600,lv,
+NC,Quantus Insights,2026-04-01,48.6,43.8,5.7,987,lv,
+NC,High Point University,2026-04-06,50,42,6.0,703,lv,
+NC,Opinion Diagnostics,2026-04-24,50.4,41.4,8.2,830,rv,
+NC,Opinion Diagnostics,2026-04-24,50.4,41.4,8.2,830,rv,
+NC,Change Research,2026-05-08,49.29,42.42,6.4,957,lv,DEM
+NC,Harper Polling,2026-05-11,49.8,38.7,7.8,600,lv,
+NC,YouGov,2026-06-10,47.73,34.03,15.4,905,lv,
+NC,The New York Times/Siena University,2026-06-27,50,43.19,6.4,601,lv,
+NC,Public Policy Polling,2026-07-11,48,44,8.0,759,rv,
+NC,Beacon Research/Shaw & Company Research,2026-07-27,53,44,3,1005,rv,
+NC,YouGov,2026-07-31,53,42,2.0,466,lv,
+NC,Change Research,2026-08-01,50,41,9,967,rv,DEM
+NC,Change Research,2026-08-06,50.05,42.93,6.2,915,lv,DEM
+NC,Harper Polling,2026-08-10,51.5,39,4.8,600,lv,
+NC,High Point University,2026-08-12,50,45,3.0,660,lv,
+NC,YouGov,2026-08-31,49,38,9,565,lv,
+NC,East Carolina University Center for Survey Research,2026-09-03,51.7,43.6,0.1,675,lv,
+NC,Trafalgar Group,2026-09-10,48.2,42.3,6.9,1084,lv,REP
+NC,YouGov,2026-09-15,48,37,10.0,885,lv,
+NC,Harper Polling,2026-09-15,49.2,34.1,12.3,608,lv,
+NC,High Point University,2026-09-16,50,42,5.0,706,lv,
+NC,InsiderAdvantage,2026-09-17,48.4,42.5,6.4,1200,lv,
+NC,YouGov,2026-09-18,53,41,5,3742,lv,
+NC,Fabrizio Ward/Impact Research,2026-09-20,53,42,5.0,1115,lv,
+NC,Opinion Diagnostics,2026-09-20,51.7,43.5,4.8,857,lv,
+NC,Quantus Insights,2026-09-22,48.4,43.3,3.8,686,lv,
+NC,Big Data Poll,2026-09-29,50.8,38.5,0.0,642,lv,
+NC,East Carolina University Center for Survey Research,2026-10-03,50,43,6.0,810,lv,
+NC,Change Research,2026-10-07,50,40,5.0,829,lv,DEM
+NC,Trafalgar Group,2026-10-10,48.8,40.9,6.9,1091,lv,REP
+NC,SurveyUSA,2026-10-11,54,40,5.0,643,lv,
+NE,Change Research,2025-04-01,45,46,8.0,524,lv,DEM
+NE,Impact Research,2026-02-05,47,48,5,600,lv,DEM
+NE,GBAO,2026-04-20,46,45,9,800,lv,IND
+NE,Tavern Research,2026-05-11,34,50,16.0,1165,lv,IND
+NE,GBAO,2026-07-26,47,47,6,800,lv,IND
+NE,Impact Research,2026-08-13,47,47,6,600,lv,DEM
+NE,GBAO,2026-09-08,47,46,7.0,800,lv,IND
+NE,SurveyUSA,2026-09-13,46,42,8,503,lv,
+NE,Wedgewood Polls,2026-09-16,48,52,0.0,500,lv,
+NE,co/efficient,2026-09-30,44,47,9.0,1113,lv,
+NE,YouGov,2026-10-03,48,47,4,1808,lv,
+NH,Praecones Analytica,2025-03-01,58.9,41.1,0.0,626,rv,
+NH,Quantus Insights,2025-03-19,44,53,3.0,650,rv,REP
+NH,1892 Polling,2025-09-04,45,43,12.0,500,lv,REP
+NH,co/efficient,2025-09-12,48,42,10.0,904,lv,
+NH,University of New Hampshire,2025-09-23,49,43,7,1225,lv,
+NH,co/efficient,2025-10-13,49,39,13.0,1034,lv,
+NH,St. Anselm,2025-11-19,44,41,16.0,2212,rv,
+NH,Praecones Analytica,2025-12-28,42.3,35.6,22.1,603,rv,
+NH,University of New Hampshire,2026-01-19,50,45,5.0,2038,lv,
+NH,yes. every kid. foundation.,2026-01-29,45,41,10.0,563,lv,
+NH,St. Anselm,2026-03-18,46,43,11.0,1491,rv,
+NH,Emerson College,2026-03-23,47.8,39.3,7.1,1100,lv,
+NH,University of New Hampshire,2026-06-23,47,44,7.0,2157,lv,
+NH,St. Anselm,2026-06-25,47,41,12.0,1614,rv,
+NH,Peak Insights,2026-06-27,43,42,15.0,500,lv,REP
+NH,St. Anselm,2026-08-18,48,41,11.0,1411,lv,
+NH,University of New Hampshire,2026-08-24,45,40,10.0,1846,lv,
+NH,"Fabrizio, Lee & Associates",2026-08-30,36,37,24,600,lv,REP
+NH,co/efficient,2026-09-11,46,46,8.0,958,lv,
+NH,InsiderAdvantage,2026-09-17,47.8,39.9,9.1,1200,lv,
+NH,University of New Hampshire,2026-09-21,50,42,5,1392,lv,
+NH,The New York Times/Siena University,2026-09-22,49.82,44.82,4.5,613,lv,
+NH,Trafalgar Group,2026-09-27,47.4,40.5,11.0,1082,lv,REP
+NH,St. Anselm,2026-09-29,51,44,2,1042,lv,
+NH,YouGov,2026-10-05,51,43,5,1519,lv,
+NM,Research & Polling Inc.,2026-08-28,53,38,9.0,516,lv,
+NM,SurveyUSA,2026-09-30,54,36,10.0,567,lv,
+NM,Research & Polling Inc.,2026-10-09,53,37,10.0,1125,lv,
+OH,Bowling Green State University Democracy and Public Policy Research Network/YouGov,2025-02-21,38,45,17.0,800,rv,
+OH,Bowling Green State University Democracy and Public Policy Research Network/YouGov,2025-04-24,44,50,0.0,800,rv,
+OH,Emerson College,2025-08-19,43.7,49.5,6.8,1000,rv,
+OH,Bowling Green State University Democracy and Public Policy Research Network/YouGov,2025-10-14,49,48,0.0,800,rv,
+OH,Emerson College,2025-12-08,46.3,48.8,4.9,850,rv,
+OH,EMC Research,2026-02-22,51,47,2,1343,lv,DEM
+OH,OnMessage Inc.,2026-03-08,47,45,8.0,600,lv,
+OH,Quantus Insights,2026-03-14,44.4,45.5,6.5,784,lv,
+OH,Echelon Insights,2026-04-09,45,51,4.0,413,lv,
+OH,Bowling Green State University Democracy and Public Policy Research Network/YouGov,2026-04-14,47,50,0.0,1000,rv,
+OH,Beacon Research/Shaw & Company Research,2026-06-01,53,45,2,1015,rv,
+OH,Tulchin Research,2026-06-04,46,42,8,600,lv,DEM
+OH,Fabrizio Ward/Impact Research,2026-06-16,48,45,7.0,800,lv,
+OH,The New York Times/Siena University,2026-06-28,47,49.8,3.0,601,lv,
+OH,Tulchin Research,2026-08-04,47,43,6.0,600,lv,DEM
+OH,Beacon Research/Shaw & Company Research,2026-08-10,53,45,2.0,1008,rv,
+OH,Wedgewood Polls,2026-08-13,48,44,8.0,800,lv,
+OH,Abacus Data,2026-08-28,46,41,11.0,306,lv,
+OH,InsiderAdvantage,2026-09-09,47.3,41.9,8.2,1200,lv,
+OH,YouGov,2026-09-10,48,45,0.0,1000,lv,
+OH,Trafalgar Group,2026-09-16,45.4,41.5,7.1,1085,lv,REP
+OH,Quantus Insights,2026-09-23,47.6,47.2,3.5,695,lv,
+OH,Big Data Poll,2026-09-27,46.3,42.6,11.1,680,lv,
+OH,Suffolk University,2026-09-27,46.6,44,6.4,500,lv,
+OH,Marist University,2026-09-27,51,43,5.0,1298,rv,
+OH,InsiderAdvantage,2026-09-29,43.8,42.5,7.4,1200,lv,
+OH,YouGov,2026-09-30,49,45,4.0,3777,lv,
+OH,The New York Times/Siena University,2026-10-01,48.76,46.09,5.0,616,lv,
+OH,CNN/SSRS,2026-10-05,49,43,1.0,760,lv,
+OH,co/efficient,2026-10-06,45,46,9.0,925,lv,
+OH,Bowling Green State University Democracy and Public Policy Research Network/YouGov,2026-10-09,48,42,0.0,1000,lv,
+OK,Cole Hargrave,2026-08-06,27,48,15,500,rv,
+RI,University of New Hampshire,2026-04-20,52,34,12.0,556,lv,
+RI,University of New Hampshire,2026-06-23,52,35,12.0,627,lv,
+RI,University of New Hampshire,2026-09-21,53,33,8.0,595,lv,
+RI,Emerson College,2026-10-11,59.13,25.44,8.6,800,lv,
+SC,Public Policy Polling,2025-11-22,36,42,22,704,rv,DEM
+SC,Impact Research,2026-03-01,42,47,11.0,700,lv,DEM
+SC,Impact Research,2026-06-22,45,48,7.0,700,lv,DEM
+SC,Public Policy Polling,2026-07-17,42,36,22.0,577,rv,DEM
+SC,Impact Research,2026-08-24,41,41,13.0,700,lv,DEM
+SC,Abacus Data,2026-08-28,38,51,8.0,306,lv,
+SC,InsiderAdvantage,2026-09-09,43.2,45.1,8.5,1200,lv,
+SC,Trafalgar Group,2026-09-25,42.3,43.4,8.5,1087,lv,REP
+SC,InsiderAdvantage,2026-09-29,45,46,4.0,1200,lv,
+SD,Public Policy Polling,2025-07-31,28,41,31.0,552,rv,IND
+SD,Public Policy Polling,2025-11-14,31,44,25.0,814,rv,IND
+SD,Public Policy Polling,2026-02-18,32,49,19.0,685,rv,IND
+SD,Public Policy Polling,2026-05-30,18,43,16.0,726,rv,IND
+SD,Public Opinion Strategies,2026-07-09,33,56,11,500,lv,REP
+SD,Impact Research,2026-08-17,44,44,12.0,500,lv,IND
+SD,Lake Research Partners,2026-08-30,51,41,8,500,lv,DEM
+SD,Public Policy Polling,2026-09-09,42,45,13.0,629,rv,IND
+SD,Zenith Research,2026-09-27,47,53,0.0,500,lv,IND
+TN,Targoz Market Research,2026-08-26,33,58,4.0,607,lv,
+TX,Barbara Jordan Public Policy Research and Survey Center,2025-05-19,46,48,6,1200,rv,
+TX,Emerson College,2025-08-12,40.6,45.9,13.6,1000,rv,
+TX,GBAO,2025-08-18,49,47,4.0,800,lv,DEM
+TX,Slingshot Strategies,2025-08-29,43,48,0.0,843,rv,
+TX,University of Texas at Tyler Center for Opinion Research,2025-09-24,37,38,20.0,1032,rv,
+TX,University of Houston Hobby School of Public Affairs/Texas Southern University School of Public Affairs,2025-10-01,47,48,5.0,1183,lv,
+TX,Cygnal Political,2025-10-06,40,47,13,600,lv,
+TX,Ragnar Research Partners,2025-11-17,44,44,13.0,1000,lv,
+TX,Change Research,2025-11-26,42,50,6.0,1189,rv,DEM
+TX,Emerson College,2026-01-12,43.6,47.1,9.3,1165,rv,
+TX,University of Houston Hobby School of Public Affairs,2026-01-31,42,46,9.0,1502,lv,
+TX,Hart Research Associates,2026-02-12,49,45,6.0,803,lv,DEM
+TX,Public Policy Polling,2026-03-05,47,45,8,576,rv,DEM
+TX,YouGov,2026-04-20,42,34,19.0,1200,rv,
+TX,Slingshot Strategies,2026-04-20,46,41,9.0,1018,lv,
+TX,Barbara Jordan Public Policy Research and Survey Center,2026-05-06,45,45,8.0,1223,lv,
+TX,Public Policy Polling,2026-05-23,45,38,14.0,643,rv,DEM
+TX,Slingshot Strategies,2026-05-28,47,44,7.0,1670,lv,
+TX,ReconMR/Siena Research Institute,2026-06-04,46,46,5.0,807,lv,
+TX,Quantus Insights,2026-06-04,43,45,8,800,lv,
+TX,YouGov,2026-06-12,42,43,10.0,1200,rv,
+TX,SoCal Strategies,2026-06-21,47.05,48.53,4.4,800,lv,REP
+TX,The New York Times/Siena University,2026-06-27,46.57,46.67,5.8,656,lv,
+TX,A2 Insights,2026-06-28,48.4,46.1,2.5,618,lv,
+TX,Slingshot Strategies,2026-07-17,45,40,14.0,1048,lv,
+TX,Beacon Research/Shaw & Company Research,2026-07-27,51,48,1.0,1006,rv,
+TX,ReconMR/Siena Research Institute,2026-07-30,47,43,6.0,619,lv,
+TX,Barbara Jordan Public Policy Research and Survey Center,2026-07-30,47,45,6.0,1200,lv,
+TX,YouGov Blue,2026-07-31,48,45,7,1001,lv,
+TX,Wedgewood Polls,2026-07-31,48,46,6.0,800,lv,
+TX,Emerson College,2026-08-10,46.25,47.25,4.5,1000,lv,
+TX,YouGov,2026-08-13,42,39,15,1200,rv,
+TX,Slingshot Strategies,2026-08-24,48,42,8,1000,lv,
+TX,Overton Insights,2026-08-26,50,50,0.0,1167,lv,
+TX,Fabrizio Ward/Impact Research,2026-09-01,48,44,8.0,895,lv,
+TX,YouGov,2026-09-04,48,43,8,1000,rv,
+TX,InsiderAdvantage,2026-09-09,47.1,45.6,5.1,1200,lv,
+TX,"Mason-Dixon Polling & Research, Inc.",2026-09-10,46,43,8.0,625,lv,
+TX,ReconMR/Siena Research Institute,2026-09-11,49,43,4.0,614,lv,
+TX,SoCal Strategies,2026-09-13,50,45,5.0,649,lv,
+TX,Emerson College,2026-09-14,47.35,46.35,4.4,1000,lv,
+TX,Trafalgar Group,2026-09-17,46.4,45.2,5.9,1079,lv,REP
+TX,Barbara Jordan Public Policy Research and Survey Center,2026-09-19,47,46,4.0,1800,lv,
+TX,Marist University,2026-09-20,50,44,4.0,1139,rv,
+TX,Slingshot Strategies,2026-09-22,49,44,3.0,1007,lv,
+TX,Stratus Intelligence,2026-09-24,48,48,4.0,865,lv,REP
+TX,Big Data Poll,2026-09-26,46.8,44.9,0.0,698,lv,
+TX,Pulse Decision Science,2026-09-27,45,48,7,800,lv,REP
+TX,University of Massachusetts Lowell Center for Public Opinion/YouGov,2026-09-28,45,45,7.0,850,lv,
+TX,Guidant Polling and Strategy,2026-09-28,47,44,5.0,800,lv,OTH
+TX,Beacon Research/Shaw & Company Research,2026-09-28,51,49,1.0,881,lv,
+TX,The New York Times/Siena University,2026-09-30,50.8,45.09,4.1,615,lv,
+TX,YouGov,2026-10-05,50,47,0.0,861,lv,
+TX,YouGov,2026-10-05,50,44,3.0,3623,lv,
+TX,ReconMR/Siena Research Institute,2026-10-08,48,44,5.0,617,lv,
+TX,Trafalgar Group,2026-10-08,47.1,43.6,7.6,1086,lv,REP
+TX,Marist University,2026-10-11,47,45,6.0,1196,lv,
+TX,Quantus Insights,2026-10-11,46.7,47.2,3.9,854,lv,
+TX,InsiderAdvantage,2026-10-14,48,49,3,1200,lv,
+TX,ActiVote,2026-10-14,51.9,48.1,0.0,400,lv,
+VA,Responsive Management,2025-01-15,45,38,17,806,a,
