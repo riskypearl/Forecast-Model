@@ -150,7 +150,7 @@ def demographic_adjustment(state, demographics):
 # STEP 3: polling average - newer and bigger polls count for more
 # ---------------------------------------------------------------------------
 
-def polling_average(polls, pollster_weights, half_life=POLL_HALF_LIFE_DAYS):
+def polling_average(polls, pollster_weights, half_life=POLL_HALF_LIFE_DAYS, as_of=None):
     """
     Returns (average margin, effective number of polls). Old polls barely
     count, so a race with 20 polls from last year and none this month has an
@@ -162,7 +162,7 @@ def polling_average(polls, pollster_weights, half_life=POLL_HALF_LIFE_DAYS):
     total_weight = 0.0
     effective_polls = 0.0
     for poll in polls:
-        age_days = (TODAY - date.fromisoformat(poll["end_date"])).days
+        age_days = ((as_of or TODAY) - date.fromisoformat(poll["end_date"])).days
         recency = 0.5 ** (age_days / half_life)
         quality = pollster_weight(poll["pollster"], pollster_weights)
         quality *= POPULATION_WEIGHT.get(poll.get("population", "lv"), 0.8)
@@ -247,18 +247,20 @@ def poll_weight(num_polls):
 # STEP 4: rating from win probability
 # ---------------------------------------------------------------------------
 
-def state_error_sd(poll_weight_used):
+def state_error_sd(poll_weight_used, days_left=None):
     """
     How uncertain one race is. Slides from the unpolled SD to the polled SD
     as the polls get more weight, then widens with days left.
     """
     polled_share = poll_weight_used / MAX_POLL_WEIGHT
     base = STATE_ERROR_SD_UNPOLLED + (STATE_ERROR_SD_POLLED - STATE_ERROR_SD_UNPOLLED) * polled_share
-    return math.sqrt(base ** 2 + (STATE_SD_PER_DAY * DAYS_LEFT) ** 2)
+    days = DAYS_LEFT if days_left is None else days_left
+    return math.sqrt(base ** 2 + (STATE_SD_PER_DAY * days) ** 2)
 
 
-def national_error_sd():
-    return math.sqrt(NATIONAL_ERROR_SD ** 2 + (NATIONAL_SD_PER_DAY * DAYS_LEFT) ** 2)
+def national_error_sd(days_left=None):
+    days = DAYS_LEFT if days_left is None else days_left
+    return math.sqrt(NATIONAL_ERROR_SD ** 2 + (NATIONAL_SD_PER_DAY * days) ** 2)
 
 
 def fat_tailed_error(sd):
@@ -290,8 +292,20 @@ def load_csv(path):
 
 
 def national_environment(pollster_weights):
+    """Generic-ballot average from data/gcb_polls.csv (see generic_ballot_average)."""
+    if NATIONAL_ENVIRONMENT is not None:
+        return NATIONAL_ENVIRONMENT
+    try:
+        rows = load_csv("data/gcb_polls.csv")
+    except FileNotFoundError:
+        print("No data/gcb_polls.csv - assuming an even national environment (D+0).")
+        return 0.0
+    return generic_ballot_average(rows, pollster_weights, TODAY)
+
+
+def generic_ballot_average(rows, pollster_weights, as_of):
     """
-    Generic-ballot average from data/gcb_polls.csv.
+    Rows need: pollster, end_date, dem, rep, n, and optionally population, lean.
 
     1. Undecided voters split evenly nationally, so each poll's margin is
        scaled up as if everyone had decided (a 44-36 poll counts as 55-45).
@@ -300,17 +314,9 @@ def national_environment(pollster_weights):
        that usually runs 4 points more Republican and shows D+5 counts as D+9.
     3. Every non-banned pollster is then averaged, weighted by quality.
     """
-    if NATIONAL_ENVIRONMENT is not None:
-        return NATIONAL_ENVIRONMENT
-    try:
-        rows = load_csv("data/gcb_polls.csv")
-    except FileNotFoundError:
-        print("No data/gcb_polls.csv - assuming an even national environment (D+0).")
-        return 0.0
-
     polls = []
     for r in rows:
-        if date.fromisoformat(r["end_date"]) > TODAY:
+        if date.fromisoformat(r["end_date"]) > as_of:
             continue
         dem, rep = float(r["dem"]), float(r["rep"])
         lean = r.get("lean", "").upper()
@@ -335,7 +341,7 @@ def national_environment(pollster_weights):
     for p in polls:
         corrected = p["margin"] - effects.get(p["pollster"], 0.0)
         p["dem_pct"], p["rep_pct"] = 50 + corrected / 2, 50 - corrected / 2
-    average, _ = polling_average(polls, pollster_weights, GCB_HALF_LIFE_DAYS)
+    average, _ = polling_average(polls, pollster_weights, GCB_HALF_LIFE_DAYS, as_of)
     return 0.0 if average is None else average
 
 

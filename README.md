@@ -58,6 +58,26 @@ including blowouts against unknown opponents - the adjustment made predictions *
 All five 2026 adjustments (Collins, Osborn, Paxton, Brown, Peltola) come from competitive
 races in the last 12 years.
 
+## Full-model backtest
+
+`backtest_full.py` runs the whole model (generic ballot, polls, fundamentals, blend,
+uncertainty) on every Senate race from 2012 to 2022, as of the day before each election,
+using FiveThirtyEight's historical polls.
+
+| 203 races, 2012-2022 | Avg miss | Winners right |
+|---|---|---|
+| Fundamentals only | 7.5 pts | 174 |
+| Full model | 6.4 pts | 184 (91%) |
+
+**Calibration:** favourites given 80-95% won 39 of 44 races (39.0 expected); favourites
+given 95%+ won 124 of 125 (123.4 expected). The model's probabilities are honest.
+
+**Poll weight:** relying more heavily on polls fitted 2012-2018 best but did *worse* on
+2020-2022, when polls missed badly. The model's hedge towards fundamentals was kept.
+
+**Generic-ballot bias:** final generic-ballot polls overstated Democrats in 5 of 6 cycles,
+by 3.2 points on average (2.4 in midterm years).
+
 ## Data sources
 
 - Polls: New York Times poll database via [PollResults.org](https://pollresults.org/) (CC BY 4.0)
@@ -66,4 +86,5 @@ races in the last 12 years.
 - Pollster ratings: ElectIndex
 - Presidential results: state results 2016-2024
 - Backtest: MIT Election Data + Science Lab, U.S. Senate and U.S. President 1976-2024 (CC0)
+- Historical polls: FiveThirtyEight `raw_polls.csv` (github.com/fivethirtyeight/data, CC BY 4.0)
 - Methodology inspired by the ElectIndex 2026 forecast's published methodology
