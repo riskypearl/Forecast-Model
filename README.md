@@ -13,7 +13,7 @@ probabilities and a chance of chamber control.
    from the 2024, 2020 and 2016 presidential results (weighted 75 / 17.5 / 7.5%).
 2. **Fundamentals:** lean + national environment (generic ballot) + incumbency +
    candidate quality + a demographic adjustment (groups that swung hard in 2024 are
-   assumed to partly swing back).
+   assumed to partly swing back). Appointed incumbents get half the incumbency bonus.
 3. **Polling average:** undecided voters are allocated the way the state usually votes
    ("coming home"); polls are then recency-, sample-size- and quality-weighted;
    partisan-sponsored polls count for half; pollster house effects are estimated and removed.
