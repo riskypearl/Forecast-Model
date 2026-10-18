@@ -27,6 +27,9 @@ function Step($name, [scriptblock]$command) {
 "`n===== $(Get-Date -Format 'yyyy-MM-dd HH:mm') =====" | Out-File -Append -Encoding utf8 $log
 Step "fetch polls" { & $python fetch_polls.py }
 Step "forecast" { & $python forecast.py }
+if (Test-Path "data\electindex\races.csv") {
+    Step "house forecast" { & $python house_forecast.py }
+}
 Step "git add" { & $git add -A }
 & $git diff --cached --quiet
 if ($LASTEXITCODE -eq 0) {

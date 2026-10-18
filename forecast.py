@@ -349,6 +349,11 @@ def rating(dem_win_prob):
 # Run the model
 # ---------------------------------------------------------------------------
 
+def load_csv_utf8(path):
+    with open(path, newline="", encoding="utf-8") as f:
+        return list(csv.DictReader(f))
+
+
 def load_csv(path):
     with open(path, newline="") as f:
         return list(csv.DictReader(f))

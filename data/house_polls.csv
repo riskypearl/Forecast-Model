@@ -1,0 +1,257 @@
+district,pollster,end_date,dem_pct,rep_pct,undecided,sample_size,population,partisan
+AK-01,Data for Progress,2025-03-07,46,46,3.0,1008,lv,
+AK-01,Data for Progress,2025-07-27,38,48,14,678,lv,
+AK-01,Data for Progress,2025-10-23,37,48,7.0,823,lv,
+AK-01,Public Policy Polling,2026-02-12,39,46,15.0,600,lv,IND
+AK-01,Change Research,2026-03-20,17.38,44.78,17.8,624,lv,IND
+AK-01,Tavern Research,2026-05-27,45,55,0.0,452,lv,IND
+AK-01,The New York Times/Siena University,2026-06-29,39.16,51.14,8.6,593,lv,
+AK-01,The Bullfinch Group,2026-07-16,32,46,0.0,546,lv,IND
+AK-01,Data for Progress,2026-08-04,37,47,4.0,605,lv,
+AK-01,GBAO,2026-08-05,42,46,12,500,lv,IND
+AK-01,Alaska Survey Research,2026-08-05,15.2,50.4,0.0,1371,lv,
+AK-01,Alaska Survey Research,2026-08-23,5.7,50.6,0.0,1872,lv,
+AK-01,The Bullfinch Group,2026-09-06,7.4,44.2,9.9,820,lv,IND
+AK-01,Fabrizio Ward/Impact Research,2026-09-11,43,57,0.0,800,lv,
+AK-01,The New York Times/Siena University,2026-10-01,8.19,46.59,4.7,504,lv,
+AK-01,Alaska Survey Research,2026-10-03,47.3,52.7,0.0,1512,lv,
+AL-02,Impact Research,2026-06-25,44,45,11,400,lv,DEM
+AL-02,DCCC Targeting Team,2026-07-30,46,46,8.0,421,lv,DEM
+AL-02,Tulchin Research,2026-08-31,47,47,6,600,lv,DEM
+AR-02,2040 Strategy Group,2026-05-08,46,43,11,600,lv,DEM
+AR-02,Hendrix College,2026-08-12,48,44,8.0,1112,lv,
+AZ-01,Clarity Campaign Labs,2025-11-05,45,46,9,676,lv,DEM
+AZ-01,GrayHouse,2025-11-17,43,40,17.0,500,lv,
+AZ-01,FirstStrategic Communications and Public Affairs,2026-10-01,44.4,41.6,14.0,400,rv,
+AZ-02,GBAO,2026-06-15,41,44,9.0,500,lv,DEM
+AZ-02,GBAO,2026-08-24,44,46,10.0,500,lv,DEM
+AZ-06,Public Policy Polling,2025-10-15,42,41,17.0,581,rv,DEM
+AZ-06,Ragnar Research Partners,2026-03-14,47,44,9.0,400,lv,REP
+AZ-06,"Normington, Petts & Associates",2026-06-11,47,45,8,500,lv,DEM
+CA-22,Tulchin Research,2026-06-21,48,44,8,800,lv,DEM
+CA-48,Blueprint Polling,2025-10-26,43,40,17,517,lv,DEM
+CA-48,Lake Research Partners,2026-07-14,48,46,6.0,500,lv,DEM
+CA-48,SurveyUSA,2026-09-01,45,42,13.0,522,lv,
+CA-48,SurveyUSA,2026-10-07,47,38,15.0,518,lv,
+CO-03,Expedition Strategies,2026-01-12,39,48,13,400,lv,DEM
+CO-03,Ragnar Research Partners,2026-03-12,41,46,13.0,400,lv,REP
+CO-03,"Keating Research, Inc.",2026-07-23,45,46,9.0,500,lv,DEM
+CO-04,Impact Research,2026-09-24,40,45,6.0,403,lv,OTH
+CO-05,Global Strategy Group,2025-11-03,40,43,13.0,450,lv,DEM
+CO-05,Global Strategy Group,2026-07-21,44,45,11.0,450,lv,DEM
+CO-08,McLaughlin & Associates,2026-09-17,46.6,47,6.4,400,lv,REP
+FL-02,Patriot Polling,2026-07-26,39.1,58.5,2.4,922,lv,REP
+FL-07,Public Policy Polling,2026-05-21,41,39,20,570,rv,DEM
+FL-08,Public Policy Polling,2026-07-18,35,44,21.0,633,rv,DEM
+FL-09,SEA Polling,2026-08-30,41,41,18.0,400,lv,DEM
+FL-13,Public Policy Polling,2026-05-20,39,41,20,616,rv,DEM
+FL-13,"Fabrizio, Lee & Associates",2026-08-06,41,49,10,400,lv,REP
+FL-13,GQR,2026-08-06,44,47,6.0,500,lv,DEM
+FL-13,Hart Research Associates,2026-08-27,49,44,7,600,lv,DEM
+FL-16,SEA Polling,2026-08-29,40,39,21.0,400,lv,DEM
+FL-16,Public Policy Polling,2026-10-02,39,43,18,530,rv,DEM
+FL-22,GQR,2026-06-25,45,46,10.0,400,lv,DEM
+FL-22,Tavern Research,2026-08-12,50,50,0.0,551,lv,
+FL-22,Impact Research,2026-08-31,46,46,8,600,lv,DEM
+FL-25,Middle Seat,2026-05-06,43,34,23.0,576,lv,DEM
+FL-27,Bendixen & Amandi International,2026-08-30,45,45,10,600,lv,DEM
+FL-27,Tulchin Research,2026-09-13,46,47,7,600,lv,DEM
+GA-03,VoteNexus,2026-10-07,45,50,5.0,301,lv,DEM
+GA-07,20/20 Insight,2026-08-26,43,46,11.0,445,lv,DEM
+GA-07,20/20 Insight,2026-10-09,47,45,8,457,lv,DEM
+GA-11,Miller Consulting Services,2026-09-11,45,48,8.0,402,lv,DEM
+IA-01,Public Policy Polling,2025-06-19,43,39,18.0,555,rv,DEM
+IA-01,The Bullfinch Group,2026-07-16,40,35,12,705,lv,IND
+IA-02,Public Policy Polling,2026-04-14,36,33,31.0,673,rv,DEM
+IA-02,Global Strategy Group,2026-07-19,46,45,9,600,lv,DEM
+IA-03,Public Policy Polling,2025-09-18,44,44,12.0,717,rv,
+IA-03,Change Research,2025-10-27,45,42,13.0,638,lv,DEM
+IA-03,Ragnar Research Partners,2026-03-14,42,48,10.0,400,lv,REP
+ID-01,SurveyUSA,2026-07-14,35,45,14.0,480,lv,IND
+ID-01,Change Research,2026-07-30,27,48,18.0,600,lv,IND
+IL-04,The Bullfinch Group,2026-08-03,34,15,37.0,653,rv,
+IN-05,Impact Research,2026-07-20,46,48,6,600,lv,DEM
+KY-06,Public Policy Polling,2026-04-25,36,37,27,675,rv,DEM
+KY-06,GQR,2026-06-28,39,42,19.0,600,lv,DEM
+KY-06,DCCC Targeting Team,2026-07-30,47,47,6.0,474,lv,DEM
+KY-06,Lake Research Partners,2026-08-23,45,44,11,600,lv,DEM
+KY-06,GQR,2026-09-30,42,37,10,401,lv,DEM
+KY-06,Lake Research Partners,2026-10-04,48,45,7,400,lv,DEM
+KY-06,DCCC Targeting Team,2026-10-05,46,40,8.0,606,lv,DEM
+KY-06,Change Research,2026-10-05,47,38,8.0,524,lv,DEM
+MD-01,Z to A Research,2026-07-27,39,52,9,482,lv,DEM
+ME-01,University of New Hampshire,2026-09-21,57,35,5.0,657,lv,
+ME-02,Ragnar Research Partners,2025-04-15,43,48,9,400,lv,REP
+ME-02,Mellman Group,2025-06-10,44,43,13,400,lv,DEM
+ME-02,University of New Hampshire,2025-06-23,47,50,2.0,394,a,
+ME-02,University of New Hampshire,2025-10-21,44,49,4,521,lv,
+ME-02,University of New Hampshire,2026-02-16,44,48,6.0,520,lv,
+ME-02,Upswing Research,2026-02-27,45,52,3,403,lv,DEM
+ME-02,co/efficient,2026-04-28,41,48,11.0,918,lv,REP
+ME-02,Pan Atlantic SMS Group,2026-05-18,49,41,10.0,418,lv,DEM
+ME-02,Tulchin Research,2026-07-16,49,48,3.0,600,lv,DEM
+ME-02,DCCC Targeting Team,2026-08-13,48,49,3,621,lv,DEM
+ME-02,Impact Research,2026-09-12,45,49,6,500,lv,DEM
+ME-02,Tulchin Research,2026-09-30,50,48,2.0,500,lv,DEM
+ME-02,Tulchin Research,2026-10-14,50,46,4.0,500,lv,DEM
+MI-04,Public Policy Polling,2025-11-21,42,44,15.0,559,rv,
+MI-04,Ragnar Research Partners,2026-03-14,42,48,10.0,400,lv,REP
+MI-04,GBAO,2026-06-01,48,45,7.0,500,lv,DEM
+MI-04,GBAO,2026-09-16,47,46,7.0,500,lv,DEM
+MI-07,Public Policy Polling,2025-10-28,45,41,14,557,rv,
+MI-07,Public Policy Polling,2026-04-25,46,45,9,519,rv,DEM
+MI-07,Data for Progress,2026-06-30,46,47,7.0,772,lv,DEM
+MI-07,Global Strategy Group,2026-08-13,49,47,4,600,lv,DEM
+MI-10,Public Policy Polling,2026-01-17,41,43,16,592,rv,DEM
+MI-10,Global Strategy Group,2026-08-13,45,45,10,600,lv,DEM
+MN-01,Public Policy Polling,2026-02-03,41,44,15.0,708,rv,DEM
+MN-01,Ragnar Research Partners,2026-03-14,42,52,6.0,400,lv,REP
+MN-01,GBAO,2026-09-21,47,46,7,500,lv,DEM
+MN-01,SurveyUSA,2026-10-12,46,44,10.0,565,lv,
+MN-02,Harper Polling,2026-06-21,45,40,15,415,lv,REP
+MN-02,Impact Research,2026-09-13,52,40,8,500,lv,DEM
+MO-02,Remington,2026-09-15,47,46,7,565,lv,
+MT-01,Tulchin Research,2025-11-25,47,43,10.0,424,lv,DEM
+MT-01,Peak Insights,2026-01-15,38,48,14.0,400,lv,REP
+MT-01,Upswing Research,2026-05-05,43,48,9,401,lv,DEM
+MT-01,Impact Research,2026-06-25,44,44,7,500,lv,DEM
+MT-01,Rutgers-Eagleton,2026-09-07,41,42,10,375,rv,
+MT-01,Public Policy Polling,2026-09-10,44,48,8,536,rv,DEM
+MT-01,Impact Research,2026-09-23,47,44,7.0,500,lv,DEM
+MT-01,American Pulse Research & Polling,2026-09-24,45.4,45.9,3.4,314,lv,
+NC-01,GQR,2026-02-02,43,47,10.0,500,lv,DEM
+NC-01,co/efficient,2026-04-29,41,41,18,842,lv,REP
+NC-01,GQR,2026-06-28,45,41,14,500,lv,DEM
+NC-01,GBAO,2026-09-11,50,43,7,500,lv,DEM
+NC-01,GQR,2026-10-04,47,39,14,500,lv,DEM
+NC-01,Neighborhood Research Corporation,2026-10-06,51,41,8,303,lv,
+NC-01,co/efficient,2026-10-08,42,43,13.0,623,lv,REP
+NC-03,Tulchin Research,2026-08-02,41,44,15,600,lv,DEM
+NC-07,Public Policy Polling,2026-08-20,43,49,8.0,517,rv,DEM
+NC-09,Lake Research Partners,2026-09-03,42,46,12,400,lv,DEM
+NC-10,Ragnar Research Partners,2026-03-12,37,52,11.0,400,lv,REP
+NC-11,Public Policy Polling,2026-09-11,46,50,4,531,rv,DEM
+NC-14,Ragnar Research Partners,2026-03-12,38,47,15.0,400,lv,REP
+NE-01,Zenith Research,2026-05-11,36,44,20,401,rv,IND
+NE-01,Global Strategy Group,2026-09-03,49,45,6,600,lv,DEM
+NE-02,Public Policy Polling,2025-10-23,49,42,9,594,rv,
+NE-02,SurveyUSA,2026-09-13,46,42,9.0,182,lv,
+NH-01,University of New Hampshire,2026-09-21,46,42,12,707,lv,
+NH-02,St. Anselm,2025-08-27,49,31,20.0,881,rv,
+NH-02,University of New Hampshire,2025-09-23,51,39,8.0,508,lv,
+NH-02,St. Anselm,2025-11-19,40,35,25.0,1102,rv,
+NH-02,St. Anselm,2026-03-18,48,36,16.0,739,rv,
+NH-02,St. Anselm,2026-06-25,50,31,19.0,802,rv,
+NH-02,St. Anselm,2026-08-18,50,35,16.0,701,lv,
+NJ-02,Public Policy Polling,2025-05-22,36,46,18.0,505,rv,DEM
+NJ-07,Z to A Research,2026-05-26,47,43,10.0,430,lv,DEM
+NJ-07,StimSight Research,2026-09-12,47,42,10.0,498,lv,
+NM-02,co/efficient,2026-04-28,43,41,16.0,879,lv,REP
+NM-02,SurveyUSA,2026-09-02,46,43,11.0,554,lv,
+NM-02,Research & Polling Inc.,2026-10-09,48,44,8.0,383,lv,
+NV-02,Wedgewood Polls,2026-07-12,48,46,6.0,350,lv,
+NV-02,Strategies 360,2026-08-26,42,45,6.0,400,lv,DEM
+NV-02,GBAO,2026-09-03,38,37,11,500,lv,DEM
+NY-01,Public Policy Polling,2025-12-11,38,41,21,579,rv,DEM
+NY-04,Impact Research,2026-02-17,46,41,10,500,lv,
+NY-17,Impact Research,2026-02-17,44,39,16,500,lv,
+NY-17,FM3 Research,2026-07-01,51,45,4,509,lv,DEM
+NY-17,co/efficient,2026-07-22,45,50,5.0,1292,lv,
+NY-17,Emerson College,2026-09-29,47.9,45.6,6.5,400,lv,
+NY-17,McLaughlin & Associates,2026-09-30,47,50,3.0,400,lv,REP
+NY-18,Impact Research,2026-02-17,42,35,20,500,lv,
+NY-18,Global Strategy Group,2026-07-26,46,41,13,500,lv,DEM
+NY-18,Public Policy Polling,2026-09-30,52,35,13.0,561,rv,DEM
+NY-21,Impact Research,2026-05-31,44,45,11.0,500,lv,DEM
+NY-21,SurveyUSA,2026-08-08,43,39,13.0,612,lv,
+NY-21,J.L. Partners,2026-08-17,40,53,7.0,500,lv,
+NY-21,Impact Research,2026-09-02,44,47,9.0,500,lv,DEM
+NY-21,Public Policy Polling,2026-09-10,40,53,7,557,rv,DEM
+NY-21,Impact Research,2026-10-04,45,48,7,500,lv,DEM
+NY-21,Siena University,2026-10-06,46,42,8.0,496,lv,
+NY-23,Public Policy Polling,2026-09-23,35,52,13,626,lv,DEM
+OH-01,Quantus Insights,2026-08-24,47.9,44.6,5.1,509,lv,
+OH-01,Torchlight Strategies,2026-10-02,45.3,45.3,9.5,400,lv,REP
+OH-07,GBAO,2026-06-20,43,44,13.0,500,lv,DEM
+OH-07,Tavern Research,2026-08-04,50,50,0.0,635,lv,
+OH-07,Bedrock Polling,2026-08-10,43,35,16.0,866,lv,DEM
+OH-09,McLaughlin & Associates,2026-04-20,43,47,7.0,400,lv,REP
+OH-09,DCCC Targeting Team,2026-09-23,48,48,4,481,lv,DEM
+OH-10,FM3 Research,2026-07-12,41,48,11,600,lv,DEM
+OH-10,Global Strategy Group,2026-07-23,42,49,9,700,lv,DEM
+OH-15,Hart Research Associates,2026-06-25,40,45,12,550,lv,DEM
+OH-15,Hart Research Associates,2026-08-09,37,41,12,401,lv,DEM
+OH-15,Hart Research Associates,2026-09-24,48,47,5,500,lv,DEM
+OK-05,GBAO,2026-09-20,43,48,9,500,lv,DEM
+PA-01,Public Policy Polling,2025-10-11,41,41,19.0,585,lv,DEM
+PA-01,Global Strategy Group,2026-03-22,42,48,10,400,lv,DEM
+PA-01,Global Strategy Group,2026-08-09,43,47,10,500,lv,DEM
+PA-01,GQR,2026-08-23,48,49,3,400,lv,DEM
+PA-01,Public Opinion Strategies,2026-09-14,42,51,7,400,rv,REP
+PA-01,Global Strategy Group,2026-10-08,46,46,8.0,1032,lv,DEM
+PA-07,GBAO,2026-07-02,47,43,10,600,lv,DEM
+PA-08,Public Policy Polling,2025-08-28,45,43,13.0,615,rv,DEM
+PA-08,Impact Research,2026-06-11,46,45,9.0,500,lv,DEM
+PA-08,Lake Research Partners,2026-06-23,47,45,8,400,lv,DEM
+PA-10,Public Policy Polling,2025-07-11,46,43,11.0,559,rv,DEM
+PA-10,Public Policy Polling,2025-11-19,48,44,8,549,rv,OTH
+PA-10,"Normington, Petts & Associates",2026-04-23,51,45,4,400,rv,DEM
+PA-10,Franklin & Marshall College,2026-09-20,47,44,9.0,378,rv,
+PA-10,"Susquehanna Polling & Research, Inc.",2026-10-11,49,46,4.0,300,lv,
+RI-02,Emerson College,2026-10-11,55.18,39.12,5.7,406,lv,
+SC-01,Public Policy Polling,2025-12-06,36,39,25,645,lv,DEM
+SC-01,GQR,2026-07-22,48,50,2,600,lv,DEM
+SC-01,Public Policy Polling,2026-09-10,42,48,10,536,rv,DEM
+SC-01,co/efficient,2026-10-01,40,46,10,837,lv,
+SC-07,Blueprint Polling,2026-07-28,36.7,41.1,22.2,557,lv,DEM
+SD-01,Lake Research Partners,2026-08-30,43,47,10,500,lv,DEM
+TN-05,Impact Research,2026-05-13,41,47,12.0,558,lv,DEM
+TN-05,Impact Research,2026-08-24,40,48,11.0,500,lv,DEM
+TN-05,Impact Research,2026-10-01,41,46,13,552,lv,DEM
+TN-09,Hart Research Associates,2026-09-03,44,48,8,400,lv,DEM
+TX-02,Impact Research,2026-10-04,37,46,17,501,lv,DEM
+TX-09,Public Policy Polling,2026-09-19,39,45,16.0,560,rv,DEM
+TX-09,University of Houston Hobby School of Public Affairs,2026-10-07,42,48,10.0,677,lv,
+TX-10,Change Research,2026-09-22,41,48,11.0,613,lv,DEM
+TX-15,Public Policy Polling,2025-09-11,38,41,21.0,533,rv,DEM
+TX-15,Applecart,2026-05-25,48,46,6.0,802,lv,DEM
+TX-15,"Normington, Petts & Associates",2026-07-27,51,45,4,600,lv,DEM
+TX-15,"Normington, Petts & Associates",2026-09-28,51,44,5,400,lv,DEM
+TX-23,Public Policy Polling,2026-03-11,45,47,8.0,521,rv,DEM
+TX-28,Pulse Decision Science,2026-06-23,33,42,16.0,400,lv,REP
+TX-34,co/efficient,2026-04-29,40,41,19,777,lv,REP
+TX-34,Ragnar Research Partners,2026-06-16,41,44,15,400,lv,REP
+TX-34,Barbara Jordan Public Policy Research and Survey Center,2026-08-22,45,42,8.0,700,lv,
+TX-35,"Normington, Petts & Associates",2026-08-31,44,45,11,600,lv,DEM
+UT-01,Lighthouse Research,2026-09-10,62.7,21.2,6.8,515,rv,
+UT-02,Lighthouse Research,2026-09-24,34,39,10.7,515,rv,
+UT-03,Lighthouse Research,2026-09-15,26.4,44.5,15.9,508,rv,
+UT-04,Lighthouse Research,2026-09-17,32.9,41.7,11.9,513,rv,
+VA-01,Public Policy Polling,2025-08-09,47,47,6.0,541,rv,DEM
+VA-01,Ragnar Research Partners,2026-03-12,42,46,13.0,400,lv,REP
+VA-01,DCCC Targeting Team,2026-09-17,46,47,7.0,519,lv,DEM
+VA-01,The Washington Post/George Mason University Schar School of Policy and Government,2026-09-28,50,46,3.0,609,lv,
+VA-02,Tulchin Research,2026-07-13,47,47,6,700,lv,DEM
+VA-02,Christopher Newport University,2026-10-10,46,43,10.0,702,lv,
+VA-05,Expedition Strategies,2026-08-01,44,47,9.0,602,lv,DEM
+VA-05,Expedition Strategies,2026-09-24,48,46,6.0,400,lv,DEM
+VA-06,co/efficient,2026-09-30,29,59,12.0,791,lv,
+VT-01,University of New Hampshire,2026-06-23,57,26,16.0,872,lv,
+VT-01,University of New Hampshire,2026-07-20,63,25,9.0,949,lv,
+VT-01,Braun Research,2026-09-21,46.92,30.25,17.8,732,lv,
+VT-01,University of New Hampshire,2026-09-21,66,30,3.0,830,lv,
+WA-03,co/efficient,2026-04-29,34,41,26.0,982,lv,REP
+WA-03,Emerson College,2026-07-10,42,43,16.0,500,lv,DEM
+WA-03,DHM Research,2026-09-27,47,48,5.0,543,lv,
+WA-05,Tavern Research,2026-05-25,47,53,0.0,578,lv,IND
+WI-01,Ragnar Research Partners,2026-03-16,41,50,9.0,400,lv,REP
+WI-01,Impact Research,2026-08-09,44,44,12,400,lv,DEM
+WI-01,DCCC Targeting Team,2026-09-23,48,48,4,495,lv,DEM
+WI-01,Impact Research,2026-10-01,49,48,3,500,lv,DEM
+WI-03,Public Policy Polling,2025-10-15,44,42,14,609,rv,DEM
+WI-03,Impact Research,2026-02-17,49,48,3.0,500,lv,DEM
+WI-03,Impact Research,2026-05-31,50,46,4,500,lv,DEM
+WI-03,FM3 Research,2026-06-25,50,46,4,535,lv,DEM
+WI-03,FM3 Research,2026-06-25,50,46,4,535,lv,DEM
+WI-06,Change Research,2026-03-20,37.74,41.69,18.2,640,lv,IND
+WI-06,Tavern Research,2026-05-28,39,61,0.0,437,lv,IND

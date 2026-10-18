@@ -158,13 +158,29 @@ def save_generic_ballot():
     Undecided voters are left out: nationally they're assumed to split evenly,
     which leaves the margin unchanged.
     """
-    rows = []
+    rows, district_rows = [], []
     for poll in fetch_all("house"):
-        if poll["state"] != "US" or poll["electionDate"] != ELECTION_DATE:
+        if poll["electionDate"] != ELECTION_DATE or poll["hypothetical"]:
             continue
         q = pick_question(poll)
         sides = two_sides(q["answers"]) if q else None
         if not sides:
+            continue
+        end_date = datetime.strptime(poll["endDate"], "%m/%d/%y").date().isoformat()
+        if poll["state"] != "US":
+            seat = q.get("seatNumber") or ""
+            if seat.isdigit():
+                district_rows.append({
+                    "district": f"{poll['state']}-{int(seat):02d}",
+                    "pollster": poll["displayName"] or poll["pollster"],
+                    "end_date": end_date,
+                    "dem_pct": sides[0],
+                    "rep_pct": sides[1],
+                    "undecided": undecided_share(q["answers"]),
+                    "sample_size": q["sampleSize"] or DEFAULT_SAMPLE_SIZE,
+                    "population": q["population"],
+                    "partisan": poll["partisan"],
+                })
             continue
         rows.append({
             "pollster": poll["displayName"] or poll["pollster"],
@@ -182,6 +198,14 @@ def save_generic_ballot():
         writer.writeheader()
         writer.writerows(rows)
     print(f"Generic ballot: saved {len(rows)} polls.")
+
+    district_rows.sort(key=lambda r: (r["district"], r["end_date"]))
+    with open("data/house_polls.csv", "w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=list(district_rows[0].keys()))
+        writer.writeheader()
+        writer.writerows(district_rows)
+    print(f"House districts: saved {len(district_rows)} polls "
+          f"across {len({r['district'] for r in district_rows})} districts.")
 
 
 if __name__ == "__main__":

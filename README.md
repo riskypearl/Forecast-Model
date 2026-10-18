@@ -48,6 +48,21 @@ Each run writes `results.csv`, a dated copy in `history/`, and a line in
 `update.ps1` does all of it (fetch, forecast, commit, push) and runs automatically every
 2 days until 2 November 2026 via Windows Task Scheduler.
 
+## House forecast
+
+`house_forecast.py` forecasts all 435 districts with the same machinery: district lean
+(2016/2020/2024 presidential results on the **2026 maps**), the same national environment,
+incumbency, district polls (100 districts have them), and the same simulation.
+
+- **House incumbency = 3.7 points**, measured from 2024: incumbent Democrats ran 3.8 points
+  ahead of Harris and incumbent Republicans 3.7 ahead of Trump (states with unchanged maps).
+- Uncontested seats and California same-party top-two races are certain wins.
+- Not yet included: candidate quality, demographic adjustment, backtest.
+
+District results and candidate rosters come from the ElectIndex
+`26_us_forecast_data` repository. It has no licence, so those files are used locally
+(`data/electindex/`, git-ignored) and not republished here.
+
 ## Backtest: does candidate quality help?
 
 `backtest.py` predicts every Senate race from 2018 to 2024 from fundamentals alone (no polls),
