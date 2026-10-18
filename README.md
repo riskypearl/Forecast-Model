@@ -56,8 +56,13 @@ incumbency, district polls (100 districts have them), and the same simulation.
 
 - **House incumbency = 3.7 points**, measured from 2024: incumbent Democrats ran 3.8 points
   ahead of Harris and incumbent Republicans 3.7 ahead of Trump (states with unchanged maps).
+- **Candidate quality**: same rule as the Senate - how far a candidate ran ahead of their
+  district's 2024 presidential vote in a competitive race (within 15), minus incumbency,
+  two-thirds kept. Only where the 2026 lines match 2024. 63 districts get one (e.g.
+  Fitzpatrick -8.8, Miller-Meeks +8.1). Known weakness: the record also reflects the old
+  opponent (AK-01: Begich's 2024 result was against Peltola, who isn't running there now).
 - Uncontested seats and California same-party top-two races are certain wins.
-- Not yet included: candidate quality, demographic adjustment, backtest.
+- Not yet included: demographic adjustment, backtest.
 
 District results and candidate rosters come from the ElectIndex
 `26_us_forecast_data` repository. It has no licence, so those files are used locally

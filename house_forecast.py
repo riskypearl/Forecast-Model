@@ -43,6 +43,87 @@ REGIONS = {
 REGION_OF = {s: region for region, states in REGIONS.items() for s in states}
 
 
+# ---------------------------------------------------------------------------
+# Candidate quality, the House version of the Senate rule (backtest.py):
+# how far a candidate ran ahead of their district's presidential vote in a
+# competitive 2024 race, minus incumbency, two-thirds kept. Only possible
+# where the district's 2026 lines match 2024 (so the presidential result on
+# the 2026 map is the presidential result in the district they ran in).
+# ---------------------------------------------------------------------------
+
+CANDIDATE_SHRINK = 2 / 3
+MAX_PRIOR_MARGIN = 15
+DEM_PARTIES = {"DEMOCRAT", "DEMOCRATIC-FARMER-LABOR", "DEMOCRATIC-NONPARTISAN LEAGUE"}
+
+
+def mit_house_results():
+    """{(year, code): {"dem": (votes, name), "rep": (votes, name), "total": votes}} for 2022 and 2024."""
+    raw = defaultdict(lambda: defaultdict(lambda: [0.0, set()]))
+    totals = {}
+    with open("data/mit/house.csv", encoding="utf-8", errors="replace") as f:
+        for r in csv.DictReader(f):
+            if r["year"] not in ("2022", "2024") or r["stage"].upper() != "GEN" \
+                    or r["special"].upper() == "TRUE" or r["candidate"] in ("", "WRITEIN"):
+                continue
+            num = int(r["district"]) if r["district"].isdigit() else 0
+            key = (int(r["year"]), f"{r['state_po']}-{max(num, 1):02d}")
+            entry = raw[key][r["candidate"]]
+            entry[0] += float(r["candidatevotes"] or 0)
+            entry[1].add(r["party"])
+            totals[key] = float(r["totalvotes"] or 0)
+    out = {}
+    for key, cands in raw.items():
+        dem = max(((v, n) for n, (v, p) in cands.items() if p & DEM_PARTIES), default=(0.0, None))
+        rep = max(((v, n) for n, (v, p) in cands.items() if "REPUBLICAN" in p), default=(0.0, None))
+        out[key] = {"dem": dem, "rep": rep, "total": totals[key]}
+    return out
+
+
+def unchanged_states(hist, results):
+    """States whose 2026 districts match 2024: House turnout tracks presidential turnout district by district."""
+    ratios = defaultdict(list)
+    for code, h in hist.items():
+        r = results.get((2024, code))
+        if r and r["total"]:
+            ratios[h["state"]].append(r["total"] / float(h["pres24_total"]))
+    def spread(v):
+        mean = sum(v) / len(v)
+        return math.sqrt(sum((x - mean) ** 2 for x in v) / len(v))
+    return {s for s, v in ratios.items() if len(v) == 1 or spread(v) < 0.03}
+
+
+def surname(name):
+    """Match people across data sources by surname (within one district, that's unambiguous):
+    'Jen Kiggans' and 'JENNIFER A. KIGGANS' are the same person."""
+    parts = [p for p in name.upper().replace(",", " ").replace(".", " ").split()
+             if p not in ("JR", "SR", "II", "III", "IV")]
+    return parts[-1] if parts else ""
+
+
+def candidate_records(hist):
+    """{district: (adjustment, explanation)} from 2024 House races."""
+    results = mit_house_results()
+    same_lines = unchanged_states(hist, results)
+    records = {}
+    for code, h in hist.items():
+        r24, r22 = results.get((2024, code)), results.get((2022, code))
+        if h["state"] not in same_lines or not r24:
+            continue
+        (dv, dn), (rv, rn) = r24["dem"], r24["rep"]
+        if dv <= 0 or rv <= 0:
+            continue
+        margin = 100 * (dv - rv) / (dv + rv)
+        if abs(margin) > MAX_PRIOR_MARGIN:
+            continue
+        incumbency = 0.0
+        if r22 and r22["dem"][1] and r22["rep"][1]:
+            winner = r22["dem"][1] if r22["dem"][0] > r22["rep"][0] else r22["rep"][1]
+            incumbency = HOUSE_INCUMBENCY_BONUS if winner == dn else -HOUSE_INCUMBENCY_BONUS if winner == rn else 0.0
+        residual = margin - float(h["margin_2024"]) - incumbency
+        records[code] = {"dem": surname(dn), "rep": surname(rn), "residual": residual}
+    return records
+
+
 def missing(name):
     return not name or name.lower().startswith("(no")
 
@@ -50,6 +131,7 @@ def missing(name):
 def load_districts():
     hist = {r["code"]: r for r in fc.load_csv_utf8("data/electindex/historical.csv") if r["level"] == "district"}
     cands = {c["cand_id"]: c for c in fc.load_csv_utf8("data/electindex/candidates.csv")}
+    records = candidate_records(hist)
     districts = []
     for r in fc.load_csv_utf8("data/electindex/races.csv"):
         if r["race_type"] != "house":
@@ -70,8 +152,17 @@ def load_districts():
             incumbency = HOUSE_INCUMBENCY_BONUS
         elif cands.get(r["rep_id"], {}).get("incumbent") == "1":
             incumbency = -HOUSE_INCUMBENCY_BONUS
+        # candidate quality: credit the 2024 over/under-performance to whichever
+        # 2026 candidate ran in that race (if they're running again here)
+        candidate, why = 0.0, ""
+        rec = records.get(r["race_code"])
+        if rec and not fixed:
+            for name in (dem_name, r["rep_name"]):
+                if surname(name) in (rec["dem"], rec["rep"]):
+                    candidate = CANDIDATE_SHRINK * rec["residual"]
+                    why = f"{name} {candidate:+.1f}"
         districts.append({
-            "code": r["race_code"], "state": r["state"],
+            "code": r["race_code"], "state": r["state"], "candidate": candidate, "cand_why": why,
             "dem": dem_name, "rep": r["rep_name"], "holder": r["seat_holder"],
             "fixed": fixed, "incumbency": incumbency,
             "pres": {y: float(h[f"margin_{y}"]) for y in (2024, 2020, 2016)},
@@ -91,7 +182,7 @@ def main():
 
     for d in districts:
         d["lean"] = district_lean(d)
-        d["fundamentals"] = d["lean"] + environment + d["incumbency"]
+        d["fundamentals"] = d["lean"] + environment + d["incumbency"] + d["candidate"]
 
     # District polls, pooled so house effects are estimated across all districts
     polls = [dict(p, state=p["district"]) for p in fc.load_csv("data/house_polls.csv")]
