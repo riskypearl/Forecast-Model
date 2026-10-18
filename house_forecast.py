@@ -29,6 +29,12 @@ import forecast as fc
 # Measured from 2024: incumbent Democrats ran 3.8 points ahead of Harris and
 # incumbent Republicans 3.7 ahead of Trump, in states whose maps didn't change.
 HOUSE_INCUMBENCY_BONUS = 3.7
+# District polls get more weight than Senate polls: on the House backtest
+# (house_backtest_full.py) heavier poll weighting was better on both 2016-18
+# and the unseen 2020-22 (5.47 vs 5.86 avg miss). District fundamentals are
+# cruder, so the rare district poll carries more information.
+HOUSE_POLL_MAX_WEIGHT = 0.95
+HOUSE_POLL_K = 0.5          # weight = max * n / (n + k), n = effective number of polls
 SEATS = 435
 MAJORITY = 218
 SAFE_MARGIN = 999.0     # margin used for uncontested / same-party seats
@@ -195,12 +201,12 @@ def main():
 
     for d in districts:
         avg, n = fc.polling_average(by_district.get(d["code"], []), weights)
-        w = fc.poll_weight(n)
+        w = HOUSE_POLL_MAX_WEIGHT * n / (n + HOUSE_POLL_K)
         d["poll_avg"], d["num_polls"] = avg, n
         d["margin"] = d["fundamentals"] if avg is None else (1 - w) * d["fundamentals"] + w * avg
         if d["fixed"]:
             d["margin"] = SAFE_MARGIN if d["fixed"] == "D" else -SAFE_MARGIN
-        d["sd"] = fc.state_error_sd(w)
+        d["sd"] = fc.state_error_sd(min(w, fc.MAX_POLL_WEIGHT))
         d["local_sd"] = math.sqrt(max(d["sd"] ** 2 - fc.REGION_ERROR_SD ** 2, 1.0))
         d["dem_wins"] = 0
 

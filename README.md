@@ -77,6 +77,13 @@ Candidate quality helps on both periods - the same rule that worked for the Sena
 for the House. Incumbency 3.7 fits 2016-20 best; on 2022-24 alone a smaller bonus (2.0)
 did slightly better, consistent with incumbency advantage shrinking over time.
 
+**Full House backtest with polls** (`house_backtest_full.py`, 2016-2022, generic-ballot polls
+for the environment, 346 races with district polls): calibration is good (favourites given
+80-95% won 238 of 263, 234.8 expected; Brier 0.037). Unlike the Senate, **heavier poll
+weighting helped on both periods** (2020-22: 5.47 vs 5.86 avg miss), so the House model gives
+district polls more weight (max 0.95, n/(n+0.5)). District fundamentals are cruder than
+state ones, so the rare district poll carries more information.
+
 District presidential results for past maps: Daily Kos Elections / The Downballot
 (https://www.the-downballot.com/p/data), used locally and not republished, per their terms.
 
