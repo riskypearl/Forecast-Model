@@ -38,6 +38,12 @@ MAX_PRIOR_RACE_MARGIN = 15   # points
 # 0 = no correction.
 OPPONENT_CORRECTION = 0.0
 
+# Down-ballot lean: share of a state's lean taken from its House vote
+# (contested districts, vs the national House vote) instead of its presidential
+# vote. 0 = presidential only.
+HOUSE_LEAN_WEIGHT = 0.0
+DEM_PARTIES = {"DEMOCRAT", "DEMOCRATIC-FARMER-LABOR", "DEMOCRATIC-NONPARTISAN LEAGUE"}
+
 # National environment = national House popular-vote margin (Dem minus Rep).
 # Using the real result isolates the question: GIVEN the national mood, does
 # knowing the candidates help? Figures are the commonly reported House
@@ -114,11 +120,67 @@ def senate_races():
 # The model pieces, using only information from before each election
 # ---------------------------------------------------------------------------
 
-def lean(state, year, pres, national):
+def presidential_lean(state, year, pres, national):
     """Weighted lean from the three presidential elections BEFORE this year."""
     years = [y for y in range(year - 1, 1975, -1) if (y, state) in pres][:3]
     total = sum(w * (pres[(y, state)] - national[y]) for w, y in zip(LEAN_WEIGHTS, years))
     return total / sum(LEAN_WEIGHTS[:len(years)])
+
+
+_house_cache = None
+
+
+def house_margins():
+    """
+    ({(year, state): margin}, {year: national margin}) from CONTESTED House
+    districts only (both a Democrat and a Republican got votes), two-party,
+    Dem minus Rep. Votes are summed per candidate, so New York candidates on
+    several party lines are counted once.
+    """
+    global _house_cache
+    if _house_cache is not None:
+        return _house_cache
+    by_district = defaultdict(lambda: defaultdict(lambda: [0.0, set()]))
+    with open("data/mit/house.csv", encoding="utf-8", errors="replace") as f:
+        for r in csv.DictReader(f):
+            if r["stage"].upper() != "GEN" or r["special"].upper() == "TRUE" or r["candidate"] in ("", "WRITEIN"):
+                continue
+            entry = by_district[(int(r["year"]), r["state_po"], r["district"])][r["candidate"]]
+            entry[0] += float(r["candidatevotes"] or 0)
+            entry[1].add(r["party"])
+    state = defaultdict(lambda: [0.0, 0.0])
+    for (year, st, _), candidates in by_district.items():
+        dem = max((v for v, parties in candidates.values() if parties & DEM_PARTIES), default=0)
+        rep = max((v for v, parties in candidates.values() if "REPUBLICAN" in parties), default=0)
+        if dem > 0 and rep > 0:
+            state[(year, st)][0] += dem
+            state[(year, st)][1] += rep
+    national = defaultdict(lambda: [0.0, 0.0])
+    for (year, _), (d, r) in state.items():
+        national[year][0] += d
+        national[year][1] += r
+    _house_cache = ({k: 100 * (d - r) / (d + r) for k, (d, r) in state.items()},
+                    {y: 100 * (d - r) / (d + r) for y, (d, r) in national.items()})
+    return _house_cache
+
+
+def house_lean(state, year):
+    """Weighted lean from the three House elections BEFORE this year, or None."""
+    margins, national = house_margins()
+    years = [y for y in range(year - 1, 1975, -1) if (y, state) in margins][:3]
+    if not years:
+        return None
+    total = sum(w * (margins[(y, state)] - national[y]) for w, y in zip(LEAN_WEIGHTS, years))
+    return total / sum(LEAN_WEIGHTS[:len(years)])
+
+
+def lean(state, year, pres, national):
+    """Presidential lean, blended with the House lean by HOUSE_LEAN_WEIGHT."""
+    p = presidential_lean(state, year, pres, national)
+    if not HOUSE_LEAN_WEIGHT:
+        return p
+    h = house_lean(state, year)
+    return p if h is None else (1 - HOUSE_LEAN_WEIGHT) * p + HOUSE_LEAN_WEIGHT * h
 
 
 def incumbency(race, races):

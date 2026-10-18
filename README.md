@@ -95,6 +95,10 @@ Senate results track presidential lean almost one-for-one - a sign of polarisati
 - Opponent-strength correction (subtract an earlier opponent's own record): worse on the
   fundamentals backtest, only 0.08 better on the full model - not adopted
   (`OPPONENT_CORRECTION = 0` in `backtest.py`)
+- Down-ballot lean (blend in each state's House vote, contested districts only): worse on the
+  full model and on older years - not adopted (`HOUSE_LEAN_WEIGHT = 0`). Michigan's House lean
+  is actually slightly *more* Democratic than its presidential lean, so it doesn't explain
+  Michigan Senate races running close.
 
 **Generic-ballot bias:** final generic-ballot polls overstated Democrats in 5 of 6 cycles,
 by 3.2 points on average (2.4 in midterm years).
@@ -106,6 +110,6 @@ by 3.2 points on average (2.4 in midterm years).
 - Group swings 2020-2024: Pew Research Center validated voter studies
 - Pollster ratings: ElectIndex
 - Presidential results: state results 2016-2024
-- Backtest: MIT Election Data + Science Lab, U.S. Senate and U.S. President 1976-2024 (CC0)
+- Backtest: MIT Election Data + Science Lab, U.S. Senate, U.S. President and U.S. House 1976-2024 (CC0)
 - Historical polls: FiveThirtyEight `raw_polls.csv` (github.com/fivethirtyeight/data, CC BY 4.0)
 - Methodology inspired by the ElectIndex 2026 forecast's published methodology
