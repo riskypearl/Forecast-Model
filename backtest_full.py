@@ -53,7 +53,7 @@ def generic_ballot_rows(polls, cycle):
     return [{
         "pollster": p["pollster"], "end_date": p["polldate"],
         "dem": p["cand1_pct"], "rep": p["cand2_pct"], "n": p["samplesize"],
-        "lean": p["partisan"] if p["partisan"] in ("D", "R") else "",
+        "lean": {"DEM": "D", "REP": "R"}.get(p["partisan"], ""),
     } for p in polls if p["type_simple"] == "House-G-US" and int(p["cycle"]) == cycle
         and p["cand1_party"] == "DEM" and p["cand2_party"] == "REP"]
 
@@ -75,7 +75,7 @@ def senate_polls_for(race, polls):
             "state": race["state"], "pollster": p["pollster"], "end_date": p["polldate"],
             "dem_pct": dem, "rep_pct": rep, "undecided": max(0.0, 100 - dem - rep),
             "sample_size": p["samplesize"], "population": "lv",
-            "partisan": {"D": "DEM", "R": "REP"}.get(p["partisan"], ""),
+            "partisan": p["partisan"] if p["partisan"] in ("DEM", "REP") else "",
         })
     return out
 

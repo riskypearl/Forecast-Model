@@ -23,7 +23,7 @@ from statistics import NormalDist
 LEAN_WEIGHTS = {2024: 0.75, 2020: 0.175, 2016: 0.075}
 
 # National presidential margins, used to turn a state's result into a lean.
-NATIONAL_MARGIN = {2024: -1.5, 2020: 4.5, 2016: 2.1}
+NATIONAL_MARGIN = {2024: -1.47, 2020: 4.45, 2016: 2.18}  # MIT Election Lab
 
 # The national environment: the generic-ballot average (Dem minus Rep).
 # None = calculate it from data/gcb_polls.csv. Put a number here to override.
@@ -40,9 +40,9 @@ GCB_HOUSE_EFFECT_WINDOW_DAYS = 14   # compare each poll with reputable polls thi
 DEMOGRAPHIC_REVERSION = 0.25
 
 # Points an incumbent gets just for being the incumbent.
-INCUMBENCY_BONUS = 2.5
+INCUMBENCY_BONUS = 5.0     # tested on the 2012-2022 backtest (2.5 did worse)
 # Appointed senators (never won the seat themselves) historically get less.
-APPOINTED_INCUMBENCY_BONUS = 1.25
+APPOINTED_INCUMBENCY_BONUS = 2.5
 
 # Polls: more polls -> trust them more, up to this cap.
 MAX_POLL_WEIGHT = 0.85

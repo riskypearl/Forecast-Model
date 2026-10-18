@@ -24,7 +24,7 @@ TEST_YEARS = [2018, 2020, 2022, 2024]
 
 # Same settings as forecast.py
 LEAN_WEIGHTS = [0.75, 0.175, 0.075]   # most recent presidential election first
-INCUMBENCY_BONUS = 2.5
+INCUMBENCY_BONUS = 5.0
 CANDIDATE_SHRINK = 2 / 3
 
 # Only learn candidate quality from REAL contests. A 60-point blowout against
