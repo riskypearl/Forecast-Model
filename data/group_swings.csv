@@ -1,0 +1,6 @@
+group,swing_2020_2024,source
+white,-1,VERIFY - approx. Pew validated voters (2020 R+11 -> 2024 R+12)
+black,-16,VERIFY - approx. Pew validated voters (2020 D+84 -> 2024 D+68)
+hispanic,-18,VERIFY - approx. Pew validated voters (2020 D+21 -> 2024 D+3); ElectIndex EI estimate is -23.1
+asian,-20,VERIFY - rough estimate; check Pew 2024 validated voter report
+other,-10,VERIFY - rough placeholder
