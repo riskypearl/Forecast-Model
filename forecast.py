@@ -424,7 +424,7 @@ def main():
         race["dem_prob"] = race["dem_wins"] / SIMULATIONS
         race["rating"] = rating(race["dem_prob"])
 
-    summary = summarise(dem_seat_counts)
+    summary = summarise(dem_seat_counts, races)
     print_results(races, summary, environment)
     save_results(races, summary, environment)
 
@@ -435,9 +435,15 @@ def fmt_margin(m):
     return f"D+{m:.1f}" if m >= 0 else f"R+{-m:.1f}"
 
 
-def summarise(dem_seat_counts):
+def summarise(dem_seat_counts, races):
     ordered = sorted(dem_seat_counts)
+    # Polls-only: who'd win if every polling average were exactly right
+    # (races with no polls fall back to their fundamentals).
+    polls_only = SEATS_NOT_UP["D"] + sum(
+        1 for r in races if (r["poll_avg"] if r["poll_avg"] is not None else r["fundamentals"]) > 0)
     return {
+        "distribution": {seats: ordered.count(seats) / SIMULATIONS for seats in sorted(set(ordered))},
+        "polls_only": polls_only,
         "avg_dem": sum(ordered) / SIMULATIONS,
         "low": ordered[int(0.1 * SIMULATIONS)],
         "high": ordered[int(0.9 * SIMULATIONS)],
@@ -459,7 +465,16 @@ def print_results(races, summary, environment):
     print(f"Average outcome: {summary['avg_dem']:.1f} D - {100 - summary['avg_dem']:.1f} R")
     print(f"80% range for Dem seats: {summary['low']} to {summary['high']}")
     print(f"Chance Democrats win control: {summary['dem_control']:.0%}")
-    print(f"Chance Republicans keep control: {1 - summary['dem_control']:.0%}\n")
+    print(f"Chance Republicans keep control: {1 - summary['dem_control']:.0%}")
+    print(f"If every polling average were exactly right: {summary['polls_only']} D - {100 - summary['polls_only']} R\n")
+
+    print("Chance of each outcome (simulated):")
+    for seats, prob in sorted(summary["distribution"].items(), reverse=True):
+        if prob < 0.005:
+            continue
+        control = "D control" if seats >= DEM_SEATS_NEEDED else "R control"
+        print(f"  {seats} D - {100 - seats} R  {prob:>5.1%}  {'#' * round(prob * 100)}  ({control})")
+    print()
 
 
 def save_results(races, summary, environment):
@@ -481,6 +496,13 @@ def save_results(races, summary, environment):
             writer.writerow(header)
             writer.writerows(rows)
 
+    for path in ("seat_distribution.csv", f"history/{TODAY}_seats.csv"):
+        with open(path, "w", newline="") as f:
+            writer = csv.writer(f)
+            writer.writerow(["dem_seats", "rep_seats", "probability"])
+            for seats, prob in sorted(summary["distribution"].items()):
+                writer.writerow([seats, 100 - seats, round(prob, 4)])
+
     # Timeline: one row per date; re-running on the same day replaces that day.
     timeline_path = "history/timeline.csv"
     timeline = load_csv(timeline_path) if os.path.exists(timeline_path) else []
@@ -490,6 +512,7 @@ def save_results(races, summary, environment):
         "avg_dem_seats": round(summary["avg_dem"], 2),
         "dem_seats_low": summary["low"], "dem_seats_high": summary["high"],
         "dem_control_prob": round(summary["dem_control"], 3),
+        "polls_only_dem_seats": summary["polls_only"],
     })
     timeline.sort(key=lambda t: t["date"])
     with open(timeline_path, "w", newline="") as f:
