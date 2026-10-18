@@ -14,6 +14,9 @@ probabilities and a chance of chamber control.
 2. **Fundamentals:** lean + national environment + incumbency +
    candidate quality + a demographic adjustment (groups that swung hard in 2024 are
    assumed to partly swing back). Appointed incumbents get half the incumbency bonus.
+   Candidate quality is calculated automatically from each 2026 candidate's competitive
+   Senate races in the last 12 years (the same method `backtest.py` tests); records outside
+   the Senate data (e.g. House, Attorney General) are entered by hand in `states.csv`.
    The national environment is a recency-weighted generic-ballot average: every pollster's
    lean is measured against reputable pollsters (rated 2.0+) and removed, and undecided
    voters are split evenly.

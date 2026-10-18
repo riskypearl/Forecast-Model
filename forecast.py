@@ -14,6 +14,8 @@ import random
 from datetime import date
 from statistics import NormalDist
 
+import backtest as bt   # shares the candidate-record method, so live and backtest match
+
 # ---------------------------------------------------------------------------
 # ASSUMPTIONS - these are your judgement calls. Change them and re-run.
 # ---------------------------------------------------------------------------
@@ -102,12 +104,53 @@ def partisan_lean(row):
 # STEP 2: fundamentals - what we'd expect before looking at any race polls
 # ---------------------------------------------------------------------------
 
-def fundamentals(row, lean, environment, demo):
+def fundamentals(row, lean, environment, demo, candidate):
     incumbency = 0.0
     if row["incumbent_running"] == "1":
         bonus = APPOINTED_INCUMBENCY_BONUS if row.get("incumbent_appointed") == "1" else INCUMBENCY_BONUS
         incumbency = bonus if row["incumbent_party"] == "D" else -bonus
-    return lean + environment + demo + incumbency + float(row["candidate_adj"])
+    return lean + environment + demo + incumbency + candidate
+
+
+# ---------------------------------------------------------------------------
+# STEP 2a: candidate quality - did these candidates run ahead of or behind
+# their party in a competitive, recent Senate race? Same method the backtest
+# tested (backtest.py): only races within 15 points in the last 12 years
+# count, and two-thirds of the over/under-performance is kept.
+# ---------------------------------------------------------------------------
+
+def load_candidate_history():
+    """The 2026 matchups plus the MIT Senate/President data the records come from."""
+    try:
+        matchups = {r["state"]: r for r in load_csv("data/candidates.csv")}
+    except FileNotFoundError:
+        print("No data/candidates.csv - run fetch_polls.py. Skipping automatic candidate adjustments.")
+        return None
+    pres, national = bt.presidential_margins()
+    return matchups, bt.senate_races(), pres, national
+
+
+def candidate_adjustment(row, history):
+    """
+    Returns (points, explanation). Automatic part from each candidate's Senate
+    record, plus manual_candidate_adj for records outside the Senate data
+    (e.g. a House or Attorney General race).
+    """
+    manual = float(row.get("manual_candidate_adj") or 0)
+    if history is None or row["state"] not in history[0]:
+        return manual, ""
+    matchups, races, pres, national = history
+    total, parts = 0.0, []
+    for col in ("dem_candidate", "rep_candidate"):
+        name = matchups[row["state"]][col]
+        record = bt.candidate_record(bt.name_key(name.upper()), row["state"], ELECTION_DAY.year,
+                                     races, pres, national)
+        if record is not None:
+            total += bt.CANDIDATE_SHRINK * record
+            parts.append(f"{name} {bt.CANDIDATE_SHRINK * record:+.1f}")
+    if manual:
+        parts.append(f"manual {manual:+.1f}")
+    return total + manual, ", ".join(parts)
 
 
 # ---------------------------------------------------------------------------
@@ -388,6 +431,7 @@ def main():
     pollster_weights = load_pollster_weights("data/pollster_ratings.csv")
     environment = national_environment(pollster_weights)
     demographics = load_demographics()
+    history = load_candidate_history()
 
     leans = {row["state"]: partisan_lean(row) for row in states}
     demos = {row["state"]: demographic_adjustment(row["state"], demographics) for row in states}
@@ -401,13 +445,15 @@ def main():
     races = []
     for row in states:
         lean, demo = leans[row["state"]], demos[row["state"]]
-        fund = fundamentals(row, lean, environment, demo)
+        cand, cand_why = candidate_adjustment(row, history)
+        fund = fundamentals(row, lean, environment, demo, cand)
         state_polls = [p for p in polls if p["state"] == row["state"]]
         poll_avg, n = polling_average(state_polls, pollster_weights)
         w = poll_weight(n)
         margin = fund if poll_avg is None else (1 - w) * fund + w * poll_avg
         races.append({
-            "state": row["state"], "lean": lean, "demo": demo, "fundamentals": fund,
+            "state": row["state"], "lean": lean, "demo": demo, "cand": cand, "cand_why": cand_why,
+            "fundamentals": fund,
             "poll_avg": poll_avg, "num_polls": n, "poll_weight": w,
             "margin": margin, "sd": state_error_sd(w), "dem_wins": 0,
         })
@@ -460,14 +506,16 @@ def summarise(dem_seat_counts, races):
 def print_results(races, summary, environment):
     print(f"\n2026 Senate forecast  ({TODAY}, {DAYS_LEFT} days out, "
           f"national environment {fmt_margin(environment)})\n")
-    print(f"{'State':<6}{'Lean':>8}{'Demo':>7}{'Fund.':>8}{'Polls':>8}{'#':>6}{'Margin':>9}{'+/-':>6}{'Dem win':>9}  Rating")
-    print("-" * 81)
+    print(f"{'State':<6}{'Lean':>8}{'Demo':>7}{'Cand':>7}{'Fund.':>8}{'Polls':>8}{'#':>6}{'Margin':>9}{'+/-':>6}{'Dem win':>9}  Rating")
+    print("-" * 88)
     for r in sorted(races, key=lambda r: r["margin"], reverse=True):
-        print(f"{r['state']:<6}{fmt_margin(r['lean']):>8}{r['demo']:>+7.1f}{fmt_margin(r['fundamentals']):>8}"
+        print(f"{r['state']:<6}{fmt_margin(r['lean']):>8}{r['demo']:>+7.1f}{r['cand']:>+7.1f}{fmt_margin(r['fundamentals']):>8}"
               f"{fmt_margin(r['poll_avg']):>8}{r['num_polls']:>6.1f}{fmt_margin(r['margin']):>9}"
               f"{r['sd']:>6.1f}{r['dem_prob']:>8.0%}  {r['rating']}")
 
-    print("-" * 81)
+    print("-" * 88)
+    print("Candidate adjustments: " + "; ".join(
+        f"{r['state']} ({r['cand_why']})" for r in races if r["cand_why"]))
     print(f"Average outcome: {summary['avg_dem']:.1f} D - {100 - summary['avg_dem']:.1f} R")
     print(f"80% range for Dem seats: {summary['low']} to {summary['high']}")
     print(f"Chance Democrats win control: {summary['dem_control']:.0%}")
@@ -488,9 +536,9 @@ def save_results(races, summary, environment):
     Writes results.csv (latest run), a dated copy in history/, and one line
     per day in history/timeline.csv - so you can show how the forecast moved.
     """
-    header = ["state", "lean", "demo", "fundamentals", "poll_avg", "num_polls",
+    header = ["state", "lean", "demo", "candidate", "fundamentals", "poll_avg", "num_polls",
               "poll_weight", "margin", "sd", "dem_win_prob", "rating"]
-    rows = [[r["state"], round(r["lean"], 2), round(r["demo"], 2), round(r["fundamentals"], 2),
+    rows = [[r["state"], round(r["lean"], 2), round(r["demo"], 2), round(r["cand"], 2), round(r["fundamentals"], 2),
              "" if r["poll_avg"] is None else round(r["poll_avg"], 2),
              round(r["num_polls"], 2), round(r["poll_weight"], 2), round(r["margin"], 2),
              round(r["sd"], 2), round(r["dem_prob"], 3), r["rating"]] for r in races]
