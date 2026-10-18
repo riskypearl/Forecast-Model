@@ -40,6 +40,24 @@ running once.
 Each run writes `results.csv`, a dated copy in `history/`, and a line in
 `history/timeline.csv`.
 
+## Backtest: does candidate quality help?
+
+`backtest.py` predicts every Senate race from 2018 to 2024 from fundamentals alone (no polls),
+using only information available before each election, with and without candidate
+adjustments.
+
+| | Avg error | Winners right |
+|---|---|---|
+| Without candidate adjustments | 6.7 pts | 121/137 |
+| With candidate adjustments | 6.1 pts | 120/137 |
+| ...races where a candidate had a record (58) | 6.3 → 4.8 pts | 50 → 49 |
+
+Key finding: candidate quality only predicts results when measured from **competitive,
+recent** past races (margin within 15, within 12 years). Measured from all past races -
+including blowouts against unknown opponents - the adjustment made predictions *worse*.
+All five 2026 adjustments (Collins, Osborn, Paxton, Brown, Peltola) come from competitive
+races in the last 12 years.
+
 ## Data sources
 
 - Polls: New York Times poll database via [PollResults.org](https://pollresults.org/) (CC BY 4.0)
@@ -47,4 +65,5 @@ Each run writes `results.csv`, a dated copy in `history/`, and a line in
 - Group swings 2020-2024: Pew Research Center validated voter studies
 - Pollster ratings: ElectIndex
 - Presidential results: state results 2016-2024
+- Backtest: MIT Election Data + Science Lab, U.S. Senate and U.S. President 1976-2024 (CC0)
 - Methodology inspired by the ElectIndex 2026 forecast's published methodology
