@@ -34,6 +34,10 @@ CANDIDATE_SHRINK = 2 / 3
 MAX_PRIOR_RACE_AGE = 12      # years
 MAX_PRIOR_RACE_MARGIN = 15   # points
 
+# Share of an earlier opponent's own record to subtract (see candidate_record).
+# 0 = no correction.
+OPPONENT_CORRECTION = 0.0
+
 # National environment = national House popular-vote margin (Dem minus Rep).
 # Using the real result isolates the question: GIVEN the national mood, does
 # knowing the candidates help? Figures are the commonly reported House
@@ -134,11 +138,16 @@ def baseline(race, races, pres, national):
         NATIONAL_ENVIRONMENT[race["year"]] + incumbency(race, races)
 
 
-def candidate_record(name, state, year, races, pres, national):
+def candidate_record(name, state, year, races, pres, national, correct_opponent=True):
     """
     How far this candidate ran ahead of expectations (Dem-minus-Rep points) in
     their most recent earlier Senate race in this state, or None if they have
     no record. Incumbency is already in the baseline, so it isn't double counted.
+
+    Opponent correction: that earlier result was partly down to the opponent.
+    If the opponent has a record of their own (from before that race), the
+    chosen share of it is subtracted - so beating a strong candidate counts
+    for more, and beating a weak one for less.
     """
     earlier = [r for r in races if r["state"] == state and r["year"] < year
                and name in (r["dem"], r["rep"])
@@ -147,7 +156,14 @@ def candidate_record(name, state, year, races, pres, national):
     if not earlier:
         return None
     prior = max(earlier, key=lambda r: r["year"])
-    return prior["margin"] - baseline(prior, races, pres, national)
+    record = prior["margin"] - baseline(prior, races, pres, national)
+    if correct_opponent and OPPONENT_CORRECTION:
+        opponent = prior["rep"] if name == prior["dem"] else prior["dem"]
+        opp_record = candidate_record(opponent, state, prior["year"], races, pres, national,
+                                      correct_opponent=False)
+        if opp_record is not None:
+            record -= OPPONENT_CORRECTION * opp_record
+    return record
 
 
 # ---------------------------------------------------------------------------

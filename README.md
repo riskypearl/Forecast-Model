@@ -27,6 +27,8 @@ probabilities and a chance of chamber control.
 5. **Simulation:** one national error shared by every race plus one error per race.
    Uncertainty is wider for races with little polling and further from election day, and
    errors come from a fat-tailed distribution so upsets aren't treated as near-impossible.
+   Part of each race's error is shared with its region (Northeast, Midwest, South, West), so
+   neighbouring states' polls can miss together.
 
 Every assumption is a named setting at the top of `forecast.py`.
 
@@ -42,6 +44,9 @@ running once.
 
 Each run writes `results.csv`, a dated copy in `history/`, and a line in
 `history/timeline.csv`.
+
+`update.ps1` does all of it (fetch, forecast, commit, push) and runs automatically every
+2 days until 2 November 2026 via Windows Task Scheduler.
 
 ## Backtest: does candidate quality help?
 
@@ -87,6 +92,9 @@ Senate results track presidential lean almost one-for-one - a sign of polarisati
 - Partisan-poll weight 0 / 0.25 / 0.5 / 1: no real difference - kept 0.5
 - Incumbency bonus: 5 points beat 2.5 on both periods (5.39 vs 5.64) - **changed to 5**
 - Lean weights: mixed results - kept 75 / 17.5 / 7.5
+- Opponent-strength correction (subtract an earlier opponent's own record): worse on the
+  fundamentals backtest, only 0.08 better on the full model - not adopted
+  (`OPPONENT_CORRECTION = 0` in `backtest.py`)
 
 **Generic-ballot bias:** final generic-ballot polls overstated Democrats in 5 of 6 cycles,
 by 3.2 points on average (2.4 in midterm years).

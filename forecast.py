@@ -79,6 +79,21 @@ SIMULATIONS = 10_000
 TAIL_DF = 5
 ELECTION_DAY = date(2026, 11, 3)
 
+# Regional correlation: polls in neighbouring states tend to miss together
+# (the Midwest in 2016 and 2020). Part of each race's own error is shared with
+# its region. Each race's TOTAL uncertainty is unchanged - this only makes
+# nearby races move together, which widens the range of seat totals.
+# Not backtested (six elections are too few to test seat-total spread), so
+# it is an assumption, set modestly.
+REGION_ERROR_SD = 2.0
+REGIONS = {
+    "Northeast": ["ME", "NH", "MA", "RI", "NJ", "DE"],
+    "Midwest": ["MI", "MN", "IA", "OH", "IL", "KS", "NE", "SD"],
+    "South": ["TX", "GA", "NC", "FL", "SC", "AL", "MS", "LA", "KY", "TN", "AR", "OK", "VA", "WV"],
+    "West": ["AK", "CO", "ID", "MT", "NM", "OR", "WY"],
+}
+REGION_OF = {state: region for region, states in REGIONS.items() for state in states}
+
 # Senate seats NOT up in 2026 (Dem total includes the two independents who
 # caucus with them). Republicans hold the VP, so Dems need 51 for control.
 SEATS_NOT_UP = {"D": 34, "R": 31}
@@ -462,11 +477,15 @@ def main():
     # national error shared by every race, plus a separate error per race.
     dem_seat_counts = []
     national_sd = national_error_sd()
+    for race in races:
+        race["local_sd"] = math.sqrt(max(race["sd"] ** 2 - REGION_ERROR_SD ** 2, 1.0))
     for _ in range(SIMULATIONS):
         national_error = fat_tailed_error(national_sd)
+        regional_error = {region: fat_tailed_error(REGION_ERROR_SD) for region in REGIONS}
         dem_seats = SEATS_NOT_UP["D"]
         for race in races:
-            result = race["margin"] + national_error + fat_tailed_error(race["sd"])
+            result = (race["margin"] + national_error + regional_error[REGION_OF[race["state"]]]
+                      + fat_tailed_error(race["local_sd"]))
             if result > 0:
                 race["dem_wins"] += 1
                 dem_seats += 1
