@@ -75,6 +75,10 @@ given 95%+ won 124 of 125 (123.4 expected). The model's probabilities are honest
 **Poll weight:** relying more heavily on polls fitted 2012-2018 best but did *worse* on
 2020-2022, when polls missed badly. The model's hedge towards fundamentals was kept.
 
+**Lean compression (tested, rejected):** scaling presidential lean down (e.g. Senate races
+follow 80% of it, for ticket-splitting) made predictions worse on unseen years. Modern
+Senate results track presidential lean almost one-for-one - a sign of polarisation.
+
 **Generic-ballot bias:** final generic-ballot polls overstated Democrats in 5 of 6 cycles,
 by 3.2 points on average (2.4 in midterm years).
 
