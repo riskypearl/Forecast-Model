@@ -171,7 +171,7 @@ def main():
     fy = H - 72
     rect(d, (L, fy - 26, R, fy - 25), INK)
     tracked(d, (L, fy), "FUNDAMENTALS + DE-BIASED POLLS · 10,000 SIMULATIONS", mono_sm, GRAPHITE, 1.2)
-    tracked(d, (R, fy), "GITHUB.COM/RISKYPEARL/FORECAST-MODEL", mono_sm, GRAPHITE, 1.2, anchor="r")
+    tracked(d, (R, fy), "@AFCWILL10", mono_sm, GRAPHITE, 1.2, anchor="r")
 
     img = img.resize((W, H), Image.LANCZOS)
     out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "instagram_forecast.png")
