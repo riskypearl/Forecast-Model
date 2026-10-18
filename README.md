@@ -62,7 +62,23 @@ incumbency, district polls (100 districts have them), and the same simulation.
   Fitzpatrick -8.8, Miller-Meeks +8.1). Known weakness: the record also reflects the old
   opponent (AK-01: Begich's 2024 result was against Peltola, who isn't running there now).
 - Uncontested seats and California same-party top-two races are certain wins.
-- Not yet included: demographic adjustment, backtest.
+- Not yet included: demographic adjustment.
+
+**House backtest** (`house_backtest.py`, fundamentals with the actual national House vote,
+2,400+ contested races; tuned on 2016-20, checked on 2022-24):
+
+| | 2016-20 avg miss | 2022-24 avg miss | 2022-24 winners |
+|---|---|---|---|
+| Lean + environment | 6.88 | 5.14 | 584/625 |
+| + incumbency (3.7) | 6.02 | 5.06 | 592/625 |
+| + candidate quality | 5.92 | 4.81 | 593/625 |
+
+Candidate quality helps on both periods - the same rule that worked for the Senate works
+for the House. Incumbency 3.7 fits 2016-20 best; on 2022-24 alone a smaller bonus (2.0)
+did slightly better, consistent with incumbency advantage shrinking over time.
+
+District presidential results for past maps: Daily Kos Elections / The Downballot
+(https://www.the-downballot.com/p/data), used locally and not republished, per their terms.
 
 District results and candidate rosters come from the ElectIndex
 `26_us_forecast_data` repository. It has no licence, so those files are used locally
