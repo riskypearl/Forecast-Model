@@ -329,15 +329,20 @@ def fat_tailed_error(sd):
     return sd * t * math.sqrt((TAIL_DF - 2) / TAIL_DF)   # rescale so the SD stays sd
 
 
+RATING_BANDS = [   # favourite's win probability -> rating
+    (0.95, "Safe"),
+    (0.80, "Likely"),
+    (0.65, "Lean"),
+    (0.55, "Tilt"),
+]
+
+
 def rating(dem_win_prob):
-    p = dem_win_prob
-    if p >= 0.95: return "Safe D"
-    if p >= 0.75: return "Likely D"
-    if p >= 0.60: return "Lean D"
-    if p > 0.40:  return "Toss-up"
-    if p > 0.25:  return "Lean R"
-    if p > 0.05:  return "Likely R"
-    return "Safe R"
+    favourite, p = ("D", dem_win_prob) if dem_win_prob >= 0.5 else ("R", 1 - dem_win_prob)
+    for threshold, label in RATING_BANDS:
+        if p >= threshold:
+            return f"{label} {favourite}"
+    return "Toss-up"
 
 
 # ---------------------------------------------------------------------------
