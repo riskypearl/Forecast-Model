@@ -48,9 +48,9 @@ adjustments.
 
 | | Avg error | Winners right |
 |---|---|---|
-| Without candidate adjustments | 6.7 pts | 121/137 |
-| With candidate adjustments | 6.1 pts | 120/137 |
-| ...races where a candidate had a record (58) | 6.3 → 4.8 pts | 50 → 49 |
+| Without candidate adjustments | 6.8 pts | 122/137 |
+| With candidate adjustments | 6.3 pts | 121/137 |
+| ...races where a candidate had a record (58) | 6.2 → 5.0 pts | 51 → 50 |
 
 Key finding: candidate quality only predicts results when measured from **competitive,
 recent** past races (margin within 15, within 12 years). Measured from all past races -
@@ -66,11 +66,11 @@ using FiveThirtyEight's historical polls.
 
 | 203 races, 2012-2022 | Avg miss | Winners right |
 |---|---|---|
-| Fundamentals only | 7.5 pts | 174 |
-| Full model | 6.4 pts | 184 (91%) |
+| Fundamentals only | 7.3 pts | 178 |
+| Full model | 6.2 pts | 186 (92%) |
 
-**Calibration:** favourites given 80-95% won 39 of 44 races (39.0 expected); favourites
-given 95%+ won 124 of 125 (123.4 expected). The model's probabilities are honest.
+**Calibration:** favourites given 80-95% won 31 of 36 races (32.1 expected); favourites
+given 95%+ won 131 of 132 (130.5 expected). Brier score 0.060. The model's probabilities are honest.
 
 **Poll weight:** relying more heavily on polls fitted 2012-2018 best but did *worse* on
 2020-2022, when polls missed badly. The model's hedge towards fundamentals was kept.
@@ -78,6 +78,12 @@ given 95%+ won 124 of 125 (123.4 expected). The model's probabilities are honest
 **Lean compression (tested, rejected):** scaling presidential lean down (e.g. Senate races
 follow 80% of it, for ticket-splitting) made predictions worse on unseen years. Modern
 Senate results track presidential lean almost one-for-one - a sign of polarisation.
+
+**Judgment calls tested** (`backtest_choices.py`; changed only if better by 0.1+ pts on unseen 2020-22):
+- Undecided voters split by state baseline vs 50/50 vs left out: tie - kept
+- Partisan-poll weight 0 / 0.25 / 0.5 / 1: no real difference - kept 0.5
+- Incumbency bonus: 5 points beat 2.5 on both periods (5.39 vs 5.64) - **changed to 5**
+- Lean weights: mixed results - kept 75 / 17.5 / 7.5
 
 **Generic-ballot bias:** final generic-ballot polls overstated Democrats in 5 of 6 cycles,
 by 3.2 points on average (2.4 in midterm years).
