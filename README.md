@@ -11,9 +11,12 @@ probabilities and a chance of chamber control.
 
 1. **Partisan lean:** how much more Democratic or Republican a state is than the country,
    from the 2024, 2020 and 2016 presidential results (weighted 75 / 17.5 / 7.5%).
-2. **Fundamentals:** lean + national environment (generic ballot) + incumbency +
+2. **Fundamentals:** lean + national environment + incumbency +
    candidate quality + a demographic adjustment (groups that swung hard in 2024 are
    assumed to partly swing back). Appointed incumbents get half the incumbency bonus.
+   The national environment is a recency-weighted generic-ballot average: every pollster's
+   lean is measured against reputable pollsters (rated 2.0+) and removed, and undecided
+   voters are split evenly.
 3. **Polling average:** undecided voters are allocated the way the state usually votes
    ("coming home"); polls are then recency-, sample-size- and quality-weighted;
    partisan-sponsored polls count for half; pollster house effects are estimated and removed.

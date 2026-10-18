@@ -27,8 +27,12 @@ NATIONAL_MARGIN = {2024: -1.5, 2020: 4.5, 2016: 2.1}
 
 # The national environment: the generic-ballot average (Dem minus Rep).
 # None = calculate it from data/gcb_polls.csv. Put a number here to override.
-NATIONAL_ENVIRONMENT = 12.0
-GCB_HALF_LIFE_DAYS = 30    # the national mood moves slower than single races
+NATIONAL_ENVIRONMENT = None
+GCB_HALF_LIFE_DAYS = 14    # same as race polls - late in a campaign, recent polls matter most
+# Reputable pollsters (rating 2.0+ of 3.0) are the yardstick: every other
+# pollster's lean is measured against them and removed before averaging.
+GCB_MIN_POLLSTER_WEIGHT = 2.0 / 3.0
+GCB_HOUSE_EFFECT_WINDOW_DAYS = 14   # compare each poll with reputable polls this close in time
 
 # Demographic reversion: the share of each group's 2020->2024 swing that
 # snaps back in 2026. 0 = the 2024 shifts are permanent, 1 = they fully undo.
@@ -286,7 +290,16 @@ def load_csv(path):
 
 
 def national_environment(pollster_weights):
-    """Generic-ballot average from data/gcb_polls.csv (ElectIndex column names)."""
+    """
+    Generic-ballot average from data/gcb_polls.csv.
+
+    1. Undecided voters split evenly nationally, so each poll's margin is
+       scaled up as if everyone had decided (a 44-36 poll counts as 55-45).
+    2. House effects: each pollster's typical lean is measured against
+       reputable pollsters polling at the same time, and removed. A pollster
+       that usually runs 4 points more Republican and shows D+5 counts as D+9.
+    3. Every non-banned pollster is then averaged, weighted by quality.
+    """
     if NATIONAL_ENVIRONMENT is not None:
         return NATIONAL_ENVIRONMENT
     try:
@@ -294,16 +307,34 @@ def national_environment(pollster_weights):
     except FileNotFoundError:
         print("No data/gcb_polls.csv - assuming an even national environment (D+0).")
         return 0.0
+
     polls = []
     for r in rows:
         if date.fromisoformat(r["end_date"]) > TODAY:
             continue
+        dem, rep = float(r["dem"]), float(r["rep"])
         lean = r.get("lean", "").upper()
         polls.append({
             "pollster": r["pollster"], "end_date": r["end_date"],
-            "dem_pct": r["dem"], "rep_pct": r["rep"], "sample_size": r["n"],
+            "margin": 100 * (dem - rep) / (dem + rep),
+            "sample_size": r["n"],
+            "population": r.get("population") or "lv",
             "partisan": "DEM" if lean.startswith("D") else "REP" if lean.startswith("R") else "",
         })
+
+    reputable = [(date.fromisoformat(p["end_date"]), p["margin"]) for p in polls
+                 if pollster_weight(p["pollster"], pollster_weights) >= GCB_MIN_POLLSTER_WEIGHT]
+    gaps = {}
+    for p in polls:
+        d = date.fromisoformat(p["end_date"])
+        nearby = [m for rd, m in reputable if abs((rd - d).days) <= GCB_HOUSE_EFFECT_WINDOW_DAYS]
+        if len(nearby) >= 3:
+            gaps.setdefault(p["pollster"], []).append(p["margin"] - sum(nearby) / len(nearby))
+    effects = {name: (sum(g) / len(g)) * len(g) / (len(g) + HOUSE_EFFECT_SHRINK) for name, g in gaps.items()}
+
+    for p in polls:
+        corrected = p["margin"] - effects.get(p["pollster"], 0.0)
+        p["dem_pct"], p["rep_pct"] = 50 + corrected / 2, 50 - corrected / 2
     average, _ = polling_average(polls, pollster_weights, GCB_HALF_LIFE_DAYS)
     return 0.0 if average is None else average
 

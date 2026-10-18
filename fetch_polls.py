@@ -1,5 +1,7 @@
 """
-Download every 2026 Senate general-election poll into data/polls.csv.
+Download every 2026 Senate general-election poll into data/polls.csv, and
+every national generic-ballot poll ("Democrat or Republican for Congress?")
+into data/gcb_polls.csv - the generic ballot sets the national environment.
 
 Source: PollResults.org, which republishes the New York Times poll database
 under CC BY 4.0 (credit "Poll data from the New York Times" if you publish).
@@ -13,20 +15,24 @@ import urllib.parse
 import urllib.request
 from datetime import datetime
 
-API = "https://api.pollresults.org/v1.0/politics/results/senate"
+API = "https://api.pollresults.org/v1.0/politics/results/"
 ELECTION_DATE = "2026-11-03"
 
 # Prefer likely voters, then registered voters, then all adults.
 POPULATION_ORDER = ["lv", "rv", "v", "a"]
 
+# Some polls don't list a sample size. Rather than drop them, give them a
+# cautious size so they count, but less than a typical poll.
+DEFAULT_SAMPLE_SIZE = 600
 
-def fetch_all():
+
+def fetch_all(office):
     polls, cursor = [], None
     while True:
         params = {"limit": 100}
         if cursor:
             params["cursor"] = cursor
-        url = API + "?" + urllib.parse.urlencode(params)
+        url = API + office + "?" + urllib.parse.urlencode(params)
         req = urllib.request.Request(url, headers={"User-Agent": "senate-forecast/0.1"})
         with urllib.request.urlopen(req, timeout=30) as resp:
             page = json.load(resp)
@@ -82,7 +88,7 @@ def main():
     with open("data/states.csv", newline="") as f:
         our_states = {row["state"] for row in csv.DictReader(f)}
 
-    raw = fetch_all()
+    raw = fetch_all("senate")
     rows, skipped = [], 0
     for poll in raw:
         if poll["state"] not in our_states or poll["electionDate"] != ELECTION_DATE or poll["hypothetical"]:
@@ -90,7 +96,7 @@ def main():
             continue
         q = pick_question(poll)
         sides = two_sides(q["answers"]) if q else None
-        if not sides or not q["sampleSize"]:
+        if not sides:
             skipped += 1
             continue
         end_date = datetime.strptime(poll["endDate"], "%m/%d/%y").date()
@@ -101,7 +107,7 @@ def main():
             "dem_pct": sides[0],
             "rep_pct": sides[1],
             "undecided": undecided_share(q["answers"]),
-            "sample_size": q["sampleSize"],
+            "sample_size": q["sampleSize"] or DEFAULT_SAMPLE_SIZE,
             "population": q["population"],
             "partisan": poll["partisan"],   # DEM / REP = sponsored by a partisan group
         })
@@ -112,7 +118,42 @@ def main():
         writer.writeheader()
         writer.writerows(rows)
 
-    print(f"Downloaded {len(raw)} polls, saved {len(rows)}, skipped {skipped}.")
+    print(f"Senate: downloaded {len(raw)} polls, saved {len(rows)}, skipped {skipped}.")
+
+    save_generic_ballot()
+
+
+def save_generic_ballot():
+    """
+    Generic-ballot polls are in the House feed with state "US". Saved in the
+    column format forecast.py reads (pollster, end_date, dem, rep, n, lean).
+    Undecided voters are left out: nationally they're assumed to split evenly,
+    which leaves the margin unchanged.
+    """
+    rows = []
+    for poll in fetch_all("house"):
+        if poll["state"] != "US" or poll["electionDate"] != ELECTION_DATE:
+            continue
+        q = pick_question(poll)
+        sides = two_sides(q["answers"]) if q else None
+        if not sides:
+            continue
+        rows.append({
+            "pollster": poll["displayName"] or poll["pollster"],
+            "end_date": datetime.strptime(poll["endDate"], "%m/%d/%y").date().isoformat(),
+            "dem": sides[0],
+            "rep": sides[1],
+            "n": q["sampleSize"] or DEFAULT_SAMPLE_SIZE,
+            "population": q["population"],
+            "lean": {"DEM": "D", "REP": "R"}.get(poll["partisan"], ""),
+        })
+
+    rows.sort(key=lambda r: r["end_date"])
+    with open("data/gcb_polls.csv", "w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+        writer.writeheader()
+        writer.writerows(rows)
+    print(f"Generic ballot: saved {len(rows)} polls.")
 
 
 if __name__ == "__main__":
