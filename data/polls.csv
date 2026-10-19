@@ -55,6 +55,7 @@ FL,YouGov,2026-10-05,44,49,5.0,3812,lv,
 FL,St. Pete Polls,2026-10-07,44.9,46.8,6.0,836,lv,
 FL,Stetson University Center for Public Opinion Research,2026-10-09,41,52,6.0,716,lv,
 FL,MDW Communications,2026-10-10,42.4,47.6,10.0,2351,lv,
+FL,YouGov,2026-10-15,42,51,7.0,825,rv,
 FL,ActiVote,2026-10-15,46.9,53.1,0.0,400,lv,
 GA,WPA Intelligence,2025-01-15,46,32,23.0,500,lv,REP
 GA,The Tyson Group,2025-01-31,51,39,10,600,lv,
@@ -79,6 +80,7 @@ GA,InsiderAdvantage,2026-09-23,50,42,8.0,1200,lv,
 GA,Big Data Poll,2026-09-23,55.4,44.6,0.0,678,lv,
 GA,Wedgewood Polls,2026-10-03,55,45,0.0,600,lv,
 GA,Trafalgar Group,2026-10-09,51,43,6.0,1101,lv,REP
+GA,Quantus Insights,2026-10-17,52.7,45.4,2.0,755,lv,
 IA,Public Policy Polling,2025-06-03,43,45,12.0,568,rv,DEM
 IA,Public Policy Polling,2025-08-19,43,44,13,572,rv,DEM
 IA,Change Research,2026-01-11,41,44,14.0,1108,lv,
@@ -149,6 +151,7 @@ MA,YouGov,2026-08-12,49,25,23,800,rv,
 MA,University of New Hampshire,2026-08-24,49,30,13,906,lv,
 MA,University of New Hampshire,2026-09-21,53,30,8.0,556,lv,
 MA,MassINC Polling Group,2026-09-22,54,28,11.0,800,lv,
+MA,YouGov,2026-10-12,56,29,4.0,800,rv,
 ME,Upswing Research,2025-03-25,42,43,15.0,600,lv,DEM
 ME,Public Policy Polling,2025-09-09,44,35,21.0,642,rv,DEM
 ME,Zenith Research,2025-10-10,42,37,12.0,501,lv,
@@ -414,6 +417,7 @@ SC,Abacus Data,2026-08-28,38,51,8.0,306,lv,
 SC,InsiderAdvantage,2026-09-09,43.2,45.1,8.5,1200,lv,
 SC,Trafalgar Group,2026-09-25,42.3,43.4,8.5,1087,lv,REP
 SC,InsiderAdvantage,2026-09-29,45,46,4.0,1200,lv,
+SC,Trafalgar Group,2026-10-18,45.6,48.6,1.2,1095,lv,REP
 SD,Public Policy Polling,2025-07-31,28,41,31.0,552,rv,IND
 SD,Public Policy Polling,2025-11-14,31,44,25.0,814,rv,IND
 SD,Public Policy Polling,2026-02-18,32,49,19.0,685,rv,IND
@@ -482,6 +486,7 @@ TX,ReconMR/Siena Research Institute,2026-10-08,48,44,5.0,617,lv,
 TX,Trafalgar Group,2026-10-08,47.1,43.6,7.6,1086,lv,REP
 TX,Marist University,2026-10-11,47,45,6.0,1196,lv,
 TX,Quantus Insights,2026-10-11,46.7,47.2,3.9,854,lv,
+TX,University of Houston Hobby School of Public Affairs,2026-10-14,48,46,3.0,2000,lv,
 TX,InsiderAdvantage,2026-10-14,48,49,3,1200,lv,
 TX,ActiVote,2026-10-14,51.9,48.1,0.0,400,lv,
 TX,YouGov,2026-10-16,51,49,0.0,1458,lv,
