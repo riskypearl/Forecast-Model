@@ -143,6 +143,16 @@ Senate results track presidential lean almost one-for-one - a sign of polarisati
   is actually slightly *more* Democratic than its presidential lean, so it doesn't explain
   Michigan Senate races running close.
 
+**State poll bias (tested, rejected)** (`backtest_state_bias.py`): correct each state's polls
+by how they missed in earlier cycles (final 3 weeks of Senate, President and Governor polls,
+1998 onwards), either the whole miss or only the part beyond that cycle's national miss, from
+all past cycles or only the same type (midterm/presidential), shrunk towards zero. Every
+variant was worse on unseen 2020-22 (5.45-5.50 vs 5.42 avg miss). State poll misses mostly
+don't repeat; the part that does is the national miss the simulation already covers. Texas
+for example: polls underrated Republicans in 2020 and 2022, but by about the national
+amount - relative to other states, Texas polls have if anything slightly underrated
+Democrats (+0.8 correction).
+
 **Generic-ballot bias:** final generic-ballot polls overstated Democrats in 5 of 6 cycles,
 by 3.2 points on average (2.4 in midterm years).
 

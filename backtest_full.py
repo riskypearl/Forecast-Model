@@ -29,6 +29,10 @@ import forecast as fc
 CYCLES = [2012, 2014, 2016, 2018, 2020, 2022]
 SIMS_PER_RACE = 4000
 
+# Optional correction added to each race's polling average, keyed (cycle, state).
+# Empty = off. backtest_state_bias.py fills it to test state-level poll bias.
+STATE_POLL_BIAS = {}
+
 # FiveThirtyEight spells some pollsters differently from our ratings file.
 POLLSTER_ALIASES = {
     "The New York Times/Siena College": "The New York Times/Siena University",
@@ -115,6 +119,8 @@ def run_cycle(cycle, polls_538, races, pres, national, weights):
 
         state_polls = [p for p in polls if p["state"] == r["state"]]
         poll_avg, n = fc.polling_average(state_polls, weights, as_of=as_of)
+        if poll_avg is not None:
+            poll_avg += STATE_POLL_BIAS.get((cycle, r["state"]), 0.0)
         raw_avg, _ = fc.polling_average(raw_by_race[r["state"]], weights, as_of=as_of)
         w = fc.poll_weight(n)
         margin = fund if poll_avg is None else (1 - w) * fund + w * poll_avg
