@@ -436,11 +436,75 @@ def load_pollster_weights(path):
     return weights
 
 
+# Silver Bulletin letter grade -> weight. F = banned (fabrication / unreliable).
+# Provisional grades (A/B, B/C, C/D) are for pollsters with few polls.
+GRADE_WEIGHT = {"A+": 1.0, "A": 0.95, "A-": 0.9, "A/B": 0.8, "B+": 0.8, "B": 0.7, "B-": 0.65,
+                "B/C": 0.55, "C+": 0.5, "C": 0.45, "C-": 0.4, "C/D": 0.35, "D+": 0.3, "D": 0.25,
+                "D-": 0.2, "F": 0.0}
+SILVER_BULLETIN_RATINGS = "data/silverbulletin/pollster_ratings.csv"
+_NAME_STOPWORDS = {"the", "university", "college", "polling", "poll", "research", "inc", "llc", "and",
+                   "group", "associates", "co", "center", "for", "of", "public", "opinion", "institute",
+                   "company", "strategy", "strategies", "survey", "political"}
+
+
+def normalise_pollster(name):
+    """'Mason-Dixon Polling & Research, Inc.' -> 'masondixon' - to match names across sources."""
+    words = "".join(c if c.isalnum() or c == " " else " " if c in "&/," else ""
+                    for c in name.lower().replace("-", "")).split()
+    words = ["saint" if w == "st" else w for w in words]
+    return " ".join(w for w in words if w not in _NAME_STOPWORDS)
+
+
+class PollsterWeights(dict):
+    """Weights keyed by pollster name, with forgiving name matching."""
+    def lookup(self, name):
+        if name in self:
+            return self[name]
+        key = normalise_pollster(name)
+        if key in self.index:
+            return self.index[key]
+        # one name containing the other ('cygnal political' / 'cygnal'), longest match wins
+        hits = [k for k in self.index if len(min(k, key, key=len)) >= 5 and (k in key or key in k)]
+        if hits:
+            return self.index[max(hits, key=len)]
+        return None
+
+
+def load_silver_bulletin_weights(path=SILVER_BULLETIN_RATINGS):
+    """Silver Bulletin pollster ratings (local only - not republished) -> PollsterWeights."""
+    weights = PollsterWeights()
+    with open(path, encoding="utf-8") as f:
+        for r in csv.DictReader(f, delimiter="\t"):
+            grade = r["grade"].split("@@")[0].strip()
+            if grade in GRADE_WEIGHT:
+                weights[r["pollster"]] = GRADE_WEIGHT[grade]
+    weights.index = {}
+    for name, w in weights.items():
+        weights.index.setdefault(normalise_pollster(name), w)
+    return weights
+
+
+def live_pollster_weights():
+    """Ratings the live forecasts use: Silver Bulletin if present, else ElectIndex."""
+    if os.path.exists(SILVER_BULLETIN_RATINGS):
+        return load_silver_bulletin_weights()
+    return load_pollster_weights("data/pollster_ratings.csv")
+
+
 def pollster_weight(name, pollster_weights):
     """
     Exact match first. Joint polls ("Fabrizio Ward/Impact Research") get the
     average of whichever partners are rated - but a banned partner bans the poll.
     """
+    if isinstance(pollster_weights, PollsterWeights):
+        found = pollster_weights.lookup(name)
+        if found is not None:
+            return found
+        partners = [pollster_weights.lookup(p.strip()) for p in name.split("/")]
+        partners = [p for p in partners if p is not None]
+        if not partners:
+            return DEFAULT_POLLSTER_WEIGHT
+        return 0.0 if 0.0 in partners else sum(partners) / len(partners)
     if name in pollster_weights:
         return pollster_weights[name]
     partners = [pollster_weights[p.strip()] for p in name.split("/") if p.strip() in pollster_weights]
@@ -453,7 +517,7 @@ def pollster_weight(name, pollster_weights):
 
 def main():
     states = load_csv("data/states.csv")
-    pollster_weights = load_pollster_weights("data/pollster_ratings.csv")
+    pollster_weights = live_pollster_weights()
     environment = national_environment(pollster_weights)
     demographics = load_demographics()
     history = load_candidate_history()
