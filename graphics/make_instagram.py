@@ -17,23 +17,46 @@ RED = (196, 52, 52)
 BLUE_TINT = (205, 216, 240)
 RED_TINT = (240, 210, 208)
 
-RACES = [  # state, candidate, party, margin, flip
-    ("NEW HAMPSHIRE", "Pappas", "D", 10.3, False),
-    ("MINNESOTA", "Flanagan", "D", 10.2, False),
-    ("MICHIGAN", "El-Sayed", "D", 7.2, False),
-    ("NORTH CAROLINA", "Cooper", "D", 7.2, True),
-    ("MAINE", "Jackson", "D", 2.6, True),
-    ("TEXAS", "Talarico", "D", 1.9, True),
-    ("ALASKA", "Peltola", "D", 0.6, True),
-    ("OHIO", "Brown", "D", 0.6, True),
-    ("NEBRASKA", "Ricketts", "R", 0.6, False),
-    ("IOWA", "Hinson", "R", 2.5, False),
-    ("FLORIDA", "Moody", "R", 4.6, False),
-    ("KANSAS", "Marshall", "R", 4.9, False),
-    ("MISSISSIPPI", "Hyde-Smith", "R", 9.5, False),
-    ("SOUTH CAROLINA", "D. Graham", "R", 9.9, False),
-]
-DEM_SEATS, REP_SEATS, CONTROL = 52, 48, 66
+import csv
+from datetime import date
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ELECTION_DAY = date(2026, 11, 3)
+COMPETITIVE = 11.0          # races within this many points go on the graphic
+SEATS_NOT_UP_D = 34
+STATE_NAMES = {
+    "AK": "ALASKA", "AL": "ALABAMA", "AR": "ARKANSAS", "CO": "COLORADO", "DE": "DELAWARE", "FL": "FLORIDA",
+    "GA": "GEORGIA", "IA": "IOWA", "ID": "IDAHO", "IL": "ILLINOIS", "KS": "KANSAS", "KY": "KENTUCKY",
+    "LA": "LOUISIANA", "MA": "MASSACHUSETTS", "ME": "MAINE", "MI": "MICHIGAN", "MN": "MINNESOTA",
+    "MS": "MISSISSIPPI", "MT": "MONTANA", "NC": "NORTH CAROLINA", "NE": "NEBRASKA", "NH": "NEW HAMPSHIRE",
+    "NJ": "NEW JERSEY", "NM": "NEW MEXICO", "OH": "OHIO", "OK": "OKLAHOMA", "OR": "OREGON",
+    "RI": "RHODE ISLAND", "SC": "SOUTH CAROLINA", "SD": "SOUTH DAKOTA", "TN": "TENNESSEE", "TX": "TEXAS",
+    "VA": "VIRGINIA", "WV": "WEST VIRGINIA", "WY": "WYOMING",
+}
+SHORT_NAMES = {"Darline Graham": "D. Graham"}   # avoid confusion with Lindsey Graham
+
+
+def load_senate():
+    """Competitive races, seat call, control chance and date - from the latest forecast run."""
+    results = list(csv.DictReader(open(os.path.join(ROOT, "results.csv"))))
+    holders = {r["state"]: r["incumbent_party"] for r in csv.DictReader(open(os.path.join(ROOT, "data", "states.csv")))}
+    names = {r["state"]: r for r in csv.DictReader(open(os.path.join(ROOT, "data", "candidates.csv"), encoding="cp1252"))}
+    timeline = list(csv.DictReader(open(os.path.join(ROOT, "history", "timeline.csv"))))[-1]
+
+    races = []
+    for r in results:
+        m = float(r["margin"])
+        if abs(m) > COMPETITIVE:
+            continue
+        party = "D" if m > 0 else "R"
+        full = names.get(r["state"], {}).get("dem_candidate" if party == "D" else "rep_candidate", "")
+        name = SHORT_NAMES.get(full, full.split()[-1] if full else "")
+        races.append((STATE_NAMES[r["state"]], name, party, abs(m), party != holders[r["state"]]))
+    races.sort(key=lambda x: (x[2] == "R", -x[3] if x[2] == "D" else x[3]))
+    dem_seats = SEATS_NOT_UP_D + sum(float(r["margin"]) > 0 for r in results)
+    run_date = date.fromisoformat(timeline["date"])
+    label = f"{run_date.day} {run_date.strftime('%b').upper()} {run_date.year}  ·  {(ELECTION_DAY - run_date).days} DAYS OUT"
+    return races, dem_seats, 100 - dem_seats, round(100 * float(timeline["dem_control_prob"])), label
 
 
 def font(name, size):
@@ -64,6 +87,8 @@ def rounded(d, box, r, fill=None, outline=None, width=1):
 
 
 def main():
+    RACES, DEM_SEATS, REP_SEATS, CONTROL, DATE_LABEL = load_senate()
+    n_dem_rows = sum(r[2] == "D" for r in RACES)
     img = Image.new("RGB", (W * S, H * S), PAPER)
     d = ImageDraw.Draw(img)
 
@@ -79,21 +104,20 @@ def main():
 
     # --- masthead ---------------------------------------------------------
     tracked(d, (L, 96), "2026 U.S. SENATE FORECAST", mono_b, INK, 2.2)
-    tracked(d, (R, 96), "18 OCT 2026  ·  16 DAYS OUT", mono, GRAPHITE, 1.6, anchor="r")
+    tracked(d, (R, 96), DATE_LABEL, mono, GRAPHITE, 1.6, anchor="r")
     rect(d, (L, 112, R, 113), INK)
 
     # --- verdict -------------------------------------------------------------
     base = 352
-    w52 = d.textlength("52", font=numeral) / S
-    wdash = d.textlength("–", font=numeral) / S
-    w48 = d.textlength("48", font=numeral) / S
+    w52 = d.textlength(str(DEM_SEATS), font=numeral) / S
+    w48 = d.textlength(str(REP_SEATS), font=numeral) / S
     x = L - 6
     dash_w, dash_gap = 46, 22
-    text(d, (x, base), "52", numeral, BLUE, "ls")
+    text(d, (x, base), str(DEM_SEATS), numeral, BLUE, "ls")
     dash_x = x + w52 + dash_gap
     rect(d, (dash_x, base - 104, dash_x + dash_w, base - 96), INK)
     x48 = dash_x + dash_w + dash_gap
-    text(d, (x48, base), "48", numeral, RED, "ls")
+    text(d, (x48, base), str(REP_SEATS), numeral, RED, "ls")
 
     right_block_x = x48 + w48 + 40
     text(d, (right_block_x, 226), "Democrats", serif_big, BLUE, "ls")
@@ -160,7 +184,7 @@ def main():
     first_mid = y0 + row_h / 2 - 16
     last_mid = y0 + (len(RACES) - 1) * row_h + split_gap + row_h / 2 + 16
     rect(d, (axis - 0.5, first_mid, axis + 0.5, last_mid), INK)
-    split_y = y0 + 8 * row_h + split_gap / 2
+    split_y = y0 + n_dem_rows * row_h + split_gap / 2
     rect(d, (L, split_y - 0.5, R, split_y + 0.5), INK)
     label_w = tracked(d, (-1000, -1000), "TIPPING POINT", mono_sm, INK, 1.6)   # measure only
     lx = axis - label_w / 2
@@ -176,7 +200,7 @@ def main():
     img = img.resize((W, H), Image.LANCZOS)
     out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "instagram_forecast.png")
     img.save(out)
-    print("saved", out)
+    print("saved", out, "|", DATE_LABEL, "|", DEM_SEATS, "-", REP_SEATS, f"| {CONTROL}% |", len(RACES), "races")
 
 
 if __name__ == "__main__":
