@@ -126,20 +126,8 @@ def main():
     text(d, (right_block_x, 310), "the Senate", serif_big, INK, "ls")
     tracked(d, (right_block_x, 348), f"{CONTROL}% CHANCE OF DEM CONTROL", mono_b, GRAPHITE, 1.6)
 
-    # --- seat strip: 100 tiles, 50 per row -----------------------------------
-    top, tgap = 392, 3.6
-    tile = ((R - L) - 49 * tgap) / 50          # 50 tiles fill the measure exactly
-    for i in range(100):
-        row, col = divmod(i, 50)
-        tx = L + col * (tile + tgap)
-        ty = top + row * (tile + tgap)
-        rect(d, (tx, ty, tx + tile, ty + tile), BLUE if i < DEM_SEATS else RED)
-    # majority marker after seat 50 (between tile 50 and 51 = start of row 2)
-    tracked(d, (L, top + 2 * (tile + tgap) + 22), "100 SEATS", mono_sm, MUTED, 1.4)
-    tracked(d, (R, top + 2 * (tile + tgap) + 22), "51 FOR CONTROL", mono_sm, MUTED, 1.4, anchor="r")
-
     # --- race ledger -----------------------------------------------------------
-    head_y = 492
+    head_y = 412
     rect(d, (L, head_y, R, head_y + 1), INK)
     tracked(d, (L, head_y + 26), "COMPETITIVE RACES", mono_b, INK, 2.0)
     tracked(d, (R, head_y + 26), "PROJECTED MARGIN", mono, GRAPHITE, 1.6, anchor="r")
@@ -149,7 +137,7 @@ def main():
     half = 132                       # bar room either side of the axis
     scale = half / 11.0
     col_margin = R
-    row_h, y0 = 46, head_y + 52
+    row_h, y0 = 50, head_y + 52
     split_gap = 22
 
     for i, (state, name, party, margin, flip) in enumerate(RACES):
