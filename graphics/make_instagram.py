@@ -3,7 +3,8 @@
 import os
 from PIL import Image, ImageDraw, ImageFont
 
-FONTS = os.environ.get("CANVAS_FONTS", "")
+# Fonts live in graphics/fonts (all SIL Open Font License)
+FONTS = os.environ.get("CANVAS_FONTS") or os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts")
 W, H = 1080, 1350
 S = 2                      # draw at 2x, then downsample for crisp edges
 
@@ -194,7 +195,7 @@ def main():
     # --- footer ------------------------------------------------------------------
     fy = H - 72
     rect(d, (L, fy - 26, R, fy - 25), INK)
-    tracked(d, (L, fy), "FUNDAMENTALS + DE-BIASED POLLS · 10,000 SIMULATIONS", mono_sm, GRAPHITE, 1.2)
+    tracked(d, (L, fy), "UNBIASED POLLS + PAST ELECTION RESULTS · 10,000 SIMULATED ELECTIONS", mono_sm, GRAPHITE, 1.2)
     tracked(d, (R, fy), "@AFCWILL10 ON X", mono_sm, GRAPHITE, 1.2, anchor="r")
 
     img = img.resize((W, H), Image.LANCZOS)

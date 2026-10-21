@@ -13,7 +13,16 @@ from make_instagram import (W, H, S, PAPER, INK, GRAPHITE, MUTED, RULE, BLUE, RE
                             font, text, tracked, rect, rounded)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATE_LABEL = "19 OCT 2026  ·  15 DAYS OUT"
+def _date_label():
+    """'21 OCT 2026  ·  13 DAYS OUT' from the date of the latest forecast run."""
+    import csv as _csv
+    from datetime import date as _date
+    last = list(_csv.DictReader(open(os.path.join(ROOT, "history", "timeline.csv"))))[-1]["date"]
+    d = _date.fromisoformat(last)
+    return f"{d.day} {d.strftime('%b').upper()} {d.year}  ·  {(_date(2026, 11, 3) - d).days} DAYS OUT"
+
+
+DATE_LABEL = _date_label()
 
 RATING_ORDER = ["Safe D", "Likely D", "Lean D", "Tilt D", "Toss-up", "Tilt R", "Lean R", "Likely R", "Safe R"]
 RATING_COLOUR = {
@@ -184,7 +193,7 @@ def main():
     fy = H - 72
     assert y < fy - 40, "content runs into footer"
     rect(d, (L, fy - 26, R, fy - 25), INK)
-    tracked(d, (L, fy), "FUNDAMENTALS + DE-BIASED POLLS · 10,000 SIMULATIONS", mono_sm, GRAPHITE, 1.2)
+    tracked(d, (L, fy), "UNBIASED POLLS + PAST ELECTION RESULTS · 10,000 SIMULATED ELECTIONS", mono_sm, GRAPHITE, 1.2)
     tracked(d, (R, fy), "@AFCWILL10 ON X", mono_sm, GRAPHITE, 1.2, anchor="r")
 
     img = img.resize((W, H), Image.LANCZOS)
