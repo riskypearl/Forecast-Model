@@ -73,7 +73,7 @@ def main():
     text(d, (bx, 190), "Democrats favoured", serif_big, BLUE, "ls")
     text(d, (bx, 230), "to win the House", serif_big, INK, "ls")
     tracked(d, (bx, 262), f"{control:.0%} CHANCE OF DEM CONTROL", mono_b, GRAPHITE, 1.4)
-    tracked(d, (L, 298), f"AVERAGE OF 10,000 SIMULATIONS  ·  80% RANGE {lo}-{hi} DEM SEATS  ·  1 SQUARE = 1 DISTRICT",
+    tracked(d, (L, 298), f"PROJECTED AVERAGE  ·  80% RANGE {lo}-{hi} DEM SEATS  ·  1 SQUARE = 1 DISTRICT",
             mono_sm, MUTED, 1.1)
 
     # --- cartogram ----------------------------------------------------------------------
@@ -122,7 +122,7 @@ def main():
 
     fy = H - 72
     rect(d, (L, fy - 26, R, fy - 25), INK)
-    tracked(d, (L, fy), "UNBIASED POLLS + PAST ELECTION RESULTS · 10,000 SIMULATED ELECTIONS", mono_sm, GRAPHITE, 1.2)
+    tracked(d, (L, fy), "UNBIASED POLLS + PAST ELECTION RESULTS", mono_sm, GRAPHITE, 1.2)
     tracked(d, (R, fy), "@AFCWILL10 ON X", mono_sm, GRAPHITE, 1.2, anchor="r")
 
     img = img.resize((W, H), Image.LANCZOS)

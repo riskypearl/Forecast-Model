@@ -112,7 +112,7 @@ def main():
     text(d, (bx, 246), "favoured to win", serif_big, INK, "ls")
     text(d, (bx, 286), "the House", serif_big, INK, "ls")
     tracked(d, (bx, 318), f"{control:.0%} CHANCE OF DEM CONTROL", mono_b, GRAPHITE, 1.4)
-    tracked(d, (L, 350), f"AVERAGE OF 10,000 SIMULATIONS  ·  80% RANGE {lo}-{hi} DEM SEATS",
+    tracked(d, (L, 350), f"PROJECTED AVERAGE  ·  80% RANGE {lo}-{hi} DEM SEATS",
             mono_sm, MUTED, 1.3)
 
     # --- 435 tiles, column by column, ordered Safe D -> Safe R ------------------------
@@ -193,7 +193,7 @@ def main():
     fy = H - 72
     assert y < fy - 40, "content runs into footer"
     rect(d, (L, fy - 26, R, fy - 25), INK)
-    tracked(d, (L, fy), "UNBIASED POLLS + PAST ELECTION RESULTS · 10,000 SIMULATED ELECTIONS", mono_sm, GRAPHITE, 1.2)
+    tracked(d, (L, fy), "UNBIASED POLLS + PAST ELECTION RESULTS", mono_sm, GRAPHITE, 1.2)
     tracked(d, (R, fy), "@AFCWILL10 ON X", mono_sm, GRAPHITE, 1.2, anchor="r")
 
     img = img.resize((W, H), Image.LANCZOS)
