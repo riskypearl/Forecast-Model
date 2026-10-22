@@ -138,6 +138,14 @@ Senate results track presidential lean almost one-for-one - a sign of polarisati
 - Opponent-strength correction (subtract an earlier opponent's own record): worse on the
   fundamentals backtest, only 0.08 better on the full model - not adopted
   (`OPPONENT_CORRECTION = 0` in `backtest.py`)
+- Own pollster ratings from FiveThirtyEight's accuracy data (`pollster_ratings_own.py`): two
+  simple methods tried, both failed a sense check (one rewarded lucky partisan lean, the other
+  punished small district polls and rewarded herding) - not adopted
+- **Pollster ratings now come from Silver Bulletin** (letter grades -> weights: A+ 1.0 ... B 0.7
+  ... C+ 0.5, F = excluded; unrated 0.5). They adjust for sample size, race type and herding,
+  which simple methods miss. Can't be fairly backtested (built on data including 2020-22), so
+  adopted on a sense check; switching moved no Senate or House call. Used locally, not
+  republished (`data/silverbulletin/`, git-ignored). ElectIndex ratings remain the fallback.
 - Down-ballot lean (blend in each state's House vote, contested districts only): worse on the
   full model and on older years - not adopted (`HOUSE_LEAN_WEIGHT = 0`). Michigan's House lean
   is actually slightly *more* Democratic than its presidential lean, so it doesn't explain

@@ -182,7 +182,7 @@ def district_lean(d):
 
 
 def main():
-    weights = fc.load_pollster_weights("data/pollster_ratings.csv")
+    weights = fc.live_pollster_weights()
     environment = fc.national_environment(weights)
     districts = load_districts()
 
