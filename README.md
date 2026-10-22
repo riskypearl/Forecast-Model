@@ -118,13 +118,24 @@ using FiveThirtyEight's historical polls.
 | 203 races, 2012-2022 | Avg miss | Winners right |
 |---|---|---|
 | Fundamentals only | 7.3 pts | 178 |
-| Full model | 6.2 pts | 186 (92%) |
+| Full model | 5.8 pts | 186 (92%) |
 
-**Calibration:** favourites given 80-95% won 31 of 36 races (32.1 expected); favourites
-given 95%+ won 131 of 132 (130.5 expected). Brier score 0.060. The model's probabilities are honest.
+**Calibration:** favourites given 80-95% won 31 of 35 races (31.5 expected); favourites
+given 95%+ won 133 of 134 (132.5 expected). Brier score 0.056. The model's probabilities are honest.
 
 **Poll weight:** relying more heavily on polls fitted 2012-2018 best but did *worse* on
 2020-2022, when polls missed badly. The model's hedge towards fundamentals was kept.
+
+**Old polls still count** (`backtest_poll_recency.py`): the polling average halves a poll's
+weight every 14 days, and that half-life used to set how much the polls count against the
+fundamentals too - so a race with no new polls for a few weeks drifted back to its
+fundamentals (Kansas, October 2026: polls tied, model R+5). The blend now uses a separate
+45-day half-life (`POLL_COUNT_HALF_LIFE_DAYS`). Tested with forecasts made 1, 7, 14, 21 and
+28 days out, it beat 14 days at every distance, on both 2012-18 and unseen 2020-22 (check
+years 5.46 -> 5.35 avg miss; day-before Brier 0.060 -> 0.056). Longer half-lives scored
+slightly better still, but FiveThirtyEight's polls only go back ~60 days, so that can't be
+trusted for a live race with polls from a year ago. The House model keeps 14 days (its
+backtest data isn't public, so the change is untested there).
 
 **Lean compression (tested, rejected):** scaling presidential lean down (e.g. Senate races
 follow 80% of it, for ticket-splitting) made predictions worse on unseen years. Modern

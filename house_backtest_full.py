@@ -105,7 +105,8 @@ def run_cycle(cycle, polls_538, weights):
         by_district[p["state"]].append(p)
 
     for r in races:
-        avg, n = fc.polling_average(by_district.get(r["district"], []), weights, as_of=as_of)
+        avg, n = fc.polling_average(by_district.get(r["district"], []), weights, as_of=as_of,
+                                    count_half_life=fc.POLL_HALF_LIFE_DAYS)
         r["polls"], _ = fc.polling_average(raw.get(r["district"], []), weights, as_of=as_of)
         r["n"] = n
         r["avg"] = avg

@@ -49,6 +49,9 @@ APPOINTED_INCUMBENCY_BONUS = 2.5
 # Polls: more polls -> trust them more, up to this cap.
 MAX_POLL_WEIGHT = 0.85
 POLL_HALF_LIFE_DAYS = 14   # a poll this old counts half as much as one from today
+# How fast old polls stop counting towards trusting the polls over the fundamentals.
+# Separate from the half-life above: a race with no new polls still has its old ones.
+POLL_COUNT_HALF_LIFE_DAYS = 45   # tested on backtest_poll_recency.py (14 did worse)
 HOUSE_EFFECT_SHRINK = 3    # bigger = more sceptical of house effects from few polls
 
 # Polls paid for by a party-aligned group (DEM / REP sponsor) count for this much.
@@ -208,7 +211,8 @@ def demographic_adjustment(state, demographics):
 # STEP 3: polling average - newer and bigger polls count for more
 # ---------------------------------------------------------------------------
 
-def polling_average(polls, pollster_weights, half_life=POLL_HALF_LIFE_DAYS, as_of=None):
+def polling_average(polls, pollster_weights, half_life=POLL_HALF_LIFE_DAYS, as_of=None,
+                    count_half_life=None):
     """
     Returns (average margin, effective number of polls). Old polls barely
     count, so a race with 20 polls from last year and none this month has an
@@ -222,6 +226,7 @@ def polling_average(polls, pollster_weights, half_life=POLL_HALF_LIFE_DAYS, as_o
     for poll in polls:
         age_days = ((as_of or TODAY) - date.fromisoformat(poll["end_date"])).days
         recency = 0.5 ** (age_days / half_life)
+        count_recency = 0.5 ** (age_days / (count_half_life or POLL_COUNT_HALF_LIFE_DAYS))
         quality = pollster_weight(poll["pollster"], pollster_weights)
         quality *= POPULATION_WEIGHT.get(poll.get("population", "lv"), 0.8)
         if poll.get("partisan") in ("DEM", "REP"):
@@ -231,7 +236,7 @@ def polling_average(polls, pollster_weights, half_life=POLL_HALF_LIFE_DAYS, as_o
         margin = float(poll["dem_pct"]) - float(poll["rep_pct"])
         weighted_sum += weight * margin
         total_weight += weight
-        effective_polls += recency * quality
+        effective_polls += count_recency * quality
     if total_weight == 0:
         return None, 0.0
     return weighted_sum / total_weight, effective_polls

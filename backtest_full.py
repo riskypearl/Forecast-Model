@@ -33,6 +33,10 @@ SIMS_PER_RACE = 4000
 # Empty = off. backtest_state_bias.py fills it to test state-level poll bias.
 STATE_POLL_BIAS = {}
 
+# How many days before each election the forecast is made. Polls released
+# after that day are left out.
+DAYS_BEFORE = 1
+
 # FiveThirtyEight spells some pollsters differently from our ratings file.
 POLLSTER_ALIASES = {
     "The New York Times/Siena College": "The New York Times/Siena University",
@@ -93,7 +97,7 @@ def win_probability(margin, sd, national_sd):
 def run_cycle(cycle, polls_538, races, pres, national, weights):
     election_day = date.fromisoformat(
         next(p["electiondate"] for p in polls_538 if int(p["cycle"]) == cycle and p["type_simple"] == "Sen-G"))
-    as_of = election_day - timedelta(days=1)
+    as_of = election_day - timedelta(days=DAYS_BEFORE)
     environment = fc.generic_ballot_average(generic_ballot_rows(polls_538, cycle), weights, as_of)
 
     cycle_races = [r for r in races if r["year"] == cycle]
@@ -102,7 +106,8 @@ def run_cycle(cycle, polls_538, races, pres, national, weights):
     # Pool every Senate poll of the cycle, so house effects are estimated across races
     all_polls = []
     for r in cycle_races:
-        all_polls += senate_polls_for(r, polls_538)
+        all_polls += [p for p in senate_polls_for(r, polls_538)
+                      if date.fromisoformat(p["end_date"]) <= as_of]
     baselines = {r["state"]: leans[id(r)] + environment for r in cycle_races}
     all_polls = fc.allocate_undecided(all_polls, baselines)
     raw_by_race = defaultdict(list)
@@ -124,11 +129,11 @@ def run_cycle(cycle, polls_538, races, pres, national, weights):
         raw_avg, _ = fc.polling_average(raw_by_race[r["state"]], weights, as_of=as_of)
         w = fc.poll_weight(n)
         margin = fund if poll_avg is None else (1 - w) * fund + w * poll_avg
-        sd = fc.state_error_sd(w, days_left=1)
+        sd = fc.state_error_sd(w, days_left=DAYS_BEFORE)
         results.append({
             "cycle": cycle, "state": r["state"], "dem": r["dem"], "rep": r["rep"],
             "actual": r["margin"], "fundamentals": fund, "polls": raw_avg, "model": margin,
-            "dem_prob": win_probability(margin, sd, fc.national_error_sd(days_left=1)),
+            "dem_prob": win_probability(margin, sd, fc.national_error_sd(days_left=DAYS_BEFORE)),
         })
     return environment, results
 
