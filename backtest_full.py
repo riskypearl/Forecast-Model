@@ -24,6 +24,7 @@ from collections import defaultdict
 from datetime import date, timedelta
 
 import backtest as bt
+import backtest_governor as bg
 import forecast as fc
 
 CYCLES = [2012, 2014, 2016, 2018, 2020, 2022]
@@ -101,6 +102,7 @@ def run_cycle(cycle, polls_538, races, pres, national, weights):
     environment = fc.generic_ballot_average(generic_ballot_rows(polls_538, cycle), weights, as_of)
 
     cycle_races = [r for r in races if r["year"] == cycle]
+    gov_races = bg.governor_races()
     leans = {id(r): bt.lean(r["state"], cycle, pres, national) for r in cycle_races}
 
     # Pool every Senate poll of the cycle, so house effects are estimated across races
@@ -120,6 +122,8 @@ def run_cycle(cycle, polls_538, races, pres, national, weights):
         records = [bt.candidate_record(r[side], r["state"], cycle, races, pres, national)
                    for side in ("dem", "rep")]
         cand = bt.CANDIDATE_SHRINK * sum(x for x in records if x is not None)
+        cand += sum(bg.model_governor_adjustment(r[side], side, r["state"], cycle, gov_races, pres, national)
+                    for side in ("dem", "rep"))
         fund = leans[id(r)] + environment + bt.incumbency(r, races) + cand
 
         state_polls = [p for p in polls if p["state"] == r["state"]]

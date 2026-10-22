@@ -15,6 +15,7 @@ from datetime import date
 from statistics import NormalDist
 
 import backtest as bt   # shares the candidate-record method, so live and backtest match
+import backtest_governor as bg
 
 # ---------------------------------------------------------------------------
 # ASSUMPTIONS - these are your judgement calls. Change them and re-run.
@@ -145,19 +146,19 @@ def load_candidate_history():
         print("No data/candidates.csv - run fetch_polls.py. Skipping automatic candidate adjustments.")
         return None
     pres, national = bt.presidential_margins()
-    return matchups, bt.senate_races(), pres, national
+    return matchups, bt.senate_races(), pres, national, bg.governor_races()
 
 
 def candidate_adjustment(row, history):
     """
     Returns (points, explanation). Automatic part from each candidate's Senate
-    record, plus manual_candidate_adj for records outside the Senate data
-    (e.g. a House or Attorney General race).
+    record and, separately, their governor record (backtest_governor.py), plus
+    manual_candidate_adj for other records (e.g. a House or Attorney General race).
     """
     manual = float(row.get("manual_candidate_adj") or 0)
     if history is None or row["state"] not in history[0]:
         return manual, ""
-    matchups, races, pres, national = history
+    matchups, races, pres, national, gov_races = history
     total, parts = 0.0, []
     for col in ("dem_candidate", "rep_candidate"):
         name = matchups[row["state"]][col]
@@ -166,6 +167,11 @@ def candidate_adjustment(row, history):
         if record is not None:
             total += bt.CANDIDATE_SHRINK * record
             parts.append(f"{name} {bt.CANDIDATE_SHRINK * record:+.1f}")
+        gov = bg.model_governor_adjustment(bt.name_key(name.upper()), col[:3], row["state"],
+                                           ELECTION_DAY.year, gov_races, pres, national)
+        total += gov
+        if abs(gov) >= 0.05:
+            parts.append(f"{name} governor {gov:+.1f}")
     if manual:
         parts.append(f"manual {manual:+.1f}")
     return total + manual, ", ".join(parts)

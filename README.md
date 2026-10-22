@@ -15,8 +15,9 @@ probabilities and a chance of chamber control.
    candidate quality + a demographic adjustment (groups that swung hard in 2024 are
    assumed to partly swing back). Appointed incumbents get half the incumbency bonus.
    Candidate quality is calculated automatically from each 2026 candidate's competitive
-   Senate races in the last 12 years (the same method `backtest.py` tests); records outside
-   the Senate data (e.g. House, Attorney General) are entered by hand in `states.csv`.
+   Senate races in the last 12 years (the same method `backtest.py` tests), plus, as a
+   separate smaller adjustment, their governor races (`backtest_governor.py`); other records
+   (e.g. House, Attorney General) are entered by hand in `states.csv`.
    The national environment is a recency-weighted generic-ballot average: every pollster's
    lean is measured against reputable pollsters (rated 2.0+) and removed, and undecided
    voters are split evenly.
@@ -172,16 +173,26 @@ for example: polls underrated Republicans in 2020 and 2022, but by about the nat
 amount - relative to other states, Texas polls have if anything slightly underrated
 Democrats (+0.8 correction).
 
-**Governor records (tested, not adopted yet)** (`backtest_governor.py`): does how far a Senate
-candidate ran ahead of expectations in an earlier governor race (same 12-year / within-15 rules)
-predict their Senate result? Tested as its own adjustment with its own shrink, every combination
-(governor only, Senate + governor, governor only where there's no Senate record; governor
-incumbency 0 / 2.5 / 5; with and without the within-15 rule), fitted on 2008-16, checked on
-2018-24. Best: Senate + governor as separate adjustments, governor shrink 0.25, incumbency 0,
-within-15 rule - 6.29 -> 6.19 avg miss on all 2018-24 races, 121 -> 122 winners right. Only 14
-races have a governor record, so it's on the edge of the 0.1 bar. Governor records carry over
-weakly (Hogan ran 39 ahead as governor, about 13 ahead for Senate). The only 2026 candidate it
-affects is Roy Cooper (+2.4 record -> +0.6 in North Carolina).
+**Governor records (adopted)** (`backtest_governor.py`): does how far a Senate candidate ran
+ahead of their party in an earlier governor race predict their Senate result? Tested as its own
+adjustment with its own shrink, on every governor general election 2002-2024 (polled or not,
+odd years included), every combination: governor only / Senate + governor / governor only where
+there's no Senate record; "their party" measured by presidential lean + national environment or
+by the party's same-year House vote in the state; governor incumbency 0 / 2.5 / 5; with and
+without the within-15 rule. Fitted on 2008-16, checked on 2018-24 (25 Senate races have a
+governor record).
+
+| 2018-24, fundamentals only | Avg miss | Winners right |
+|---|---|---|
+| Senate record only (before) | 6.29 | 121/137 |
+| + governor record (lean baseline, any margin, no incumbency bonus, shrink 0.30) | 6.06 | 123/137 |
+
+10 of the 12 check-year races with a governor record got closer; still 0.14 better without
+Hogan (ran 44 ahead as governor, 13 ahead for Senate - governor records carry over only
+partly). Lean beat the House-vote baseline (House votes are distorted by uncontested seats -
+Hawaii gave a -75 record), and unlike Senate races, governor blowouts still told us something.
+Full model with polls: 186 -> 188 winners right, Brier 0.055 -> 0.053. In 2026 it adds +2.2 to
+North Carolina (Roy Cooper ran 7.4 ahead of Democrats as governor in 2020).
 
 **Generic-ballot bias:** final generic-ballot polls overstated Democrats in 5 of 6 cycles,
 by 3.2 points on average (2.4 in midterm years).
@@ -195,4 +206,6 @@ by 3.2 points on average (2.4 in midterm years).
 - Presidential results: state results 2016-2024
 - Backtest: MIT Election Data + Science Lab, U.S. Senate, U.S. President and U.S. House 1976-2024 (CC0)
 - Historical polls: FiveThirtyEight `raw_polls.csv` (github.com/fivethirtyeight/data, CC BY 4.0)
+- Governor results 2002-2024: FiveThirtyEight `election_results_gubernatorial.csv`
+  (github.com/fivethirtyeight/election-results, CC BY 4.0)
 - Methodology inspired by the ElectIndex 2026 forecast's published methodology
