@@ -172,6 +172,17 @@ for example: polls underrated Republicans in 2020 and 2022, but by about the nat
 amount - relative to other states, Texas polls have if anything slightly underrated
 Democrats (+0.8 correction).
 
+**Governor records (tested, not adopted yet)** (`backtest_governor.py`): does how far a Senate
+candidate ran ahead of expectations in an earlier governor race (same 12-year / within-15 rules)
+predict their Senate result? Tested as its own adjustment with its own shrink, every combination
+(governor only, Senate + governor, governor only where there's no Senate record; governor
+incumbency 0 / 2.5 / 5; with and without the within-15 rule), fitted on 2008-16, checked on
+2018-24. Best: Senate + governor as separate adjustments, governor shrink 0.25, incumbency 0,
+within-15 rule - 6.29 -> 6.19 avg miss on all 2018-24 races, 121 -> 122 winners right. Only 14
+races have a governor record, so it's on the edge of the 0.1 bar. Governor records carry over
+weakly (Hogan ran 39 ahead as governor, about 13 ahead for Senate). The only 2026 candidate it
+affects is Roy Cooper (+2.4 record -> +0.6 in North Carolina).
+
 **Generic-ballot bias:** final generic-ballot polls overstated Democrats in 5 of 6 cycles,
 by 3.2 points on average (2.4 in midterm years).
 
