@@ -60,10 +60,10 @@ def load_senate():
     return races, dem_seats, 100 - dem_seats, round(100 * float(timeline["dem_control_prob"])), label
 
 
-# Type style. "ledger" is the original set; the others swap every font through
+# Type style. "swiss" (Archivo) is the default; "ledger" is the original set. The others swap every font through
 # STYLES (file, variable-font axes, size factor) so all the graphics change together.
 # Choose with the GRAPHICS_STYLE environment variable.
-STYLE = os.environ.get("GRAPHICS_STYLE", "ledger")
+STYLE = os.environ.get("GRAPHICS_STYLE", "swiss")
 FRANKLIN, SERIF, ARCHIVO = "LibreFranklin-Variable.ttf", "SourceSerif4-Variable.ttf", "Archivo-Variable.ttf"
 STYLES = {
     "newspaper": {   # Franklin Gothic labels, Source Serif names - US newspaper data desk
