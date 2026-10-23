@@ -148,7 +148,8 @@ def main():
     close = sorted((r for r in rows if r["rating"] in ("Tilt D", "Toss-up", "Tilt R")), key=lambda r: -r["m"])
     col_code, col_name, axis, half = L, L + 112, 655, 105
     scale = half / 3.0
-    row_h, y0 = 28, head_y + 38
+    # up to 20 rows of 28px fit with the lean lists; more close races -> tighter rows
+    row_h, y0 = min(28, 572 // max(len(close), 1)), head_y + 38
     for i, r in enumerate(close):
         y = y0 + i * row_h
         mid = y + row_h / 2
