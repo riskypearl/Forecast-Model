@@ -60,8 +60,42 @@ def load_senate():
     return races, dem_seats, 100 - dem_seats, round(100 * float(timeline["dem_control_prob"])), label
 
 
+# Type style. "ledger" is the original set; the others swap every font through
+# STYLES (file, variable-font axes, size factor) so all the graphics change together.
+# Choose with the GRAPHICS_STYLE environment variable.
+STYLE = os.environ.get("GRAPHICS_STYLE", "ledger")
+FRANKLIN, SERIF, ARCHIVO = "LibreFranklin-Variable.ttf", "SourceSerif4-Variable.ttf", "Archivo-Variable.ttf"
+STYLES = {
+    "newspaper": {   # Franklin Gothic labels, Source Serif names - US newspaper data desk
+        "GeistMono-Regular.ttf": (FRANKLIN, lambda sz: [400], 1.0),
+        "GeistMono-Bold.ttf": (FRANKLIN, lambda sz: [700], 1.0),
+        "InstrumentSans-Bold.ttf": (FRANKLIN, lambda sz: [700], 1.0),
+        "InstrumentSerif-Italic.ttf": (SERIF, lambda sz: [400, min(max(sz, 8), 60)], 0.82),
+        "BigShoulders-Bold.ttf": (FRANKLIN, lambda sz: [800], 0.72),
+    },
+    "swiss": {       # one family: Archivo, extra-condensed black for the big numbers
+        "GeistMono-Regular.ttf": (ARCHIVO, lambda sz: [400, 100], 1.0),
+        "GeistMono-Bold.ttf": (ARCHIVO, lambda sz: [700, 100], 1.0),
+        "InstrumentSans-Bold.ttf": (ARCHIVO, lambda sz: [700, 100], 1.0),
+        "InstrumentSerif-Italic.ttf": (ARCHIVO, lambda sz: [400, 100], 0.8),
+        "BigShoulders-Bold.ttf": (ARCHIVO, lambda sz: [900, 62], 0.95),
+    },
+}
+TRACKING_SCALE = {"ledger": 1.0}.get(STYLE, 0.35)   # proportional fonts need far less letter-spacing
+
+
 def font(name, size):
+    if STYLE in STYLES:
+        file, axes, scale = STYLES[STYLE][name]
+        f = ImageFont.truetype(os.path.join(FONTS, file), round(size * scale * S))
+        f.set_variation_by_axes(axes(size * scale))
+        return f
     return ImageFont.truetype(os.path.join(FONTS, name), size * S)
+
+
+def digit_mid(d, f):
+    """Height above the baseline of the middle of a digit - where the dash between numbers sits."""
+    return -d.textbbox((0, 0), "0", font=f, anchor="ls")[1] / S / 2
 
 
 def text(d, xy, s, f, fill, anchor="la"):
@@ -70,6 +104,7 @@ def text(d, xy, s, f, fill, anchor="la"):
 
 def tracked(d, xy, s, f, fill, tracking, anchor="l"):
     """Letter-spaced small caps. anchor l / r for the run's left or right edge."""
+    tracking *= TRACKING_SCALE
     widths = [d.textlength(c, font=f) for c in s]
     total = sum(widths) + tracking * S * (len(s) - 1)
     x = xy[0] * S if anchor == "l" else xy[0] * S - total
@@ -116,7 +151,8 @@ def main():
     dash_w, dash_gap = 46, 22
     text(d, (x, base), str(DEM_SEATS), numeral, BLUE, "ls")
     dash_x = x + w52 + dash_gap
-    rect(d, (dash_x, base - 104, dash_x + dash_w, base - 96), INK)
+    mid = digit_mid(d, numeral)
+    rect(d, (dash_x, base - mid - 4, dash_x + dash_w, base - mid + 4), INK)
     x48 = dash_x + dash_w + dash_gap
     text(d, (x48, base), str(REP_SEATS), numeral, RED, "ls")
 

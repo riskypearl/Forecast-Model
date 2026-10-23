@@ -10,7 +10,7 @@ import os
 from PIL import Image, ImageDraw
 
 from make_instagram import (W, H, S, PAPER, INK, GRAPHITE, MUTED, RULE, BLUE, RED, BLUE_TINT, RED_TINT,
-                            font, text, tracked, rect, rounded)
+                            font, digit_mid, text, tracked, rect, rounded)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 def _date_label():
@@ -103,7 +103,8 @@ def main():
     x = L - 5
     text(d, (x, base), dem_txt, numeral, BLUE, "ls")
     dash_x = x + wd + 18
-    rect(d, (dash_x, base - 82, dash_x + 36, base - 75), INK)
+    mid = digit_mid(d, numeral)
+    rect(d, (dash_x, base - mid - 3.5, dash_x + 36, base - mid + 3.5), INK)
     xr = dash_x + 36 + 18
     text(d, (xr, base), rep_txt, numeral, RED, "ls")
     bx = xr + wr + 36
