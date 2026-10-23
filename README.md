@@ -173,6 +173,14 @@ for example: polls underrated Republicans in 2020 and 2022, but by about the nat
 amount - relative to other states, Texas polls have if anything slightly underrated
 Democrats (+0.8 correction).
 
+**How fast polls take over (tested, kept)** (`backtest_poll_weight.py`): poll weight is
+cap x n / (n + K). Over forecasts made 1-28 days out, letting polls take over sooner (K = 1-2,
+or a 0.95 cap) fitted 2012-18 much better (5.70-6.15 vs 6.54) but did no better on unseen
+2020-22 (5.33-5.51 vs 5.35) - the same pattern as before: the polls' good years make heavy
+poll weighting look better than it is. Kept at cap 0.85, K = 4 (now `POLL_WEIGHT_K`). Races
+where the polls and fundamentals disagree (Minnesota: polls D+3.5, fundamentals D+13) stay
+closer to the fundamentals than the polls.
+
 **Governor records (adopted)** (`backtest_governor.py`): does how far a Senate candidate ran
 ahead of their party in an earlier governor race predict their Senate result? Tested as its own
 adjustment with its own shrink, on every governor general election 2002-2024 (polled or not,

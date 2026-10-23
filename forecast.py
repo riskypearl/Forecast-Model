@@ -49,6 +49,7 @@ APPOINTED_INCUMBENCY_BONUS = 2.5
 
 # Polls: more polls -> trust them more, up to this cap.
 MAX_POLL_WEIGHT = 0.85
+POLL_WEIGHT_K = 4          # effective polls needed to reach half the cap
 POLL_HALF_LIFE_DAYS = 14   # a poll this old counts half as much as one from today
 # How fast old polls stop counting towards trusting the polls over the fundamentals.
 # Separate from the half-life above: a race with no new polls still has its old ones.
@@ -308,8 +309,8 @@ def debias(polls, effects):
 
 
 def poll_weight(num_polls):
-    # 0 polls -> 0, 4 polls -> half of the cap, many polls -> close to the cap
-    return MAX_POLL_WEIGHT * num_polls / (num_polls + 4)
+    # 0 polls -> 0, POLL_WEIGHT_K polls -> half of the cap, many polls -> close to the cap
+    return MAX_POLL_WEIGHT * num_polls / (num_polls + POLL_WEIGHT_K)
 
 
 # ---------------------------------------------------------------------------
