@@ -26,6 +26,7 @@ AK,Data for Progress,2026-10-16,47,44,4,694,lv,
 AL,yes. every kid. foundation.,2026-07-11,32,47,20.0,601,lv,
 AL,RMG Research,2026-09-25,33,54,9.0,800,rv,REP
 AL,The Alabama Poll,2026-10-16,35,56,9,600,lv,
+AL,Cygnal Political,2026-10-17,35,49.8,15.3,500,lv,
 AR,GrayHouse,2026-02-09,36,58,7.0,550,lv,REP
 AR,2040 Strategy Group,2026-07-25,43,46,12.0,586,lv,DEM
 AR,Hendrix College,2026-08-12,47.4,44,5.7,1217,lv,
@@ -59,6 +60,8 @@ FL,Stetson University Center for Public Opinion Research,2026-10-09,41,52,6.0,71
 FL,MDW Communications,2026-10-10,42.4,47.6,10.0,2351,lv,
 FL,YouGov,2026-10-15,42,51,7.0,825,rv,
 FL,ActiVote,2026-10-15,46.9,53.1,0.0,400,lv,
+FL,University of North Florida,2026-10-19,45,49,5.0,1471,lv,
+FL,co/efficient,2026-10-20,40,48,11.0,1014,lv,
 GA,WPA Intelligence,2025-01-15,46,32,23.0,500,lv,REP
 GA,The Tyson Group,2025-01-31,51,39,10,600,lv,
 GA,Quantus Insights,2025-02-13,44.5,48.3,7.2,800,rv,REP
@@ -81,6 +84,7 @@ GA,YouGov,2026-09-18,52,42,5.0,3301,lv,
 GA,InsiderAdvantage,2026-09-23,50,42,8.0,1200,lv,
 GA,Big Data Poll,2026-09-23,55.4,44.6,0.0,678,lv,
 GA,Trafalgar Group,2026-10-09,51,43,6.0,1101,lv,REP
+GA,University of Georgia,2026-10-15,48,40,12.0,1000,lv,
 GA,Quantus Insights,2026-10-17,52.7,45.4,2.0,755,lv,
 GA,ActiVote,2026-10-20,54,46,0.0,400,lv,
 IA,Public Policy Polling,2025-06-03,43,45,12.0,568,rv,DEM
@@ -113,8 +117,10 @@ IA,Emerson College,2026-10-06,45,46.6,7.0,650,lv,
 IA,Marist University,2026-10-11,48,45,5.0,1100,lv,
 IA,National Public Affairs,2026-10-12,47,48,5,678,lv,REP
 IA,YouGov,2026-10-12,47,46,5,2245,lv,
+IA,New River Strategies/GS Strategy Group,2026-10-13,46,44,2.0,602,lv,
 IA,Trafalgar Group,2026-10-15,44.2,45.9,6.4,1094,lv,REP
 IA,co/efficient,2026-10-19,45,48,6.0,863,lv,
+IA,InsiderAdvantage,2026-10-22,49.3,46.8,3.9,1200,lv,
 ID,Public Policy Polling,2026-03-17,34,48,18,639,rv,IND
 ID,The Bullfinch Group,2026-06-01,36,40,24,774,rv,IND
 ID,Peak Insights,2026-06-07,15,55,15,500,lv,REP
@@ -136,7 +142,7 @@ KS,Trafalgar Group,2026-10-01,44.4,43.5,10.1,1095,lv,REP
 KS,GBAO,2026-10-04,46,41,6,600,lv,DEM
 KS,YouGov,2026-10-04,48,45,5.0,2253,lv,
 KS,InsiderAdvantage,2026-10-10,47.5,46.7,2.4,1200,lv,
-KS,InsiderAdvantage,2026-10-14,47,48,5,1200,lv,
+KS,InsiderAdvantage,2026-10-14,46.6,47.7,2.3,1200,lv,
 KY,Public Policy Polling,2025-12-19,40,41,19.0,650,rv,DEM
 KY,Global Strategy Group,2026-08-27,40,49,11,600,lv,DEM
 LA,Public Policy Polling,2026-07-22,37,41,22.0,518,rv,DEM
@@ -202,6 +208,7 @@ ME,Marist University,2026-10-04,51,47,1.0,1505,rv,
 ME,The Washington Post/George Mason University Schar School of Policy and Government,2026-10-05,50,46,3.0,800,lv,
 ME,Suffolk University,2026-10-11,49,47,4.0,500,lv,
 ME,InsiderAdvantage,2026-10-14,49,47,4,1200,lv,
+ME,Beacon Research/Shaw & Company Research,2026-10-20,49,49,1.0,1514,lv,
 MI,"Glengariff Group, Inc.",2025-05-08,45.1,39.1,15.8,600,rv,
 MI,"Normington, Petts & Associates",2025-06-16,47,45,8.0,700,lv,DEM
 MI,EPIC-MRA,2025-11-11,43,42,15.0,600,lv,
@@ -251,6 +258,8 @@ MI,YouGov,2026-10-04,49,48,2.0,3947,lv,
 MI,Quantus Insights,2026-10-06,48.4,47.2,2.7,744,lv,
 MI,The Tyson Group,2026-10-08,44,46,10,600,lv,REP
 MI,InsiderAdvantage,2026-10-10,47.8,45.5,5.4,1200,lv,
+MI,Marist University,2026-10-18,50,48,3.0,1185,lv,
+MI,InsiderAdvantage,2026-10-22,47,46,7,1200,lv,
 MN,Impact Research,2025-07-11,48,45,7.0,604,lv,DEM
 MN,Public Policy Polling,2025-09-16,47,43,10,1015,lv,
 MN,Emerson College,2026-02-08,46.6,40.2,8.8,1000,lv,
@@ -286,6 +295,7 @@ MT,Rutgers-Eagleton,2026-09-07,16,38,0.0,845,rv,
 MT,Aspect Strategic,2026-09-15,14,44,7.0,715,lv,IND
 MT,Quantus Insights,2026-09-15,24.4,45.3,2.5,625,lv,
 MT,American Pulse Research & Polling,2026-09-24,18.9,45.1,7.2,604,lv,
+MT,Concord Public Opinion Partners,2026-10-08,13,35,14,405,lv,DEM
 MT,Peak Insights,2026-10-12,12,44,10.0,500,lv,REP
 MT,Quantus Insights,2026-10-18,21.2,45.6,1.6,667,lv,
 NC,Public Policy Polling,2025-03-05,47,43,10,662,rv,
@@ -333,6 +343,7 @@ NC,Change Research,2026-10-07,50,40,5.0,829,lv,DEM
 NC,YouGov,2026-10-08,54,43,0.0,560,lv,
 NC,Trafalgar Group,2026-10-10,48.8,40.9,6.9,1091,lv,REP
 NC,SurveyUSA,2026-10-11,54,40,5.0,643,lv,
+NC,Harper Polling,2026-10-20,51.6,42,6.5,600,lv,
 NC,ActiVote,2026-10-20,56.9,43.1,0.0,400,lv,
 NE,Change Research,2025-04-01,45,46,8.0,524,lv,DEM
 NE,Impact Research,2026-02-05,47,48,5,600,lv,DEM
@@ -345,6 +356,8 @@ NE,SurveyUSA,2026-09-13,46,42,8,503,lv,
 NE,co/efficient,2026-09-30,44,47,9.0,1113,lv,
 NE,YouGov,2026-10-03,48,47,4,1808,lv,
 NE,National Public Affairs,2026-10-05,46,49,6.0,800,lv,REP
+NE,National Public Affairs,2026-10-18,47,50,3.0,598,lv,REP
+NE,Impact Research,2026-10-20,48,50,2,600,lv,DEM
 NH,Praecones Analytica,2025-03-01,58.9,41.1,0.0,626,rv,
 NH,Quantus Insights,2025-03-19,44,53,3.0,650,rv,REP
 NH,1892 Polling,2025-09-04,45,43,12.0,500,lv,REP
@@ -371,6 +384,7 @@ NH,Trafalgar Group,2026-09-27,47.4,40.5,11.0,1082,lv,REP
 NH,St. Anselm,2026-09-29,51,44,2,1042,lv,
 NH,YouGov,2026-10-05,51,43,5,1519,lv,
 NH,National Public Affairs,2026-10-12,50,45,5.0,600,lv,REP
+NH,St. Anselm,2026-10-20,50,43,2.0,1672,lv,
 NM,Research & Polling Inc.,2026-08-28,53,38,9.0,516,lv,
 NM,SurveyUSA,2026-09-30,54,36,10.0,567,lv,
 NM,Research & Polling Inc.,2026-10-09,53,37,10.0,1125,lv,
@@ -404,8 +418,12 @@ OH,The New York Times/Siena University,2026-10-01,48.76,46.09,5.0,616,lv,
 OH,CNN/SSRS,2026-10-05,49,43,1.0,760,lv,
 OH,co/efficient,2026-10-06,45,46,9.0,925,lv,
 OH,Bowling Green State University Democracy and Public Policy Research Network/YouGov,2026-10-09,48,42,0.0,1000,lv,
+OH,New River Strategies/GS Strategy Group,2026-10-13,49,43,1.0,959,lv,
 OH,Marist University,2026-10-18,48,44,6,1176,lv,
 OH,ActiVote,2026-10-18,49.8,50.2,0.0,400,lv,
+OH,Beacon Research/Shaw & Company Research,2026-10-19,52,47,2.0,1592,lv,
+OH,Verasight,2026-10-20,47.5,43.6,6.8,531,lv,
+OH,InsiderAdvantage,2026-10-22,47,44,9,1200,lv,
 OK,Cole Hargrave,2026-08-06,27,48,15,500,rv,
 RI,University of New Hampshire,2026-04-20,52,34,12.0,556,lv,
 RI,University of New Hampshire,2026-06-23,52,35,12.0,627,lv,
@@ -422,6 +440,7 @@ SC,InsiderAdvantage,2026-09-09,43.2,45.1,8.5,1200,lv,
 SC,Trafalgar Group,2026-09-25,42.3,43.4,8.5,1087,lv,REP
 SC,InsiderAdvantage,2026-09-29,45,46,4.0,1200,lv,
 SC,Trafalgar Group,2026-10-18,45.6,48.6,1.2,1095,lv,REP
+SC,Impact Research,2026-10-21,45,44,11,800,lv,DEM
 SD,Public Policy Polling,2025-07-31,28,41,31.0,552,rv,IND
 SD,Public Policy Polling,2025-11-14,31,44,25.0,814,rv,IND
 SD,Public Policy Polling,2026-02-18,32,49,19.0,685,rv,IND
@@ -431,7 +450,10 @@ SD,Impact Research,2026-08-17,44,44,12.0,500,lv,IND
 SD,Lake Research Partners,2026-08-30,51,41,8,500,lv,DEM
 SD,Public Policy Polling,2026-09-09,42,45,13.0,629,rv,IND
 SD,Zenith Research,2026-09-27,47,53,0.0,500,lv,IND
+SD,Concord Public Opinion Partners,2026-10-08,43,42,10.0,400,lv,DEM
 SD,Public Opinion Strategies,2026-10-16,37,54,9,500,lv,REP
+SD,Quantus Insights,2026-10-19,37.3,59.4,1.6,657,lv,
+SD,Emerson College,2026-10-21,46,54,0.0,803,lv,
 TN,Targoz Market Research,2026-08-26,33,58,4.0,607,lv,
 TX,Barbara Jordan Public Policy Research and Survey Center,2025-05-19,46,48,6,1200,rv,
 TX,Emerson College,2025-08-12,40.6,45.9,13.6,1000,rv,
@@ -490,8 +512,14 @@ TX,ReconMR/Siena Research Institute,2026-10-08,48,44,5.0,617,lv,
 TX,Trafalgar Group,2026-10-08,47.1,43.6,7.6,1086,lv,REP
 TX,Marist University,2026-10-11,47,45,6.0,1196,lv,
 TX,Quantus Insights,2026-10-11,46.7,47.2,3.9,854,lv,
+TX,New River Strategies/GS Strategy Group,2026-10-13,49,44,4.0,934,lv,
 TX,University of Houston Hobby School of Public Affairs,2026-10-14,48,46,3.0,2000,lv,
-TX,InsiderAdvantage,2026-10-14,48,49,3,1200,lv,
+TX,InsiderAdvantage,2026-10-14,48.1,48.5,1.0,1200,lv,
 TX,ActiVote,2026-10-14,51.9,48.1,0.0,400,lv,
 TX,YouGov,2026-10-16,51,49,0.0,1458,lv,
+TX,Slingshot Strategies,2026-10-18,51,47,0.0,969,lv,
+TX,Emerson College,2026-10-19,49.37,47.83,0.0,1000,lv,
+TX,Beacon Research/Shaw & Company Research,2026-10-19,49,49,2,1398,lv,
+TX,Verasight,2026-10-20,47.6,45.2,5.8,601,lv,
+TX,ActiVote,2026-10-21,51,49,0.0,400,lv,
 VA,Responsive Management,2025-01-15,45,38,17,806,a,
