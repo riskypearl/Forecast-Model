@@ -15,6 +15,7 @@ from datetime import date
 from statistics import NormalDist
 
 import backtest as bt   # shares the candidate-record method, so live and backtest match
+import backtest_governor as bg
 
 # ---------------------------------------------------------------------------
 # ASSUMPTIONS - these are your judgement calls. Change them and re-run.
@@ -48,7 +49,11 @@ APPOINTED_INCUMBENCY_BONUS = 2.5
 
 # Polls: more polls -> trust them more, up to this cap.
 MAX_POLL_WEIGHT = 0.85
+POLL_WEIGHT_K = 4          # effective polls needed to reach half the cap
 POLL_HALF_LIFE_DAYS = 14   # a poll this old counts half as much as one from today
+# How fast old polls stop counting towards trusting the polls over the fundamentals.
+# Separate from the half-life above: a race with no new polls still has its old ones.
+POLL_COUNT_HALF_LIFE_DAYS = 45   # tested on backtest_poll_recency.py (14 did worse)
 HOUSE_EFFECT_SHRINK = 3    # bigger = more sceptical of house effects from few polls
 
 # Polls paid for by a party-aligned group (DEM / REP sponsor) count for this much.
@@ -142,19 +147,19 @@ def load_candidate_history():
         print("No data/candidates.csv - run fetch_polls.py. Skipping automatic candidate adjustments.")
         return None
     pres, national = bt.presidential_margins()
-    return matchups, bt.senate_races(), pres, national
+    return matchups, bt.senate_races(), pres, national, bg.governor_races()
 
 
 def candidate_adjustment(row, history):
     """
     Returns (points, explanation). Automatic part from each candidate's Senate
-    record, plus manual_candidate_adj for records outside the Senate data
-    (e.g. a House or Attorney General race).
+    record and, separately, their governor record (backtest_governor.py), plus
+    manual_candidate_adj for other records (e.g. a House or Attorney General race).
     """
     manual = float(row.get("manual_candidate_adj") or 0)
     if history is None or row["state"] not in history[0]:
         return manual, ""
-    matchups, races, pres, national = history
+    matchups, races, pres, national, gov_races = history
     total, parts = 0.0, []
     for col in ("dem_candidate", "rep_candidate"):
         name = matchups[row["state"]][col]
@@ -163,6 +168,11 @@ def candidate_adjustment(row, history):
         if record is not None:
             total += bt.CANDIDATE_SHRINK * record
             parts.append(f"{name} {bt.CANDIDATE_SHRINK * record:+.1f}")
+        gov = bg.model_governor_adjustment(bt.name_key(name.upper()), col[:3], row["state"],
+                                           ELECTION_DAY.year, gov_races, pres, national)
+        total += gov
+        if abs(gov) >= 0.05:
+            parts.append(f"{name} governor {gov:+.1f}")
     if manual:
         parts.append(f"manual {manual:+.1f}")
     return total + manual, ", ".join(parts)
@@ -208,7 +218,8 @@ def demographic_adjustment(state, demographics):
 # STEP 3: polling average - newer and bigger polls count for more
 # ---------------------------------------------------------------------------
 
-def polling_average(polls, pollster_weights, half_life=POLL_HALF_LIFE_DAYS, as_of=None):
+def polling_average(polls, pollster_weights, half_life=POLL_HALF_LIFE_DAYS, as_of=None,
+                    count_half_life=None):
     """
     Returns (average margin, effective number of polls). Old polls barely
     count, so a race with 20 polls from last year and none this month has an
@@ -222,6 +233,7 @@ def polling_average(polls, pollster_weights, half_life=POLL_HALF_LIFE_DAYS, as_o
     for poll in polls:
         age_days = ((as_of or TODAY) - date.fromisoformat(poll["end_date"])).days
         recency = 0.5 ** (age_days / half_life)
+        count_recency = 0.5 ** (age_days / (count_half_life or POLL_COUNT_HALF_LIFE_DAYS))
         quality = pollster_weight(poll["pollster"], pollster_weights)
         quality *= POPULATION_WEIGHT.get(poll.get("population", "lv"), 0.8)
         if poll.get("partisan") in ("DEM", "REP"):
@@ -231,7 +243,7 @@ def polling_average(polls, pollster_weights, half_life=POLL_HALF_LIFE_DAYS, as_o
         margin = float(poll["dem_pct"]) - float(poll["rep_pct"])
         weighted_sum += weight * margin
         total_weight += weight
-        effective_polls += recency * quality
+        effective_polls += count_recency * quality
     if total_weight == 0:
         return None, 0.0
     return weighted_sum / total_weight, effective_polls
@@ -297,8 +309,8 @@ def debias(polls, effects):
 
 
 def poll_weight(num_polls):
-    # 0 polls -> 0, 4 polls -> half of the cap, many polls -> close to the cap
-    return MAX_POLL_WEIGHT * num_polls / (num_polls + 4)
+    # 0 polls -> 0, POLL_WEIGHT_K polls -> half of the cap, many polls -> close to the cap
+    return MAX_POLL_WEIGHT * num_polls / (num_polls + POLL_WEIGHT_K)
 
 
 # ---------------------------------------------------------------------------

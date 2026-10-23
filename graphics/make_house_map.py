@@ -12,7 +12,7 @@ from collections import defaultdict
 
 from PIL import Image, ImageDraw
 
-from make_instagram import W, H, S, PAPER, INK, GRAPHITE, MUTED, BLUE, RED, font, text, tracked, rect
+from make_instagram import W, H, S, PAPER, INK, GRAPHITE, MUTED, BLUE, RED, font, digit_mid, text, tracked, rect
 from make_house import RATING_ORDER, RATING_COLOUR, DATE_LABEL, load, summary
 
 # (column, row) of each state on a geographic tile grid
@@ -66,7 +66,8 @@ def main():
     wr = d.textlength(rep_txt, font=numeral) / S
     text(d, (L - 4, base), dem_txt, numeral, BLUE, "ls")
     dx = L - 4 + wd + 14
-    rect(d, (dx, base - 63, dx + 28, base - 57), INK)
+    mid = digit_mid(d, numeral)
+    rect(d, (dx, base - mid - 3, dx + 28, base - mid + 3), INK)
     xr = dx + 28 + 14
     text(d, (xr, base), rep_txt, numeral, RED, "ls")
     bx = xr + wr + 36

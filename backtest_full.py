@@ -24,10 +24,19 @@ from collections import defaultdict
 from datetime import date, timedelta
 
 import backtest as bt
+import backtest_governor as bg
 import forecast as fc
 
 CYCLES = [2012, 2014, 2016, 2018, 2020, 2022]
 SIMS_PER_RACE = 4000
+
+# Optional correction added to each race's polling average, keyed (cycle, state).
+# Empty = off. backtest_state_bias.py fills it to test state-level poll bias.
+STATE_POLL_BIAS = {}
+
+# How many days before each election the forecast is made. Polls released
+# after that day are left out.
+DAYS_BEFORE = 1
 
 # FiveThirtyEight spells some pollsters differently from our ratings file.
 POLLSTER_ALIASES = {
@@ -89,16 +98,18 @@ def win_probability(margin, sd, national_sd):
 def run_cycle(cycle, polls_538, races, pres, national, weights):
     election_day = date.fromisoformat(
         next(p["electiondate"] for p in polls_538 if int(p["cycle"]) == cycle and p["type_simple"] == "Sen-G"))
-    as_of = election_day - timedelta(days=1)
+    as_of = election_day - timedelta(days=DAYS_BEFORE)
     environment = fc.generic_ballot_average(generic_ballot_rows(polls_538, cycle), weights, as_of)
 
     cycle_races = [r for r in races if r["year"] == cycle]
+    gov_races = bg.governor_races()
     leans = {id(r): bt.lean(r["state"], cycle, pres, national) for r in cycle_races}
 
     # Pool every Senate poll of the cycle, so house effects are estimated across races
     all_polls = []
     for r in cycle_races:
-        all_polls += senate_polls_for(r, polls_538)
+        all_polls += [p for p in senate_polls_for(r, polls_538)
+                      if date.fromisoformat(p["end_date"]) <= as_of]
     baselines = {r["state"]: leans[id(r)] + environment for r in cycle_races}
     all_polls = fc.allocate_undecided(all_polls, baselines)
     raw_by_race = defaultdict(list)
@@ -111,18 +122,22 @@ def run_cycle(cycle, polls_538, races, pres, national, weights):
         records = [bt.candidate_record(r[side], r["state"], cycle, races, pres, national)
                    for side in ("dem", "rep")]
         cand = bt.CANDIDATE_SHRINK * sum(x for x in records if x is not None)
+        cand += sum(bg.model_governor_adjustment(r[side], side, r["state"], cycle, gov_races, pres, national)
+                    for side in ("dem", "rep"))
         fund = leans[id(r)] + environment + bt.incumbency(r, races) + cand
 
         state_polls = [p for p in polls if p["state"] == r["state"]]
         poll_avg, n = fc.polling_average(state_polls, weights, as_of=as_of)
+        if poll_avg is not None:
+            poll_avg += STATE_POLL_BIAS.get((cycle, r["state"]), 0.0)
         raw_avg, _ = fc.polling_average(raw_by_race[r["state"]], weights, as_of=as_of)
         w = fc.poll_weight(n)
         margin = fund if poll_avg is None else (1 - w) * fund + w * poll_avg
-        sd = fc.state_error_sd(w, days_left=1)
+        sd = fc.state_error_sd(w, days_left=DAYS_BEFORE)
         results.append({
             "cycle": cycle, "state": r["state"], "dem": r["dem"], "rep": r["rep"],
             "actual": r["margin"], "fundamentals": fund, "polls": raw_avg, "model": margin,
-            "dem_prob": win_probability(margin, sd, fc.national_error_sd(days_left=1)),
+            "dem_prob": win_probability(margin, sd, fc.national_error_sd(days_left=DAYS_BEFORE)),
         })
     return environment, results
 

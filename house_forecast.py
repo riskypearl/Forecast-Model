@@ -200,7 +200,8 @@ def main():
         by_district[p["district"]].append(p)
 
     for d in districts:
-        avg, n = fc.polling_average(by_district.get(d["code"], []), weights)
+        avg, n = fc.polling_average(by_district.get(d["code"], []), weights,
+                                    count_half_life=fc.POLL_HALF_LIFE_DAYS)  # longer count untested for the House
         w = HOUSE_POLL_MAX_WEIGHT * n / (n + HOUSE_POLL_K)
         d["poll_avg"], d["num_polls"] = avg, n
         d["margin"] = d["fundamentals"] if avg is None else (1 - w) * d["fundamentals"] + w * avg
