@@ -42,6 +42,13 @@ OPPONENT_CORRECTION = 0.0
 # (contested districts, vs the national House vote) instead of its presidential
 # vote. 0 = presidential only.
 HOUSE_LEAN_WEIGHT = 0.0
+
+# Statewide lean: share of a state's lean taken from how it voted in recent
+# governor and Senate races (vs the national environment, incumbency removed)
+# instead of its presidential vote. Races involving the current candidates are
+# left out - their own records are the candidate adjustment. 0 = presidential only.
+STATEWIDE_LEAN_WEIGHT = 0.0
+STATEWIDE_LEAN_YEARS = 8     # races from this many years before the election
 DEM_PARTIES = {"DEMOCRAT", "DEMOCRATIC-FARMER-LABOR", "DEMOCRATIC-NONPARTISAN LEAGUE"}
 
 # National environment = national House popular-vote margin (Dem minus Rep).
@@ -174,13 +181,43 @@ def house_lean(state, year):
     return total / sum(LEAN_WEIGHTS[:len(years)])
 
 
-def lean(state, year, pres, national):
-    """Presidential lean, blended with the House lean by HOUSE_LEAN_WEIGHT."""
+_statewide_cache = None
+
+
+def statewide_races():
+    """Senate and governor races since 2002 as (year, state, dem, rep, margin minus national
+    environment minus Senate incumbency)."""
+    global _statewide_cache
+    if _statewide_cache is None:
+        import backtest_governor   # imports this module, so load it lazily
+        senate = senate_races()
+        out = [(r["year"], r["state"], r["dem"], r["rep"],
+                r["margin"] - NATIONAL_ENVIRONMENT[r["year"]] - incumbency(r, senate)) for r in senate]
+        out += [(g["year"], g["state"], g["dem"], g["rep"],
+                 g["margin"] - NATIONAL_ENVIRONMENT[g["year"] - g["year"] % 2])
+                for g in backtest_governor.governor_races()]
+        _statewide_cache = out
+    return _statewide_cache
+
+
+def statewide_lean(state, year, exclude=()):
+    """Average lean of this state's recent governor and Senate races, or None."""
+    vals = [v for y, st, d, r, v in statewide_races() if st == state
+            and year - STATEWIDE_LEAN_YEARS <= y < year and d not in exclude and r not in exclude]
+    return sum(vals) / len(vals) if vals else None
+
+
+def lean(state, year, pres, national, exclude=()):
+    """Presidential lean, blended with the House lean by HOUSE_LEAN_WEIGHT and the
+    statewide lean by STATEWIDE_LEAN_WEIGHT. exclude = the current candidates."""
     p = presidential_lean(state, year, pres, national)
-    if not HOUSE_LEAN_WEIGHT:
-        return p
-    h = house_lean(state, year)
-    return p if h is None else (1 - HOUSE_LEAN_WEIGHT) * p + HOUSE_LEAN_WEIGHT * h
+    if HOUSE_LEAN_WEIGHT:
+        h = house_lean(state, year)
+        p = p if h is None else (1 - HOUSE_LEAN_WEIGHT) * p + HOUSE_LEAN_WEIGHT * h
+    if STATEWIDE_LEAN_WEIGHT:
+        sw = statewide_lean(state, year, exclude)
+        p = p if sw is None else (1 - STATEWIDE_LEAN_WEIGHT) * p + STATEWIDE_LEAN_WEIGHT * sw
+    return p
 
 
 def incumbency(race, races):
@@ -196,7 +233,7 @@ def incumbency(race, races):
 
 
 def baseline(race, races, pres, national):
-    return lean(race["state"], race["year"], pres, national) + \
+    return lean(race["state"], race["year"], pres, national, (race["dem"], race["rep"])) + \
         NATIONAL_ENVIRONMENT[race["year"]] + incumbency(race, races)
 
 

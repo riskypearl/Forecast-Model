@@ -103,7 +103,7 @@ def run_cycle(cycle, polls_538, races, pres, national, weights):
 
     cycle_races = [r for r in races if r["year"] == cycle]
     gov_races = bg.governor_races()
-    leans = {id(r): bt.lean(r["state"], cycle, pres, national) for r in cycle_races}
+    leans = {id(r): bt.lean(r["state"], cycle, pres, national, (r["dem"], r["rep"])) for r in cycle_races}
 
     # Pool every Senate poll of the cycle, so house effects are estimated across races
     all_polls = []

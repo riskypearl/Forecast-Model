@@ -173,6 +173,13 @@ for example: polls underrated Republicans in 2020 and 2022, but by about the nat
 amount - relative to other states, Texas polls have if anything slightly underrated
 Democrats (+0.8 correction).
 
+**Statewide lean (tested, rejected)** (`backtest_statewide_lean.py`): blend each state's
+presidential lean with how it voted in recent governor and Senate races (vs the national
+environment, incumbency removed, current candidates left out), weight 0.1-0.5, 4/8/12-year
+windows. Every setting made the full model worse on unseen 2020-22 (5.40-7.04 vs 5.32 avg miss,
+forecasts 1 day out; same at 21 days). Ticket-splitting for governors doesn't carry over to
+Senate races: Kansas elected Laura Kelly twice but gave Marshall +11 and Moran +23.
+
 **How fast polls take over (tested, kept)** (`backtest_poll_weight.py`): poll weight is
 cap x n / (n + K). Over forecasts made 1-28 days out, letting polls take over sooner (K = 1-2,
 or a 0.95 cap) fitted 2012-18 much better (5.70-6.15 vs 6.54) but did no better on unseen

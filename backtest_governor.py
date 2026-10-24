@@ -93,7 +93,7 @@ def party_baseline(state, year, pres, national, how):
         house, _ = bt.house_margins()
         if (even, state) in house:
             return house[(even, state)]
-    return bt.lean(state, year, pres, national) + bt.NATIONAL_ENVIRONMENT[even]
+    return bt.presidential_lean(state, year, pres, national) + bt.NATIONAL_ENVIRONMENT[even]
 
 
 def governor_record(name, side, state, year, gov_races, pres, national, bonus, max_margin, how):
