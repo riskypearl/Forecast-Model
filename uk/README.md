@@ -31,6 +31,49 @@ sample size (capped at 5,000 so MRPs don't dominate). Weekly pollsters are dampe
 outweigh everyone else just by polling more often. All of these are settings at the top of
 `poll_average.py`.
 
-**Not covered yet:** census data for Scotland's 57 seats (Scotland's 2022 census is published
-separately), Northern Ireland (not modelled), Scotland- and Wales-specific polls, Leave-vote
-estimates on the new boundaries, and by-elections or defections since 2024.
+## Stage 2: seats
+
+```
+python uk/seat_model.py              # the nowcast: "if an election were held today"
+python uk/seat_model.py --backtest   # test the swing model on 2019 notional -> 2024
+```
+
+Writes `data/seat_forecast.csv` (every GB seat: projected shares, win chances, rating) and
+`data/seat_totals.csv` (seat range, chance of being largest party and of a majority of 326).
+
+1. **Baseline:** each GB seat's 2024 result (`data/results_2024.csv`). Where Lab, Con, Ref, LD,
+   Grn or Other didn't stand, they're given 1%. The Speaker's seat and Northern Ireland's 18 are held
+   as they are.
+2. **Logistic swing:** each party's national change is applied on the logit scale, with one
+   shift per party solved so the seats add up exactly to the national figure. A party can't go
+   negative, and gains land most where it was already competitive. "Other" swings uniformly
+   instead, because its 2024 vote (local independents) and its growth since (new national
+   parties) are different voters.
+3. **Simulation (10,000 runs):** a national polling miss for each party (2.5 points SD for a
+   party on 25%, t-distributed), then each seat's own error, then whoever is top wins.
+
+**Calibrated on 2019 -> 2024**, using the 2019 results recalculated onto the 2024 boundaries
+(`data/results_2019_notional.csv`). Given the real 2024 national result:
+
+| Swing | Seats called right | Lab | Con | Ref | LD |
+|---|---|---|---|---|---|
+| Actual 2024 | | 409 | 121 | 5 | 72 |
+| Logistic (used) | 482 / 631 | 334 | 189 | 35 | 43 |
+| Uniform | 443 / 631 | 305 | 234 | 1 | 32 |
+
+Each seat's own error (6.3 points for a party on 25%) is the robust spread of the logistic
+swing's misses, measured on Lab, Con, LD, SNP and PC only. Reform's 2019 baseline isn't clean
+(the Brexit Party stood aside in Conservative seats), and neither are the Greens' or Others'.
+
+**Known gaps.** In 2024 both swings undercount Labour and overcount the Conservatives by about
+70 seats. That was efficient anti-Conservative tactical voting, which a swing from the last
+result can't see; stage 3's regression on seat demographics is meant to catch it. Seat errors
+are independent, so seats can't miss together by region or seat type yet (stage 4). That makes
+the seat ranges too narrow, the main lesson from the 2015 model. The model also assumes 2024's
+independents stand again, which is why "Other" wins around 15 seats.
+
+## Not covered yet
+
+Census data for Scotland's 57 seats (Scotland's 2022 census is published separately), Northern
+Ireland (not modelled), Scotland- and Wales-specific polls, Leave-vote estimates on the new
+boundaries, and by-elections or defections since 2024.
