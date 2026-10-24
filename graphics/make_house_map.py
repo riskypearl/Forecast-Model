@@ -97,6 +97,7 @@ def main():
     col_x = [x_off + (sum(col_w[:c]) + gap_units * c) * unit for c in range(ncols)]
     row_y = [map_top + (sum(row_h[:r]) + (gap_units + label_room) * r) * unit for r in range(nrows)]
 
+    content_bottom = map_top
     for s, districts in by_state.items():
         c, r = GRID[s]
         cols, rws = shapes[s]
@@ -109,10 +110,12 @@ def main():
             x0, y0 = bx0 + cc * unit, by0 + rr * unit
             rect(d, (x0, y0, x0 + unit - sq_gap, y0 + unit - sq_gap), RATING_COLOUR[dd["rating"]])
         tracked(d, (bx0 + (cols * unit - sq_gap) / 2 - 7, by0 + rws * unit + 12), s, label_f, GRAPHITE, 0.8)
+        content_bottom = max(content_bottom, by0 + rws * unit + 12)
 
     # --- legend ------------------------------------------------------------------------
     counts = {k: sum(x["rating"] == k for x in rows) for k in RATING_ORDER}
-    ly, lx = 1196, L
+    # straight under the map rather than down by the footer, so it survives Instagram's crop
+    ly, lx = content_bottom + 44, L
     for k in RATING_ORDER:
         label = f"{k.upper()} {counts[k]}"
         rect(d, (lx, ly - 10, lx + 10, ly), RATING_COLOUR[k])
