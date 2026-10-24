@@ -57,7 +57,7 @@ NEW_CANDIDATE_SHARE = 0.01
 
 # Swing: 0 = logistic, 1 = uniform (the same points change in every seat),
 # in between = a blend. On 2019 -> 2024, given the real national result,
-# logistic called 482 of 631 seats right and uniform 443; blends fell in
+# logistic called 480 of 631 seats right and uniform 441; blends fell in
 # between. Logistic also had the smallest seat-total errors.
 SWING_UNIFORM_WEIGHT = 0.0
 
@@ -67,6 +67,12 @@ SWING_UNIFORM_WEIGHT = 0.0
 # national parties (Restore Britain, Your Party). Logistic swing would hand
 # that rise to the 2024 independents, 40% -> 48%; uniform spreads it evenly.
 UNIFORM_SWING_PARTIES = ["Oth"]
+
+# Stage 3: let seats swing harder or softer than average depending on their
+# demographics and the party's strength there (swing_regression.py, which
+# must have been run). Out of sample on 2019 -> 2024 it called 509 of 631
+# seats right, against 480 for plain logistic swing.
+DEMOGRAPHIC_SWING = True
 
 # A seat's own error, in points, for a party on 25% there (smaller shares get
 # proportionally less, by sqrt(p * (1 - p))). None = measure it from
@@ -121,27 +127,32 @@ def fill_new_candidates(shares, rows):
 # Logistic swing
 # ---------------------------------------------------------------------------
 
-def logistic_swing(base, weights, targets, iterations=25):
+def logistic_swing(base, weights, targets, iterations=25, elasticity=None):
     """
-    base:    seats x parties, shares (rows add to 1; 0 = party not standing)
-    weights: seats, each seat's share of the national vote
-    targets: sims x parties, national shares to hit (rows add to 1)
+    base:       seats x parties, shares (rows add to 1; 0 = party not standing)
+    weights:    seats, each seat's share of the national vote
+    targets:    sims x parties, national shares to hit (rows add to 1)
+    elasticity: seats x parties, optional - how strongly each seat responds
+                to its party's national shift (1 = like everywhere else;
+                from swing_regression.py). None = 1 everywhere.
     Returns sims x seats x parties.
 
-    Each party gets one shift per sim, added to every seat's logit (or, for
-    UNIFORM_SWING_PARTIES, to every seat's share). After shifting, each seat
-    is rescaled to add to 1, which moves the national totals a little, so the
-    shifts are re-solved until the seats add up to the target (usually within
-    0.01 points after a few rounds).
+    Each party gets one shift per sim, added to every seat's logit (times
+    that seat's elasticity), or for UNIFORM_SWING_PARTIES to every seat's
+    share. After shifting, each seat is rescaled to add to 1, which moves the
+    national totals a little, so the shifts are re-solved until the seats add
+    up to the target (usually within 0.01 points after a few rounds).
     """
     with np.errstate(divide="ignore"):
         base_logit = logit(base)                                  # -inf where a party didn't stand
+    if elasticity is None:
+        elasticity = np.ones_like(base)
     uniform = [PARTIES.index(p) for p in UNIFORM_SWING_PARTIES]
     national = weights @ base
     shift = logit(targets) - logit(national)                      # first guess
     shift[:, uniform] = (targets - national)[:, uniform]
     for _ in range(iterations):
-        shares = expit(base_logit[None, :, :] + shift[:, None, :])
+        shares = expit(base_logit[None, :, :] + shift[:, None, :] * elasticity[None, :, :])
         if uniform:
             additive = base[None, :, uniform] + shift[:, None, uniform]
             shares[:, :, uniform] = np.clip(additive, 0.001, None) * (base[None, :, uniform] > 0)
@@ -160,11 +171,20 @@ def uniform_swing(base, weights, targets):
     return shares / shares.sum(axis=2, keepdims=True)
 
 
-def swing(base, weights, targets):
+def swing(base, weights, targets, elasticity=None):
     if SWING_UNIFORM_WEIGHT == 0:
-        return logistic_swing(base, weights, targets)
-    return ((1 - SWING_UNIFORM_WEIGHT) * logistic_swing(base, weights, targets)
+        return logistic_swing(base, weights, targets, elasticity=elasticity)
+    return ((1 - SWING_UNIFORM_WEIGHT) * logistic_swing(base, weights, targets, elasticity=elasticity)
             + SWING_UNIFORM_WEIGHT * uniform_swing(base, weights, targets))
+
+
+def seat_elasticity(seats, base):
+    """Stage 3 elasticities for the 2024-boundary seats, or None if switched off / not fitted."""
+    import swing_regression as sr   # imported here: swing_regression imports this module
+    gammas = sr.load_coefficients() if DEMOGRAPHIC_SWING else None
+    if gammas is None:
+        return None
+    return sr.elasticity(sr.features(seats, "census_2021.csv", base), gammas)
 
 
 def size_scale(shares):
@@ -179,7 +199,8 @@ def backtest_inputs():
     keep = [i for i, r in enumerate(new_rows) if r["speaker_seat"] != "1"]
     old = fill_new_candidates(share_matrix([old_rows[i] for i in keep]), [old_rows[i] for i in keep])
     new = share_matrix([new_rows[i] for i in keep])
-    weights = np.array([float(new_rows[i]["valid_votes"]) for i in keep])
+    # weighted by 2019 turnout: a forecast only knows the base election's
+    weights = np.array([float(old_rows[i]["valid_votes"]) for i in keep])
     return old, new, weights / weights.sum()
 
 
@@ -197,11 +218,22 @@ def seat_error_sd():
     A robust SD (1.4826 x the median absolute deviation) is used, so a few
     freak results - independents winning by 30 points - don't set the size of
     every seat's error. The fat tails come from the t-distribution instead.
+
+    With DEMOGRAPHIC_SWING, the regression used here is fitted on the three
+    earlier election pairs only, so 2024 is out of sample and the error isn't
+    flattered.
     """
     if SEAT_ERROR_SD is not None:
         return SEAT_ERROR_SD
-    old, new, weights = backtest_inputs()
-    predicted = swing(old, weights, (weights @ new)[None, :])[0]
+    if DEMOGRAPHIC_SWING:
+        import swing_regression as sr
+        pairs = [sr.load_pair(*p) for p in sr.PAIRS]
+        latest = pairs[-1]
+        old, new = latest["old"], latest["new"]
+        predicted = sr.evaluate(latest, sr.fit(pairs[:-1]))[2]
+    else:
+        old, new, weights = backtest_inputs()
+        predicted = swing(old, weights, (weights @ new)[None, :])[0]
     residuals = []
     for p in SEAT_ERROR_PARTIES:
         j = PARTIES.index(p)
@@ -233,7 +265,7 @@ def national_draws(rng, average, field):
 # Run
 # ---------------------------------------------------------------------------
 
-def simulate(base, weights, average, field, seat_sd, rng, chunk=1000):
+def simulate(base, weights, average, field, seat_sd, rng, elasticity=None, chunk=1000):
     """Returns (winner index per sim and seat, mean projected shares per seat)."""
     nationals = national_draws(rng, average, field)
     winners = np.empty((SIMULATIONS, base.shape[0]), dtype=np.int8)
@@ -241,7 +273,7 @@ def simulate(base, weights, average, field, seat_sd, rng, chunk=1000):
     standing = base > 0
     for start in range(0, SIMULATIONS, chunk):
         targets = nationals[start:start + chunk]
-        swung = swing(base, weights, targets)
+        swung = swing(base, weights, targets, elasticity)
         noise = t_draws(rng, swung.shape) * seat_sd / 100 * size_scale(swung)
         noisy = np.clip(swung + noise, 0.0005, None) * standing[None, :, :]
         noisy /= noisy.sum(axis=2, keepdims=True)
@@ -284,7 +316,8 @@ def main():
     average = np.array([today[p] for p in PARTIES]) / 100
 
     seat_sd = seat_error_sd()
-    winners, mean_shares = simulate(base, weights, average, field, seat_sd, rng)
+    elasticity = seat_elasticity(seats, base)
+    winners, mean_shares = simulate(base, weights, average, field, seat_sd, rng, elasticity)
 
     # Seat probabilities and the per-seat file
     win_prob = np.stack([(winners == j).mean(axis=0) for j in range(len(PARTIES))], axis=1)
@@ -316,7 +349,8 @@ def main():
 
     print(f"UK seat nowcast, {pa.TODAY:%d %b %Y} - {SIMULATIONS:,} simulations, {len(seats)} GB seats "
           f"(+ Speaker + {len(ni)} Northern Ireland, held fixed)")
-    print(f"Seat error SD, measured on 2019->2024: {seat_sd:.1f} points for a party on 25%")
+    print(f"Swing: {'logistic + demographic elasticities' if elasticity is not None else 'logistic'}; "
+          f"seat error SD, measured on 2019->2024: {seat_sd:.1f} points for a party on 25%")
     print(f"\n{'':6}{'vote':>6}{'seats':>7}{'90% range':>13}{'largest':>9}{'majority':>10}")
     for t in sorted(totals, key=lambda t: -t["mean"]):
         print(f"{t['party']:6}{t['vote_share']:6.1f}{t['median']:7d}{t['p5']:>7d}-{t['p95']:<5d}"
@@ -349,6 +383,14 @@ def backtest():
         rmse = 100 * np.sqrt(np.mean((new - predicted) ** 2))
         print(f"{lam:15.1f}{(called == actual).sum():9d}/{len(actual)}{rmse:12.2f}   "
               f"{[int((called == j).sum()) for j in range(len(PARTIES))]}")
+
+    # Stage 3, out of sample: the regression fitted on 2010->15, 15->17 and 17->19 only.
+    import swing_regression as sr
+    pairs = [sr.load_pair(*p) for p in sr.PAIRS]
+    right, rmse, predicted = sr.evaluate(pairs[-1], sr.fit(pairs[:-1]))
+    called = predicted.argmax(axis=1)
+    print(f"{'demographic':>15}{right:9d}/{len(called)}{rmse:12.2f}   "
+          f"{[int((called == j).sum()) for j in range(len(PARTIES))]}   (logistic + elasticities fitted on 2010-19)")
 
 
 if __name__ == "__main__":

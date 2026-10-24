@@ -38,6 +38,8 @@ python uk/seat_model.py              # the nowcast: "if an election were held to
 python uk/seat_model.py --backtest   # test the swing model on 2019 notional -> 2024
 ```
 
+(Run `python uk/swing_regression.py` first - see stage 3.)
+
 Writes `data/seat_forecast.csv` (every GB seat: projected shares, win chances, rating) and
 `data/seat_totals.csv` (seat range, chance of being largest party and of a majority of 326).
 
@@ -55,19 +57,59 @@ Writes `data/seat_forecast.csv` (every GB seat: projected shares, win chances, r
 **Calibrated on 2019 -> 2024**, using the 2019 results recalculated onto the 2024 boundaries
 (`data/results_2019_notional.csv`). Given the real 2024 national result:
 
-| Swing | Seats called right | Lab | Con | Ref | LD |
-|---|---|---|---|---|---|
-| Actual 2024 | | 409 | 121 | 5 | 72 |
-| Logistic (used) | 482 / 631 | 334 | 189 | 35 | 43 |
-| Uniform | 443 / 631 | 305 | 234 | 1 | 32 |
+| Swing | Seats called right | Share error | Lab | Con | Ref | LD |
+|---|---|---|---|---|---|---|
+| Actual 2024 | | | 409 | 121 | 5 | 72 |
+| Uniform | 441 / 631 | 6.4 pts | 303 | 236 | 1 | 32 |
+| Logistic (stage 2) | 480 / 631 | 6.5 pts | 332 | 192 | 35 | 42 |
+| Logistic + demographics (stage 3, used) | **509 / 631** | **5.5 pts** | 362 | 193 | 8 | 38 |
 
-Each seat's own error (6.3 points for a party on 25%) is the robust spread of the logistic
-swing's misses, measured on Lab, Con, LD, SNP and PC only. Reform's 2019 baseline isn't clean
-(the Brexit Party stood aside in Conservative seats), and neither are the Greens' or Others'.
+The stage 3 row is out of sample: its regression was fitted on 2010-2019 only.
 
-**Known gaps.** In 2024 both swings undercount Labour and overcount the Conservatives by about
-70 seats. That was efficient anti-Conservative tactical voting, which a swing from the last
-result can't see; stage 3's regression on seat demographics is meant to catch it. Seat errors
+Each seat's own error (5.7 points for a party on 25%) is the robust spread of the swing's
+out-of-sample misses on 2024, measured on Lab, Con, LD, SNP and PC only. Reform's 2019 baseline
+isn't clean (the Brexit Party stood aside in Conservative seats), and neither are the Greens'
+or Others'.
+
+## Stage 3: demographic swing
+
+```
+python uk/swing_regression.py   # fit, test, and write data/swing_coefficients.csv
+```
+
+Some seats swing harder than others. Each party's seat-level change becomes
+**national shift x elasticity**, with elasticity = 1 + gamma . (seat features). The features
+are the 2021 Census shares (degree, age 65+, age 18-34, white, Muslim, home ownership, social
+renting, students, professional jobs), Wales and Scotland flags, and the party's own strength in
+the seat. Gamma is fitted per party by weighted ridge regression, pooled over four election pairs:
+2010->15, 2015->17 and 2017->19 (old boundaries, `results_2010.csv` ... `results_2019.csv`,
+`census_2021_old_boundaries.csv`) and 2019 notional->2024. UKIP (2010-17) and the Brexit Party
+(2019) count as Reform.
+
+Tested by leaving one pair out (fit on three, predict the fourth), with the national result given:
+
+| Held-out pair | Logistic | Demographic |
+|---|---|---|
+| 2010->15 | 590 / 631 | 586 / 631 |
+| 2015->17 | 560 / 631 | 556 / 631 |
+| 2017->19 | 582 / 630 | 580 / 630 |
+| 2019->24 | 480 / 631 | **509 / 631** |
+| Share error (average) | 4.16 pts | **3.96 pts** |
+
+It helps most when the swing is big (2024) and costs a few seats in quieter years. What it
+learned, roughly:
+- Conservative and Reform swings run harder in non-graduate seats, softer in seats with many
+  students or Muslim voters.
+- Reform, Lib Dem and Green swings are less "multiplicative" than pure logistic: their gains
+  don't pile up as much where they were already strong.
+- Reform swings softer in Scotland.
+
+The SNP and Plaid get almost no adjustment: too few seats to learn from.
+
+**Known gaps.** Labour is still undercounted in the 2024 test (362 vs 409). Anti-Conservative
+tactical voting doesn't scale with Labour's national shift, which barely moved in 2024, so
+elasticities can't capture it. A tactical-voting term (who the local challenger is) is the
+obvious next addition. Scottish seats have no census data, only the Scotland flag. Seat errors
 are independent, so seats can't miss together by region or seat type yet (stage 4). That makes
 the seat ranges too narrow, the main lesson from the 2015 model. The model also assumes 2024's
 independents stand again, which is why "Other" wins around 15 seats.

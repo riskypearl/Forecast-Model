@@ -1,13 +1,14 @@
 """
-Download the 4 July 2024 general election results, and the 2019 results
-re-calculated onto the same (2024) boundaries ("notional" results), and save
-one row per constituency to:
+Download general election results and save one row per constituency:
 
-  uk/data/results_2024.csv
-  uk/data/results_2019_notional.csv
+  uk/data/results_2024.csv           4 July 2024, on the 2024 boundaries
+  uk/data/results_2019_notional.csv  2019 re-calculated onto the 2024 boundaries
+  uk/data/results_2010.csv ... results_2019.csv   on the 2010-2024 boundaries
 
 The notional 2019 file is what the seat model calibrates against: how far each
-seat's 2019 -> 2024 change strayed from the national change.
+seat's 2019 -> 2024 change strayed from the national change. The 2010-2019
+files add three more election pairs (2010->15, 15->17, 17->19) for the
+demographic swing regression.
 
 Source: the House of Commons Library's results site, electionresults.parliament.uk
 (Open Parliament Licence). The 2019 notionals are Rallings & Thrasher's.
@@ -26,14 +27,27 @@ import urllib.request
 from collections import defaultdict
 
 URL = "https://electionresults.parliament.uk/general-elections/{}/candidacies.csv"
-ELECTIONS = {"results_2024.csv": 6, "results_2019_notional.csv": 5}   # the site's election numbers
 DATA = os.path.join(os.path.dirname(__file__), "data")
 
 # The parties the model tracks, and the site's abbreviation for each.
-# Labour Co-op candidates are listed as Lab; Scottish Greens share the Green
-# code; the Brexit Party (2019) became Reform UK.
-PARTIES = {"Lab": "Lab", "Con": "Con", "RUK": "Ref", "BRX": "Ref", "LD": "LD", "Green": "Grn", "SNP": "SNP", "PC": "PC"}
+# Labour Co-op candidates are listed as Lab; Scottish Greens share the Green code.
+PARTIES = {"Lab": "Lab", "Con": "Con", "RUK": "Ref", "LD": "LD", "Green": "Grn", "SNP": "SNP", "PC": "PC"}
 COLUMNS = ["Lab", "Con", "Ref", "LD", "Grn", "SNP", "PC", "Oth"]
+
+# "Ref" is the populist-right slot: UKIP until 2017, the Brexit Party in 2019
+# (when UKIP's leftover 0.1% counts as Other), Reform UK in 2024.
+UKIP_AS_REF = {"UKIP": "Ref"}
+BREXIT_AS_REF = {"BRX": "Ref"}
+
+# file -> (the site's election number, extra party codes for that election)
+ELECTIONS = {
+    "results_2024.csv": (6, {}),
+    "results_2019_notional.csv": (5, BREXIT_AS_REF),
+    "results_2019.csv": (4, BREXIT_AS_REF),
+    "results_2017.csv": (3, UKIP_AS_REF),
+    "results_2015.csv": (2, UKIP_AS_REF),
+    "results_2010.csv": (1, UKIP_AS_REF),
+}
 
 
 def download(number):
@@ -42,12 +56,13 @@ def download(number):
         return list(csv.DictReader(io.StringIO(resp.read().decode("utf-8-sig"))))
 
 
-def by_constituency(candidates):
+def by_constituency(candidates, extra_parties):
+    codes = {**PARTIES, **extra_parties}
     seats = {}
     votes = defaultdict(lambda: dict.fromkeys(COLUMNS, 0))
     for c in candidates:
         code = c["Constituency geographic code"]
-        party = PARTIES.get(c["Main party abbreviation"], "Oth")
+        party = codes.get(c["Main party abbreviation"], "Oth")
         votes[code][party] += int(c["Candidate vote count"] or 0)
         if code not in seats:
             seats[code] = {
@@ -89,9 +104,9 @@ def by_constituency(candidates):
 
 def main():
     os.makedirs(DATA, exist_ok=True)
-    for filename, number in ELECTIONS.items():
+    for filename, (number, extra_parties) in ELECTIONS.items():
         candidates = download(number)
-        rows = by_constituency(candidates)
+        rows = by_constituency(candidates, extra_parties)
         path = os.path.join(DATA, filename)
         with open(path, "w", newline="", encoding="utf-8") as f:
             writer = csv.DictWriter(f, fieldnames=list(rows[0].keys()))

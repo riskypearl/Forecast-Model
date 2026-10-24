@@ -1,10 +1,16 @@
 """
 Download 2021 Census demographics for every England and Wales constituency
-(2024 boundaries) and save shares to uk/data/census_2021.csv.
+and save shares to:
 
-Source: the ONS census API (api.beta.ons.gov.uk), area type "p19wpc" - the
-post-2019 review constituencies first used in July 2024 (575 seats: 543 in
-England, 32 in Wales). Open Government Licence.
+  uk/data/census_2021.csv                 2024 boundaries (575 seats)
+  uk/data/census_2021_old_boundaries.csv  2010-2024 boundaries (573 seats),
+                                          for the 2010-2019 elections
+
+Source: the ONS census API (api.beta.ons.gov.uk), area types "p19wpc" (the
+post-2019 review constituencies first used in July 2024: 543 in England, 32
+in Wales) and "wpc" (the previous ones). Open Government Licence. The 2021
+census is used for the 2010-2019 elections too: it is a decade late for
+2010, but how seats differ from each other changes slowly.
 
 Scotland's census was a year later (2022) and is published by Scotland's
 Census, not the ONS, so the 57 Scottish seats are not covered yet. Northern
@@ -19,8 +25,9 @@ import os
 import urllib.request
 from collections import defaultdict
 
-API = "https://api.beta.ons.gov.uk/v1/population-types/{pop}/census-observations?area-type=p19wpc&dimensions={dim}"
-OUT = os.path.join(os.path.dirname(__file__), "data", "census_2021.csv")
+API = "https://api.beta.ons.gov.uk/v1/population-types/{pop}/census-observations?area-type={area}&dimensions={dim}"
+DATA = os.path.join(os.path.dirname(__file__), "data")
+AREA_TYPES = {"census_2021.csv": "p19wpc", "census_2021_old_boundaries.csv": "wpc"}
 
 # Each output column = share of the people (or households) in the listed
 # categories, out of everyone the question applies to ("Does not apply",
@@ -59,9 +66,9 @@ VARIABLES = [
 AGE_BANDS = {"age_18_34": (18, 34), "age_65_plus": (65, 200)}
 
 
-def fetch(pop, dim):
+def fetch(pop, dim, area):
     """Returns {constituency code: {category code: count}} and {code: name}."""
-    req = urllib.request.Request(API.format(pop=pop, dim=dim), headers={"User-Agent": "senate-forecast/0.1"})
+    req = urllib.request.Request(API.format(pop=pop, dim=dim, area=area), headers={"User-Agent": "senate-forecast/0.1"})
     with urllib.request.urlopen(req, timeout=120) as resp:
         data = json.load(resp)
     counts, names = defaultdict(dict), {}
@@ -73,9 +80,14 @@ def fetch(pop, dim):
 
 
 def main():
+    for filename, area in AREA_TYPES.items():
+        save(area, os.path.join(DATA, filename))
+
+
+def save(area, out):
     rows = defaultdict(dict)
     for pop, dim, columns in VARIABLES:
-        counts, names = fetch(pop, dim)
+        counts, names = fetch(pop, dim, area)
         for code, by_category in counts.items():
             total = sum(n for c, n in by_category.items() if c != "-8")
             rows[code]["name"] = names[code]
@@ -83,7 +95,7 @@ def main():
                 rows[code][column] = round(sum(by_category.get(c, 0) for c in categories) / total, 4)
         print(f"{dim}: {len(counts)} constituencies")
 
-    counts, _ = fetch("UR", "resident_age_101a")
+    counts, _ = fetch("UR", "resident_age_101a", area)
     for code, by_age in counts.items():
         ages = {int(a): n for a, n in by_age.items() if a.isdigit()}   # 100 = "100 and over"
         adults = sum(n for a, n in ages.items() if a >= 18)
@@ -93,13 +105,13 @@ def main():
     print(f"resident_age_101a: {len(counts)} constituencies")
 
     fields = ["ons_code", "name", "adults", *AGE_BANDS] + [c for _, _, cols in VARIABLES for c in cols]
-    os.makedirs(os.path.dirname(OUT), exist_ok=True)
-    with open(OUT, "w", newline="", encoding="utf-8") as f:
+    os.makedirs(os.path.dirname(out), exist_ok=True)
+    with open(out, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fields)
         writer.writeheader()
         for code in sorted(rows):
             writer.writerow({"ons_code": code, **rows[code]})
-    print(f"Saved {len(rows)} constituencies to {OUT}")
+    print(f"Saved {len(rows)} constituencies to {out}")
 
 
 if __name__ == "__main__":
