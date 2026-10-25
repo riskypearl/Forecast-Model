@@ -126,6 +126,7 @@ doesn't scale with Labour's national shift, which barely moved in 2024. That's s
 ## Stage 3b: tactical voting
 
 ```
+python uk/fetch_yougov_tactical.py     # YouGov two-horse-race tables -> data/yougov_tactical.csv (needs pypdf)
 python uk/bes_tables.py <panel .dta>   # BES "would you ever vote for" tables -> data/bes/ptv_tables.csv
 python uk/fetch_favourability.py       # leader / party ratings -> data/favourability.csv
 python uk/fetch_projections.py         # published MRPs -> data/seat_projections.csv
@@ -134,11 +135,30 @@ python uk/tactical_test.py --nowcast   # today's seats under each method
 ```
 
 **The squeeze** (`tactical.py`). In each seat, voters of the parties outside the top two can
-switch to whichever of the two they'd sooner vote for. It is full strength when the top two are
-level, fades to nothing at a 25-point lead, and runs inside the swing solve, so national totals
-still match the polls.
+switch to one of the two. It is full strength when the top two are level, fades to nothing at a
+25-point lead, and runs inside the swing solve, so national totals still match the polls.
 
-**Who'd switch to whom is measured, not assumed**: the British Election Study Internet Panel
+**The nowcast uses YouGov's measured rates.** YouGov's tactical-voting study (15-22 September
+2026, 6,077 GB adults; earlier runs February 2025 and February 2026) asks: "imagine the only two
+parties with a chance of winning in your constituency were X and Y - how would you vote?", for
+ten pairings, by current vote. `fetch_yougov_tactical.py` reads the published tables into
+`data/yougov_tactical.csv`. In a seat whose top two are one of those pairings, the other parties'
+voters move at exactly those rates - to either party or to not voting. For example, Labour v
+Reform:
+
+| Current vote | Con | Lab | LD | Ref | Grn |
+|---|---|---|---|---|---|
+| would vote Labour | 18 | 97 | 68 | 0 | 63 |
+| would vote Reform | 37 | 1 | 5 | 98 | 2 |
+
+These rates already reflect Andy Burnham (leader from July 2026): between February and September
+Labour v Green seats went from Green 30-20 to Labour 27-21, and Labour v Reform from 35-31 to
+41-26. The ten pairings cover 538 of the 631 GB seats; the rest (mostly SNP and Plaid contests)
+use the BES squeeze below. Run-to-run, the rates are scaled by a log-normal factor (SD 0.3), for
+people following through on a hypothetical more or less than they say. YouGov's study has no
+pre-2024 equivalent, so unlike the methods below it can't be scored on a past election.
+
+**The BES squeeze, for the remaining seats and the backtests.** Who'd switch to whom, measured: the British Election Study Internet Panel
 asks everyone how likely they are ever to vote for each party (0-10). `bes_tables.py` averages
 that by current vote intention, from the wave before each election - 5 (2015), 12 (2017),
 18 (2019), 27 (2024; the campaign wave didn't ask it) and 31 (May-June 2026, for the nowcast).
@@ -163,7 +183,7 @@ called right, national result given):
 | Method | 2010->15 | 2015->17 | 2017->19 | 2019->24 | Total |
 |---|---|---|---|---|---|
 | None | 586 | 556 | 580 | 509 | 2231 |
-| **BES (used)** | **593** | 550 | 573 | 521 | **2237** |
+| **BES** | **593** | 550 | 573 | 521 | **2237** |
 | BES, only in seats whose top two changed | 587 | 555 | 580 | 511 | 2233 |
 | Only in seats whose top two changed | 586 | 555 | 579 | 510 | 2230 |
 | Affinity only (judgement, everyone equally disliked) | 577 | 558 | 573 | 517 | 2225 |
@@ -172,32 +192,32 @@ called right, national result given):
 
 BES is the only method to beat "none" out of sample, by a little. Held at one fixed strength, 1.5-3
 gained 13-21 seats over "none" across the four elections, helping in the big-shift years (2015,
-2024) and costing a few in 2017 and 2019. The nowcast uses 1.5, varied from run to run
-(log-normal, SD 0.75). The older methods are still in the code; adding them to `SCENARIOS` in
-`tactical.py` mixes them back in.
+2024) and costing a few in 2017 and 2019. It runs at 1.5 where YouGov has no pairing. Any of
+these methods can be mixed back into the nowcast through `SCENARIOS` in `tactical.py`.
 
-**What it does now** (25 Oct 2026, median seats):
+**Its weakness, and why the nowcast moved to YouGov**: BES wave 31 (May-June 2026) predates
+Burnham. An adjustment was tried (`burnham_adjustment.py`: shift each respondent's view of the
+Labour leader by YouGov's Starmer-to-Burnham change, and carry it into their Labour score) and
+backtested on the two leader changes in the BES panel (`leader_change_test.py`). It failed: the
+real change was 2.2x its prediction for May -> Johnson and 0.25x for Corbyn -> Starmer, so it
+isn't used.
+
+**What it does now** (25 Oct 2026, median seats, 10,000 runs):
 
 | | Lab | Con | Ref | LD | Grn |
 |---|---|---|---|---|---|
 | No tactical voting | 272 | 100 | 141 | 64 | 8 |
-| BES squeeze (used) | 263 | 113 | 120 | 68 | 14 |
+| BES squeeze | 263 | 113 | 120 | 68 | 14 |
+| **YouGov rates (used)** | **273** | **134** | **81** | **75** | **18** |
 
-Reform loses ~20 seats, but Labour doesn't gain overall. Tracing it at today's average: in the
-223 Labour-v-Reform seats Lib Dem and Green voters move to Labour (Labour +5 points there; ~16
-seats from Reform). But in Labour-v-Conservative seats Reform voters, who'd far sooner vote
-Conservative (4.7) than Labour (0.7), move to the Conservatives (~9 seats), and holding the
-national total to the polls takes Labour's ~1.5-point tactical gain back out across all seats.
-Two assumptions decide this:
-- **Reform voters as tactical as anyone else** (`WILLINGNESS` in `tactical.py`). Halving it helps
-  the 2024 test but hurts 2015 (UKIP voters did switch); overall a wash, so it stays at 1.
-- **Polls already include tactical voting** (national totals held fixed). If they don't, tactical
-  voting adds to Labour's total and it gains ~6 seats. 2024's polls overstated Labour, which
-  points the other way, but it's untested.
+With YouGov's rates Reform loses ~60 seats, to the Conservatives (Labour, Lib Dem and Green
+voters backing them in Conservative-v-Reform seats) and to Labour and the Lib Dems. Reform's 90%
+range is 33-152. One assumption still holds Labour back: national totals are held to the polls,
+i.e. polls are assumed to already include tactical voting; if they don't, Labour gains more.
 
 For comparison, the published MRPs in `data/seat_projections.csv` (September-October 2026) have
-Labour at 241-353 and Reform at 84-153; Electoral Calculus's tactical version takes 5-43 seats
-off Reform and gives Labour 9-27.
+Labour at 241-353 and Reform at 84-153; Electoral Calculus's tactical versions have Reform at
+81-108, and More in Common's September tactical scenario 117.
 
 ## Known gaps
 

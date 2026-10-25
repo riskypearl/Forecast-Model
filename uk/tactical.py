@@ -58,17 +58,20 @@ STRENGTH = 1.5
 # took the 2024 test from 509 to 528 seats right.
 BES_STRENGTH = 1.5
 
-# The nowcast's tactical methods: name -> (chance, typical strength). Each
-# simulation draws one. Possible names: "bes", "ratings", "anti-government",
-# "none". Currently BES alone.
+# The nowcast's tactical methods: name -> (chance, typical strength,
+# run-to-run SD of the strength, log-normal). Each simulation draws one.
+# Possible names: "yougov", "bes", "ratings", "anti-government", "none".
+#   yougov: YouGov's measured two-horse-race answers (data/yougov_tactical.csv,
+#           September 2026), used as measured (strength 1). The SD allows for
+#           people following through on a hypothetical more or less than they
+#           say. Contests YouGov didn't ask about (SNP, Plaid ...) use BES.
 SCENARIOS = {
-    "bes": (1.0, BES_STRENGTH),
+    "yougov": (1.0, 1.0, 0.3),
 }
 GOVERNMENT = "Lab"
 
-# Simulation-to-simulation uncertainty: strength is multiplied by a
-# log-normal factor with this SD (0.75 = a typical run is between about
-# 0.5x and 2x the scenario's strength).
+# Default run-to-run SD for scenarios that don't give one (0.75 = a typical
+# run is between about 0.5x and 2x the scenario's strength).
 STRENGTH_SD = 0.75
 
 # Margin (points) at which the squeeze fades to nothing.
@@ -172,10 +175,11 @@ def scenario_matrices(as_of):
     builders = {
         "none": lambda: np.zeros((len(PARTIES), len(PARTIES))),
         "bes": lambda: bes_dislike("now"),
+        "yougov": lambda: bes_dislike("now"),       # BES for the contests YouGov didn't ask about
         "ratings": lambda: dislike_matrix(negatives(as_of)),
         "anti-government": anti_government,
     }
-    if "bes" in SCENARIOS and not os.path.exists(os.path.join(HERE, "data", "bes", "ptv_tables.csv")):
+    if {"bes", "yougov"} & set(SCENARIOS) and not os.path.exists(os.path.join(HERE, "data", "bes", "ptv_tables.csv")):
         raise SystemExit("Tactical voting needs data/bes/ptv_tables.csv: download the BES panel and run "
                          "python uk/bes_tables.py <panel .dta> (or set TACTICAL_VOTING = False in seat_model.py).")
     return {name: builders[name]() for name in SCENARIOS}
@@ -183,16 +187,101 @@ def scenario_matrices(as_of):
 
 def scenario_draws(rng, n, matrices):
     """
-    For n simulations: (scenario index per sim, dislike matrix per sim
-    (n x parties x parties), strength per sim).
+    For n simulations: a list of (scenario index, sims using it, tactical
+    argument for seat_model.logistic_swing) - one per scenario drawn.
     """
     names = list(SCENARIOS)
     chances = np.array([SCENARIOS[s][0] for s in names])
     which = rng.choice(len(names), size=n, p=chances / chances.sum())
-    stack = np.stack([matrices[s] for s in names])
-    typical = np.array([SCENARIOS[s][1] for s in names])
-    strength = strength_draws(rng, n, 1.0) * typical[which]
-    return which, stack[which], strength
+    out = []
+    for k, name in enumerate(names):
+        sims = np.flatnonzero(which == k)
+        if not len(sims):
+            continue
+        typical = SCENARIOS[name][1]
+        sd = SCENARIOS[name][2] if len(SCENARIOS[name]) > 2 else STRENGTH_SD
+        strength = typical * np.exp(rng.normal(-sd ** 2 / 2, sd, size=len(sims)))
+        if name == "yougov":
+            tactical = {"method": "yougov", "dislike": matrices[name], "strength": strength}
+        else:
+            tactical = (matrices[name], strength)
+        out.append((k, sims, tactical))
+    return out
+
+
+# ---------------------------------------------------------------------------
+# YouGov's measured two-horse races
+# ---------------------------------------------------------------------------
+
+YOUGOV_PATH = os.path.join(HERE, "data", "yougov_tactical.csv")
+_yougov = None
+
+
+def yougov_rates(path=YOUGOV_PATH):
+    """
+    (rates, covered). rates[a, b, k] = (share of k's voters who'd vote a,
+    who'd vote b, who wouldn't vote) when a and b are the only two in
+    contention; covered[a, b] says whether YouGov asked about that pairing.
+    """
+    global _yougov
+    if _yougov is None:
+        n = len(PARTIES)
+        rates, covered = np.zeros((n, n, n, 3)), np.zeros((n, n), dtype=bool)
+        with open(path, newline="", encoding="utf-8") as f:
+            for r in csv.DictReader(f):
+                a, b, k = (PARTIES.index(r[c]) for c in ("contest_a", "contest_b", "voters"))
+                p = float(r["pct"]) / 100
+                slot = {r["contest_a"]: 0, r["contest_b"]: 1, "none": 2}.get(r["choice"])
+                if slot is None:
+                    continue
+                rates[a, b, k, slot] = p
+                rates[b, a, k, [1, 0, 2][slot]] = p
+                covered[a, b] = covered[b, a] = True
+        _yougov = rates, covered
+    return _yougov
+
+
+def squeeze_yougov(shares, strength, fallback):
+    """
+    Voters outside a seat's top two (a, b) move at YouGov's measured rates
+    for an a-v-b race - to a, to b, or to not voting - scaled by how close
+    the race is and by this run's strength. Voters YouGov doesn't break out
+    (SNP, Plaid, Other) stay put. Seats whose pairing YouGov didn't ask
+    about get the BES squeeze (fallback dislike matrix) instead.
+    """
+    rates, covered = yougov_rates()
+    order = np.argsort(-shares, axis=2)
+    a, b = order[..., 0], order[..., 1]
+    s_a = np.take_along_axis(shares, a[..., None], axis=2)[..., 0]
+    s_b = np.take_along_axis(shares, b[..., None], axis=2)[..., 0]
+    close = np.clip(1 - 100 * (s_a - s_b) / CLOSENESS, 0, 1)
+
+    k = np.arange(shares.shape[2])
+    r = rates[a[..., None], b[..., None], k[None, None, :]]                # sims x seats x parties x 3
+    outside = (k[None, None, :] != a[..., None]) & (k[None, None, :] != b[..., None])
+    scale = (strength[:, None, None] * close[..., None] * outside)[..., None]
+    moves = np.minimum(r * scale, 1.0)
+    moves *= np.minimum(1.0, 1.0 / np.maximum(moves.sum(axis=3, keepdims=True), 1e-9))   # never more than all of them
+    moved = shares[..., None] * moves                                       # sims x seats x parties x 3
+
+    out = shares - moved.sum(axis=3)
+    np.put_along_axis(out, a[..., None], (s_a + moved[..., 0].sum(axis=2))[..., None], axis=2)
+    np.put_along_axis(out, b[..., None], (s_b + moved[..., 1].sum(axis=2))[..., None], axis=2)
+    out = np.clip(out, 0, None)                                             # rounding can leave -1e-17
+    out /= out.sum(axis=2, keepdims=True)                                   # the non-voters drop out
+
+    known = covered[a, b]
+    if not known.all():
+        other = squeeze(shares, fallback, BES_STRENGTH * strength)
+        out = np.where(known[..., None], out, other)
+    return out
+
+
+def apply(shares, tactical):
+    """seat_model.logistic_swing's hook: a (dislike, strength[, base top two]) tuple, or a YouGov dict."""
+    if isinstance(tactical, dict):
+        return squeeze_yougov(shares, tactical["strength"], tactical["dislike"])
+    return squeeze(shares, *tactical)
 
 
 # ---------------------------------------------------------------------------

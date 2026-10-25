@@ -76,9 +76,10 @@ UNIFORM_SWING_PARTIES = ["Oth"]
 DEMOGRAPHIC_SWING = True
 
 # Tactical voting (tactical.py): voters of parties outside a seat's top two
-# switch to whichever of the two they'd sooner vote for, as measured in the
-# British Election Study - the only method that beat "no tactical voting"
-# on past elections (tactical_test.py). False = no tactical voting at all.
+# switch to one of the two at the rates YouGov measured in September 2026
+# ("if only X and Y could win here, how would you vote?"); contests YouGov
+# didn't ask about use the BES squeeze, the only method that beat "no
+# tactical voting" on past elections. False = no tactical voting at all.
 TACTICAL_VOTING = True
 
 # A seat's own error, in points, for a party on 25% there (smaller shares get
@@ -168,7 +169,7 @@ def logistic_swing(base, weights, targets, iterations=25, elasticity=None, tacti
             shares[:, :, uniform] = np.clip(additive, 0.001, None) * (base[None, :, uniform] > 0)
         shares /= shares.sum(axis=2, keepdims=True)
         if tactical is not None:
-            shares = tactics.squeeze(shares, *tactical)
+            shares = tactics.apply(shares, tactical)
         achieved = np.einsum("i,sij->sj", weights, shares)
         step = logit(targets) - logit(achieved)
         step[:, uniform] = (targets - achieved)[:, uniform]
@@ -295,12 +296,14 @@ def simulate(base, weights, average, field, seat_sd, rng, elasticity=None, matri
     standing = base > 0
     for start in range(0, SIMULATIONS, chunk):
         targets = nationals[start:start + chunk]
-        tactical = None
-        if matrices is not None:
-            which, dislike, strength = tactics.scenario_draws(rng, len(targets), matrices)
-            scenarios[start:start + chunk] = which
-            tactical = (dislike, strength)
-        swung = swing(base, weights, targets, elasticity, tactical)
+        if matrices is None:
+            swung = swing(base, weights, targets, elasticity)
+        else:
+            # each scenario drawn in this chunk is swung separately
+            swung = np.empty((len(targets),) + base.shape)
+            for k, sims, tactical in tactics.scenario_draws(rng, len(targets), matrices):
+                scenarios[start + sims] = k
+                swung[sims] = swing(base, weights, targets[sims], elasticity, tactical)
         noise = t_draws(rng, swung.shape) * seat_sd / 100 * size_scale(swung)
         noisy = np.clip(swung + noise, 0.0005, None) * standing[None, :, :]
         noisy /= noisy.sum(axis=2, keepdims=True)
@@ -381,8 +384,8 @@ def main():
           f"seat error SD, measured on 2019->2024: {seat_sd:.1f} points for a party on 25%")
     if matrices is not None:
         print("Tactical voting: " + ", ".join(
-            f"{name} ({100 * chance:.0f}% of runs, strength ~{strength:g}, varied by run)"
-            for name, (chance, strength) in tactics.SCENARIOS.items()))
+            f"{name} ({100 * spec[0]:.0f}% of runs, strength ~{spec[1]:g}, varied by run)"
+            for name, spec in tactics.SCENARIOS.items()))
     print(f"\n{'':6}{'vote':>6}{'seats':>7}{'90% range':>13}{'largest':>9}{'majority':>10}")
     for t in sorted(totals, key=lambda t: -t["mean"]):
         print(f"{t['party']:6}{t['vote_share']:6.1f}{t['median']:7d}{t['p5']:>7d}-{t['p95']:<5d}"
