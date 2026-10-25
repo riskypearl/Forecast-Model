@@ -271,24 +271,33 @@ the top two go through and the others' second choices are added). `sussex_mayor.
    and 1. Police and crime commissioner counts were scraped too but not used: lower-profile
    races, more independents, and they behaved differently (0.85x).
 
-**Katy Bourne's personal vote** (`bourne_effect.py`): in all four Sussex PCC elections she ran ahead of the typical Conservative PCC candidate (against each area's general-election Conservative share) by +2.6 (2012), +11.5 (2016), +2.8 (2021) and +4.7 (2024). The model adds +3.8 (the like-for-like 2021/2024 years), with the spread of all four as uncertainty.
+**Katy Bourne's personal vote** (`bourne_effect.py`): in all four Sussex PCC elections she ran
+ahead of the typical Conservative PCC candidate (against each area's general-election
+Conservative share) by +2.6 (2012), +11.5 (2016), +2.8 (2021) and +4.7 (2024) - in the top third
+of 36 forces each time. The model adds +3.8 (the like-for-like 2021 and 2024 comparisons), with
+the spread of all four years as uncertainty. To avoid counting a big-name incumbent's personal
+vote twice, the mayoral-residual draws then leave out the two areas where a Conservative
+incumbent stood (Houchen, Tees Valley 2024: +22; Street, West Midlands 2024: +14); without them
+the Conservative mayoral residual averages +1.6 rather than +3.7.
 
-**From polls on 25 Oct 2026, including Bourne's personal vote** (10,000 runs; table below predates it - now Con 48%, Lab 25%, Ref 14%, LD 11%, Ind 2%, Grn 1% for May 2028):
+**From polls on 25 Oct 2026** (10,000 runs):
 
 | | Candidate | First choice, May 2028 | 90% range | Win, May 2028 | Win if held today |
 |---|---|---|---|---|---|
-| Ref | Paul Linehan | 24.2% | 9-40 | 17% | 9% |
-| Con | Katy Bourne | 21.8% | 5-42 | **39%** | 48% |
-| Lab | Caroline Baxter | 18.7% | 1-37 | **29%** | 27% |
-| LD | Ben Dempsey | 14.4% | 3-31 | 12% | 12% |
-| Grn | Rachel Millward | 10.7% | 2-19 | 1% | 1% |
-| Ind | Martin Webb and others | 6.9% | 2-23 | 2% | 3% |
+| Ref | Paul Linehan | 23.5% | 9-39 | 15% | 7% |
+| Con | Katy Bourne | 23.0% | 7-41 | **42%** | 52% |
+| Lab | Caroline Baxter | 18.6% | 1-37 | **28%** | 26% |
+| LD | Ben Dempsey | 14.1% | 3-31 | 12% | 12% |
+| Grn | Rachel Millward | 10.9% | 3-19 | 1% | 1% |
+| Ind | Martin Webb and others | 6.7% | 2-22 | 2% | 3% |
 
-Reform is the most likely first-round leader but usually loses the second count: Conservative v
-Reform (30% of runs) goes to the Conservatives 83% of the time, Labour v Reform (22%) to Labour
-83%. Conservative v Labour finals are a coin toss. So the race mostly turns on whether the
-Conservatives or Labour finish second (making the final about 56% vs 45% of the time). Reform's
-chances come from the runs where the polls move its way over 18 months.
+Reform and the Conservatives are level on first choices, but Reform usually loses the second
+count: Conservative v Reform (31% of runs) goes to the Conservatives 83% of the time, Labour v
+Reform (20%) to Labour 85%. Conservative v Labour finals (21%) lean slightly Conservative (56%).
+So the race mostly turns on whether the Conservatives or Labour finish in the top two (about
+57% vs 43% of runs). Reform's chances come from the runs where the polls move its way over 18
+months. One reason to treat Bourne's 42% as upper-middle rather than a floor: the Conservatives
+took only about 20% in the May 2026 Sussex county elections, against 23% here.
 
 **Backtest** (`mayor_backtest.py`): the whole method run on the 14 mayoral elections of 2021-22
 that used the supplementary vote, with what was known on polling day (2019 baseline, polls in

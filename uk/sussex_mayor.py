@@ -82,6 +82,12 @@ VOLUME = 1.01           # transfers reaching the finalists = YouGov-implied x th
 INDEPENDENT = 0.27      # share of independents' voters whose second choice reached a finalist
 SPLIT = (0.43, 1.0)     # lopsidedness of the split vs YouGov's, drawn per run
 
+# Mayoral areas whose residuals are left out of the draws: Conservative incumbents
+# standing again, whose personal votes (Houchen +22, Street +14) would otherwise be
+# counted on top of Katy Bourne's, which is modelled on its own (bourne_effect.py).
+# Without them the Conservative mayoral residual averages +1.6 rather than +3.7.
+CON_INCUMBENT_AREAS = {(2024, "Tees Valley"), (2024, "West Midlands")}
+
 CANDIDATES = {"Con": "Katy Bourne", "Lab": "Caroline Baxter", "LD": "Ben Dempsey",
               "Grn": "Rachel Millward", "Ref": "Paul Linehan", "Oth": "Martin Webb (Ind) and others"}
 
@@ -99,7 +105,7 @@ def mayoral_shift(rng, n):
     with open(os.path.join(HERE, "data", "mayoral_adjustment.csv"), newline="", encoding="utf-8") as f:
         parts = {r["party"]: r for r in csv.DictReader(f)}
     with open(os.path.join(HERE, "data", "mayoral_residuals.csv"), newline="", encoding="utf-8") as f:
-        areas = list(csv.DictReader(f))
+        areas = [a for a in csv.DictReader(f) if (int(a["year"]), a["area"]) not in CON_INCUMBENT_AREAS]
     picked = [areas[i] for i in rng.integers(len(areas), size=n)]
     out = np.zeros((n, len(PARTIES)))
     for p, r in parts.items():
