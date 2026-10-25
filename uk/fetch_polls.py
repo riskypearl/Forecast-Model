@@ -81,8 +81,9 @@ def grid(table):
                 col += 1
                 continue
             cell = cells.pop(0)
-            span = int(cell.get("colspan", 1) or 1)
-            down = int(cell.get("rowspan", 1) or 1)
+            # some pages have malformed spans like colspan="2,"
+            span = int(re.sub(r"\D", "", str(cell.get("colspan", 1))) or 1)
+            down = int(re.sub(r"\D", "", str(cell.get("rowspan", 1))) or 1)
             wide = wide or span > 3
             text = clean(cell)
             for c in range(col, col + span):

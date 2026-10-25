@@ -219,6 +219,55 @@ For comparison, the published MRPs in `data/seat_projections.csv` (September-Oct
 Labour at 241-353 and Reform at 84-153; Electoral Calculus's tactical versions have Reform at
 81-108, and More in Common's September tactical scenario 117.
 
+## Sussex & Brighton mayor (May 2028)
+
+```
+python uk/fetch_sv_results.py   # 2021-22 supplementary-vote counts (mayors + PCCs) -> data/sv_2021.csv
+python uk/mayor_vs_ge.py        # mayoral results vs the general election / the model -> data/mayor_vs_ge_2024.csv
+python uk/sussex_mayor.py       # the race under the supplementary vote, if held today -> data/sussex_mayor.csv
+```
+
+The first election for the new Sussex & Brighton mayoralty was moved from May 2026 to May 2028,
+and is expected to use the supplementary vote (a first and second choice; if no one has 50%,
+the top two go through and the others' second choices are added). `sussex_mayor.py`:
+
+1. **First choices**: the general-election model for Sussex's 17 constituencies, without
+   tactical voting (people can vote sincerely first under the supplementary vote).
+2. **Mayoral adjustment**, measured: run on the May 2025 mayoral elections with polls as of
+   polling day (`mayor_vs_ge.py`), the model called 5 of 6 winners. On average mayoral first
+   rounds had Labour 4.9 points below it, Reform 2.6 above, the Lib Dems 2.2 above, with those
+   spreads between areas (Lib Dems ±7.9, driven by Hull, which they run). Each run draws one
+   shift per party. The May 2024 mayors had Reform 12 points below its July 2024 general
+   election vote, but that was the early-Reform era and didn't recur in 2025.
+3. **Second count**: the others' voters transfer at YouGov's two-horse-race rates, calibrated on
+   the 12 mayoral contests of 2021-22 that went to second choices (London, West Midlands, West
+   Yorkshire ...). YouGov's rates predicted **how many** second choices reached the finalists
+   almost exactly (1.01x), but real second choices **split** less one-sidedly - about 0.43x
+   as lopsided as YouGov's answers, measured from 50/50. Each run draws a value between 0.43
+   and 1. Police and crime commissioner counts were scraped too but not used: lower-profile
+   races, more independents, and they behaved differently (0.85x).
+
+**25 Oct 2026** (10,000 runs):
+
+| | Candidate | Model | First choice | 90% range | Win |
+|---|---|---|---|---|---|
+| Ref | Paul Linehan | 20.4% | 23.0% | 18-29 | 2% |
+| Con | Katy Bourne | 23.7% | 22.9% | 16-31 | **49%** |
+| LD | Ben Dempsey | 17.5% | 19.8% | 7-30 | **38%** |
+| Lab | Caroline Baxter | 20.4% | 15.5% | 6-24 | 11% |
+| Grn | Rachel Millward | 13.0% | 12.1% | 9-16 | 0% |
+| Ind | Martin Webb and others | 4.7% | 6.7% | 2-12 | 0% |
+
+Reform often tops the first round but almost never wins the second: in the most common final,
+Conservative v Reform (44% of runs), the Conservatives win 98% of the time, typically 59-41.
+The race is really over which of the Conservatives and Lib Dems reaches the final with Reform -
+and in a Conservative v Lib Dem final, Labour and Green second choices favour the Lib Dems.
+
+**Not included yet**: time until 2028 (a snapshot of today's polls - the real uncertainty is
+much wider), Sussex local election results (which would pin down the Lib Dems better than the
+wide ±7.9 spread), and candidates' personal votes - notably Katy Bourne's, who has won
+Sussex-wide under this exact system three times as Police and Crime Commissioner.
+
 ## Known gaps
 
 Scottish seats have no census data, only the Scotland flag, and the SNP comes out too high in

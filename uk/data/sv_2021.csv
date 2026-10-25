@@ -1,0 +1,289 @@
+kind,area,party,candidate,first,transfers,finalist,two_rounds
+pcc,Avon and Somerset Police,Con,Mark Shelford,136988,24331,1,1
+pcc,Avon and Somerset Police,Lab,Kerry Barker,93495,52798,1,1
+pcc,Avon and Somerset Police,Grn,Cleo Lake,64790,,0,1
+pcc,Avon and Somerset Police,LD,Heather Shearer,52839,,0,1
+pcc,Avon and Somerset Police,Oth,John Smith,46379,,0,1
+pcc,Bedfordshire Police,Con,Festus Akinbusoye,51700,8093,1,1
+pcc,Bedfordshire Police,Lab,David Michael,42708,8107,1,1
+pcc,Bedfordshire Police,LD,Jas Parmar,15983,,0,1
+pcc,Bedfordshire Police,Oth,Pat Hamil,8279,,0,1
+pcc,Bedfordshire Police,Oth,Antonio Daniel Vitiello,3387,,0,1
+pcc,Cambridgeshire Constabulary,Con,Darryl Preston,99034,15019,1,1
+pcc,Cambridgeshire Constabulary,Lab,Nicky Massey,72313,29882,1,1
+pcc,Cambridgeshire Constabulary,LD,Rupert Moss-Eccardt,51490,,0,1
+pcc,Cambridgeshire Constabulary,Ref,Sue Morris,8031,,0,1
+pcc,Cheshire Constabulary,Con,John Dwyer,99565,12397,1,1
+pcc,Cheshire Constabulary,Lab,David Keane,83329,16134,1,1
+pcc,Cheshire Constabulary,LD,Jo Conchie,32348,,0,1
+pcc,Cheshire Constabulary,Ref,Nick Goulding,8258,,0,1
+pcc,Cleveland Police,Con,Steve Turner,74023,,0,0
+pcc,Cleveland Police,Lab,Matt Storey,39467,,0,0
+pcc,Cleveland Police,Oth,Barrie Cooper,16667,,0,0
+pcc,Cleveland Police,LD,Chris Jones,6540,,0,0
+pcc,Cumbria Constabulary,Con,Peter McCall,56753,,0,0
+pcc,Cumbria Constabulary,Lab,Barbara Cannon,27687,,0,0
+pcc,Cumbria Constabulary,LD,Loraine Birchall,21506,,0,0
+pcc,Derbyshire Constabulary,Con,Angelique Foster,137884,11865,1,1
+pcc,Derbyshire Constabulary,Lab,Hardyal Dhindsa,104700,12864,1,1
+pcc,Derbyshire Constabulary,LD,Stanley Heptinstall,25811,,0,1
+pcc,Derbyshire Constabulary,Ref,Tim Prosser,10721,,0,1
+pcc,Devon and Cornwall Police,Con,Alison Hernandez,247173,28044,1,1
+pcc,Devon and Cornwall Police,Lab,Gareth Derrick,99894,47085,1,1
+pcc,Devon and Cornwall Police,LD,Brian Blake,88318,,0,1
+pcc,Devon and Cornwall Police,Grn,Stuart Paul Jackson,59242,,0,1
+pcc,Dorset Police,Con,David Sidwick,64071,6282,1,1
+pcc,Dorset Police,Oth,Dan Hardy,31112,12315,1,1
+pcc,Dorset Police,Grn,Claire Seymour,21283,,0,1
+pcc,Dorset Police,LD,Mark Robson,17837,,0,1
+pcc,Dorset Police,Lab,Patrick Canavan,16379,,0,1
+pcc,Durham Constabulary,Lab,Joy Allen,71084,9426,1,1
+pcc,Durham Constabulary,Con,George Jabbour,69748,7604,1,1
+pcc,Durham Constabulary,LD,Anne Marie Curry,21376,,0,1
+pcc,Essex Police,Con,Roger Hirst,235246,,0,0
+pcc,Essex Police,Lab,Chris Vince,99712,,0,0
+pcc,Essex Police,LD,Jon Whitehouse,58131,,0,0
+pcc,Essex Police,Oth,Robin Tilbrook,42831,,0,0
+pcc,Gloucestershire Constabulary,Con,Chris Nelson,79086,12011,1,1
+pcc,Gloucestershire Constabulary,LD,Chris Coleman,37024,22814,1,1
+pcc,Gloucestershire Constabulary,Oth,Martin Surl,34286,,0,1
+pcc,Gloucestershire Constabulary,Lab,Simon O'Rourke,31347,,0,1
+pcc,Gloucestershire Constabulary,Oth,Adrian Stratton,13131,,0,1
+pcc,Hampshire Constabulary,Con,Donna Jones,262667,50326,1,1
+pcc,Hampshire Constabulary,Lab,Tony Bunday,101832,43919,1,1
+pcc,Hampshire Constabulary,LD,Richard Murphy,93581,,0,1
+pcc,Hampshire Constabulary,Oth,Steve James-Bailey,68895,,0,1
+pcc,Hertfordshire Constabulary,Con,David Lloyd,155144,12761,1,1
+pcc,Hertfordshire Constabulary,LD,Sam North,87524,48172,1,1
+pcc,Hertfordshire Constabulary,Lab,Philip Ross,76941,,0,1
+pcc,Humberside Police,Con,Jonathan Evison,71554,7980,1,1
+pcc,Humberside Police,Lab,Keith Hunter,61859,9756,1,1
+pcc,Humberside Police,LD,Bob Morgan,23640,,0,1
+pcc,Kent Police,Con,Matthew Scott,237278,,0,0
+pcc,Kent Police,Lab,Lola Oyewusi,103807,,0,0
+pcc,Kent Police,LD,Graham Colley,69464,,0,0
+pcc,Lancashire Constabulary,Con,Andrew Snowden,166202,15152,1,1
+pcc,Lancashire Constabulary,Lab,Clive Grunshaw,154195,18167,1,1
+pcc,Lancashire Constabulary,LD,Neil Darby,32813,,0,1
+pcc,Lancashire Constabulary,Ref,Mark James Barker,17926,,0,1
+pcc,Leicestershire Police,Con,Rupert Matthews,121252,14314,1,1
+pcc,Leicestershire Police,Lab,Ross Willmott,81898,20313,1,1
+pcc,Leicestershire Police,LD,James Moore,42951,,0,1
+pcc,Lincolnshire Police,Con,Marc Jones,102813,,0,0
+pcc,Lincolnshire Police,Lab,Rosanne Kirk,34310,,0,0
+pcc,Lincolnshire Police,Oth,David William,18375,,0,0
+pcc,Lincolnshire Police,LD,Ross Pepper,10172,,0,0
+pcc,Lincolnshire Police,Ref,Peter Escreet,6101,,0,0
+pcc,Merseyside Police,Lab,Emily Spurrell,178875,,0,0
+pcc,Merseyside Police,Con,Bob Teesdale,71961,,0,0
+pcc,Merseyside Police,LD,Kris Brown,51979,,0,0
+pcc,Merseyside Police,Ref,Malcolm Webster,11662,,0,0
+pcc,Norfolk Constabulary,Con,Giles Orpen-Smellie,103980,16014,1,1
+pcc,Norfolk Constabulary,Lab,Michael Rosen,51056,18496,1,1
+pcc,Norfolk Constabulary,LD,John Crofts,31666,,0,1
+pcc,Norfolk Constabulary,Grn,Martin Schmierer,23469,,0,1
+pcc,Norfolk Constabulary,Oth,David Moreland,20473,,0,1
+pcc,Northamptonshire Police,Con,Stephen Mold,102752,,0,0
+pcc,Northamptonshire Police,Lab,Clare Pavitt,53166,,0,0
+pcc,Northamptonshire Police,LD,Ana Savage Gunn,29621,,0,0
+pcc,Northamptonshire Police,Ref,Mark Hearn,7715,,0,0
+pcc,Northumbria Police,Lab,Kim McGuinness,179021,27446,1,1
+pcc,Northumbria Police,Con,Duncan Crute,118543,21332,1,1
+pcc,Northumbria Police,Oth,Julian Kilburn,45567,,0,1
+pcc,Northumbria Police,LD,Peter Maughan,40955,,0,1
+pcc,North Yorkshire Police,Con,Philip Allott,73656,10081,1,1
+pcc,North Yorkshire Police,Lab,Alison Hume,40803,12639,1,1
+pcc,North Yorkshire Police,Oth,Keith Tordoff,22338,,0,1
+pcc,North Yorkshire Police,LD,James Barker,19773,,0,1
+pcc,Nottinghamshire Police,Con,Caroline Henry,131318,7340,1,1
+pcc,Nottinghamshire Police,Lab,Paddy Tipping,119271,12031,1,1
+pcc,Nottinghamshire Police,LD,David Watts,23794,,0,1
+pcc,South Yorkshire Police,Lab,Alan Billings,165442,,0,0
+pcc,South Yorkshire Police,Con,David Chinchen,98851,,0,0
+pcc,South Yorkshire Police,LD,Joe Otten,42462,,0,0
+pcc,Staffordshire Police,Con,Ben Adams,136024,,0,0
+pcc,Staffordshire Police,Lab,Tony Kearon,67050,,0,0
+pcc,Staffordshire Police,Oth,Deneice Florence-Jukes,19102,,0,0
+pcc,Staffordshire Police,LD,Richard Whelan,10690,,0,0
+pcc,Staffordshire Police,Ref,Michael Riley,5504,,0,0
+pcc,Suffolk Constabulary,Con,Tim Passmore,112139,,0,0
+pcc,Suffolk Constabulary,Lab,Elizabeth Hughes,47159,,0,0
+pcc,Suffolk Constabulary,Grn,Andy Patmore,27965,,0,0
+pcc,Suffolk Constabulary,LD,James Sandbach,17801,,0,0
+pcc,Surrey Police,Con,Lisa Townsend,112260,42856,1,1
+pcc,Surrey Police,LD,Paul Kennedy,69412,42803,1,1
+pcc,Surrey Police,Oth,Kevin Hurley,59554,,0,1
+pcc,Surrey Police,Lab,Howard Kaye,53103,,0,1
+pcc,Surrey Police,Oth,David Munro,40597,,0,1
+pcc,Sussex Police,Con,Katy Bourne,214523,30287,1,1
+pcc,Sussex Police,Lab,Paul Richards,84736,43523,1,1
+pcc,Sussex Police,LD,Jamie Bennett,63271,,0,1
+pcc,Sussex Police,Grn,Kahina Bouhassane,60781,,0,1
+pcc,Sussex Police,Oth,Roy Williams,30408,,0,1
+pcc,Thames Valley Police,Con,Matthew Barber,267404,45744,1,1
+pcc,Thames Valley Police,Lab,Laetisia Carter,175123,58323,1,1
+pcc,Thames Valley Police,LD,John Howson,110072,,0,1
+pcc,Thames Valley Police,Oth,Alan Robinson,77210,,0,1
+pcc,Warwickshire Police,Con,Philip Seccombe,85963,,0,0
+pcc,Warwickshire Police,Lab,Ben Twomey,45768,,0,0
+pcc,Warwickshire Police,LD,Louis Adam,26660,,0,0
+pcc,Warwickshire Police,Ref,Henry Lu,6692,,0,0
+pcc,West Mercia Police,Con,John-Paul Campion,179411,,0,0
+pcc,West Mercia Police,Lab,Kuldip Sahota,77664,,0,0
+pcc,West Mercia Police,LD,Margaret Rowley,50699,,0,0
+pcc,West Mercia Police,Ref,Peter Jewell,16419,,0,0
+pcc,West Midlands Police,Lab,Simon Foster,276743,24663,1,1
+pcc,West Midlands Police,Con,Jay Singh-Sohal,239288,20551,1,1
+pcc,West Midlands Police,LD,Jon Hunt,38594,,0,1
+pcc,West Midlands Police,Oth,Julie Hambleton,27664,,0,1
+pcc,West Midlands Police,Ref,Mark Hoath,18002,,0,1
+pcc,West Midlands Police,Oth,Desmond Jaddoo,7745,,0,1
+pcc,West Yorkshire Police,Lab,Tracy Brabin,261170,49753,1,1
+pcc,West Yorkshire Police,Con,Matt Robinson,176167,32970,1,1
+pcc,West Yorkshire Police,Oth,Bob Buxton,58851,,0,1
+pcc,West Yorkshire Police,Grn,Andrew Cooper,55833,,0,1
+pcc,West Yorkshire Police,LD,Stewart Golton,30162,,0,1
+pcc,West Yorkshire Police,Ref,Waj Ali,14943,,0,1
+pcc,West Yorkshire Police,Oth,Thérèse Hirst,8969,,0,1
+pcc,Wiltshire Police,Con,Jonathon Seed,84885,15118,1,1
+pcc,Wiltshire Police,LD,Liz Webster,35013,23061,1,1
+pcc,Wiltshire Police,Lab,Junab Ali,34147,,0,1
+pcc,Wiltshire Police,Oth,Mike Rees,31722,,0,1
+pcc,Wiltshire Police,Grn,Brig Oubridge,16606,,0,1
+pcc,Wiltshire Police,Ref,Julian Malins,4348,,0,1
+pcc,August 2021 re-run,Con,Philip Wilkinson,32564,5188,1,1
+pcc,August 2021 re-run,Oth,Mike Rees,25197,9618,1,1
+pcc,August 2021 re-run,LD,Brian Mathew,17966,,0,1
+pcc,August 2021 re-run,Lab,Junab Ali,12971,,0,1
+pcc,August 2021 re-run,Ref,Julian Malins,1859,,0,1
+pcc,Dyfed-Powys Police,PC,Dafydd Llywelyn,68208,26280,1,1
+pcc,Dyfed-Powys Police,Con,Jon Burns,69112,8296,1,1
+pcc,Dyfed-Powys Police,Lab,Philippa Thompson,48033,,0,1
+pcc,Dyfed-Powys Police,LD,Glyn Preston,17649,,0,1
+pcc,Gwent Police,Lab,Jeff Cuthbert,75775,16841,1,1
+pcc,Gwent Police,Con,Hannah Jarvis,52313,8223,1,1
+pcc,Gwent Police,PC,Donna Cushing,29392,,0,1
+pcc,Gwent Police,Oth,Paul Harley,13601,,0,1
+pcc,Gwent Police,LD,John Miller,7640,,0,1
+pcc,Gwent Police,Oth,Clayton Jones,2615,,0,1
+pcc,North Wales Police,Lab,Andy Dunbobbin,69459,28575,1,1
+pcc,North Wales Police,Con,Pat Astbury,75472,14677,1,1
+pcc,North Wales Police,PC,Ann Griffith,67672,,0,1
+pcc,North Wales Police,Oth,Mark Young,15907,,0,1
+pcc,North Wales Police,LD,Lisa Wilkins,10149,,0,1
+pcc,South Wales Police,Lab,Alun Michael,177110,48353,1,1
+pcc,South Wales Police,Con,Steve Gallagher,102465,25379,1,1
+pcc,South Wales Police,PC,Nadine Marshall,82246,,0,1
+pcc,South Wales Police,Oth,Michael Baker,37110,,0,1
+pcc,South Wales Police,LD,Callum Littlemore,19907,,0,1
+pcc,South Wales Police,Oth,Gail John,13263,,0,1
+mayor,2021 London mayoral election,Lab,Sadiq Khan,1013721,192313,1,1
+mayor,2021 London mayoral election,Con,Shaun Bailey,893051,84550,1,1
+mayor,2021 London mayoral election,Grn,Siân Berry,197976,,0,1
+mayor,2021 London mayoral election,LD,Luisa Porritt,111716,,0,1
+mayor,2021 London mayoral election,Oth,Niko Omilana,49628,,0,1
+mayor,2021 London mayoral election,Oth,Laurence Fox,47634,,0,1
+mayor,2021 London mayoral election,Oth,Brian Rose,31111,,0,1
+mayor,2021 London mayoral election,Oth,Richard Hewison,28012,,0,1
+mayor,2021 London mayoral election,Oth,Count Binface,24775,,0,1
+mayor,2021 London mayoral election,Oth,Mandu Reid,21182,,0,1
+mayor,2021 London mayoral election,Oth,Piers Corbyn,20604,,0,1
+mayor,2021 London mayoral election,Oth,Vanessa Hudson,16826,,0,1
+mayor,2021 London mayoral election,Oth,Peter Gammons,14393,,0,1
+mayor,2021 London mayoral election,Oth,Farah London,11869,,0,1
+mayor,2021 London mayoral election,Oth,David Kurten,11025,,0,1
+mayor,2021 London mayoral election,Oth,Nims Obunge,9682,,0,1
+mayor,2021 London mayoral election,Oth,Steve Kelleher,8764,,0,1
+mayor,2021 London mayoral election,Oth,Kam Balayev,7774,,0,1
+mayor,2021 London mayoral election,Oth,Max Fosh,6309,,0,1
+mayor,2021 London mayoral election,Oth,Valerie Brown,5305,,0,1
+mayor,2021 West Midlands mayoral election,Con,Andy Street,299318,15351,1,1
+mayor,2021 West Midlands mayoral election,Lab,Liam Byrne,244009,23617,1,1
+mayor,2021 West Midlands mayoral election,Grn,Steve Caudwell,35559,,0,1
+mayor,2021 West Midlands mayoral election,LD,Jenny Wilkinson,21836,,0,1
+mayor,2021 West Midlands mayoral election,Ref,Pete Durnell,13568,,0,1
+mayor,2021 Greater Manchester mayoral election,Lab,Andy Burnham,473024,,0,0
+mayor,2021 Greater Manchester mayoral election,Con,Laura Evans,137753,,0,0
+mayor,2021 Greater Manchester mayoral election,Grn,Melanie Horrocks,30699,,0,0
+mayor,2021 Greater Manchester mayoral election,LD,Simon Lepori,22373,,0,0
+mayor,2021 Greater Manchester mayoral election,Ref,Nick Buckley,18910,,0,0
+mayor,2021 Greater Manchester mayoral election,Oth,Stephen Morris,9488,,0,0
+mayor,2021 Greater Manchester mayoral election,Oth,Marcus Farmer,6448,,0,0
+mayor,2021 Greater Manchester mayoral election,Oth,David Sutcliffe,2182,,0,0
+mayor,2021 Greater Manchester mayoral election,Oth,Alec Marvel,1907,,0,0
+mayor,2021 West Yorkshire mayoral election,Lab,Tracy Brabin,261170,49753,1,1
+mayor,2021 West Yorkshire mayoral election,Con,Matt Robinson,176167,32970,1,1
+mayor,2021 West Yorkshire mayoral election,Oth,Bob Buxton,58851,,0,1
+mayor,2021 West Yorkshire mayoral election,Grn,Andrew Cooper,55833,,0,1
+mayor,2021 West Yorkshire mayoral election,LD,Stewart Golton,30162,,0,1
+mayor,2021 West Yorkshire mayoral election,Ref,Waj Ali,14943,,0,1
+mayor,2021 West Yorkshire mayoral election,Oth,Thérèse Hirst,8969,,0,1
+mayor,2021 Liverpool City Region mayoral election,Lab,Steven Rotheram,198736,,0,0
+mayor,2021 Liverpool City Region mayoral election,Con,Jade Marsden,66702,,0,0
+mayor,2021 Liverpool City Region mayoral election,Grn,Gary Cargill,40211,,0,0
+mayor,2021 Liverpool City Region mayoral election,LD,David Newman,35049,,0,0
+mayor,2021 Cambridgeshire and Peterborough mayoral election,Lab,Nik Johnson,76106,37888,1,1
+mayor,2021 Cambridgeshire and Peterborough mayoral election,Con,James Palmer,93942,14253,1,1
+mayor,2021 Cambridgeshire and Peterborough mayoral election,LD,Aidan Van der Weyer,61885,,0,1
+mayor,2021 West of England mayoral election,Lab,Dan Norris,84434,41048,1,1
+mayor,2021 West of England mayoral election,Con,Samuel Williams,72415,12974,1,1
+mayor,2021 West of England mayoral election,Grn,Jerome Thomas,54919,,0,1
+mayor,2021 West of England mayoral election,LD,Stephen Williams,41193,,0,1
+mayor,2022 South Yorkshire mayoral election,Lab,Oliver Coppard,112517,30959,1,1
+mayor,2022 South Yorkshire mayoral election,Con,Clive Watkinson,43129,14218,1,1
+mayor,2022 South Yorkshire mayoral election,Oth,Simon Biltcliffe,34857,,0,1
+mayor,2022 South Yorkshire mayoral election,Grn,Bex Whyman,32322,,0,1
+mayor,2022 South Yorkshire mayoral election,LD,Joe Otten,28093,,0,1
+mayor,2022 South Yorkshire mayoral election,Oth,David Bettney,10177,,0,1
+mayor,2021 Bristol mayoral election,Lab,Marvin Rees,56729,12021,1,1
+mayor,2021 Bristol mayoral election,Oth,George Ferguson,32375,7202,1,1
+mayor,2021 Bristol mayoral election,Con,Charles Lucas,19617,,0,1
+mayor,2021 Bristol mayoral election,Grn,Tony Dyer,10000,,0,1
+mayor,2021 Bristol mayoral election,LD,Kay Barnard,8078,,0,1
+mayor,2021 Bristol mayoral election,Oth,Paul Anthony Turner,7115,,0,1
+mayor,2021 Bristol mayoral election,Oth,Tom Baldwin,1876,,0,1
+mayor,2021 Bristol mayoral election,Oth,Stoney Garnett,1384,,0,1
+mayor,2021 Bristol mayoral election,Oth,Christine Charlotte Townsend,1010,,0,1
+mayor,2021 Bristol mayoral election,Oth,Tony Britt,877,,0,1
+mayor,2021 Bristol mayoral election,Oth,Paul Anthony Saville,545,,0,1
+mayor,2021 Bristol mayoral election,Oth,John Langley,367,,0,1
+mayor,2021 Bristol mayoral election,Oth,Mayor Festus Kudehinbu,341,,0,1
+mayor,2021 Salford mayoral election,Lab,Paul Dennett,24209,4123,1,1
+mayor,2021 Salford mayoral election,Con,Robin Garrido,11810,2674,1,1
+mayor,2021 Salford mayoral election,Oth,Owen Hammond,8668,,0,1
+mayor,2021 Salford mayoral election,Grn,Wendy Olsen,4158,,0,1
+mayor,2021 Doncaster mayoral election,Lab,Ros Jones,27669,3563,1,1
+mayor,2021 Doncaster mayoral election,Con,James Hart,17980,3039,1,1
+mayor,2021 Doncaster mayoral election,Oth,Frank Calladine,5166,,0,1
+mayor,2021 Doncaster mayoral election,Oth,Andy Budden,4073,,0,1
+mayor,2021 Doncaster mayoral election,Oth,Joan Briggs,3904,,0,1
+mayor,2021 Doncaster mayoral election,Grn,Warren Draper,3370,,0,1
+mayor,2021 Doncaster mayoral election,Ref,Surjit Duhre,1012,,0,1
+mayor,2021 North Tyneside mayoral election,Lab,Norma Redfearn,33119,,0,0
+mayor,2021 North Tyneside mayoral election,Con,Steven Paul Robinson,19366,,0,0
+mayor,2021 North Tyneside mayoral election,Grn,Penny Remfry,4278,,0,0
+mayor,2021 North Tyneside mayoral election,LD,John Christopher Appleby,3549,,0,0
+mayor,2021 North Tyneside mayoral election,Oth,Jack James Thomson,1753,,0,0
+mayor,2022 Croydon mayoral election,Con,Jason Perry,33413,5199,1,1
+mayor,2022 Croydon mayoral election,Lab,Val Shawcross,31352,6671,1,1
+mayor,2022 Croydon mayoral election,LD,Richard Howard,9967,,0,1
+mayor,2022 Croydon mayoral election,Oth,Andrew Pelling,6807,,0,1
+mayor,2022 Croydon mayoral election,Grn,Peter Underwood,6193,,0,1
+mayor,2022 Croydon mayoral election,Oth,Farah London,5768,,0,1
+mayor,2022 Croydon mayoral election,Oth,Winston McKenzie,1324,,0,1
+mayor,2022 Croydon mayoral election,Oth,Gavin Palmer,1114,,0,1
+mayor,2022 Newham mayoral election,Lab,Robin Wales,22155,5406,1,1
+mayor,2022 Newham mayoral election,Oth,Akhtar Jafar,12898,2983,1,1
+mayor,2022 Newham mayoral election,Con,Shafi Choudhury,8822,,0,1
+mayor,2022 Newham mayoral election,Oth,Alan Craig,6559,,0,1
+mayor,2022 Newham mayoral election,LD,Anwar Hussain,2886,,0,1
+mayor,2022 Tower Hamlets mayoral election,Oth,Lutfur Rahman,36539,856,1,1
+mayor,2022 Tower Hamlets mayoral election,Lab,John Biggs,27643,6500,1,1
+mayor,2022 Tower Hamlets mayoral election,Con,Christopher Wilford,7173,,0,1
+mayor,2022 Tower Hamlets mayoral election,Oth,Nicholas M c Queen,4819,,0,1
+mayor,2022 Tower Hamlets mayoral election,Grn,Chris Smith,4699,,0,1
+mayor,2022 Tower Hamlets mayoral election,LD,Reetendra Banerji,1959,,0,1
+mayor,2022 Tower Hamlets mayoral election,Oth,Hugo Pierre,871,,0,1
+mayor,2022 Tower Hamlets mayoral election,Oth,Reza Choudhury,205,,0,1
+mayor,2022 Tower Hamlets mayoral election,Oth,Mohammed Khan,164,,0,1
+mayor,2022 Tower Hamlets mayoral election,Oth,Hafiz Kadir,162,,0,1
