@@ -271,7 +271,9 @@ the top two go through and the others' second choices are added). `sussex_mayor.
    and 1. Police and crime commissioner counts were scraped too but not used: lower-profile
    races, more independents, and they behaved differently (0.85x).
 
-**From polls on 25 Oct 2026** (10,000 runs):
+**Katy Bourne's personal vote** (`bourne_effect.py`): in all four Sussex PCC elections she ran ahead of the typical Conservative PCC candidate (against each area's general-election Conservative share) by +2.6 (2012), +11.5 (2016), +2.8 (2021) and +4.7 (2024). The model adds +3.8 (the like-for-like 2021/2024 years), with the spread of all four as uncertainty.
+
+**From polls on 25 Oct 2026, including Bourne's personal vote** (10,000 runs; table below predates it - now Con 48%, Lab 25%, Ref 14%, LD 11%, Ind 2%, Grn 1% for May 2028):
 
 | | Candidate | First choice, May 2028 | 90% range | Win, May 2028 | Win if held today |
 |---|---|---|---|---|---|

@@ -25,10 +25,12 @@ Sussex & Brighton mayoral election (May 2028), under the supplementary vote.
        2021 era, partly second preferences being less tactical). Each run
        draws a value between 0.43 and 1.
 
-Candidates' personal votes are only in the spread (the mayoral adjustment's
-uncertainty comes mostly from candidates like Burnham and Houchen), not as a
-shift for anyone - notably Katy Bourne, who has won Sussex-wide under this
-system three times as Police and Crime Commissioner.
+5. Katy Bourne's personal vote (bourne_effect.py): in all four Sussex PCC
+   elections she ran ahead of the typical Conservative PCC candidate, measured
+   against each area's general-election Conservative share. Centred on the two
+   like-for-like comparisons (2021, 2024: +2.8, +4.7), with the spread of all
+   four years (+2.6 to +11.5) as uncertainty. Other candidates' personal votes
+   are only in the spread of the mayoral adjustment.
 
 Run it with:  python uk/sussex_mayor.py            (May 2028)
               python uk/sussex_mayor.py --today    (if held today)
@@ -109,6 +111,18 @@ def mayoral_shift(rng, n):
     return out
 
 
+def bourne_draws(rng, n):
+    """n draws (points) of Katy Bourne's personal vote: mean of the 2021 and 2024 comparisons, SD of all four."""
+    path = os.path.join(HERE, "data", "bourne_effect.csv")
+    if not os.path.exists(path):
+        return np.zeros(n)
+    with open(path, newline="", encoding="utf-8") as f:
+        rows = list(csv.DictReader(f))
+    clean = [float(r["edge"]) for r in rows if int(r["year"]) >= 2021]
+    every = [float(r["edge"]) for r in rows]
+    return np.mean(clean) + np.std(every) * rng.standard_normal(n)
+
+
 def other_shift_draws(rng, n, exclude=()):
     """n draws (points) of the independents / others shift, each one real 2024/25 mayoral area's."""
     with open(os.path.join(HERE, "data", "other_shifts.csv"), newline="", encoding="utf-8") as f:
@@ -176,6 +190,7 @@ def first_choices(rng, to_election=True):
     model = np.median(first, axis=0)
 
     first += mayoral_shift(rng, SIMULATIONS) / 100
+    first[:, PARTIES.index("Con")] += bourne_draws(rng, SIMULATIONS) / 100
     first = np.clip(first, 0.002, None)
     first[:, [PARTIES.index("SNP"), PARTIES.index("PC")]] = 0
     return first / first.sum(axis=1, keepdims=True), model
