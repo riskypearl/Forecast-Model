@@ -44,13 +44,7 @@ METHODS = ["none", "affinity", "ratings", "changed", "changed+ratings", "anti-go
 NEEDS_RATINGS = {"ratings", "changed+ratings"}
 
 
-def anti_government(government):
-    """Everyone outside the governing party minds it, and nobody else."""
-    d = np.zeros((len(sm.PARTIES), len(sm.PARTIES)))
-    g = sm.PARTIES.index(government)
-    d[:, g] = 1.0
-    d[g, g] = 0.0
-    return d
+anti_government = t.anti_government
 
 
 def method_inputs(method, base, election, as_of):

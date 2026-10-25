@@ -1,9 +1,21 @@
 # UK general election nowcast (in progress)
 
 A seat-by-seat nowcast for the next Westminster election, built with the same approach as the
-US Senate model: a de-biased polling average, then (to come) a swing model and correlated
-simulations. Methods are adapted from Hanretty, Lauderdale & Vivyan's electionforecast.co.uk
-model (papers in `papers/`), re-implemented rather than copied.
+US Senate model: a de-biased polling average, a swing model, tactical voting and simulations.
+Methods are adapted from Hanretty, Lauderdale & Vivyan's electionforecast.co.uk model (papers in
+`papers/`), re-implemented rather than copied.
+
+Full run, in order:
+
+```
+python uk/fetch_results.py        # election results
+python uk/fetch_census.py         # census
+python uk/fetch_polls.py          # voting-intention polls
+python uk/fetch_favourability.py  # leader ratings (tactical voting)
+python uk/fetch_projections.py    # published seat projections (benchmark)
+python uk/swing_regression.py     # fit the demographic swing
+python uk/seat_model.py           # the nowcast
+```
 
 ## Stage 1: data and polling average
 
@@ -106,13 +118,71 @@ learned, roughly:
 
 The SNP and Plaid get almost no adjustment: too few seats to learn from.
 
-**Known gaps.** Labour is still undercounted in the 2024 test (362 vs 409). Anti-Conservative
-tactical voting doesn't scale with Labour's national shift, which barely moved in 2024, so
-elasticities can't capture it. A tactical-voting term (who the local challenger is) is the
-obvious next addition. Scottish seats have no census data, only the Scotland flag. Seat errors
-are independent, so seats can't miss together by region or seat type yet (stage 4). That makes
-the seat ranges too narrow, the main lesson from the 2015 model. The model also assumes 2024's
-independents stand again, which is why "Other" wins around 15 seats.
+Labour is still undercounted in the 2024 test (362 vs 409): anti-Conservative tactical voting
+doesn't scale with Labour's national shift, which barely moved in 2024. That's stage 3b.
+
+## Stage 3b: tactical voting
+
+```
+python uk/fetch_favourability.py   # leader / party ratings -> data/favourability.csv
+python uk/fetch_projections.py     # published MRPs -> data/seat_projections.csv
+python uk/tactical.py              # calibrate the squeeze on 2024
+python uk/tactical_test.py         # compare tactical methods on past elections
+python uk/tactical_test.py --nowcast
+```
+
+**The squeeze** (`tactical.py`). In each seat, voters of the parties outside the top two can
+switch to whichever of the two they mind less. "Mind" = an affinity matrix
+(`data/tactical_affinity.csv`, a judgement you can edit: 1 = opposite camps, 0.25 = near
+neighbours) x the share with a negative view of each party's leader (`data/favourability.csv`,
+3,000+ ratings since December 2019, from Wikipedia). It is full strength when the top two are
+level, fades to nothing at a 25-point lead, and runs inside the swing solve, so national totals
+still match the polls. One strength parameter is calibrated on 2024:
+
+| 2019 notional -> 2024 | Seats right | Lab | Con | Ref | LD |
+|---|---|---|---|---|---|
+| Actual | | 409 | 121 | 5 | 72 |
+| Demographic swing, no tactical | 509 / 631 | 362 | 193 | 8 | 38 |
+| + squeeze, strength 1.5 | **543 / 631** | 402 | 121 | 4 | 67 |
+
+**But it doesn't hold up on other elections.** `tactical_test.py` scores six methods with each
+method's strength picked on the other election pairs and tested on the held-out one:
+
+| Method | 2010->15 | 2015->17 | 2017->19 | 2019->24 | Total |
+|---|---|---|---|---|---|
+| None | 586 | 556 | 580 | 509 | **2231** |
+| Affinity only (everyone equally disliked) | 577 | 558 | 573 | 517 | 2225 |
+| Affinity x leader ratings | - | - | 574 | 524 | - |
+| Only in seats whose top two changed | 586 | 555 | 579 | 510 | 2230 |
+| Changed seats x leader ratings | - | - | 580 | 510 | - |
+| Anti-government | 562 | 556 | 572 | 526 | 2216 |
+
+(Ratings start in December 2019, so those methods only run on the last two pairs; there,
+ratings 1,098 seats right vs none 1,089 and affinity-only 1,090 - a small edge.) 2024 needed a
+strong squeeze; earlier elections almost none, and each baseline already contains its own
+election's tactical voting. No method's strength can be learned from the others.
+
+**So the nowcast draws a scenario per simulation** (`SCENARIOS` in `tactical.py`), a third each:
+
+| Scenario | Strength | What it means now | Lab | Con | Ref | LD |
+|---|---|---|---|---|---|---|
+| none | 0 | no extra tactical voting beyond the 2024 baseline | 273 | 99 | 140 | 64 |
+| ratings | ~1.5 | against the most disliked leaders - currently Farage, so mostly anti-Reform | 293 | 107 | 87 | 74 |
+| anti-government | ~0.5 | outside voters back whoever can beat Labour | 181 | 123 | 176 | 68 |
+
+(median seats in each scenario, 25 Oct 2026.) Strength also varies by run (log-normal, SD 0.75).
+That makes the overall seat ranges much wider - Labour's 90% range is roughly 80-350 - which is
+the honest position: the direction and size of the next tactical wave are the biggest unknown in
+the model. For comparison, the published MRPs in `data/seat_projections.csv` (September-October
+2026) have Labour at 241-353 and Reform at 84-153; Electoral Calculus's own tactical adjustment
+takes 5-43 seats off Reform.
+
+## Known gaps
+
+Scottish seats have no census data, only the Scotland flag, and the SNP comes out too high in
+the 2024 test (23 vs 9). Seat errors are independent apart from the tactical scenario, so seats
+can't miss together by region or seat type yet (stage 4). The model also assumes 2024's
+independents stand again, which is why "Other" wins around 15-20 seats.
 
 ## Not covered yet
 

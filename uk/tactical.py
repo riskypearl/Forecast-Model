@@ -26,6 +26,17 @@ Votes are moved between parties within each seat; seat_model.py then
 re-solves the national swing, so the national totals still match the polls.
 Tactical voting changes where votes are, not how many each party gets.
 
+Scenarios. Tested on four past elections (tactical_test.py), no single
+method beat "no tactical voting" out of sample: 2024 needed a strong
+squeeze, earlier elections almost none, and the direction can flip. So the
+nowcast doesn't pick one. Each simulation draws a scenario (SCENARIOS):
+  none             no extra tactical voting beyond what's in the 2024 baseline
+  ratings          the squeeze above - against whichever leaders are most
+                   disliked now (currently Farage, so mostly anti-Reform)
+  anti-government  voters outside the top two back whoever can beat the
+                   governing party (Labour)
+each with its own strength, varied widely from run to run.
+
 Run it with:  python uk/tactical.py   (calibrates STRENGTH on 2019 notional -> 2024)
 """
 
@@ -44,10 +55,21 @@ PARTIES = ["Lab", "Con", "Ref", "LD", "Grn", "SNP", "PC", "Oth"]
 # Overall strength (the share of a fully motivated voter's party that
 # switches when the race is level). Calibrated on 2024 - see main().
 STRENGTH = 1.5
+
+# The nowcast's scenarios: name -> (chance, typical strength). Strengths are
+# the best fits on 2024 (tactical_test.py --nowcast); chances are a
+# judgement - equal, because past elections can't tell them apart.
+SCENARIOS = {
+    "none": (1 / 3, 0.0),
+    "ratings": (1 / 3, STRENGTH),
+    "anti-government": (1 / 3, 0.5),
+}
+GOVERNMENT = "Lab"
+
 # Simulation-to-simulation uncertainty: strength is multiplied by a
-# log-normal factor with this SD (0.5 = a typical run is between 0.6x and
-# 1.65x the calibrated strength).
-STRENGTH_SD = 0.5
+# log-normal factor with this SD (0.75 = a typical run is between about
+# 0.5x and 2x the scenario's strength).
+STRENGTH_SD = 0.75
 
 # Margin (points) at which the squeeze fades to nothing.
 CLOSENESS = 25
@@ -106,6 +128,36 @@ def strength_draws(rng, n, strength=None):
     return strength * np.exp(rng.normal(-STRENGTH_SD ** 2 / 2, STRENGTH_SD, size=n))
 
 
+def anti_government(government=GOVERNMENT):
+    """Everyone outside the governing party minds it, and nobody else."""
+    d = np.zeros((len(PARTIES), len(PARTIES)))
+    g = PARTIES.index(government)
+    d[:, g] = 1.0
+    d[g, g] = 0.0
+    return d
+
+
+def scenario_matrices(as_of):
+    """{scenario: dislike matrix} for the nowcast."""
+    return {"none": np.zeros((len(PARTIES), len(PARTIES))),
+            "ratings": dislike_matrix(negatives(as_of)),
+            "anti-government": anti_government()}
+
+
+def scenario_draws(rng, n, matrices):
+    """
+    For n simulations: (scenario index per sim, dislike matrix per sim
+    (n x parties x parties), strength per sim).
+    """
+    names = list(SCENARIOS)
+    chances = np.array([SCENARIOS[s][0] for s in names])
+    which = rng.choice(len(names), size=n, p=chances / chances.sum())
+    stack = np.stack([matrices[s] for s in names])
+    typical = np.array([SCENARIOS[s][1] for s in names])
+    strength = strength_draws(rng, n, 1.0) * typical[which]
+    return which, stack[which], strength
+
+
 # ---------------------------------------------------------------------------
 # The squeeze
 # ---------------------------------------------------------------------------
@@ -119,7 +171,7 @@ def top_two(shares):
 def squeeze(shares, dislike, strength, base_top_two=None):
     """
     shares:       sims x seats x parties (rows add to 1)
-    dislike:      parties x parties
+    dislike:      parties x parties, or sims x parties x parties (one per sim)
     strength:     sims
     base_top_two: optional seats x 2 from top_two(base). If given, only
                   seats whose top two have changed since the base election
@@ -137,7 +189,12 @@ def squeeze(shares, dislike, strength, base_top_two=None):
         close = close * (now != base_top_two[None, :, :]).any(axis=-1)
 
     # gap[k] = how much more party k's voters mind the leader than the runner-up
-    gap = dislike.T[a] - dislike.T[b]                             # sims x seats x parties
+    if dislike.ndim == 2:
+        gap = dislike.T[a] - dislike.T[b]                         # sims x seats x parties
+    else:
+        targets = dislike.transpose(0, 2, 1)                      # sims x target x voter
+        sims = np.arange(len(dislike))[:, None]
+        gap = targets[sims, a] - targets[sims, b]
     k = np.arange(shares.shape[2])
     outside = (k[None, None, :] != a[..., None]) & (k[None, None, :] != b[..., None])
     rate = np.clip(strength[:, None, None] * close[..., None] * np.abs(gap), 0, MAX_SWITCH) * outside

@@ -1,632 +1,632 @@
 ons_code,name,region,winner_2024,Lab_share,Con_share,Ref_share,LD_share,Grn_share,SNP_share,PC_share,Oth_share,Lab_win,Con_win,Ref_win,LD_win,Grn_win,SNP_win,PC_win,Oth_win,favourite,rating
-E14001063,Aldershot,South East,Lab,38.8,21.5,29.5,3.3,4.2,0.0,0.0,2.6,0.817,0.038,0.145,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001064,Aldridge-Brownhills,West Midlands,Con,15.2,37.1,35.9,2.7,6.0,0.0,0.0,3.0,0.002,0.54,0.458,0.0,0.0,0.0,0.0,0.0,Con,Toss-up
-E14001065,Altrincham and Sale West,North West,Lab,38.4,30.3,14.4,5.2,8.1,0.0,0.0,3.7,0.82,0.178,0.002,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001066,Amber Valley,East Midlands,Lab,29.3,17.4,41.2,2.2,6.9,0.0,0.0,3.1,0.111,0.006,0.883,0.0,0.0,0.0,0.0,0.0,Ref,Likely Ref
-E14001067,Arundel and South Downs,South East,Con,9.9,40.2,21.8,13.7,11.9,0.0,0.0,2.6,0.001,0.948,0.023,0.026,0.002,0.0,0.0,0.0,Con,Likely Con
-E14001068,Ashfield,East Midlands,RUK,18.7,5.3,51.9,1.3,5.8,0.0,0.0,17.0,0.002,0.0,0.997,0.0,0.0,0.0,0.0,0.001,Ref,Safe Ref
-E14001069,Ashford,South East,Lab,24.9,24.2,32.9,2.9,10.7,0.0,0.0,4.5,0.237,0.185,0.567,0.0,0.01,0.0,0.0,0.0,Ref,Tilt Ref
-E14001070,Ashton-under-Lyne,North West,Lab,40.4,8.1,35.3,1.6,6.1,0.0,0.0,8.5,0.694,0.0,0.306,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
-E14001071,Aylesbury,South East,Lab,20.4,31.3,22.5,15.8,6.6,0.0,0.0,3.3,0.266,0.533,0.065,0.135,0.001,0.0,0.0,0.0,Con,Toss-up
-E14001072,Banbury,South East,Lab,35.0,27.7,21.0,4.8,6.6,0.0,0.0,4.8,0.753,0.216,0.03,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
-E14001073,Barking,London,Lab,36.1,8.1,16.8,2.0,24.0,0.0,0.0,13.0,0.873,0.0,0.01,0.0,0.114,0.0,0.0,0.003,Lab,Likely Lab
-E14001074,Barnsley North,Yorkshire and The Humber,Lab,43.6,5.2,40.6,1.5,4.5,0.0,0.0,4.7,0.624,0.0,0.376,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
-E14001075,Barnsley South,Yorkshire and The Humber,Lab,37.6,5.9,44.5,1.8,5.6,0.0,0.0,4.7,0.243,0.0,0.757,0.0,0.0,0.0,0.0,0.0,Ref,Lean Ref
-E14001076,Barrow and Furness,North West,Lab,39.2,23.0,29.7,1.8,3.6,0.0,0.0,2.8,0.817,0.044,0.139,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001077,Basildon and Billericay,East of England,Con,19.2,26.1,39.0,3.8,8.6,0.0,0.0,3.4,0.02,0.101,0.879,0.0,0.0,0.0,0.0,0.0,Ref,Likely Ref
-E14001078,Basingstoke,South East,Lab,39.1,23.3,22.7,3.3,8.2,0.0,0.0,3.3,0.905,0.058,0.036,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001079,Bassetlaw,East Midlands,Lab,36.4,19.5,35.2,1.9,4.1,0.0,0.0,3.0,0.554,0.016,0.43,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
-E14001080,Bath,South West,LD,10.3,11.1,10.9,38.7,22.9,0.0,0.0,6.1,0.001,0.001,0.001,0.944,0.054,0.0,0.0,0.0,LD,Likely LD
-E14001081,Battersea,London,Lab,40.3,20.4,7.9,7.4,19.2,0.0,0.0,4.8,0.96,0.014,0.0,0.001,0.024,0.0,0.0,0.0,Lab,Safe Lab
-E14001082,Beaconsfield,South East,Con,7.6,35.2,19.3,27.8,5.8,0.0,0.0,4.3,0.0,0.702,0.014,0.283,0.0,0.0,0.0,0.0,Con,Lean Con
-E14001083,Beckenham and Penge,London,Lab,41.4,21.9,15.6,6.1,11.6,0.0,0.0,3.5,0.98,0.018,0.002,0.0,0.0,0.0,0.0,0.0,Lab,Safe Lab
-E14001084,Bedford,East of England,Lab,40.6,17.2,19.8,5.9,8.7,0.0,0.0,7.9,0.977,0.008,0.013,0.001,0.0,0.0,0.0,0.0,Lab,Safe Lab
-E14001085,Bermondsey and Old Southwark,London,Lab,33.2,6.1,10.5,19.0,26.9,0.0,0.0,4.3,0.676,0.0,0.002,0.069,0.254,0.0,0.0,0.0,Lab,Lean Lab
-E14001086,Bethnal Green and Stepney,London,Lab,20.5,2.5,4.4,6.9,30.5,0.0,0.0,35.3,0.038,0.0,0.0,0.0,0.322,0.0,0.0,0.64,Oth,Tilt Oth
-E14001087,Beverley and Holderness,Yorkshire and The Humber,Con,22.4,35.5,29.3,4.4,4.7,0.0,0.0,3.7,0.173,0.637,0.19,0.0,0.0,0.0,0.0,0.0,Con,Tilt Con
-E14001088,Bexhill and Battle,South East,Con,15.7,37.0,26.9,4.5,7.1,0.0,0.0,8.8,0.034,0.818,0.147,0.0,0.0,0.0,0.0,0.001,Con,Likely Con
-E14001089,Bexleyheath and Crayford,London,Lab,28.3,26.0,34.4,2.7,5.6,0.0,0.0,3.0,0.272,0.179,0.549,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
-E14001090,Bicester and Woodstock,South East,LD,8.4,23.9,18.3,39.3,7.2,0.0,0.0,2.9,0.0,0.056,0.01,0.934,0.0,0.0,0.0,0.0,LD,Likely LD
-E14001091,Birkenhead,North West,Lab,42.1,4.6,20.3,3.8,26.5,0.0,0.0,2.7,0.932,0.0,0.009,0.0,0.059,0.0,0.0,0.0,Lab,Likely Lab
-E14001092,Birmingham Edgbaston,West Midlands,Lab,37.1,18.1,16.2,3.8,14.3,0.0,0.0,10.5,0.963,0.017,0.009,0.0,0.01,0.0,0.0,0.001,Lab,Safe Lab
-E14001093,Birmingham Erdington,West Midlands,Lab,40.8,10.8,32.7,1.3,6.3,0.0,0.0,8.1,0.793,0.0,0.205,0.0,0.001,0.0,0.0,0.0,Lab,Lean Lab
-E14001094,Birmingham Hall Green and Moseley,West Midlands,Lab,23.0,6.9,8.0,8.4,16.8,0.0,0.0,36.9,0.059,0.0,0.0,0.001,0.013,0.0,0.0,0.927,Oth,Likely Oth
-E14001095,Birmingham Hodge Hill and Solihull North,West Midlands,Lab,11.7,8.6,26.6,1.2,7.0,0.0,0.0,44.8,0.015,0.0,0.058,0.0,0.0,0.0,0.0,0.927,Oth,Likely Oth
-E14001096,Birmingham Ladywood,West Midlands,Lab,29.9,4.0,5.3,3.1,22.5,0.0,0.0,35.2,0.293,0.0,0.0,0.0,0.108,0.0,0.0,0.599,Oth,Tilt Oth
-E14001097,Birmingham Northfield,West Midlands,Lab,37.4,18.0,32.3,1.9,6.8,0.0,0.0,3.6,0.697,0.01,0.29,0.0,0.003,0.0,0.0,0.0,Lab,Lean Lab
-E14001098,Birmingham Perry Barr,West Midlands,Ind,24.8,8.4,10.6,2.6,13.1,0.0,0.0,40.5,0.04,0.0,0.0,0.0,0.002,0.0,0.0,0.958,Oth,Safe Oth
-E14001099,Birmingham Selly Oak,West Midlands,Lab,39.2,10.4,19.8,3.7,18.6,0.0,0.0,8.2,0.943,0.0,0.016,0.0,0.04,0.0,0.0,0.0,Lab,Likely Lab
-E14001100,Birmingham Yardley,West Midlands,Lab,18.9,6.9,19.6,5.9,8.5,0.0,0.0,40.3,0.067,0.0,0.014,0.0,0.001,0.0,0.0,0.918,Oth,Likely Oth
-E14001101,Bishop Auckland,North East,Lab,37.4,17.8,36.2,1.5,4.3,0.0,0.0,2.8,0.548,0.006,0.446,0.0,0.0,0.0,0.0,0.0,Lab,Toss-up
-E14001102,Blackburn,North West,Ind,17.9,7.0,18.8,1.5,8.5,0.0,0.0,46.2,0.003,0.0,0.003,0.0,0.0,0.0,0.0,0.994,Oth,Safe Oth
-E14001103,Blackley and Middleton South,North West,Lab,48.3,6.8,29.0,2.3,10.8,0.0,0.0,2.8,0.97,0.0,0.029,0.0,0.001,0.0,0.0,0.0,Lab,Safe Lab
-E14001104,Blackpool North and Fleetwood,North West,Lab,34.5,20.6,37.2,1.5,3.2,0.0,0.0,3.1,0.379,0.018,0.603,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
-E14001105,Blackpool South,North West,Lab,41.1,10.3,40.5,1.3,3.7,0.0,0.0,3.1,0.525,0.0,0.475,0.0,0.0,0.0,0.0,0.0,Lab,Toss-up
-E14001106,Blaydon and Consett,North East,Lab,46.2,9.5,34.9,2.2,5.1,0.0,0.0,2.3,0.884,0.0,0.116,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001107,Blyth and Ashington,North East,Lab,43.0,9.6,38.9,1.4,4.3,0.0,0.0,2.9,0.663,0.0,0.337,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
-E14001108,Bognor Regis and Littlehampton,South East,Con,17.4,31.9,33.6,7.0,6.6,0.0,0.0,3.5,0.029,0.431,0.54,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
-E14001109,Bolsover,East Midlands,Lab,36.9,16.9,34.6,1.5,7.2,0.0,0.0,2.9,0.59,0.008,0.402,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
-E14001110,Bolton North East,North West,Lab,36.2,15.3,31.7,1.4,9.5,0.0,0.0,5.9,0.692,0.004,0.282,0.0,0.022,0.0,0.0,0.0,Lab,Lean Lab
-E14001111,Bolton South and Walkden,North West,Lab,39.8,7.7,31.3,1.4,6.9,0.0,0.0,13.0,0.8,0.0,0.193,0.0,0.006,0.0,0.0,0.001,Lab,Lean Lab
-E14001112,Bolton West,North West,Lab,38.7,20.7,29.8,1.7,6.6,0.0,0.0,2.4,0.813,0.03,0.157,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001113,Bootle,North West,Lab,53.3,2.9,21.3,2.5,16.6,0.0,0.0,3.4,0.997,0.0,0.002,0.0,0.0,0.0,0.0,0.0,Lab,Safe Lab
-E14001114,Boston and Skegness,East Midlands,RUK,11.7,24.3,49.6,2.7,7.3,0.0,0.0,4.4,0.0,0.011,0.988,0.0,0.0,0.0,0.0,0.0,Ref,Safe Ref
-E14001115,Bournemouth East,South West,Lab,37.7,23.3,22.4,3.5,7.4,0.0,0.0,5.6,0.884,0.078,0.038,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001116,Bournemouth West,South West,Lab,35.2,22.6,27.1,4.6,7.7,0.0,0.0,2.8,0.735,0.131,0.116,0.002,0.017,0.0,0.0,0.0,Lab,Lean Lab
-E14001117,Bracknell,South East,Lab,21.9,34.1,27.7,6.2,6.6,0.0,0.0,3.5,0.211,0.628,0.16,0.001,0.0,0.0,0.0,0.0,Con,Tilt Con
-E14001118,Bradford East,Yorkshire and The Humber,Lab,28.6,5.7,16.5,3.4,11.6,0.0,0.0,34.2,0.287,0.0,0.009,0.0,0.002,0.0,0.0,0.702,Oth,Lean Oth
-E14001119,Bradford South,Yorkshire and The Humber,Lab,33.0,9.8,32.1,1.3,10.3,0.0,0.0,13.5,0.555,0.0,0.41,0.0,0.031,0.0,0.0,0.004,Lab,Tilt Lab
-E14001120,Bradford West,Yorkshire and The Humber,Lab,21.9,6.0,11.1,1.6,18.2,0.0,0.0,41.3,0.018,0.0,0.0,0.0,0.007,0.0,0.0,0.975,Oth,Safe Oth
-E14001121,Braintree,East of England,Con,15.5,33.7,35.3,3.8,8.1,0.0,0.0,3.5,0.005,0.433,0.561,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
-E14001122,Brent East,London,Lab,40.8,13.4,8.4,5.4,20.6,0.0,0.0,11.4,0.977,0.001,0.0,0.0,0.021,0.0,0.0,0.001,Lab,Safe Lab
-E14001123,Brent West,London,Lab,38.8,30.3,8.3,4.0,9.7,0.0,0.0,9.0,0.823,0.172,0.0,0.0,0.004,0.0,0.0,0.001,Lab,Likely Lab
-E14001124,Brentford and Isleworth,London,Lab,37.5,19.2,12.2,6.0,15.9,0.0,0.0,9.1,0.964,0.02,0.002,0.0,0.014,0.0,0.0,0.001,Lab,Safe Lab
-E14001125,Brentwood and Ongar,East of England,Con,12.0,37.0,35.3,7.8,5.4,0.0,0.0,2.5,0.0,0.567,0.432,0.0,0.0,0.0,0.0,0.0,Con,Tilt Con
-E14001126,Bridgwater,South West,Con,16.3,28.2,35.0,10.3,6.9,0.0,0.0,3.3,0.018,0.255,0.72,0.007,0.0,0.0,0.0,0.0,Ref,Lean Ref
-E14001127,Bridlington and The Wolds,Yorkshire and The Humber,Con,15.8,32.9,35.7,4.9,5.6,0.0,0.0,5.0,0.005,0.388,0.606,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
-E14001128,Brigg and Immingham,Yorkshire and The Humber,Con,16.9,34.4,37.0,2.3,6.4,0.0,0.0,3.1,0.007,0.395,0.598,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
-E14001129,Brighton Kemptown and Peacehaven,South East,Lab,36.3,13.9,2.7,7.6,31.2,0.0,0.0,8.2,0.701,0.002,0.0,0.0,0.296,0.0,0.0,0.0,Lab,Lean Lab
-E14001130,Brighton Pavilion,South East,Green,17.1,6.0,9.0,2.4,62.0,0.0,0.0,3.4,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,Grn,Safe Grn
-E14001131,Bristol Central,South West,Green,19.7,4.0,5.0,2.1,66.6,0.0,0.0,2.6,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,Grn,Safe Grn
-E14001132,Bristol East,South West,Lab,35.2,9.8,2.8,4.6,41.2,0.0,0.0,6.4,0.283,0.0,0.0,0.0,0.717,0.0,0.0,0.0,Grn,Lean Grn
-E14001133,Bristol North East,South West,Lab,37.8,9.3,17.8,3.4,26.4,0.0,0.0,5.3,0.88,0.0,0.01,0.0,0.109,0.0,0.0,0.0,Lab,Likely Lab
-E14001134,Bristol North West,South West,Lab,40.5,9.7,14.0,6.6,26.7,0.0,0.0,2.6,0.929,0.0,0.002,0.0,0.069,0.0,0.0,0.0,Lab,Likely Lab
-E14001135,Bristol South,South West,Lab,32.6,7.0,19.4,4.5,34.1,0.0,0.0,2.4,0.483,0.0,0.011,0.0,0.505,0.0,0.0,0.0,Grn,Toss-up
-E14001136,Broadland and Fakenham,East of England,Con,19.9,33.5,29.6,6.7,7.3,0.0,0.0,3.1,0.125,0.6,0.274,0.001,0.0,0.0,0.0,0.0,Con,Tilt Con
-E14001137,Bromley and Biggin Hill,London,Con,21.0,38.3,25.6,5.6,7.0,0.0,0.0,2.4,0.149,0.783,0.067,0.0,0.0,0.0,0.0,0.0,Con,Lean Con
-E14001138,Bromsgrove,West Midlands,Con,14.4,37.0,29.3,9.5,4.7,0.0,0.0,5.1,0.009,0.767,0.219,0.004,0.0,0.0,0.0,0.0,Con,Lean Con
-E14001139,Broxbourne,East of England,Con,16.0,37.8,32.0,3.9,7.7,0.0,0.0,2.6,0.011,0.708,0.281,0.0,0.0,0.0,0.0,0.0,Con,Lean Con
-E14001140,Broxtowe,East Midlands,Lab,41.2,17.0,28.1,3.1,5.9,0.0,0.0,4.6,0.91,0.006,0.083,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001141,Buckingham and Bletchley,South East,Lab,31.4,29.7,24.8,4.6,6.3,0.0,0.0,3.2,0.582,0.337,0.08,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
-E14001142,Burnley,North West,Lab,27.6,14.9,30.6,19.1,4.4,0.0,0.0,3.4,0.46,0.007,0.297,0.236,0.0,0.0,0.0,0.0,Lab,Toss-up
-E14001143,Burton and Uttoxeter,West Midlands,Lab,29.0,24.9,32.8,1.8,5.4,0.0,0.0,6.0,0.347,0.18,0.473,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
-E14001144,Bury North,North West,Lab,38.7,21.3,26.9,1.4,4.2,0.0,0.0,7.5,0.884,0.032,0.084,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001145,Bury South,North West,Lab,41.9,17.4,26.4,2.0,6.6,0.0,0.0,5.6,0.948,0.005,0.047,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001146,Bury St Edmunds and Stowmarket,East of England,Lab,25.4,28.1,27.6,3.2,11.4,0.0,0.0,4.4,0.375,0.403,0.194,0.0,0.027,0.0,0.0,0.0,Con,Toss-up
-E14001147,Calder Valley,Yorkshire and The Humber,Lab,41.5,19.9,25.6,2.6,7.2,0.0,0.0,3.2,0.946,0.014,0.04,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001148,Camborne and Redruth,South West,Lab,40.4,17.0,30.7,3.3,4.9,0.0,0.0,3.7,0.839,0.006,0.155,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001149,Cambridge,East of England,Lab,34.2,9.1,2.0,15.6,32.7,0.0,0.0,6.3,0.551,0.0,0.0,0.013,0.436,0.0,0.0,0.0,Lab,Tilt Lab
-E14001150,Cannock Chase,West Midlands,Lab,28.0,20.7,40.0,1.5,6.7,0.0,0.0,3.1,0.108,0.025,0.866,0.0,0.0,0.0,0.0,0.0,Ref,Likely Ref
-E14001151,Canterbury,South East,Lab,37.4,15.9,19.4,5.2,19.4,0.0,0.0,2.6,0.912,0.008,0.019,0.0,0.061,0.0,0.0,0.0,Lab,Likely Lab
-E14001152,Carlisle,North West,Lab,36.6,20.1,33.2,2.7,4.1,0.0,0.0,3.4,0.635,0.024,0.341,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
-E14001153,Carshalton and Wallington,London,LD,6.7,21.5,20.6,41.4,5.9,0.0,0.0,3.9,0.0,0.024,0.012,0.964,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001154,Castle Point,East of England,Con,13.8,30.0,43.4,2.4,7.2,0.0,0.0,3.1,0.0,0.108,0.891,0.0,0.0,0.0,0.0,0.0,Ref,Likely Ref
-E14001155,Central Devon,South West,Con,22.5,34.3,23.6,9.4,7.2,0.0,0.0,3.0,0.284,0.638,0.067,0.012,0.0,0.0,0.0,0.0,Con,Tilt Con
-E14001156,Central Suffolk and North Ipswich,East of England,Con,12.0,34.7,29.6,7.2,13.3,0.0,0.0,3.1,0.004,0.683,0.301,0.001,0.011,0.0,0.0,0.0,Con,Lean Con
-E14001157,Chatham and Aylesford,South East,Lab,26.1,21.6,37.2,3.2,8.0,0.0,0.0,3.9,0.13,0.058,0.812,0.0,0.001,0.0,0.0,0.0,Ref,Likely Ref
-E14001158,Cheadle,North West,LD,10.1,18.7,16.6,44.4,5.9,0.0,0.0,4.2,0.0,0.006,0.003,0.991,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001159,Chelmsford,East of England,LD,5.6,24.9,21.7,39.3,5.1,0.0,0.0,3.4,0.0,0.077,0.023,0.899,0.0,0.0,0.0,0.0,LD,Likely LD
-E14001160,Chelsea and Fulham,London,Lab,32.2,38.0,9.0,4.8,12.4,0.0,0.0,3.6,0.269,0.713,0.0,0.0,0.018,0.0,0.0,0.0,Con,Lean Con
-E14001161,Cheltenham,South West,LD,2.8,30.5,2.9,49.0,10.9,0.0,0.0,3.9,0.0,0.036,0.0,0.964,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001162,Chesham and Amersham,South East,LD,3.2,30.5,14.9,43.2,4.8,0.0,0.0,3.4,0.0,0.099,0.001,0.9,0.0,0.0,0.0,0.0,LD,Likely LD
-E14001163,Chester North and Neston,North West,Lab,42.3,17.9,20.4,3.1,13.1,0.0,0.0,3.2,0.98,0.006,0.011,0.0,0.003,0.0,0.0,0.0,Lab,Safe Lab
-E14001164,Chester South and Eddisbury,North West,Con,26.7,35.5,19.2,6.9,6.2,0.0,0.0,5.5,0.212,0.774,0.013,0.001,0.0,0.0,0.0,0.0,Con,Lean Con
-E14001165,Chesterfield,East Midlands,Lab,43.6,14.0,30.9,2.5,5.7,0.0,0.0,3.3,0.91,0.001,0.089,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001166,Chichester,South East,LD,3.2,19.2,23.5,45.5,6.0,0.0,0.0,2.6,0.0,0.006,0.013,0.981,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001167,Chingford and Woodford Green,London,Con,14.0,31.1,12.2,1.8,5.0,0.0,0.0,35.9,0.004,0.316,0.001,0.0,0.0,0.0,0.0,0.679,Oth,Lean Oth
-E14001168,Chippenham,South West,LD,4.0,22.2,21.3,42.7,6.5,0.0,0.0,3.3,0.0,0.022,0.013,0.965,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001169,Chipping Barnet,London,Lab,38.9,34.7,11.7,2.9,8.3,0.0,0.0,3.6,0.68,0.319,0.0,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
-E14001171,Christchurch,South West,Con,8.3,37.6,29.5,13.4,5.0,0.0,0.0,6.2,0.0,0.774,0.203,0.022,0.0,0.0,0.0,0.0,Con,Lean Con
-E14001172,Cities of London and Westminster,London,Lab,32.8,31.6,8.0,6.1,15.8,0.0,0.0,5.7,0.601,0.292,0.0,0.001,0.105,0.0,0.0,0.0,Lab,Tilt Lab
-E14001173,City of Durham,North East,Lab,46.9,9.1,27.1,6.5,8.0,0.0,0.0,2.5,0.972,0.0,0.026,0.001,0.001,0.0,0.0,0.0,Lab,Safe Lab
-E14001174,Clacton,East of England,RUK,10.4,19.6,55.9,3.6,7.1,0.0,0.0,3.4,0.0,0.002,0.998,0.0,0.0,0.0,0.0,0.0,Ref,Safe Ref
-E14001175,Clapham and Brixton Hill,London,Lab,43.9,8.2,6.0,11.1,27.5,0.0,0.0,3.3,0.928,0.0,0.0,0.001,0.07,0.0,0.0,0.0,Lab,Likely Lab
-E14001176,Colchester,East of England,Lab,42.4,17.7,25.2,6.3,6.1,0.0,0.0,2.3,0.949,0.008,0.039,0.003,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001177,Colne Valley,Yorkshire and The Humber,Lab,38.1,24.4,25.1,2.1,7.2,0.0,0.0,3.1,0.858,0.085,0.057,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001178,Congleton,North West,Lab,34.0,25.6,26.8,2.6,3.9,0.0,0.0,7.1,0.69,0.177,0.132,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
-E14001179,Corby and East Northamptonshire,East Midlands,Lab,38.8,21.1,30.9,1.8,4.6,0.0,0.0,2.8,0.786,0.03,0.185,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
-E14001180,Coventry East,West Midlands,Lab,44.5,12.0,27.7,1.6,8.1,0.0,0.0,6.2,0.961,0.0,0.038,0.0,0.0,0.0,0.0,0.0,Lab,Safe Lab
-E14001181,Coventry North West,West Midlands,Lab,44.0,14.4,29.2,2.0,7.3,0.0,0.0,3.1,0.939,0.001,0.06,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001182,Coventry South,West Midlands,Lab,40.5,19.4,19.7,3.7,11.2,0.0,0.0,5.7,0.972,0.014,0.011,0.0,0.003,0.0,0.0,0.0,Lab,Safe Lab
-E14001183,Cramlington and Killingworth,North East,Lab,44.0,13.0,32.8,1.8,4.4,0.0,0.0,4.0,0.886,0.001,0.114,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001184,Crawley,South East,Lab,36.1,19.5,30.1,1.9,5.4,0.0,0.0,7.0,0.724,0.029,0.246,0.0,0.001,0.0,0.0,0.0,Lab,Lean Lab
-E14001185,Crewe and Nantwich,North West,Lab,40.7,16.4,32.7,1.9,4.1,0.0,0.0,4.2,0.799,0.004,0.197,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
-E14001186,Croydon East,London,Lab,38.6,22.0,20.3,4.5,11.4,0.0,0.0,3.2,0.934,0.043,0.019,0.0,0.004,0.0,0.0,0.0,Lab,Likely Lab
-E14001187,Croydon South,London,Con,30.9,37.3,13.6,5.9,8.2,0.0,0.0,4.1,0.23,0.768,0.001,0.0,0.0,0.0,0.0,0.0,Con,Lean Con
-E14001188,Croydon West,London,Lab,43.1,13.6,9.6,7.7,20.2,0.0,0.0,5.9,0.987,0.001,0.0,0.0,0.012,0.0,0.0,0.0,Lab,Safe Lab
-E14001189,Dagenham and Rainham,London,Lab,41.1,12.5,32.9,1.1,8.9,0.0,0.0,3.5,0.797,0.0,0.188,0.0,0.014,0.0,0.0,0.0,Lab,Lean Lab
-E14001190,Darlington,North East,Lab,33.4,27.8,26.9,2.0,6.8,0.0,0.0,3.1,0.629,0.254,0.117,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
-E14001191,Dartford,South East,Lab,22.9,30.7,31.8,2.8,8.8,0.0,0.0,3.0,0.185,0.424,0.389,0.0,0.001,0.0,0.0,0.0,Con,Toss-up
-E14001192,Daventry,East Midlands,Con,14.9,36.1,30.6,8.1,7.3,0.0,0.0,3.0,0.012,0.695,0.291,0.002,0.0,0.0,0.0,0.0,Con,Lean Con
-E14001193,Derby North,East Midlands,Lab,42.5,17.1,27.9,1.9,7.7,0.0,0.0,2.9,0.934,0.004,0.062,0.0,0.001,0.0,0.0,0.0,Lab,Likely Lab
-E14001194,Derby South,East Midlands,Lab,36.7,9.7,32.1,1.9,5.4,0.0,0.0,14.2,0.675,0.0,0.321,0.0,0.001,0.0,0.0,0.003,Lab,Lean Lab
-E14001195,Derbyshire Dales,East Midlands,Lab,27.7,33.8,22.9,5.5,6.5,0.0,0.0,3.6,0.403,0.551,0.045,0.0,0.0,0.0,0.0,0.0,Con,Tilt Con
-E14001196,Dewsbury and Batley,Yorkshire and The Humber,Ind,12.2,7.8,23.5,2.3,8.5,0.0,0.0,45.7,0.0,0.0,0.013,0.0,0.0,0.0,0.0,0.987,Oth,Safe Oth
-E14001197,Didcot and Wantage,South East,LD,7.5,23.5,19.0,39.8,7.4,0.0,0.0,2.8,0.0,0.049,0.011,0.94,0.0,0.0,0.0,0.0,LD,Likely LD
-E14001198,Doncaster Central,Yorkshire and The Humber,Lab,41.7,14.2,33.0,1.3,4.5,0.0,0.0,5.3,0.826,0.001,0.173,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001199,Doncaster East and the Isle of Axholme,Yorkshire and The Humber,Lab,31.9,24.5,35.7,1.5,3.9,0.0,0.0,2.5,0.339,0.096,0.565,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
-E14001200,Doncaster North,Yorkshire and The Humber,Lab,44.2,17.5,4.1,2.9,11.6,0.0,0.0,19.6,0.99,0.004,0.0,0.0,0.001,0.0,0.0,0.006,Lab,Safe Lab
-E14001201,Dorking and Horley,South East,LD,3.9,25.1,21.1,40.0,6.8,0.0,0.0,3.2,0.0,0.064,0.015,0.921,0.0,0.0,0.0,0.0,LD,Likely LD
-E14001202,Dover and Deal,South East,Lab,36.4,14.9,35.9,2.4,5.8,0.0,0.0,4.6,0.524,0.003,0.473,0.0,0.0,0.0,0.0,0.0,Lab,Toss-up
-E14001203,Droitwich and Evesham,West Midlands,Con,11.0,41.5,29.4,6.3,9.3,0.0,0.0,2.5,0.001,0.884,0.115,0.0,0.0,0.0,0.0,0.0,Con,Likely Con
-E14001204,Dudley,West Midlands,Lab,25.5,22.2,38.6,1.9,5.5,0.0,0.0,6.2,0.087,0.048,0.864,0.0,0.0,0.0,0.0,0.0,Ref,Likely Ref
-E14001205,Dulwich and West Norwood,London,Lab,47.5,6.8,5.9,5.7,31.3,0.0,0.0,2.8,0.934,0.0,0.0,0.0,0.066,0.0,0.0,0.0,Lab,Likely Lab
-E14001206,Dunstable and Leighton Buzzard,East of England,Lab,22.3,31.8,29.2,8.4,6.1,0.0,0.0,2.3,0.213,0.536,0.244,0.006,0.0,0.0,0.0,0.0,Con,Toss-up
-E14001207,Ealing Central and Acton,London,Lab,37.9,14.0,8.4,9.9,22.8,0.0,0.0,7.0,0.94,0.004,0.0,0.002,0.054,0.0,0.0,0.0,Lab,Likely Lab
-E14001208,Ealing North,London,Lab,38.7,15.2,13.3,4.5,17.6,0.0,0.0,10.7,0.98,0.005,0.002,0.0,0.013,0.0,0.0,0.001,Lab,Safe Lab
-E14001209,Ealing Southall,London,Lab,39.3,12.5,9.3,4.8,17.5,0.0,0.0,16.5,0.981,0.001,0.0,0.0,0.01,0.0,0.0,0.008,Lab,Safe Lab
-E14001210,Earley and Woodley,South East,Lab,39.9,34.9,3.0,8.1,9.8,0.0,0.0,4.3,0.683,0.315,0.0,0.002,0.0,0.0,0.0,0.0,Lab,Lean Lab
-E14001211,Easington,North East,Lab,40.8,6.9,41.6,1.1,3.8,0.0,0.0,5.8,0.47,0.0,0.53,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
-E14001212,East Grinstead and Uckfield,South East,Con,12.4,33.7,3.4,24.5,14.2,0.0,0.0,11.9,0.007,0.732,0.0,0.235,0.023,0.0,0.0,0.003,Con,Lean Con
-E14001213,East Ham,London,Lab,41.1,8.0,5.8,2.4,21.9,0.0,0.0,20.8,0.962,0.0,0.0,0.0,0.026,0.0,0.0,0.012,Lab,Safe Lab
-E14001214,East Hampshire,South East,Con,4.2,31.8,19.6,35.2,5.7,0.0,0.0,3.3,0.0,0.348,0.016,0.636,0.0,0.0,0.0,0.0,LD,Tilt LD
-E14001215,East Surrey,South East,Con,10.2,39.8,26.3,11.5,7.5,0.0,0.0,4.7,0.001,0.905,0.082,0.013,0.0,0.0,0.0,0.0,Con,Likely Con
-E14001216,East Thanet,South East,Lab,39.4,16.1,31.4,1.3,7.8,0.0,0.0,4.0,0.791,0.005,0.201,0.0,0.003,0.0,0.0,0.0,Lab,Lean Lab
-E14001217,East Wiltshire,South West,Con,13.1,39.9,27.1,11.1,6.0,0.0,0.0,2.7,0.005,0.883,0.101,0.011,0.0,0.0,0.0,0.0,Con,Likely Con
-E14001218,East Worthing and Shoreham,South East,Lab,42.1,18.7,26.0,3.2,6.4,0.0,0.0,3.6,0.95,0.009,0.04,0.0,0.0,0.0,0.0,0.0,Lab,Safe Lab
-E14001219,Eastbourne,South East,LD,3.3,18.9,21.7,47.3,6.1,0.0,0.0,2.6,0.0,0.004,0.006,0.99,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001220,Eastleigh,South East,LD,6.5,25.5,22.3,36.6,6.0,0.0,0.0,3.2,0.0,0.149,0.036,0.815,0.0,0.0,0.0,0.0,LD,Likely LD
-E14001221,Edmonton and Winchmore Hill,London,Lab,40.4,15.4,13.6,5.2,16.9,0.0,0.0,8.6,0.986,0.004,0.002,0.0,0.008,0.0,0.0,0.0,Lab,Safe Lab
-E14001222,Ellesmere Port and Bromborough,North West,Lab,49.0,8.4,28.3,3.2,8.4,0.0,0.0,2.7,0.981,0.0,0.019,0.0,0.0,0.0,0.0,0.0,Lab,Safe Lab
-E14001223,Eltham and Chislehurst,London,Lab,40.9,20.3,25.0,2.5,7.3,0.0,0.0,3.9,0.944,0.017,0.039,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001224,Ely and East Cambridgeshire,East of England,LD,7.9,27.3,20.3,35.2,5.8,0.0,0.0,3.5,0.0,0.208,0.026,0.766,0.0,0.0,0.0,0.0,LD,Lean LD
-E14001225,Enfield North,London,Lab,41.1,15.5,18.2,4.0,14.4,0.0,0.0,6.7,0.985,0.004,0.007,0.0,0.004,0.0,0.0,0.0,Lab,Safe Lab
-E14001226,Epping Forest,East of England,Con,25.1,39.2,3.5,10.2,10.2,0.0,0.0,11.8,0.072,0.921,0.0,0.006,0.001,0.0,0.0,0.001,Con,Likely Con
-E14001227,Epsom and Ewell,South East,LD,7.6,27.4,16.8,39.0,5.0,0.0,0.0,4.2,0.0,0.113,0.005,0.882,0.0,0.0,0.0,0.0,LD,Likely LD
-E14001228,Erewash,East Midlands,Lab,36.7,18.2,34.8,2.4,5.1,0.0,0.0,2.8,0.573,0.012,0.415,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
-E14001229,Erith and Thamesmead,London,Lab,44.4,10.7,20.8,3.2,15.9,0.0,0.0,5.0,0.989,0.0,0.007,0.0,0.004,0.0,0.0,0.0,Lab,Safe Lab
-E14001230,Esher and Walton,South East,LD,3.0,26.0,13.8,49.0,5.3,0.0,0.0,2.8,0.0,0.015,0.0,0.985,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001231,Exeter,South West,Lab,36.3,10.1,16.2,7.6,26.4,0.0,0.0,3.5,0.829,0.0,0.007,0.0,0.163,0.0,0.0,0.0,Lab,Likely Lab
-E14001232,Exmouth and Exeter East,South West,Con,16.9,30.1,23.5,19.8,5.5,0.0,0.0,4.3,0.153,0.524,0.086,0.236,0.0,0.0,0.0,0.0,Con,Toss-up
-E14001233,Fareham and Waterlooville,South East,Con,11.8,37.3,29.7,12.8,5.5,0.0,0.0,2.9,0.003,0.752,0.224,0.021,0.0,0.0,0.0,0.0,Con,Lean Con
-E14001234,Farnham and Bordon,South East,Con,6.2,31.3,18.1,35.3,5.9,0.0,0.0,3.1,0.0,0.333,0.009,0.658,0.0,0.0,0.0,0.0,LD,Lean LD
-E14001235,Faversham and Mid Kent,South East,Con,16.4,31.8,32.5,5.8,11.1,0.0,0.0,2.5,0.027,0.469,0.501,0.0,0.002,0.0,0.0,0.0,Ref,Toss-up
-E14001236,Feltham and Heston,London,Lab,38.3,16.4,20.5,2.4,8.8,0.0,0.0,13.5,0.959,0.01,0.023,0.0,0.003,0.0,0.0,0.005,Lab,Safe Lab
-E14001237,Filton and Bradley Stoke,South West,Lab,41.3,19.6,22.4,3.8,9.8,0.0,0.0,3.1,0.964,0.015,0.02,0.0,0.002,0.0,0.0,0.0,Lab,Safe Lab
-E14001238,Finchley and Golders Green,London,Lab,41.2,33.9,7.9,3.8,8.7,0.0,0.0,4.6,0.794,0.206,0.0,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
-E14001239,Folkestone and Hythe,South East,Lab,30.7,18.9,36.0,2.1,9.0,0.0,0.0,3.3,0.294,0.021,0.684,0.0,0.001,0.0,0.0,0.0,Ref,Lean Ref
-E14001240,Forest of Dean,South West,Lab,23.8,33.2,28.1,2.9,9.7,0.0,0.0,2.3,0.262,0.57,0.167,0.0,0.001,0.0,0.0,0.0,Con,Tilt Con
-E14001241,Frome and East Somerset,South West,LD,5.0,17.2,23.1,41.5,9.2,0.0,0.0,4.0,0.0,0.014,0.034,0.948,0.004,0.0,0.0,0.0,LD,Likely LD
-E14001242,Fylde,North West,Con,19.3,35.6,27.0,2.7,4.4,0.0,0.0,11.0,0.111,0.738,0.15,0.0,0.0,0.0,0.0,0.0,Con,Lean Con
-E14001243,Gainsborough,East Midlands,Con,15.4,36.7,32.7,6.9,5.7,0.0,0.0,2.5,0.009,0.649,0.342,0.001,0.0,0.0,0.0,0.0,Con,Tilt Con
-E14001244,Gateshead Central and Whickham,North East,Lab,46.6,7.8,31.4,4.6,6.6,0.0,0.0,3.1,0.926,0.0,0.074,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001245,Gedling,East Midlands,Lab,43.6,16.9,28.1,2.5,6.3,0.0,0.0,2.5,0.948,0.004,0.048,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001246,Gillingham and Rainham,South East,Lab,34.2,20.2,34.3,2.4,5.4,0.0,0.0,3.4,0.489,0.03,0.481,0.0,0.0,0.0,0.0,0.0,Lab,Toss-up
-E14001247,Glastonbury and Somerton,South West,LD,2.7,21.1,25.1,41.8,6.3,0.0,0.0,3.0,0.0,0.022,0.035,0.943,0.0,0.0,0.0,0.0,LD,Likely LD
-E14001248,Gloucester,South West,Lab,35.2,21.8,28.2,4.3,5.0,0.0,0.0,5.4,0.723,0.103,0.172,0.001,0.0,0.0,0.0,0.0,Lab,Lean Lab
-E14001249,Godalming and Ash,South East,Con,2.2,37.3,14.4,40.0,3.4,0.0,0.0,2.7,0.0,0.392,0.001,0.607,0.0,0.0,0.0,0.0,LD,Tilt LD
-E14001250,Goole and Pocklington,Yorkshire and The Humber,Con,16.9,40.5,28.9,4.2,6.4,0.0,0.0,3.0,0.021,0.858,0.121,0.0,0.0,0.0,0.0,0.0,Con,Likely Con
-E14001251,Gorton and Denton,North West,Lab,41.3,5.5,19.2,2.7,20.3,0.0,0.0,11.0,0.969,0.0,0.009,0.0,0.021,0.0,0.0,0.001,Lab,Safe Lab
-E14001252,Gosport,South East,Con,13.7,40.9,30.1,5.6,6.2,0.0,0.0,3.5,0.002,0.86,0.137,0.0,0.0,0.0,0.0,0.0,Con,Likely Con
-E14001253,Grantham and Bourne,East Midlands,Con,13.8,36.8,31.4,2.7,7.3,0.0,0.0,7.9,0.003,0.699,0.297,0.0,0.0,0.0,0.0,0.001,Con,Lean Con
-E14001254,Gravesham,South East,Lab,31.8,25.3,32.9,1.6,5.4,0.0,0.0,3.0,0.455,0.155,0.39,0.0,0.0,0.0,0.0,0.0,Lab,Toss-up
-E14001255,Great Grimsby and Cleethorpes,Yorkshire and The Humber,Lab,33.7,15.2,42.1,1.6,4.5,0.0,0.0,2.9,0.196,0.001,0.803,0.0,0.0,0.0,0.0,0.0,Ref,Likely Ref
-E14001256,Great Yarmouth,East of England,RUK,21.9,17.2,47.3,2.2,7.9,0.0,0.0,3.5,0.007,0.002,0.991,0.0,0.0,0.0,0.0,0.0,Ref,Safe Ref
-E14001257,Greenwich and Woolwich,London,Lab,43.8,9.1,10.0,6.8,25.9,0.0,0.0,4.4,0.955,0.0,0.0,0.0,0.045,0.0,0.0,0.0,Lab,Safe Lab
-E14001258,Guildford,South East,LD,4.2,25.4,14.0,44.1,9.4,0.0,0.0,2.8,0.0,0.029,0.001,0.97,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001259,Hackney North and Stoke Newington,London,Lab,45.6,6.1,4.9,2.8,36.3,0.0,0.0,4.2,0.803,0.0,0.0,0.0,0.197,0.0,0.0,0.0,Lab,Likely Lab
-E14001260,Hackney South and Shoreditch,London,Lab,43.9,3.7,5.3,3.4,39.0,0.0,0.0,4.7,0.657,0.0,0.0,0.0,0.343,0.0,0.0,0.0,Lab,Lean Lab
-E14001261,Halesowen,West Midlands,Lab,35.5,19.5,34.4,2.5,5.2,0.0,0.0,2.9,0.541,0.017,0.442,0.0,0.0,0.0,0.0,0.0,Lab,Toss-up
-E14001262,Halifax,Yorkshire and The Humber,Lab,35.4,13.4,29.5,2.3,9.2,0.0,0.0,10.1,0.726,0.004,0.239,0.0,0.03,0.0,0.0,0.001,Lab,Lean Lab
-E14001263,Hamble Valley,South East,Con,7.5,35.4,24.7,24.3,5.5,0.0,0.0,2.5,0.0,0.658,0.06,0.281,0.0,0.0,0.0,0.0,Con,Lean Con
-E14001264,Hammersmith and Chiswick,London,Lab,41.6,16.4,8.6,7.3,20.9,0.0,0.0,5.3,0.977,0.003,0.0,0.0,0.02,0.0,0.0,0.0,Lab,Safe Lab
-E14001265,Hampstead and Highgate,London,Lab,39.1,14.2,7.2,10.0,25.6,0.0,0.0,3.9,0.913,0.002,0.0,0.001,0.083,0.0,0.0,0.0,Lab,Likely Lab
-E14001266,"Harborough, Oadby and Wigston",East Midlands,Con,26.4,35.0,20.1,5.9,9.9,0.0,0.0,2.7,0.283,0.697,0.018,0.0,0.001,0.0,0.0,0.0,Con,Lean Con
-E14001267,Harlow,East of England,Lab,29.8,25.4,34.5,1.6,6.3,0.0,0.0,2.4,0.322,0.152,0.526,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
-E14001268,Harpenden and Berkhamsted,East of England,LD,4.3,26.4,12.6,47.5,6.5,0.0,0.0,2.8,0.0,0.022,0.0,0.978,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001269,Harrogate and Knaresborough,Yorkshire and The Humber,LD,4.4,24.8,17.7,43.4,6.1,0.0,0.0,3.7,0.0,0.029,0.003,0.968,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001270,Harrow East,London,Con,20.7,50.0,8.8,2.7,9.4,0.0,0.0,8.4,0.004,0.996,0.0,0.0,0.0,0.0,0.0,0.0,Con,Safe Con
-E14001271,Harrow West,London,Lab,38.9,27.6,9.1,3.1,8.3,0.0,0.0,12.9,0.905,0.094,0.0,0.0,0.0,0.0,0.0,0.001,Lab,Likely Lab
-E14001272,Hartlepool,North East,Lab,39.0,15.0,37.6,0.7,2.8,0.0,0.0,4.9,0.562,0.002,0.437,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
-E14001273,Harwich and North Essex,East of England,Con,18.6,34.6,31.7,4.6,7.4,0.0,0.0,3.0,0.055,0.594,0.351,0.0,0.0,0.0,0.0,0.0,Con,Tilt Con
-E14001274,Hastings and Rye,South East,Lab,42.5,15.8,26.6,2.3,9.5,0.0,0.0,3.2,0.937,0.004,0.055,0.0,0.004,0.0,0.0,0.0,Lab,Likely Lab
-E14001275,Havant,South East,Con,19.6,28.0,35.4,5.1,9.3,0.0,0.0,2.6,0.053,0.238,0.708,0.0,0.0,0.0,0.0,0.0,Ref,Lean Ref
-E14001276,Hayes and Harlington,London,Lab,42.9,18.2,17.4,2.6,11.7,0.0,0.0,7.3,0.992,0.004,0.003,0.0,0.001,0.0,0.0,0.0,Lab,Safe Lab
-E14001277,Hazel Grove,North West,LD,9.6,14.5,25.4,43.8,4.2,0.0,0.0,2.4,0.002,0.002,0.039,0.957,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001278,Hemel Hempstead,East of England,Lab,38.2,20.4,28.8,4.5,5.2,0.0,0.0,2.9,0.81,0.041,0.146,0.001,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001279,Hendon,London,Lab,32.5,36.0,10.7,2.9,11.1,0.0,0.0,6.8,0.36,0.631,0.0,0.0,0.008,0.0,0.0,0.0,Con,Tilt Con
-E14001280,Henley and Thame,South East,LD,3.5,28.0,15.7,43.1,5.9,0.0,0.0,3.8,0.0,0.063,0.001,0.936,0.0,0.0,0.0,0.0,LD,Likely LD
-E14001281,Hereford and South Herefordshire,West Midlands,Con,16.7,35.7,28.8,7.2,9.0,0.0,0.0,2.5,0.048,0.722,0.227,0.002,0.001,0.0,0.0,0.0,Con,Lean Con
-E14001282,Herne Bay and Sandwich,South East,Con,17.0,34.9,32.9,3.6,8.6,0.0,0.0,3.0,0.02,0.569,0.411,0.0,0.0,0.0,0.0,0.0,Con,Tilt Con
-E14001283,Hertford and Stortford,East of England,Lab,36.9,24.8,24.3,3.7,7.6,0.0,0.0,2.7,0.816,0.128,0.056,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001284,Hertsmere,East of England,Con,18.2,42.5,21.9,5.7,8.4,0.0,0.0,3.4,0.009,0.977,0.014,0.0,0.0,0.0,0.0,0.0,Con,Safe Con
-E14001285,Hexham,North East,Lab,43.7,35.8,3.1,2.8,6.3,0.0,0.0,8.3,0.801,0.199,0.0,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001286,Heywood and Middleton North,North West,Lab,35.1,12.2,36.2,2.7,1.7,0.0,0.0,12.2,0.464,0.001,0.534,0.0,0.0,0.0,0.0,0.001,Ref,Toss-up
-E14001287,High Peak,East Midlands,Lab,40.2,23.3,23.6,2.0,7.7,0.0,0.0,3.2,0.925,0.045,0.029,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001288,Hinckley and Bosworth,East Midlands,Con,8.6,36.3,30.1,18.1,4.5,0.0,0.0,2.5,0.0,0.686,0.217,0.097,0.0,0.0,0.0,0.0,Con,Lean Con
-E14001289,Hitchin,East of England,Lab,39.3,24.5,21.1,5.6,6.7,0.0,0.0,2.8,0.925,0.058,0.017,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001290,Holborn and St Pancras,London,Lab,36.7,5.4,7.4,4.1,25.2,0.0,0.0,21.2,0.825,0.0,0.0,0.0,0.145,0.0,0.0,0.03,Lab,Likely Lab
-E14001291,Honiton and Sidmouth,South West,LD,3.1,25.3,20.6,42.8,4.5,0.0,0.0,3.7,0.0,0.039,0.009,0.952,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001292,Hornchurch and Upminster,London,Con,16.4,29.5,39.0,3.5,8.6,0.0,0.0,3.0,0.004,0.163,0.832,0.0,0.0,0.0,0.0,0.0,Ref,Likely Ref
-E14001293,Hornsey and Friern Barnet,London,Lab,47.5,7.1,6.4,10.2,24.8,0.0,0.0,4.1,0.981,0.0,0.0,0.0,0.019,0.0,0.0,0.0,Lab,Safe Lab
-E14001294,Horsham,South East,LD,5.0,28.7,18.6,38.9,5.4,0.0,0.0,3.3,0.0,0.15,0.007,0.843,0.0,0.0,0.0,0.0,LD,Likely LD
-E14001295,Houghton and Sunderland South,North East,Lab,40.1,8.9,40.9,2.4,4.7,0.0,0.0,2.9,0.469,0.0,0.531,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
-E14001296,Hove and Portslade,South East,Lab,42.2,9.6,13.0,4.7,22.8,0.0,0.0,7.7,0.978,0.0,0.001,0.0,0.021,0.0,0.0,0.0,Lab,Safe Lab
-E14001297,Huddersfield,Yorkshire and The Humber,Lab,27.6,10.7,20.0,3.0,35.6,0.0,0.0,3.0,0.289,0.0,0.015,0.0,0.695,0.0,0.0,0.0,Grn,Lean Grn
-E14001298,Huntingdon,East of England,Con,19.7,38.0,25.1,5.6,7.5,0.0,0.0,4.1,0.122,0.803,0.074,0.0,0.0,0.0,0.0,0.0,Con,Likely Con
-E14001299,Hyndburn,North West,Lab,24.1,21.2,31.9,1.6,18.1,0.0,0.0,3.0,0.322,0.14,0.397,0.0,0.14,0.0,0.0,0.0,Ref,Toss-up
-E14001300,Ilford North,London,Lab,25.1,15.9,10.6,1.8,8.2,0.0,0.0,38.3,0.065,0.004,0.0,0.0,0.0,0.0,0.0,0.93,Oth,Likely Oth
-E14001301,Ilford South,London,Lab,31.7,10.4,7.3,2.3,14.8,0.0,0.0,33.5,0.415,0.0,0.0,0.0,0.006,0.0,0.0,0.578,Oth,Tilt Oth
-E14001302,Ipswich,East of England,Lab,41.4,18.9,27.1,2.1,7.6,0.0,0.0,2.8,0.922,0.013,0.064,0.0,0.001,0.0,0.0,0.0,Lab,Likely Lab
-E14001303,Isle of Wight East,South East,Con,8.1,24.0,33.3,5.6,25.7,0.0,0.0,3.3,0.001,0.271,0.526,0.0,0.202,0.0,0.0,0.0,Ref,Toss-up
-E14001304,Isle of Wight West,South East,Lab,38.5,21.6,29.1,3.2,5.2,0.0,0.0,2.4,0.81,0.053,0.138,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001305,Islington North,London,Ind,22.4,3.7,5.8,2.7,15.0,0.0,0.0,50.3,0.003,0.0,0.0,0.0,0.001,0.0,0.0,0.996,Oth,Safe Oth
-E14001306,Islington South and Finsbury,London,Lab,40.2,6.3,9.2,6.8,32.8,0.0,0.0,4.6,0.745,0.0,0.0,0.001,0.255,0.0,0.0,0.0,Lab,Lean Lab
-E14001307,Jarrow and Gateshead East,North East,Lab,46.1,5.8,37.7,1.8,5.5,0.0,0.0,3.0,0.808,0.0,0.192,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001308,Keighley and Ilkley,Yorkshire and The Humber,Con,31.3,35.6,17.1,1.4,7.0,0.0,0.0,7.6,0.316,0.678,0.005,0.0,0.0,0.0,0.0,0.0,Con,Lean Con
-E14001309,Kenilworth and Southam,West Midlands,Con,13.9,37.7,20.4,16.4,8.3,0.0,0.0,3.3,0.015,0.878,0.022,0.084,0.0,0.0,0.0,0.0,Con,Likely Con
-E14001310,Kensington and Bayswater,London,Lab,34.8,32.9,7.6,3.9,12.6,0.0,0.0,8.3,0.598,0.36,0.0,0.0,0.041,0.0,0.0,0.0,Lab,Tilt Lab
-E14001311,Kettering,East Midlands,Lab,31.9,19.8,29.1,1.2,13.9,0.0,0.0,4.1,0.638,0.077,0.194,0.0,0.091,0.0,0.0,0.0,Lab,Tilt Lab
-E14001312,Kingston and Surbiton,London,LD,7.8,14.2,14.0,46.1,12.2,0.0,0.0,5.7,0.0,0.002,0.001,0.996,0.001,0.0,0.0,0.0,LD,Safe LD
-E14001313,Kingston upon Hull East,Yorkshire and The Humber,Lab,36.4,5.7,41.9,5.5,7.5,0.0,0.0,2.9,0.3,0.0,0.7,0.0,0.0,0.0,0.0,0.0,Ref,Lean Ref
-E14001314,Kingston upon Hull North and Cottingham,Yorkshire and The Humber,Lab,45.9,8.7,30.7,3.3,6.3,0.0,0.0,5.1,0.938,0.0,0.061,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001315,Kingston upon Hull West and Haltemprice,Yorkshire and The Humber,Lab,43.2,12.3,35.4,2.6,4.3,0.0,0.0,2.3,0.796,0.0,0.204,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
-E14001316,Kingswinford and South Staffordshire,West Midlands,Con,13.8,40.3,33.2,2.9,5.8,0.0,0.0,4.0,0.002,0.762,0.236,0.0,0.0,0.0,0.0,0.0,Con,Lean Con
-E14001317,Knowsley,North West,Lab,52.6,2.7,26.6,2.4,12.6,0.0,0.0,3.0,0.992,0.0,0.008,0.0,0.0,0.0,0.0,0.0,Lab,Safe Lab
-E14001318,Lancaster and Wyre,North West,Lab,41.2,16.3,23.1,2.0,14.4,0.0,0.0,2.9,0.954,0.005,0.028,0.0,0.013,0.0,0.0,0.0,Lab,Safe Lab
-E14001319,Leeds Central and Headingley,Yorkshire and The Humber,Lab,32.8,4.9,9.6,5.6,42.4,0.0,0.0,4.7,0.234,0.0,0.0,0.0,0.766,0.0,0.0,0.0,Grn,Lean Grn
-E14001320,Leeds East,Yorkshire and The Humber,Lab,44.3,12.2,28.8,1.6,8.0,0.0,0.0,5.2,0.942,0.001,0.057,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001321,Leeds North East,Yorkshire and The Humber,Lab,42.0,12.9,11.4,3.9,20.6,0.0,0.0,9.1,0.987,0.001,0.0,0.0,0.012,0.0,0.0,0.0,Lab,Safe Lab
-E14001322,Leeds North West,Yorkshire and The Humber,Lab,41.7,18.0,20.0,7.4,8.5,0.0,0.0,4.5,0.981,0.008,0.01,0.001,0.0,0.0,0.0,0.0,Lab,Safe Lab
-E14001323,Leeds South,Yorkshire and The Humber,Lab,42.6,8.8,2.8,3.2,31.4,0.0,0.0,11.2,0.855,0.0,0.0,0.0,0.145,0.0,0.0,0.0,Lab,Likely Lab
-E14001324,Leeds South West and Morley,Yorkshire and The Humber,Lab,40.9,15.8,33.0,1.7,5.1,0.0,0.0,3.6,0.795,0.003,0.202,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
-E14001325,Leeds West and Pudsey,Yorkshire and The Humber,Lab,44.9,12.0,26.0,2.2,10.3,0.0,0.0,4.5,0.972,0.0,0.027,0.0,0.001,0.0,0.0,0.0,Lab,Safe Lab
-E14001326,Leicester East,East Midlands,Con,11.5,26.2,10.5,8.6,7.6,0.0,0.0,35.6,0.002,0.176,0.001,0.002,0.0,0.0,0.0,0.819,Oth,Likely Oth
-E14001327,Leicester South,East Midlands,Ind,21.4,7.8,8.0,2.5,20.6,0.0,0.0,39.7,0.03,0.0,0.0,0.0,0.027,0.0,0.0,0.943,Oth,Likely Oth
-E14001328,Leicester West,East Midlands,Lab,40.2,13.2,23.3,3.2,16.5,0.0,0.0,3.6,0.916,0.001,0.033,0.0,0.05,0.0,0.0,0.0,Lab,Likely Lab
-E14001329,Leigh and Atherton,North West,Lab,42.3,10.4,39.1,1.5,3.8,0.0,0.0,2.8,0.629,0.0,0.371,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
-E14001330,Lewes,South East,LD,3.9,20.6,19.8,46.8,6.2,0.0,0.0,2.8,0.0,0.005,0.004,0.991,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001331,Lewisham East,London,Lab,45.7,8.5,12.9,4.7,23.5,0.0,0.0,4.7,0.984,0.0,0.0,0.0,0.016,0.0,0.0,0.0,Lab,Safe Lab
-E14001332,Lewisham North,London,Lab,44.0,4.6,6.2,5.3,35.8,0.0,0.0,4.1,0.767,0.0,0.0,0.0,0.233,0.0,0.0,0.0,Lab,Lean Lab
-E14001333,Lewisham West and East Dulwich,London,Lab,47.1,5.9,7.2,5.9,30.2,0.0,0.0,3.6,0.954,0.0,0.0,0.0,0.046,0.0,0.0,0.0,Lab,Safe Lab
-E14001334,Leyton and Wanstead,London,Lab,38.6,8.3,7.9,4.9,25.8,0.0,0.0,14.5,0.914,0.0,0.0,0.0,0.084,0.0,0.0,0.002,Lab,Likely Lab
-E14001335,Lichfield,West Midlands,Lab,24.2,33.2,31.1,4.1,4.5,0.0,0.0,2.9,0.208,0.513,0.279,0.0,0.0,0.0,0.0,0.0,Con,Toss-up
-E14001336,Lincoln,East Midlands,Lab,41.8,15.9,29.0,2.4,6.9,0.0,0.0,4.1,0.899,0.004,0.094,0.0,0.004,0.0,0.0,0.0,Lab,Likely Lab
-E14001337,Liverpool Garston,North West,Lab,46.7,5.2,18.4,6.0,12.1,0.0,0.0,11.6,0.996,0.0,0.003,0.0,0.0,0.0,0.0,0.0,Lab,Safe Lab
-E14001338,Liverpool Riverside,North West,Lab,44.5,2.4,12.9,3.3,32.2,0.0,0.0,4.8,0.845,0.0,0.0,0.0,0.155,0.0,0.0,0.0,Lab,Likely Lab
-E14001339,Liverpool Walton,North West,Lab,55.0,2.3,25.3,1.9,12.1,0.0,0.0,3.2,0.997,0.0,0.002,0.0,0.0,0.0,0.0,0.0,Lab,Safe Lab
-E14001340,Liverpool Wavertree,North West,Lab,44.5,3.3,12.2,5.1,28.8,0.0,0.0,6.1,0.934,0.0,0.0,0.0,0.066,0.0,0.0,0.0,Lab,Likely Lab
-E14001341,Liverpool West Derby,North West,Lab,52.3,2.9,21.7,2.6,12.6,0.0,0.0,7.9,0.997,0.0,0.003,0.0,0.0,0.0,0.0,0.0,Lab,Safe Lab
-E14001342,Loughborough,East Midlands,Lab,38.6,22.1,26.3,2.5,7.5,0.0,0.0,2.9,0.861,0.059,0.074,0.0,0.005,0.0,0.0,0.0,Lab,Likely Lab
-E14001343,Louth and Horncastle,East Midlands,Con,12.4,34.1,37.3,3.5,7.2,0.0,0.0,5.5,0.0,0.38,0.62,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
-E14001344,Lowestoft,East of England,Lab,27.7,21.5,37.3,2.1,8.3,0.0,0.0,3.1,0.162,0.054,0.784,0.0,0.0,0.0,0.0,0.0,Ref,Lean Ref
-E14001345,Luton North,East of England,Lab,30.0,12.4,15.7,3.5,8.9,0.0,0.0,29.6,0.505,0.002,0.013,0.0,0.001,0.0,0.0,0.478,Lab,Toss-up
-E14001346,Luton South and South Bedfordshire,East of England,Lab,26.7,11.3,15.2,4.2,11.8,0.0,0.0,30.8,0.352,0.002,0.015,0.0,0.004,0.0,0.0,0.626,Oth,Tilt Oth
-E14001347,Macclesfield,North West,Lab,40.3,25.4,20.0,3.1,6.8,0.0,0.0,4.4,0.938,0.051,0.011,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001348,Maidenhead,South East,LD,5.7,33.8,3.0,45.5,6.0,0.0,0.0,6.0,0.0,0.123,0.0,0.877,0.0,0.0,0.0,0.0,LD,Likely LD
-E14001349,Maidstone and Malling,South East,Con,14.5,32.2,30.7,8.9,10.8,0.0,0.0,2.8,0.018,0.544,0.425,0.007,0.006,0.0,0.0,0.0,Con,Toss-up
-E14001350,Makerfield,North West,Lab,38.6,7.0,43.2,3.4,4.9,0.0,0.0,2.9,0.316,0.0,0.684,0.0,0.0,0.0,0.0,0.0,Ref,Lean Ref
-E14001351,Maldon,East of England,Con,10.4,35.7,37.0,7.7,6.1,0.0,0.0,3.0,0.0,0.446,0.553,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
-E14001352,Manchester Central,North West,Lab,38.6,4.9,14.0,5.5,29.7,0.0,0.0,7.3,0.795,0.0,0.001,0.0,0.204,0.0,0.0,0.0,Lab,Lean Lab
-E14001353,Manchester Rusholme,North West,Lab,34.9,4.1,6.0,0.8,40.9,0.0,0.0,13.3,0.319,0.0,0.0,0.0,0.68,0.0,0.0,0.0,Grn,Lean Grn
-E14001354,Manchester Withington,North West,Lab,41.1,4.1,6.4,9.8,32.4,0.0,0.0,6.2,0.794,0.0,0.0,0.0,0.205,0.0,0.0,0.0,Lab,Lean Lab
-E14001355,Mansfield,East Midlands,Lab,31.9,21.9,37.1,1.0,3.9,0.0,0.0,4.2,0.289,0.039,0.672,0.0,0.0,0.0,0.0,0.0,Ref,Lean Ref
-E14001356,Melksham and Devizes,South West,LD,4.0,27.9,21.0,38.1,5.7,0.0,0.0,3.3,0.0,0.145,0.02,0.836,0.0,0.0,0.0,0.0,LD,Likely LD
-E14001357,Melton and Syston,East Midlands,Con,13.5,39.6,30.2,3.4,9.1,0.0,0.0,4.2,0.004,0.819,0.177,0.0,0.0,0.0,0.0,0.0,Con,Likely Con
-E14001358,Meriden and Solihull East,West Midlands,Con,14.0,40.8,29.3,4.6,8.3,0.0,0.0,3.0,0.005,0.872,0.123,0.0,0.0,0.0,0.0,0.0,Con,Likely Con
-E14001359,Mid Bedfordshire,East of England,Con,17.6,37.9,27.4,4.9,6.8,0.0,0.0,5.4,0.061,0.808,0.13,0.0,0.0,0.0,0.0,0.0,Con,Likely Con
-E14001360,Mid Buckinghamshire,South East,Con,8.4,34.4,20.0,27.1,6.9,0.0,0.0,3.2,0.0,0.658,0.022,0.32,0.0,0.0,0.0,0.0,Con,Lean Con
-E14001361,Mid Cheshire,North West,Lab,41.3,16.1,31.6,2.3,4.3,0.0,0.0,4.3,0.848,0.003,0.149,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001362,Mid Derbyshire,East Midlands,Lab,31.0,29.0,28.0,2.5,6.6,0.0,0.0,3.0,0.529,0.326,0.145,0.0,0.0,0.0,0.0,0.0,Lab,Toss-up
-E14001363,Mid Dorset and North Poole,South West,LD,4.7,34.5,3.5,46.1,6.4,0.0,0.0,4.8,0.0,0.138,0.0,0.862,0.0,0.0,0.0,0.0,LD,Likely LD
-E14001364,Mid Leicestershire,East Midlands,Con,17.8,39.1,29.0,3.1,8.1,0.0,0.0,3.0,0.043,0.812,0.144,0.0,0.0,0.0,0.0,0.0,Con,Likely Con
-E14001365,Mid Norfolk,East of England,Con,16.4,35.9,32.7,4.3,7.8,0.0,0.0,3.0,0.014,0.615,0.37,0.0,0.0,0.0,0.0,0.0,Con,Tilt Con
-E14001366,Mid Sussex,South East,LD,9.6,22.6,18.8,40.0,6.1,0.0,0.0,3.1,0.0,0.037,0.01,0.953,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001367,Middlesbrough and Thornaby East,North East,Lab,42.5,12.6,30.9,1.2,5.1,0.0,0.0,7.7,0.894,0.0,0.106,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001368,Middlesbrough South and East Cleveland,North East,Lab,40.9,38.3,3.7,3.3,5.8,0.0,0.0,8.0,0.605,0.395,0.0,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
-E14001369,Milton Keynes Central,South East,Lab,38.5,23.5,20.0,5.8,9.5,0.0,0.0,2.7,0.929,0.055,0.015,0.0,0.001,0.0,0.0,0.0,Lab,Likely Lab
-E14001370,Milton Keynes North,South East,Lab,38.0,25.2,21.5,4.0,8.0,0.0,0.0,3.3,0.883,0.091,0.026,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001371,Mitcham and Morden,London,Lab,44.2,11.2,14.4,6.3,18.6,0.0,0.0,5.4,0.992,0.0,0.001,0.0,0.007,0.0,0.0,0.0,Lab,Safe Lab
-E14001372,Morecambe and Lunesdale,North West,Lab,39.7,21.3,27.6,4.3,4.1,0.0,0.0,3.0,0.878,0.037,0.085,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001373,New Forest East,South East,Con,10.0,40.3,27.8,10.1,8.0,0.0,0.0,3.9,0.0,0.887,0.108,0.005,0.0,0.0,0.0,0.0,Con,Likely Con
-E14001374,New Forest West,South East,Con,12.3,39.7,26.1,11.7,6.9,0.0,0.0,3.2,0.004,0.897,0.086,0.013,0.0,0.0,0.0,0.0,Con,Likely Con
-E14001375,Newark,East Midlands,Con,20.1,39.8,25.6,3.6,6.2,0.0,0.0,4.7,0.072,0.873,0.055,0.0,0.0,0.0,0.0,0.0,Con,Likely Con
-E14001376,Newbury,South East,LD,3.4,28.9,18.1,39.3,7.4,0.0,0.0,2.9,0.0,0.147,0.008,0.845,0.0,0.0,0.0,0.0,LD,Likely LD
-E14001377,Newcastle upon Tyne Central and West,North East,Lab,42.9,7.1,26.1,1.9,9.9,0.0,0.0,12.1,0.94,0.0,0.044,0.0,0.015,0.0,0.0,0.001,Lab,Likely Lab
-E14001378,Newcastle upon Tyne East and Wallsend,North East,Lab,45.4,5.3,26.7,3.3,15.4,0.0,0.0,3.8,0.946,0.0,0.025,0.0,0.029,0.0,0.0,0.0,Lab,Likely Lab
-E14001379,Newcastle upon Tyne North,North East,Lab,40.9,10.4,17.0,9.3,19.2,0.0,0.0,3.3,0.979,0.0,0.004,0.0,0.016,0.0,0.0,0.0,Lab,Safe Lab
-E14001380,Newcastle-under-Lyme,West Midlands,Lab,36.3,19.9,34.2,2.1,4.7,0.0,0.0,2.9,0.581,0.018,0.401,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
-E14001381,Newton Abbot,South West,LD,4.9,20.2,28.4,37.0,3.8,0.0,0.0,5.7,0.0,0.058,0.167,0.775,0.0,0.0,0.0,0.0,LD,Lean LD
-E14001382,Newton Aycliffe and Spennymoor,North East,Lab,41.0,13.9,36.5,1.5,4.0,0.0,0.0,3.1,0.688,0.001,0.312,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
-E14001383,Normanton and Hemsworth,Yorkshire and The Humber,Lab,40.3,8.6,41.0,1.6,5.6,0.0,0.0,2.9,0.476,0.0,0.524,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
-E14001384,North Bedfordshire,East of England,Con,15.3,40.9,26.3,6.8,7.7,0.0,0.0,3.0,0.013,0.921,0.066,0.0,0.0,0.0,0.0,0.0,Con,Likely Con
-E14001385,North Cornwall,South West,LD,2.6,19.9,26.5,44.2,4.0,0.0,0.0,2.7,0.0,0.008,0.034,0.957,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001386,North Cotswolds,South West,Con,7.9,31.5,20.1,29.9,7.4,0.0,0.0,3.2,0.0,0.475,0.024,0.5,0.0,0.0,0.0,0.0,LD,Toss-up
-E14001387,North Devon,South West,LD,2.6,21.2,25.7,41.7,5.3,0.0,0.0,3.5,0.0,0.022,0.046,0.932,0.0,0.0,0.0,0.0,LD,Likely LD
-E14001388,North Dorset,South West,Con,3.7,31.1,24.8,32.6,4.8,0.0,0.0,3.1,0.0,0.365,0.066,0.57,0.0,0.0,0.0,0.0,LD,Tilt LD
-E14001389,North Durham,North East,Lab,36.8,10.4,37.4,4.7,6.0,0.0,0.0,4.7,0.465,0.0,0.534,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
-E14001390,North East Cambridgeshire,East of England,Con,10.4,37.4,36.3,4.4,7.0,0.0,0.0,4.5,0.001,0.543,0.456,0.0,0.0,0.0,0.0,0.0,Con,Toss-up
-E14001391,North East Derbyshire,East Midlands,Lab,31.6,29.1,29.6,2.3,5.0,0.0,0.0,2.3,0.502,0.299,0.199,0.0,0.0,0.0,0.0,0.0,Lab,Toss-up
-E14001392,North East Hampshire,South East,LD,4.1,32.1,18.7,37.8,3.7,0.0,0.0,3.5,0.0,0.281,0.006,0.712,0.0,0.0,0.0,0.0,LD,Lean LD
-E14001393,North East Hertfordshire,East of England,Lab,27.2,31.3,25.2,5.5,7.8,0.0,0.0,3.1,0.443,0.468,0.088,0.0,0.0,0.0,0.0,0.0,Con,Toss-up
-E14001394,North East Somerset and Hanham,South West,Lab,38.7,23.2,25.7,3.5,5.9,0.0,0.0,3.0,0.861,0.071,0.068,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001395,North Herefordshire,West Midlands,Green,3.4,23.4,23.4,2.1,45.3,0.0,0.0,2.4,0.0,0.014,0.01,0.0,0.976,0.0,0.0,0.0,Grn,Safe Grn
-E14001396,North Norfolk,East of England,LD,2.8,27.8,22.4,39.5,4.1,0.0,0.0,3.3,0.0,0.118,0.025,0.857,0.0,0.0,0.0,0.0,LD,Likely LD
-E14001397,North Northumberland,North East,Lab,37.1,19.8,26.8,4.3,3.4,0.0,0.0,8.6,0.834,0.043,0.122,0.0,0.0,0.0,0.0,0.001,Lab,Likely Lab
-E14001398,North Shropshire,West Midlands,LD,3.7,15.8,24.9,48.4,4.7,0.0,0.0,2.5,0.0,0.001,0.01,0.989,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001399,North Somerset,South West,Lab,34.7,31.0,17.1,7.8,6.7,0.0,0.0,2.7,0.658,0.333,0.006,0.003,0.0,0.0,0.0,0.0,Lab,Lean Lab
-E14001400,North Warwickshire and Bedworth,West Midlands,Lab,27.7,22.5,39.3,1.8,5.7,0.0,0.0,3.1,0.12,0.042,0.838,0.0,0.0,0.0,0.0,0.0,Ref,Likely Ref
-E14001401,North West Cambridgeshire,East of England,Lab,19.9,33.8,30.5,4.2,8.6,0.0,0.0,3.0,0.11,0.588,0.301,0.0,0.001,0.0,0.0,0.0,Con,Tilt Con
-E14001402,North West Essex,East of England,Con,19.5,37.9,23.5,7.0,7.0,0.0,0.0,5.1,0.112,0.834,0.052,0.001,0.0,0.0,0.0,0.0,Con,Likely Con
-E14001403,North West Hampshire,South East,Con,15.2,39.3,25.7,9.5,7.4,0.0,0.0,2.9,0.028,0.882,0.083,0.007,0.0,0.0,0.0,0.0,Con,Likely Con
-E14001404,North West Leicestershire,East Midlands,Lab,24.6,29.8,31.9,1.9,6.8,0.0,0.0,5.1,0.223,0.382,0.395,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
-E14001405,North West Norfolk,East of England,Con,13.0,36.6,31.4,9.4,6.6,0.0,0.0,3.0,0.003,0.684,0.31,0.003,0.0,0.0,0.0,0.0,Con,Lean Con
-E14001406,Northampton North,East Midlands,Lab,41.3,15.6,27.5,2.2,6.3,0.0,0.0,7.2,0.922,0.003,0.075,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001407,Northampton South,East Midlands,Lab,36.7,22.1,30.5,2.9,5.0,0.0,0.0,2.8,0.721,0.066,0.213,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
-E14001408,Norwich North,East of England,Lab,43.4,14.7,29.8,1.8,7.5,0.0,0.0,2.7,0.917,0.002,0.081,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001409,Norwich South,East of England,Lab,36.7,8.3,15.0,5.7,30.8,0.0,0.0,3.5,0.718,0.0,0.002,0.0,0.28,0.0,0.0,0.0,Lab,Lean Lab
-E14001410,Nottingham East,East Midlands,Lab,40.9,7.4,13.2,3.5,25.2,0.0,0.0,9.9,0.929,0.0,0.0,0.0,0.07,0.0,0.0,0.0,Lab,Likely Lab
-E14001411,Nottingham North and Kimberley,East Midlands,Lab,44.2,13.0,30.8,1.5,7.8,0.0,0.0,2.8,0.912,0.0,0.087,0.0,0.001,0.0,0.0,0.0,Lab,Likely Lab
-E14001412,Nottingham South,East Midlands,Lab,39.5,10.9,20.2,3.8,18.3,0.0,0.0,7.3,0.933,0.001,0.017,0.0,0.05,0.0,0.0,0.0,Lab,Likely Lab
-E14001413,Nuneaton,West Midlands,Lab,32.5,20.4,34.6,1.6,6.8,0.0,0.0,4.1,0.413,0.039,0.548,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
-E14001414,Old Bexley and Sidcup,London,Con,16.1,38.6,32.8,2.5,7.1,0.0,0.0,2.9,0.008,0.71,0.283,0.0,0.0,0.0,0.0,0.0,Con,Lean Con
-E14001415,Oldham East and Saddleworth,North West,Lab,35.1,12.2,29.5,3.3,3.8,0.0,0.0,16.0,0.716,0.001,0.266,0.0,0.0,0.0,0.0,0.016,Lab,Lean Lab
-E14001416,"Oldham West, Chadderton and Royton",North West,Lab,15.7,6.8,25.2,1.6,5.9,0.0,0.0,44.8,0.044,0.0,0.034,0.0,0.0,0.0,0.0,0.922,Oth,Likely Oth
-E14001417,Orpington,London,Con,14.0,41.6,28.9,6.3,6.6,0.0,0.0,2.6,0.004,0.896,0.1,0.0,0.0,0.0,0.0,0.0,Con,Likely Con
-E14001418,Ossett and Denby Dale,Yorkshire and The Humber,Lab,35.9,21.3,33.2,1.7,4.2,0.0,0.0,3.7,0.604,0.033,0.363,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
-E14001419,Oxford East,South East,Lab,38.9,8.9,2.3,6.6,26.0,0.0,0.0,17.3,0.892,0.0,0.0,0.0,0.1,0.0,0.0,0.008,Lab,Likely Lab
-E14001420,Oxford West and Abingdon,South East,LD,7.6,15.2,12.9,45.1,15.6,0.0,0.0,3.6,0.0,0.002,0.001,0.993,0.004,0.0,0.0,0.0,LD,Safe LD
-E14001421,Peckham,London,Lab,44.0,4.4,6.5,5.0,34.6,0.0,0.0,5.5,0.794,0.0,0.0,0.0,0.206,0.0,0.0,0.0,Lab,Lean Lab
-E14001422,Pendle and Clitheroe,North West,Lab,23.9,32.9,27.4,2.4,4.3,0.0,0.0,9.2,0.271,0.566,0.162,0.0,0.0,0.0,0.0,0.001,Con,Tilt Con
-E14001423,Penistone and Stocksbridge,Yorkshire and The Humber,Lab,40.6,16.5,33.8,2.5,3.7,0.0,0.0,2.9,0.77,0.003,0.227,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
-E14001424,Penrith and Solway,North West,Lab,38.8,23.0,27.0,4.4,3.7,0.0,0.0,3.1,0.852,0.06,0.088,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001425,Peterborough,East of England,Lab,21.7,32.2,21.6,2.3,8.4,0.0,0.0,13.8,0.284,0.637,0.068,0.0,0.004,0.0,0.0,0.008,Con,Tilt Con
-E14001426,Plymouth Moor View,South West,Lab,35.3,19.3,36.3,1.8,4.4,0.0,0.0,2.9,0.465,0.015,0.52,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
-E14001427,Plymouth Sutton and Devonport,South West,Lab,44.9,11.4,26.2,2.8,10.1,0.0,0.0,4.7,0.968,0.0,0.028,0.0,0.004,0.0,0.0,0.0,Lab,Safe Lab
-E14001428,"Pontefract, Castleford and Knottingley",Yorkshire and The Humber,Lab,39.8,9.6,41.8,1.5,4.9,0.0,0.0,2.3,0.423,0.0,0.577,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
-E14001429,Poole,South West,Lab,20.4,34.5,27.1,7.4,6.4,0.0,0.0,4.2,0.176,0.672,0.149,0.002,0.0,0.0,0.0,0.0,Con,Lean Con
-E14001430,Poplar and Limehouse,London,Lab,33.2,8.3,8.6,7.0,28.4,0.0,0.0,14.6,0.672,0.0,0.0,0.0,0.322,0.0,0.0,0.004,Lab,Lean Lab
-E14001431,Portsmouth North,South East,Lab,23.7,30.2,32.7,4.1,6.2,0.0,0.0,3.0,0.182,0.381,0.436,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
-E14001432,Portsmouth South,South East,Lab,42.2,10.4,20.8,7.7,15.2,0.0,0.0,3.7,0.972,0.0,0.01,0.001,0.017,0.0,0.0,0.0,Lab,Safe Lab
-E14001433,Preston,North West,Lab,21.6,8.3,19.7,4.7,7.9,0.0,0.0,37.9,0.177,0.0,0.022,0.0,0.001,0.0,0.0,0.8,Oth,Likely Oth
-E14001434,Putney,London,Lab,41.4,21.8,8.8,8.7,15.3,0.0,0.0,4.0,0.973,0.019,0.0,0.001,0.007,0.0,0.0,0.0,Lab,Safe Lab
-E14001435,Queen's Park and Maida Vale,London,Lab,41.2,10.4,7.4,6.6,26.8,0.0,0.0,7.6,0.917,0.0,0.0,0.0,0.082,0.0,0.0,0.0,Lab,Likely Lab
-E14001436,Rawmarsh and Conisbrough,Yorkshire and The Humber,Lab,42.0,8.4,40.9,1.4,4.6,0.0,0.0,2.6,0.543,0.0,0.457,0.0,0.0,0.0,0.0,0.0,Lab,Toss-up
-E14001437,Rayleigh and Wickford,East of England,Con,14.1,32.3,38.6,5.7,6.2,0.0,0.0,3.1,0.002,0.273,0.726,0.0,0.0,0.0,0.0,0.0,Ref,Lean Ref
-E14001438,Reading Central,South East,Lab,39.2,14.4,11.8,6.7,24.8,0.0,0.0,3.1,0.934,0.003,0.001,0.0,0.062,0.0,0.0,0.0,Lab,Likely Lab
-E14001439,Reading West and Mid Berkshire,South East,Lab,30.2,30.7,21.5,6.0,7.5,0.0,0.0,4.0,0.569,0.385,0.044,0.001,0.0,0.0,0.0,0.0,Lab,Tilt Lab
-E14001440,Redcar,North East,Lab,35.9,23.8,32.6,1.7,3.5,0.0,0.0,2.5,0.612,0.078,0.311,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
-E14001441,Redditch,West Midlands,Lab,24.0,30.7,32.3,2.9,6.4,0.0,0.0,3.7,0.195,0.399,0.406,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
-E14001442,Reigate,South East,Con,19.6,37.2,21.0,8.3,10.8,0.0,0.0,3.2,0.12,0.846,0.026,0.005,0.002,0.0,0.0,0.0,Con,Likely Con
-E14001443,Ribble Valley,North West,Lab,26.5,33.7,25.6,5.4,4.2,0.0,0.0,4.5,0.366,0.544,0.09,0.0,0.0,0.0,0.0,0.0,Con,Toss-up
-E14001444,Richmond and Northallerton,Yorkshire and The Humber,Con,13.5,44.2,24.1,6.6,7.1,0.0,0.0,4.4,0.001,0.98,0.019,0.0,0.0,0.0,0.0,0.0,Con,Safe Con
-E14001445,Richmond Park,London,LD,5.7,19.7,8.8,50.0,12.5,0.0,0.0,3.4,0.0,0.002,0.0,0.997,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001446,Rochdale,North West,Lab,15.5,7.2,24.6,3.5,4.4,0.0,0.0,44.7,0.034,0.0,0.027,0.0,0.0,0.0,0.0,0.939,Oth,Likely Oth
-E14001447,Rochester and Strood,South East,Lab,30.1,22.0,35.9,2.3,6.6,0.0,0.0,3.0,0.278,0.063,0.659,0.0,0.0,0.0,0.0,0.0,Ref,Lean Ref
-E14001448,Romford,London,Con,17.4,36.4,32.2,2.7,7.1,0.0,0.0,4.2,0.024,0.653,0.323,0.0,0.0,0.0,0.0,0.0,Con,Lean Con
-E14001449,Romsey and Southampton North,South East,Con,4.0,34.3,17.8,35.8,5.4,0.0,0.0,2.7,0.0,0.43,0.005,0.565,0.0,0.0,0.0,0.0,LD,Tilt LD
-E14001450,Rossendale and Darwen,North West,Lab,37.0,20.3,33.9,1.2,4.6,0.0,0.0,3.0,0.628,0.019,0.353,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
-E14001451,Rother Valley,Yorkshire and The Humber,Lab,29.1,30.6,31.2,1.5,4.5,0.0,0.0,3.0,0.362,0.36,0.278,0.0,0.0,0.0,0.0,0.0,Lab,Toss-up
-E14001452,Rotherham,Yorkshire and The Humber,Lab,39.9,0.8,39.0,3.3,7.2,0.0,0.0,9.8,0.528,0.0,0.472,0.0,0.0,0.0,0.0,0.0,Lab,Toss-up
-E14001453,Rugby,West Midlands,Lab,37.2,24.2,27.9,2.9,5.0,0.0,0.0,2.7,0.783,0.1,0.116,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
-E14001454,"Ruislip, Northwood and Pinner",London,Con,22.1,42.1,14.8,7.3,10.3,0.0,0.0,3.4,0.017,0.981,0.002,0.0,0.001,0.0,0.0,0.0,Con,Safe Con
-E14001455,Runcorn and Helsby,North West,Lab,46.6,11.1,29.3,2.6,7.1,0.0,0.0,3.3,0.965,0.0,0.035,0.0,0.0,0.0,0.0,0.0,Lab,Safe Lab
-E14001456,Runnymede and Weybridge,South East,Con,11.2,38.0,21.1,19.6,6.5,0.0,0.0,3.6,0.001,0.859,0.022,0.118,0.0,0.0,0.0,0.0,Con,Likely Con
-E14001457,Rushcliffe,East Midlands,Lab,39.2,28.0,16.6,3.4,9.2,0.0,0.0,3.7,0.898,0.098,0.003,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001458,Rutland and Stamford,East Midlands,Con,13.2,42.5,23.3,9.4,8.5,0.0,0.0,3.1,0.001,0.976,0.022,0.0,0.0,0.0,0.0,0.0,Con,Safe Con
-E14001459,Salford,North West,Lab,41.3,6.0,18.8,4.8,25.0,0.0,0.0,4.2,0.924,0.0,0.006,0.0,0.07,0.0,0.0,0.0,Lab,Likely Lab
-E14001460,Salisbury,South West,Con,16.1,31.4,17.9,25.1,6.0,0.0,0.0,3.6,0.078,0.549,0.017,0.356,0.0,0.0,0.0,0.0,Con,Toss-up
-E14001461,Scarborough and Whitby,Yorkshire and The Humber,Lab,36.4,20.1,34.3,1.8,3.7,0.0,0.0,3.7,0.585,0.018,0.397,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
-E14001462,Scunthorpe,Yorkshire and The Humber,Lab,33.6,21.9,34.9,1.1,3.5,0.0,0.0,5.0,0.443,0.044,0.513,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
-E14001463,Sefton Central,North West,Lab,47.4,13.6,21.1,4.4,10.1,0.0,0.0,3.4,0.994,0.0,0.006,0.0,0.0,0.0,0.0,0.0,Lab,Safe Lab
-E14001464,Selby,Yorkshire and The Humber,Lab,41.5,17.7,32.0,1.5,4.4,0.0,0.0,2.9,0.847,0.005,0.148,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001465,Sevenoaks,South East,Con,6.3,38.7,27.7,18.9,5.4,0.0,0.0,3.0,0.0,0.8,0.098,0.102,0.0,0.0,0.0,0.0,Con,Lean Con
-E14001466,Sheffield Brightside and Hillsborough,Yorkshire and The Humber,Lab,41.7,8.9,3.2,4.1,25.6,0.0,0.0,16.5,0.949,0.0,0.0,0.0,0.048,0.0,0.0,0.003,Lab,Likely Lab
-E14001467,Sheffield Central,Yorkshire and The Humber,Lab,35.3,5.4,2.1,4.8,44.1,0.0,0.0,8.4,0.241,0.0,0.0,0.0,0.759,0.0,0.0,0.0,Grn,Lean Grn
-E14001468,Sheffield Hallam,Yorkshire and The Humber,Lab,37.5,10.3,2.8,28.8,15.4,0.0,0.0,5.2,0.785,0.001,0.0,0.21,0.004,0.0,0.0,0.0,Lab,Lean Lab
-E14001469,Sheffield Heeley,Yorkshire and The Humber,Lab,45.2,9.9,3.2,8.1,25.9,0.0,0.0,7.8,0.97,0.0,0.0,0.0,0.03,0.0,0.0,0.0,Lab,Safe Lab
-E14001470,Sheffield South East,Yorkshire and The Humber,Lab,43.7,13.5,3.9,8.2,16.2,0.0,0.0,14.6,0.994,0.001,0.0,0.0,0.004,0.0,0.0,0.001,Lab,Safe Lab
-E14001471,Sherwood Forest,East Midlands,Lab,33.6,19.3,36.7,1.8,4.7,0.0,0.0,3.9,0.372,0.016,0.612,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
-E14001472,Shipley,Yorkshire and The Humber,Lab,40.7,21.2,24.3,1.6,7.7,0.0,0.0,4.5,0.944,0.025,0.031,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001473,Shrewsbury,West Midlands,Lab,43.0,16.8,25.3,6.6,5.3,0.0,0.0,2.9,0.963,0.004,0.032,0.001,0.0,0.0,0.0,0.0,Lab,Safe Lab
-E14001474,Sittingbourne and Sheppey,South East,Lab,19.3,21.6,38.6,2.3,7.0,0.0,0.0,11.2,0.022,0.053,0.924,0.0,0.0,0.0,0.0,0.001,Ref,Likely Ref
-E14001475,Skipton and Ripon,Yorkshire and The Humber,Con,20.9,37.7,24.4,4.9,7.7,0.0,0.0,4.4,0.146,0.797,0.056,0.0,0.0,0.0,0.0,0.0,Con,Lean Con
-E14001476,Sleaford and North Hykeham,East Midlands,Con,14.3,35.6,32.7,3.0,6.8,0.0,0.0,7.6,0.007,0.608,0.385,0.0,0.0,0.0,0.0,0.001,Con,Tilt Con
-E14001477,Slough,South East,Lab,25.3,12.8,11.2,3.5,9.4,0.0,0.0,37.7,0.074,0.001,0.001,0.0,0.0,0.0,0.0,0.924,Oth,Likely Oth
-E14001478,Smethwick,West Midlands,Lab,43.2,9.3,24.9,1.5,8.8,0.0,0.0,12.4,0.97,0.0,0.028,0.0,0.001,0.0,0.0,0.001,Lab,Safe Lab
-E14001479,Solihull West and Shirley,West Midlands,Con,13.8,39.5,23.5,11.5,8.5,0.0,0.0,3.3,0.012,0.925,0.046,0.016,0.0,0.0,0.0,0.0,Con,Likely Con
-E14001480,South Basildon and East Thurrock,East of England,RUK,21.0,18.5,42.7,2.1,7.8,0.0,0.0,7.8,0.016,0.011,0.973,0.0,0.0,0.0,0.0,0.0,Ref,Safe Ref
-E14001481,South Cambridgeshire,East of England,LD,6.2,23.6,14.0,44.3,8.8,0.0,0.0,3.2,0.0,0.02,0.001,0.979,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001482,South Cotswolds,South West,LD,3.8,28.7,16.6,42.3,4.9,0.0,0.0,3.6,0.0,0.082,0.002,0.916,0.0,0.0,0.0,0.0,LD,Likely LD
-E14001483,South Derbyshire,East Midlands,Lab,35.2,21.9,32.4,2.0,3.9,0.0,0.0,4.7,0.598,0.051,0.351,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
-E14001484,South Devon,South West,LD,3.3,24.9,20.7,43.3,5.2,0.0,0.0,2.6,0.0,0.032,0.007,0.961,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001485,South Dorset,South West,Lab,25.8,28.2,28.4,9.6,5.1,0.0,0.0,2.9,0.368,0.392,0.217,0.024,0.0,0.0,0.0,0.0,Con,Toss-up
-E14001486,South East Cornwall,South West,Lab,28.5,23.9,30.6,9.8,4.5,0.0,0.0,2.6,0.428,0.208,0.334,0.03,0.0,0.0,0.0,0.0,Lab,Toss-up
-E14001487,South Holland and The Deepings,East Midlands,Con,10.3,33.8,35.7,2.8,5.7,0.0,0.0,11.6,0.0,0.42,0.579,0.0,0.0,0.0,0.0,0.001,Ref,Tilt Ref
-E14001488,South Leicestershire,East Midlands,Con,12.8,37.1,31.3,9.5,6.3,0.0,0.0,3.0,0.002,0.71,0.284,0.003,0.0,0.0,0.0,0.0,Con,Lean Con
-E14001489,South Norfolk,East of England,Lab,34.7,24.6,25.8,5.3,6.7,0.0,0.0,2.8,0.719,0.187,0.092,0.002,0.0,0.0,0.0,0.0,Lab,Lean Lab
-E14001490,South Northamptonshire,East Midlands,Con,15.6,39.2,27.0,5.7,7.1,0.0,0.0,5.3,0.022,0.87,0.107,0.0,0.0,0.0,0.0,0.0,Con,Likely Con
-E14001491,South Ribble,North West,Lab,39.0,20.8,31.6,2.5,3.1,0.0,0.0,3.0,0.781,0.022,0.198,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
-E14001492,South Shields,North East,Lab,38.1,7.2,32.7,1.5,13.7,0.0,0.0,6.9,0.717,0.0,0.202,0.0,0.081,0.0,0.0,0.0,Lab,Lean Lab
-E14001493,South Shropshire,West Midlands,Con,5.4,30.2,27.0,30.4,4.1,0.0,0.0,3.0,0.0,0.385,0.114,0.501,0.0,0.0,0.0,0.0,LD,Toss-up
-E14001494,South Suffolk,East of England,Con,14.3,35.3,29.5,8.4,9.4,0.0,0.0,3.0,0.014,0.698,0.285,0.003,0.0,0.0,0.0,0.0,Con,Lean Con
-E14001495,South West Devon,South West,Con,17.2,37.7,28.5,6.6,6.8,0.0,0.0,3.3,0.048,0.789,0.163,0.0,0.0,0.0,0.0,0.0,Con,Lean Con
-E14001496,South West Hertfordshire,East of England,Con,9.9,34.5,21.3,23.4,7.1,0.0,0.0,3.9,0.002,0.682,0.033,0.283,0.0,0.0,0.0,0.0,Con,Lean Con
-E14001497,South West Norfolk,East of England,Lab,17.3,19.2,34.8,3.9,6.3,0.0,0.0,18.6,0.037,0.06,0.847,0.0,0.0,0.0,0.0,0.056,Ref,Likely Ref
-E14001498,South West Wiltshire,South West,Con,14.2,37.0,28.3,10.0,6.7,0.0,0.0,3.8,0.013,0.777,0.201,0.008,0.0,0.0,0.0,0.0,Con,Lean Con
-E14001499,Southampton Itchen,South East,Lab,40.5,18.1,29.0,2.7,7.3,0.0,0.0,2.6,0.868,0.01,0.112,0.0,0.009,0.0,0.0,0.0,Lab,Likely Lab
-E14001500,Southampton Test,South East,Lab,40.1,12.8,20.8,5.3,16.2,0.0,0.0,4.8,0.947,0.002,0.019,0.0,0.031,0.0,0.0,0.0,Lab,Likely Lab
-E14001501,Southend East and Rochford,East of England,Lab,37.0,20.8,30.6,2.2,5.8,0.0,0.0,3.5,0.732,0.042,0.225,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
-E14001502,Southend West and Leigh,East of England,Lab,30.8,26.6,29.6,3.2,6.3,0.0,0.0,3.5,0.505,0.259,0.235,0.0,0.0,0.0,0.0,0.0,Lab,Toss-up
-E14001503,Southgate and Wood Green,London,Lab,41.4,13.8,10.5,6.8,21.8,0.0,0.0,5.6,0.977,0.001,0.0,0.0,0.021,0.0,0.0,0.0,Lab,Safe Lab
-E14001504,Southport,North West,Lab,40.2,18.6,27.9,5.3,4.1,0.0,0.0,3.9,0.887,0.018,0.093,0.001,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001505,Spelthorne,South East,Con,14.3,34.6,28.2,13.2,7.0,0.0,0.0,2.7,0.022,0.703,0.229,0.046,0.0,0.0,0.0,0.0,Con,Lean Con
-E14001506,Spen Valley,Yorkshire and The Humber,Lab,35.1,17.0,35.8,1.6,5.2,0.0,0.0,5.3,0.469,0.005,0.526,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
-E14001507,St Albans,East of England,LD,6.0,15.1,13.0,51.8,11.4,0.0,0.0,2.7,0.0,0.001,0.0,0.998,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001508,St Austell and Newquay,South West,Lab,30.8,22.4,32.3,5.1,5.4,0.0,0.0,3.9,0.444,0.116,0.438,0.001,0.0,0.0,0.0,0.0,Lab,Toss-up
-E14001509,St Helens North,North West,Lab,48.0,7.1,33.4,1.8,7.1,0.0,0.0,2.6,0.933,0.0,0.067,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001510,St Helens South and Whiston,North West,Lab,45.6,5.2,28.9,2.5,6.5,0.0,0.0,11.3,0.958,0.0,0.042,0.0,0.0,0.0,0.0,0.0,Lab,Safe Lab
-E14001511,St Ives,South West,LD,3.3,17.3,21.6,47.4,6.8,0.0,0.0,3.7,0.0,0.002,0.006,0.992,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001512,St Neots and Mid Cambridgeshire,East of England,LD,6.3,23.7,17.4,37.1,7.3,0.0,0.0,8.2,0.0,0.08,0.011,0.908,0.0,0.0,0.0,0.001,LD,Likely LD
-E14001513,Stafford,West Midlands,Lab,37.5,22.9,30.0,1.5,5.3,0.0,0.0,2.8,0.764,0.064,0.172,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
-E14001514,Staffordshire Moorlands,West Midlands,Con,19.6,33.3,34.9,2.3,6.9,0.0,0.0,3.1,0.04,0.441,0.519,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
-E14001515,Stalybridge and Hyde,North West,Lab,40.9,12.4,32.4,1.1,5.8,0.0,0.0,7.3,0.814,0.001,0.185,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001516,Stevenage,East of England,Lab,40.4,18.8,29.9,3.1,5.5,0.0,0.0,2.3,0.851,0.012,0.136,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001517,Stockport,North West,Lab,44.9,8.1,23.0,4.8,13.4,0.0,0.0,5.8,0.983,0.0,0.013,0.0,0.004,0.0,0.0,0.0,Lab,Safe Lab
-E14001518,Stockton North,North East,Lab,40.3,14.4,36.5,1.2,4.8,0.0,0.0,2.9,0.655,0.001,0.344,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
-E14001519,Stockton West,North East,Con,29.9,38.1,22.4,1.6,4.5,0.0,0.0,3.5,0.216,0.764,0.02,0.0,0.0,0.0,0.0,0.0,Con,Lean Con
-E14001520,Stoke-on-Trent Central,West Midlands,Lab,37.5,11.9,35.2,1.2,5.4,0.0,0.0,8.7,0.598,0.0,0.401,0.0,0.001,0.0,0.0,0.0,Lab,Tilt Lab
-E14001521,Stoke-on-Trent North,West Midlands,Lab,33.9,18.3,37.7,1.2,4.2,0.0,0.0,4.7,0.348,0.01,0.642,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
-E14001522,Stoke-on-Trent South,West Midlands,Lab,24.0,29.9,34.1,2.3,4.3,0.0,0.0,5.3,0.14,0.334,0.526,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
-E14001523,"Stone, Great Wyrley and Penkridge",West Midlands,Con,29.4,41.9,3.8,5.3,8.5,0.0,0.0,11.1,0.108,0.892,0.0,0.0,0.0,0.0,0.0,0.001,Con,Likely Con
-E14001524,Stourbridge,West Midlands,Lab,34.0,23.3,32.3,1.7,4.3,0.0,0.0,4.3,0.554,0.091,0.355,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
-E14001525,Stratford and Bow,London,Lab,33.0,5.3,6.2,3.2,31.2,0.0,0.0,21.1,0.55,0.0,0.0,0.0,0.419,0.0,0.0,0.031,Lab,Tilt Lab
-E14001526,Stratford-on-Avon,West Midlands,LD,3.6,25.1,22.2,42.0,3.9,0.0,0.0,3.2,0.0,0.043,0.014,0.943,0.0,0.0,0.0,0.0,LD,Likely LD
-E14001527,Streatham and Croydon North,London,Lab,42.4,9.1,7.0,8.8,27.7,0.0,0.0,5.0,0.935,0.0,0.0,0.0,0.064,0.0,0.0,0.0,Lab,Likely Lab
-E14001528,Stretford and Urmston,North West,Lab,41.7,10.6,19.2,3.2,13.5,0.0,0.0,11.8,0.986,0.0,0.01,0.0,0.003,0.0,0.0,0.001,Lab,Safe Lab
-E14001529,Stroud,South West,Lab,41.0,20.4,19.8,3.4,12.3,0.0,0.0,3.1,0.972,0.017,0.01,0.0,0.001,0.0,0.0,0.0,Lab,Safe Lab
-E14001530,Suffolk Coastal,East of England,Lab,26.0,28.9,26.2,7.6,8.2,0.0,0.0,3.0,0.405,0.448,0.137,0.008,0.001,0.0,0.0,0.0,Con,Toss-up
-E14001531,Sunderland Central,North East,Lab,39.7,9.7,36.6,3.8,7.3,0.0,0.0,2.9,0.617,0.0,0.382,0.0,0.001,0.0,0.0,0.0,Lab,Tilt Lab
-E14001532,Surrey Heath,South East,LD,3.3,27.2,20.8,42.0,4.2,0.0,0.0,2.5,0.0,0.064,0.01,0.926,0.0,0.0,0.0,0.0,LD,Likely LD
-E14001533,Sussex Weald,South East,Con,8.1,36.8,28.2,13.6,8.4,0.0,0.0,4.8,0.0,0.782,0.183,0.034,0.0,0.0,0.0,0.0,Con,Lean Con
-E14001534,Sutton and Cheam,London,LD,8.9,25.6,18.5,38.3,5.7,0.0,0.0,3.1,0.0,0.092,0.011,0.897,0.0,0.0,0.0,0.0,LD,Likely LD
-E14001535,Sutton Coldfield,West Midlands,Con,21.8,39.8,24.9,3.5,6.6,0.0,0.0,3.5,0.089,0.87,0.04,0.0,0.0,0.0,0.0,0.0,Con,Likely Con
-E14001536,Swindon North,South West,Lab,37.0,23.0,30.4,2.0,4.7,0.0,0.0,2.9,0.728,0.071,0.201,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
-E14001537,Swindon South,South West,Lab,42.2,20.3,24.9,2.3,7.2,0.0,0.0,3.2,0.954,0.015,0.031,0.0,0.0,0.0,0.0,0.0,Lab,Safe Lab
-E14001538,Tamworth,West Midlands,Lab,25.6,25.2,38.6,2.1,5.4,0.0,0.0,3.1,0.09,0.1,0.811,0.0,0.0,0.0,0.0,0.0,Ref,Likely Ref
-E14001539,Tatton,North West,Con,32.2,35.0,17.4,5.5,6.4,0.0,0.0,3.5,0.374,0.62,0.006,0.0,0.0,0.0,0.0,0.0,Con,Tilt Con
-E14001540,Taunton and Wellington,South West,LD,3.4,18.1,25.0,45.2,5.8,0.0,0.0,2.4,0.0,0.003,0.019,0.978,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001541,Telford,West Midlands,Lab,38.9,14.3,37.3,1.6,5.1,0.0,0.0,2.9,0.569,0.001,0.43,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
-E14001542,Tewkesbury,South West,LD,4.4,23.1,20.7,41.2,8.0,0.0,0.0,2.7,0.0,0.036,0.014,0.95,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001543,The Wrekin,West Midlands,Con,17.8,34.5,30.6,5.9,8.2,0.0,0.0,3.1,0.054,0.624,0.321,0.001,0.001,0.0,0.0,0.0,Con,Tilt Con
-E14001544,Thirsk and Malton,Yorkshire and The Humber,Con,12.5,41.2,28.0,6.8,7.7,0.0,0.0,3.8,0.002,0.906,0.092,0.0,0.0,0.0,0.0,0.0,Con,Likely Con
-E14001545,Thornbury and Yate,South West,LD,4.1,26.0,23.3,38.5,4.9,0.0,0.0,3.2,0.0,0.103,0.037,0.86,0.0,0.0,0.0,0.0,LD,Likely LD
-E14001546,Thurrock,East of England,Lab,37.2,15.2,36.9,1.3,4.8,0.0,0.0,4.6,0.516,0.001,0.483,0.0,0.0,0.0,0.0,0.0,Lab,Toss-up
-E14001547,Tipton and Wednesbury,West Midlands,Lab,29.5,18.6,37.6,1.1,6.8,0.0,0.0,6.4,0.198,0.017,0.784,0.0,0.001,0.0,0.0,0.0,Ref,Lean Ref
-E14001548,Tiverton and Minehead,South West,LD,3.5,23.4,25.8,39.4,4.9,0.0,0.0,3.0,0.0,0.063,0.061,0.876,0.0,0.0,0.0,0.0,LD,Likely LD
-E14001549,Tonbridge,South East,Con,9.5,40.5,23.2,5.4,17.4,0.0,0.0,4.0,0.0,0.943,0.034,0.0,0.022,0.0,0.0,0.0,Con,Likely Con
-E14001550,Tooting,London,Lab,44.1,15.8,7.1,6.7,21.6,0.0,0.0,4.7,0.982,0.001,0.0,0.0,0.016,0.0,0.0,0.0,Lab,Safe Lab
-E14001551,Torbay,South West,LD,2.5,20.9,29.6,41.1,3.4,0.0,0.0,2.5,0.0,0.017,0.11,0.873,0.0,0.0,0.0,0.0,LD,Likely LD
-E14001552,Torridge and Tavistock,South West,Con,10.1,31.6,29.0,21.0,5.5,0.0,0.0,2.8,0.002,0.538,0.257,0.202,0.0,0.0,0.0,0.0,Con,Toss-up
-E14001553,Tottenham,London,Lab,43.9,4.2,6.2,3.5,32.4,0.0,0.0,9.8,0.854,0.0,0.0,0.0,0.146,0.0,0.0,0.0,Lab,Likely Lab
-E14001554,Truro and Falmouth,South West,Lab,39.7,20.2,20.3,7.4,8.8,0.0,0.0,3.5,0.953,0.027,0.016,0.002,0.0,0.0,0.0,0.0,Lab,Safe Lab
-E14001555,Tunbridge Wells,South East,LD,6.1,22.7,19.0,41.5,7.3,0.0,0.0,3.4,0.0,0.03,0.006,0.964,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001556,Twickenham,London,LD,7.6,14.0,11.2,51.9,12.3,0.0,0.0,3.0,0.0,0.001,0.0,0.999,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001557,Tynemouth,North East,Lab,44.9,14.1,24.3,3.3,9.0,0.0,0.0,4.5,0.984,0.001,0.015,0.0,0.0,0.0,0.0,0.0,Lab,Safe Lab
-E14001558,Uxbridge and South Ruislip,London,Lab,29.4,32.7,19.4,2.2,12.8,0.0,0.0,3.5,0.443,0.513,0.019,0.0,0.024,0.0,0.0,0.0,Con,Toss-up
-E14001559,Vauxhall and Camberwell Green,London,Lab,43.4,5.7,7.2,8.8,32.4,0.0,0.0,2.5,0.836,0.0,0.0,0.0,0.164,0.0,0.0,0.0,Lab,Likely Lab
-E14001560,Wakefield and Rothwell,Yorkshire and The Humber,Lab,42.3,12.4,32.3,2.9,5.1,0.0,0.0,5.0,0.844,0.001,0.155,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001561,Wallasey,North West,Lab,48.4,8.0,25.6,2.8,11.7,0.0,0.0,3.6,0.989,0.0,0.011,0.0,0.0,0.0,0.0,0.0,Lab,Safe Lab
-E14001562,Walsall and Bloxwich,West Midlands,Lab,25.0,12.4,28.6,1.0,7.0,0.0,0.0,25.9,0.419,0.003,0.277,0.0,0.011,0.0,0.0,0.29,Lab,Toss-up
-E14001563,Walthamstow,London,Lab,47.1,4.0,6.3,2.8,31.2,0.0,0.0,8.7,0.939,0.0,0.0,0.0,0.061,0.0,0.0,0.0,Lab,Likely Lab
-E14001564,Warrington North,North West,Lab,43.2,10.9,35.8,2.6,4.2,0.0,0.0,3.4,0.781,0.0,0.219,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
-E14001565,Warrington South,North West,Lab,42.9,17.9,26.8,3.8,5.3,0.0,0.0,3.2,0.954,0.004,0.041,0.0,0.0,0.0,0.0,0.0,Lab,Safe Lab
-E14001566,Warwick and Leamington,West Midlands,Lab,40.4,19.3,16.1,5.9,15.6,0.0,0.0,2.7,0.982,0.01,0.003,0.0,0.005,0.0,0.0,0.0,Lab,Safe Lab
-E14001567,Washington and Gateshead South,North East,Lab,41.0,8.2,40.8,1.8,4.8,0.0,0.0,3.4,0.507,0.0,0.493,0.0,0.0,0.0,0.0,0.0,Lab,Toss-up
-E14001568,Watford,East of England,Lab,33.8,22.6,16.6,10.4,8.0,0.0,0.0,8.6,0.854,0.093,0.015,0.035,0.003,0.0,0.0,0.001,Lab,Likely Lab
-E14001569,Waveney Valley,East of England,Green,4.8,20.7,25.8,1.7,44.6,0.0,0.0,2.4,0.0,0.009,0.024,0.0,0.968,0.0,0.0,0.0,Grn,Safe Grn
-E14001570,Weald of Kent,South East,Con,11.6,41.1,30.1,4.7,9.5,0.0,0.0,2.9,0.001,0.866,0.134,0.0,0.0,0.0,0.0,0.0,Con,Likely Con
-E14001571,Wellingborough and Rushden,East Midlands,Lab,36.2,19.4,34.7,1.5,5.5,0.0,0.0,2.6,0.554,0.018,0.428,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
-E14001572,Wells and Mendip Hills,South West,LD,3.8,18.7,21.2,43.8,6.3,0.0,0.0,6.1,0.0,0.006,0.01,0.984,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001573,Welwyn Hatfield,East of England,Lab,35.7,29.6,19.2,3.4,8.9,0.0,0.0,3.3,0.746,0.239,0.012,0.0,0.003,0.0,0.0,0.0,Lab,Lean Lab
-E14001574,West Bromwich,West Midlands,Lab,42.3,14.2,30.6,1.5,5.4,0.0,0.0,6.1,0.892,0.001,0.106,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001575,West Dorset,South West,LD,3.4,30.8,3.2,50.7,7.4,0.0,0.0,4.5,0.0,0.025,0.0,0.975,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001576,West Ham and Beckton,London,Lab,34.9,7.5,9.7,3.2,22.5,0.0,0.0,22.2,0.824,0.0,0.0,0.0,0.099,0.0,0.0,0.077,Lab,Likely Lab
-E14001577,West Lancashire,North West,Lab,45.3,13.6,28.4,2.2,7.6,0.0,0.0,3.0,0.96,0.001,0.038,0.0,0.0,0.0,0.0,0.0,Lab,Safe Lab
-E14001578,West Suffolk,East of England,Con,14.4,34.5,32.3,5.9,9.0,0.0,0.0,3.9,0.007,0.58,0.411,0.0,0.001,0.0,0.0,0.0,Con,Tilt Con
-E14001579,West Worcestershire,West Midlands,Con,7.4,36.1,22.0,21.3,10.2,0.0,0.0,2.8,0.001,0.754,0.034,0.21,0.001,0.0,0.0,0.0,Con,Lean Con
-E14001580,Westmorland and Lonsdale,North West,LD,2.8,14.3,16.5,57.7,5.9,0.0,0.0,2.7,0.0,0.0,0.0,0.999,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001581,Weston-super-Mare,South West,Lab,37.8,20.0,30.6,3.5,5.2,0.0,0.0,2.9,0.764,0.031,0.205,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
-E14001582,Wetherby and Easingwold,Yorkshire and The Humber,Con,20.8,39.0,21.8,4.4,10.5,0.0,0.0,3.6,0.076,0.903,0.02,0.0,0.0,0.0,0.0,0.0,Con,Likely Con
-E14001583,Whitehaven and Workington,North West,Lab,44.8,13.6,34.2,1.2,3.3,0.0,0.0,2.9,0.873,0.001,0.127,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001584,Widnes and Halewood,North West,Lab,50.8,6.1,29.5,2.6,7.8,0.0,0.0,3.1,0.985,0.0,0.015,0.0,0.0,0.0,0.0,0.0,Lab,Safe Lab
-E14001585,Wigan,North West,Lab,42.5,6.8,35.3,1.6,3.7,0.0,0.0,10.0,0.778,0.0,0.222,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
-E14001586,Wimbledon,London,LD,13.5,20.7,9.1,43.8,9.2,0.0,0.0,3.6,0.002,0.01,0.0,0.988,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001587,Winchester,South East,LD,3.0,23.2,13.5,47.8,9.4,0.0,0.0,3.1,0.0,0.01,0.0,0.99,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001588,Windsor,South East,Con,12.6,34.1,16.4,20.9,8.8,0.0,0.0,7.2,0.01,0.811,0.009,0.167,0.003,0.0,0.0,0.0,Con,Likely Con
-E14001589,Wirral West,North West,Lab,41.2,21.4,20.9,3.9,9.4,0.0,0.0,3.3,0.968,0.021,0.011,0.0,0.0,0.0,0.0,0.0,Lab,Safe Lab
-E14001590,Witham,East of England,Con,14.0,37.9,31.2,4.2,8.4,0.0,0.0,4.2,0.004,0.738,0.258,0.0,0.0,0.0,0.0,0.0,Con,Lean Con
-E14001591,Witney,South East,LD,4.5,26.8,20.1,39.9,5.3,0.0,0.0,3.3,0.0,0.089,0.011,0.899,0.0,0.0,0.0,0.0,LD,Likely LD
-E14001592,Woking,South East,LD,5.5,22.2,16.0,46.0,7.6,0.0,0.0,2.7,0.0,0.01,0.001,0.989,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001593,Wokingham,South East,LD,3.6,27.1,15.4,44.7,5.9,0.0,0.0,3.3,0.0,0.036,0.001,0.963,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001594,Wolverhampton North East,West Midlands,Lab,36.7,18.5,36.1,1.3,4.6,0.0,0.0,2.9,0.527,0.006,0.467,0.0,0.0,0.0,0.0,0.0,Lab,Toss-up
-E14001595,Wolverhampton South East,West Midlands,Lab,44.0,11.3,34.6,0.9,4.9,0.0,0.0,4.1,0.839,0.0,0.161,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001596,Wolverhampton West,West Midlands,Lab,39.2,20.9,22.8,1.7,7.2,0.0,0.0,8.2,0.937,0.029,0.033,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001597,Worcester,West Midlands,Lab,40.8,18.1,23.9,3.9,10.4,0.0,0.0,2.9,0.936,0.014,0.038,0.0,0.012,0.0,0.0,0.0,Lab,Likely Lab
-E14001598,Worsley and Eccles,North West,Lab,44.7,10.9,32.2,1.7,6.3,0.0,0.0,4.2,0.902,0.0,0.098,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-E14001599,Worthing West,South East,Lab,36.9,26.4,24.8,2.7,6.3,0.0,0.0,2.9,0.795,0.145,0.06,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
-E14001600,Wycombe,South East,Lab,32.8,23.1,16.3,5.4,6.9,0.0,0.0,15.6,0.847,0.122,0.016,0.001,0.0,0.0,0.0,0.014,Lab,Likely Lab
-E14001601,Wyre Forest,West Midlands,Con,18.5,30.5,33.4,4.0,7.4,0.0,0.0,6.3,0.049,0.39,0.561,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
-E14001602,Wythenshawe and Sale East,North West,Lab,44.9,9.9,23.2,3.0,14.5,0.0,0.0,4.5,0.984,0.0,0.011,0.0,0.005,0.0,0.0,0.0,Lab,Safe Lab
-E14001603,Yeovil,South West,LD,2.8,16.4,25.6,45.3,6.7,0.0,0.0,3.3,0.0,0.002,0.024,0.974,0.0,0.0,0.0,0.0,LD,Safe LD
-E14001604,York Central,Yorkshire and The Humber,Lab,43.8,8.7,15.5,5.3,23.8,0.0,0.0,3.1,0.972,0.0,0.001,0.0,0.027,0.0,0.0,0.0,Lab,Safe Lab
-E14001605,York Outer,Yorkshire and The Humber,Lab,40.5,22.7,19.9,7.2,6.2,0.0,0.0,3.5,0.958,0.031,0.011,0.0,0.0,0.0,0.0,0.0,Lab,Safe Lab
-S14000021,East Renfrewshire,Scotland,Lab,37.1,13.1,8.9,1.9,7.2,26.8,0.0,5.1,0.869,0.002,0.0,0.0,0.0,0.129,0.0,0.0,Lab,Likely Lab
-S14000027,Na h-Eileanan an Iar,Scotland,Lab,41.4,3.6,9.4,2.4,3.1,20.4,0.0,19.7,0.976,0.0,0.0,0.0,0.0,0.015,0.0,0.009,Lab,Safe Lab
-S14000045,Midlothian,Scotland,Lab,41.5,5.5,12.5,4.6,3.2,29.5,0.0,3.1,0.897,0.0,0.0,0.0,0.0,0.103,0.0,0.0,Lab,Likely Lab
-S14000048,North Ayrshire and Arran,Scotland,Lab,33.1,10.5,13.2,1.9,7.2,30.6,0.0,3.5,0.605,0.001,0.002,0.0,0.0,0.392,0.0,0.0,Lab,Tilt Lab
-S14000051,Orkney and Shetland,Scotland,LD,4.4,2.1,11.8,48.1,15.3,15.2,0.0,3.2,0.0,0.0,0.0,0.996,0.001,0.002,0.0,0.0,LD,Safe LD
-S14000060,Aberdeen North,Scotland,SNP,24.1,10.5,14.3,4.8,7.1,33.7,0.0,5.5,0.145,0.001,0.005,0.0,0.0,0.849,0.0,0.0,SNP,Likely SNP
-S14000061,Aberdeen South,Scotland,SNP,17.1,20.2,11.4,4.9,6.7,35.9,0.0,3.9,0.028,0.038,0.002,0.0,0.0,0.932,0.0,0.0,SNP,Likely SNP
-S14000062,Aberdeenshire North and Moray East,Scotland,SNP,5.6,28.0,18.9,5.0,2.3,36.8,0.0,3.5,0.0,0.173,0.01,0.0,0.0,0.817,0.0,0.0,SNP,Likely SNP
-S14000063,Airdrie and Shotts,Scotland,Lab,43.4,3.5,13.3,1.6,3.1,29.7,0.0,5.4,0.916,0.0,0.001,0.0,0.0,0.083,0.0,0.0,Lab,Likely Lab
-S14000064,Alloa and Grangemouth,Scotland,Lab,36.0,5.6,14.3,2.2,7.6,27.8,0.0,6.5,0.814,0.0,0.002,0.0,0.0,0.184,0.0,0.0,Lab,Likely Lab
-S14000065,Angus and Perthshire Glens,Scotland,SNP,9.2,25.3,11.4,5.2,2.7,42.1,0.0,4.1,0.0,0.041,0.001,0.0,0.0,0.958,0.0,0.0,SNP,Safe SNP
-S14000066,Arbroath and Broughty Ferry,Scotland,SNP,27.3,11.9,14.1,4.0,3.2,35.0,0.0,4.6,0.202,0.002,0.003,0.0,0.0,0.794,0.0,0.0,SNP,Lean SNP
-S14000067,"Argyll, Bute and South Lochaber",Scotland,SNP,13.0,16.9,11.7,14.6,3.0,36.1,0.0,4.7,0.002,0.015,0.002,0.027,0.0,0.954,0.0,0.0,SNP,Safe SNP
-S14000068,Bathgate and Linlithgow,Scotland,Lab,39.2,5.6,13.6,4.0,7.4,26.2,0.0,3.9,0.919,0.0,0.001,0.0,0.0,0.08,0.0,0.0,Lab,Likely Lab
-S14000069,"Caithness, Sutherland and Easter Ross",Scotland,LD,4.5,2.9,11.7,45.0,7.5,24.4,0.0,3.9,0.0,0.0,0.0,0.974,0.0,0.026,0.0,0.0,LD,Safe LD
-S14000070,Coatbridge and Bellshill,Scotland,Lab,41.5,2.7,11.3,1.4,7.2,32.0,0.0,3.9,0.838,0.0,0.0,0.0,0.0,0.162,0.0,0.0,Lab,Likely Lab
-S14000071,Cowdenbeath and Kirkcaldy,Scotland,Lab,38.0,5.8,12.6,3.0,8.3,26.9,0.0,5.5,0.882,0.0,0.001,0.0,0.0,0.116,0.0,0.0,Lab,Likely Lab
-S14000072,Cumbernauld and Kirkintilloch,Scotland,Lab,36.7,3.4,12.3,2.4,8.6,33.2,0.0,3.4,0.649,0.0,0.0,0.0,0.0,0.35,0.0,0.0,Lab,Tilt Lab
-S14000073,Dumfries and Galloway,Scotland,Con,15.9,26.0,13.7,3.2,4.5,33.7,0.0,3.0,0.031,0.186,0.004,0.0,0.0,0.778,0.0,0.0,SNP,Lean SNP
-S14000074,"Dumfriesshire, Clydesdale and Tweeddale",Scotland,Con,14.0,29.8,12.9,4.4,5.4,30.6,0.0,3.0,0.012,0.463,0.003,0.0,0.0,0.522,0.0,0.0,SNP,Toss-up
-S14000075,Dundee Central,Scotland,SNP,31.1,3.1,10.7,4.8,3.2,39.2,0.0,7.9,0.2,0.0,0.0,0.0,0.0,0.799,0.0,0.0,SNP,Lean SNP
-S14000076,Dunfermline and Dollar,Scotland,Lab,38.2,5.4,11.1,5.6,9.6,26.2,0.0,3.9,0.902,0.0,0.0,0.0,0.0,0.097,0.0,0.0,Lab,Likely Lab
-S14000077,East Kilbride and Strathaven,Scotland,Lab,40.4,5.6,12.1,1.9,8.4,28.0,0.0,3.7,0.896,0.0,0.001,0.0,0.0,0.103,0.0,0.0,Lab,Likely Lab
-S14000078,Edinburgh East and Musselburgh,Scotland,Lab,33.1,4.1,8.5,3.2,16.8,31.2,0.0,3.1,0.579,0.0,0.0,0.0,0.013,0.408,0.0,0.0,Lab,Tilt Lab
-S14000079,Edinburgh North and Leith,Scotland,Lab,34.5,4.8,7.1,6.0,17.9,25.9,0.0,3.8,0.813,0.0,0.0,0.0,0.017,0.17,0.0,0.0,Lab,Likely Lab
-S14000080,Edinburgh South,Scotland,Lab,44.6,6.4,7.6,4.9,15.7,15.7,0.0,5.1,0.994,0.0,0.0,0.0,0.003,0.003,0.0,0.0,Lab,Safe Lab
-S14000081,Edinburgh South West,Scotland,Lab,33.8,9.1,8.5,5.0,13.8,26.3,0.0,3.4,0.794,0.0,0.0,0.0,0.004,0.2,0.0,0.0,Lab,Lean Lab
-S14000082,Edinburgh West,Scotland,LD,10.2,4.1,8.1,47.5,8.4,18.2,0.0,3.5,0.0,0.0,0.0,0.995,0.0,0.004,0.0,0.0,LD,Safe LD
-S14000083,Falkirk,Scotland,Lab,35.3,6.1,12.8,2.0,8.6,30.1,0.0,5.1,0.719,0.0,0.002,0.0,0.0,0.279,0.0,0.0,Lab,Lean Lab
-S14000084,Glasgow East,Scotland,Lab,35.4,3.5,11.0,1.9,13.5,31.2,0.0,3.6,0.674,0.0,0.001,0.0,0.002,0.323,0.0,0.0,Lab,Lean Lab
-S14000085,Glasgow North,Scotland,Lab,33.7,2.8,8.4,2.4,18.8,29.9,0.0,3.9,0.648,0.0,0.0,0.0,0.02,0.331,0.0,0.0,Lab,Tilt Lab
-S14000086,Glasgow North East,Scotland,Lab,37.0,2.5,10.9,1.4,13.0,30.3,0.0,5.0,0.768,0.0,0.0,0.0,0.001,0.231,0.0,0.0,Lab,Lean Lab
-S14000087,Glasgow South,Scotland,Lab,33.3,2.8,7.5,2.3,19.9,29.8,0.0,4.4,0.629,0.0,0.0,0.0,0.029,0.341,0.0,0.0,Lab,Tilt Lab
-S14000088,Glasgow South West,Scotland,Lab,35.1,2.9,10.4,2.0,13.4,32.5,0.0,3.8,0.611,0.0,0.0,0.0,0.001,0.388,0.0,0.0,Lab,Tilt Lab
-S14000089,Glasgow West,Scotland,Lab,37.9,3.1,9.3,2.5,15.4,28.6,0.0,3.1,0.835,0.0,0.0,0.0,0.004,0.161,0.0,0.0,Lab,Likely Lab
-S14000090,Glenrothes and Mid Fife,Scotland,Lab,36.5,4.0,14.9,3.3,3.1,34.6,0.0,3.4,0.583,0.0,0.001,0.0,0.0,0.416,0.0,0.0,Lab,Tilt Lab
-S14000091,Gordon and Buchan,Scotland,Con,5.9,28.4,13.0,11.8,2.2,35.3,0.0,3.5,0.0,0.227,0.002,0.01,0.0,0.761,0.0,0.0,SNP,Lean SNP
-S14000092,Hamilton and Clyde Valley,Scotland,Lab,42.6,8.3,13.2,2.9,3.2,27.0,0.0,2.8,0.943,0.0,0.0,0.0,0.0,0.056,0.0,0.0,Lab,Likely Lab
-S14000093,Inverclyde and Renfrewshire West,Scotland,Lab,39.4,5.3,10.7,2.4,6.8,30.3,0.0,5.1,0.83,0.0,0.0,0.0,0.0,0.17,0.0,0.0,Lab,Likely Lab
-S14000094,"Inverness, Skye and West Ross-shire",Scotland,LD,7.7,3.7,10.0,35.8,8.7,31.4,0.0,2.7,0.0,0.0,0.0,0.677,0.0,0.322,0.0,0.0,LD,Lean LD
-S14000095,Livingston,Scotland,Lab,33.5,5.7,13.9,3.4,8.2,31.8,0.0,3.6,0.582,0.0,0.002,0.0,0.0,0.416,0.0,0.0,Lab,Tilt Lab
-S14000096,Lothian East,Scotland,Lab,41.0,8.7,11.1,4.5,10.4,20.6,0.0,3.6,0.982,0.0,0.001,0.0,0.0,0.017,0.0,0.0,Lab,Safe Lab
-S14000097,Mid Dunbartonshire,Scotland,LD,14.3,3.5,7.6,40.8,7.4,23.1,0.0,3.2,0.002,0.0,0.0,0.96,0.0,0.038,0.0,0.0,LD,Safe LD
-S14000098,"Moray West, Nairn and Strathspey",Scotland,SNP,10.5,25.7,11.6,5.8,5.8,37.2,0.0,3.4,0.001,0.107,0.001,0.0,0.0,0.891,0.0,0.0,SNP,Likely SNP
-S14000099,"Motherwell, Wishaw and Carluke",Scotland,Lab,41.0,4.6,12.6,1.7,7.1,29.7,0.0,3.2,0.88,0.0,0.0,0.0,0.0,0.119,0.0,0.0,Lab,Likely Lab
-S14000100,North East Fife,Scotland,LD,5.9,2.9,8.8,50.0,8.0,21.1,0.0,3.3,0.0,0.0,0.0,0.994,0.0,0.006,0.0,0.0,LD,Safe LD
-S14000101,Paisley and Renfrewshire North,Scotland,Lab,38.7,4.7,12.5,2.5,7.8,30.4,0.0,3.4,0.812,0.0,0.001,0.0,0.0,0.187,0.0,0.0,Lab,Likely Lab
-S14000102,Paisley and Renfrewshire South,Scotland,Lab,39.3,4.0,11.8,2.5,8.8,30.2,0.0,3.4,0.833,0.0,0.0,0.0,0.0,0.167,0.0,0.0,Lab,Likely Lab
-S14000103,Perth and Kinross-shire,Scotland,SNP,11.6,25.1,10.3,5.7,2.7,40.6,0.0,4.0,0.0,0.052,0.0,0.0,0.0,0.947,0.0,0.0,SNP,Likely SNP
-S14000104,Rutherglen,Scotland,Lab,43.0,4.3,11.1,3.2,3.2,29.1,0.0,6.1,0.918,0.0,0.0,0.0,0.0,0.081,0.0,0.0,Lab,Likely Lab
-S14000105,Stirling and Strathallan,Scotland,Lab,27.5,14.5,10.8,3.8,9.7,30.1,0.0,3.5,0.385,0.006,0.002,0.0,0.001,0.606,0.0,0.0,SNP,Tilt SNP
-S14000106,West Dunbartonshire,Scotland,Lab,40.5,2.8,11.5,1.7,8.2,32.0,0.0,3.3,0.816,0.0,0.0,0.0,0.0,0.184,0.0,0.0,Lab,Likely Lab
-S14000107,"Ayr, Carrick and Cumnock",Scotland,Lab,30.9,17.7,14.1,2.1,5.6,26.0,0.0,3.6,0.694,0.022,0.006,0.0,0.0,0.277,0.0,0.0,Lab,Lean Lab
-S14000108,"Berwickshire, Roxburgh and Selkirk",Scotland,Con,7.9,35.4,11.3,5.7,5.6,30.5,0.0,3.6,0.0,0.685,0.0,0.0,0.0,0.314,0.0,0.0,Con,Lean Con
-S14000109,Central Ayrshire,Scotland,Lab,36.6,11.4,13.6,1.9,6.2,26.6,0.0,3.7,0.862,0.001,0.002,0.0,0.0,0.135,0.0,0.0,Lab,Likely Lab
-S14000110,Kilmarnock and Loudoun,Scotland,Lab,37.3,6.2,13.1,1.6,6.7,31.7,0.0,3.4,0.726,0.0,0.0,0.0,0.0,0.274,0.0,0.0,Lab,Lean Lab
-S14000111,West Aberdeenshire and Kincardine,Scotland,Con,7.4,31.3,11.1,9.1,3.7,34.3,0.0,3.1,0.0,0.378,0.001,0.002,0.0,0.619,0.0,0.0,SNP,Tilt SNP
-W07000081,Aberafan Maesteg,Wales,Lab,46.1,4.7,29.0,1.0,2.9,0.0,12.9,3.4,0.936,0.0,0.053,0.0,0.0,0.0,0.011,0.0,Lab,Likely Lab
-W07000082,Alyn and Deeside,Wales,Lab,39.7,11.7,33.0,1.8,3.8,0.0,5.2,4.8,0.741,0.001,0.258,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
-W07000083,Bangor Aberconwy,Wales,Lab,17.4,14.0,20.2,2.1,5.1,0.0,38.3,3.0,0.042,0.005,0.023,0.0,0.0,0.0,0.93,0.0,PC,Likely PC
-W07000084,Blaenau Gwent and Rhymney,Wales,Lab,38.7,8.2,3.6,3.0,10.6,0.0,24.0,12.0,0.943,0.0,0.0,0.0,0.001,0.0,0.056,0.001,Lab,Likely Lab
-W07000085,"Brecon, Radnor and Cwm Tawe",Wales,LD,7.5,20.8,23.2,36.6,2.8,0.0,6.0,3.1,0.002,0.129,0.062,0.807,0.0,0.0,0.0,0.0,LD,Likely LD
-W07000086,Bridgend,Wales,Lab,40.7,10.4,27.5,1.3,3.3,0.0,8.9,8.0,0.896,0.0,0.099,0.0,0.0,0.0,0.004,0.0,Lab,Likely Lab
-W07000087,Caerfyrddin,Wales,PC,12.7,12.1,20.4,2.1,4.9,0.0,45.0,2.8,0.0,0.001,0.006,0.0,0.0,0.0,0.993,0.0,PC,Safe PC
-W07000088,Caerphilly,Wales,Lab,14.3,6.3,27.1,1.9,3.8,0.0,44.0,2.5,0.036,0.0,0.055,0.0,0.0,0.0,0.909,0.0,PC,Likely PC
-W07000089,Cardiff East,Wales,Lab,31.5,6.5,16.1,10.6,16.9,0.0,16.1,2.4,0.81,0.0,0.023,0.019,0.083,0.0,0.064,0.0,Lab,Likely Lab
-W07000090,Cardiff North,Wales,Lab,34.0,14.6,17.6,3.9,9.6,0.0,17.2,2.9,0.908,0.008,0.021,0.0,0.003,0.0,0.059,0.0,Lab,Likely Lab
-W07000091,Cardiff South and Penarth,Wales,Lab,30.8,8.7,12.6,4.8,24.9,0.0,15.5,2.7,0.714,0.001,0.004,0.0,0.262,0.0,0.019,0.0,Lab,Lean Lab
-W07000092,Cardiff West,Wales,Lab,21.8,10.0,16.5,2.6,11.0,0.0,33.7,4.3,0.107,0.001,0.014,0.0,0.003,0.0,0.875,0.0,PC,Likely PC
-W07000093,Ceredigion Preseli,Wales,PC,5.7,6.3,15.6,10.1,6.7,0.0,53.3,2.3,0.0,0.0,0.0,0.0,0.0,0.0,0.999,0.0,PC,Safe PC
-W07000094,Clwyd East,Wales,Lab,37.9,20.7,25.1,1.6,3.1,0.0,8.6,3.0,0.861,0.064,0.074,0.0,0.0,0.0,0.001,0.0,Lab,Likely Lab
-W07000095,Clwyd North,Wales,Lab,25.2,30.6,25.4,2.0,4.0,0.0,10.0,2.8,0.384,0.496,0.116,0.0,0.0,0.0,0.003,0.0,Con,Toss-up
-W07000096,Dwyfor Meirionnydd,Wales,PC,7.4,7.1,16.6,2.3,5.9,0.0,58.1,2.5,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,PC,Safe PC
-W07000097,Gower,Wales,Lab,43.6,12.8,25.9,2.1,4.2,0.0,9.0,2.4,0.956,0.001,0.041,0.0,0.0,0.0,0.001,0.0,Lab,Safe Lab
-W07000098,Llanelli,Wales,Lab,10.2,5.7,32.6,1.2,2.4,0.0,45.1,2.8,0.0,0.0,0.124,0.0,0.0,0.0,0.875,0.0,PC,Likely PC
-W07000099,Merthyr Tydfil and Aberdare,Wales,Lab,41.3,4.3,31.1,1.3,3.1,0.0,14.9,4.0,0.804,0.0,0.134,0.0,0.0,0.0,0.061,0.0,Lab,Likely Lab
-W07000100,Mid and South Pembrokeshire,Wales,Lab,28.0,28.1,26.1,2.4,4.0,0.0,8.2,3.2,0.484,0.379,0.135,0.0,0.0,0.0,0.001,0.0,Lab,Toss-up
-W07000101,Monmouthshire,Wales,Lab,36.5,30.4,16.9,2.5,5.5,0.0,4.4,3.9,0.746,0.247,0.007,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
-W07000102,Montgomeryshire and Glyndŵr,Wales,Lab,11.6,10.7,28.7,6.4,3.5,0.0,36.5,2.6,0.049,0.002,0.228,0.006,0.0,0.0,0.715,0.0,PC,Lean PC
-W07000103,Neath and Swansea East,Wales,Lab,32.3,5.4,31.9,2.3,3.9,0.0,21.7,2.5,0.552,0.0,0.223,0.0,0.0,0.0,0.225,0.0,Lab,Tilt Lab
-W07000104,Newport East,Wales,Lab,42.5,10.9,28.1,1.8,4.5,0.0,6.4,5.7,0.917,0.0,0.082,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
-W07000105,Newport West and Islwyn,Wales,Lab,42.0,10.1,29.0,1.8,3.8,0.0,8.5,4.7,0.888,0.0,0.11,0.0,0.0,0.0,0.002,0.0,Lab,Likely Lab
-W07000106,Pontypridd,Wales,Lab,30.7,5.6,27.0,1.6,4.2,0.0,24.0,7.0,0.592,0.0,0.095,0.0,0.0,0.0,0.312,0.0,Lab,Tilt Lab
-W07000107,Rhondda and Ogmore,Wales,Lab,43.4,3.1,33.1,1.0,2.8,0.0,14.1,2.5,0.811,0.0,0.16,0.0,0.0,0.0,0.029,0.0,Lab,Likely Lab
-W07000108,Swansea West,Wales,Lab,36.3,6.2,23.0,5.0,8.4,0.0,18.4,2.5,0.768,0.0,0.056,0.001,0.013,0.0,0.162,0.0,Lab,Lean Lab
-W07000109,Torfaen,Wales,Lab,40.9,10.0,31.6,1.7,4.0,0.0,7.8,4.0,0.803,0.0,0.196,0.0,0.0,0.0,0.001,0.0,Lab,Likely Lab
-W07000110,Vale of Glamorgan,Wales,Lab,36.7,21.9,23.9,1.5,3.9,0.0,8.5,3.5,0.837,0.097,0.064,0.0,0.0,0.0,0.002,0.0,Lab,Likely Lab
-W07000111,Wrexham,Wales,Lab,38.8,16.0,26.2,1.6,3.2,0.0,11.4,2.8,0.866,0.012,0.093,0.0,0.0,0.0,0.029,0.0,Lab,Likely Lab
-W07000112,Ynys Môn,Wales,PC,12.8,20.5,15.2,1.0,3.7,0.0,44.3,2.6,0.0,0.01,0.001,0.0,0.0,0.0,0.989,0.0,PC,Safe PC
+E14001063,Aldershot,South East,Lab,34.1,22.6,30.6,4.8,5.3,0.0,0.0,2.5,0.572,0.116,0.312,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
+E14001064,Aldridge-Brownhills,West Midlands,Con,19.5,33.1,35.2,3.1,5.9,0.0,0.0,3.3,0.017,0.431,0.552,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
+E14001065,Altrincham and Sale West,North West,Lab,34.9,33.3,14.0,6.1,8.4,0.0,0.0,3.4,0.565,0.412,0.019,0.004,0.0,0.0,0.0,0.0,Lab,Tilt Lab
+E14001066,Amber Valley,East Midlands,Lab,28.4,17.5,42.1,2.4,6.6,0.0,0.0,3.0,0.084,0.019,0.897,0.0,0.0,0.0,0.0,0.0,Ref,Likely Ref
+E14001067,Arundel and South Downs,South East,Con,12.6,36.5,21.6,14.4,12.1,0.0,0.0,2.8,0.004,0.916,0.06,0.018,0.002,0.0,0.0,0.0,Con,Likely Con
+E14001068,Ashfield,East Midlands,RUK,20.3,5.8,51.6,1.3,4.7,0.0,0.0,16.3,0.002,0.002,0.995,0.0,0.0,0.0,0.0,0.001,Ref,Safe Ref
+E14001069,Ashford,South East,Lab,24.4,22.2,35.0,3.2,10.8,0.0,0.0,4.4,0.145,0.14,0.709,0.0,0.006,0.0,0.0,0.0,Ref,Lean Ref
+E14001070,Ashton-under-Lyne,North West,Lab,35.6,8.2,38.5,2.2,7.5,0.0,0.0,8.1,0.431,0.005,0.562,0.0,0.001,0.0,0.0,0.0,Ref,Tilt Ref
+E14001071,Aylesbury,South East,Lab,22.5,29.5,22.7,15.3,6.7,0.0,0.0,3.3,0.211,0.532,0.176,0.081,0.001,0.0,0.0,0.0,Con,Toss-up
+E14001072,Banbury,South East,Lab,32.1,30.1,21.2,5.5,6.8,0.0,0.0,4.4,0.523,0.388,0.09,0.0,0.0,0.0,0.0,0.0,Lab,Toss-up
+E14001073,Barking,London,Lab,34.5,8.4,18.0,1.9,24.4,0.0,0.0,12.7,0.774,0.0,0.043,0.0,0.18,0.0,0.0,0.002,Lab,Lean Lab
+E14001074,Barnsley North,Yorkshire and The Humber,Lab,40.2,5.4,42.4,2.0,5.5,0.0,0.0,4.5,0.44,0.004,0.556,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
+E14001075,Barnsley South,Yorkshire and The Humber,Lab,36.1,6.0,45.9,2.0,5.6,0.0,0.0,4.5,0.183,0.004,0.814,0.0,0.0,0.0,0.0,0.0,Ref,Likely Ref
+E14001076,Barrow and Furness,North West,Lab,36.4,24.6,29.7,2.4,4.2,0.0,0.0,2.7,0.658,0.124,0.218,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
+E14001077,Basildon and Billericay,East of England,Con,21.5,24.5,39.3,3.8,7.5,0.0,0.0,3.4,0.023,0.092,0.884,0.0,0.0,0.0,0.0,0.0,Ref,Likely Ref
+E14001078,Basingstoke,South East,Lab,35.3,26.0,22.7,3.9,8.8,0.0,0.0,3.1,0.712,0.196,0.091,0.0,0.001,0.0,0.0,0.0,Lab,Lean Lab
+E14001079,Bassetlaw,East Midlands,Lab,33.1,19.4,37.2,2.5,5.0,0.0,0.0,2.8,0.367,0.04,0.593,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
+E14001080,Bath,South West,LD,12.2,12.6,11.7,37.0,20.0,0.0,0.0,6.5,0.004,0.004,0.003,0.938,0.051,0.0,0.0,0.0,LD,Likely LD
+E14001081,Battersea,London,Lab,39.8,21.9,7.9,7.8,17.8,0.0,0.0,4.8,0.905,0.04,0.0,0.009,0.046,0.0,0.0,0.0,Lab,Likely Lab
+E14001082,Beaconsfield,South East,Con,10.4,34.6,19.5,24.8,6.1,0.0,0.0,4.5,0.004,0.79,0.029,0.177,0.0,0.0,0.0,0.0,Con,Lean Con
+E14001083,Beckenham and Penge,London,Lab,40.8,22.9,15.8,6.5,10.5,0.0,0.0,3.4,0.925,0.048,0.02,0.006,0.0,0.0,0.0,0.0,Lab,Likely Lab
+E14001084,Bedford,East of England,Lab,37.8,18.9,20.4,6.6,8.6,0.0,0.0,7.7,0.89,0.045,0.064,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
+E14001085,Bermondsey and Old Southwark,London,Lab,34.3,6.2,10.7,19.6,24.9,0.0,0.0,4.3,0.694,0.0,0.001,0.097,0.207,0.0,0.0,0.0,Lab,Lean Lab
+E14001086,Bethnal Green and Stepney,London,Lab,23.7,3.2,5.4,6.7,26.6,0.0,0.0,34.5,0.07,0.0,0.0,0.001,0.212,0.0,0.0,0.718,Oth,Lean Oth
+E14001087,Beverley and Holderness,Yorkshire and The Humber,Con,25.6,32.2,29.0,4.9,4.7,0.0,0.0,3.6,0.18,0.526,0.294,0.0,0.0,0.0,0.0,0.0,Con,Toss-up
+E14001088,Bexhill and Battle,South East,Con,20.1,31.4,27.1,5.1,7.4,0.0,0.0,9.0,0.084,0.622,0.293,0.0,0.0,0.0,0.0,0.001,Con,Tilt Con
+E14001089,Bexleyheath and Crayford,London,Lab,27.9,24.1,36.2,3.0,5.8,0.0,0.0,2.9,0.191,0.145,0.664,0.0,0.0,0.0,0.0,0.0,Ref,Lean Ref
+E14001090,Bicester and Woodstock,South East,LD,11.3,24.4,18.6,35.2,7.3,0.0,0.0,3.2,0.004,0.131,0.031,0.834,0.0,0.0,0.0,0.0,LD,Likely LD
+E14001091,Birkenhead,North West,Lab,40.9,5.2,22.2,3.6,25.4,0.0,0.0,2.8,0.864,0.003,0.056,0.0,0.076,0.0,0.0,0.0,Lab,Likely Lab
+E14001092,Birmingham Edgbaston,West Midlands,Lab,35.9,20.0,17.1,4.0,13.0,0.0,0.0,10.1,0.872,0.063,0.044,0.001,0.019,0.0,0.0,0.002,Lab,Likely Lab
+E14001093,Birmingham Erdington,West Midlands,Lab,35.4,10.8,35.9,1.9,8.1,0.0,0.0,7.9,0.514,0.008,0.477,0.0,0.001,0.0,0.0,0.0,Lab,Toss-up
+E14001094,Birmingham Hall Green and Moseley,West Midlands,Lab,23.8,7.0,8.0,8.3,13.8,0.0,0.0,39.0,0.057,0.0,0.002,0.011,0.006,0.0,0.0,0.924,Oth,Likely Oth
+E14001095,Birmingham Hodge Hill and Solihull North,West Midlands,Lab,19.5,9.6,27.5,1.7,9.1,0.0,0.0,32.6,0.089,0.002,0.305,0.0,0.006,0.0,0.0,0.598,Oth,Tilt Oth
+E14001096,Birmingham Ladywood,West Midlands,Lab,31.6,4.3,5.6,2.9,19.3,0.0,0.0,36.3,0.285,0.0,0.0,0.0,0.09,0.0,0.0,0.625,Oth,Tilt Oth
+E14001097,Birmingham Northfield,West Midlands,Lab,32.4,18.0,35.3,2.6,8.4,0.0,0.0,3.4,0.418,0.037,0.543,0.0,0.001,0.0,0.0,0.0,Ref,Toss-up
+E14001098,Birmingham Perry Barr,West Midlands,Ind,26.0,8.4,11.0,2.4,10.6,0.0,0.0,41.6,0.048,0.0,0.014,0.0,0.002,0.0,0.0,0.936,Oth,Likely Oth
+E14001099,Birmingham Selly Oak,West Midlands,Lab,36.0,10.8,23.0,3.9,18.2,0.0,0.0,8.2,0.82,0.0,0.115,0.0,0.064,0.0,0.0,0.001,Lab,Likely Lab
+E14001100,Birmingham Yardley,West Midlands,Lab,22.3,7.0,20.2,6.5,7.7,0.0,0.0,36.3,0.093,0.0,0.074,0.004,0.001,0.0,0.0,0.828,Oth,Likely Oth
+E14001101,Bishop Auckland,North East,Lab,34.4,17.8,38.0,1.9,5.2,0.0,0.0,2.7,0.38,0.028,0.592,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
+E14001102,Blackburn,North West,Ind,19.5,7.1,18.6,1.5,7.0,0.0,0.0,46.3,0.006,0.0,0.012,0.0,0.0,0.0,0.0,0.982,Oth,Safe Oth
+E14001103,Blackley and Middleton South,North West,Lab,43.7,6.9,30.8,3.0,12.8,0.0,0.0,2.9,0.872,0.0,0.12,0.0,0.008,0.0,0.0,0.0,Lab,Likely Lab
+E14001104,Blackpool North and Fleetwood,North West,Lab,32.5,20.2,38.7,1.9,3.7,0.0,0.0,3.0,0.28,0.044,0.677,0.0,0.0,0.0,0.0,0.0,Ref,Lean Ref
+E14001105,Blackpool South,North West,Lab,38.6,10.3,42.0,1.7,4.4,0.0,0.0,3.0,0.394,0.009,0.597,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
+E14001106,Blaydon and Consett,North East,Lab,41.6,9.9,36.4,3.0,6.7,0.0,0.0,2.3,0.709,0.008,0.282,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
+E14001107,Blyth and Ashington,North East,Lab,39.5,9.8,40.5,1.9,5.5,0.0,0.0,2.8,0.484,0.008,0.508,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
+E14001108,Bognor Regis and Littlehampton,South East,Con,20.7,27.9,33.9,7.6,6.3,0.0,0.0,3.7,0.049,0.297,0.653,0.001,0.0,0.0,0.0,0.0,Ref,Lean Ref
+E14001109,Bolsover,East Midlands,Lab,32.5,17.0,37.1,1.9,8.8,0.0,0.0,2.7,0.352,0.028,0.619,0.0,0.001,0.0,0.0,0.0,Ref,Tilt Ref
+E14001110,Bolton North East,North West,Lab,30.6,15.3,35.4,1.9,11.1,0.0,0.0,5.6,0.377,0.023,0.586,0.0,0.013,0.0,0.0,0.0,Ref,Tilt Ref
+E14001111,Bolton South and Walkden,North West,Lab,33.4,7.5,35.7,2.0,8.9,0.0,0.0,12.4,0.466,0.001,0.523,0.0,0.007,0.0,0.0,0.004,Ref,Toss-up
+E14001112,Bolton West,North West,Lab,33.0,20.8,32.3,2.5,9.0,0.0,0.0,2.4,0.515,0.081,0.403,0.0,0.001,0.0,0.0,0.0,Lab,Toss-up
+E14001113,Bootle,North West,Lab,54.5,3.1,22.1,2.5,14.3,0.0,0.0,3.5,0.966,0.0,0.033,0.0,0.001,0.0,0.0,0.0,Lab,Safe Lab
+E14001114,Boston and Skegness,East Midlands,RUK,13.1,25.1,48.2,2.8,6.2,0.0,0.0,4.6,0.002,0.026,0.972,0.0,0.0,0.0,0.0,0.0,Ref,Safe Ref
+E14001115,Bournemouth East,South West,Lab,34.1,26.2,22.3,4.2,7.9,0.0,0.0,5.2,0.67,0.233,0.096,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
+E14001116,Bournemouth West,South West,Lab,30.0,23.4,28.8,6.2,8.9,0.0,0.0,2.8,0.45,0.21,0.329,0.0,0.011,0.0,0.0,0.0,Lab,Toss-up
+E14001117,Bracknell,South East,Lab,24.7,30.6,28.0,6.8,6.5,0.0,0.0,3.4,0.203,0.492,0.304,0.001,0.0,0.0,0.0,0.0,Con,Toss-up
+E14001118,Bradford East,Yorkshire and The Humber,Lab,29.1,6.0,18.5,3.2,9.7,0.0,0.0,33.5,0.317,0.0,0.063,0.0,0.004,0.0,0.0,0.615,Oth,Tilt Oth
+E14001119,Bradford South,Yorkshire and The Humber,Lab,28.4,9.8,36.3,1.6,11.2,0.0,0.0,12.8,0.284,0.008,0.684,0.0,0.019,0.0,0.0,0.004,Ref,Lean Ref
+E14001120,Bradford West,Yorkshire and The Humber,Lab,23.4,6.1,11.3,1.5,14.8,0.0,0.0,42.8,0.02,0.0,0.006,0.0,0.005,0.0,0.0,0.968,Oth,Safe Oth
+E14001121,Braintree,East of England,Con,19.1,29.9,35.2,4.1,7.9,0.0,0.0,3.8,0.02,0.316,0.663,0.0,0.0,0.0,0.0,0.0,Ref,Lean Ref
+E14001122,Brent East,London,Lab,41.5,14.0,8.7,5.4,19.1,0.0,0.0,11.3,0.943,0.002,0.002,0.004,0.048,0.0,0.0,0.0,Lab,Likely Lab
+E14001123,Brent West,London,Lab,35.5,33.5,8.5,4.7,9.8,0.0,0.0,8.1,0.571,0.405,0.012,0.004,0.007,0.0,0.0,0.0,Lab,Tilt Lab
+E14001124,Brentford and Isleworth,London,Lab,36.5,21.2,12.1,6.9,14.5,0.0,0.0,8.8,0.88,0.073,0.005,0.017,0.023,0.0,0.0,0.001,Lab,Likely Lab
+E14001125,Brentwood and Ongar,East of England,Con,15.7,32.6,34.7,8.8,5.4,0.0,0.0,2.8,0.006,0.425,0.567,0.001,0.0,0.0,0.0,0.0,Ref,Tilt Ref
+E14001126,Bridgwater,South West,Con,19.2,25.3,35.1,10.5,6.4,0.0,0.0,3.5,0.03,0.19,0.776,0.004,0.0,0.0,0.0,0.0,Ref,Lean Ref
+E14001127,Bridlington and The Wolds,Yorkshire and The Humber,Con,19.3,29.6,35.2,5.3,5.4,0.0,0.0,5.2,0.022,0.3,0.678,0.0,0.0,0.0,0.0,0.0,Ref,Lean Ref
+E14001128,Brigg and Immingham,Yorkshire and The Humber,Con,20.7,31.1,36.3,2.5,6.1,0.0,0.0,3.3,0.026,0.312,0.661,0.0,0.0,0.0,0.0,0.0,Ref,Lean Ref
+E14001129,Brighton Kemptown and Peacehaven,South East,Lab,35.7,14.8,3.7,6.9,31.2,0.0,0.0,7.7,0.656,0.011,0.014,0.001,0.317,0.0,0.0,0.0,Lab,Lean Lab
+E14001130,Brighton Pavilion,South East,Green,19.1,6.1,8.8,2.3,60.1,0.0,0.0,3.5,0.001,0.0,0.0,0.0,0.999,0.0,0.0,0.0,Grn,Safe Grn
+E14001131,Bristol Central,South West,Green,22.2,4.0,5.0,2.1,64.0,0.0,0.0,2.8,0.001,0.0,0.0,0.0,0.999,0.0,0.0,0.0,Grn,Safe Grn
+E14001132,Bristol East,South West,Lab,35.7,9.8,3.4,4.0,41.1,0.0,0.0,5.9,0.31,0.001,0.012,0.0,0.677,0.0,0.0,0.0,Grn,Lean Grn
+E14001133,Bristol North East,South West,Lab,35.9,10.1,19.8,3.2,25.9,0.0,0.0,5.1,0.758,0.006,0.062,0.0,0.173,0.0,0.0,0.0,Lab,Lean Lab
+E14001134,Bristol North West,South West,Lab,40.0,10.3,15.2,6.1,25.7,0.0,0.0,2.6,0.879,0.001,0.023,0.001,0.095,0.0,0.0,0.0,Lab,Likely Lab
+E14001135,Bristol South,South West,Lab,32.0,7.3,20.1,4.0,34.3,0.0,0.0,2.3,0.41,0.002,0.058,0.0,0.53,0.0,0.0,0.0,Grn,Toss-up
+E14001136,Broadland and Fakenham,East of England,Con,22.8,28.7,30.4,7.5,7.5,0.0,0.0,3.1,0.134,0.425,0.439,0.002,0.0,0.0,0.0,0.0,Ref,Toss-up
+E14001137,Bromley and Biggin Hill,London,Con,24.7,35.0,25.1,6.0,6.8,0.0,0.0,2.4,0.155,0.69,0.154,0.0,0.0,0.0,0.0,0.0,Con,Lean Con
+E14001138,Bromsgrove,West Midlands,Con,18.8,30.7,29.6,10.6,4.8,0.0,0.0,5.4,0.045,0.546,0.404,0.005,0.0,0.0,0.0,0.0,Con,Toss-up
+E14001139,Broxbourne,East of England,Con,20.7,32.5,32.0,4.3,7.8,0.0,0.0,2.8,0.049,0.522,0.428,0.0,0.0,0.0,0.0,0.0,Con,Toss-up
+E14001140,Broxtowe,East Midlands,Lab,35.1,17.3,30.6,4.5,8.0,0.0,0.0,4.5,0.658,0.034,0.306,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
+E14001141,Buckingham and Bletchley,South East,Lab,29.9,30.7,24.5,5.3,6.6,0.0,0.0,3.0,0.406,0.44,0.152,0.0,0.0,0.0,0.0,0.0,Con,Toss-up
+E14001142,Burnley,North West,Lab,25.6,14.9,33.8,17.3,5.0,0.0,0.0,3.4,0.251,0.022,0.614,0.113,0.0,0.0,0.0,0.0,Ref,Tilt Ref
+E14001143,Burton and Uttoxeter,West Midlands,Lab,28.0,23.2,35.0,2.2,5.8,0.0,0.0,5.7,0.23,0.151,0.619,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
+E14001144,Bury North,North West,Lab,35.9,22.7,27.4,1.8,5.0,0.0,0.0,7.2,0.722,0.103,0.174,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
+E14001145,Bury South,North West,Lab,38.1,17.9,28.0,2.6,7.9,0.0,0.0,5.5,0.819,0.026,0.155,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
+E14001146,Bury St Edmunds and Stowmarket,East of England,Lab,25.1,25.6,29.1,3.7,12.1,0.0,0.0,4.3,0.256,0.335,0.394,0.0,0.015,0.0,0.0,0.0,Ref,Toss-up
+E14001147,Calder Valley,Yorkshire and The Humber,Lab,37.5,21.3,26.3,3.3,8.5,0.0,0.0,3.2,0.797,0.071,0.132,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
+E14001148,Camborne and Redruth,South West,Lab,34.5,17.2,33.3,4.8,6.5,0.0,0.0,3.7,0.559,0.032,0.409,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
+E14001149,Cambridge,East of England,Lab,35.6,9.3,2.0,14.2,32.6,0.0,0.0,6.2,0.616,0.0,0.0,0.011,0.373,0.0,0.0,0.0,Lab,Tilt Lab
+E14001150,Cannock Chase,West Midlands,Lab,27.5,20.4,41.0,1.6,6.4,0.0,0.0,3.0,0.082,0.04,0.878,0.0,0.0,0.0,0.0,0.0,Ref,Likely Ref
+E14001151,Canterbury,South East,Lab,33.6,17.8,22.1,5.3,18.6,0.0,0.0,2.6,0.733,0.056,0.128,0.0,0.083,0.0,0.0,0.0,Lab,Lean Lab
+E14001152,Carlisle,North West,Lab,32.6,20.0,35.6,3.6,5.0,0.0,0.0,3.3,0.403,0.052,0.544,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
+E14001153,Carshalton and Wallington,London,LD,8.8,22.1,20.7,38.4,5.8,0.0,0.0,4.2,0.002,0.045,0.034,0.919,0.0,0.0,0.0,0.0,LD,Likely LD
+E14001154,Castle Point,East of England,Con,16.1,29.3,41.8,2.6,6.9,0.0,0.0,3.4,0.003,0.118,0.879,0.0,0.0,0.0,0.0,0.0,Ref,Likely Ref
+E14001155,Central Devon,South West,Con,24.1,32.1,23.7,10.1,7.2,0.0,0.0,2.9,0.216,0.606,0.171,0.006,0.001,0.0,0.0,0.0,Con,Tilt Con
+E14001156,Central Suffolk and North Ipswich,East of England,Con,15.8,29.2,29.6,8.2,13.8,0.0,0.0,3.4,0.02,0.483,0.484,0.002,0.011,0.0,0.0,0.0,Ref,Toss-up
+E14001157,Chatham and Aylesford,South East,Lab,25.5,21.1,38.5,3.3,7.7,0.0,0.0,3.8,0.091,0.062,0.846,0.0,0.0,0.0,0.0,0.0,Ref,Likely Ref
+E14001158,Cheadle,North West,LD,11.6,19.4,16.4,42.9,5.3,0.0,0.0,4.4,0.003,0.011,0.007,0.978,0.0,0.0,0.0,0.0,LD,Safe LD
+E14001159,Chelmsford,East of England,LD,8.0,25.5,21.8,35.8,5.3,0.0,0.0,3.7,0.002,0.136,0.053,0.808,0.0,0.0,0.0,0.0,LD,Likely LD
+E14001160,Chelsea and Fulham,London,Lab,31.2,40.2,8.3,5.3,11.5,0.0,0.0,3.4,0.179,0.785,0.0,0.007,0.029,0.0,0.0,0.0,Con,Lean Con
+E14001161,Cheltenham,South West,LD,3.8,31.5,3.3,46.7,10.4,0.0,0.0,4.3,0.001,0.068,0.003,0.927,0.0,0.0,0.0,0.0,LD,Likely LD
+E14001162,Chesham and Amersham,South East,LD,4.5,30.8,15.3,40.8,5.0,0.0,0.0,3.7,0.001,0.156,0.004,0.838,0.0,0.0,0.0,0.0,LD,Likely LD
+E14001163,Chester North and Neston,North West,Lab,40.8,19.1,21.1,3.3,12.5,0.0,0.0,3.2,0.924,0.027,0.046,0.0,0.002,0.0,0.0,0.0,Lab,Likely Lab
+E14001164,Chester South and Eddisbury,North West,Con,26.1,37.7,18.5,7.0,5.7,0.0,0.0,5.0,0.139,0.824,0.036,0.0,0.0,0.0,0.0,0.0,Con,Likely Con
+E14001165,Chesterfield,East Midlands,Lab,38.8,14.5,32.7,3.5,7.2,0.0,0.0,3.3,0.724,0.017,0.259,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
+E14001166,Chichester,South East,LD,4.2,20.4,23.3,43.5,5.7,0.0,0.0,2.9,0.001,0.015,0.028,0.956,0.0,0.0,0.0,0.0,LD,Safe LD
+E14001167,Chingford and Woodford Green,London,Con,18.1,31.7,13.6,1.9,4.8,0.0,0.0,29.9,0.021,0.552,0.022,0.0,0.0,0.0,0.0,0.404,Con,Tilt Con
+E14001168,Chippenham,South West,LD,5.4,23.3,21.1,40.3,6.4,0.0,0.0,3.6,0.001,0.045,0.03,0.924,0.0,0.0,0.0,0.0,LD,Likely LD
+E14001169,Chipping Barnet,London,Lab,36.3,37.7,11.2,3.3,8.3,0.0,0.0,3.2,0.463,0.526,0.009,0.002,0.0,0.0,0.0,0.0,Con,Toss-up
+E14001171,Christchurch,South West,Con,11.2,32.3,28.9,15.5,5.2,0.0,0.0,6.8,0.002,0.612,0.36,0.025,0.0,0.0,0.0,0.0,Con,Tilt Con
+E14001172,Cities of London and Westminster,London,Lab,31.0,34.4,7.7,7.2,14.6,0.0,0.0,5.2,0.366,0.55,0.0,0.009,0.075,0.0,0.0,0.0,Con,Tilt Con
+E14001173,City of Durham,North East,Lab,40.2,9.3,29.4,9.1,9.5,0.0,0.0,2.5,0.815,0.002,0.172,0.007,0.004,0.0,0.0,0.0,Lab,Likely Lab
+E14001174,Clacton,East of England,RUK,11.6,20.7,54.4,3.6,6.1,0.0,0.0,3.6,0.001,0.011,0.988,0.0,0.0,0.0,0.0,0.0,Ref,Safe Ref
+E14001175,Clapham and Brixton Hill,London,Lab,45.3,8.6,6.3,10.9,25.6,0.0,0.0,3.4,0.918,0.0,0.0,0.007,0.076,0.0,0.0,0.0,Lab,Likely Lab
+E14001176,Colchester,East of England,Lab,36.0,18.5,27.3,8.7,7.2,0.0,0.0,2.3,0.745,0.052,0.198,0.004,0.001,0.0,0.0,0.0,Lab,Lean Lab
+E14001177,Colne Valley,Yorkshire and The Humber,Lab,34.5,27.0,24.6,2.7,8.1,0.0,0.0,3.0,0.637,0.235,0.128,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
+E14001178,Congleton,North West,Lab,31.4,27.8,26.2,3.3,4.6,0.0,0.0,6.6,0.471,0.323,0.206,0.0,0.0,0.0,0.0,0.001,Lab,Toss-up
+E14001179,Corby and East Northamptonshire,East Midlands,Lab,34.9,21.8,32.1,2.5,5.9,0.0,0.0,2.8,0.579,0.082,0.339,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
+E14001180,Coventry East,West Midlands,Lab,40.5,12.4,29.4,2.0,9.4,0.0,0.0,6.2,0.841,0.009,0.149,0.0,0.001,0.0,0.0,0.0,Lab,Likely Lab
+E14001181,Coventry North West,West Midlands,Lab,39.2,14.8,30.9,2.7,9.2,0.0,0.0,3.1,0.776,0.016,0.207,0.0,0.001,0.0,0.0,0.0,Lab,Lean Lab
+E14001182,Coventry South,West Midlands,Lab,38.8,20.7,20.4,4.0,10.5,0.0,0.0,5.6,0.9,0.039,0.052,0.0,0.01,0.0,0.0,0.0,Lab,Likely Lab
+E14001183,Cramlington and Killingworth,North East,Lab,40.6,13.4,34.1,2.5,5.6,0.0,0.0,3.9,0.744,0.013,0.244,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
+E14001184,Crawley,South East,Lab,31.3,19.5,33.1,2.6,6.7,0.0,0.0,6.7,0.453,0.065,0.481,0.0,0.001,0.0,0.0,0.0,Ref,Toss-up
+E14001185,Crewe and Nantwich,North West,Lab,36.6,16.7,34.5,2.7,5.4,0.0,0.0,4.1,0.599,0.023,0.378,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
+E14001186,Croydon East,London,Lab,34.9,24.6,20.8,5.0,11.6,0.0,0.0,3.1,0.749,0.172,0.077,0.0,0.002,0.0,0.0,0.0,Lab,Lean Lab
+E14001187,Croydon South,London,Con,29.5,40.1,13.1,6.0,7.6,0.0,0.0,3.7,0.15,0.836,0.013,0.001,0.0,0.0,0.0,0.0,Con,Likely Con
+E14001188,Croydon West,London,Lab,44.3,14.1,9.9,7.9,17.9,0.0,0.0,5.9,0.959,0.001,0.008,0.011,0.022,0.0,0.0,0.0,Lab,Safe Lab
+E14001189,Dagenham and Rainham,London,Lab,35.0,12.4,36.3,1.5,11.3,0.0,0.0,3.5,0.485,0.008,0.498,0.0,0.008,0.0,0.0,0.0,Ref,Toss-up
+E14001190,Darlington,North East,Lab,31.3,29.6,26.3,2.3,7.7,0.0,0.0,2.9,0.428,0.377,0.194,0.0,0.0,0.0,0.0,0.0,Lab,Toss-up
+E14001191,Dartford,South East,Lab,25.0,26.7,33.5,3.0,8.8,0.0,0.0,3.0,0.156,0.283,0.56,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
+E14001192,Daventry,East Midlands,Con,19.3,30.3,30.8,9.0,7.4,0.0,0.0,3.2,0.047,0.488,0.464,0.002,0.0,0.0,0.0,0.0,Con,Toss-up
+E14001193,Derby North,East Midlands,Lab,37.5,17.6,29.9,2.5,9.6,0.0,0.0,2.9,0.751,0.024,0.223,0.0,0.002,0.0,0.0,0.0,Lab,Lean Lab
+E14001194,Derby South,East Midlands,Lab,31.7,9.6,36.3,2.6,6.4,0.0,0.0,13.4,0.384,0.005,0.605,0.0,0.001,0.0,0.0,0.004,Ref,Tilt Ref
+E14001195,Derbyshire Dales,East Midlands,Lab,27.6,34.1,22.6,6.0,6.5,0.0,0.0,3.3,0.278,0.617,0.105,0.0,0.0,0.0,0.0,0.0,Con,Tilt Con
+E14001196,Dewsbury and Batley,Yorkshire and The Humber,Ind,15.4,8.4,23.4,2.6,8.2,0.0,0.0,42.0,0.005,0.0,0.041,0.0,0.0,0.0,0.0,0.954,Oth,Safe Oth
+E14001197,Didcot and Wantage,South East,LD,10.0,24.1,19.2,36.1,7.6,0.0,0.0,3.1,0.003,0.104,0.03,0.863,0.0,0.0,0.0,0.0,LD,Likely LD
+E14001198,Doncaster Central,Yorkshire and The Humber,Lab,37.8,14.6,34.8,1.8,5.9,0.0,0.0,5.2,0.629,0.017,0.354,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
+E14001199,Doncaster East and the Isle of Axholme,Yorkshire and The Humber,Lab,30.8,23.7,36.9,1.8,4.4,0.0,0.0,2.4,0.255,0.119,0.626,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
+E14001200,Doncaster North,Yorkshire and The Humber,Lab,44.9,18.8,5.4,2.8,9.6,0.0,0.0,18.5,0.95,0.02,0.025,0.0,0.0,0.0,0.0,0.005,Lab,Safe Lab
+E14001201,Dorking and Horley,South East,LD,5.4,25.6,21.2,37.1,7.1,0.0,0.0,3.6,0.001,0.112,0.038,0.849,0.0,0.0,0.0,0.0,LD,Likely LD
+E14001202,Dover and Deal,South East,Lab,32.4,14.9,38.4,3.1,6.8,0.0,0.0,4.4,0.312,0.019,0.669,0.0,0.0,0.0,0.0,0.0,Ref,Lean Ref
+E14001203,Droitwich and Evesham,West Midlands,Con,14.8,36.1,29.0,7.4,9.8,0.0,0.0,2.8,0.007,0.755,0.237,0.001,0.0,0.0,0.0,0.0,Con,Lean Con
+E14001204,Dudley,West Midlands,Lab,25.7,21.6,39.9,2.0,5.0,0.0,0.0,6.0,0.066,0.052,0.882,0.0,0.0,0.0,0.0,0.0,Ref,Likely Ref
+E14001205,Dulwich and West Norwood,London,Lab,48.8,7.0,6.1,5.6,29.6,0.0,0.0,2.9,0.923,0.0,0.0,0.001,0.075,0.0,0.0,0.0,Lab,Likely Lab
+E14001206,Dunstable and Leighton Buzzard,East of England,Lab,24.1,27.7,30.5,9.2,6.1,0.0,0.0,2.3,0.179,0.381,0.436,0.004,0.0,0.0,0.0,0.0,Ref,Toss-up
+E14001207,Ealing Central and Acton,London,Lab,37.8,14.8,8.6,10.2,21.7,0.0,0.0,6.9,0.892,0.005,0.0,0.016,0.086,0.0,0.0,0.0,Lab,Likely Lab
+E14001208,Ealing North,London,Lab,38.8,16.0,14.4,4.5,15.8,0.0,0.0,10.6,0.942,0.009,0.026,0.002,0.021,0.0,0.0,0.001,Lab,Likely Lab
+E14001209,Ealing Southall,London,Lab,40.2,12.8,10.1,4.8,15.6,0.0,0.0,16.6,0.953,0.001,0.016,0.002,0.018,0.0,0.0,0.009,Lab,Safe Lab
+E14001210,Earley and Woodley,South East,Lab,35.5,38.5,3.6,9.0,9.6,0.0,0.0,3.9,0.391,0.59,0.013,0.006,0.0,0.0,0.0,0.0,Con,Tilt Con
+E14001211,Easington,North East,Lab,38.6,7.1,43.3,1.4,4.3,0.0,0.0,5.5,0.344,0.005,0.651,0.0,0.0,0.0,0.0,0.0,Ref,Lean Ref
+E14001212,East Grinstead and Uckfield,South East,Con,15.4,34.6,4.2,20.3,13.8,0.0,0.0,11.7,0.012,0.845,0.012,0.115,0.012,0.0,0.0,0.003,Con,Likely Con
+E14001213,East Ham,London,Lab,41.8,8.3,5.8,2.4,20.5,0.0,0.0,21.2,0.926,0.0,0.0,0.0,0.056,0.0,0.0,0.017,Lab,Likely Lab
+E14001214,East Hampshire,South East,Con,6.4,31.8,20.3,31.3,6.6,0.0,0.0,3.6,0.002,0.498,0.035,0.464,0.001,0.0,0.0,0.0,Con,Toss-up
+E14001215,East Surrey,South East,Con,13.8,33.5,26.1,13.3,8.0,0.0,0.0,5.2,0.01,0.76,0.213,0.016,0.001,0.0,0.0,0.0,Con,Lean Con
+E14001216,East Thanet,South East,Lab,33.3,16.3,34.4,1.8,10.4,0.0,0.0,3.9,0.487,0.028,0.481,0.0,0.003,0.0,0.0,0.0,Lab,Toss-up
+E14001217,East Wiltshire,South West,Con,17.6,33.7,27.1,12.7,6.1,0.0,0.0,3.0,0.031,0.731,0.225,0.012,0.0,0.0,0.0,0.0,Con,Lean Con
+E14001218,East Worthing and Shoreham,South East,Lab,38.2,19.9,26.9,4.0,7.5,0.0,0.0,3.5,0.817,0.046,0.137,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
+E14001219,Eastbourne,South East,LD,4.1,20.1,21.5,45.8,5.5,0.0,0.0,2.9,0.001,0.011,0.017,0.97,0.0,0.0,0.0,0.0,LD,Safe LD
+E14001220,Eastleigh,South East,LD,9.8,25.8,22.3,31.4,7.2,0.0,0.0,3.5,0.004,0.253,0.105,0.638,0.0,0.0,0.0,0.0,LD,Tilt LD
+E14001221,Edmonton and Winchmore Hill,London,Lab,40.9,16.2,14.8,5.0,14.6,0.0,0.0,8.5,0.954,0.009,0.028,0.001,0.009,0.0,0.0,0.0,Lab,Safe Lab
+E14001222,Ellesmere Port and Bromborough,North West,Lab,47.1,9.1,29.0,3.6,8.5,0.0,0.0,2.7,0.928,0.008,0.064,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
+E14001223,Eltham and Chislehurst,London,Lab,36.7,21.7,25.8,3.2,8.6,0.0,0.0,3.9,0.781,0.08,0.139,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
+E14001224,Ely and East Cambridgeshire,East of England,LD,11.7,27.2,20.6,30.1,6.6,0.0,0.0,3.8,0.007,0.358,0.072,0.564,0.0,0.0,0.0,0.0,LD,Tilt LD
+E14001225,Enfield North,London,Lab,40.0,16.6,19.4,4.1,13.2,0.0,0.0,6.7,0.933,0.017,0.043,0.0,0.006,0.0,0.0,0.0,Lab,Likely Lab
+E14001226,Epping Forest,East of England,Con,24.7,41.8,4.2,9.5,8.9,0.0,0.0,10.8,0.046,0.934,0.015,0.003,0.0,0.0,0.0,0.001,Con,Likely Con
+E14001227,Epsom and Ewell,South East,LD,10.4,27.5,16.9,35.4,5.2,0.0,0.0,4.5,0.002,0.219,0.012,0.767,0.0,0.0,0.0,0.0,LD,Lean LD
+E14001228,Erewash,East Midlands,Lab,32.7,18.1,37.2,3.1,6.2,0.0,0.0,2.7,0.358,0.034,0.607,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
+E14001229,Erith and Thamesmead,London,Lab,44.0,10.9,21.9,3.3,14.7,0.0,0.0,5.1,0.95,0.0,0.037,0.0,0.012,0.0,0.0,0.0,Lab,Safe Lab
+E14001230,Esher and Walton,South East,LD,3.9,26.6,13.9,47.8,4.8,0.0,0.0,3.1,0.0,0.023,0.001,0.976,0.0,0.0,0.0,0.0,LD,Safe LD
+E14001231,Exeter,South West,Lab,35.1,10.7,17.6,7.0,26.1,0.0,0.0,3.4,0.754,0.002,0.04,0.0,0.203,0.0,0.0,0.0,Lab,Lean Lab
+E14001232,Exmouth and Exeter East,South West,Con,20.6,27.8,23.5,17.9,5.8,0.0,0.0,4.2,0.16,0.48,0.22,0.14,0.0,0.0,0.0,0.0,Con,Toss-up
+E14001233,Fareham and Waterlooville,South East,Con,15.7,31.7,29.3,14.4,5.7,0.0,0.0,3.2,0.013,0.579,0.389,0.019,0.0,0.0,0.0,0.0,Con,Tilt Con
+E14001234,Farnham and Bordon,South East,Con,9.2,31.3,18.6,30.8,6.8,0.0,0.0,3.4,0.003,0.513,0.026,0.458,0.0,0.0,0.0,0.0,Con,Toss-up
+E14001235,Faversham and Mid Kent,South East,Con,19.8,27.3,33.1,6.1,11.1,0.0,0.0,2.6,0.048,0.304,0.645,0.0,0.003,0.0,0.0,0.0,Ref,Tilt Ref
+E14001236,Feltham and Heston,London,Lab,34.3,17.6,22.3,2.9,9.5,0.0,0.0,13.3,0.811,0.051,0.122,0.0,0.007,0.0,0.0,0.008,Lab,Likely Lab
+E14001237,Filton and Bradley Stoke,South West,Lab,37.6,21.6,22.8,4.5,10.4,0.0,0.0,3.1,0.837,0.079,0.082,0.0,0.002,0.0,0.0,0.0,Lab,Likely Lab
+E14001238,Finchley and Golders Green,London,Lab,38.2,36.6,7.4,4.9,8.8,0.0,0.0,4.2,0.563,0.424,0.0,0.01,0.002,0.0,0.0,0.0,Lab,Tilt Lab
+E14001239,Folkestone and Hythe,South East,Lab,27.9,18.7,38.2,2.5,9.5,0.0,0.0,3.2,0.164,0.039,0.796,0.0,0.001,0.0,0.0,0.0,Ref,Lean Ref
+E14001240,Forest of Dean,South West,Lab,25.6,30.3,28.1,3.4,10.4,0.0,0.0,2.3,0.221,0.476,0.302,0.0,0.002,0.0,0.0,0.0,Con,Toss-up
+E14001241,Frome and East Somerset,South West,LD,8.6,18.6,22.7,33.3,12.3,0.0,0.0,4.5,0.002,0.058,0.139,0.795,0.007,0.0,0.0,0.0,LD,Lean LD
+E14001242,Fylde,North West,Con,23.4,31.9,26.9,2.9,4.3,0.0,0.0,10.6,0.149,0.596,0.254,0.0,0.0,0.0,0.0,0.002,Con,Tilt Con
+E14001243,Gainsborough,East Midlands,Con,19.6,31.7,32.5,7.7,5.6,0.0,0.0,2.7,0.035,0.476,0.489,0.001,0.0,0.0,0.0,0.0,Ref,Toss-up
+E14001244,Gateshead Central and Whickham,North East,Lab,38.5,8.0,34.5,6.9,8.9,0.0,0.0,3.1,0.64,0.005,0.351,0.003,0.0,0.0,0.0,0.0,Lab,Tilt Lab
+E14001245,Gedling,East Midlands,Lab,40.2,17.5,29.2,3.1,7.4,0.0,0.0,2.6,0.838,0.021,0.14,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
+E14001246,Gillingham and Rainham,South East,Lab,30.8,20.0,36.6,3.1,6.3,0.0,0.0,3.2,0.309,0.056,0.634,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
+E14001247,Glastonbury and Somerton,South West,LD,4.2,22.4,24.7,37.8,7.5,0.0,0.0,3.5,0.001,0.051,0.086,0.861,0.0,0.0,0.0,0.0,LD,Likely LD
+E14001248,Gloucester,South West,Lab,30.1,22.8,29.8,5.9,6.1,0.0,0.0,5.3,0.442,0.179,0.377,0.001,0.0,0.0,0.0,0.0,Lab,Toss-up
+E14001249,Godalming and Ash,South East,Con,3.5,37.6,14.9,37.0,3.9,0.0,0.0,3.1,0.001,0.52,0.007,0.472,0.0,0.0,0.0,0.0,Con,Toss-up
+E14001250,Goole and Pocklington,Yorkshire and The Humber,Con,21.8,35.0,28.8,4.7,6.5,0.0,0.0,3.2,0.064,0.692,0.244,0.0,0.0,0.0,0.0,0.0,Con,Lean Con
+E14001251,Gorton and Denton,North West,Lab,40.3,5.8,21.4,2.7,19.0,0.0,0.0,10.8,0.914,0.0,0.054,0.0,0.031,0.0,0.0,0.001,Lab,Likely Lab
+E14001252,Gosport,South East,Con,18.1,35.8,29.5,6.5,6.3,0.0,0.0,3.8,0.022,0.729,0.249,0.0,0.0,0.0,0.0,0.0,Con,Lean Con
+E14001253,Grantham and Bourne,East Midlands,Con,18.1,31.9,31.2,3.1,7.4,0.0,0.0,8.3,0.023,0.53,0.446,0.0,0.0,0.0,0.0,0.0,Con,Toss-up
+E14001254,Gravesham,South East,Lab,30.1,24.2,34.7,2.0,6.1,0.0,0.0,2.9,0.305,0.157,0.537,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
+E14001255,Great Grimsby and Cleethorpes,Yorkshire and The Humber,Lab,32.6,15.4,43.1,1.7,4.3,0.0,0.0,2.8,0.146,0.014,0.84,0.0,0.0,0.0,0.0,0.0,Ref,Likely Ref
+E14001256,Great Yarmouth,East of England,RUK,23.1,17.8,46.9,2.1,6.6,0.0,0.0,3.5,0.009,0.013,0.978,0.0,0.0,0.0,0.0,0.0,Ref,Safe Ref
+E14001257,Greenwich and Woolwich,London,Lab,44.8,9.5,10.3,6.7,24.2,0.0,0.0,4.5,0.933,0.0,0.0,0.003,0.064,0.0,0.0,0.0,Lab,Likely Lab
+E14001258,Guildford,South East,LD,5.6,25.9,14.1,42.5,8.8,0.0,0.0,3.1,0.001,0.051,0.002,0.945,0.001,0.0,0.0,0.0,LD,Likely LD
+E14001259,Hackney North and Stoke Newington,London,Lab,46.8,6.5,5.1,2.6,34.8,0.0,0.0,4.2,0.835,0.0,0.0,0.0,0.165,0.0,0.0,0.0,Lab,Likely Lab
+E14001260,Hackney South and Shoreditch,London,Lab,45.5,3.9,5.4,3.1,37.5,0.0,0.0,4.6,0.741,0.0,0.0,0.0,0.259,0.0,0.0,0.0,Lab,Lean Lab
+E14001261,Halesowen,West Midlands,Lab,31.5,19.3,37.0,3.2,6.2,0.0,0.0,2.8,0.322,0.043,0.634,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
+E14001262,Halifax,Yorkshire and The Humber,Lab,29.2,13.6,33.8,3.2,10.7,0.0,0.0,9.5,0.384,0.021,0.575,0.0,0.019,0.0,0.0,0.001,Ref,Tilt Ref
+E14001263,Hamble Valley,South East,Con,10.8,32.2,24.7,23.4,6.1,0.0,0.0,2.9,0.003,0.65,0.151,0.196,0.0,0.0,0.0,0.0,Con,Tilt Con
+E14001264,Hammersmith and Chiswick,London,Lab,42.5,17.0,8.6,7.5,19.0,0.0,0.0,5.4,0.947,0.006,0.0,0.009,0.038,0.0,0.0,0.0,Lab,Likely Lab
+E14001265,Hampstead and Highgate,London,Lab,39.2,14.7,7.4,10.0,24.7,0.0,0.0,3.9,0.866,0.004,0.0,0.015,0.115,0.0,0.0,0.0,Lab,Likely Lab
+E14001266,"Harborough, Oadby and Wigston",East Midlands,Con,25.9,36.1,19.8,6.1,9.5,0.0,0.0,2.5,0.173,0.769,0.058,0.0,0.0,0.0,0.0,0.0,Con,Lean Con
+E14001267,Harlow,East of England,Lab,28.9,23.9,36.4,1.9,6.6,0.0,0.0,2.4,0.223,0.137,0.64,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
+E14001268,Harpenden and Berkhamsted,East of England,LD,5.4,26.8,12.7,46.0,6.0,0.0,0.0,3.1,0.001,0.03,0.001,0.967,0.0,0.0,0.0,0.0,LD,Safe LD
+E14001269,Harrogate and Knaresborough,Yorkshire and The Humber,LD,5.6,25.5,17.7,41.4,5.7,0.0,0.0,4.1,0.001,0.061,0.011,0.927,0.0,0.0,0.0,0.0,LD,Likely LD
+E14001270,Harrow East,London,Con,22.3,51.0,8.5,2.6,7.6,0.0,0.0,8.1,0.003,0.994,0.003,0.0,0.0,0.0,0.0,0.0,Con,Safe Con
+E14001271,Harrow West,London,Lab,37.0,30.0,9.1,3.8,8.2,0.0,0.0,11.8,0.737,0.242,0.01,0.006,0.002,0.0,0.0,0.002,Lab,Lean Lab
+E14001272,Hartlepool,North East,Lab,37.0,15.1,38.8,1.0,3.3,0.0,0.0,4.7,0.448,0.015,0.536,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
+E14001273,Harwich and North Essex,East of England,Con,22.5,29.6,32.3,5.0,7.4,0.0,0.0,3.2,0.09,0.412,0.498,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
+E14001274,Hastings and Rye,South East,Lab,35.4,16.4,29.1,3.2,12.6,0.0,0.0,3.2,0.698,0.029,0.265,0.0,0.008,0.0,0.0,0.0,Lab,Lean Lab
+E14001275,Havant,South East,Con,21.9,25.1,36.3,5.2,8.7,0.0,0.0,2.7,0.054,0.159,0.787,0.0,0.0,0.0,0.0,0.0,Ref,Lean Ref
+E14001276,Hayes and Harlington,London,Lab,43.4,18.8,18.0,2.6,10.0,0.0,0.0,7.1,0.956,0.012,0.03,0.0,0.002,0.0,0.0,0.0,Lab,Safe Lab
+E14001277,Hazel Grove,North West,LD,15.5,15.6,24.8,36.1,5.3,0.0,0.0,2.8,0.018,0.014,0.138,0.83,0.0,0.0,0.0,0.0,LD,Likely LD
+E14001278,Hemel Hempstead,East of England,Lab,32.1,20.7,31.4,6.3,6.6,0.0,0.0,2.9,0.509,0.095,0.395,0.001,0.0,0.0,0.0,0.0,Lab,Toss-up
+E14001279,Hendon,London,Lab,31.0,39.1,10.2,3.2,10.3,0.0,0.0,6.2,0.218,0.762,0.004,0.002,0.013,0.0,0.0,0.0,Con,Lean Con
+E14001280,Henley and Thame,South East,LD,4.7,28.5,15.9,40.8,5.9,0.0,0.0,4.2,0.001,0.108,0.006,0.884,0.0,0.0,0.0,0.0,LD,Likely LD
+E14001281,Hereford and South Herefordshire,West Midlands,Con,20.8,29.8,29.6,7.9,9.1,0.0,0.0,2.6,0.087,0.504,0.407,0.001,0.001,0.0,0.0,0.0,Con,Toss-up
+E14001282,Herne Bay and Sandwich,South East,Con,21.0,30.3,33.0,3.9,8.7,0.0,0.0,3.2,0.052,0.408,0.54,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
+E14001283,Hertford and Stortford,East of England,Lab,32.4,27.5,24.0,4.6,8.8,0.0,0.0,2.6,0.554,0.302,0.142,0.0,0.001,0.0,0.0,0.0,Lab,Tilt Lab
+E14001284,Hertsmere,East of England,Con,20.5,41.8,21.3,5.6,7.3,0.0,0.0,3.4,0.014,0.952,0.034,0.0,0.0,0.0,0.0,0.0,Con,Safe Con
+E14001285,Hexham,North East,Lab,41.4,38.4,3.7,3.1,6.2,0.0,0.0,7.3,0.617,0.37,0.013,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
+E14001286,Heywood and Middleton North,North West,Lab,32.8,12.1,38.5,3.4,1.8,0.0,0.0,11.4,0.328,0.01,0.661,0.0,0.0,0.0,0.0,0.001,Ref,Lean Ref
+E14001287,High Peak,East Midlands,Lab,37.8,25.4,23.3,2.2,8.1,0.0,0.0,3.1,0.8,0.123,0.077,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
+E14001288,Hinckley and Bosworth,East Midlands,Con,12.1,31.7,29.2,19.3,4.9,0.0,0.0,2.9,0.004,0.549,0.368,0.079,0.0,0.0,0.0,0.0,Con,Toss-up
+E14001289,Hitchin,East of England,Lab,37.0,26.4,21.2,6.1,6.6,0.0,0.0,2.6,0.78,0.157,0.062,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
+E14001290,Holborn and St Pancras,London,Lab,37.4,5.7,7.6,3.8,23.3,0.0,0.0,22.1,0.798,0.0,0.0,0.0,0.143,0.0,0.0,0.059,Lab,Lean Lab
+E14001291,Honiton and Sidmouth,South West,LD,4.1,26.0,20.7,40.9,4.4,0.0,0.0,4.0,0.001,0.067,0.022,0.91,0.0,0.0,0.0,0.0,LD,Likely LD
+E14001292,Hornchurch and Upminster,London,Con,19.4,27.1,38.8,3.7,7.9,0.0,0.0,3.1,0.012,0.131,0.858,0.0,0.0,0.0,0.0,0.0,Ref,Likely Ref
+E14001293,Hornsey and Friern Barnet,London,Lab,49.0,7.3,6.4,10.8,22.1,0.0,0.0,4.4,0.966,0.0,0.0,0.02,0.014,0.0,0.0,0.0,Lab,Safe Lab
+E14001294,Horsham,South East,LD,7.2,29.3,18.8,35.4,5.9,0.0,0.0,3.5,0.002,0.266,0.025,0.708,0.0,0.0,0.0,0.0,LD,Lean LD
+E14001295,Houghton and Sunderland South,North East,Lab,37.1,8.9,42.8,3.1,5.3,0.0,0.0,2.8,0.314,0.006,0.681,0.0,0.0,0.0,0.0,0.0,Ref,Lean Ref
+E14001296,Hove and Portslade,South East,Lab,42.7,10.1,13.9,4.5,21.0,0.0,0.0,7.8,0.952,0.001,0.019,0.001,0.027,0.0,0.0,0.0,Lab,Safe Lab
+E14001297,Huddersfield,Yorkshire and The Humber,Lab,27.9,10.8,19.8,2.7,35.9,0.0,0.0,2.8,0.247,0.002,0.055,0.0,0.696,0.0,0.0,0.0,Grn,Lean Grn
+E14001298,Huntingdon,East of England,Con,23.4,34.6,24.8,6.0,7.2,0.0,0.0,4.0,0.132,0.703,0.163,0.0,0.0,0.0,0.0,0.0,Con,Lean Con
+E14001299,Hyndburn,North West,Lab,24.5,20.7,34.2,2.0,15.7,0.0,0.0,2.9,0.195,0.126,0.626,0.0,0.052,0.0,0.0,0.0,Ref,Tilt Ref
+E14001300,Ilford North,London,Lab,26.1,15.8,10.4,1.7,6.4,0.0,0.0,39.6,0.085,0.007,0.004,0.0,0.0,0.0,0.0,0.904,Oth,Likely Oth
+E14001301,Ilford South,London,Lab,32.0,10.9,7.5,2.2,12.8,0.0,0.0,34.6,0.418,0.0,0.003,0.0,0.017,0.0,0.0,0.561,Oth,Tilt Oth
+E14001302,Ipswich,East of England,Lab,35.9,19.9,29.0,2.9,9.6,0.0,0.0,2.7,0.702,0.06,0.236,0.0,0.002,0.0,0.0,0.0,Lab,Lean Lab
+E14001303,Isle of Wight East,South East,Con,11.9,24.0,31.5,7.3,21.7,0.0,0.0,3.6,0.004,0.24,0.649,0.001,0.106,0.0,0.0,0.0,Ref,Tilt Ref
+E14001304,Isle of Wight West,South East,Lab,32.9,22.8,30.4,4.5,7.0,0.0,0.0,2.3,0.529,0.141,0.33,0.0,0.0,0.0,0.0,0.0,Lab,Toss-up
+E14001305,Islington North,London,Ind,24.8,3.6,5.6,2.5,12.0,0.0,0.0,51.4,0.005,0.0,0.0,0.0,0.005,0.0,0.0,0.99,Oth,Safe Oth
+E14001306,Islington South and Finsbury,London,Lab,41.2,6.6,9.4,6.2,31.9,0.0,0.0,4.6,0.771,0.0,0.0,0.0,0.229,0.0,0.0,0.0,Lab,Lean Lab
+E14001307,Jarrow and Gateshead East,North East,Lab,41.4,5.9,39.9,2.5,7.3,0.0,0.0,3.0,0.585,0.002,0.413,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
+E14001308,Keighley and Ilkley,Yorkshire and The Humber,Con,30.2,38.3,16.7,1.4,6.6,0.0,0.0,6.8,0.212,0.76,0.028,0.0,0.0,0.0,0.0,0.0,Con,Lean Con
+E14001309,Kenilworth and Southam,West Midlands,Con,17.3,34.8,20.4,16.0,8.0,0.0,0.0,3.5,0.026,0.864,0.058,0.052,0.0,0.0,0.0,0.0,Con,Likely Con
+E14001310,Kensington and Bayswater,London,Lab,32.8,35.6,7.1,4.5,12.6,0.0,0.0,7.5,0.384,0.562,0.0,0.004,0.05,0.0,0.0,0.0,Con,Tilt Con
+E14001311,Kettering,East Midlands,Lab,28.2,20.5,31.4,1.6,14.4,0.0,0.0,3.9,0.379,0.128,0.45,0.0,0.044,0.0,0.0,0.0,Ref,Toss-up
+E14001312,Kingston and Surbiton,London,LD,9.1,14.6,13.9,46.1,10.4,0.0,0.0,5.9,0.0,0.002,0.001,0.996,0.0,0.0,0.0,0.0,LD,Safe LD
+E14001313,Kingston upon Hull East,Yorkshire and The Humber,Lab,33.6,5.8,44.3,6.2,7.3,0.0,0.0,2.8,0.174,0.003,0.823,0.0,0.0,0.0,0.0,0.0,Ref,Likely Ref
+E14001314,Kingston upon Hull North and Cottingham,Yorkshire and The Humber,Lab,40.0,9.0,33.1,4.7,7.9,0.0,0.0,5.2,0.742,0.007,0.25,0.0,0.001,0.0,0.0,0.0,Lab,Lean Lab
+E14001315,Kingston upon Hull West and Haltemprice,Yorkshire and The Humber,Lab,38.7,12.5,37.3,3.7,5.5,0.0,0.0,2.2,0.579,0.011,0.41,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
+E14001316,Kingswinford and South Staffordshire,West Midlands,Con,18.1,35.6,32.5,3.4,6.0,0.0,0.0,4.4,0.015,0.623,0.363,0.0,0.0,0.0,0.0,0.0,Con,Tilt Con
+E14001317,Knowsley,North West,Lab,53.2,2.9,27.3,2.4,11.1,0.0,0.0,3.2,0.957,0.0,0.042,0.0,0.0,0.0,0.0,0.0,Lab,Safe Lab
+E14001318,Lancaster and Wyre,North West,Lab,36.7,17.3,25.7,2.2,15.1,0.0,0.0,3.0,0.799,0.03,0.154,0.0,0.018,0.0,0.0,0.0,Lab,Lean Lab
+E14001319,Leeds Central and Headingley,Yorkshire and The Humber,Lab,34.9,5.0,9.3,5.0,41.3,0.0,0.0,4.5,0.342,0.0,0.0,0.0,0.658,0.0,0.0,0.0,Grn,Lean Grn
+E14001320,Leeds East,Yorkshire and The Humber,Lab,39.0,12.6,31.0,2.1,10.0,0.0,0.0,5.3,0.769,0.012,0.217,0.0,0.001,0.0,0.0,0.0,Lab,Lean Lab
+E14001321,Leeds North East,Yorkshire and The Humber,Lab,42.5,13.3,12.4,3.9,18.9,0.0,0.0,9.1,0.963,0.001,0.016,0.003,0.017,0.0,0.0,0.0,Lab,Safe Lab
+E14001322,Leeds North West,Yorkshire and The Humber,Lab,39.4,19.4,20.4,8.0,8.4,0.0,0.0,4.4,0.911,0.038,0.049,0.001,0.0,0.0,0.0,0.0,Lab,Likely Lab
+E14001323,Leeds South,Yorkshire and The Humber,Lab,43.1,9.5,3.7,3.0,29.8,0.0,0.0,11.0,0.848,0.0,0.013,0.0,0.138,0.0,0.0,0.0,Lab,Likely Lab
+E14001324,Leeds South West and Morley,Yorkshire and The Humber,Lab,36.3,16.0,35.0,2.5,6.7,0.0,0.0,3.5,0.577,0.021,0.401,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
+E14001325,Leeds West and Pudsey,Yorkshire and The Humber,Lab,40.5,12.6,27.7,2.8,11.7,0.0,0.0,4.6,0.863,0.012,0.122,0.0,0.002,0.0,0.0,0.0,Lab,Likely Lab
+E14001326,Leicester East,East Midlands,Con,15.0,27.0,12.1,9.8,7.6,0.0,0.0,28.5,0.017,0.43,0.026,0.008,0.001,0.0,0.0,0.518,Oth,Toss-up
+E14001327,Leicester South,East Midlands,Ind,23.5,8.4,8.4,2.3,17.4,0.0,0.0,40.0,0.038,0.0,0.001,0.0,0.035,0.0,0.0,0.926,Oth,Likely Oth
+E14001328,Leicester West,East Midlands,Lab,35.6,13.9,26.7,3.7,16.7,0.0,0.0,3.5,0.745,0.011,0.193,0.0,0.051,0.0,0.0,0.0,Lab,Lean Lab
+E14001329,Leigh and Atherton,North West,Lab,39.2,10.5,40.7,2.1,4.7,0.0,0.0,2.7,0.467,0.008,0.525,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
+E14001330,Lewes,South East,LD,4.8,21.6,19.6,45.3,5.6,0.0,0.0,3.1,0.001,0.012,0.014,0.973,0.0,0.0,0.0,0.0,LD,Safe LD
+E14001331,Lewisham East,London,Lab,46.9,8.8,13.7,4.6,21.2,0.0,0.0,4.8,0.962,0.0,0.015,0.001,0.022,0.0,0.0,0.0,Lab,Safe Lab
+E14001332,Lewisham North,London,Lab,45.1,4.8,6.4,5.0,34.6,0.0,0.0,4.1,0.802,0.0,0.0,0.0,0.198,0.0,0.0,0.0,Lab,Likely Lab
+E14001333,Lewisham West and East Dulwich,London,Lab,48.3,6.2,7.3,6.0,28.4,0.0,0.0,3.8,0.938,0.0,0.0,0.006,0.056,0.0,0.0,0.0,Lab,Likely Lab
+E14001334,Leyton and Wanstead,London,Lab,38.4,8.6,8.1,4.8,25.8,0.0,0.0,14.3,0.864,0.0,0.001,0.004,0.128,0.0,0.0,0.003,Lab,Likely Lab
+E14001335,Lichfield,West Midlands,Lab,26.7,29.8,31.4,4.6,4.6,0.0,0.0,2.9,0.207,0.4,0.393,0.0,0.0,0.0,0.0,0.0,Con,Toss-up
+E14001336,Lincoln,East Midlands,Lab,35.9,16.3,31.7,3.4,8.6,0.0,0.0,4.0,0.657,0.026,0.314,0.0,0.003,0.0,0.0,0.0,Lab,Lean Lab
+E14001337,Liverpool Garston,North West,Lab,47.8,5.5,19.0,6.0,10.3,0.0,0.0,11.4,0.963,0.002,0.03,0.004,0.0,0.0,0.0,0.0,Lab,Safe Lab
+E14001338,Liverpool Riverside,North West,Lab,46.0,2.6,13.3,3.1,30.2,0.0,0.0,4.8,0.863,0.0,0.001,0.0,0.136,0.0,0.0,0.0,Lab,Likely Lab
+E14001339,Liverpool Walton,North West,Lab,56.1,2.5,25.9,1.9,10.2,0.0,0.0,3.3,0.965,0.0,0.035,0.0,0.0,0.0,0.0,0.0,Lab,Safe Lab
+E14001340,Liverpool Wavertree,North West,Lab,45.5,3.5,12.8,4.8,27.2,0.0,0.0,6.2,0.916,0.0,0.006,0.0,0.078,0.0,0.0,0.0,Lab,Likely Lab
+E14001341,Liverpool West Derby,North West,Lab,53.4,3.0,22.5,2.5,10.8,0.0,0.0,7.8,0.966,0.0,0.033,0.0,0.001,0.0,0.0,0.0,Lab,Safe Lab
+E14001342,Loughborough,East Midlands,Lab,33.5,24.6,26.6,3.5,9.0,0.0,0.0,2.9,0.599,0.196,0.201,0.0,0.004,0.0,0.0,0.0,Lab,Tilt Lab
+E14001343,Louth and Horncastle,East Midlands,Con,15.5,31.3,36.3,3.8,7.2,0.0,0.0,5.9,0.006,0.306,0.688,0.0,0.0,0.0,0.0,0.0,Ref,Lean Ref
+E14001344,Lowestoft,East of England,Lab,26.5,21.1,38.8,2.3,8.3,0.0,0.0,3.0,0.104,0.063,0.832,0.0,0.0,0.0,0.0,0.0,Ref,Likely Ref
+E14001345,Luton North,East of England,Lab,30.1,13.4,17.7,3.2,7.4,0.0,0.0,28.3,0.518,0.016,0.065,0.0,0.001,0.0,0.0,0.4,Lab,Toss-up
+E14001346,Luton South and South Bedfordshire,East of England,Lab,27.1,12.1,17.3,4.0,9.9,0.0,0.0,29.6,0.383,0.011,0.07,0.0,0.008,0.0,0.0,0.528,Oth,Toss-up
+E14001347,Macclesfield,North West,Lab,39.2,26.7,20.3,3.3,6.4,0.0,0.0,4.1,0.841,0.114,0.045,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
+E14001348,Maidenhead,South East,LD,8.1,34.4,3.4,41.5,6.3,0.0,0.0,6.3,0.002,0.254,0.005,0.739,0.0,0.0,0.0,0.0,LD,Lean LD
+E14001349,Maidstone and Malling,South East,Con,18.5,27.1,31.2,9.6,10.7,0.0,0.0,3.0,0.043,0.352,0.597,0.004,0.004,0.0,0.0,0.0,Ref,Tilt Ref
+E14001350,Makerfield,North West,Lab,36.1,7.1,44.9,3.9,5.2,0.0,0.0,2.8,0.211,0.005,0.784,0.0,0.0,0.0,0.0,0.0,Ref,Lean Ref
+E14001351,Maldon,East of England,Con,13.1,32.5,36.1,8.7,6.2,0.0,0.0,3.4,0.003,0.359,0.637,0.001,0.0,0.0,0.0,0.0,Ref,Tilt Ref
+E14001352,Manchester Central,North West,Lab,38.7,5.2,14.2,5.0,29.5,0.0,0.0,7.3,0.782,0.0,0.002,0.0,0.215,0.0,0.0,0.0,Lab,Lean Lab
+E14001353,Manchester Rusholme,North West,Lab,36.7,4.2,5.9,0.7,39.9,0.0,0.0,12.6,0.425,0.0,0.0,0.0,0.574,0.0,0.0,0.001,Grn,Tilt Grn
+E14001354,Manchester Withington,North West,Lab,42.1,4.3,6.5,9.1,31.8,0.0,0.0,6.1,0.806,0.0,0.0,0.001,0.193,0.0,0.0,0.0,Lab,Likely Lab
+E14001355,Mansfield,East Midlands,Lab,30.6,21.4,38.7,1.2,4.2,0.0,0.0,3.9,0.206,0.062,0.732,0.0,0.0,0.0,0.0,0.0,Ref,Lean Ref
+E14001356,Melksham and Devizes,South West,LD,5.9,28.3,21.3,34.8,6.2,0.0,0.0,3.6,0.002,0.243,0.045,0.71,0.0,0.0,0.0,0.0,LD,Lean LD
+E14001357,Melton and Syston,East Midlands,Con,17.9,33.9,29.9,4.0,9.7,0.0,0.0,4.6,0.025,0.647,0.327,0.0,0.001,0.0,0.0,0.0,Con,Tilt Con
+E14001358,Meriden and Solihull East,West Midlands,Con,18.8,34.9,29.1,5.2,8.7,0.0,0.0,3.2,0.03,0.708,0.261,0.0,0.0,0.0,0.0,0.0,Con,Lean Con
+E14001359,Mid Bedfordshire,East of England,Con,22.1,32.9,27.4,5.4,6.8,0.0,0.0,5.4,0.1,0.637,0.263,0.0,0.0,0.0,0.0,0.0,Con,Tilt Con
+E14001360,Mid Buckinghamshire,South East,Con,11.6,33.2,20.2,24.0,7.4,0.0,0.0,3.5,0.004,0.754,0.048,0.194,0.0,0.0,0.0,0.0,Con,Lean Con
+E14001361,Mid Cheshire,North West,Lab,37.0,16.4,33.4,3.3,5.5,0.0,0.0,4.3,0.645,0.024,0.331,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
+E14001362,Mid Derbyshire,East Midlands,Lab,29.4,29.4,27.7,3.0,7.6,0.0,0.0,2.9,0.351,0.393,0.256,0.0,0.0,0.0,0.0,0.0,Con,Toss-up
+E14001363,Mid Dorset and North Poole,South West,LD,6.6,35.6,4.1,41.9,6.9,0.0,0.0,5.0,0.001,0.273,0.008,0.718,0.0,0.0,0.0,0.0,LD,Lean LD
+E14001364,Mid Leicestershire,East Midlands,Con,22.5,33.9,28.8,3.4,8.3,0.0,0.0,3.1,0.091,0.635,0.274,0.0,0.0,0.0,0.0,0.0,Con,Tilt Con
+E14001365,Mid Norfolk,East of England,Con,20.6,31.1,32.4,4.7,7.9,0.0,0.0,3.2,0.048,0.453,0.499,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
+E14001366,Mid Sussex,South East,LD,12.3,23.2,18.8,36.4,6.0,0.0,0.0,3.3,0.004,0.088,0.025,0.882,0.0,0.0,0.0,0.0,LD,Likely LD
+E14001367,Middlesbrough and Thornaby East,North East,Lab,38.5,12.9,33.0,1.8,6.3,0.0,0.0,7.6,0.714,0.012,0.274,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
+E14001368,Middlesbrough South and East Cleveland,North East,Lab,38.6,41.1,4.4,3.5,5.5,0.0,0.0,6.9,0.409,0.574,0.017,0.0,0.0,0.0,0.0,0.0,Con,Tilt Con
+E14001369,Milton Keynes Central,South East,Lab,35.2,25.8,20.4,6.6,9.4,0.0,0.0,2.6,0.742,0.188,0.066,0.002,0.001,0.0,0.0,0.0,Lab,Lean Lab
+E14001370,Milton Keynes North,South East,Lab,34.9,27.7,21.5,4.4,8.4,0.0,0.0,3.1,0.676,0.247,0.076,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
+E14001371,Mitcham and Morden,London,Lab,45.2,11.4,15.2,6.3,16.3,0.0,0.0,5.4,0.964,0.001,0.022,0.003,0.01,0.0,0.0,0.0,Lab,Safe Lab
+E14001372,Morecambe and Lunesdale,North West,Lab,35.0,23.1,28.1,5.9,5.0,0.0,0.0,3.0,0.655,0.135,0.209,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
+E14001373,New Forest East,South East,Con,13.3,34.7,27.2,11.8,8.7,0.0,0.0,4.4,0.006,0.753,0.234,0.006,0.0,0.0,0.0,0.0,Con,Lean Con
+E14001374,New Forest West,South East,Con,16.4,33.2,26.1,13.4,7.5,0.0,0.0,3.5,0.023,0.731,0.231,0.014,0.0,0.0,0.0,0.0,Con,Lean Con
+E14001375,Newark,East Midlands,Con,23.8,37.2,24.8,3.8,5.9,0.0,0.0,4.6,0.09,0.794,0.116,0.0,0.0,0.0,0.0,0.0,Con,Lean Con
+E14001376,Newbury,South East,LD,5.0,29.5,18.6,35.6,8.1,0.0,0.0,3.2,0.002,0.266,0.02,0.712,0.0,0.0,0.0,0.0,LD,Lean LD
+E14001377,Newcastle upon Tyne Central and West,North East,Lab,36.9,7.0,29.6,2.7,11.7,0.0,0.0,12.1,0.733,0.0,0.242,0.0,0.024,0.0,0.0,0.002,Lab,Lean Lab
+E14001378,Newcastle upon Tyne East and Wallsend,North East,Lab,39.9,5.5,29.8,4.1,16.9,0.0,0.0,3.9,0.782,0.0,0.183,0.0,0.034,0.0,0.0,0.0,Lab,Lean Lab
+E14001379,Newcastle upon Tyne North,North East,Lab,40.8,10.8,18.1,9.6,17.4,0.0,0.0,3.5,0.939,0.001,0.028,0.01,0.022,0.0,0.0,0.0,Lab,Likely Lab
+E14001380,Newcastle-under-Lyme,West Midlands,Lab,32.7,19.5,36.6,2.7,5.6,0.0,0.0,2.8,0.373,0.043,0.584,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
+E14001381,Newton Abbot,South West,LD,9.3,21.3,27.5,29.9,5.5,0.0,0.0,6.5,0.003,0.116,0.354,0.526,0.0,0.0,0.0,0.0,LD,Toss-up
+E14001382,Newton Aycliffe and Spennymoor,North East,Lab,37.5,14.1,38.2,2.1,5.1,0.0,0.0,3.0,0.502,0.014,0.484,0.0,0.0,0.0,0.0,0.0,Lab,Toss-up
+E14001383,Normanton and Hemsworth,Yorkshire and The Humber,Lab,37.2,8.8,42.8,2.0,6.4,0.0,0.0,2.8,0.315,0.006,0.679,0.0,0.0,0.0,0.0,0.0,Ref,Lean Ref
+E14001384,North Bedfordshire,East of England,Con,19.6,35.8,26.2,7.5,7.8,0.0,0.0,3.3,0.04,0.801,0.158,0.0,0.0,0.0,0.0,0.0,Con,Likely Con
+E14001385,North Cornwall,South West,LD,3.9,21.5,25.8,41.5,4.3,0.0,0.0,3.1,0.001,0.026,0.06,0.914,0.0,0.0,0.0,0.0,LD,Likely LD
+E14001386,North Cotswolds,South West,Con,11.5,30.5,20.5,25.7,8.4,0.0,0.0,3.4,0.007,0.619,0.068,0.305,0.001,0.0,0.0,0.0,Con,Tilt Con
+E14001387,North Devon,South West,LD,4.1,22.7,25.1,37.9,6.3,0.0,0.0,4.0,0.001,0.054,0.088,0.857,0.0,0.0,0.0,0.0,LD,Likely LD
+E14001388,North Dorset,South West,Con,5.8,30.4,25.0,29.6,5.7,0.0,0.0,3.5,0.0,0.451,0.131,0.417,0.0,0.0,0.0,0.0,Con,Toss-up
+E14001389,North Durham,North East,Lab,32.6,10.6,40.1,5.8,6.5,0.0,0.0,4.4,0.266,0.009,0.724,0.0,0.0,0.0,0.0,0.0,Ref,Lean Ref
+E14001390,North East Cambridgeshire,East of England,Con,13.5,34.2,35.0,5.1,7.1,0.0,0.0,5.0,0.004,0.458,0.538,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
+E14001391,North East Derbyshire,East Midlands,Lab,30.6,29.7,29.0,2.8,5.7,0.0,0.0,2.3,0.355,0.369,0.276,0.0,0.0,0.0,0.0,0.0,Con,Toss-up
+E14001392,North East Hampshire,South East,LD,6.1,32.2,19.1,34.6,4.1,0.0,0.0,3.9,0.001,0.399,0.018,0.582,0.0,0.0,0.0,0.0,LD,Tilt LD
+E14001393,North East Hertfordshire,East of England,Lab,27.0,30.5,25.2,6.2,8.2,0.0,0.0,2.9,0.313,0.487,0.199,0.001,0.0,0.0,0.0,0.0,Con,Toss-up
+E14001394,North East Somerset and Hanham,South West,Lab,34.4,25.9,25.3,4.5,7.0,0.0,0.0,2.9,0.634,0.215,0.151,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
+E14001395,North Herefordshire,West Midlands,Green,4.3,24.4,23.2,2.3,43.1,0.0,0.0,2.7,0.0,0.029,0.033,0.0,0.937,0.0,0.0,0.0,Grn,Likely Grn
+E14001396,North Norfolk,East of England,LD,4.1,28.7,22.5,36.7,4.4,0.0,0.0,3.6,0.001,0.198,0.048,0.753,0.0,0.0,0.0,0.0,LD,Lean LD
+E14001397,North Northumberland,North East,Lab,31.7,20.9,28.8,6.2,4.3,0.0,0.0,8.2,0.554,0.122,0.323,0.001,0.0,0.0,0.0,0.001,Lab,Tilt Lab
+E14001398,North Shropshire,West Midlands,LD,4.7,16.9,24.5,46.6,4.4,0.0,0.0,2.9,0.001,0.006,0.026,0.967,0.0,0.0,0.0,0.0,LD,Safe LD
+E14001399,North Somerset,South West,Lab,30.9,34.3,17.0,8.6,6.8,0.0,0.0,2.5,0.385,0.575,0.038,0.002,0.0,0.0,0.0,0.0,Con,Tilt Con
+E14001400,North Warwickshire and Bedworth,West Midlands,Lab,27.4,22.0,40.2,2.0,5.5,0.0,0.0,3.0,0.089,0.058,0.853,0.0,0.0,0.0,0.0,0.0,Ref,Likely Ref
+E14001401,North West Cambridgeshire,East of England,Lab,23.4,28.9,31.6,4.6,8.5,0.0,0.0,3.0,0.126,0.398,0.476,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
+E14001402,North West Essex,East of England,Con,22.5,35.3,23.2,7.4,6.8,0.0,0.0,4.9,0.107,0.775,0.116,0.001,0.0,0.0,0.0,0.0,Con,Lean Con
+E14001403,North West Hampshire,South East,Con,19.8,33.7,25.7,10.4,7.4,0.0,0.0,3.1,0.063,0.735,0.196,0.006,0.0,0.0,0.0,0.0,Con,Lean Con
+E14001404,North West Leicestershire,East Midlands,Lab,26.0,26.6,33.3,2.1,7.0,0.0,0.0,5.0,0.181,0.281,0.538,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
+E14001405,North West Norfolk,East of England,Con,16.9,31.5,31.2,10.5,6.7,0.0,0.0,3.3,0.017,0.515,0.464,0.004,0.0,0.0,0.0,0.0,Con,Toss-up
+E14001406,Northampton North,East Midlands,Lab,36.0,16.1,29.9,3.1,7.8,0.0,0.0,7.1,0.724,0.022,0.252,0.0,0.001,0.0,0.0,0.0,Lab,Lean Lab
+E14001407,Northampton South,East Midlands,Lab,32.0,22.2,32.6,4.1,6.3,0.0,0.0,2.8,0.451,0.117,0.432,0.0,0.0,0.0,0.0,0.0,Lab,Toss-up
+E14001408,Norwich North,East of England,Lab,37.8,15.2,31.9,2.5,9.9,0.0,0.0,2.7,0.71,0.02,0.27,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
+E14001409,Norwich South,East of England,Lab,36.2,8.7,15.4,5.2,31.1,0.0,0.0,3.4,0.686,0.0,0.013,0.0,0.301,0.0,0.0,0.0,Lab,Lean Lab
+E14001410,Nottingham East,East Midlands,Lab,41.3,8.1,13.4,3.3,24.0,0.0,0.0,9.9,0.904,0.0,0.003,0.0,0.093,0.0,0.0,0.0,Lab,Likely Lab
+E14001411,Nottingham North and Kimberley,East Midlands,Lab,38.2,13.4,33.2,2.1,10.3,0.0,0.0,2.8,0.69,0.013,0.295,0.0,0.001,0.0,0.0,0.0,Lab,Lean Lab
+E14001412,Nottingham South,East Midlands,Lab,36.8,11.4,22.9,3.9,17.7,0.0,0.0,7.3,0.83,0.002,0.098,0.0,0.069,0.0,0.0,0.001,Lab,Likely Lab
+E14001413,Nuneaton,West Midlands,Lab,29.4,20.2,36.9,1.9,7.6,0.0,0.0,3.9,0.244,0.061,0.695,0.0,0.001,0.0,0.0,0.0,Ref,Lean Ref
+E14001414,Old Bexley and Sidcup,London,Con,20.8,33.3,32.7,2.9,7.2,0.0,0.0,3.2,0.038,0.526,0.436,0.0,0.0,0.0,0.0,0.0,Con,Toss-up
+E14001415,Oldham East and Saddleworth,North West,Lab,29.6,12.2,33.8,4.6,4.6,0.0,0.0,15.1,0.397,0.014,0.57,0.0,0.0,0.0,0.0,0.018,Ref,Tilt Ref
+E14001416,"Oldham West, Chadderton and Royton",North West,Lab,22.8,7.2,25.4,2.0,6.4,0.0,0.0,36.3,0.117,0.001,0.161,0.0,0.0,0.0,0.0,0.72,Oth,Lean Oth
+E14001417,Orpington,London,Con,18.6,35.6,28.9,7.2,6.9,0.0,0.0,2.9,0.024,0.745,0.23,0.001,0.0,0.0,0.0,0.0,Con,Lean Con
+E14001418,Ossett and Denby Dale,Yorkshire and The Humber,Lab,32.6,21.0,35.3,2.3,5.3,0.0,0.0,3.5,0.404,0.067,0.529,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
+E14001419,Oxford East,South East,Lab,39.5,9.4,2.5,6.3,25.0,0.0,0.0,17.3,0.871,0.0,0.002,0.0,0.119,0.0,0.0,0.007,Lab,Likely Lab
+E14001420,Oxford West and Abingdon,South East,LD,9.0,15.7,12.8,45.4,13.3,0.0,0.0,3.9,0.0,0.003,0.001,0.993,0.003,0.0,0.0,0.0,LD,Safe LD
+E14001421,Peckham,London,Lab,45.4,4.6,6.7,4.6,33.1,0.0,0.0,5.6,0.827,0.0,0.0,0.0,0.173,0.0,0.0,0.0,Lab,Likely Lab
+E14001422,Pendle and Clitheroe,North West,Lab,26.1,31.1,27.1,2.7,4.2,0.0,0.0,8.8,0.232,0.51,0.257,0.0,0.0,0.0,0.0,0.001,Con,Toss-up
+E14001423,Penistone and Stocksbridge,Yorkshire and The Humber,Lab,36.4,16.7,35.6,3.6,4.9,0.0,0.0,2.9,0.546,0.022,0.433,0.0,0.0,0.0,0.0,0.0,Lab,Toss-up
+E14001424,Penrith and Solway,North West,Lab,34.7,25.4,26.8,5.8,4.4,0.0,0.0,2.9,0.639,0.184,0.176,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
+E14001425,Peterborough,East of England,Lab,23.4,31.4,21.9,2.5,7.9,0.0,0.0,12.8,0.221,0.62,0.147,0.0,0.002,0.0,0.0,0.01,Con,Tilt Con
+E14001426,Plymouth Moor View,South West,Lab,32.6,19.3,38.2,2.3,4.9,0.0,0.0,2.8,0.313,0.036,0.651,0.0,0.0,0.0,0.0,0.0,Ref,Lean Ref
+E14001427,Plymouth Sutton and Devonport,South West,Lab,40.3,11.9,28.3,3.5,11.3,0.0,0.0,4.7,0.846,0.007,0.139,0.0,0.008,0.0,0.0,0.0,Lab,Likely Lab
+E14001428,"Pontefract, Castleford and Knottingley",Yorkshire and The Humber,Lab,37.4,9.7,43.3,1.9,5.4,0.0,0.0,2.3,0.303,0.007,0.689,0.0,0.0,0.0,0.0,0.0,Ref,Lean Ref
+E14001429,Poole,South West,Lab,23.5,30.5,27.5,8.1,6.4,0.0,0.0,4.1,0.17,0.526,0.301,0.002,0.0,0.0,0.0,0.0,Con,Toss-up
+E14001430,Poplar and Limehouse,London,Lab,33.1,8.5,8.7,6.4,29.3,0.0,0.0,14.0,0.652,0.001,0.001,0.001,0.337,0.0,0.0,0.008,Lab,Lean Lab
+E14001431,Portsmouth North,South East,Lab,25.5,26.8,34.1,4.5,6.1,0.0,0.0,3.0,0.157,0.27,0.572,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
+E14001432,Portsmouth South,South East,Lab,39.2,10.7,23.2,8.4,14.6,0.0,0.0,3.9,0.892,0.0,0.078,0.002,0.028,0.0,0.0,0.0,Lab,Likely Lab
+E14001433,Preston,North West,Lab,24.9,8.7,20.9,4.8,7.2,0.0,0.0,33.4,0.236,0.002,0.111,0.001,0.005,0.0,0.0,0.645,Oth,Tilt Oth
+E14001434,Putney,London,Lab,40.8,22.7,8.6,9.9,14.0,0.0,0.0,4.0,0.924,0.038,0.0,0.023,0.016,0.0,0.0,0.0,Lab,Likely Lab
+E14001435,Queen's Park and Maida Vale,London,Lab,41.8,10.9,7.6,6.3,25.7,0.0,0.0,7.7,0.895,0.0,0.0,0.002,0.103,0.0,0.0,0.0,Lab,Likely Lab
+E14001436,Rawmarsh and Conisbrough,Yorkshire and The Humber,Lab,39.0,8.5,42.5,1.8,5.6,0.0,0.0,2.6,0.39,0.006,0.604,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
+E14001437,Rayleigh and Wickford,East of England,Con,17.0,29.9,37.4,6.3,6.1,0.0,0.0,3.3,0.007,0.231,0.762,0.0,0.0,0.0,0.0,0.0,Ref,Lean Ref
+E14001438,Reading Central,South East,Lab,38.5,15.4,12.2,6.5,24.1,0.0,0.0,3.1,0.878,0.006,0.008,0.005,0.103,0.0,0.0,0.0,Lab,Likely Lab
+E14001439,Reading West and Mid Berkshire,South East,Lab,28.4,32.0,21.5,6.7,7.7,0.0,0.0,3.6,0.366,0.531,0.102,0.001,0.0,0.0,0.0,0.0,Con,Toss-up
+E14001440,Redcar,North East,Lab,33.3,24.3,33.4,2.3,4.3,0.0,0.0,2.4,0.438,0.138,0.424,0.0,0.0,0.0,0.0,0.0,Lab,Toss-up
+E14001441,Redditch,West Midlands,Lab,26.0,27.2,33.6,3.2,6.4,0.0,0.0,3.6,0.174,0.292,0.534,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
+E14001442,Reigate,South East,Con,21.7,35.6,20.7,8.5,10.3,0.0,0.0,3.1,0.095,0.824,0.076,0.002,0.002,0.0,0.0,0.0,Con,Likely Con
+E14001443,Ribble Valley,North West,Lab,27.5,32.8,25.2,6.0,4.2,0.0,0.0,4.2,0.276,0.554,0.17,0.0,0.0,0.0,0.0,0.0,Con,Tilt Con
+E14001444,Richmond and Northallerton,Yorkshire and The Humber,Con,16.0,42.2,23.6,7.0,6.6,0.0,0.0,4.6,0.005,0.956,0.039,0.001,0.0,0.0,0.0,0.0,Con,Safe Con
+E14001445,Richmond Park,London,LD,6.9,19.8,8.7,50.0,10.9,0.0,0.0,3.6,0.0,0.003,0.0,0.997,0.0,0.0,0.0,0.0,LD,Safe LD
+E14001446,Rochdale,North West,Lab,22.1,7.6,24.6,4.3,4.6,0.0,0.0,36.7,0.092,0.001,0.141,0.002,0.0,0.0,0.0,0.764,Oth,Lean Oth
+E14001447,Rochester and Strood,South East,Lab,28.3,21.3,37.9,2.7,6.9,0.0,0.0,2.9,0.173,0.071,0.756,0.0,0.0,0.0,0.0,0.0,Ref,Lean Ref
+E14001448,Romford,London,Con,21.9,31.1,32.5,3.0,7.0,0.0,0.0,4.4,0.075,0.458,0.467,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
+E14001449,Romsey and Southampton North,South East,Con,6.1,34.5,18.4,32.0,6.1,0.0,0.0,3.0,0.001,0.59,0.019,0.39,0.0,0.0,0.0,0.0,Con,Tilt Con
+E14001450,Rossendale and Darwen,North West,Lab,33.5,20.2,35.9,1.6,5.8,0.0,0.0,2.9,0.424,0.049,0.527,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
+E14001451,Rother Valley,Yorkshire and The Humber,Lab,29.7,30.2,30.5,1.7,4.9,0.0,0.0,2.9,0.283,0.38,0.337,0.0,0.0,0.0,0.0,0.0,Con,Toss-up
+E14001452,Rotherham,Yorkshire and The Humber,Lab,35.6,0.8,42.3,4.1,7.9,0.0,0.0,9.4,0.297,0.0,0.703,0.0,0.0,0.0,0.0,0.0,Ref,Lean Ref
+E14001453,Rugby,West Midlands,Lab,33.3,26.4,27.7,3.8,6.1,0.0,0.0,2.6,0.543,0.238,0.219,0.0,0.0,0.0,0.0,0.0,Lab,Toss-up
+E14001454,"Ruislip, Northwood and Pinner",London,Con,22.8,44.1,13.8,7.0,8.8,0.0,0.0,3.3,0.015,0.98,0.002,0.003,0.0,0.0,0.0,0.0,Con,Safe Con
+E14001455,Runcorn and Helsby,North West,Lab,43.7,11.7,30.1,3.2,7.9,0.0,0.0,3.4,0.886,0.01,0.103,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
+E14001456,Runnymede and Weybridge,South East,Con,14.4,35.2,21.1,19.0,6.5,0.0,0.0,3.9,0.009,0.86,0.054,0.077,0.0,0.0,0.0,0.0,Con,Likely Con
+E14001457,Rushcliffe,East Midlands,Lab,37.1,30.2,16.7,3.6,9.0,0.0,0.0,3.4,0.728,0.242,0.03,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
+E14001458,Rutland and Stamford,East Midlands,Con,15.9,39.6,23.1,9.9,8.1,0.0,0.0,3.3,0.007,0.94,0.051,0.002,0.0,0.0,0.0,0.0,Con,Likely Con
+E14001459,Salford,North West,Lab,40.9,6.4,20.0,4.6,23.8,0.0,0.0,4.3,0.881,0.0,0.025,0.0,0.094,0.0,0.0,0.0,Lab,Likely Lab
+E14001460,Salisbury,South West,Con,19.4,32.0,18.0,21.1,6.0,0.0,0.0,3.5,0.072,0.703,0.045,0.18,0.0,0.0,0.0,0.0,Con,Lean Con
+E14001461,Scarborough and Whitby,Yorkshire and The Humber,Lab,33.2,19.9,36.3,2.5,4.5,0.0,0.0,3.6,0.396,0.048,0.556,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
+E14001462,Scunthorpe,Yorkshire and The Humber,Lab,31.7,21.5,36.7,1.4,4.0,0.0,0.0,4.7,0.315,0.069,0.616,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
+E14001463,Sefton Central,North West,Lab,47.7,14.2,21.4,4.3,9.0,0.0,0.0,3.4,0.956,0.01,0.033,0.0,0.0,0.0,0.0,0.0,Lab,Safe Lab
+E14001464,Selby,Yorkshire and The Humber,Lab,38.0,18.1,33.2,2.1,5.6,0.0,0.0,2.9,0.683,0.026,0.291,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
+E14001465,Sevenoaks,South East,Con,9.0,33.7,27.3,20.6,5.9,0.0,0.0,3.4,0.002,0.681,0.217,0.1,0.0,0.0,0.0,0.0,Con,Lean Con
+E14001466,Sheffield Brightside and Hillsborough,Yorkshire and The Humber,Lab,42.1,9.7,4.4,3.9,23.7,0.0,0.0,16.2,0.92,0.002,0.02,0.0,0.055,0.0,0.0,0.003,Lab,Likely Lab
+E14001467,Sheffield Central,Yorkshire and The Humber,Lab,37.6,5.4,2.0,4.2,42.8,0.0,0.0,8.0,0.367,0.0,0.0,0.0,0.633,0.0,0.0,0.0,Grn,Tilt Grn
+E14001468,Sheffield Hallam,Yorkshire and The Humber,Lab,39.2,9.9,2.7,30.8,12.6,0.0,0.0,4.8,0.769,0.0,0.002,0.227,0.002,0.0,0.0,0.0,Lab,Lean Lab
+E14001469,Sheffield Heeley,Yorkshire and The Humber,Lab,46.0,10.7,4.3,7.8,23.5,0.0,0.0,7.7,0.944,0.004,0.018,0.002,0.032,0.0,0.0,0.0,Lab,Likely Lab
+E14001470,Sheffield South East,Yorkshire and The Humber,Lab,44.6,14.5,5.1,7.7,13.8,0.0,0.0,14.3,0.961,0.012,0.024,0.001,0.001,0.0,0.0,0.001,Lab,Safe Lab
+E14001471,Sherwood Forest,East Midlands,Lab,31.2,19.2,38.4,2.2,5.2,0.0,0.0,3.8,0.247,0.036,0.717,0.0,0.0,0.0,0.0,0.0,Ref,Lean Ref
+E14001472,Shipley,Yorkshire and The Humber,Lab,37.8,23.1,24.3,1.8,8.5,0.0,0.0,4.5,0.819,0.089,0.092,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
+E14001473,Shrewsbury,West Midlands,Lab,38.4,17.5,26.7,8.4,6.0,0.0,0.0,3.0,0.831,0.029,0.139,0.001,0.0,0.0,0.0,0.0,Lab,Likely Lab
+E14001474,Sittingbourne and Sheppey,South East,Lab,20.8,21.0,38.9,2.3,6.1,0.0,0.0,10.8,0.025,0.06,0.914,0.0,0.0,0.0,0.0,0.001,Ref,Likely Ref
+E14001475,Skipton and Ripon,Yorkshire and The Humber,Con,24.0,35.1,24.0,5.1,7.6,0.0,0.0,4.2,0.14,0.726,0.134,0.0,0.0,0.0,0.0,0.0,Con,Lean Con
+E14001476,Sleaford and North Hykeham,East Midlands,Con,18.4,31.0,32.6,3.3,6.7,0.0,0.0,8.0,0.026,0.439,0.535,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
+E14001477,Slough,South East,Lab,26.2,12.8,11.6,3.3,7.4,0.0,0.0,38.7,0.095,0.003,0.013,0.0,0.002,0.0,0.0,0.887,Oth,Likely Oth
+E14001478,Smethwick,West Midlands,Lab,39.3,9.5,27.1,1.8,10.0,0.0,0.0,12.3,0.863,0.004,0.127,0.0,0.004,0.0,0.0,0.002,Lab,Likely Lab
+E14001479,Solihull West and Shirley,West Midlands,Con,17.7,33.7,23.7,12.5,8.8,0.0,0.0,3.5,0.036,0.81,0.14,0.014,0.0,0.0,0.0,0.0,Con,Likely Con
+E14001480,South Basildon and East Thurrock,East of England,RUK,22.0,18.8,43.2,2.0,6.6,0.0,0.0,7.4,0.015,0.019,0.966,0.0,0.0,0.0,0.0,0.0,Ref,Safe Ref
+E14001481,South Cambridgeshire,East of England,LD,7.8,23.9,14.1,42.7,8.1,0.0,0.0,3.5,0.001,0.033,0.003,0.963,0.0,0.0,0.0,0.0,LD,Safe LD
+E14001482,South Cotswolds,South West,LD,5.2,29.3,16.7,39.8,5.0,0.0,0.0,4.0,0.001,0.144,0.01,0.844,0.0,0.0,0.0,0.0,LD,Likely LD
+E14001483,South Derbyshire,East Midlands,Lab,32.0,21.7,34.4,2.7,4.8,0.0,0.0,4.5,0.401,0.095,0.504,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
+E14001484,South Devon,South West,LD,4.4,25.8,20.7,41.3,5.0,0.0,0.0,2.9,0.001,0.061,0.02,0.918,0.0,0.0,0.0,0.0,LD,Likely LD
+E14001485,South Dorset,South West,Lab,25.3,25.9,29.8,10.7,5.4,0.0,0.0,2.9,0.25,0.326,0.414,0.011,0.0,0.0,0.0,0.0,Ref,Toss-up
+E14001486,South East Cornwall,South West,Lab,26.2,22.1,33.1,11.0,4.9,0.0,0.0,2.6,0.243,0.168,0.574,0.015,0.0,0.0,0.0,0.0,Ref,Tilt Ref
+E14001487,South Holland and The Deepings,East Midlands,Con,13.1,31.2,34.6,3.2,5.6,0.0,0.0,12.3,0.004,0.359,0.636,0.0,0.0,0.0,0.0,0.002,Ref,Tilt Ref
+E14001488,South Leicestershire,East Midlands,Con,16.9,31.7,31.0,10.7,6.5,0.0,0.0,3.3,0.018,0.53,0.449,0.003,0.0,0.0,0.0,0.0,Con,Toss-up
+E14001489,South Norfolk,East of England,Lab,29.9,26.4,26.0,6.8,8.2,0.0,0.0,2.8,0.44,0.32,0.237,0.001,0.001,0.0,0.0,0.0,Lab,Toss-up
+E14001490,South Northamptonshire,East Midlands,Con,20.2,33.6,26.9,6.4,7.2,0.0,0.0,5.6,0.064,0.707,0.229,0.0,0.0,0.0,0.0,0.0,Con,Lean Con
+E14001491,South Ribble,North West,Lab,35.4,21.0,33.1,3.6,3.9,0.0,0.0,2.9,0.583,0.06,0.357,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
+E14001492,South Shields,North East,Lab,32.6,7.3,36.5,2.1,14.9,0.0,0.0,6.6,0.408,0.005,0.548,0.0,0.039,0.0,0.0,0.0,Ref,Toss-up
+E14001493,South Shropshire,West Midlands,Con,8.7,28.8,26.5,27.5,5.1,0.0,0.0,3.5,0.003,0.416,0.226,0.354,0.0,0.0,0.0,0.0,Con,Toss-up
+E14001494,South Suffolk,East of England,Con,18.3,29.5,29.9,9.3,9.8,0.0,0.0,3.2,0.041,0.483,0.472,0.002,0.001,0.0,0.0,0.0,Con,Toss-up
+E14001495,South West Devon,South West,Con,21.6,32.0,28.6,7.3,7.0,0.0,0.0,3.4,0.094,0.589,0.316,0.001,0.0,0.0,0.0,0.0,Con,Tilt Con
+E14001496,South West Hertfordshire,East of England,Con,13.6,31.5,21.3,21.9,7.5,0.0,0.0,4.2,0.011,0.723,0.084,0.181,0.0,0.0,0.0,0.0,Con,Lean Con
+E14001497,South West Norfolk,East of England,Lab,19.0,18.8,35.8,4.0,5.7,0.0,0.0,16.6,0.028,0.059,0.882,0.0,0.0,0.0,0.0,0.03,Ref,Likely Ref
+E14001498,South West Wiltshire,South West,Con,18.4,31.0,28.6,11.2,6.8,0.0,0.0,4.0,0.046,0.581,0.364,0.008,0.0,0.0,0.0,0.0,Con,Tilt Con
+E14001499,Southampton Itchen,South East,Lab,34.3,18.4,31.7,3.9,9.2,0.0,0.0,2.6,0.593,0.042,0.359,0.0,0.006,0.0,0.0,0.0,Lab,Tilt Lab
+E14001500,Southampton Test,South East,Lab,36.0,13.4,24.0,5.8,15.9,0.0,0.0,4.8,0.814,0.007,0.135,0.0,0.043,0.0,0.0,0.0,Lab,Likely Lab
+E14001501,Southend East and Rochford,East of England,Lab,32.0,20.9,33.1,3.2,7.4,0.0,0.0,3.4,0.447,0.09,0.462,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
+E14001502,Southend West and Leigh,East of England,Lab,28.7,25.9,30.6,4.0,7.4,0.0,0.0,3.3,0.33,0.274,0.395,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
+E14001503,Southgate and Wood Green,London,Lab,41.8,14.4,11.1,6.9,20.2,0.0,0.0,5.6,0.946,0.002,0.008,0.009,0.035,0.0,0.0,0.0,Lab,Likely Lab
+E14001504,Southport,North West,Lab,33.6,19.3,30.4,7.7,5.4,0.0,0.0,3.8,0.598,0.065,0.335,0.001,0.0,0.0,0.0,0.0,Lab,Tilt Lab
+E14001505,Spelthorne,South East,Con,18.8,28.5,28.7,14.0,7.2,0.0,0.0,2.8,0.065,0.48,0.424,0.032,0.0,0.0,0.0,0.0,Con,Toss-up
+E14001506,Spen Valley,Yorkshire and The Humber,Lab,31.9,16.9,38.3,2.0,6.1,0.0,0.0,5.0,0.29,0.023,0.688,0.0,0.0,0.0,0.0,0.0,Ref,Lean Ref
+E14001507,St Albans,East of England,LD,7.2,15.5,12.9,51.4,10.0,0.0,0.0,2.9,0.0,0.002,0.001,0.997,0.0,0.0,0.0,0.0,LD,Safe LD
+E14001508,St Austell and Newquay,South West,Lab,27.8,21.4,35.0,6.2,5.9,0.0,0.0,3.8,0.244,0.117,0.638,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
+E14001509,St Helens North,North West,Lab,43.3,7.5,35.0,2.6,9.1,0.0,0.0,2.6,0.79,0.006,0.204,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
+E14001510,St Helens South and Whiston,North West,Lab,40.9,5.6,31.0,3.4,7.9,0.0,0.0,11.2,0.817,0.005,0.178,0.0,0.0,0.0,0.0,0.001,Lab,Likely Lab
+E14001511,St Ives,South West,LD,4.1,18.4,21.5,45.9,6.1,0.0,0.0,4.1,0.001,0.009,0.015,0.975,0.0,0.0,0.0,0.0,LD,Safe LD
+E14001512,St Neots and Mid Cambridgeshire,East of England,LD,8.8,24.1,17.7,33.3,7.6,0.0,0.0,8.5,0.003,0.165,0.031,0.8,0.0,0.0,0.0,0.001,LD,Likely LD
+E14001513,Stafford,West Midlands,Lab,33.5,23.9,31.0,2.1,6.7,0.0,0.0,2.8,0.521,0.144,0.335,0.0,0.0,0.0,0.0,0.0,Lab,Toss-up
+E14001514,Staffordshire Moorlands,West Midlands,Con,23.3,29.3,35.2,2.4,6.7,0.0,0.0,3.1,0.067,0.309,0.624,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
+E14001515,Stalybridge and Hyde,North West,Lab,35.8,12.7,35.0,1.6,7.7,0.0,0.0,7.2,0.56,0.013,0.426,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
+E14001516,Stevenage,East of England,Lab,34.7,19.0,32.2,4.5,7.2,0.0,0.0,2.3,0.594,0.044,0.362,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
+E14001517,Stockport,North West,Lab,41.2,8.5,24.9,5.6,14.0,0.0,0.0,5.8,0.907,0.005,0.08,0.002,0.006,0.0,0.0,0.0,Lab,Likely Lab
+E14001518,Stockton North,North East,Lab,36.7,14.5,38.4,1.7,6.0,0.0,0.0,2.8,0.454,0.014,0.532,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
+E14001519,Stockton West,North East,Con,30.2,39.4,21.5,1.7,4.1,0.0,0.0,3.1,0.167,0.785,0.048,0.0,0.0,0.0,0.0,0.0,Con,Lean Con
+E14001520,Stoke-on-Trent Central,West Midlands,Lab,33.8,12.0,38.1,1.6,6.3,0.0,0.0,8.3,0.379,0.01,0.61,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
+E14001521,Stoke-on-Trent North,West Midlands,Lab,32.0,18.1,39.4,1.5,4.5,0.0,0.0,4.5,0.244,0.029,0.727,0.0,0.0,0.0,0.0,0.0,Ref,Lean Ref
+E14001522,Stoke-on-Trent South,West Midlands,Lab,26.0,26.8,35.3,2.5,4.2,0.0,0.0,5.2,0.135,0.244,0.622,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
+E14001523,"Stone, Great Wyrley and Penkridge",West Midlands,Con,28.8,44.2,4.4,5.1,7.5,0.0,0.0,10.0,0.07,0.916,0.014,0.0,0.0,0.0,0.0,0.0,Con,Likely Con
+E14001524,Stourbridge,West Midlands,Lab,31.3,23.1,34.1,2.3,5.1,0.0,0.0,4.2,0.374,0.124,0.501,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
+E14001525,Stratford and Bow,London,Lab,33.3,5.4,6.2,2.9,31.6,0.0,0.0,20.6,0.55,0.0,0.0,0.0,0.391,0.0,0.0,0.06,Lab,Toss-up
+E14001526,Stratford-on-Avon,West Midlands,LD,4.9,25.8,22.2,39.6,3.9,0.0,0.0,3.5,0.001,0.078,0.034,0.887,0.0,0.0,0.0,0.0,LD,Likely LD
+E14001527,Streatham and Croydon North,London,Lab,42.7,9.6,7.3,9.1,26.3,0.0,0.0,5.0,0.906,0.0,0.001,0.014,0.078,0.0,0.0,0.0,Lab,Likely Lab
+E14001528,Stretford and Urmston,North West,Lab,40.3,11.3,20.4,3.4,12.9,0.0,0.0,11.7,0.939,0.007,0.048,0.0,0.004,0.0,0.0,0.002,Lab,Likely Lab
+E14001529,Stroud,South West,Lab,38.9,22.3,20.1,3.6,12.2,0.0,0.0,3.0,0.882,0.066,0.05,0.0,0.001,0.0,0.0,0.0,Lab,Likely Lab
+E14001530,Suffolk Coastal,East of England,Lab,24.9,27.0,27.2,8.8,9.2,0.0,0.0,2.9,0.267,0.404,0.323,0.004,0.002,0.0,0.0,0.0,Con,Toss-up
+E14001531,Sunderland Central,North East,Lab,34.5,9.7,39.7,4.9,8.4,0.0,0.0,2.8,0.347,0.006,0.646,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
+E14001532,Surrey Heath,South East,LD,4.6,27.7,20.8,39.8,4.2,0.0,0.0,2.9,0.0,0.108,0.021,0.87,0.0,0.0,0.0,0.0,LD,Likely LD
+E14001533,Sussex Weald,South East,Con,11.2,30.8,27.8,15.5,9.3,0.0,0.0,5.3,0.005,0.587,0.369,0.037,0.001,0.0,0.0,0.0,Con,Tilt Con
+E14001534,Sutton and Cheam,London,LD,12.2,25.5,18.5,34.6,5.9,0.0,0.0,3.3,0.004,0.181,0.026,0.788,0.0,0.0,0.0,0.0,LD,Lean LD
+E14001535,Sutton Coldfield,West Midlands,Con,24.8,38.0,24.1,3.6,6.2,0.0,0.0,3.4,0.098,0.809,0.092,0.0,0.0,0.0,0.0,0.0,Con,Likely Con
+E14001536,Swindon North,South West,Lab,33.3,24.2,31.1,2.7,6.0,0.0,0.0,2.8,0.505,0.158,0.337,0.0,0.0,0.0,0.0,0.0,Lab,Toss-up
+E14001537,Swindon South,South West,Lab,39.9,21.7,25.0,2.7,7.6,0.0,0.0,3.1,0.865,0.051,0.084,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
+E14001538,Tamworth,West Midlands,Lab,26.3,24.0,39.3,2.2,5.0,0.0,0.0,3.1,0.083,0.093,0.824,0.0,0.0,0.0,0.0,0.0,Ref,Likely Ref
+E14001539,Tatton,North West,Con,30.1,38.1,16.8,5.8,6.1,0.0,0.0,3.2,0.228,0.747,0.025,0.0,0.0,0.0,0.0,0.0,Con,Lean Con
+E14001540,Taunton and Wellington,South West,LD,4.7,19.3,24.7,42.7,5.9,0.0,0.0,2.8,0.001,0.011,0.044,0.943,0.0,0.0,0.0,0.0,LD,Likely LD
+E14001541,Telford,West Midlands,Lab,35.5,14.3,39.2,2.1,6.0,0.0,0.0,2.8,0.385,0.015,0.6,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
+E14001542,Tewkesbury,South West,LD,6.0,24.2,20.6,38.0,8.3,0.0,0.0,2.9,0.001,0.075,0.034,0.889,0.0,0.0,0.0,0.0,LD,Likely LD
+E14001543,The Wrekin,West Midlands,Con,21.7,29.1,31.5,6.4,8.1,0.0,0.0,3.2,0.087,0.42,0.492,0.0,0.001,0.0,0.0,0.0,Ref,Toss-up
+E14001544,Thirsk and Malton,Yorkshire and The Humber,Con,16.6,35.8,27.7,7.9,8.0,0.0,0.0,4.1,0.013,0.778,0.208,0.001,0.0,0.0,0.0,0.0,Con,Lean Con
+E14001545,Thornbury and Yate,South West,LD,6.2,26.8,23.1,34.7,5.6,0.0,0.0,3.5,0.001,0.198,0.077,0.724,0.0,0.0,0.0,0.0,LD,Lean LD
+E14001546,Thurrock,East of England,Lab,34.3,14.9,39.1,1.7,5.5,0.0,0.0,4.4,0.345,0.015,0.639,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
+E14001547,Tipton and Wednesbury,West Midlands,Lab,28.1,18.6,39.5,1.2,6.6,0.0,0.0,6.1,0.142,0.031,0.826,0.0,0.001,0.0,0.0,0.0,Ref,Likely Ref
+E14001548,Tiverton and Minehead,South West,LD,5.7,24.7,25.2,34.7,6.3,0.0,0.0,3.4,0.001,0.136,0.124,0.738,0.0,0.0,0.0,0.0,LD,Lean LD
+E14001549,Tonbridge,South East,Con,12.4,36.1,23.5,6.2,17.5,0.0,0.0,4.3,0.003,0.877,0.098,0.001,0.02,0.0,0.0,0.0,Con,Likely Con
+E14001550,Tooting,London,Lab,45.3,16.2,7.1,6.8,19.6,0.0,0.0,4.9,0.959,0.002,0.0,0.006,0.033,0.0,0.0,0.0,Lab,Safe Lab
+E14001551,Torbay,South West,LD,4.5,22.8,28.6,36.7,4.5,0.0,0.0,3.0,0.0,0.058,0.19,0.751,0.0,0.0,0.0,0.0,LD,Lean LD
+E14001552,Torridge and Tavistock,South West,Con,14.3,27.7,28.6,19.9,6.3,0.0,0.0,3.2,0.012,0.421,0.441,0.125,0.001,0.0,0.0,0.0,Ref,Toss-up
+E14001553,Tottenham,London,Lab,45.0,4.4,6.4,3.3,31.2,0.0,0.0,9.7,0.864,0.0,0.0,0.0,0.136,0.0,0.0,0.0,Lab,Likely Lab
+E14001554,Truro and Falmouth,South West,Lab,35.4,22.9,20.6,8.6,9.0,0.0,0.0,3.4,0.785,0.136,0.075,0.002,0.001,0.0,0.0,0.0,Lab,Lean Lab
+E14001555,Tunbridge Wells,South East,LD,7.9,23.3,18.9,39.1,7.1,0.0,0.0,3.8,0.002,0.055,0.018,0.925,0.0,0.0,0.0,0.0,LD,Likely LD
+E14001556,Twickenham,London,LD,8.8,14.3,11.0,51.9,10.8,0.0,0.0,3.2,0.0,0.001,0.0,0.998,0.0,0.0,0.0,0.0,LD,Safe LD
+E14001557,Tynemouth,North East,Lab,42.5,14.7,25.2,3.8,9.3,0.0,0.0,4.5,0.923,0.012,0.064,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
+E14001558,Uxbridge and South Ruislip,London,Lab,28.3,34.9,19.3,2.4,11.9,0.0,0.0,3.2,0.283,0.649,0.054,0.0,0.014,0.0,0.0,0.0,Con,Tilt Con
+E14001559,Vauxhall and Camberwell Green,London,Lab,44.7,6.0,7.4,8.3,30.9,0.0,0.0,2.6,0.854,0.0,0.0,0.0,0.146,0.0,0.0,0.0,Lab,Likely Lab
+E14001560,Wakefield and Rothwell,Yorkshire and The Humber,Lab,36.7,12.6,34.9,4.3,6.7,0.0,0.0,4.9,0.59,0.013,0.397,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
+E14001561,Wallasey,North West,Lab,47.1,8.6,26.2,3.0,11.5,0.0,0.0,3.6,0.943,0.007,0.049,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
+E14001562,Walsall and Bloxwich,West Midlands,Lab,24.8,12.5,32.8,1.3,7.9,0.0,0.0,20.7,0.25,0.015,0.585,0.0,0.007,0.0,0.0,0.144,Ref,Tilt Ref
+E14001563,Walthamstow,London,Lab,48.3,4.2,6.4,2.8,29.6,0.0,0.0,8.8,0.932,0.0,0.001,0.0,0.068,0.0,0.0,0.0,Lab,Likely Lab
+E14001564,Warrington North,North West,Lab,38.7,11.1,37.7,3.7,5.5,0.0,0.0,3.3,0.563,0.01,0.427,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
+E14001565,Warrington South,North West,Lab,39.5,18.6,27.9,4.9,6.0,0.0,0.0,3.2,0.842,0.029,0.129,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
+E14001566,Warwick and Leamington,West Midlands,Lab,39.9,20.9,17.0,5.8,13.7,0.0,0.0,2.7,0.926,0.038,0.032,0.0,0.003,0.0,0.0,0.0,Lab,Likely Lab
+E14001567,Washington and Gateshead South,North East,Lab,38.0,8.2,42.7,2.4,5.5,0.0,0.0,3.3,0.345,0.005,0.65,0.0,0.0,0.0,0.0,0.0,Ref,Lean Ref
+E14001568,Watford,East of England,Lab,30.0,25.3,16.2,12.9,7.7,0.0,0.0,7.8,0.597,0.301,0.047,0.053,0.002,0.0,0.0,0.001,Lab,Tilt Lab
+E14001569,Waveney Valley,East of England,Green,6.2,22.6,24.8,2.0,41.7,0.0,0.0,2.7,0.001,0.03,0.05,0.0,0.919,0.0,0.0,0.0,Grn,Likely Grn
+E14001570,Weald of Kent,South East,Con,15.6,35.5,29.7,5.6,10.3,0.0,0.0,3.3,0.009,0.715,0.274,0.0,0.001,0.0,0.0,0.0,Con,Lean Con
+E14001571,Wellingborough and Rushden,East Midlands,Lab,32.6,19.2,37.0,2.0,6.7,0.0,0.0,2.5,0.358,0.04,0.602,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
+E14001572,Wells and Mendip Hills,South West,LD,4.9,19.8,21.0,41.7,6.1,0.0,0.0,6.4,0.001,0.017,0.025,0.957,0.0,0.0,0.0,0.0,LD,Safe LD
+E14001573,Welwyn Hatfield,East of England,Lab,33.0,32.1,19.6,3.8,8.5,0.0,0.0,3.0,0.513,0.424,0.061,0.0,0.002,0.0,0.0,0.0,Lab,Toss-up
+E14001574,West Bromwich,West Midlands,Lab,38.0,14.5,32.6,2.1,6.7,0.0,0.0,6.1,0.712,0.015,0.273,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
+E14001575,West Dorset,South West,LD,4.3,31.8,3.7,48.6,6.9,0.0,0.0,4.7,0.001,0.057,0.005,0.937,0.0,0.0,0.0,0.0,LD,Likely LD
+E14001576,West Ham and Beckton,London,Lab,34.8,7.9,9.9,2.9,21.2,0.0,0.0,23.3,0.755,0.0,0.001,0.0,0.119,0.0,0.0,0.124,Lab,Lean Lab
+E14001577,West Lancashire,North West,Lab,41.4,14.3,29.7,2.9,8.8,0.0,0.0,3.0,0.856,0.014,0.13,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
+E14001578,West Suffolk,East of England,Con,18.3,29.7,32.5,6.4,8.8,0.0,0.0,4.2,0.026,0.408,0.564,0.0,0.001,0.0,0.0,0.0,Ref,Tilt Ref
+E14001579,West Worcestershire,West Midlands,Con,10.3,32.6,22.1,20.5,11.3,0.0,0.0,3.2,0.004,0.764,0.098,0.131,0.003,0.0,0.0,0.0,Con,Lean Con
+E14001580,Westmorland and Lonsdale,North West,LD,3.4,15.2,16.5,56.6,5.2,0.0,0.0,3.1,0.001,0.002,0.006,0.991,0.0,0.0,0.0,0.0,LD,Safe LD
+E14001581,Weston-super-Mare,South West,Lab,32.1,20.2,33.1,4.9,6.7,0.0,0.0,2.9,0.459,0.081,0.46,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
+E14001582,Wetherby and Easingwold,Yorkshire and The Humber,Con,22.8,38.3,21.0,4.4,10.0,0.0,0.0,3.6,0.065,0.88,0.054,0.0,0.0,0.0,0.0,0.0,Con,Likely Con
+E14001583,Whitehaven and Workington,North West,Lab,42.9,14.0,34.7,1.6,3.8,0.0,0.0,3.0,0.795,0.013,0.192,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
+E14001584,Widnes and Halewood,North West,Lab,49.9,6.6,30.0,2.8,7.5,0.0,0.0,3.2,0.94,0.005,0.055,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
+E14001585,Wigan,North West,Lab,38.5,7.0,37.8,2.3,4.8,0.0,0.0,9.6,0.563,0.005,0.432,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
+E14001586,Wimbledon,London,LD,15.8,20.5,8.8,43.2,8.0,0.0,0.0,3.7,0.003,0.015,0.0,0.982,0.0,0.0,0.0,0.0,LD,Safe LD
+E14001587,Winchester,South East,LD,3.8,24.0,13.6,46.7,8.4,0.0,0.0,3.4,0.001,0.015,0.002,0.982,0.0,0.0,0.0,0.0,LD,Safe LD
+E14001588,Windsor,South East,Con,15.5,34.0,16.1,19.1,8.2,0.0,0.0,7.1,0.015,0.865,0.018,0.1,0.002,0.0,0.0,0.0,Con,Likely Con
+E14001589,Wirral West,North West,Lab,39.1,23.0,20.9,4.2,9.4,0.0,0.0,3.3,0.879,0.069,0.052,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
+E14001590,Witham,East of England,Con,18.3,32.7,31.0,4.8,8.8,0.0,0.0,4.5,0.026,0.567,0.407,0.0,0.001,0.0,0.0,0.0,Con,Tilt Con
+E14001591,Witney,South East,LD,6.3,27.4,20.4,36.8,5.4,0.0,0.0,3.6,0.002,0.166,0.031,0.801,0.0,0.0,0.0,0.0,LD,Likely LD
+E14001592,Woking,South East,LD,6.6,22.8,15.9,44.9,6.7,0.0,0.0,3.0,0.001,0.017,0.004,0.978,0.0,0.0,0.0,0.0,LD,Safe LD
+E14001593,Wokingham,South East,LD,4.7,27.7,15.4,42.8,5.7,0.0,0.0,3.7,0.001,0.063,0.005,0.932,0.0,0.0,0.0,0.0,LD,Likely LD
+E14001594,Wolverhampton North East,West Midlands,Lab,33.8,18.3,38.1,1.7,5.3,0.0,0.0,2.8,0.36,0.026,0.614,0.0,0.0,0.0,0.0,0.0,Ref,Tilt Ref
+E14001595,Wolverhampton South East,West Midlands,Lab,40.2,11.6,36.3,1.3,6.3,0.0,0.0,4.2,0.672,0.008,0.319,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
+E14001596,Wolverhampton West,West Midlands,Lab,36.7,23.0,22.9,2.0,7.7,0.0,0.0,7.7,0.812,0.103,0.084,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
+E14001597,Worcester,West Midlands,Lab,34.3,19.9,25.7,5.1,12.1,0.0,0.0,2.9,0.704,0.091,0.193,0.0,0.012,0.0,0.0,0.0,Lab,Lean Lab
+E14001598,Worsley and Eccles,North West,Lab,39.5,11.3,34.2,2.5,8.4,0.0,0.0,4.2,0.7,0.01,0.29,0.0,0.0,0.0,0.0,0.0,Lab,Lean Lab
+E14001599,Worthing West,South East,Lab,33.8,29.0,24.3,3.2,6.9,0.0,0.0,2.7,0.568,0.311,0.122,0.0,0.0,0.0,0.0,0.0,Lab,Tilt Lab
+E14001600,Wycombe,South East,Lab,30.1,26.2,17.1,5.9,6.7,0.0,0.0,14.0,0.602,0.314,0.065,0.002,0.001,0.0,0.0,0.016,Lab,Tilt Lab
+E14001601,Wyre Forest,West Midlands,Con,21.6,26.9,34.0,4.3,7.0,0.0,0.0,6.3,0.063,0.274,0.663,0.0,0.0,0.0,0.0,0.0,Ref,Lean Ref
+E14001602,Wythenshawe and Sale East,North West,Lab,42.3,10.4,24.8,3.4,14.5,0.0,0.0,4.5,0.919,0.005,0.069,0.0,0.008,0.0,0.0,0.0,Lab,Likely Lab
+E14001603,Yeovil,South West,LD,4.1,17.7,25.2,42.4,7.0,0.0,0.0,3.6,0.001,0.012,0.052,0.936,0.0,0.0,0.0,0.0,LD,Likely LD
+E14001604,York Central,Yorkshire and The Humber,Lab,44.5,9.2,16.3,5.0,21.8,0.0,0.0,3.2,0.936,0.0,0.015,0.0,0.048,0.0,0.0,0.0,Lab,Likely Lab
+E14001605,York Outer,Yorkshire and The Humber,Lab,38.8,24.4,20.1,7.5,5.8,0.0,0.0,3.3,0.86,0.089,0.05,0.0,0.0,0.0,0.0,0.0,Lab,Likely Lab
+S14000021,East Renfrewshire,Scotland,Lab,37.7,13.8,9.2,1.8,5.7,26.9,0.0,4.9,0.837,0.014,0.015,0.0,0.0,0.133,0.0,0.0,Lab,Likely Lab
+S14000027,Na h-Eileanan an Iar,Scotland,Lab,42.2,3.9,10.0,2.4,2.5,19.3,0.0,19.7,0.953,0.003,0.018,0.0,0.0,0.013,0.0,0.013,Lab,Safe Lab
+S14000045,Midlothian,Scotland,Lab,42.1,5.9,12.4,4.6,2.5,29.5,0.0,3.1,0.881,0.004,0.012,0.0,0.0,0.104,0.0,0.0,Lab,Likely Lab
+S14000048,North Ayrshire and Arran,Scotland,Lab,33.5,10.9,12.4,1.8,5.5,32.7,0.0,3.3,0.529,0.01,0.01,0.0,0.0,0.451,0.0,0.0,Lab,Toss-up
+S14000051,Orkney and Shetland,Scotland,LD,5.2,2.3,12.0,48.1,14.0,14.9,0.0,3.5,0.0,0.0,0.003,0.993,0.001,0.003,0.0,0.0,LD,Safe LD
+S14000060,Aberdeen North,Scotland,SNP,24.8,10.4,12.8,4.2,5.2,37.8,0.0,4.8,0.106,0.01,0.007,0.0,0.0,0.877,0.0,0.0,SNP,Likely SNP
+S14000061,Aberdeen South,Scotland,SNP,19.3,20.2,11.3,4.7,5.8,34.9,0.0,3.8,0.043,0.089,0.009,0.0,0.0,0.859,0.0,0.0,SNP,Likely SNP
+S14000062,Aberdeenshire North and Moray East,Scotland,SNP,7.2,27.8,19.7,5.7,2.4,33.5,0.0,3.7,0.001,0.266,0.036,0.001,0.0,0.696,0.0,0.0,SNP,Lean SNP
+S14000063,Airdrie and Shotts,Scotland,Lab,44.2,3.7,13.2,1.7,2.5,29.5,0.0,5.3,0.909,0.001,0.01,0.0,0.0,0.08,0.0,0.0,Lab,Likely Lab
+S14000064,Alloa and Grangemouth,Scotland,Lab,36.7,5.9,14.2,2.1,6.0,28.8,0.0,6.2,0.78,0.004,0.016,0.0,0.0,0.199,0.0,0.0,Lab,Lean Lab
+S14000065,Angus and Perthshire Glens,Scotland,SNP,10.8,25.8,11.7,5.5,2.5,39.4,0.0,4.3,0.002,0.102,0.005,0.001,0.0,0.891,0.0,0.0,SNP,Likely SNP
+S14000066,Arbroath and Broughty Ferry,Scotland,SNP,27.7,11.6,12.3,3.6,2.3,38.5,0.0,4.0,0.149,0.01,0.004,0.0,0.0,0.836,0.0,0.0,SNP,Likely SNP
+S14000067,"Argyll, Bute and South Lochaber",Scotland,SNP,14.9,17.5,11.6,14.3,2.5,34.4,0.0,4.7,0.012,0.04,0.007,0.032,0.0,0.908,0.0,0.0,SNP,Likely SNP
+S14000068,Bathgate and Linlithgow,Scotland,Lab,40.0,6.0,13.8,4.0,6.1,26.3,0.0,3.9,0.895,0.004,0.018,0.0,0.0,0.083,0.0,0.0,Lab,Likely Lab
+S14000069,"Caithness, Sutherland and Easter Ross",Scotland,LD,5.5,3.3,12.0,44.5,6.6,23.8,0.0,4.3,0.001,0.0,0.002,0.97,0.0,0.026,0.0,0.0,LD,Safe LD
+S14000070,Coatbridge and Bellshill,Scotland,Lab,42.6,2.8,11.0,1.4,5.8,32.6,0.0,3.9,0.839,0.0,0.006,0.0,0.0,0.155,0.0,0.0,Lab,Likely Lab
+S14000071,Cowdenbeath and Kirkcaldy,Scotland,Lab,38.7,6.2,12.7,3.0,6.7,27.4,0.0,5.3,0.856,0.004,0.015,0.0,0.0,0.124,0.0,0.0,Lab,Likely Lab
+S14000072,Cumbernauld and Kirkintilloch,Scotland,Lab,37.6,3.5,11.5,2.3,6.7,35.2,0.0,3.2,0.621,0.0,0.003,0.0,0.0,0.375,0.0,0.0,Lab,Tilt Lab
+S14000073,Dumfries and Galloway,Scotland,Con,19.5,28.3,13.9,3.3,4.5,27.7,0.0,2.9,0.07,0.383,0.018,0.0,0.0,0.528,0.0,0.0,SNP,Toss-up
+S14000074,"Dumfriesshire, Clydesdale and Tweeddale",Scotland,Con,17.2,32.9,12.9,4.6,5.4,24.1,0.0,2.9,0.028,0.684,0.007,0.0,0.0,0.281,0.0,0.0,Con,Lean Con
+S14000075,Dundee Central,Scotland,SNP,32.0,2.9,9.3,4.2,2.3,42.2,0.0,7.0,0.169,0.0,0.001,0.0,0.0,0.83,0.0,0.0,SNP,Likely SNP
+S14000076,Dunfermline and Dollar,Scotland,Lab,39.0,5.9,11.4,5.5,7.9,26.5,0.0,3.9,0.879,0.004,0.016,0.001,0.0,0.099,0.0,0.0,Lab,Likely Lab
+S14000077,East Kilbride and Strathaven,Scotland,Lab,41.4,6.0,12.1,1.9,6.9,28.1,0.0,3.6,0.891,0.004,0.012,0.0,0.0,0.092,0.0,0.0,Lab,Likely Lab
+S14000078,Edinburgh East and Musselburgh,Scotland,Lab,34.1,4.2,8.1,3.0,13.7,34.0,0.0,3.0,0.516,0.001,0.007,0.0,0.005,0.471,0.0,0.0,Lab,Toss-up
+S14000079,Edinburgh North and Leith,Scotland,Lab,35.2,5.1,7.4,5.9,15.3,27.4,0.0,3.7,0.767,0.003,0.013,0.002,0.013,0.201,0.0,0.0,Lab,Lean Lab
+S14000080,Edinburgh South,Scotland,Lab,45.7,7.0,8.5,4.8,13.8,15.1,0.0,5.2,0.97,0.006,0.018,0.0,0.003,0.004,0.0,0.0,Lab,Safe Lab
+S14000081,Edinburgh South West,Scotland,Lab,34.5,9.5,8.8,4.8,11.2,27.8,0.0,3.3,0.738,0.01,0.014,0.0,0.003,0.234,0.0,0.0,Lab,Lean Lab
+S14000082,Edinburgh West,Scotland,LD,11.4,4.5,8.1,47.4,7.3,17.6,0.0,3.7,0.001,0.0,0.001,0.993,0.0,0.004,0.0,0.0,LD,Safe LD
+S14000083,Falkirk,Scotland,Lab,36.1,6.4,12.3,2.0,6.7,31.7,0.0,4.9,0.681,0.004,0.01,0.0,0.0,0.304,0.0,0.0,Lab,Lean Lab
+S14000084,Glasgow East,Scotland,Lab,36.4,3.5,10.5,1.8,11.0,33.4,0.0,3.4,0.628,0.001,0.007,0.0,0.001,0.363,0.0,0.0,Lab,Tilt Lab
+S14000085,Glasgow North,Scotland,Lab,34.8,2.9,8.3,2.4,15.7,32.3,0.0,3.7,0.606,0.0,0.008,0.0,0.012,0.374,0.0,0.0,Lab,Tilt Lab
+S14000086,Glasgow North East,Scotland,Lab,38.1,2.6,10.6,1.4,10.6,31.9,0.0,4.8,0.744,0.0,0.008,0.0,0.001,0.246,0.0,0.0,Lab,Lean Lab
+S14000087,Glasgow South,Scotland,Lab,34.4,2.8,7.4,2.2,16.7,32.3,0.0,4.2,0.578,0.0,0.008,0.0,0.016,0.398,0.0,0.0,Lab,Tilt Lab
+S14000088,Glasgow South West,Scotland,Lab,36.1,2.9,9.8,2.0,10.8,34.7,0.0,3.6,0.57,0.0,0.005,0.0,0.001,0.424,0.0,0.0,Lab,Tilt Lab
+S14000089,Glasgow West,Scotland,Lab,39.0,3.3,9.3,2.5,13.0,29.9,0.0,3.1,0.817,0.001,0.01,0.0,0.002,0.171,0.0,0.0,Lab,Likely Lab
+S14000090,Glenrothes and Mid Fife,Scotland,Lab,37.0,3.9,13.6,3.1,2.4,36.7,0.0,3.2,0.532,0.001,0.003,0.0,0.0,0.464,0.0,0.0,Lab,Toss-up
+S14000091,Gordon and Buchan,Scotland,Con,7.7,28.4,13.8,13.3,2.3,30.6,0.0,3.8,0.002,0.388,0.011,0.02,0.0,0.579,0.0,0.0,SNP,Tilt SNP
+S14000092,Hamilton and Clyde Valley,Scotland,Lab,43.3,8.9,13.4,2.9,2.5,26.1,0.0,2.9,0.93,0.007,0.016,0.0,0.0,0.047,0.0,0.0,Lab,Likely Lab
+S14000093,Inverclyde and Renfrewshire West,Scotland,Lab,40.2,5.6,10.5,2.4,5.4,30.9,0.0,4.9,0.818,0.003,0.01,0.0,0.0,0.17,0.0,0.0,Lab,Likely Lab
+S14000094,"Inverness, Skye and West Ross-shire",Scotland,LD,9.5,4.2,10.5,34.4,7.6,30.7,0.0,3.0,0.002,0.0,0.002,0.63,0.0,0.366,0.0,0.0,LD,Tilt LD
+S14000095,Livingston,Scotland,Lab,34.2,5.7,12.9,3.2,6.4,34.2,0.0,3.4,0.517,0.003,0.008,0.0,0.0,0.473,0.0,0.0,Lab,Toss-up
+S14000096,Lothian East,Scotland,Lab,42.0,9.6,11.9,4.4,8.8,19.7,0.0,3.7,0.956,0.008,0.021,0.0,0.0,0.014,0.0,0.0,Lab,Safe Lab
+S14000097,Mid Dunbartonshire,Scotland,LD,16.2,3.8,7.6,40.8,6.2,22.1,0.0,3.4,0.005,0.0,0.001,0.942,0.0,0.052,0.0,0.0,LD,Likely LD
+S14000098,"Moray West, Nairn and Strathspey",Scotland,SNP,13.1,26.1,12.4,6.4,6.0,32.4,0.0,3.6,0.008,0.263,0.01,0.001,0.0,0.717,0.0,0.0,SNP,Lean SNP
+S14000099,"Motherwell, Wishaw and Carluke",Scotland,Lab,42.0,4.9,12.4,1.7,5.7,30.0,0.0,3.2,0.869,0.002,0.01,0.0,0.0,0.118,0.0,0.0,Lab,Likely Lab
+S14000100,North East Fife,Scotland,LD,6.9,3.1,9.0,49.5,7.0,20.7,0.0,3.6,0.001,0.0,0.002,0.99,0.0,0.008,0.0,0.0,LD,Safe LD
+S14000101,Paisley and Renfrewshire North,Scotland,Lab,39.7,4.9,12.2,2.5,6.2,31.2,0.0,3.4,0.798,0.002,0.009,0.0,0.0,0.19,0.0,0.0,Lab,Lean Lab
+S14000102,Paisley and Renfrewshire South,Scotland,Lab,40.2,4.1,11.6,2.5,7.1,31.2,0.0,3.4,0.819,0.001,0.009,0.0,0.0,0.17,0.0,0.0,Lab,Likely Lab
+S14000103,Perth and Kinross-shire,Scotland,SNP,13.7,25.5,10.5,6.0,2.4,37.7,0.0,4.1,0.004,0.124,0.004,0.001,0.0,0.867,0.0,0.0,SNP,Likely SNP
+S14000104,Rutherglen,Scotland,Lab,43.7,4.6,11.2,3.2,2.5,28.8,0.0,6.0,0.912,0.002,0.012,0.0,0.0,0.074,0.0,0.0,Lab,Likely Lab
+S14000105,Stirling and Strathallan,Scotland,Lab,28.0,14.4,10.2,3.5,7.3,33.4,0.0,3.2,0.292,0.023,0.011,0.0,0.001,0.674,0.0,0.0,SNP,Lean SNP
+S14000106,West Dunbartonshire,Scotland,Lab,41.5,2.8,11.2,1.7,6.6,33.0,0.0,3.3,0.805,0.0,0.006,0.0,0.0,0.189,0.0,0.0,Lab,Likely Lab
+S14000107,"Ayr, Carrick and Cumnock",Scotland,Lab,31.0,18.9,14.0,2.0,4.2,26.6,0.0,3.4,0.578,0.075,0.027,0.0,0.0,0.32,0.0,0.0,Lab,Tilt Lab
+S14000108,"Berwickshire, Roxburgh and Selkirk",Scotland,Con,10.0,35.8,11.9,6.4,5.7,26.2,0.0,3.9,0.003,0.81,0.006,0.001,0.0,0.18,0.0,0.0,Con,Likely Con
+S14000109,Central Ayrshire,Scotland,Lab,37.4,11.9,13.6,1.9,4.9,26.7,0.0,3.7,0.84,0.012,0.02,0.0,0.0,0.128,0.0,0.0,Lab,Likely Lab
+S14000110,Kilmarnock and Loudoun,Scotland,Lab,38.0,6.3,12.5,1.5,5.2,33.2,0.0,3.2,0.69,0.004,0.008,0.0,0.0,0.298,0.0,0.0,Lab,Lean Lab
+S14000111,West Aberdeenshire and Kincardine,Scotland,Con,9.6,31.6,12.0,10.4,4.0,29.1,0.0,3.3,0.003,0.584,0.006,0.008,0.0,0.4,0.0,0.0,Con,Tilt Con
+W07000081,Aberafan Maesteg,Wales,Lab,38.3,4.7,31.9,1.4,3.6,0.0,16.7,3.4,0.694,0.0,0.274,0.0,0.0,0.0,0.032,0.0,Lab,Lean Lab
+W07000082,Alyn and Deeside,Wales,Lab,33.7,11.9,36.3,2.5,4.8,0.0,6.2,4.6,0.441,0.012,0.546,0.0,0.0,0.0,0.0,0.0,Ref,Toss-up
+W07000083,Bangor Aberconwy,Wales,Lab,20.8,13.8,19.1,2.2,4.5,0.0,36.6,2.9,0.077,0.007,0.052,0.0,0.0,0.0,0.863,0.0,PC,Likely PC
+W07000084,Blaenau Gwent and Rhymney,Wales,Lab,40.1,8.4,4.9,2.8,8.6,0.0,23.8,11.4,0.898,0.002,0.024,0.0,0.0,0.0,0.074,0.001,Lab,Likely Lab
+W07000085,"Brecon, Radnor and Cwm Tawe",Wales,LD,13.0,21.2,22.8,27.6,3.7,0.0,8.1,3.6,0.024,0.205,0.232,0.538,0.0,0.0,0.001,0.0,LD,Toss-up
+W07000086,Bridgend,Wales,Lab,32.3,10.6,31.8,1.8,4.4,0.0,11.2,7.7,0.535,0.011,0.443,0.0,0.0,0.0,0.01,0.001,Lab,Toss-up
+W07000087,Caerfyrddin,Wales,PC,14.5,12.9,20.2,2.3,4.4,0.0,42.7,3.1,0.006,0.002,0.016,0.0,0.0,0.0,0.975,0.0,PC,Safe PC
+W07000088,Caerphilly,Wales,Lab,21.5,6.7,26.9,2.5,4.7,0.0,35.1,2.6,0.105,0.0,0.229,0.0,0.0,0.0,0.666,0.0,PC,Lean PC
+W07000089,Cardiff East,Wales,Lab,29.4,6.6,18.3,11.3,14.7,0.0,17.4,2.3,0.689,0.0,0.1,0.032,0.062,0.0,0.116,0.0,Lab,Lean Lab
+W07000090,Cardiff North,Wales,Lab,32.6,14.5,18.7,4.1,8.5,0.0,18.7,2.9,0.803,0.018,0.072,0.0,0.001,0.0,0.106,0.0,Lab,Likely Lab
+W07000091,Cardiff South and Penarth,Wales,Lab,30.8,9.1,12.8,4.4,26.2,0.0,14.1,2.6,0.666,0.001,0.008,0.0,0.294,0.0,0.03,0.0,Lab,Lean Lab
+W07000092,Cardiff West,Wales,Lab,23.5,9.7,15.2,2.5,8.7,0.0,36.5,4.1,0.132,0.002,0.02,0.0,0.001,0.0,0.846,0.0,PC,Likely PC
+W07000093,Ceredigion Preseli,Wales,PC,6.8,6.8,15.7,10.1,6.0,0.0,52.0,2.6,0.001,0.0,0.005,0.001,0.0,0.0,0.992,0.0,PC,Safe PC
+W07000094,Clwyd East,Wales,Lab,31.4,23.2,26.2,2.1,3.8,0.0,10.4,2.9,0.548,0.204,0.244,0.0,0.0,0.0,0.004,0.0,Lab,Toss-up
+W07000095,Clwyd North,Wales,Lab,25.4,28.8,26.1,2.3,4.1,0.0,10.6,2.7,0.27,0.455,0.271,0.0,0.0,0.0,0.005,0.0,Con,Toss-up
+W07000096,Dwyfor Meirionnydd,Wales,PC,8.5,7.6,16.8,2.5,5.2,0.0,56.6,2.8,0.002,0.0,0.004,0.0,0.0,0.0,0.993,0.0,PC,Safe PC
+W07000097,Gower,Wales,Lab,35.7,13.2,29.0,3.0,5.5,0.0,11.2,2.4,0.713,0.017,0.266,0.0,0.0,0.0,0.005,0.0,Lab,Lean Lab
+W07000098,Llanelli,Wales,Lab,17.1,6.5,32.4,1.9,3.3,0.0,35.6,3.1,0.017,0.0,0.39,0.0,0.0,0.0,0.592,0.0,PC,Tilt PC
+W07000099,Merthyr Tydfil and Aberdare,Wales,Lab,33.7,4.4,35.0,1.8,3.8,0.0,17.3,3.9,0.453,0.0,0.489,0.0,0.0,0.0,0.057,0.0,Ref,Toss-up
+W07000100,Mid and South Pembrokeshire,Wales,Lab,26.5,27.4,26.8,2.9,4.4,0.0,9.1,3.1,0.319,0.386,0.293,0.0,0.0,0.0,0.002,0.0,Con,Toss-up
+W07000101,Monmouthshire,Wales,Lab,33.9,33.2,16.9,2.8,5.5,0.0,4.2,3.5,0.522,0.442,0.036,0.0,0.0,0.0,0.0,0.0,Lab,Toss-up
+W07000102,Montgomeryshire and Glyndŵr,Wales,Lab,17.3,11.8,30.0,8.5,4.7,0.0,24.9,2.8,0.074,0.011,0.582,0.007,0.0,0.0,0.327,0.0,Ref,Tilt Ref
+W07000103,Neath and Swansea East,Wales,Lab,29.2,5.4,36.1,2.9,4.6,0.0,19.3,2.5,0.302,0.0,0.591,0.0,0.0,0.0,0.106,0.0,Ref,Tilt Ref
+W07000104,Newport East,Wales,Lab,34.2,11.2,32.2,2.7,6.0,0.0,8.1,5.6,0.586,0.012,0.4,0.0,0.0,0.0,0.002,0.0,Lab,Tilt Lab
+W07000105,Newport West and Islwyn,Wales,Lab,33.3,10.3,33.2,2.5,5.1,0.0,10.9,4.6,0.524,0.009,0.458,0.0,0.0,0.0,0.008,0.0,Lab,Toss-up
+W07000106,Pontypridd,Wales,Lab,28.7,5.6,30.9,2.1,5.0,0.0,21.0,6.7,0.41,0.0,0.415,0.0,0.0,0.0,0.174,0.0,Ref,Toss-up
+W07000107,Rhondda and Ogmore,Wales,Lab,35.6,3.1,36.8,1.3,3.5,0.0,17.2,2.5,0.453,0.0,0.51,0.0,0.0,0.0,0.037,0.0,Ref,Toss-up
+W07000108,Swansea West,Wales,Lab,30.6,6.2,26.5,6.3,8.5,0.0,19.6,2.5,0.549,0.0,0.282,0.001,0.008,0.0,0.16,0.0,Lab,Toss-up
+W07000109,Torfaen,Wales,Lab,33.6,10.2,35.5,2.3,5.1,0.0,9.4,3.9,0.469,0.009,0.521,0.0,0.0,0.0,0.001,0.0,Ref,Toss-up
+W07000110,Vale of Glamorgan,Wales,Lab,30.9,24.8,24.4,1.9,4.7,0.0,9.9,3.3,0.54,0.265,0.192,0.0,0.0,0.0,0.003,0.0,Lab,Toss-up
+W07000111,Wrexham,Wales,Lab,31.2,16.4,30.0,2.3,3.9,0.0,13.4,2.7,0.532,0.041,0.397,0.0,0.0,0.0,0.03,0.0,Lab,Toss-up
+W07000112,Ynys Môn,Wales,PC,14.4,21.3,15.4,1.2,3.2,0.0,41.8,2.8,0.005,0.022,0.012,0.0,0.0,0.0,0.961,0.0,PC,Safe PC
