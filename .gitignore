@@ -8,3 +8,6 @@ data/silverbulletin/
 
 # Reference papers (author manuscripts; kept locally, not redistributed)
 papers/
+
+# British Election Study panel files (licence: no redistribution)
+uk/data/bes/
