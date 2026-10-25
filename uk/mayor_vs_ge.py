@@ -164,11 +164,15 @@ def test_2025():
                                                          if p == "Oth" else 0)) for p in PARTIES}
         actual, winner = area_result(page)
         d = {p: actual[p] - model[p] for p in PARTIES}
-        diffs.append(d)
+        diffs.append({"area": page[5:-17], **{k: round(v, 2) for k, v in d.items()}})
         print(f"{page[5:-17][:27]:28}{len(i):6d}  " + "".join(f"{d[p]:+6.1f}" for p in PARTIES)
               + f"   {winner['candidate']} ({winner['party']})")
     print(f"{'average':28}{'':6}  " + "".join(f"{np.mean([d[p] for d in diffs]):+6.1f}" for p in PARTIES))
     print(f"{'spread (SD)':28}{'':6}  " + "".join(f"{np.std([d[p] for d in diffs]):6.1f}" for p in PARTIES))
+    with open(os.path.join(HERE, "data", "mayor_vs_model_2025.csv"), "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=list(diffs[0].keys()))
+        writer.writeheader()
+        writer.writerows(diffs)
 
 
 if __name__ == "__main__":

@@ -1,16 +1,20 @@
 """
-Sussex & Brighton mayoral election (May 2028), under the supplementary vote,
-"if it were held today".
+Sussex & Brighton mayoral election (May 2028), under the supplementary vote.
 
 1. First choices: the general-election model (logistic + demographic swing
-   from 2024 to today's polling average, with national polling error) for
-   Sussex's 17 constituencies, weighted by votes cast. No tactical voting:
-   under the supplementary vote people can vote sincerely first.
-2. Mayoral adjustment: mayoral first rounds don't match Westminster voting.
-   Run on the May 2025 mayoral elections (mayor_vs_ge.py), the model was off
-   by these amounts on average (Labour -4.9, Reform +2.6 ...), with these
-   spreads between areas; each run draws one shift per party.
-3. Second count: if no one has 50%, the top two go through. Everyone else's
+   from 2024 to the national polls, with polling error) for Sussex's 17
+   constituencies, weighted by votes cast. No tactical voting: under the
+   supplementary vote people can vote sincerely first.
+2. Time to May 2028: each run adds one real historical poll movement over
+   the same length of time (every such stretch since 2010, from
+   data/poll_history.csv), so the parties move together as they have done.
+   Run with --today for "if held today" instead.
+3. Mayoral adjustment (data/mayoral_adjustment.csv, mayoral_adjustment.py):
+   the national local-vs-polls gap (2012-2026), the mayoral-vs-local
+   difference (2024-25 mayors), and Sussex's own local pattern (2021 and
+   2026 county elections, Brighton & Hove 2019 and 2023) - each run draws
+   one shift per party from their combined uncertainty.
+4. Second count: if no one has 50%, the top two go through. Everyone else's
    voters transfer at YouGov's two-horse-race rates (data/yougov_tactical.csv),
    calibrated on the 12 mayoral contests of 2021-22 that went to second
    choices (fetch_sv_results.py):
@@ -21,18 +25,21 @@ Sussex & Brighton mayoral election (May 2028), under the supplementary vote,
        2021 era, partly second preferences being less tactical). Each run
        draws a value between 0.43 and 1.
 
-Not included: time until 2028 (this is a snapshot of today's polls), Sussex
-local election results, and candidates' personal votes - notably Katy
-Bourne's, who has won Sussex-wide under this system three times as Police
-and Crime Commissioner.
+Candidates' personal votes are only in the spread (the mayoral adjustment's
+uncertainty comes mostly from candidates like Burnham and Houchen), not as a
+shift for anyone - notably Katy Bourne, who has won Sussex-wide under this
+system three times as Police and Crime Commissioner.
 
-Run it with:  python uk/sussex_mayor.py
-Writes uk/data/sussex_mayor.csv.
+Run it with:  python uk/sussex_mayor.py            (May 2028)
+              python uk/sussex_mayor.py --today    (if held today)
+Writes uk/data/sussex_mayor.csv (or sussex_mayor_today.csv).
 """
 
 import csv
 import os
+import sys
 from collections import Counter
+from datetime import date, timedelta
 
 import numpy as np
 
@@ -58,9 +65,12 @@ SUSSEX = {
     "E14001533": "Sussex Weald", "E14001599": "Worthing West",
 }
 
-# Mayoral first round minus the model, May 2025 mayors: (mean, spread), points.
-MAYOR_SHIFT = {"Lab": (-4.9, 5.8), "Con": (-0.8, 3.8), "Ref": (2.6, 1.5),
-               "LD": (2.2, 7.9), "Grn": (-0.9, 1.2), "Oth": (1.9, 2.8)}
+ELECTION_DAY = date(2028, 5, 4)
+DRIFT_WINDOW_DAYS = 21     # poll averages at each end of a historical stretch
+
+# Mayoral adjustment: from data/mayoral_adjustment.csv for the five main
+# parties; independents and others from the May 2025 mayors (+1.9, spread 2.8).
+OTHER_SHIFT = (1.9, 2.8)
 
 # Second choices, from the 2021-22 mayoral counts
 VOLUME = 1.01           # transfers reaching the finalists = YouGov-implied x this
@@ -74,8 +84,59 @@ PARTIES = sm.PARTIES
 HERE = os.path.dirname(__file__)
 
 
-def first_choices(rng):
-    """sims x parties Sussex-wide first-choice shares (rows add to 1), and the model's median before step 2."""
+def mayoral_shift(rng, n):
+    """
+    n x parties (points). Per run: the national local gap and Sussex's own pattern (their
+    means, plus normal noise of their measured SDs), and one real 2024/2025 mayoral area's
+    residuals - drawn whole, since candidate effects are lumpy (most areas near zero, a few
+    huge, like Burnham or Houchen) and push the other parties down when one party surges.
+    """
+    with open(os.path.join(HERE, "data", "mayoral_adjustment.csv"), newline="", encoding="utf-8") as f:
+        parts = {r["party"]: r for r in csv.DictReader(f)}
+    with open(os.path.join(HERE, "data", "mayoral_residuals.csv"), newline="", encoding="utf-8") as f:
+        areas = list(csv.DictReader(f))
+    picked = [areas[i] for i in rng.integers(len(areas), size=n)]
+    out = np.zeros((n, len(PARTIES)))
+    for p, r in parts.items():
+        j = PARTIES.index(p)
+        out[:, j] = (float(r["local_gap"]) + float(r["local_gap_sd"]) * rng.standard_normal(n)
+                     + float(r["sussex"]) + float(r["sussex_sd"]) * rng.standard_normal(n)
+                     + np.array([float(a[p]) for a in picked]))
+    mean, sd = OTHER_SHIFT
+    out[:, PARTIES.index("Oth")] = mean + sd * rng.standard_normal(n)
+    return out
+
+
+def drift_draws(rng, days, n):
+    """
+    n x parties (points): real changes in the national poll average over `days`, from every
+    such stretch since 2010 (start dates a week apart), drawn at random.
+    """
+    import local_gap as lg
+    with open(os.path.join(HERE, "data", "poll_history.csv"), newline="", encoding="utf-8") as f:
+        polls = [{"end_date": date.fromisoformat(r["end_date"]),
+                  **{p: float(r[p]) if r[p] else None for p in lg.PARTIES}} for r in csv.DictReader(f)]
+    first, last = polls[0]["end_date"] + timedelta(days=DRIFT_WINDOW_DAYS), polls[-1]["end_date"]
+    changes, day = [], first
+    while day + timedelta(days=days) <= last:
+        a, _ = lg.poll_average(polls, day)
+        b, _ = lg.poll_average(polls, day + timedelta(days=days))
+        if all(a[p] is not None and b[p] is not None for p in lg.PARTIES):
+            changes.append([b[p] - a[p] for p in lg.PARTIES])
+        day += timedelta(days=7)
+    # centred on zero: 2010-2026 had UKIP's and Reform's rises and the Conservative collapse,
+    # and those trends shouldn't be carried forward - only how big movements get
+    changes = np.array(changes)
+    changes -= changes.mean(axis=0)
+    picked = changes[rng.integers(len(changes), size=n)]
+    out = np.zeros((n, len(PARTIES)))
+    for k, p in enumerate(lg.PARTIES):
+        out[:, PARTIES.index(p)] = picked[:, k]
+    return out, len(changes)
+
+
+def first_choices(rng, to_election=True):
+    """sims x parties Sussex-wide first-choice shares (rows add to 1), and the model's median before step 3."""
     rows, _ = sm.load_results("results_2024.csv")
     gb = [r for r in rows if r["speaker_seat"] != "1"]
     raw = sm.share_matrix(gb)
@@ -93,14 +154,19 @@ def first_choices(rng):
     seat_weights /= seat_weights.sum()
 
     nationals = sm.national_draws(rng, average, field)[:SIMULATIONS]
+    global DRIFT_STRETCHES
+    if to_election:
+        drift, DRIFT_STRETCHES = drift_draws(rng, (ELECTION_DAY - pa.TODAY).days, SIMULATIONS)
+        nationals = np.clip(nationals + drift / 100, 0.002, None)
+        nationals[:, [PARTIES.index("SNP"), PARTIES.index("PC")]] = average[[PARTIES.index("SNP"), PARTIES.index("PC")]]
+        nationals /= nationals.sum(axis=1, keepdims=True)
     first = np.zeros((SIMULATIONS, len(PARTIES)))
     for start in range(0, SIMULATIONS, 1000):
         swung = sm.swing(base, weights, nationals[start:start + 1000], elasticity)[:, seats, :]
         first[start:start + 1000] = np.einsum("i,sij->sj", seat_weights, swung)
     model = np.median(first, axis=0)
 
-    for p, (mean, sd) in MAYOR_SHIFT.items():
-        first[:, PARTIES.index(p)] += (mean + sd * rng.standard_normal(SIMULATIONS)) / 100
+    first += mayoral_shift(rng, SIMULATIONS) / 100
     first = np.clip(first, 0.002, None)
     first[:, [PARTIES.index("SNP"), PARTIES.index("PC")]] = 0
     return first / first.sum(axis=1, keepdims=True), model
@@ -131,9 +197,12 @@ def second_count(f, rng, rates, covered):
     return (PARTIES[a] if va > vb else PARTIES[b]), (PARTIES[a], PARTIES[b]), va / (va + vb)
 
 
-def main():
+DRIFT_STRETCHES = 0
+
+
+def main(to_election=True):
     rng = np.random.default_rng(SEED)
-    first, model = first_choices(rng)
+    first, model = first_choices(rng, to_election)
     rates, covered = tactics.yougov_rates()
 
     winners, pairs, finals = Counter(), Counter(), {}
@@ -153,12 +222,16 @@ def main():
         out.append({"party": p, "candidate": CANDIDATES.get(p, ""), "model_share": round(100 * model[j], 1),
                     "first_choice": round(mid, 1), "first_p5": round(lo, 1), "first_p95": round(hi, 1),
                     "win": round(winners[p] / SIMULATIONS, 3)})
-    with open(os.path.join(HERE, "data", "sussex_mayor.csv"), "w", newline="", encoding="utf-8") as f:
+    name = "sussex_mayor.csv" if to_election else "sussex_mayor_today.csv"
+    with open(os.path.join(HERE, "data", name), "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=list(out[0].keys()))
         writer.writeheader()
         writer.writerows(out)
 
-    print(f"Sussex & Brighton mayor, supplementary vote, if held {pa.TODAY:%d %b %Y} ({SIMULATIONS:,} runs)\n")
+    when = (f"{ELECTION_DAY:%d %b %Y}, from polls on {pa.TODAY:%d %b %Y} "
+            f"(+ real poll movement over {(ELECTION_DAY - pa.TODAY).days} days, {DRIFT_STRETCHES} historical stretches)"
+            if to_election else f"if held {pa.TODAY:%d %b %Y}")
+    print(f"Sussex & Brighton mayor, supplementary vote: {when} - {SIMULATIONS:,} runs\n")
     print(f"{'':5}{'candidate':30}{'model':>7}{'first choice':>14}{'90% range':>13}{'win':>6}")
     for r in out:
         print(f"{r['party']:5}{r['candidate']:30}{r['model_share']:6.1f}%{r['first_choice']:13.1f}%"
@@ -172,4 +245,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main(to_election="--today" not in sys.argv)
