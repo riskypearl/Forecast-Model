@@ -206,7 +206,21 @@ def main():
         writer.writeheader()
         writer.writerows({"year": r["year"], "area": r["area"], **{p: round(r.get(p, 0.0), 2) for p in PARTIES}}
                          for r in residuals)
-    print(f"\nSaved to {OUT} and data/mayoral_residuals.csv")
+    # Independents and other parties: how far their mayoral share ran from the general-election
+    # picture in each 2024 and 2025 area. Lumpy - mostly a few points, occasionally a Jamie
+    # Driscoll (North East 2024, +25) - so forecasts draw one real area's value, not a bell curve.
+    others = [{"year": 2024, "area": r["area"], "shift": float(r["Oth_diff"])}
+              for r in read(os.path.join(HERE, "data", "mayor_vs_ge_2024.csv"))]
+    others += [{"year": 2025, "area": r["area"], "shift": float(r["Oth"])}
+               for r in read(os.path.join(HERE, "data", "mayor_vs_model_2025.csv"))]
+    with open(os.path.join(HERE, "data", "other_shifts.csv"), "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=["year", "area", "shift"])
+        writer.writeheader()
+        writer.writerows(others)
+    values = np.array([o["shift"] for o in others])
+    print(f"\nOther / independents, mayoral minus GE picture, {len(values)} areas: median {np.median(values):+.1f}, "
+          f"90% of areas {np.percentile(values, 5):+.1f} to {np.percentile(values, 95):+.1f}, largest {values.max():+.1f}")
+    print(f"Saved to {OUT}, data/mayoral_residuals.csv and data/other_shifts.csv")
 
 
 if __name__ == "__main__":

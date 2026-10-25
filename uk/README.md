@@ -228,6 +228,7 @@ python uk/fetch_sv_results.py     # 2021-22 supplementary-vote counts (mayors + 
 python uk/mayor_vs_ge.py          # 2024 mayors vs GE; model backtest on the 2025 mayors
 python uk/mayoral_adjustment.py   # combine into the Sussex adjustment -> data/mayoral_adjustment.csv
 python uk/sussex_mayor.py         # May 2028 (add --today for "if held today") -> data/sussex_mayor.csv
+python uk/mayor_backtest.py       # the whole method on the 2021-22 supplementary-vote mayors
 ```
 
 The first election for the new Sussex & Brighton mayoralty was moved from May 2026 to May 2028,
@@ -259,6 +260,9 @@ the top two go through and the others' second choices are added). `sussex_mayor.
    - Each run draws the national gap and the Sussex pattern with their measured noise, and one
      real 2024/25 mayoral area's residuals whole - candidate effects are lumpy (Burnham +20,
      Houchen +23) and come at the other parties' expense.
+   - Independents and others likewise get one real 2024/25 area's shift per run
+     (`data/other_shifts.csv`): median +2 points, but up to +15 in one area in ten and +25 at
+     most (Jamie Driscoll, North East 2024).
 4. **Second count**: the others' voters transfer at YouGov's two-horse-race rates, calibrated on
    the 12 mayoral contests of 2021-22 that went to second choices (London, West Midlands, West
    Yorkshire ...). YouGov's rates predicted **how many** second choices reached the finalists
@@ -271,17 +275,36 @@ the top two go through and the others' second choices are added). `sussex_mayor.
 
 | | Candidate | First choice, May 2028 | 90% range | Win, May 2028 | Win if held today |
 |---|---|---|---|---|---|
-| Ref | Paul Linehan | 24.7% | 10-41 | 16% | 8% |
-| Con | Katy Bourne | 22.3% | 5-42 | **40%** | 50% |
-| Lab | Caroline Baxter | 19.0% | 1-38 | **31%** | 28% |
-| LD | Ben Dempsey | 14.7% | 3-31 | 12% | 12% |
-| Grn | Rachel Millward | 11.0% | 2-19 | 1% | 1% |
-| Ind | Martin Webb and others | 6.5% | 2-11 | 0% | 0% |
+| Ref | Paul Linehan | 24.2% | 9-40 | 17% | 9% |
+| Con | Katy Bourne | 21.8% | 5-42 | **39%** | 48% |
+| Lab | Caroline Baxter | 18.7% | 1-37 | **29%** | 27% |
+| LD | Ben Dempsey | 14.4% | 3-31 | 12% | 12% |
+| Grn | Rachel Millward | 10.7% | 2-19 | 1% | 1% |
+| Ind | Martin Webb and others | 6.9% | 2-23 | 2% | 3% |
 
 Reform is the most likely first-round leader but usually loses the second count: Conservative v
-Reform (32% of runs) goes to the Conservatives 83% of the time, Labour v Reform (23%) to Labour
-84%. Conservative v Labour finals are a coin toss. Reform's chances come from the runs where
-the polls move its way over 18 months.
+Reform (30% of runs) goes to the Conservatives 83% of the time, Labour v Reform (22%) to Labour
+83%. Conservative v Labour finals are a coin toss. So the race mostly turns on whether the
+Conservatives or Labour finish second (making the final about 56% vs 45% of the time). Reform's
+chances come from the runs where the polls move its way over 18 months.
+
+**Backtest** (`mayor_backtest.py`): the whole method run on the 14 mayoral elections of 2021-22
+that used the supplementary vote, with what was known on polling day (2019 baseline, polls in
+the 3 weeks before, demographic swing fitted on 2010-19, local gap from earlier years):
+
+| | Winners called | Main-party shares inside the 90% range | Independents / others inside |
+|---|---|---|---|
+| Combined-authority mayors (8 - the Sussex type) | **6 of 8** | **91%** | 4 of 4 |
+| All 14 (adds Salford, Doncaster, North Tyneside, Croydon, Newham, Tower Hamlets) | 9 of 14 | 86% | 8 of 10 |
+
+The two combined-authority misses were candidate-driven: Andy Street (West Midlands, 11 points
+above the model) and a strong Lib Dem in Cambridgeshire whose second choices carried Labour.
+The single-council misses were London-borough local politics (Croydon; Tower Hamlets, won by
+Lutfur Rahman's Aspire). The independents' range was widened after a first run left them inside
+it only 2 times in 10; the new range is measured on the 2024-25 mayors, so 2021-22 is a fair
+test of it. Not fully out of sample: the mayoral-vs-local residuals come from 2024-25, and the
+second-count calibration was fitted on these same contests. Bristol (wrong year scraped) and
+Tees Valley (two candidates) are left out; parties that didn't stand aren't scored.
 
 **Not included**: candidates' personal votes, except as spread - notably Katy Bourne's, who has
 won Sussex-wide under this exact system three times as Police and Crime Commissioner - and the

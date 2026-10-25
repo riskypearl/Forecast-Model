@@ -69,8 +69,11 @@ ELECTION_DAY = date(2028, 5, 4)
 DRIFT_WINDOW_DAYS = 21     # poll averages at each end of a historical stretch
 
 # Mayoral adjustment: from data/mayoral_adjustment.csv for the five main
-# parties; independents and others from the May 2025 mayors (+1.9, spread 2.8).
-OTHER_SHIFT = (1.9, 2.8)
+# parties. Independents and others: one real 2024/25 mayoral area's shift per
+# run (data/other_shifts.csv) - usually a few points, occasionally 10-25, as
+# when Jamie Driscoll took 25% in the North East. A bell curve around +2
+# (the first version) left 2021-22 independents outside their 90% range three
+# times in four.
 
 # Second choices, from the 2021-22 mayoral counts
 VOLUME = 1.01           # transfers reaching the finalists = YouGov-implied x this
@@ -102,9 +105,15 @@ def mayoral_shift(rng, n):
         out[:, j] = (float(r["local_gap"]) + float(r["local_gap_sd"]) * rng.standard_normal(n)
                      + float(r["sussex"]) + float(r["sussex_sd"]) * rng.standard_normal(n)
                      + np.array([float(a[p]) for a in picked]))
-    mean, sd = OTHER_SHIFT
-    out[:, PARTIES.index("Oth")] = mean + sd * rng.standard_normal(n)
+    out[:, PARTIES.index("Oth")] = other_shift_draws(rng, n)
     return out
+
+
+def other_shift_draws(rng, n, exclude=()):
+    """n draws (points) of the independents / others shift, each one real 2024/25 mayoral area's."""
+    with open(os.path.join(HERE, "data", "other_shifts.csv"), newline="", encoding="utf-8") as f:
+        values = np.array([float(r["shift"]) for r in csv.DictReader(f) if r["area"] not in exclude])
+    return values[rng.integers(len(values), size=n)]
 
 
 def drift_draws(rng, days, n):
