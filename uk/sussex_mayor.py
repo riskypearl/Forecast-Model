@@ -82,11 +82,14 @@ VOLUME = 1.01           # transfers reaching the finalists = YouGov-implied x th
 INDEPENDENT = 0.27      # share of independents' voters whose second choice reached a finalist
 SPLIT = (0.43, 1.0)     # lopsidedness of the split vs YouGov's, drawn per run
 
-# Mayoral areas whose residuals are left out of the draws: Conservative incumbents
-# standing again, whose personal votes (Houchen +22, Street +14) would otherwise be
-# counted on top of Katy Bourne's, which is modelled on its own (bourne_effect.py).
-# Without them the Conservative mayoral residual averages +1.6 rather than +3.7.
-CON_INCUMBENT_AREAS = {(2024, "Tees Valley"), (2024, "West Midlands")}
+# Mayoral areas whose residuals are left out of the draws: an incumbent mayor stood
+# again. No Sussex candidate is an incumbent mayor, so their personal votes (Burnham +21,
+# Houchen +22, Street +14, Rotheram +12 ...) don't belong in the baseline - and Katy
+# Bourne's own is modelled separately (bourne_effect.py). Leaves 8 of the 16 areas.
+INCUMBENT_AREAS = {(2024, "London"), (2024, "West Midlands"), (2024, "Greater Manchester"),
+                   (2024, "West Yorkshire"), (2024, "Liverpool City Region"), (2024, "South Yorkshire"),
+                   (2024, "Tees Valley"), (2025, "Doncaster")}
+CON_INCUMBENT_AREAS = INCUMBENT_AREAS     # (old name)
 
 CANDIDATES = {"Con": "Katy Bourne", "Lab": "Caroline Baxter", "LD": "Ben Dempsey",
               "Grn": "Rachel Millward", "Ref": "Paul Linehan", "Oth": "Martin Webb (Ind) and others"}

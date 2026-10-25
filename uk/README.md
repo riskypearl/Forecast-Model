@@ -227,13 +227,21 @@ python uk/local_gap.py            # local elections vs national polls, 2012-2026
 python uk/fetch_sv_results.py     # 2021-22 supplementary-vote counts (mayors + PCCs) -> data/sv_2021.csv
 python uk/mayor_vs_ge.py          # 2024 mayors vs GE; model backtest on the 2025 mayors
 python uk/mayoral_adjustment.py   # combine into the Sussex adjustment -> data/mayoral_adjustment.csv
-python uk/sussex_mayor.py         # May 2028 (add --today for "if held today") -> data/sussex_mayor.csv
-python uk/mayor_backtest.py       # the whole method on the 2021-22 supplementary-vote mayors
+python uk/bourne_effect.py        # Katy Bourne's personal vote from her four Sussex PCC elections
+python uk/sussex_mayor.py         # method 1, general-election route: May 2028 (--today: if held today)
+python uk/sussex_mayor_local.py   # method 2, council route: if held today (--2028: May 2028)
+python uk/mayor_backtest.py       # method 1 on the 2021-22 supplementary-vote mayors
 ```
+
+Two methods, run side by side because no past election is a clean stand-in for this one: the
+general election had real stakes but very different turnout; the councils and PCCs are local but
+low-stakes, and Reform wasn't on the PCC ballot.
 
 The first election for the new Sussex & Brighton mayoralty was moved from May 2026 to May 2028,
 and is expected to use the supplementary vote (a first and second choice; if no one has 50%,
-the top two go through and the others' second choices are added). `sussex_mayor.py`:
+the top two go through and the others' second choices are added).
+
+**Method 1, general-election route** (`sussex_mayor.py`):
 
 1. **First choices**: the general-election model for Sussex's 17 constituencies, without
    tactical voting (people can vote sincerely first under the supplementary vote).
@@ -258,8 +266,14 @@ the top two go through and the others' second choices are added). `sussex_mayor.
      The Lib Dems' Sussex council vote is high, but not as high as their 2024 general-election
      vote there (much of it tactical, behind strong MPs); 2021 and 2026 agree (-5.2 / -5.6).
    - Each run draws the national gap and the Sussex pattern with their measured noise, and one
-     real 2024/25 mayoral area's residuals whole - candidate effects are lumpy (Burnham +20,
-     Houchen +23) and come at the other parties' expense.
+     real 2024/25 mayoral area's residuals whole - candidate effects are lumpy and come at the
+     other parties' expense. Areas where an incumbent mayor stood are left out of the draws
+     (London, West Midlands, Greater Manchester, West Yorkshire, Liverpool City Region, South
+     Yorkshire, Tees Valley 2024; Doncaster 2025): no Sussex candidate is an incumbent mayor, and
+     their personal votes (Burnham +21, Houchen +22, Street +14, Rotheram +12 ...) would otherwise
+     inflate Labour and the Conservatives. That leaves 8 areas, averaging Labour -1.2,
+     Conservative +1.9, Reform -1.7, Lib Dem -1.5, Green -3.2 (the table's "mayoral vs local"
+     row is all 16).
    - Independents and others likewise get one real 2024/25 area's shift per run
      (`data/other_shifts.csv`): median +2 points, but up to +15 in one area in ten and +25 at
      most (Jamie Driscoll, North East 2024).
@@ -275,29 +289,68 @@ the top two go through and the others' second choices are added). `sussex_mayor.
 ahead of the typical Conservative PCC candidate (against each area's general-election
 Conservative share) by +2.6 (2012), +11.5 (2016), +2.8 (2021) and +4.7 (2024) - in the top third
 of 36 forces each time. The model adds +3.8 (the like-for-like 2021 and 2024 comparisons), with
-the spread of all four years as uncertainty. To avoid counting a big-name incumbent's personal
-vote twice, the mayoral-residual draws then leave out the two areas where a Conservative
-incumbent stood (Houchen, Tees Valley 2024: +22; Street, West Midlands 2024: +14); without them
-the Conservative mayoral residual averages +1.6 rather than +3.7.
+the spread of all four years as uncertainty (both methods).
 
-**From polls on 25 Oct 2026** (10,000 runs):
+**Method 2, council route** (`sussex_mayor_local.py`): starts from how Sussex actually voted
+locally - the real votes in the May 2026 West Sussex and East Sussex county elections and the May
+2023 Brighton & Hove election, weighted by voters (Brighton's multi-member wards divided out), so
+local turnout is built in. Each area is moved by the national change since its election (polls in
+the 3 weeks before it vs now, logit scale, plus a polling miss); Reform in Brighton, which didn't
+stand in 2023, starts from its 2024 general-election share there. Then the same mayoral
+residuals (no incumbents), Bourne's personal vote, independents' shift and second count as
+method 1. Its weakness is the one raised about the 2026 county elections: little was at stake
+(councils due for abolition, an unpopular government), which can understate the mainstream
+parties - Labour especially. PCC results aren't used as a baseline because Reform didn't stand
+in 2021 or 2024; they're used for Bourne's personal vote and as a check on Labour (Labour's 2021
+and 2024 Sussex PCC shares, scaled to today's polls: 15-19%).
 
-| | Candidate | First choice, May 2028 | 90% range | Win, May 2028 | Win if held today |
-|---|---|---|---|---|---|
-| Ref | Paul Linehan | 23.5% | 9-39 | 15% | 7% |
-| Con | Katy Bourne | 23.0% | 7-41 | **42%** | 52% |
-| Lab | Caroline Baxter | 18.6% | 1-37 | **28%** | 26% |
-| LD | Ben Dempsey | 14.1% | 3-31 | 12% | 12% |
-| Grn | Rachel Millward | 10.9% | 3-19 | 1% | 1% |
-| Ind | Martin Webb and others | 6.7% | 2-22 | 2% | 3% |
+**The forecast: the likely shape, with ranges** (from polls on 25 Oct 2026; 10,000 runs each)
 
-Reform and the Conservatives are level on first choices, but Reform usually loses the second
-count: Conservative v Reform (31% of runs) goes to the Conservatives 83% of the time, Labour v
-Reform (20%) to Labour 85%. Conservative v Labour finals (21%) lean slightly Conservative (56%).
-So the race mostly turns on whether the Conservatives or Labour finish in the top two (about
-57% vs 43% of runs). Reform's chances come from the runs where the polls move its way over 18
-months. One reason to treat Bourne's 42% as upper-middle rather than a floor: the Conservatives
-took only about 20% in the May 2026 Sussex county elections, against 23% here.
+- Katy Bourne (Con) is the favourite under both methods and in every version tried.
+- Reform is likely to be at or near the top of the first round but usually loses the second
+  count, because second choices run heavily against it.
+- The race is mostly about who joins Reform in the final: Bourne, or less often the Lib Dems or
+  Labour.
+- The exact numbers are soft; the two methods disagree mainly on Bourne's first-round share
+  (about 3.5 points).
+
+| First round, if held today | Method 1 (GE route) | Method 2 (council route) |
+|---|---|---|
+| Con - Katy Bourne | 24.5% | 28.0% |
+| Ref - Paul Linehan | 23.1% | 22.0% |
+| Lab - Caroline Baxter | 15.3% | 15.0% |
+| LD - Ben Dempsey | 15.1% | 14.8% |
+| Grn - Rachel Millward | 12.1% | 11.2% |
+| Ind - Martin Webb and others | 6.8% | 5.9% |
+| **Most likely final, if held today** | Con v Ref (49% of runs): **Con 59 - Ref 41** | Con v Ref (62%): **Con 62 - Ref 38** |
+
+| Chance of winning | Method 1, today | Method 2, today | Method 1, May 2028 | Method 2, May 2028 |
+|---|---|---|---|---|
+| Con | 59% | 78% | **46%** | **60%** |
+| LD | 18% | 15% | 17% | 17% |
+| Lab | 11% | 3% | 18% | 11% |
+| Ref | 9% | 2% | 16% | 10% |
+| Ind | 3% | 3% | 2% | 2% |
+| Grn | 1% | 0% | 1% | 0% |
+
+The May 2028 columns add real historical poll movement over the 557 days to polling day
+(centred on zero). That assumes politics stays about as turbulent as 2010-2026 - roughly ten
+independent 18-month stretches, dominated by one-off shocks - so treat it as a rough guide to how
+much could change, not a measurement. Labour's first-round share is best read as 15-19% (the
+council route is the low end, for the reason above).
+
+**When the May 2027 results arrive** (likely the first elections to Sussex's new councils, with
+real stakes, and the first big test of Labour under Burnham at the ballot box):
+1. Swap method 2's baseline to the 2027 results, including Brighton & Hove's 2027 all-out election.
+2. Add 2027 to `data/pns.csv` and rerun `local_gap.py`: does Labour's local gap change under
+   Burnham?
+3. Re-run `mayoral_adjustment.py` with the 2027 Sussex council results as a third snapshot of
+   Sussex's own pattern.
+4. When the next BES wave comes out, measure the local turnout drop-off and switching by party
+   from its "did you vote / who for in the locals" questions, check it reproduces the 2027
+   projected national share, and if so use it in place of the national local gap.
+5. Re-run both methods and save the forecast with its date, to score against the real result
+   in May 2028.
 
 **Backtest** (`mayor_backtest.py`): the whole method run on the 14 mayoral elections of 2021-22
 that used the supplementary vote, with what was known on polling day (2019 baseline, polls in
@@ -317,9 +370,9 @@ test of it. Not fully out of sample: the mayoral-vs-local residuals come from 20
 second-count calibration was fitted on these same contests. Bristol (wrong year scraped) and
 Tees Valley (two candidates) are left out; parties that didn't stand aren't scored.
 
-**Not included**: candidates' personal votes, except as spread - notably Katy Bourne's, who has
-won Sussex-wide under this exact system three times as Police and Crime Commissioner - and the
-possibility that the voting system isn't the supplementary vote after all.
+**Not included**: other candidates' personal votes, except as spread (they're unmeasured until
+the campaign), new parties that haven't declared (Restore Britain, Your Party), and turnout
+geography within method 1 (its Sussex-wide shares weight seats by 2024 general-election turnout).
 
 ## Known gaps
 
