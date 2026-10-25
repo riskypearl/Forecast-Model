@@ -1,0 +1,3138 @@
+end_date,pollster,sample_size,kind,name,party,pos,neg
+2019-12-14,YouGov,1628,leader,Boris Johnson,Con,41.0,52.0
+2019-12-14,YouGov,1628,leader,Jeremy Corbyn,Lab,21.0,71.0
+2019-12-14,YouGov,1628,leader,Nigel Farage,Ref,27.0,63.0
+2019-12-23,YouGov,1692,leader,Boris Johnson,Con,46.0,41.0
+2020-01-17,Opinium,2002,leader,Boris Johnson,Con,43.0,36.0
+2020-01-17,Opinium,2002,leader,Ed Davey,LD,14.0,23.0
+2020-01-17,Opinium,2002,leader,Jeremy Corbyn,Lab,19.0,59.0
+2020-01-17,Opinium,2002,leader,Nigel Farage,Ref,22.0,42.0
+2020-01-20,YouGov,1708,leader,Boris Johnson,Con,42.0,43.0
+2020-02-14,Opinium Archived 18 February 2020 at the Wayback Machine,2007,leader,Boris Johnson,Con,44.0,36.0
+2020-02-14,Opinium Archived 18 February 2020 at the Wayback Machine,2007,leader,Ed Davey,LD,14.0,24.0
+2020-02-14,Opinium Archived 18 February 2020 at the Wayback Machine,2007,leader,Jeremy Corbyn,Lab,21.0,59.0
+2020-02-14,Opinium Archived 18 February 2020 at the Wayback Machine,2007,leader,Nigel Farage,Ref,27.0,41.0
+2020-02-17,YouGov,1646,leader,Boris Johnson,Con,48.0,38.0
+2020-03-05,YouGov,1682,leader,Boris Johnson,Con,42.0,49.0
+2020-03-13,YouGov,1678,leader,Boris Johnson,Con,44.0,46.0
+2020-03-13,Opinium,2005,leader,Boris Johnson,Con,42.0,36.0
+2020-03-13,Opinium,2005,leader,Ed Davey,LD,12.0,24.0
+2020-03-13,Opinium,2005,leader,Jeremy Corbyn,Lab,19.0,57.0
+2020-03-13,Opinium,2005,leader,Nigel Farage,Ref,21.0,42.0
+2020-03-16,YouGov,1637,leader,Boris Johnson,Con,46.0,42.0
+2020-03-16,Ipsos MORI,1003,leader,Boris Johnson,Con,52.0,38.0
+2020-03-16,Deltapoll,1545,leader,Boris Johnson,Con,52.0,38.0
+2020-03-16,Ipsos MORI,1003,leader,Jeremy Corbyn,Lab,19.0,68.0
+2020-03-18,YouGov,1615,leader,Boris Johnson,Con,43.0,46.0
+2020-03-27,Deltapoll,1545,leader,Boris Johnson,Con,70.0,25.0
+2020-03-27,Opinium,2006,leader,Boris Johnson,Con,55.0,26.0
+2020-03-27,Opinium,2006,leader,Ed Davey,LD,12.0,21.0
+2020-03-27,Opinium,2006,leader,Jeremy Corbyn,Lab,19.0,54.0
+2020-03-27,Opinium,2006,leader,Nigel Farage,Ref,19.0,43.0
+2020-04-02,Redfield & Wilton,2000,leader,Boris Johnson,Con,61.0,22.0
+2020-04-03,Opinium,2000,leader,Boris Johnson,Con,51.0,22.0
+2020-04-03,Opinium,2000,leader,Ed Davey,LD,12.0,21.0
+2020-04-03,Opinium,2000,leader,Jeremy Corbyn,Lab,18.0,54.0
+2020-04-03,Opinium,2000,leader,Nigel Farage,Ref,23.0,39.0
+2020-04-09,Opinium,2005,leader,Ed Davey,LD,13.0,20.0
+2020-04-09,Opinium,2005,leader,Keir Starmer,Lab,34.0,8.0
+2020-04-09,BMG Research,1541,leader,Keir Starmer,Lab,31.0,10.0
+2020-04-09,Opinium,2005,leader,Nigel Farage,Ref,18.0,39.0
+2020-04-13,YouGov,1623,leader,Boris Johnson,Con,66.0,26.0
+2020-04-14,Redfield & Wilton,1500,leader,Boris Johnson,Con,62.0,18.0
+2020-04-17,Opinium,2000,leader,Boris Johnson,Con,55.0,27.0
+2020-04-17,Opinium,2000,leader,Ed Davey,LD,15.0,21.0
+2020-04-17,Opinium,2000,leader,Keir Starmer,Lab,33.0,17.0
+2020-04-17,Opinium,2000,leader,Nigel Farage,Ref,20.0,40.0
+2020-04-23,Opinium,2005,leader,Boris Johnson,Con,49.0,31.0
+2020-04-23,Opinium,2005,leader,Ed Davey,LD,14.0,21.0
+2020-04-23,Opinium,2005,leader,Keir Starmer,Lab,32.0,19.0
+2020-04-23,Opinium,2005,leader,Nigel Farage,Ref,18.0,41.0
+2020-04-24,Deltapoll,1518,leader,Boris Johnson,Con,67.0,29.0
+2020-04-24,Deltapoll,1518,leader,Keir Starmer,Lab,38.0,26.0
+2020-04-26,Redfield & Wilton,1500,leader,Boris Johnson,Con,56.0,24.0
+2020-04-28,Survation,1023,leader,Boris Johnson,Con,61.0,22.0
+2020-04-28,Survation,1023,leader,Keir Starmer,Lab,29.0,16.0
+2020-05-01,Opinium,2000,leader,Boris Johnson,Con,51.0,31.0
+2020-05-01,Opinium,2000,leader,Ed Davey,LD,13.0,21.0
+2020-05-01,Opinium,2000,leader,Keir Starmer,Lab,36.0,18.0
+2020-05-01,Opinium,2000,leader,Nigel Farage,Ref,19.0,42.0
+2020-05-06,YouGov,1667,leader,Boris Johnson,Con,54.0,38.0
+2020-05-06,YouGov,1667,leader,Keir Starmer,Lab,35.0,30.0
+2020-05-07,Opinium,2005,leader,Boris Johnson,Con,51.0,31.0
+2020-05-07,Opinium,2005,leader,Ed Davey,LD,13.0,20.0
+2020-05-07,Opinium,2005,leader,Keir Starmer,Lab,35.0,17.0
+2020-05-07,Opinium,2005,leader,Nigel Farage,Ref,20.0,42.0
+2020-05-10,YouGov,1674,leader,Boris Johnson,Con,57.0,35.0
+2020-05-10,YouGov,1674,leader,Keir Starmer,Lab,40.0,17.0
+2020-05-14,Opinium,2007,leader,Boris Johnson,Con,46.0,36.0
+2020-05-14,YouGov,1686,leader,Boris Johnson,Con,50.0,43.0
+2020-05-14,Opinium,2007,leader,Ed Davey,LD,15.0,19.0
+2020-05-14,Opinium,2007,leader,Keir Starmer,Lab,42.0,18.0
+2020-05-14,YouGov,1686,leader,Keir Starmer,Lab,39.0,30.0
+2020-05-14,Opinium,2007,leader,Nigel Farage,Ref,20.0,40.0
+2020-05-17,SavantaComRes Archived 21 May 2020 at the Wayback Machine,2079,leader,Boris Johnson,Con,46.0,31.0
+2020-05-17,SavantaComRes Archived 21 May 2020 at the Wayback Machine,2079,leader,Keir Starmer,Lab,29.0,28.0
+2020-05-18,Ipsos MORI,1126,leader,Boris Johnson,Con,45.0,38.0
+2020-05-18,Ipsos MORI,1126,leader,Keir Starmer,Lab,34.0,26.0
+2020-05-22,Opinium,2008,leader,Boris Johnson,Con,45.0,39.0
+2020-05-22,Opinium,2007,leader,Ed Davey,LD,14.0,23.0
+2020-05-22,Opinium,2008,leader,Keir Starmer,Lab,47.0,17.0
+2020-05-22,Opinium,2008,leader,Nigel Farage,Ref,21.0,43.0
+2020-05-26,Survation,1040,leader,Boris Johnson,Con,51.0,34.0
+2020-05-26,Survation,1040,leader,Keir Starmer,Lab,37.0,21.0
+2020-05-27,Redfield & Wilton,1500,leader,Boris Johnson,Con,41.0,40.0
+2020-05-27,Redfield & Wilton,1500,leader,Keir Starmer,Lab,38.0,19.0
+2020-05-28,Deltapoll,1557,leader,Boris Johnson,Con,54.0,44.0
+2020-05-28,Deltapoll,1557,leader,Keir Starmer,Lab,47.0,27.0
+2020-05-29,Opinium,2012,leader,Boris Johnson,Con,37.0,42.0
+2020-05-29,Opinium,2012,leader,Ed Davey,LD,15.0,23.0
+2020-05-29,Opinium,2012,leader,Keir Starmer,Lab,44.0,19.0
+2020-05-29,Opinium,2012,leader,Nigel Farage,Ref,22.0,42.0
+2020-06-03,Survation,1018,leader,Boris Johnson,Con,44.0,42.0
+2020-06-03,Ipsos MORI,1291,leader,Boris Johnson,Con,39.0,43.0
+2020-06-03,Survation,1018,leader,Keir Starmer,Lab,39.0,22.0
+2020-06-03,Ipsos MORI,1291,leader,Keir Starmer,Lab,36.0,26.0
+2020-06-05,Opinium,2002,leader,Boris Johnson,Con,37.0,44.0
+2020-06-05,Opinium,2002,leader,Ed Davey,LD,15.0,18.0
+2020-06-05,Opinium,2002,leader,Keir Starmer,Lab,45.0,17.0
+2020-06-08,YouGov,1666,leader,Boris Johnson,Con,43.0,50.0
+2020-06-08,YouGov,1666,leader,Keir Starmer,Lab,48.0,21.0
+2020-06-10,Survation,1062,leader,Boris Johnson,Con,43.0,40.0
+2020-06-10,Ipsos MORI,1059,leader,Boris Johnson,Con,48.0,49.0
+2020-06-10,Survation,1062,leader,Keir Starmer,Lab,37.0,23.0
+2020-06-10,Ipsos MORI,1059,leader,Keir Starmer,Lab,51.0,20.0
+2020-06-11,Redfield & Wilton,1500,leader,Boris Johnson,Con,42.0,38.0
+2020-06-11,Redfield & Wilton,1500,leader,Keir Starmer,Lab,41.0,19.0
+2020-06-12,Opinium,2001,leader,Boris Johnson,Con,37.0,43.0
+2020-06-12,Opinium,2001,leader,Ed Davey,LD,15.0,23.0
+2020-06-12,Opinium,2001,leader,Keir Starmer,Lab,45.0,21.0
+2020-06-14,SavantaComRes,2106,leader,Boris Johnson,Con,40.0,38.0
+2020-06-14,SavantaComRes,2106,leader,Keir Starmer,Lab,30.0,29.0
+2020-06-18,Redfield & Wilton,2000,leader,Boris Johnson,Con,43.0,37.0
+2020-06-18,Redfield & Wilton,2000,leader,Keir Starmer,Lab,37.0,19.0
+2020-06-19,Opinium,2001,leader,Boris Johnson,Con,39.0,44.0
+2020-06-19,Opinium,2001,leader,Ed Davey,LD,16.0,20.0
+2020-06-19,Opinium,2001,leader,Keir Starmer,Lab,44.0,22.0
+2020-06-25,Redfield & Wilton,2000,leader,Boris Johnson,Con,46.0,35.0
+2020-06-25,Survation,2003,leader,Boris Johnson,Con,44.0,39.0
+2020-06-25,Redfield & Wilton,2000,leader,Ed Davey,LD,20.0,20.0
+2020-06-25,Redfield & Wilton,2000,leader,Keir Starmer,Lab,41.0,18.0
+2020-06-25,Survation,2003,leader,Keir Starmer,Lab,35.0,25.0
+2020-06-26,Opinium,2001,leader,Boris Johnson,Con,37.0,43.0
+2020-06-26,Opinium,2001,leader,Ed Davey,LD,14.0,20.0
+2020-06-26,Opinium,2001,leader,Keir Starmer,Lab,46.0,19.0
+2020-07-01,Redfield & Wilton,2000,leader,Boris Johnson,Con,44.0,37.0
+2020-07-01,Redfield & Wilton,2000,leader,Ed Davey,LD,16.0,19.0
+2020-07-01,Redfield & Wilton,2000,leader,Keir Starmer,Lab,39.0,21.0
+2020-07-03,Opinium,2002,leader,Boris Johnson,Con,37.0,44.0
+2020-07-03,Opinium,2002,leader,Ed Davey,LD,14.0,20.0
+2020-07-03,Opinium,2002,leader,Keir Starmer,Lab,43.0,22.0
+2020-07-06,YouGov,1638,leader,Boris Johnson,Con,44.0,50.0
+2020-07-06,Survation,1012,leader,Boris Johnson,Con,43.0,47.0
+2020-07-06,YouGov,1638,leader,Keir Starmer,Lab,47.0,23.0
+2020-07-06,Survation,1012,leader,Keir Starmer,Lab,35.0,31.0
+2020-07-08,Redfield & Wilton,2000,leader,Boris Johnson,Con,43.0,38.0
+2020-07-08,Redfield & Wilton,2000,leader,Ed Davey,LD,19.0,22.0
+2020-07-08,Redfield & Wilton,2000,leader,Keir Starmer,Lab,41.0,19.0
+2020-07-13,Ipsos MORI,1118,leader,Boris Johnson,Con,41.0,42.0
+2020-07-13,Ipsos MORI,1118,leader,Keir Starmer,Lab,33.0,29.0
+2020-07-15,Redfield & Wilton,2000,leader,Boris Johnson,Con,46.0,36.0
+2020-07-15,Redfield & Wilton,2000,leader,Keir Starmer,Lab,39.0,21.0
+2020-07-19,SavantaComRes,2085,leader,Boris Johnson,Con,38.0,40.0
+2020-07-19,SavantaComRes,2085,leader,Keir Starmer,Lab,33.0,28.0
+2020-07-24,Opinium,2002,leader,Boris Johnson,Con,36.0,45.0
+2020-07-24,Opinium,2002,leader,Ed Davey,LD,15.0,23.0
+2020-07-24,Opinium,2002,leader,Keir Starmer,Lab,44.0,22.0
+2020-07-29,Redfield & Wilton,2000,leader,Boris Johnson,Con,45.0,34.0
+2020-07-29,Redfield & Wilton,2000,leader,Keir Starmer,Lab,38.0,27.0
+2020-08-03,YouGov,3326,leader,Boris Johnson,Con,45.0,50.0
+2020-08-03,Survation,1019,leader,Boris Johnson,Con,43.0,43.0
+2020-08-03,YouGov,3326,leader,Keir Starmer,Lab,48.0,21.0
+2020-08-03,Survation,1019,leader,Keir Starmer,Lab,37.0,28.0
+2020-08-04,Ipsos MORI,1019,leader,Boris Johnson,Con,47.0,48.0
+2020-08-04,Ipsos MORI,1019,leader,Keir Starmer,Lab,48.0,26.0
+2020-08-12,Redfield & Wilton,2000,leader,Boris Johnson,Con,45.0,36.0
+2020-08-12,Redfield & Wilton,2000,leader,Keir Starmer,Lab,38.0,22.0
+2020-08-16,SavantaComRes,2038,leader,Boris Johnson,Con,38.0,39.0
+2020-08-16,SavantaComRes,2038,leader,Keir Starmer,Lab,32.0,30.0
+2020-08-19,Redfield & Wilton,2000,leader,Boris Johnson,Con,41.0,39.0
+2020-08-19,Redfield & Wilton,2000,leader,Keir Starmer,Lab,40.0,21.0
+2020-08-21,Survation,1005,leader,Boris Johnson,Con,40.0,44.0
+2020-08-21,Survation,1005,leader,Keir Starmer,Lab,34.0,25.0
+2020-08-24,Redfield & Wilton,2000,leader,Boris Johnson,Con,39.0,38.0
+2020-08-24,Ipsos MORI,1019,leader,Boris Johnson,Con,29.0,46.0
+2020-08-24,Redfield & Wilton,2000,leader,Keir Starmer,Lab,39.0,21.0
+2020-08-24,Ipsos MORI,1019,leader,Keir Starmer,Lab,30.0,28.0
+2020-08-28,Opinium,2002,leader,Boris Johnson,Con,36.0,44.0
+2020-08-28,Opinium,2002,leader,Ed Davey,LD,15.0,24.0
+2020-08-28,Opinium,2002,leader,Keir Starmer,Lab,38.0,24.0
+2020-08-28,Opinium,2002,leader,Nigel Farage,Ref,22.0,43.0
+2020-08-31,YouGov,1657,leader,Boris Johnson,Con,39.0,54.0
+2020-08-31,YouGov,1657,leader,Keir Starmer,Lab,43.0,25.0
+2020-09-02,Redfield & Wilton,2500,leader,Boris Johnson,Con,42.0,39.0
+2020-09-02,Redfield & Wilton,2500,leader,Keir Starmer,Lab,36.0,21.0
+2020-09-04,Survation,1047,leader,Boris Johnson,Con,38.0,46.0
+2020-09-04,Survation,1047,leader,Keir Starmer,Lab,34.0,28.0
+2020-09-11,Opinium,2001,leader,Boris Johnson,Con,38.0,44.0
+2020-09-11,Opinium,2001,leader,Ed Davey,LD,17.0,22.0
+2020-09-11,Opinium,2001,leader,Keir Starmer,Lab,42.0,21.0
+2020-09-11,Opinium,2001,leader,Nigel Farage,Ref,23.0,43.0
+2020-09-16,Redfield & Wilton,2500,leader,Boris Johnson,Con,39.0,42.0
+2020-09-16,Survation,1003,leader,Boris Johnson,Con,35.0,49.0
+2020-09-16,Redfield & Wilton,2500,leader,Keir Starmer,Lab,38.0,23.0
+2020-09-16,Survation,1003,leader,Keir Starmer,Lab,36.0,26.0
+2020-09-18,Ipsos MORI,1013,leader,Boris Johnson,Con,40.0,54.0
+2020-09-18,Ipsos MORI,1013,leader,Keir Starmer,Lab,43.0,27.0
+2020-09-23,Redfield & Wilton,2500,leader,Boris Johnson,Con,37.0,44.0
+2020-09-23,Redfield & Wilton,2500,leader,Ed Davey,LD,13.0,22.0
+2020-09-23,Redfield & Wilton,2500,leader,Keir Starmer,Lab,38.0,23.0
+2020-09-25,Deltapoll,1583,leader,Boris Johnson,Con,44.0,54.0
+2020-09-25,Opinium,2002,leader,Boris Johnson,Con,35.0,47.0
+2020-09-25,Opinium,2002,leader,Ed Davey,LD,14.0,23.0
+2020-09-25,Deltapoll,1583,leader,Keir Starmer,Lab,49.0,30.0
+2020-09-25,Opinium,2002,leader,Keir Starmer,Lab,40.0,21.0
+2020-09-25,Opinium,2002,leader,Nigel Farage,Ref,22.0,44.0
+2020-09-28,YouGov,1633,leader,Boris Johnson,Con,35.0,57.0
+2020-09-28,YouGov,1633,leader,Keir Starmer,Lab,46.0,26.0
+2020-09-30,YouGov,1700,leader,Boris Johnson,Con,34.0,55.0
+2020-09-30,Yougov,1700,leader,Keir Starmer,Lab,43.0,31.0
+2020-10-01,Redfield & Wilton,4000,leader,Boris Johnson,Con,35.0,46.0
+2020-10-01,Redfield & Wilton,4000,leader,Keir Starmer,Lab,38.0,22.0
+2020-10-05,Ipsos MORI,1109,leader,Boris Johnson,Con,27.0,48.0
+2020-10-05,Ipsos MORI,1109,leader,Keir Starmer,Lab,29.0,30.0
+2020-10-07,Redfield & Wilton,3000,leader,Boris Johnson,Con,37.0,44.0
+2020-10-07,Redfield & Wilton,3000,leader,Keir Starmer,Lab,36.0,23.0
+2020-10-09,Opinium,2001,leader,Boris Johnson,Con,34.0,46.0
+2020-10-09,Opinium,2001,leader,Ed Davey,LD,13.0,21.0
+2020-10-09,Opinium,2001,leader,Keir Starmer,Lab,40.0,24.0
+2020-10-09,Opinium,2001,leader,Nigel Farage,Ref,18.0,43.0
+2020-10-18,SavantaComRes,2274,leader,Boris Johnson,Con,34.0,43.0
+2020-10-18,SavantaComRes,2274,leader,Keir Starmer,Lab,31.0,32.0
+2020-10-21,Redfield & Wilton,3000,leader,Boris Johnson,Con,35.0,45.0
+2020-10-21,Redfield & Wilton,3000,leader,Ed Davey,LD,12.0,21.0
+2020-10-21,Redfield & Wilton,3000,leader,Keir Starmer,Lab,35.0,26.0
+2020-10-22,YouGov,1852,leader,Boris Johnson,Con,36.0,55.0
+2020-10-22,YouGov,1638,leader,Keir Starmer,Lab,41.0,36.0
+2020-10-23,Opinium,2002,leader,Boris Johnson,Con,33.0,47.0
+2020-10-23,Opinium,2002,leader,Ed Davey,LD,16.0,22.0
+2020-10-23,Opinium,2002,leader,Keir Starmer,Lab,39.0,25.0
+2020-10-23,Opinium,2002,leader,Nigel Farage,Ref,19.0,42.0
+2020-10-24,Deltapoll,1589,leader,Boris Johnson,Con,44.0,51.0
+2020-10-24,Deltapoll,1589,leader,Keir Starmer,Lab,48.0,35.0
+2020-10-26,YouGov,1681,leader,Boris Johnson,Con,34.0,59.0
+2020-10-26,YouGov,1681,leader,Keir Starmer,Lab,44.0,31.0
+2020-10-28,Redfield & Wilton,3000,leader,Boris Johnson,Con,35.0,42.0
+2020-10-28,Ipsos MORI,1007,leader,Boris Johnson,Con,33.0,59.0
+2020-10-28,Redfield & Wilton,3000,leader,Ed Davey,LD,14.0,22.0
+2020-10-28,Ipsos MORI,1007,leader,Ed Davey,LD,20.0,25.0
+2020-10-28,Ipsos MORI,1007,leader,Keir Starmer,Lab,45.0,30.0
+2020-10-28,Redfield & Wilton,3000,leader,Keir Starmer,Lab,35.0,26.0
+2020-10-30,YouGov,1852,leader,Boris Johnson,Con,35.0,57.0
+2020-10-30,YouGov,1852,leader,Keir Starmer,Lab,38.0,40.0
+2020-11-06,Opinium,2003,leader,Boris Johnson,Con,34.0,48.0
+2020-11-06,Opinium,2003,leader,Ed Davey,LD,17.0,23.0
+2020-11-06,Opinium,2003,leader,Keir Starmer,Lab,41.0,24.0
+2020-11-06,Opinium,2003,leader,Nigel Farage,Ref,18.0,48.0
+2020-11-11,Redfield & Wilton,2500,leader,Boris Johnson,Con,37.0,44.0
+2020-11-11,Redfield & Wilton,2500,leader,Ed Davey,LD,13.0,22.0
+2020-11-11,Redfield & Wilton,2500,leader,Keir Starmer,Lab,38.0,24.0
+2020-11-15,SavantaComRes,2075,leader,Boris Johnson,Con,36.0,41.0
+2020-11-15,SavantaComRes Archived 21 November 2020 at the Wayback Machine,2075,leader,Ed Davey,LD,14.0,22.0
+2020-11-15,SavantaComRes Archived 21 November 2020 at the Wayback Machine,2075,leader,Keir Starmer,Lab,30.0,31.0
+2020-11-19,Redfield & Wilton,2500,leader,Boris Johnson,Con,36.0,44.0
+2020-11-19,Redfield & Wilton,2500,leader,Keir Starmer,Lab,36.0,23.0
+2020-11-20,Opinium,2001,leader,Boris Johnson,Con,35.0,47.0
+2020-11-20,Opinium,2001,leader,Ed Davey,LD,15.0,22.0
+2020-11-20,Opinium,2001,leader,Keir Starmer,Lab,36.0,25.0
+2020-11-20,Opinium,2001,leader,Nigel Farage,Ref,19.0,46.0
+2020-11-21,YouGov,1645,leader,Keir Starmer,Lab,45.0,29.0
+2020-11-23,YouGov,1645,leader,Boris Johnson,Con,34.0,58.0
+2020-11-28,Deltapoll,1525,leader,Boris Johnson,Con,43.0,51.0
+2020-11-28,Deltapoll,1525,leader,Keir Starmer,Lab,44.0,37.0
+2020-12-02,Redfield & Wilton,2000,leader,Boris Johnson,Con,39.0,40.0
+2020-12-02,Redfield & Wilton,2000,leader,Ed Davey,LD,17.0,20.0
+2020-12-02,Redfield & Wilton,2000,leader,Keir Starmer,Lab,34.0,25.0
+2020-12-04,Opinium,2002,leader,Boris Johnson,Con,36.0,44.0
+2020-12-04,Opinium,2002,leader,Ed Davey,LD,15.0,25.0
+2020-12-04,Opinium,2002,leader,Keir Starmer,Lab,35.0,26.0
+2020-12-04,Opinium,2002,leader,Nigel Farage,Ref,19.0,45.0
+2020-12-07,Survation,2020,leader,Boris Johnson,Con,39.0,45.0
+2020-12-07,Survation,2020,leader,Keir Starmer,Lab,36.0,27.0
+2020-12-08,Opinium,6949,leader,Boris Johnson,Con,38.0,42.0
+2020-12-08,Opinium,6949,leader,Keir Starmer,Lab,39.0,22.0
+2020-12-11,Ipsos MORI,1027,leader,Boris Johnson,Con,42.0,50.0
+2020-12-11,Ipsos MORI,1027,leader,Ed Davey,LD,15.0,29.0
+2020-12-11,Ipsos MORI,1027,leader,Keir Starmer,Lab,38.0,33.0
+2020-12-13,SavantaComRes Archived 19 December 2020 at the Wayback Machine,2026,leader,Boris Johnson,Con,36.0,42.0
+2020-12-13,Savanta ComRes Archived 19 December 2020 at the Wayback Machine,2026,leader,Ed Davey,LD,16.0,23.0
+2020-12-13,SavantaComRes Archived 19 December 2020 at the Wayback Machine,2026,leader,Keir Starmer,Lab,31.0,32.0
+2020-12-17,Opinium,2001,leader,Boris Johnson,Con,38.0,44.0
+2020-12-17,Opinium,2001,leader,Ed Davey,LD,17.0,24.0
+2020-12-17,Opinium,2001,leader,Keir Starmer,Lab,37.0,25.0
+2020-12-17,Opinium,2001,leader,Nigel Farage,Ref,21.0,43.0
+2020-12-18,YouGov,0,leader,Boris Johnson,Con,35.0,56.0
+2020-12-18,YouGov,0,leader,Keir Starmer,Lab,38.0,40.0
+2020-12-20,YouGov,1633,leader,Keir Starmer,Lab,40.0,35.0
+2020-12-30,Deltapoll,1608,leader,Boris Johnson,Con,46.0,49.0
+2020-12-30,YouGov,1633,leader,Boris Johnson,Con,37.0,56.0
+2020-12-30,Deltapoll,1608,leader,Keir Starmer,Lab,41.0,36.0
+2021-01-05,YouGov,1704,leader,Boris Johnson,Con,37.0,54.0
+2021-01-07,Opinium,2003,leader,Boris Johnson,Con,38.0,44.0
+2021-01-07,Opinium,2003,leader,Ed Davey,LD,17.0,25.0
+2021-01-07,Opinium,2003,leader,Keir Starmer,Lab,40.0,25.0
+2021-01-07,Opinium,2003,leader,Nigel Farage,Ref,21.0,44.0
+2021-01-11,Redfield & Wilton,2000,leader,Boris Johnson,Con,38.0,42.0
+2021-01-11,Redfield & Wilton,2000,leader,Ed Davey,LD,14.0,21.0
+2021-01-11,Redfield & Wilton,2000,leader,Keir Starmer,Lab,33.0,24.0
+2021-01-13,Survation,1033,leader,Boris Johnson,Con,36.0,50.0
+2021-01-13,Survation,1033,leader,Keir Starmer,Lab,38.0,31.0
+2021-01-15,Opinium Archived 16 January 2021 at the Wayback Machine,2003,leader,Boris Johnson,Con,34.0,49.0
+2021-01-15,Opinium,2003,leader,Ed Davey,LD,14.0,25.0
+2021-01-15,Opinium Archived 16 January 2021 at the Wayback Machine,2003,leader,Keir Starmer,Lab,37.0,27.0
+2021-01-17,SavantaComRes Archived 29 January 2021 at the Wayback Machine,1914,leader,Boris Johnson,Con,34.0,43.0
+2021-01-17,SavantaComRes Archived 29 January 2021 at the Wayback Machine,1914,leader,Ed Davey,LD,15.0,22.0
+2021-01-17,SavantaComRes Archived 29 January 2021 at the Wayback Machine,1914,leader,Keir Starmer,Lab,30.0,32.0
+2021-01-18,Redfield & Wilton,2000,leader,Boris Johnson,Con,38.0,40.0
+2021-01-18,YouGov,1630,leader,Boris Johnson,Con,39.0,54.0
+2021-01-18,Redfield & Wilton,2000,leader,Ed Davey,LD,13.0,20.0
+2021-01-18,Redfield & Wilton,2000,leader,Keir Starmer,Lab,33.0,25.0
+2021-01-18,YouGov,1630,leader,Keir Starmer,Lab,39.0,37.0
+2021-01-23,Deltapoll,1632,leader,Boris Johnson,Con,48.0,47.0
+2021-01-23,Deltapoll,1632,leader,Keir Starmer,Lab,50.0,36.0
+2021-01-25,Redfield & Wilton,2000,leader,Boris Johnson,Con,40.0,38.0
+2021-01-25,Redfield & Wilton,2000,leader,Ed Davey,LD,13.0,22.0
+2021-01-25,Redfield & Wilton,2000,leader,Keir Starmer,Lab,33.0,24.0
+2021-01-29,Opinium Archived 6 February 2021 at the Wayback Machine,2002,leader,Boris Johnson,Con,38.0,46.0
+2021-01-29,Opinium Archived 6 February 2021 at the Wayback Machine,2002,leader,Ed Davey,LD,15.0,27.0
+2021-01-29,Opinium Archived 6 February 2021 at the Wayback Machine,2002,leader,Keir Starmer,Lab,36.0,27.0
+2021-02-01,Redfield & Wilton,2000,leader,Boris Johnson,Con,39.0,40.0
+2021-02-01,Redfield & Wilton,2000,leader,Ed Davey,LD,13.0,20.0
+2021-02-01,Redfield & Wilton,2000,leader,Keir Starmer,Lab,33.0,26.0
+2021-02-04,Ipsos MORI Archived 14 February 2021 at the Wayback Machine,1056,leader,Boris Johnson,Con,42.0,51.0
+2021-02-04,Ipsos MORI Archived 14 February 2021 at the Wayback Machine,1056,leader,Ed Davey,LD,14.0,40.0
+2021-02-04,Ipsos MORI Archived 14 February 2021 at the Wayback Machine,1056,leader,Keir Starmer,Lab,40.0,35.0
+2021-02-06,Survation,1003,leader,Boris Johnson,Con,40.0,43.0
+2021-02-06,Survation,1003,leader,Keir Starmer,Lab,35.0,32.0
+2021-02-08,Redfield & Wilton,2000,leader,Boris Johnson,Con,42.0,39.0
+2021-02-08,Redfield & Wilton,2000,leader,Ed Davey,LD,13.0,20.0
+2021-02-08,Redfield & Wilton,2000,leader,Keir Starmer,Lab,34.0,26.0
+2021-02-09,YouGov,1790,leader,Boris Johnson,Con,38.0,53.0
+2021-02-09,YouGov,1790,leader,Keir Starmer,Lab,37.0,43.0
+2021-02-12,Opinium Archived 13 February 2021 at the Wayback Machine,2006,leader,Boris Johnson,Con,38.0,44.0
+2021-02-12,Opinium Archived 13 February 2021 at the Wayback Machine,2006,leader,Ed Davey,LD,12.0,26.0
+2021-02-12,Opinium Archived 13 February 2021 at the Wayback Machine,2006,leader,Keir Starmer,Lab,32.0,30.0
+2021-02-14,SavantaComRes,2170,leader,Boris Johnson,Con,35.0,37.0
+2021-02-14,SavantaComRes,2170,leader,Ed Davey,LD,18.0,24.0
+2021-02-14,SavantaComRes,2170,leader,Keir Starmer,Lab,29.0,33.0
+2021-02-15,Redfield & Wilton,2000,leader,Boris Johnson,Con,39.0,37.0
+2021-02-15,YouGov,1680,leader,Boris Johnson,Con,41.0,52.0
+2021-02-15,Redfield & Wilton,2000,leader,Ed Davey,LD,11.0,18.0
+2021-02-15,Redfield & Wilton,2000,leader,Keir Starmer,Lab,30.0,23.0
+2021-02-15,YouGov,1680,leader,Keir Starmer,Lab,35.0,41.0
+2021-02-22,Redfield & Wilton,2000,leader,Boris Johnson,Con,42.0,39.0
+2021-02-22,YouGov,1683,leader,Boris Johnson,Con,40.0,52.0
+2021-02-22,Redfield & Wilton,2000,leader,Ed Davey,LD,12.0,22.0
+2021-02-22,Redfield & Wilton,2000,leader,Keir Starmer,Lab,30.0,30.0
+2021-02-22,YouGov,1683,leader,Keir Starmer,Lab,34.0,44.0
+2021-02-25,Survation,1002,leader,Boris Johnson,Con,40.0,41.0
+2021-02-25,Survation,1002,leader,Keir Starmer,Lab,32.0,34.0
+2021-02-26,Deltapoll,1527,leader,Boris Johnson,Con,54.0,44.0
+2021-02-26,Opinium,2003,leader,Boris Johnson,Con,39.0,41.0
+2021-02-26,Deltapoll,1527,leader,Keir Starmer,Lab,41.0,41.0
+2021-02-26,Opinium,2003,leader,Keir Starmer,Lab,33.0,28.0
+2021-03-01,Redfield & Wilton,1500,leader,Boris Johnson,Con,44.0,36.0
+2021-03-01,Redfield & Wilton,1500,leader,Ed Davey,LD,13.0,19.0
+2021-03-01,Redfield & Wilton,1500,leader,Keir Starmer,Lab,31.0,27.0
+2021-03-08,Redfield & Wilton,2000,leader,Boris Johnson,Con,45.0,31.0
+2021-03-08,Redfield & Wilton,2000,leader,Ed Davey,LD,14.0,19.0
+2021-03-08,Redfield & Wilton,2000,leader,Keir Starmer,Lab,30.0,25.0
+2021-03-09,YouGov,1672,leader,Boris Johnson,Con,41.0,52.0
+2021-03-09,YouGov,1672,leader,Keir Starmer,Lab,31.0,49.0
+2021-03-10,Survation,1037,leader,Boris Johnson,Con,44.0,43.0
+2021-03-10,Survation,1037,leader,Keir Starmer,Lab,32.0,35.0
+2021-03-12,Opinium,2001,leader,Boris Johnson,Con,45.0,38.0
+2021-03-12,Ipsos MORI,1009,leader,Boris Johnson,Con,44.0,51.0
+2021-03-12,Ipsos MORI,1009,leader,Ed Davey,LD,15.0,28.0
+2021-03-12,Opinium,2001,leader,Keir Starmer,Lab,34.0,29.0
+2021-03-12,Ipsos MORI,1009,leader,Keir Starmer,Lab,33.0,42.0
+2021-03-14,SavantaComRes,2092,leader,Boris Johnson,Con,40.0,37.0
+2021-03-14,SavantaComRes,2092,leader,Ed Davey,LD,16.0,23.0
+2021-03-14,SavantaComRes,2092,leader,Keir Starmer,Lab,27.0,34.0
+2021-03-15,Redfield & Wilton,2000,leader,Boris Johnson,Con,44.0,31.0
+2021-03-15,YouGov,1640,leader,Boris Johnson,Con,45.0,48.0
+2021-03-15,Redfield & Wilton,2000,leader,Ed Davey,LD,17.0,20.0
+2021-03-15,Redfield & Wilton,2000,leader,Keir Starmer,Lab,32.0,25.0
+2021-03-15,YouGov,1640,leader,Keir Starmer,Lab,32.0,45.0
+2021-03-19,BMG,1498,leader,Boris Johnson,Con,38.0,44.0
+2021-03-19,BMG,1498,leader,Ed Davey,LD,10.0,17.0
+2021-03-19,BMG,1498,leader,Keir Starmer,Lab,29.0,27.0
+2021-03-22,Redfield & Wilton,2000,leader,Boris Johnson,Con,47.0,29.0
+2021-03-22,Redfield & Wilton,2000,leader,Keir Starmer,Lab,32.0,23.0
+2021-03-26,Opinium,2002,leader,Boris Johnson,Con,42.0,41.0
+2021-03-26,Opinium,2002,leader,Keir Starmer,Lab,30.0,35.0
+2021-03-27,Deltapoll Archived 7 April 2021 at the Wayback Machine,1610,leader,Boris Johnson,Con,52.0,44.0
+2021-03-27,Deltapoll Archived 7 April 2021 at the Wayback Machine,1610,leader,Keir Starmer,Lab,44.0,41.0
+2021-03-29,Redfield & Wilton,2000,leader,Boris Johnson,Con,45.0,34.0
+2021-03-29,Redfield & Wilton,2000,leader,Ed Davey,LD,15.0,19.0
+2021-03-29,Redfield & Wilton,2000,leader,Keir Starmer,Lab,30.0,28.0
+2021-03-29,Ipsos MORI,1128,leader,Keir Starmer,Lab,26.0,37.0
+2021-04-01,YouGov,1736,leader,Boris Johnson,Con,46.0,47.0
+2021-04-01,YouGov,1736,leader,Keir Starmer,Lab,35.0,46.0
+2021-04-02,Redfield & Wilton,3500,leader,Boris Johnson,Con,44.0,34.0
+2021-04-02,Redfield & Wilton,3500,leader,Keir Starmer,Lab,31.0,29.0
+2021-04-05,Redfield & Wilton,2000,leader,Boris Johnson,Con,47.0,32.0
+2021-04-05,Redfield & Wilton,2000,leader,Ed Davey,LD,17.0,22.0
+2021-04-05,Redfield & Wilton,2000,leader,Keir Starmer,Lab,29.0,27.0
+2021-04-09,Opinium,2006,leader,Boris Johnson,Con,41.0,38.0
+2021-04-09,Opinium,2006,leader,Ed Davey,LD,16.0,23.0
+2021-04-09,Opinium,2006,leader,Keir Starmer,Lab,32.0,30.0
+2021-04-10,Survation,1009,leader,Boris Johnson,Con,42.0,41.0
+2021-04-10,Deltapoll Archived 12 April 2021 at the Wayback Machine,1608,leader,Boris Johnson,Con,56.0,40.0
+2021-04-10,Survation,1009,leader,Keir Starmer,Lab,33.0,37.0
+2021-04-10,Deltapoll Archived 12 April 2021 at the Wayback Machine,1608,leader,Keir Starmer,Lab,44.0,39.0
+2021-04-12,YouGov,1792,leader,Boris Johnson,Con,46.0,47.0
+2021-04-12,Redfield & Wilton,2000,leader,Boris Johnson,Con,43.0,34.0
+2021-04-12,YouGov,1792,leader,Keir Starmer,Lab,26.0,50.0
+2021-04-12,Redfield & Wilton,2000,leader,Keir Starmer,Lab,29.0,27.0
+2021-04-18,SavantaComRes,2094,leader,Boris Johnson,Con,40.0,38.0
+2021-04-18,SavantaComRes,2094,leader,Ed Davey,LD,15.0,23.0
+2021-04-18,SavantaComRes,2094,leader,Keir Starmer,Lab,29.0,35.0
+2021-04-19,Redfield & Wilton,2000,leader,Boris Johnson,Con,47.0,32.0
+2021-04-19,Survation,1008,leader,Boris Johnson,Con,42.0,43.0
+2021-04-19,Redfield & Wilton,2000,leader,Keir Starmer,Lab,30.0,28.0
+2021-04-19,Survation,1008,leader,Keir Starmer,Lab,34.0,36.0
+2021-04-22,Ipsos MORI,1090,leader,Boris Johnson,Con,44.0,50.0
+2021-04-22,Ipsos MORI,1090,leader,Ed Davey,LD,18.0,38.0
+2021-04-22,Ipsos MORI,1090,leader,Keir Starmer,Lab,36.0,46.0
+2021-04-23,Opinium,2000,leader,Boris Johnson,Con,41.0,40.0
+2021-04-23,Opinium,2000,leader,Ed Davey,LD,17.0,21.0
+2021-04-23,Opinium,2000,leader,Keir Starmer,Lab,33.0,32.0
+2021-04-26,Redfield & Wilton,2000,leader,Boris Johnson,Con,44.0,35.0
+2021-04-26,BMG,1500,leader,Boris Johnson,Con,41.0,38.0
+2021-04-26,BMG,1500,leader,Ed Davey,LD,11.0,19.0
+2021-04-26,Redfield & Wilton,2000,leader,Keir Starmer,Lab,31.0,32.0
+2021-04-26,BMG,1500,leader,Keir Starmer,Lab,23.0,32.0
+2021-04-28,YouGov,1803,leader,Boris Johnson,Con,41.0,52.0
+2021-04-28,YouGov,1803,leader,Keir Starmer,Lab,30.0,49.0
+2021-04-29,Survation,1077,leader,Boris Johnson,Con,39.0,46.0
+2021-04-29,Survation,1077,leader,Keir Starmer,Lab,33.0,37.0
+2021-04-30,Opinium,2001,leader,Boris Johnson,Con,37.0,43.0
+2021-04-30,Opinium,2001,leader,Ed Davey,LD,18.0,19.0
+2021-04-30,Opinium,2001,leader,Keir Starmer,Lab,38.0,30.0
+2021-05-03,Redfield & Wilton,2000,leader,Boris Johnson,Con,42.0,36.0
+2021-05-03,Redfield & Wilton,2000,leader,Ed Davey,LD,13.0,22.0
+2021-05-03,Redfield & Wilton,2000,leader,Keir Starmer,Lab,30.0,31.0
+2021-05-05,Panelbase,1003,leader,Boris Johnson,Con,41.0,39.0
+2021-05-05,Panelbase,1003,leader,Ed Davey,LD,12.0,30.0
+2021-05-05,Panelbase,1003,leader,Keir Starmer,Lab,29.0,36.0
+2021-05-10,YouGov,1701,leader,Boris Johnson,Con,48.0,47.0
+2021-05-10,Redfield & Wilton,2000,leader,Boris Johnson,Con,48.0,31.0
+2021-05-10,Ipsos MORI,1128,leader,Boris Johnson,Con,40.0,40.0
+2021-05-10,YouGov,1701,leader,Keir Starmer,Lab,17.0,65.0
+2021-05-10,Redfield & Wilton,2000,leader,Keir Starmer,Lab,26.0,33.0
+2021-05-10,Ipsos MORI,1128,leader,Keir Starmer,Lab,21.0,43.0
+2021-05-14,Opinium,2004,leader,Boris Johnson,Con,43.0,37.0
+2021-05-14,Opinium,2004,leader,Keir Starmer,Lab,28.0,39.0
+2021-05-16,SavantaComRes,2131,leader,Boris Johnson,Con,41.0,35.0
+2021-05-16,SavantaComRes,2131,leader,Ed Davey,LD,16.0,25.0
+2021-05-16,SavantaComRes,2131,leader,Keir Starmer,Lab,22.0,40.0
+2021-05-17,Redfield & Wilton,2000,leader,Boris Johnson,Con,44.0,34.0
+2021-05-17,Redfield & Wilton,2000,leader,Keir Starmer,Lab,23.0,35.0
+2021-05-24,Redfield & Wilton,2000,leader,Boris Johnson,Con,44.0,36.0
+2021-05-24,Redfield & Wilton,2000,leader,Keir Starmer,Lab,24.0,35.0
+2021-05-26,Survation,1041,leader,Boris Johnson,Con,42.0,38.0
+2021-05-26,Survation,1041,leader,Keir Starmer,Lab,27.0,38.0
+2021-05-28,Opinium,2004,leader,Boris Johnson,Con,38.0,43.0
+2021-05-28,Survation Archived 29 May 2021 at the Wayback Machine,1010,leader,Boris Johnson,Con,42.0,41.0
+2021-05-28,Number Cruncher Politics,1001,leader,Boris Johnson,Con,42.0,45.0
+2021-05-28,Opinium,2004,leader,Keir Starmer,Lab,29.0,38.0
+2021-05-28,Survation Archived 29 May 2021 at the Wayback Machine,1010,leader,Keir Starmer,Lab,26.0,40.0
+2021-05-28,Number Cruncher Politics,1001,leader,Keir Starmer,Lab,23.0,48.0
+2021-05-31,Redfield & Wilton,2000,leader,Boris Johnson,Con,43.0,36.0
+2021-05-31,Redfield & Wilton,2000,leader,Ed Davey,LD,14.0,21.0
+2021-05-31,Redfield & Wilton,2000,leader,Keir Starmer,Lab,27.0,37.0
+2021-06-03,Ipsos MORI,1002,leader,Boris Johnson,Con,44.0,47.0
+2021-06-03,Ipsos MORI,1002,leader,Ed Davey,LD,16.0,29.0
+2021-06-03,Ipsos MORI,1002,leader,Keir Starmer,Lab,22.0,51.0
+2021-06-07,Redfield & Wilton,2000,leader,Boris Johnson,Con,43.0,34.0
+2021-06-07,YouGov,1626,leader,Boris Johnson,Con,44.0,48.0
+2021-06-07,Redfield & Wilton,2000,leader,Keir Starmer,Lab,26.0,34.0
+2021-06-07,YouGov,1626,leader,Keir Starmer,Lab,17.0,61.0
+2021-06-10,Survation,2017,leader,Boris Johnson,Con,42.0,40.0
+2021-06-10,Survation,2017,leader,Keir Starmer,Lab,28.0,37.0
+2021-06-11,Opinium,2002,leader,Boris Johnson,Con,41.0,43.0
+2021-06-11,Opinium,2002,leader,Keir Starmer,Lab,28.0,38.0
+2021-06-12,Deltapoll,1608,leader,Boris Johnson,Con,51.0,45.0
+2021-06-12,Deltapoll,1608,leader,Keir Starmer,Lab,38.0,46.0
+2021-06-13,Redfield & Wilton,2000,leader,Boris Johnson,Con,43.0,36.0
+2021-06-13,SavantaComRes,2108,leader,Boris Johnson,Con,38.0,40.0
+2021-06-13,SavantaComRes,2108,leader,Ed Davey,LD,17.0,23.0
+2021-06-13,Redfield & Wilton,2000,leader,Keir Starmer,Lab,25.0,31.0
+2021-06-13,SavantaComRes,2108,leader,Keir Starmer,Lab,29.0,37.0
+2021-06-21,Redfield & Wilton,2000,leader,Boris Johnson,Con,41.0,38.0
+2021-06-21,Redfield & Wilton,2000,leader,Keir Starmer,Lab,25.0,37.0
+2021-06-24,YouGov,1758,leader,Boris Johnson,Con,39.0,54.0
+2021-06-25,Opinium,2000,leader,Boris Johnson,Con,40.0,44.0
+2021-06-25,Opinium,2000,leader,Ed Davey,LD,22.0,21.0
+2021-06-25,Opinium,2000,leader,Keir Starmer,Lab,31.0,39.0
+2021-06-26,Survation,1001,leader,Boris Johnson,Con,40.0,40.0
+2021-06-26,Survation,1001,leader,Keir Starmer,Lab,28.0,37.0
+2021-06-28,Redfield & Wilton,2000,leader,Boris Johnson,Con,38.0,40.0
+2021-06-28,Ipsos MORI,1128,leader,Boris Johnson,Con,33.0,47.0
+2021-06-28,Redfield & Wilton,2000,leader,Keir Starmer,Lab,28.0,35.0
+2021-06-28,Ipsos MORI,1128,leader,Keir Starmer,Lab,20.0,45.0
+2021-07-02,Panelbase,3391,leader,Boris Johnson,Con,36.0,41.0
+2021-07-02,Panelbase,3891,leader,Ed Davey,LD,14.0,20.0
+2021-07-02,Panelbase,3891,leader,Keir Starmer,Lab,20.0,40.0
+2021-07-05,YouGov,1793,leader,Boris Johnson,Con,39.0,54.0
+2021-07-05,Redfield & Wilton,2000,leader,Boris Johnson,Con,39.0,37.0
+2021-07-05,YouGov,1793,leader,Keir Starmer,Lab,21.0,59.0
+2021-07-05,Redfield & Wilton,2000,leader,Keir Starmer,Lab,24.0,34.0
+2021-07-08,Ipsos MORI,1053,leader,Boris Johnson,Con,38.0,54.0
+2021-07-08,Ipsos MORI,1053,leader,Keir Starmer,Lab,27.0,50.0
+2021-07-09,Opinium,2001,leader,Boris Johnson,Con,37.0,45.0
+2021-07-09,Opinium,2001,leader,Keir Starmer,Lab,29.0,36.0
+2021-07-12,Redfield & Wilton,2000,leader,Boris Johnson,Con,39.0,39.0
+2021-07-12,Redfield & Wilton,2000,leader,Keir Starmer,Lab,24.0,35.0
+2021-07-13,Survation,2119,leader,Boris Johnson,Con,39.0,42.0
+2021-07-13,Survation,2119,leader,Keir Starmer,Lab,28.0,39.0
+2021-07-18,SavantaComRes,2127,leader,Boris Johnson,Con,37.0,41.0
+2021-07-18,SavantaComRes,2127,leader,Ed Davey,LD,18.0,21.0
+2021-07-18,SavantaComRes,2127,leader,Keir Starmer,Lab,26.0,37.0
+2021-07-19,Redfield & Wilton,2000,leader,Boris Johnson,Con,40.0,41.0
+2021-07-19,Redfield & Wilton,2000,leader,Keir Starmer,Lab,26.0,39.0
+2021-07-20,Survation,1032,leader,Boris Johnson,Con,35.0,47.0
+2021-07-20,Survation,1032,leader,Keir Starmer,Lab,27.0,41.0
+2021-07-23,Survation,1013,leader,Boris Johnson,Con,37.0,47.0
+2021-07-23,Opinium,2000,leader,Boris Johnson,Con,34.0,47.0
+2021-07-23,Survation,1013,leader,Keir Starmer,Lab,33.0,35.0
+2021-07-23,Opinium,2000,leader,Keir Starmer,Lab,30.0,36.0
+2021-07-25,Redfield & Wilton,2000,leader,Boris Johnson,Con,32.0,47.0
+2021-07-25,Redfield & Wilton,2000,leader,Keir Starmer,Lab,25.0,40.0
+2021-07-26,Ipsos MORI,1009,leader,Boris Johnson,Con,27.0,47.0
+2021-07-26,Ipsos MORI,1009,leader,Keir Starmer,Lab,23.0,38.0
+2021-07-29,YouGov,1700,leader,Boris Johnson,Con,36.0,55.0
+2021-07-29,YouGov,1700,leader,Keir Starmer,Lab,29.0,53.0
+2021-08-02,YouGov,1781,leader,Boris Johnson,Con,38.0,55.0
+2021-08-02,Redfield & Wilton,2000,leader,Boris Johnson,Con,39.0,41.0
+2021-08-02,YouGov,1781,leader,Keir Starmer,Lab,22.0,59.0
+2021-08-02,Redfield & Wilton,2000,leader,Keir Starmer,Lab,25.0,40.0
+2021-08-06,Opinium,2000,leader,Boris Johnson,Con,34.0,49.0
+2021-08-06,Opinium,2000,leader,Keir Starmer,Lab,28.0,39.0
+2021-08-09,Redfield & Wilton,2000,leader,Boris Johnson,Con,35.0,46.0
+2021-08-09,Ipsos MORI,1113,leader,Boris Johnson,Con,41.0,52.0
+2021-08-09,Ipsos MORI,1113,leader,Ed Davey,LD,21.0,32.0
+2021-08-09,Redfield & Wilton,2000,leader,Keir Starmer,Lab,24.0,37.0
+2021-08-09,Ipsos MORI,1113,leader,Keir Starmer,Lab,27.0,53.0
+2021-08-15,SavantaComRes,2075,leader,Boris Johnson,Con,35.0,42.0
+2021-08-15,SavantaComRes,2075,leader,Ed Davey,LD,16.0,23.0
+2021-08-15,SavantaComRes,2075,leader,Keir Starmer,Lab,26.0,36.0
+2021-08-16,Redfield & Wilton,2000,leader,Boris Johnson,Con,35.0,44.0
+2021-08-16,Redfield & Wilton,2000,leader,Keir Starmer,Lab,24.0,38.0
+2021-08-18,YouGov,1703,leader,Boris Johnson,Con,34.0,59.0
+2021-08-18,YouGov,1703,leader,Keir Starmer,Lab,26.0,56.0
+2021-08-20,Opinium,2003,leader,Boris Johnson,Con,33.0,46.0
+2021-08-20,Opinium,2003,leader,Ed Davey,LD,17.0,23.0
+2021-08-20,Opinium,2003,leader,Keir Starmer,Lab,31.0,37.0
+2021-08-23,Redfield & Wilton,2000,leader,Boris Johnson,Con,39.0,45.0
+2021-08-23,Redfield & Wilton,2000,leader,Keir Starmer,Lab,23.0,41.0
+2021-08-29,Redfield & Wilton,2000,leader,Boris Johnson,Con,38.0,40.0
+2021-08-29,Redfield & Wilton,2000,leader,Keir Starmer,Lab,23.0,40.0
+2021-09-03,Deltapoll,1589,leader,Boris Johnson,Con,47.0,49.0
+2021-09-03,Opinium,2014,leader,Boris Johnson,Con,35.0,45.0
+2021-09-03,Deltapoll,1589,leader,Keir Starmer,Lab,36.0,49.0
+2021-09-03,Opinium,2014,leader,Keir Starmer,Lab,29.0,37.0
+2021-09-06,Redfield & Wilton,2000,leader,Boris Johnson,Con,37.0,41.0
+2021-09-06,Ipsos MORI,1143,leader,Boris Johnson,Con,28.0,46.0
+2021-09-06,Redfield & Wilton,2000,leader,Keir Starmer,Lab,27.0,37.0
+2021-09-06,Ipsos MORI,1143,leader,Keir Starmer,Lab,20.0,44.0
+2021-09-11,Opinium,2059,leader,Boris Johnson,Con,32.0,49.0
+2021-09-11,Opinium,2059,leader,Keir Starmer,Lab,29.0,37.0
+2021-09-13,Redfield & Wilton,2000,leader,Boris Johnson,Con,38.0,42.0
+2021-09-13,Redfield & Wilton,2000,leader,Keir Starmer,Lab,24.0,42.0
+2021-09-14,Survation,2164,leader,Boris Johnson,Con,38.0,44.0
+2021-09-14,Survation,2164,leader,Keir Starmer,Lab,29.0,38.0
+2021-09-16,Panelbase,3938,leader,Boris Johnson,Con,33.0,42.0
+2021-09-16,Panelbase,3891,leader,Ed Davey,LD,14.0,24.0
+2021-09-16,Panelbase,3938,leader,Keir Starmer,Lab,23.0,39.0
+2021-09-17,Opinium,2000,leader,Boris Johnson,Con,35.0,48.0
+2021-09-17,Opinium,2000,leader,Keir Starmer,Lab,30.0,36.0
+2021-09-20,Redfield & Wilton,2000,leader,Boris Johnson,Con,37.0,42.0
+2021-09-20,Redfield & Wilton,2000,leader,Keir Starmer,Lab,23.0,39.0
+2021-09-22,Survation,1060,leader,Boris Johnson,Con,39.0,44.0
+2021-09-22,Survation,1060,leader,Keir Starmer,Lab,30.0,42.0
+2021-09-23,Ipsos MORI,1008,leader,Boris Johnson,Con,39.0,51.0
+2021-09-23,Ipsos MORI,1008,leader,Keir Starmer,Lab,25.0,50.0
+2021-09-26,YouGov,1804,leader,Boris Johnson,Con,35.0,60.0
+2021-09-26,YouGov,1685,leader,Keir Starmer,Lab,10.0,39.0
+2021-09-27,Redfield & Wilton,2000,leader,Boris Johnson,Con,36.0,42.0
+2021-09-27,Redfield & Wilton,2000,leader,Keir Starmer,Lab,24.0,37.0
+2021-10-04,Redfield & Wilton,2000,leader,Boris Johnson,Con,36.0,42.0
+2021-10-04,Redfield & Wilton,2000,leader,Keir Starmer,Lab,25.0,36.0
+2021-10-11,Redfield & Wilton,2000,leader,Boris Johnson,Con,36.0,42.0
+2021-10-11,Redfield & Wilton,2000,leader,Keir Starmer,Lab,26.0,37.0
+2021-11-06,J.L. Partners,1021,leader,Boris Johnson,Con,30.0,51.0
+2021-11-06,Opinium,1840,leader,Boris Johnson,Con,30.0,50.0
+2021-11-06,J.L. Partners,1021,leader,Keir Starmer,Lab,23.0,39.0
+2021-11-06,Opinium,1840,leader,Keir Starmer,Lab,29.0,37.0
+2021-11-15,Redfield & Wilton,2000,leader,Boris Johnson,Con,35.0,45.0
+2021-11-15,Redfield & Wilton,2000,leader,Keir Starmer,Lab,26.0,35.0
+2021-11-22,YouGov,1748,leader,Boris Johnson,Con,29.0,64.0
+2021-11-22,YouGov,1748,leader,Keir Starmer,Lab,24.0,56.0
+2021-12-09,Focaldata,1001,leader,Boris Johnson,Con,22.0,62.0
+2021-12-09,Survation,1178,leader,Boris Johnson,Con,30.0,53.0
+2021-12-09,Focaldata,1001,leader,Keir Starmer,Lab,26.0,38.0
+2021-12-09,Survation,1178,leader,Keir Starmer,Lab,33.0,35.0
+2021-12-10,Ipsos MORI,1005,leader,Boris Johnson,Con,28.0,65.0
+2021-12-10,Ipsos MORI,1005,leader,Ed Davey,LD,19.0,33.0
+2021-12-10,Ipsos MORI,1005,leader,Keir Starmer,Lab,28.0,49.0
+2021-12-20,YouGov,1770,leader,Boris Johnson,Con,23.0,71.0
+2021-12-25,Opinium,2000,leader,Keir Starmer,Lab,35.0,31.0
+2022-01-10,Redfield & Wilton,2000,leader,Boris Johnson,Con,31.0,50.0
+2022-01-10,Ipsos MORI,1005,leader,Boris Johnson,Con,20.0,56.0
+2022-01-10,Redfield & Wilton,2000,leader,Keir Starmer,Lab,30.0,33.0
+2022-01-10,Ipsos MORI,1005,leader,Keir Starmer,Lab,22.0,40.0
+2022-01-12,Focaldata,1003,leader,Boris Johnson,Con,20.0,65.0
+2022-01-12,Focaldata,1003,leader,Keir Starmer,Lab,29.0,35.0
+2022-01-14,Opinium,2005,leader,Boris Johnson,Con,22.0,64.0
+2022-01-14,Opinium,2005,leader,Keir Starmer,Lab,36.0,32.0
+2022-01-16,SavantaComRes,2166,leader,Boris Johnson,Con,23.0,60.0
+2022-01-16,SavantaComRes,2166,leader,Ed Davey,LD,16.0,23.0
+2022-01-16,SavantaComRes,2166,leader,Keir Starmer,Lab,30.0,34.0
+2022-01-17,YouGov,1785,leader,Boris Johnson,Con,22.0,73.0
+2022-01-17,Redfield & Wilton,2000,leader,Boris Johnson,Con,25.0,56.0
+2022-01-17,Redfield & Wilton,2000,leader,Keir Starmer,Lab,30.0,30.0
+2022-01-25,Ipsos MORI,1059,leader,Boris Johnson,Con,24.0,70.0
+2022-01-25,Ipsos MORI,1059,leader,Keir Starmer,Lab,33.0,48.0
+2022-01-28,Opinium,2008,leader,Boris Johnson,Con,24.0,62.0
+2022-01-28,Opinium,2008,leader,Keir Starmer,Lab,34.0,33.0
+2022-02-11,Opinium,2015,leader,Boris Johnson,Con,24.0,58.0
+2022-02-11,Opinium,2015,leader,Keir Starmer,Lab,32.0,32.0
+2022-03-11,Opinium,2007,leader,Boris Johnson,Con,27.0,54.0
+2022-03-11,Opinium,2007,leader,Keir Starmer,Lab,28.0,30.0
+2022-03-15,Ipsos MORI,1000,leader,Boris Johnson,Con,31.0,59.0
+2022-03-15,Ipsos MORI,1000,leader,Ed Davey,LD,22.0,28.0
+2022-03-15,Ipsos MORI,1000,leader,Keir Starmer,Lab,33.0,43.0
+2022-03-20,Redfield & Wilton,2000,leader,Boris Johnson,Con,32.0,47.0
+2022-03-20,Redfield & Wilton,2000,leader,Keir Starmer,Lab,31.0,31.0
+2022-03-25,Opinium,2002,leader,Boris Johnson,Con,28.0,52.0
+2022-03-25,Opinium,2002,leader,Keir Starmer,Lab,28.0,32.0
+2022-03-27,Redfield & Wilton,2000,leader,Boris Johnson,Con,36.0,44.0
+2022-03-27,Redfield & Wilton,2000,leader,Keir Starmer,Lab,30.0,28.0
+2022-03-30,Survation,2033,leader,Boris Johnson,Con,32.0,51.0
+2022-03-30,Survation,2033,leader,Keir Starmer,Lab,33.0,35.0
+2022-04-10,Redfield & Wilton,2000,leader,Boris Johnson,Con,29.0,52.0
+2022-04-10,Redfield & Wilton,2000,leader,Keir Starmer,Lab,27.0,32.0
+2022-04-22,Opinium,2002,leader,Boris Johnson,Con,26.0,59.0
+2022-04-22,Opinium,2002,leader,Keir Starmer,Lab,29.0,35.0
+2022-06-30,YouGov,1807,leader,Boris Johnson,Con,23.0,71.0
+2022-06-30,YouGov,1807,leader,Keir Starmer,Lab,28.0,54.0
+2022-07-07,Opinium,1578,leader,Boris Johnson,Con,22.0,62.0
+2022-07-07,Opinium,1578,leader,Keir Starmer,Lab,34.0,35.0
+2022-10-07,Opinium,2023,leader,Ed Davey,LD,16.0,19.0
+2022-10-07,Opinium,2023,leader,Keir Starmer,Lab,38.0,29.0
+2022-10-12,PeoplePolling,1158,leader,Keir Starmer,Lab,33.0,41.0
+2022-10-25,YouGov,1659,leader,Keir Starmer,Lab,44.0,41.0
+2022-10-25,YouGov,1659,leader,Rishi Sunak,Con,39.0,48.0
+2022-10-26,PeoplePolling,1185,leader,Rishi Sunak,Con,30.0,40.0
+2022-10-26,Redfield & Wilton,1500,leader,Rishi Sunak,Con,27.0,25.0
+2022-10-26,BMG Research,1568,leader,Rishi Sunak,Con,26.0,21.0
+2022-10-28,Omnisis,1383,leader,Rishi Sunak,Con,34.0,22.0
+2022-11-27,Redfield & Wilton,2000,leader,Rishi Sunak,Con,33.0,33.0
+2022-12-04,Redfield & Wilton,2000,leader,Keir Starmer,Lab,37.0,26.0
+2022-12-04,Redfield & Wilton,2000,leader,Rishi Sunak,Con,30.0,33.0
+2022-12-11,Redfield & Wilton,2000,leader,Keir Starmer,Lab,37.0,27.0
+2022-12-11,Redfield & Wilton,2000,leader,Rishi Sunak,Con,30.0,33.0
+2023-01-03,Redfield & Wilton,2000,leader,Keir Starmer,Lab,36.0,26.0
+2023-01-03,Redfield & Wilton,2000,leader,Rishi Sunak,Con,27.0,31.0
+2023-01-08,Redfield & Wilton,2000,leader,Keir Starmer,Lab,34.0,28.0
+2023-01-08,Redfield & Wilton,2000,leader,Rishi Sunak,Con,28.0,39.0
+2023-01-13,Omnisis,1203,leader,Rishi Sunak,Con,30.0,35.0
+2023-01-15,Redfield & Wilton,2000,leader,Keir Starmer,Lab,35.0,29.0
+2023-01-15,Redfield & Wilton,2000,leader,Rishi Sunak,Con,28.0,38.0
+2023-01-18,YouGov,2024,leader,Keir Starmer,Lab,38.0,46.0
+2023-01-18,YouGov,2024,leader,Rishi Sunak,Con,31.0,60.0
+2023-01-19,Omnisis,1268,leader,Rishi Sunak,Con,26.0,41.0
+2023-01-22,Redfield & Wilton,2000,leader,Keir Starmer,Lab,32.0,25.0
+2023-01-22,Redfield & Wilton,2000,leader,Rishi Sunak,Con,25.0,40.0
+2023-01-26,Omnisis,1068,leader,Rishi Sunak,Con,27.0,47.0
+2023-01-29,Redfield & Wilton,2000,leader,Keir Starmer,Lab,37.0,28.0
+2023-01-29,Redfield & Wilton,2000,leader,Rishi Sunak,Con,26.0,44.0
+2023-02-03,Omnisis,1324,leader,Rishi Sunak,Con,23.0,45.0
+2023-02-05,Redfield & Wilton,2000,leader,Keir Starmer,Lab,34.0,28.0
+2023-02-05,Redfield & Wilton,2000,leader,Rishi Sunak,Con,24.0,44.0
+2023-02-12,Redfield & Wilton,2000,leader,Keir Starmer,Lab,37.0,28.0
+2023-02-12,Redfield & Wilton,2000,leader,Rishi Sunak,Con,28.0,44.0
+2023-02-18,Redfield & Wilton,2000,leader,Keir Starmer,Lab,38.0,26.0
+2023-02-18,Redfield & Wilton,2000,leader,Rishi Sunak,Con,24.0,46.0
+2023-02-26,Redfield & Wilton,2000,leader,Keir Starmer,Lab,37.0,24.0
+2023-02-26,Redfield & Wilton,2000,leader,Rishi Sunak,Con,25.0,42.0
+2023-03-05,Redfield & Wilton,2000,leader,Keir Starmer,Lab,37.0,28.0
+2023-03-05,Redfield & Wilton,2000,leader,Rishi Sunak,Con,30.0,39.0
+2023-03-12,Redfield & Wilton,2000,leader,Keir Starmer,Lab,36.0,27.0
+2023-03-12,Redfield & Wilton,2000,leader,Rishi Sunak,Con,30.0,41.0
+2023-03-19,Redfield & Wilton,2000,leader,Keir Starmer,Lab,38.0,27.0
+2023-03-19,Redfield & Wilton,2000,leader,Rishi Sunak,Con,30.0,41.0
+2023-03-26,Redfield & Wilton,2000,leader,Keir Starmer,Lab,33.0,30.0
+2023-03-26,Redfield & Wilton,2000,leader,Rishi Sunak,Con,32.0,40.0
+2023-03-30,YouGov,2002,leader,Keir Starmer,Lab,22.0,28.0
+2023-04-02,Redfield & Wilton,2000,leader,Keir Starmer,Lab,37.0,27.0
+2023-04-02,Redfield & Wilton,2000,leader,Rishi Sunak,Con,31.0,42.0
+2023-04-09,Redfield & Wilton,2000,leader,Keir Starmer,Lab,38.0,30.0
+2023-04-09,Redfield & Wilton,2000,leader,Rishi Sunak,Con,32.0,40.0
+2023-04-16,Redfield & Wilton,2000,leader,Keir Starmer,Lab,35.0,29.0
+2023-04-16,Redfield & Wilton,2000,leader,Rishi Sunak,Con,31.0,38.0
+2023-04-23,Redfield & Wilton,2000,leader,Keir Starmer,Lab,34.0,29.0
+2023-04-23,Redfield & Wilton,2000,leader,Rishi Sunak,Con,33.0,39.0
+2023-04-30,Redfield & Wilton,2000,leader,Keir Starmer,Lab,39.0,29.0
+2023-04-30,Redfield & Wilton,2000,leader,Rishi Sunak,Con,35.0,40.0
+2023-05-07,Redfield & Wilton,2000,leader,Keir Starmer,Lab,38.0,28.0
+2023-05-07,Redfield & Wilton,2000,leader,Rishi Sunak,Con,33.0,40.0
+2023-05-09,Deltapoll,1550,leader,Keir Starmer,Lab,48.0,37.0
+2023-05-09,Deltapoll,1550,leader,Rishi Sunak,Con,41.0,52.0
+2023-05-12,Omnisis,1355,leader,Rishi Sunak,Con,28.0,42.0
+2023-05-14,Redfield & Wilton,2000,leader,Keir Starmer,Lab,33.0,31.0
+2023-05-14,Redfield & Wilton,2000,leader,Rishi Sunak,Con,33.0,38.0
+2023-05-21,Redfield & Wilton,2000,leader,Keir Starmer,Lab,36.0,32.0
+2023-05-21,Redfield & Wilton,2000,leader,Rishi Sunak,Con,30.0,41.0
+2023-05-28,Redfield & Wilton,2000,leader,Keir Starmer,Lab,37.0,29.0
+2023-05-28,Redfield & Wilton,2000,leader,Rishi Sunak,Con,30.0,44.0
+2023-06-04,Redfield & Wilton,2000,leader,Keir Starmer,Lab,40.0,31.0
+2023-06-04,Redfield & Wilton,2000,leader,Rishi Sunak,Con,33.0,42.0
+2023-06-11,Redfield & Wilton,2000,leader,Keir Starmer,Lab,40.0,27.0
+2023-06-11,Redfield & Wilton,2000,leader,Rishi Sunak,Con,32.0,41.0
+2023-06-18,Redfield & Wilton,2000,leader,Keir Starmer,Lab,38.0,26.0
+2023-06-18,Redfield & Wilton,2000,leader,Rishi Sunak,Con,30.0,39.0
+2023-06-25,Redfield & Wilton,2000,leader,Keir Starmer,Lab,37.0,28.0
+2023-06-25,Redfield & Wilton,2000,leader,Rishi Sunak,Con,32.0,43.0
+2023-07-02,Redfield & Wilton,2000,leader,Keir Starmer,Lab,33.0,26.0
+2023-07-02,Redfield & Wilton,2000,leader,Rishi Sunak,Con,26.0,42.0
+2023-07-09,Redfield & Wilton,2000,leader,Keir Starmer,Lab,36.0,27.0
+2023-07-09,Redfield & Wilton,2000,leader,Rishi Sunak,Con,29.0,45.0
+2023-07-14,YouGov,2151,leader,Keir Starmer,Lab,35.0,50.0
+2023-07-14,YouGov,2151,leader,Rishi Sunak,Con,27.0,61.0
+2023-07-16,Redfield & Wilton,2000,leader,Keir Starmer,Lab,37.0,29.0
+2023-07-16,Redfield & Wilton,2000,leader,Rishi Sunak,Con,31.0,45.0
+2023-07-23,Redfield & Wilton,2000,leader,Keir Starmer,Lab,38.0,30.0
+2023-07-23,Redfield & Wilton,2000,leader,Rishi Sunak,Con,31.0,41.0
+2023-07-30,Redfield & Wilton,2000,leader,Keir Starmer,Lab,37.0,30.0
+2023-07-30,Redfield & Wilton,2000,leader,Rishi Sunak,Con,30.0,44.0
+2023-08-06,Redfield & Wilton,2000,leader,Keir Starmer,Lab,37.0,31.0
+2023-08-06,Redfield & Wilton,2000,leader,Rishi Sunak,Con,28.0,44.0
+2023-08-13,Redfield & Wilton,2000,leader,Keir Starmer,Lab,40.0,27.0
+2023-08-13,Redfield & Wilton,2000,leader,Rishi Sunak,Con,32.0,41.0
+2023-08-20,Redfield & Wilton,2000,leader,Keir Starmer,Lab,39.0,27.0
+2023-08-20,Redfield & Wilton,2000,leader,Rishi Sunak,Con,29.0,47.0
+2023-08-27,Redfield & Wilton,2000,leader,Keir Starmer,Lab,41.0,29.0
+2023-08-27,Savanta,2159,leader,Keir Starmer,Lab,36.0,37.0
+2023-08-27,Redfield & Wilton,2000,leader,Rishi Sunak,Con,30.0,45.0
+2023-08-30,YouGov,2210,leader,Keir Starmer,Lab,33.0,53.0
+2023-09-03,Redfield & Wilton,2000,leader,Keir Starmer,Lab,40.0,25.0
+2023-09-03,Redfield & Wilton,2000,leader,Rishi Sunak,Con,31.0,43.0
+2023-09-10,Redfield & Wilton,2000,leader,Rishi Sunak,Con,25.0,46.0
+2023-09-17,Redfield & Wilton,2000,leader,Keir Starmer,Lab,36.0,28.0
+2023-09-17,Redfield & Wilton,2000,leader,Rishi Sunak,Con,25.0,46.0
+2023-09-19,Ipsos,1004,leader,Keir Starmer,Lab,29.0,51.0
+2023-09-19,Ipsos,1004,leader,Rishi Sunak,Con,22.0,66.0
+2023-09-24,Redfield & Wilton,2000,leader,Keir Starmer,Lab,40.0,31.0
+2023-09-24,Redfield & Wilton,2000,leader,Rishi Sunak,Con,32.0,46.0
+2023-10-01,Redfield & Wilton,2000,leader,Keir Starmer,Lab,37.0,30.0
+2023-10-01,Redfield & Wilton,2000,leader,Rishi Sunak,Con,31.0,41.0
+2023-10-08,Redfield & Wilton,2000,leader,Keir Starmer,Lab,38.0,28.0
+2023-10-08,Redfield & Wilton,2000,leader,Rishi Sunak,Con,30.0,46.0
+2023-10-15,Redfield & Wilton,2000,leader,Keir Starmer,Lab,34.0,28.0
+2023-10-15,Redfield & Wilton,2000,leader,Rishi Sunak,Con,31.0,44.0
+2023-10-22,Redfield & Wilton,2000,leader,Keir Starmer,Lab,39.0,28.0
+2023-10-22,Redfield & Wilton,2000,leader,Rishi Sunak,Con,31.0,45.0
+2023-10-29,Redfield & Wilton,2000,leader,Keir Starmer,Lab,39.0,29.0
+2023-10-29,Redfield & Wilton,2000,leader,Rishi Sunak,Con,31.0,45.0
+2023-11-05,Redfield & Wilton,2000,leader,Keir Starmer,Lab,39.0,29.0
+2023-11-05,Redfield & Wilton,2000,leader,Rishi Sunak,Con,30.0,46.0
+2023-11-12,Redfield & Wilton,2000,leader,Keir Starmer,Lab,38.0,29.0
+2023-11-12,Redfield & Wilton,2000,leader,Rishi Sunak,Con,27.0,45.0
+2023-11-19,Redfield & Wilton,2000,leader,Keir Starmer,Lab,40.0,29.0
+2023-11-19,Redfield & Wilton,2000,leader,Rishi Sunak,Con,28.0,48.0
+2023-11-26,Redfield & Wilton,2000,leader,Keir Starmer,Lab,39.0,31.0
+2023-11-26,Redfield & Wilton,2000,leader,Rishi Sunak,Con,29.0,46.0
+2023-11-27,Deltapoll,1996,leader,Keir Starmer,Lab,41.0,46.0
+2023-11-27,Ipsos,1066,leader,Keir Starmer,Lab,30.0,42.0
+2023-12-03,Redfield & Wilton,2000,leader,Keir Starmer,Lab,39.0,32.0
+2023-12-03,Redfield & Wilton,2000,leader,Rishi Sunak,Con,32.0,46.0
+2023-12-10,Redfield & Wilton,2000,leader,Keir Starmer,Lab,36.0,30.0
+2023-12-10,Savanta,2079,leader,Keir Starmer,Lab,36.0,37.0
+2023-12-10,Redfield & Wilton,2000,leader,Rishi Sunak,Con,31.0,46.0
+2023-12-12,YouGov,2001,leader,Keir Starmer,Lab,37.0,50.0
+2023-12-17,Redfield & Wilton,2000,leader,Keir Starmer,Lab,37.0,33.0
+2023-12-17,Redfield & Wilton,2000,leader,Rishi Sunak,Con,28.0,47.0
+2024-01-07,Redfield & Wilton,2000,leader,Keir Starmer,Lab,44.0,26.0
+2024-01-07,Redfield & Wilton,2000,leader,Rishi Sunak,Con,31.0,46.0
+2024-01-14,Redfield & Wilton,2000,leader,Keir Starmer,Lab,38.0,27.0
+2024-01-14,Ipsos,1087,leader,Keir Starmer,Lab,28.0,41.0
+2024-01-14,Redfield & Wilton,2000,leader,Rishi Sunak,Con,29.0,44.0
+2024-01-21,Redfield & Wilton,2000,leader,Keir Starmer,Lab,38.0,27.0
+2024-01-21,Redfield & Wilton,2000,leader,Rishi Sunak,Con,27.0,48.0
+2024-01-22,Deltapoll,2176,leader,Keir Starmer,Lab,42.0,45.0
+2024-01-22,Deltapoll,2176,leader,Rishi Sunak,Con,31.0,63.0
+2024-01-28,Redfield & Wilton,2000,leader,Keir Starmer,Lab,40.0,31.0
+2024-01-28,Redfield & Wilton,2000,leader,Rishi Sunak,Con,30.0,48.0
+2024-01-29,YouGov,1761,leader,Keir Starmer,Lab,35.0,47.0
+2024-02-04,Redfield & Wilton,2000,leader,Keir Starmer,Lab,38.0,31.0
+2024-02-04,Redfield & Wilton,2000,leader,Rishi Sunak,Con,29.0,47.0
+2024-02-11,Redfield & Wilton,2000,leader,Keir Starmer,Lab,39.0,30.0
+2024-02-11,Redfield & Wilton,2000,leader,Rishi Sunak,Con,25.0,50.0
+2024-02-18,Redfield & Wilton,2000,leader,Keir Starmer,Lab,39.0,30.0
+2024-02-18,Redfield & Wilton,2000,leader,Rishi Sunak,Con,26.0,51.0
+2024-02-22,Savanta,2118,leader,Keir Starmer,Lab,36.0,38.0
+2024-02-25,Redfield & Wilton,2000,leader,Keir Starmer,Lab,35.0,33.0
+2024-02-25,Redfield & Wilton,2000,leader,Rishi Sunak,Con,26.0,52.0
+2024-03-03,Redfield & Wilton,2000,leader,Keir Starmer,Lab,36.0,34.0
+2024-03-03,Redfield & Wilton,2000,leader,Rishi Sunak,Con,26.0,48.0
+2024-03-04,Ipsos,1004,leader,Keir Starmer,Lab,29.0,55.0
+2024-03-04,Ipsos,1004,leader,Rishi Sunak,Con,19.0,73.0
+2024-03-10,Redfield & Wilton,2000,leader,Keir Starmer,Lab,34.0,26.0
+2024-03-10,Redfield & Wilton,2000,leader,Rishi Sunak,Con,25.0,44.0
+2024-03-11,Deltapoll,1502,leader,Keir Starmer,Lab,40.0,49.0
+2024-03-11,Deltapoll,1502,leader,Rishi Sunak,Con,31.0,65.0
+2024-03-17,Redfield & Wilton,2000,leader,Keir Starmer,Lab,36.0,28.0
+2024-03-17,Redfield & Wilton,2000,leader,Rishi Sunak,Con,25.0,48.0
+2024-03-20,YouGov,2037,leader,Keir Starmer,Lab,32.0,53.0
+2024-03-20,YouGov,2037,leader,Rishi Sunak,Con,22.0,69.0
+2024-03-24,Redfield & Wilton,2000,leader,Keir Starmer,Lab,36.0,30.0
+2024-03-24,Redfield & Wilton,2000,leader,Rishi Sunak,Con,26.0,51.0
+2024-03-25,Deltapoll,1589,leader,Keir Starmer,Lab,44.0,44.0
+2024-03-31,Redfield & Wilton,2000,leader,Keir Starmer,Lab,38.0,28.0
+2024-03-31,Redfield & Wilton,2000,leader,Rishi Sunak,Con,26.0,47.0
+2024-04-05,Opinium,2000,leader,Keir Starmer,Lab,31.0,38.0
+2024-04-15,Ipsos,1072,leader,Ed Davey,LD,18.0,40.0
+2024-04-15,Ipsos,1072,leader,Keir Starmer,Lab,25.0,56.0
+2024-04-15,Ipsos,1072,leader,Rishi Sunak,Con,16.0,75.0
+2024-04-17,Opinium,1943,leader,Ed Davey,LD,13.0,27.0
+2024-04-17,Opinium,1943,leader,Keir Starmer,Lab,30.0,40.0
+2024-04-17,Opinium,1943,leader,Rishi Sunak,Con,22.0,56.0
+2024-05-12,YouGov,2069,leader,Keir Starmer,Lab,33.0,53.0
+2024-05-12,YouGov,2069,leader,Rishi Sunak,Con,22.0,69.0
+2024-05-14,Ipsos,1008,leader,Ed Davey,LD,22.0,38.0
+2024-05-14,Ipsos,1008,leader,Keir Starmer,Lab,32.0,50.0
+2024-05-14,Ipsos,1008,leader,Rishi Sunak,Con,17.0,72.0
+2024-05-21,Savanta,2295,leader,Ed Davey,LD,21.0,28.0
+2024-05-21,Savanta,2295,leader,Keir Starmer,Lab,39.0,38.0
+2024-05-21,Savanta,2295,leader,Rishi Sunak,Con,29.0,51.0
+2024-07-06,Ipsos,1141,leader,Ed Davey,LD,29.0,26.0
+2024-07-06,Ipsos,1141,leader,Keir Starmer,Lab,40.0,33.0
+2024-07-06,Ipsos,1141,leader,Nigel Farage,Ref,26.0,52.0
+2024-07-06,Ipsos,1141,leader,Rishi Sunak,Con,21.0,57.0
+2024-07-06,Ipsos,1141,party,Conservative,Con,20.0,59.0
+2024-07-06,Ipsos,1141,party,Green,Grn,33.0,28.0
+2024-07-06,Ipsos,1141,party,Labour,Lab,40.0,34.0
+2024-07-06,Ipsos,1141,party,Lib Dems,LD,29.0,28.0
+2024-07-06,Ipsos,1141,party,Reform,Ref,25.0,51.0
+2024-07-08,YouGov,2102,leader,Adrian Ramsay,Grn,7.0,14.0
+2024-07-08,YouGov,2102,leader,Carla Denyer,Grn,13.0,16.0
+2024-07-08,YouGov,2102,leader,Ed Davey,LD,34.0,29.0
+2024-07-08,YouGov,2102,leader,Keir Starmer,Lab,44.0,47.0
+2024-07-08,YouGov,2102,leader,Nigel Farage,Ref,27.0,65.0
+2024-07-08,YouGov,2102,leader,Rishi Sunak,Con,23.0,70.0
+2024-07-08,YouGov,2102,party,Conservative,Con,21.0,72.0
+2024-07-08,YouGov,2102,party,Green,Grn,46.0,38.0
+2024-07-08,YouGov,2102,party,Labour,Lab,47.0,46.0
+2024-07-08,YouGov,2102,party,Lib Dems,LD,45.0,37.0
+2024-07-08,YouGov,2102,party,Reform,Ref,28.0,62.0
+2024-07-12,We Think,2005,leader,Adrian Ramsay,Grn,12.0,33.0
+2024-07-12,We Think,2005,leader,Carla Denyer,Grn,15.0,33.0
+2024-07-12,We Think,2005,leader,Ed Davey,LD,21.0,35.0
+2024-07-12,We Think,2005,leader,Keir Starmer,Lab,44.0,34.0
+2024-07-12,We Think,2005,leader,Nigel Farage,Ref,28.0,46.0
+2024-07-12,We Think,2005,leader,Rishi Sunak,Con,23.0,58.0
+2024-07-19,Opinium,2010,leader,Adrian Ramsay,Grn,21.0,15.0
+2024-07-19,Opinium,2010,leader,Carla Denyer,Grn,21.0,15.0
+2024-07-19,Opinium,2010,leader,Ed Davey,LD,25.0,18.0
+2024-07-19,Opinium,2010,leader,Keir Starmer,Lab,38.0,20.0
+2024-07-19,Opinium,2010,leader,Rishi Sunak,Con,20.0,42.0
+2024-07-26,We Think,2012,leader,Adrian Ramsay,Grn,12.0,32.0
+2024-07-26,We Think,2012,leader,Carla Denyer,Grn,16.0,34.0
+2024-07-26,We Think,2012,leader,Ed Davey,LD,21.0,36.0
+2024-07-26,We Think,2012,leader,Keir Starmer,Lab,42.0,37.0
+2024-07-26,We Think,2012,leader,Nigel Farage,Ref,30.0,50.0
+2024-07-26,We Think,2012,leader,Rishi Sunak,Con,25.0,61.0
+2024-07-31,YouGov,2233,leader,Adrian Ramsay,Grn,3.0,10.0
+2024-07-31,YouGov,2233,leader,Carla Denyer,Grn,9.0,12.0
+2024-07-31,YouGov,2233,leader,Ed Davey,LD,27.0,33.0
+2024-07-31,YouGov,2233,leader,Keir Starmer,Lab,40.0,49.0
+2024-07-31,YouGov,2233,leader,Nigel Farage,Ref,27.0,62.0
+2024-07-31,YouGov,2233,leader,Rishi Sunak,Con,23.0,70.0
+2024-08-02,Opinium,2063,leader,Adrian Ramsay,Grn,19.0,17.0
+2024-08-02,Opinium,2063,leader,Carla Denyer,Grn,19.0,17.0
+2024-08-02,Opinium,2063,leader,Ed Davey,LD,24.0,19.0
+2024-08-02,Opinium,2063,leader,Keir Starmer,Lab,35.0,32.0
+2024-08-02,Opinium,2063,leader,Nigel Farage,Ref,25.0,40.0
+2024-08-02,Opinium,2063,leader,Rishi Sunak,Con,18.0,48.0
+2024-08-06,YouGov,2163,leader,Keir Starmer,Lab,37.0,53.0
+2024-08-06,YouGov,2163,leader,Nigel Farage,Ref,25.0,67.0
+2024-08-06,YouGov,2163,leader,Rishi Sunak,Con,23.0,71.0
+2024-08-06,YouGov,2163,party,Conservative,Con,23.0,70.0
+2024-08-06,YouGov,2163,party,Labour,Lab,39.0,53.0
+2024-08-07,BMG Research,1523,leader,Ed Davey,LD,21.0,16.0
+2024-08-07,BMG Research,1523,leader,Keir Starmer,Lab,30.0,33.0
+2024-08-07,BMG Research,1523,leader,Nigel Farage,Ref,23.0,37.0
+2024-08-07,BMG Research,1523,leader,Rishi Sunak,Con,19.0,42.0
+2024-08-08,We Think,1278,leader,Adrian Ramsay,Grn,10.0,26.0
+2024-08-08,We Think,1278,leader,Carla Denyer,Grn,14.0,28.0
+2024-08-08,We Think,1278,leader,Ed Davey,LD,18.0,36.0
+2024-08-08,We Think,1278,leader,Keir Starmer,Lab,33.0,42.0
+2024-08-08,We Think,1278,leader,Nigel Farage,Ref,29.0,44.0
+2024-08-08,We Think,1278,leader,Rishi Sunak,Con,22.0,57.0
+2024-08-16,Opinium,2000,leader,Ed Davey,LD,21.0,21.0
+2024-08-16,Opinium,2000,leader,Keir Starmer,Lab,32.0,38.0
+2024-08-16,Opinium,2000,leader,Nigel Farage,Ref,24.0,43.0
+2024-08-16,Opinium,2000,leader,Rishi Sunak,Con,20.0,50.0
+2024-08-26,YouGov,1684,leader,Ed Davey,LD,27.0,21.0
+2024-08-26,YouGov,1684,leader,Keir Starmer,Lab,35.0,43.0
+2024-08-27,More in Common,2015,leader,Keir Starmer,Lab,27.0,43.0
+2024-08-27,More in Common,2015,leader,Rishi Sunak,Con,17.0,57.0
+2024-08-27,More in Common,2015,party,Conservative,Con,15.0,58.0
+2024-08-27,More in Common,2015,party,Labour,Lab,25.0,46.0
+2024-08-29,BMG Research,1560,leader,Ed Davey,LD,19.0,21.0
+2024-08-29,BMG Research,1560,leader,Keir Starmer,Lab,28.0,44.0
+2024-08-29,BMG Research,1560,leader,Nigel Farage,Ref,28.0,37.0
+2024-08-29,BMG Research,1560,leader,Rishi Sunak,Con,22.0,46.0
+2024-09-09,More in Common,2024,leader,Ed Davey,LD,15.0,23.0
+2024-09-09,More in Common,2024,leader,Keir Starmer,Lab,25.0,45.0
+2024-09-09,More in Common,2024,leader,Nigel Farage,Ref,23.0,42.0
+2024-09-09,More in Common,2024,leader,Rishi Sunak,Con,17.0,53.0
+2024-09-09,More in Common,2024,party,Conservative,Con,15.0,56.0
+2024-09-09,More in Common,2024,party,Green,Grn,21.0,24.0
+2024-09-09,More in Common,2024,party,Labour,Lab,26.0,45.0
+2024-09-09,More in Common,2024,party,Lib Dems,LD,19.0,28.0
+2024-09-09,More in Common,2024,party,Reform,Ref,23.0,38.0
+2024-09-20,Opinium,2050,leader,Ed Davey,LD,24.0,21.0
+2024-09-20,Opinium,2050,leader,Keir Starmer,Lab,24.0,50.0
+2024-09-20,Opinium,2050,leader,Nigel Farage,Ref,27.0,39.0
+2024-09-20,Opinium,2050,leader,Rishi Sunak,Con,21.0,46.0
+2024-09-22,YouGov,2137,leader,Ed Davey,LD,27.0,36.0
+2024-09-22,YouGov,2137,leader,Keir Starmer,Lab,30.0,60.0
+2024-09-22,YouGov,2137,leader,Nigel Farage,Ref,28.0,63.0
+2024-09-22,YouGov,2137,leader,Rishi Sunak,Con,24.0,68.0
+2024-09-22,YouGov,2132,party,Conservative,Con,24.0,67.0
+2024-09-22,YouGov,2132,party,Green,Grn,40.0,42.0
+2024-09-22,YouGov,2132,party,Labour,Lab,32.0,59.0
+2024-09-22,YouGov,2132,party,Lib Dems,LD,37.0,45.0
+2024-09-22,YouGov,2132,party,Reform,Ref,26.0,62.0
+2024-09-25,More in Common,2080,leader,Ed Davey,LD,19.0,23.0
+2024-09-25,More in Common,2080,leader,Keir Starmer,Lab,21.0,48.0
+2024-09-25,More in Common,2080,leader,Nigel Farage,Ref,26.0,40.0
+2024-09-25,More in Common,2080,leader,Rishi Sunak,Con,20.0,52.0
+2024-09-25,More in Common,2080,party,Conservative,Con,17.0,51.0
+2024-09-25,More in Common,2080,party,Labour,Lab,22.0,50.0
+2024-09-27,Opinium,2003,leader,Ed Davey,LD,22.0,23.0
+2024-09-27,Opinium,2003,leader,Keir Starmer,Lab,23.0,53.0
+2024-09-27,Opinium,2003,leader,Nigel Farage,Ref,29.0,40.0
+2024-09-27,Opinium,2003,leader,Rishi Sunak,Con,20.0,46.0
+2024-10-03,BMG Research,1562,leader,Ed Davey,LD,21.0,20.0
+2024-10-03,BMG Research,1562,leader,Keir Starmer,Lab,25.0,50.0
+2024-10-03,BMG Research,1562,leader,Nigel Farage,Ref,29.0,32.0
+2024-10-03,BMG Research,1562,leader,Rishi Sunak,Con,23.0,41.0
+2024-10-04,Opinium,2055,leader,Ed Davey,LD,21.0,21.0
+2024-10-04,Opinium,2055,leader,Keir Starmer,Lab,24.0,52.0
+2024-10-04,Opinium,2055,leader,Nigel Farage,Ref,26.0,42.0
+2024-10-04,Opinium,2055,leader,Rishi Sunak,Con,18.0,47.0
+2024-10-06,YouGov,2121,leader,Ed Davey,LD,25.0,32.0
+2024-10-06,YouGov,2121,leader,Keir Starmer,Lab,27.0,63.0
+2024-10-06,YouGov,2121,leader,Nigel Farage,Ref,28.0,63.0
+2024-10-06,YouGov,2121,leader,Rishi Sunak,Con,24.0,66.0
+2024-10-06,YouGov,2121,party,Conservative,Con,25.0,65.0
+2024-10-06,YouGov,2121,party,Green,Grn,41.0,39.0
+2024-10-06,YouGov,2121,party,Labour,Lab,31.0,60.0
+2024-10-06,YouGov,2121,party,Lib Dems,LD,38.0,42.0
+2024-10-06,YouGov,2121,party,Reform,Ref,26.0,59.0
+2024-10-07,More in Common,2023,leader,Keir Starmer,Lab,21.0,54.0
+2024-10-07,Deltapoll,2108,leader,Keir Starmer,Lab,30.0,61.0
+2024-10-07,More in Common,2023,leader,Rishi Sunak,Con,19.0,51.0
+2024-10-07,Deltapoll,2108,leader,Rishi Sunak,Con,27.0,65.0
+2024-10-07,More in Common,2023,party,Conservative,Con,15.0,53.0
+2024-10-07,More in Common,2023,party,Labour,Lab,24.0,51.0
+2024-10-10,More in Common,2073,leader,Keir Starmer,Lab,18.0,56.0
+2024-10-10,More in Common,2073,leader,Rishi Sunak,Con,18.0,49.0
+2024-10-10,More in Common,2072,party,Conservative,Con,15.0,52.0
+2024-10-10,More in Common,2072,party,Labour,Lab,21.0,54.0
+2024-10-18,Opinium,2007,leader,Ed Davey,LD,22.0,20.0
+2024-10-18,Opinium,2007,leader,Keir Starmer,Lab,21.0,53.0
+2024-10-18,Opinium,2007,leader,Nigel Farage,Ref,25.0,39.0
+2024-10-18,Opinium,2007,leader,Rishi Sunak,Con,20.0,45.0
+2024-10-20,Savanta,2135,leader,Adrian Ramsay,Grn,13.0,20.0
+2024-10-20,Savanta,2135,leader,Carla Denyer,Grn,15.0,20.0
+2024-10-20,Savanta,2135,leader,Ed Davey,LD,22.0,28.0
+2024-10-20,Savanta,2135,leader,Keir Starmer,Lab,30.0,48.0
+2024-10-20,Savanta,2135,leader,Nigel Farage,Ref,31.0,46.0
+2024-10-20,Savanta,2135,leader,Rishi Sunak,Con,28.0,49.0
+2024-10-21,YouGov,1688,leader,Ed Davey,LD,26.0,23.0
+2024-10-21,YouGov,1688,leader,Keir Starmer,Lab,26.0,58.0
+2024-10-31,BMG Research,1511,leader,Ed Davey,LD,19.0,19.0
+2024-10-31,Opinium,2016,leader,Ed Davey,LD,23.0,19.0
+2024-10-31,BMG Research,1511,leader,Keir Starmer,Lab,23.0,49.0
+2024-10-31,Opinium,2016,leader,Keir Starmer,Lab,26.0,50.0
+2024-10-31,BMG Research,1511,leader,Nigel Farage,Ref,28.0,35.0
+2024-10-31,Opinium,2016,leader,Nigel Farage,Ref,28.0,40.0
+2024-10-31,BMG Research,1511,leader,Rishi Sunak,Con,28.0,33.0
+2024-10-31,Opinium,2016,leader,Rishi Sunak,Con,23.0,45.0
+2024-11-10,YouGov,2099,leader,Adrian Ramsay,Grn,4.0,12.0
+2024-11-10,YouGov,2099,leader,Carla Denyer,Grn,7.0,14.0
+2024-11-10,YouGov,2099,leader,Ed Davey,LD,24.0,31.0
+2024-11-10,YouGov,2099,leader,Keir Starmer,Lab,28.0,61.0
+2024-11-10,YouGov,2099,leader,Kemi Badenoch,Con,21.0,41.0
+2024-11-10,YouGov,2099,leader,Nigel Farage,Ref,30.0,61.0
+2024-11-10,YouGov,2099,party,Conservative,Con,24.0,66.0
+2024-11-10,YouGov,2099,party,Green,Grn,39.0,40.0
+2024-11-10,YouGov,2099,party,Labour,Lab,33.0,58.0
+2024-11-10,YouGov,2099,party,Lib Dems,LD,38.0,42.0
+2024-11-10,YouGov,2099,party,Reform,Ref,29.0,58.0
+2024-11-11,Ipsos,1139,leader,Adrian Ramsay,Grn,16.0,26.0
+2024-11-11,Ipsos,1139,leader,Carla Denyer,Grn,17.0,26.0
+2024-11-11,Ipsos,1139,leader,Ed Davey,LD,21.0,31.0
+2024-11-11,More in Common,2111,leader,Ed Davey,LD,16.0,21.0
+2024-11-11,Ipsos,1139,leader,Keir Starmer,Lab,23.0,52.0
+2024-11-11,More in Common,2111,leader,Keir Starmer,Lab,24.0,48.0
+2024-11-11,Ipsos,1139,leader,Kemi Badenoch,Con,21.0,39.0
+2024-11-11,More in Common,2111,leader,Kemi Badenoch,Con,17.0,19.0
+2024-11-11,Ipsos,1139,leader,Nigel Farage,Ref,28.0,48.0
+2024-11-11,More in Common,2011,party,Conservative,Con,16.0,43.0
+2024-11-11,More in Common,2011,party,Labour,Lab,21.0,47.0
+2024-11-11,More in Common,2011,party,Lib Dems,LD,17.0,23.0
+2024-11-13,Opinium,2068,leader,Ed Davey,LD,23.0,19.0
+2024-11-13,Opinium,2068,leader,Keir Starmer,Lab,25.0,50.0
+2024-11-13,Opinium,2068,leader,Kemi Badenoch,Con,20.0,25.0
+2024-11-13,Opinium,2068,leader,Nigel Farage,Ref,29.0,37.0
+2024-11-14,JL Partners,2024,leader,Adrian Ramsay,Grn,11.0,10.0
+2024-11-14,JL Partners,2024,leader,Carla Denyer,Grn,12.0,12.0
+2024-11-14,JL Partners,2024,leader,Ed Davey,LD,20.0,21.0
+2024-11-14,JL Partners,2024,leader,Keir Starmer,Lab,25.0,48.0
+2024-11-14,JL Partners,2024,leader,Kemi Badenoch,Con,22.0,23.0
+2024-11-14,JL Partners,2024,leader,Nigel Farage,Ref,31.0,41.0
+2024-11-18,Deltapoll,1749,leader,Keir Starmer,Lab,29.0,61.0
+2024-11-18,Deltapoll,1749,leader,Kemi Badenoch,Con,24.0,38.0
+2024-11-27,BMG Research,1531,leader,Ed Davey,LD,23.0,18.0
+2024-11-27,BMG Research,1531,leader,Keir Starmer,Lab,25.0,53.0
+2024-11-27,More in Common,1749,leader,Keir Starmer,Lab,24.0,53.0
+2024-11-27,BMG Research,1531,leader,Kemi Badenoch,Con,23.0,16.0
+2024-11-27,More in Common,1749,leader,Kemi Badenoch,Con,20.0,26.0
+2024-11-27,BMG Research,1531,leader,Nigel Farage,Ref,27.0,34.0
+2024-11-27,More in Common,1749,leader,Nigel Farage,Ref,25.0,41.0
+2024-11-27,More in Common,1972,party,Conservative,Con,17.0,50.0
+2024-11-27,More in Common,1972,party,Labour,Lab,21.0,56.0
+2024-11-29,Opinium,2020,leader,Ed Davey,LD,22.0,21.0
+2024-11-29,Opinium,2020,leader,Keir Starmer,Lab,22.0,54.0
+2024-11-29,Opinium,2020,leader,Kemi Badenoch,Con,22.0,28.0
+2024-11-29,Opinium,2020,leader,Nigel Farage,Ref,29.0,38.0
+2024-12-04,Ipsos,1028,leader,Ed Davey,LD,30.0,27.0
+2024-12-04,Ipsos,1028,leader,Keir Starmer,Lab,27.0,61.0
+2024-12-04,Ipsos,1028,leader,Kemi Badenoch,Con,19.0,34.0
+2024-12-10,More in Common,2432,leader,Ed Davey,LD,16.0,25.0
+2024-12-10,More in Common,2432,leader,Keir Starmer,Lab,20.0,55.0
+2024-12-10,More in Common,2432,leader,Kemi Badenoch,Con,18.0,27.0
+2024-12-10,More in Common,2432,leader,Nigel Farage,Ref,27.0,38.0
+2024-12-10,More in Common,2432,party,Conservative,Con,18.0,46.0
+2024-12-10,More in Common,2432,party,Labour,Lab,20.0,56.0
+2024-12-13,YouGov,2215,leader,Keir Starmer,Lab,25.0,66.0
+2024-12-13,YouGov,2215,leader,Kemi Badenoch,Con,18.0,49.0
+2024-12-13,YouGov,2215,leader,Nigel Farage,Ref,28.0,62.0
+2024-12-13,YouGov,2215,party,Conservative,Con,24.0,67.0
+2024-12-13,YouGov,2215,party,Labour,Lab,28.0,63.0
+2024-12-13,YouGov,2215,party,Reform,Ref,27.0,59.0
+2024-12-16,YouGov,1722,leader,Ed Davey,LD,30.0,24.0
+2024-12-16,Survation,2030,leader,Ed Davey,LD,29.0,23.0
+2024-12-16,YouGov,1722,leader,Keir Starmer,Lab,26.0,61.0
+2024-12-16,Survation,2030,leader,Keir Starmer,Lab,35.0,44.0
+2024-12-16,YouGov,1722,leader,Kemi Badenoch,Con,20.0,37.0
+2024-12-16,Survation,2030,leader,Kemi Badenoch,Con,36.0,25.0
+2024-12-16,Survation,2030,leader,Nigel Farage,Ref,37.0,37.0
+2024-12-16,Survation,2030,party,Conservative,Con,36.0,41.0
+2024-12-16,Survation,2030,party,Green,Grn,28.0,33.0
+2024-12-16,Survation,2030,party,Labour,Lab,34.0,44.0
+2024-12-16,Survation,2030,party,Lib Dems,LD,28.0,29.0
+2024-12-16,Survation,2030,party,Reform,Ref,34.0,38.0
+2024-12-20,Opinium,2010,leader,Ed Davey,LD,23.0,20.0
+2024-12-20,Opinium,2010,leader,Keir Starmer,Lab,22.0,54.0
+2024-12-20,Opinium,2010,leader,Kemi Badenoch,Con,21.0,32.0
+2024-12-20,Opinium,2010,leader,Nigel Farage,Ref,29.0,38.0
+2024-12-23,Deltapoll,1552,leader,Keir Starmer,Lab,28.0,64.0
+2024-12-23,Deltapoll,1552,leader,Kemi Badenoch,Con,34.0,38.0
+2025-01-03,Deltapoll,1532,leader,Keir Starmer,Lab,26.0,68.0
+2025-01-03,Deltapoll,1532,leader,Kemi Badenoch,Con,25.0,46.0
+2025-01-10,Opinium,2050,leader,Ed Davey,LD,22.0,20.0
+2025-01-10,Opinium,2050,leader,Keir Starmer,Lab,22.0,55.0
+2025-01-10,Opinium,2050,leader,Kemi Badenoch,Con,21.0,34.0
+2025-01-10,Opinium,2050,leader,Nigel Farage,Ref,30.0,39.0
+2025-01-13,YouGov,1698,leader,Ed Davey,LD,31.0,24.0
+2025-01-13,Ipsos,1139,leader,Ed Davey,LD,25.0,27.0
+2025-01-13,YouGov,1698,leader,Keir Starmer,Lab,24.0,65.0
+2025-01-13,Ipsos,1139,leader,Keir Starmer,Lab,25.0,52.0
+2025-01-13,More in Common,2102,leader,Keir Starmer,Lab,19.0,58.0
+2025-01-13,YouGov,1698,leader,Kemi Badenoch,Con,18.0,44.0
+2025-01-13,Ipsos,1139,leader,Kemi Badenoch,Con,16.0,46.0
+2025-01-13,More in Common,2102,leader,Kemi Badenoch,Con,14.0,32.0
+2025-01-13,Ipsos,1139,leader,Nigel Farage,Ref,26.0,51.0
+2025-01-13,More in Common,2102,leader,Nigel Farage,Ref,25.0,42.0
+2025-01-13,Ipsos,1139,party,Conservative,Con,20.0,57.0
+2025-01-13,More in Common,2102,party,Conservative,Con,14.0,50.0
+2025-01-13,Ipsos,1139,party,Green,Grn,28.0,29.0
+2025-01-13,Ipsos,1139,party,Labour,Lab,29.0,50.0
+2025-01-13,More in Common,2102,party,Labour,Lab,18.0,58.0
+2025-01-13,Ipsos,1139,party,Lib Dems,LD,26.0,30.0
+2025-01-13,Ipsos,1139,party,Reform,Ref,27.0,49.0
+2025-01-20,More in Common,2016,leader,Ed Davey,LD,15.0,24.0
+2025-01-20,More in Common,2016,leader,Keir Starmer,Lab,20.0,56.0
+2025-01-20,Deltapoll,1500,leader,Keir Starmer,Lab,29.0,64.0
+2025-01-20,More in Common,2016,leader,Kemi Badenoch,Con,16.0,33.0
+2025-01-20,Deltapoll,1500,leader,Kemi Badenoch,Con,29.0,45.0
+2025-01-20,More in Common,2016,leader,Nigel Farage,Ref,27.0,39.0
+2025-01-20,More in Common,2016,party,Conservative,Con,16.0,49.0
+2025-01-20,More in Common,2016,party,Labour,Lab,21.0,56.0
+2025-01-24,Opinium,2050,leader,Ed Davey,LD,21.0,21.0
+2025-01-24,Opinium,2050,leader,Keir Starmer,Lab,21.0,55.0
+2025-01-24,Opinium,2050,leader,Kemi Badenoch,Con,19.0,34.0
+2025-01-24,Opinium,2050,leader,Nigel Farage,Ref,32.0,39.0
+2025-01-27,More in Common,2009,leader,Ed Davey,LD,15.0,24.0
+2025-01-27,More in Common,2009,leader,Keir Starmer,Lab,16.0,58.0
+2025-01-27,More in Common,2009,leader,Kemi Badenoch,Con,16.0,32.0
+2025-01-27,More in Common,2009,leader,Nigel Farage,Ref,27.0,39.0
+2025-01-27,More in Common,2009,party,Conservative,Con,15.0,49.0
+2025-01-27,More in Common,2009,party,Labour,Lab,17.0,53.0
+2025-01-29,BMG Research,1514,leader,Ed Davey,LD,22.0,18.0
+2025-01-29,Survation,2010,leader,Ed Davey,LD,28.0,25.0
+2025-01-29,BMG Research,1514,leader,Keir Starmer,Lab,22.0,55.0
+2025-01-29,Survation,2010,leader,Keir Starmer,Lab,30.0,49.0
+2025-01-29,BMG Research,1514,leader,Kemi Badenoch,Con,23.0,23.0
+2025-01-29,Survation,2010,leader,Kemi Badenoch,Con,33.0,31.0
+2025-01-29,BMG Research,1514,leader,Nigel Farage,Ref,32.0,35.0
+2025-01-29,Survation,2010,leader,Nigel Farage,Ref,35.0,42.0
+2025-01-29,Survation,2010,party,Conservative,Con,34.0,44.0
+2025-01-29,Survation,2010,party,Green,Grn,32.0,33.0
+2025-01-29,Survation,2010,party,Labour,Lab,34.0,47.0
+2025-01-29,Survation,2010,party,Lib Dems,LD,29.0,31.0
+2025-01-29,Survation,2010,party,Reform,Ref,33.0,41.0
+2025-02-03,More in Common,2044,leader,Ed Davey,LD,15.0,24.0
+2025-02-03,Find Out Now,1810,leader,Ed Davey,LD,16.0,24.0
+2025-02-03,More in Common,2044,leader,Keir Starmer,Lab,18.0,56.0
+2025-02-03,Find Out Now,1810,leader,Keir Starmer,Lab,11.0,57.0
+2025-02-03,More in Common,2044,leader,Kemi Badenoch,Con,15.0,33.0
+2025-02-03,Find Out Now,1810,leader,Kemi Badenoch,Con,10.0,38.0
+2025-02-03,More in Common,2044,leader,Nigel Farage,Ref,26.0,38.0
+2025-02-03,Find Out Now,1810,leader,Nigel Farage,Ref,30.0,33.0
+2025-02-03,More in Common,2044,party,Conservative,Con,16.0,46.0
+2025-02-03,More in Common,2044,party,Labour,Lab,20.0,53.0
+2025-02-05,YouGov,2275,leader,Kemi Badenoch,Con,25.0,33.0
+2025-02-07,Opinium,2050,leader,Ed Davey,LD,22.0,21.0
+2025-02-07,Opinium,2050,leader,Keir Starmer,Lab,22.0,56.0
+2025-02-07,Opinium,2050,leader,Kemi Badenoch,Con,20.0,35.0
+2025-02-07,Opinium,2050,leader,Nigel Farage,Ref,31.0,38.0
+2025-02-10,More in Common,2005,leader,Ed Davey,LD,19.0,24.0
+2025-02-10,More in Common,2005,leader,Keir Starmer,Lab,19.0,60.0
+2025-02-10,More in Common,2005,leader,Kemi Badenoch,Con,17.0,36.0
+2025-02-10,More in Common,2005,leader,Nigel Farage,Ref,29.0,40.0
+2025-02-10,More in Common,2005,party,Conservative,Con,16.0,51.0
+2025-02-10,More in Common,2005,party,Labour,Lab,21.0,57.0
+2025-02-11,Ipsos,2248,leader,Ed Davey,LD,21.0,33.0
+2025-02-11,Ipsos,2248,leader,Keir Starmer,Lab,21.0,55.0
+2025-02-11,Ipsos,2248,leader,Kemi Badenoch,Con,16.0,45.0
+2025-02-11,Ipsos,2248,leader,Nigel Farage,Ref,31.0,46.0
+2025-02-11,Ipsos,2248,party,Conservative,Con,19.0,53.0
+2025-02-11,Ipsos,2248,party,Green,Grn,27.0,32.0
+2025-02-11,Ipsos,2248,party,Labour,Lab,24.0,52.0
+2025-02-11,Ipsos,2248,party,Lib Dems,LD,23.0,35.0
+2025-02-11,Ipsos,2248,party,Reform,Ref,30.0,44.0
+2025-02-12,Redfield & Wilton Strategies,2300,leader,Kemi Badenoch,Con,29.0,24.0
+2025-02-16,YouGov,1688,leader,Ed Davey,LD,28.0,29.0
+2025-02-16,YouGov,1688,leader,Keir Starmer,Lab,23.0,66.0
+2025-02-16,YouGov,1688,leader,Kemi Badenoch,Con,16.0,51.0
+2025-02-17,YouGov,2436,leader,Adrian Ramsay,Grn,4.0,12.0
+2025-02-17,YouGov,2436,leader,Carla Denyer,Grn,7.0,13.0
+2025-02-17,YouGov,2436,leader,Ed Davey,LD,27.0,32.0
+2025-02-17,YouGov,2436,leader,Keir Starmer,Lab,26.0,66.0
+2025-02-17,YouGov,2436,leader,Kemi Badenoch,Con,17.0,51.0
+2025-02-17,YouGov,2436,leader,Nigel Farage,Ref,30.0,60.0
+2025-02-17,YouGov,2436,party,Conservative,Con,24.0,68.0
+2025-02-17,YouGov,2436,party,Green,Grn,41.0,38.0
+2025-02-17,YouGov,2436,party,Labour,Lab,29.0,64.0
+2025-02-17,YouGov,2436,party,Lib Dems,LD,34.0,45.0
+2025-02-17,YouGov,2436,party,Reform,Ref,32.0,56.0
+2025-02-18,More in Common,4101,leader,Ed Davey,LD,16.0,26.0
+2025-02-18,Redfield & Wilton Strategies,1500,leader,Keir Starmer,Lab,30.0,48.0
+2025-02-18,More in Common,4101,leader,Keir Starmer,Lab,20.0,57.0
+2025-02-18,More in Common,4101,leader,Kemi Badenoch,Con,15.0,36.0
+2025-02-18,More in Common,4101,leader,Nigel Farage,Ref,30.0,38.0
+2025-02-18,More in Common,4101,party,Conservative,Con,14.0,50.0
+2025-02-18,More in Common,4101,party,Labour,Lab,18.0,58.0
+2025-02-19,Find Out Now,2056,leader,Ed Davey,LD,19.0,26.0
+2025-02-19,Find Out Now,2056,leader,Keir Starmer,Lab,14.0,59.0
+2025-02-19,Find Out Now,2056,leader,Kemi Badenoch,Con,8.0,45.0
+2025-02-19,Find Out Now,2056,leader,Nigel Farage,Ref,32.0,36.0
+2025-02-21,JL Partners,6049,leader,Adrian Ramsay,Grn,9.0,13.0
+2025-02-21,JL Partners,6049,leader,Carla Denyer,Grn,10.0,15.0
+2025-02-21,Opinium,2050,leader,Ed Davey,LD,21.0,22.0
+2025-02-21,JL Partners,6049,leader,Ed Davey,LD,20.0,23.0
+2025-02-21,Opinium,2050,leader,Keir Starmer,Lab,21.0,55.0
+2025-02-21,JL Partners,6049,leader,Keir Starmer,Lab,25.0,51.0
+2025-02-21,Opinium,2050,leader,Kemi Badenoch,Con,18.0,38.0
+2025-02-21,JL Partners,6049,leader,Kemi Badenoch,Con,24.0,31.0
+2025-02-21,Opinium,2050,leader,Nigel Farage,Ref,30.0,38.0
+2025-02-21,JL Partners,6049,leader,Nigel Farage,Ref,33.0,40.0
+2025-02-24,More in Common,2013,leader,Keir Starmer,Lab,19.0,58.0
+2025-02-24,More in Common,2013,leader,Kemi Badenoch,Con,13.0,37.0
+2025-02-24,More in Common,2013,leader,Nigel Farage,Ref,26.0,38.0
+2025-02-24,More in Common,2013,party,Labour,Lab,18.0,57.0
+2025-02-26,BMG Research,1586,leader,Ed Davey,LD,23.0,18.0
+2025-02-26,BMG Research,1586,leader,Keir Starmer,Lab,24.0,54.0
+2025-02-26,BMG Research,1586,leader,Kemi Badenoch,Con,23.0,22.0
+2025-02-26,BMG Research,1586,leader,Nigel Farage,Ref,32.0,33.0
+2025-03-03,More in Common,2010,leader,Ed Davey,LD,16.0,26.0
+2025-03-03,Redfield & Wilton Strategies,1398,leader,Keir Starmer,Lab,32.0,46.0
+2025-03-03,More in Common,2010,leader,Keir Starmer,Lab,24.0,52.0
+2025-03-03,More in Common,2010,leader,Kemi Badenoch,Con,15.0,35.0
+2025-03-03,More in Common,2010,leader,Nigel Farage,Ref,26.0,41.0
+2025-03-03,More in Common,2010,party,Labour,Lab,21.0,53.0
+2025-03-05,YouGov,2147,leader,Adrian Ramsay,Grn,4.0,12.0
+2025-03-05,YouGov,2147,leader,Carla Denyer,Grn,7.0,13.0
+2025-03-05,YouGov,2147,leader,Ed Davey,LD,27.0,32.0
+2025-03-05,YouGov,2147,leader,Keir Starmer,Lab,31.0,59.0
+2025-03-05,YouGov,2147,leader,Kemi Badenoch,Con,17.0,51.0
+2025-03-05,YouGov,2147,leader,Nigel Farage,Ref,30.0,60.0
+2025-03-05,YouGov,2147,party,Conservative,Con,24.0,68.0
+2025-03-05,YouGov,2147,party,Green,Grn,40.0,41.0
+2025-03-05,YouGov,2147,party,Labour,Lab,32.0,60.0
+2025-03-05,YouGov,2147,party,Lib Dems,LD,37.0,45.0
+2025-03-05,YouGov,2147,party,Reform,Ref,28.0,61.0
+2025-03-07,Opinium,2050,leader,Ed Davey,LD,23.0,21.0
+2025-03-07,Opinium,2050,leader,Keir Starmer,Lab,26.0,49.0
+2025-03-07,Opinium,2050,leader,Kemi Badenoch,Con,19.0,36.0
+2025-03-07,Opinium,2050,leader,Nigel Farage,Ref,29.0,39.0
+2025-03-09,JL Partners,2012,leader,Adrian Ramsay,Grn,10.0,18.0
+2025-03-09,JL Partners,2012,leader,Carla Denyer,Grn,10.0,17.0
+2025-03-09,JL Partners,2012,leader,Ed Davey,LD,22.0,25.0
+2025-03-09,JL Partners,2012,leader,Keir Starmer,Lab,28.0,47.0
+2025-03-09,JL Partners,2012,leader,Kemi Badenoch,Con,26.0,31.0
+2025-03-09,JL Partners,2012,leader,Nigel Farage,Ref,33.0,42.0
+2025-03-10,More in Common,2041,leader,Ed Davey,LD,17.0,25.0
+2025-03-10,Find Out Now,2310,leader,Ed Davey,LD,20.0,25.0
+2025-03-10,More in Common,2041,leader,Keir Starmer,Lab,25.0,51.0
+2025-03-10,Find Out Now,2310,leader,Keir Starmer,Lab,20.0,50.0
+2025-03-10,More in Common,2041,leader,Kemi Badenoch,Con,15.0,37.0
+2025-03-10,Find Out Now,2310,leader,Kemi Badenoch,Con,9.0,43.0
+2025-03-10,More in Common,2041,leader,Nigel Farage,Ref,25.0,43.0
+2025-03-10,Find Out Now,2310,leader,Nigel Farage,Ref,25.0,41.0
+2025-03-10,More in Common,2041,party,Conservative,Con,15.0,49.0
+2025-03-10,More in Common,2041,party,Labour,Lab,22.0,52.0
+2025-03-11,YouGov,2076,leader,Ed Davey,LD,25.0,31.0
+2025-03-11,YouGov,2076,leader,Keir Starmer,Lab,30.0,62.0
+2025-03-11,YouGov,2076,leader,Kemi Badenoch,Con,16.0,50.0
+2025-03-11,YouGov,2076,leader,Nigel Farage,Ref,26.0,65.0
+2025-03-11,YouGov,2076,party,Conservative,Con,25.0,67.0
+2025-03-11,YouGov,2076,party,Green,Grn,39.0,41.0
+2025-03-11,YouGov,2076,party,Labour,Lab,31.0,61.0
+2025-03-11,YouGov,2076,party,Lib Dems,LD,38.0,43.0
+2025-03-11,YouGov,2076,party,Reform,Ref,28.0,59.0
+2025-03-14,YouGov,2155,leader,Keir Starmer,Lab,32.0,58.0
+2025-03-17,YouGov,2081,leader,Adrian Ramsay,Grn,5.0,12.0
+2025-03-17,YouGov,2081,leader,Carla Denyer,Grn,8.0,15.0
+2025-03-17,YouGov,1707,leader,Ed Davey,LD,29.0,26.0
+2025-03-17,Ipsos,1132,leader,Ed Davey,LD,24.0,30.0
+2025-03-17,More in Common,2432,leader,Ed Davey,LD,17.0,24.0
+2025-03-17,YouGov,1707,leader,Keir Starmer,Lab,31.0,56.0
+2025-03-17,Ipsos,1132,leader,Keir Starmer,Lab,29.0,46.0
+2025-03-17,Deltapoll,1974,leader,Keir Starmer,Lab,31.0,62.0
+2025-03-17,More in Common,2432,leader,Keir Starmer,Lab,24.0,51.0
+2025-03-17,YouGov,1707,leader,Kemi Badenoch,Con,17.0,47.0
+2025-03-17,Ipsos,1132,leader,Kemi Badenoch,Con,18.0,44.0
+2025-03-17,Deltapoll,1974,leader,Kemi Badenoch,Con,28.0,45.0
+2025-03-17,More in Common,2432,leader,Kemi Badenoch,Con,16.0,35.0
+2025-03-17,YouGov,2081,leader,Nigel Farage,Ref,27.0,65.0
+2025-03-17,Ipsos,1132,leader,Nigel Farage,Ref,29.0,49.0
+2025-03-17,More in Common,2432,leader,Nigel Farage,Ref,26.0,40.0
+2025-03-17,YouGov,2081,party,Conservative,Con,25.0,66.0
+2025-03-17,Ipsos,1132,party,Conservative,Con,23.0,50.0
+2025-03-17,More in Common,2432,party,Conservative,Con,16.0,47.0
+2025-03-17,YouGov,2081,party,Green,Grn,42.0,40.0
+2025-03-17,Ipsos,1132,party,Green,Grn,25.0,33.0
+2025-03-17,YouGov,2081,party,Labour,Lab,32.0,59.0
+2025-03-17,Ipsos,1132,party,Labour,Lab,29.0,46.0
+2025-03-17,More in Common,2432,party,Labour,Lab,26.0,53.0
+2025-03-17,YouGov,2081,party,Lib Dems,LD,36.0,46.0
+2025-03-17,Ipsos,1132,party,Lib Dems,LD,24.0,35.0
+2025-03-17,YouGov,2081,party,Reform,Ref,28.0,59.0
+2025-03-17,Ipsos,1132,party,Reform,Ref,28.0,48.0
+2025-03-21,Opinium,2078,leader,Ed Davey,LD,22.0,21.0
+2025-03-21,Opinium,2078,leader,Keir Starmer,Lab,24.0,53.0
+2025-03-21,Opinium,2078,leader,Kemi Badenoch,Con,20.0,35.0
+2025-03-21,Opinium,2078,leader,Nigel Farage,Ref,28.0,40.0
+2025-03-24,More in Common,2077,leader,Ed Davey,LD,16.0,27.0
+2025-03-24,More in Common,2077,leader,Keir Starmer,Lab,22.0,54.0
+2025-03-24,More in Common,2077,leader,Kemi Badenoch,Con,16.0,40.0
+2025-03-24,More in Common,2077,leader,Nigel Farage,Ref,25.0,42.0
+2025-03-24,More in Common,2077,party,Conservative,Con,16.0,49.0
+2025-03-24,More in Common,2077,party,Labour,Lab,21.0,57.0
+2025-03-26,Ipsos,1072,leader,Ed Davey,LD,26.0,29.0
+2025-03-26,Ipsos,1072,leader,Keir Starmer,Lab,27.0,47.0
+2025-03-26,Ipsos,1072,leader,Kemi Badenoch,Con,18.0,40.0
+2025-03-26,Ipsos,1072,leader,Nigel Farage,Ref,28.0,43.0
+2025-03-27,BMG Research,1544,leader,Ed Davey,LD,23.0,16.0
+2025-03-27,BMG Research,1544,leader,Keir Starmer,Lab,24.0,54.0
+2025-03-27,BMG Research,1544,leader,Kemi Badenoch,Con,22.0,24.0
+2025-03-27,BMG Research,1544,leader,Nigel Farage,Ref,29.0,36.0
+2025-03-28,Opinium,2050,leader,Ed Davey,LD,20.0,22.0
+2025-03-28,Opinium,2050,leader,Keir Starmer,Lab,22.0,54.0
+2025-03-28,Opinium,2050,leader,Kemi Badenoch,Con,17.0,38.0
+2025-03-28,Opinium,2050,leader,Nigel Farage,Ref,26.0,42.0
+2025-03-31,More in Common,2081,leader,Ed Davey,LD,17.0,27.0
+2025-03-31,More in Common,2081,leader,Keir Starmer,Lab,21.0,56.0
+2025-03-31,More in Common,2081,leader,Kemi Badenoch,Con,15.0,36.0
+2025-03-31,More in Common,2081,leader,Nigel Farage,Ref,26.0,41.0
+2025-03-31,More in Common,2081,party,Conservative,Con,16.0,45.0
+2025-03-31,More in Common,2081,party,Labour,Lab,19.0,60.0
+2025-04-01,YouGov,2213,leader,Keir Starmer,Lab,16.0,45.0
+2025-04-05,Find Out Now,2209,leader,Ed Davey,LD,20.0,27.0
+2025-04-05,Find Out Now,2209,leader,Keir Starmer,Lab,15.0,59.0
+2025-04-05,Find Out Now,2209,leader,Kemi Badenoch,Con,7.0,43.0
+2025-04-05,Find Out Now,2209,leader,Nigel Farage,Ref,26.0,41.0
+2025-04-07,YouGov,2178,leader,Ed Davey,LD,27.0,30.0
+2025-04-07,More in Common,2058,leader,Ed Davey,LD,20.0,28.0
+2025-04-07,YouGov,2178,leader,Keir Starmer,Lab,27.0,60.0
+2025-04-07,Deltapoll,1524,leader,Keir Starmer,Lab,24.0,52.0
+2025-04-07,More in Common,2058,leader,Keir Starmer,Lab,23.0,55.0
+2025-04-07,YouGov,2178,leader,Kemi Badenoch,Con,14.0,52.0
+2025-04-07,More in Common,2058,leader,Kemi Badenoch,Con,17.0,36.0
+2025-04-07,YouGov,2178,leader,Nigel Farage,Ref,29.0,47.0
+2025-04-07,More in Common,2058,leader,Nigel Farage,Ref,27.0,41.0
+2025-04-07,More in Common,2058,party,Conservative,Con,16.0,46.0
+2025-04-07,More in Common,2058,party,Labour,Lab,19.0,56.0
+2025-04-08,JL Partners,2086,leader,Adrian Ramsay,Grn,11.0,15.0
+2025-04-08,JL Partners,2086,leader,Carla Denyer,Grn,12.0,19.0
+2025-04-08,JL Partners,2086,leader,Ed Davey,LD,24.0,27.0
+2025-04-08,JL Partners,2086,leader,Keir Starmer,Lab,28.0,51.0
+2025-04-08,JL Partners,2086,leader,Kemi Badenoch,Con,25.0,34.0
+2025-04-08,JL Partners,2086,leader,Nigel Farage,Ref,35.0,42.0
+2025-04-10,YouGov,2001,leader,Keir Starmer,Lab,30.0,63.0
+2025-04-11,Opinium,2050,leader,Ed Davey,LD,22.0,24.0
+2025-04-11,Opinium,2050,leader,Keir Starmer,Lab,25.0,55.0
+2025-04-11,Opinium,2050,leader,Kemi Badenoch,Con,19.0,39.0
+2025-04-11,Opinium,2050,leader,Nigel Farage,Ref,28.0,43.0
+2025-04-14,YouGov,2162,leader,Adrian Ramsay,Grn,4.0,13.0
+2025-04-14,YouGov,2162,leader,Carla Denyer,Grn,8.0,16.0
+2025-04-14,Focaldata,1585,leader,Carla Denyer,Grn,12.0,16.0
+2025-04-14,YouGov,1713,leader,Ed Davey,LD,30.0,26.0
+2025-04-14,More in Common,2277,leader,Ed Davey,LD,17.0,28.0
+2025-04-14,Focaldata,1585,leader,Ed Davey,LD,21.0,26.0
+2025-04-14,YouGov,1713,leader,Keir Starmer,Lab,26.0,61.0
+2025-04-14,More in Common,2277,leader,Keir Starmer,Lab,21.0,55.0
+2025-04-14,Focaldata,1585,leader,Keir Starmer,Lab,20.0,55.0
+2025-04-14,YouGov,1713,leader,Kemi Badenoch,Con,15.0,50.0
+2025-04-14,More in Common,2277,leader,Kemi Badenoch,Con,14.0,37.0
+2025-04-14,Focaldata,1585,leader,Kemi Badenoch,Con,19.0,32.0
+2025-04-14,YouGov,2162,leader,Nigel Farage,Ref,27.0,65.0
+2025-04-14,More in Common,2277,leader,Nigel Farage,Ref,25.0,41.0
+2025-04-14,Focaldata,1585,leader,Nigel Farage,Ref,29.0,44.0
+2025-04-14,YouGov,2162,party,Conservative,Con,24.0,67.0
+2025-04-14,More in Common,2277,party,Conservative,Con,17.0,49.0
+2025-04-14,YouGov,2162,party,Green,Grn,41.0,41.0
+2025-04-14,YouGov,2162,party,Labour,Lab,29.0,61.0
+2025-04-14,More in Common,2277,party,Labour,Lab,20.0,54.0
+2025-04-14,YouGov,2162,party,Lib Dems,LD,36.0,46.0
+2025-04-14,YouGov,2162,party,Reform,Ref,28.0,60.0
+2025-04-21,More in Common,2004,leader,Ed Davey,LD,16.0,30.0
+2025-04-21,More in Common,2004,leader,Keir Starmer,Lab,22.0,56.0
+2025-04-21,More in Common,2004,leader,Kemi Badenoch,Con,15.0,40.0
+2025-04-21,More in Common,2004,leader,Nigel Farage,Ref,25.0,42.0
+2025-04-21,More in Common,2004,party,Conservative,Con,14.0,51.0
+2025-04-21,More in Common,2004,party,Labour,Lab,21.0,56.0
+2025-04-25,Opinium,2050,leader,Ed Davey,LD,20.0,25.0
+2025-04-25,Opinium,2050,leader,Keir Starmer,Lab,22.0,56.0
+2025-04-25,Opinium,2050,leader,Kemi Badenoch,Con,20.0,38.0
+2025-04-25,Opinium,2050,leader,Nigel Farage,Ref,29.0,41.0
+2025-04-27,More in Common,2009,leader,Ed Davey,LD,19.0,26.0
+2025-04-27,More in Common,2009,leader,Keir Starmer,Lab,23.0,56.0
+2025-04-27,More in Common,2009,leader,Kemi Badenoch,Con,20.0,33.0
+2025-04-27,More in Common,2009,leader,Nigel Farage,Ref,28.0,39.0
+2025-04-27,More in Common,2009,party,Conservative,Con,17.0,46.0
+2025-04-27,More in Common,2009,party,Labour,Lab,23.0,55.0
+2025-05-02,Opinium,2050,leader,Ed Davey,LD,21.0,24.0
+2025-05-02,Opinium,2050,leader,Keir Starmer,Lab,22.0,56.0
+2025-05-02,Opinium,2050,leader,Kemi Badenoch,Con,19.0,39.0
+2025-05-02,Opinium,2050,leader,Nigel Farage,Ref,26.0,43.0
+2025-05-04,More in Common,2212,leader,Ed Davey,LD,20.0,25.0
+2025-05-04,More in Common,2212,leader,Keir Starmer,Lab,19.0,57.0
+2025-05-04,More in Common,2212,leader,Kemi Badenoch,Con,16.0,39.0
+2025-05-04,More in Common,2212,leader,Nigel Farage,Ref,32.0,35.0
+2025-05-04,More in Common,2212,party,Conservative,Con,14.0,52.0
+2025-05-04,More in Common,2212,party,Labour,Lab,19.0,58.0
+2025-05-05,Survation,2032,leader,Adrian Ramsay,Grn,14.0,23.0
+2025-05-05,Survation,2032,leader,Carla Denyer,Grn,14.0,23.0
+2025-05-05,Survation,2032,leader,Ed Davey,LD,25.0,26.0
+2025-05-05,Ipsos,1099,leader,Keir Starmer,Lab,24.0,50.0
+2025-05-05,Survation,2032,leader,Keir Starmer,Lab,28.0,52.0
+2025-05-05,Survation,2032,leader,Kemi Badenoch,Con,24.0,37.0
+2025-05-05,Survation,2032,leader,Nigel Farage,Ref,36.0,39.0
+2025-05-08,BMG Research,1525,leader,Ed Davey,LD,22.0,19.0
+2025-05-08,BMG Research,1525,leader,Keir Starmer,Lab,20.0,59.0
+2025-05-08,BMG Research,1525,leader,Kemi Badenoch,Con,20.0,25.0
+2025-05-08,BMG Research,1525,leader,Nigel Farage,Ref,35.0,32.0
+2025-05-11,Find Out Now,2182,leader,Ed Davey,LD,22.0,27.0
+2025-05-11,Find Out Now,2182,leader,Keir Starmer,Lab,11.0,64.0
+2025-05-11,Find Out Now,2182,leader,Kemi Badenoch,Con,8.0,50.0
+2025-05-11,Find Out Now,2182,leader,Nigel Farage,Ref,42.0,27.0
+2025-05-12,YouGov,1734,leader,Ed Davey,LD,33.0,27.0
+2025-05-12,More in Common,2094,leader,Ed Davey,LD,18.0,27.0
+2025-05-12,YouGov,1734,leader,Keir Starmer,Lab,27.0,62.0
+2025-05-12,More in Common,2094,leader,Keir Starmer,Lab,22.0,56.0
+2025-05-12,YouGov,1734,leader,Kemi Badenoch,Con,17.0,55.0
+2025-05-12,More in Common,2094,leader,Kemi Badenoch,Con,15.0,40.0
+2025-05-12,More in Common,2094,leader,Nigel Farage,Ref,32.0,36.0
+2025-05-12,More in Common,2094,party,Conservative,Con,14.0,51.0
+2025-05-12,More in Common,2094,party,Labour,Lab,21.0,55.0
+2025-05-13,Ipsos,2284,leader,Ed Davey,LD,25.0,32.0
+2025-05-13,YouGov,2227,leader,Keir Starmer,Lab,24.0,67.0
+2025-05-13,Ipsos,2284,leader,Keir Starmer,Lab,23.0,54.0
+2025-05-13,Ipsos,2284,leader,Kemi Badenoch,Con,17.0,49.0
+2025-05-13,Ipsos,2284,leader,Nigel Farage,Ref,31.0,50.0
+2025-05-13,Ipsos,2284,party,Conservative,Con,20.0,56.0
+2025-05-13,Ipsos,2284,party,Green,Grn,31.0,30.0
+2025-05-13,Ipsos,2284,party,Labour,Lab,27.0,50.0
+2025-05-13,Ipsos,2284,party,Lib Dems,LD,29.0,34.0
+2025-05-13,Ipsos,2284,party,Reform,Ref,32.0,46.0
+2025-05-14,YouGov,2171,leader,Adrian Ramsay,Grn,4.0,14.0
+2025-05-14,YouGov,2171,leader,Carla Denyer,Grn,10.0,15.0
+2025-05-14,YouGov,2171,leader,Ed Davey,LD,26.0,34.0
+2025-05-14,YouGov,2171,leader,Keir Starmer,Lab,23.0,69.0
+2025-05-14,YouGov,2171,leader,Kemi Badenoch,Con,16.0,55.0
+2025-05-14,YouGov,2171,leader,Nigel Farage,Ref,32.0,59.0
+2025-05-14,YouGov,2171,party,Conservative,Con,21.0,69.0
+2025-05-14,YouGov,2171,party,Green,Grn,40.0,41.0
+2025-05-14,YouGov,2171,party,Labour,Lab,26.0,65.0
+2025-05-14,YouGov,2171,party,Lib Dems,LD,38.0,43.0
+2025-05-14,YouGov,2171,party,Reform,Ref,35.0,54.0
+2025-05-16,Opinium,2050,leader,Ed Davey,LD,24.0,23.0
+2025-05-16,Opinium,2050,leader,Keir Starmer,Lab,21.0,55.0
+2025-05-16,Opinium,2050,leader,Kemi Badenoch,Con,19.0,39.0
+2025-05-16,Opinium,2050,leader,Nigel Farage,Ref,33.0,38.0
+2025-05-19,More in Common,2090,leader,Ed Davey,LD,20.0,27.0
+2025-05-19,More in Common,2090,leader,Keir Starmer,Lab,21.0,58.0
+2025-05-19,More in Common,2090,leader,Kemi Badenoch,Con,16.0,41.0
+2025-05-19,More in Common,2090,leader,Nigel Farage,Ref,33.0,39.0
+2025-05-19,More in Common,2090,party,Conservative,Con,15.0,52.0
+2025-05-19,More in Common,2090,party,Labour,Lab,18.0,60.0
+2025-05-26,More in Common,2000,leader,Ed Davey,LD,18.0,24.0
+2025-05-26,More in Common,2000,leader,Keir Starmer,Lab,21.0,59.0
+2025-05-26,More in Common,2000,leader,Kemi Badenoch,Con,14.0,39.0
+2025-05-26,More in Common,2000,leader,Nigel Farage,Ref,32.0,38.0
+2025-05-29,BMG Research,1510,leader,Ed Davey,LD,21.0,17.0
+2025-05-29,BMG Research,1510,leader,Keir Starmer,Lab,23.0,54.0
+2025-05-29,BMG Research,1510,leader,Kemi Badenoch,Con,17.0,25.0
+2025-05-29,BMG Research,1510,leader,Nigel Farage,Ref,34.0,32.0
+2025-05-30,Opinium,2050,leader,Ed Davey,LD,19.0,24.0
+2025-05-30,YouGov,2075,leader,Keir Starmer,Lab,24.0,64.0
+2025-05-30,Opinium,2050,leader,Keir Starmer,Lab,20.0,56.0
+2025-05-30,YouGov,2075,leader,Kemi Badenoch,Con,16.0,51.0
+2025-05-30,Opinium,2050,leader,Kemi Badenoch,Con,15.0,42.0
+2025-05-30,Opinium,2050,leader,Nigel Farage,Ref,31.0,42.0
+2025-06-02,Survation,1096,leader,Ed Davey,LD,29.0,23.0
+2025-06-02,More in Common,2016,leader,Ed Davey,LD,19.0,28.0
+2025-06-02,YouGov,2009,leader,Keir Starmer,Lab,25.0,65.0
+2025-06-02,Survation,1096,leader,Keir Starmer,Lab,32.0,46.0
+2025-06-02,More in Common,2016,leader,Keir Starmer,Lab,21.0,57.0
+2025-06-02,Survation,1096,leader,Kemi Badenoch,Con,31.0,30.0
+2025-06-02,More in Common,2016,leader,Kemi Badenoch,Con,16.0,43.0
+2025-06-02,Survation,1096,leader,Nigel Farage,Ref,41.0,38.0
+2025-06-02,More in Common,2016,leader,Nigel Farage,Ref,31.0,39.0
+2025-06-02,Survation,1096,party,Conservative,Con,35.0,40.0
+2025-06-02,More in Common,2016,party,Conservative,Con,14.0,53.0
+2025-06-02,Survation,1096,party,Green,Grn,31.0,29.0
+2025-06-02,Survation,1096,party,Labour,Lab,33.0,45.0
+2025-06-02,More in Common,2016,party,Labour,Lab,21.0,54.0
+2025-06-02,Survation,1096,party,Lib Dems,LD,34.0,28.0
+2025-06-02,Survation,1096,party,Reform,Ref,40.0,35.0
+2025-06-04,Find Out Now,2041,leader,Ed Davey,LD,19.0,25.0
+2025-06-04,Ipsos,1180,leader,Ed Davey,LD,23.0,38.0
+2025-06-04,Find Out Now,2041,leader,Keir Starmer,Lab,14.0,57.0
+2025-06-04,Ipsos,1180,leader,Keir Starmer,Lab,19.0,73.0
+2025-06-04,Find Out Now,2041,leader,Kemi Badenoch,Con,5.0,50.0
+2025-06-04,Ipsos,1180,leader,Kemi Badenoch,Con,11.0,60.0
+2025-06-04,Find Out Now,2041,leader,Nigel Farage,Ref,38.0,31.0
+2025-06-04,Ipsos,1180,leader,Nigel Farage,Ref,34.0,49.0
+2025-06-08,Freshwater Strategy,1260,leader,Ed Davey,LD,26.0,23.0
+2025-06-08,Freshwater Strategy,1260,leader,Keir Starmer,Lab,24.0,56.0
+2025-06-08,Freshwater Strategy,1260,leader,Kemi Badenoch,Con,22.0,37.0
+2025-06-08,Freshwater Strategy,1260,leader,Nigel Farage,Ref,38.0,40.0
+2025-06-08,Freshwater Strategy,1260,party,Conservative,Con,26.0,50.0
+2025-06-08,Freshwater Strategy,1260,party,Green,Grn,37.0,27.0
+2025-06-08,Freshwater Strategy,1260,party,Labour,Lab,26.0,55.0
+2025-06-08,Freshwater Strategy,1260,party,Lib Dems,LD,33.0,28.0
+2025-06-08,Freshwater Strategy,1260,party,Reform,Ref,40.0,39.0
+2025-06-09,YouGov,1700,leader,Ed Davey,LD,30.0,28.0
+2025-06-09,More in Common,2073,leader,Ed Davey,LD,18.0,27.0
+2025-06-09,YouGov,1700,leader,Keir Starmer,Lab,23.0,65.0
+2025-06-09,More in Common,2073,leader,Keir Starmer,Lab,20.0,57.0
+2025-06-09,YouGov,1700,leader,Kemi Badenoch,Con,15.0,57.0
+2025-06-09,More in Common,2073,leader,Kemi Badenoch,Con,15.0,42.0
+2025-06-09,More in Common,2073,leader,Nigel Farage,Ref,29.0,48.0
+2025-06-09,More in Common,2073,party,Conservative,Con,13.0,53.0
+2025-06-09,More in Common,2073,party,Labour,Lab,18.0,57.0
+2025-06-11,Survation,2010,leader,Ed Davey,LD,31.0,29.0
+2025-06-11,Survation,2010,leader,Keir Starmer,Lab,29.0,50.0
+2025-06-11,Survation,2010,leader,Kemi Badenoch,Con,31.0,38.0
+2025-06-11,Survation,2010,leader,Nigel Farage,Ref,40.0,37.0
+2025-06-11,Survation,2010,party,Conservative,Con,37.0,39.0
+2025-06-11,Survation,2010,party,Green,Grn,31.0,34.0
+2025-06-11,Survation,2010,party,Labour,Lab,35.0,46.0
+2025-06-11,Survation,2010,party,Lib Dems,LD,34.0,32.0
+2025-06-11,Survation,2010,party,Reform,Ref,39.0,36.0
+2025-06-13,Opinium,2050,leader,Ed Davey,LD,22.0,21.0
+2025-06-13,Opinium,2050,leader,Keir Starmer,Lab,21.0,55.0
+2025-06-13,Opinium,2050,leader,Kemi Badenoch,Con,18.0,37.0
+2025-06-13,Opinium,2050,leader,Nigel Farage,Ref,30.0,41.0
+2025-06-16,YouGov,2220,leader,Adrian Ramsay,Grn,5.0,13.0
+2025-06-16,YouGov,2220,leader,Carla Denyer,Grn,9.0,15.0
+2025-06-16,YouGov,2220,leader,Ed Davey,LD,27.0,32.0
+2025-06-16,Ipsos,1135,leader,Ed Davey,LD,26.0,33.0
+2025-06-16,More in Common,2032,leader,Ed Davey,LD,17.0,26.0
+2025-06-16,YouGov,2220,leader,Keir Starmer,Lab,28.0,62.0
+2025-06-16,Ipsos,1135,leader,Keir Starmer,Lab,24.0,52.0
+2025-06-16,More in Common,2032,leader,Keir Starmer,Lab,20.0,58.0
+2025-06-16,YouGov,2220,leader,Kemi Badenoch,Con,19.0,53.0
+2025-06-16,Ipsos,1135,leader,Kemi Badenoch,Con,18.0,49.0
+2025-06-16,More in Common,2032,leader,Kemi Badenoch,Con,14.0,45.0
+2025-06-16,YouGov,2220,leader,Nigel Farage,Ref,30.0,61.0
+2025-06-16,Ipsos,1135,leader,Nigel Farage,Ref,31.0,48.0
+2025-06-16,More in Common,2032,leader,Nigel Farage,Ref,28.0,39.0
+2025-06-16,YouGov,2220,party,Conservative,Con,23.0,67.0
+2025-06-16,Ipsos,1135,party,Conservative,Con,21.0,54.0
+2025-06-16,More in Common,2032,party,Conservative,Con,14.0,52.0
+2025-06-16,YouGov,2220,party,Green,Grn,41.0,41.0
+2025-06-16,Ipsos,1135,party,Green,Grn,28.0,33.0
+2025-06-16,YouGov,2220,party,Labour,Lab,31.0,61.0
+2025-06-16,Ipsos,1135,party,Labour,Lab,27.0,52.0
+2025-06-16,More in Common,2032,party,Labour,Lab,21.0,56.0
+2025-06-16,YouGov,2220,party,Lib Dems,LD,40.0,42.0
+2025-06-16,Ipsos,1135,party,Lib Dems,LD,26.0,36.0
+2025-06-16,YouGov,2220,party,Reform,Ref,33.0,57.0
+2025-06-16,Ipsos,1135,party,Reform,Ref,33.0,45.0
+2025-06-17,YouGov,10035,leader,Ed Davey,LD,27.0,34.0
+2025-06-17,YouGov,10035,leader,Keir Starmer,Lab,27.0,64.0
+2025-06-17,YouGov,10035,leader,Kemi Badenoch,Con,19.0,53.0
+2025-06-17,YouGov,10035,leader,Nigel Farage,Ref,30.0,62.0
+2025-06-23,More in Common,2004,leader,Ed Davey,LD,18.0,27.0
+2025-06-23,More in Common,2004,leader,Keir Starmer,Lab,23.0,54.0
+2025-06-23,More in Common,2004,leader,Kemi Badenoch,Con,14.0,41.0
+2025-06-23,More in Common,2004,leader,Nigel Farage,Ref,29.0,42.0
+2025-06-23,More in Common,2004,party,Conservative,Con,14.0,52.0
+2025-06-23,More in Common,2004,party,Labour,Lab,21.0,54.0
+2025-06-25,BMG Research,1617,leader,Ed Davey,LD,23.0,16.0
+2025-06-25,BMG Research,1617,leader,Keir Starmer,Lab,24.0,53.0
+2025-06-25,BMG Research,1617,leader,Kemi Badenoch,Con,22.0,27.0
+2025-06-25,BMG Research,1617,leader,Nigel Farage,Ref,35.0,29.0
+2025-06-27,Survation,2002,leader,Ed Davey,LD,29.0,22.0
+2025-06-27,Opinium,2050,leader,Ed Davey,LD,22.0,21.0
+2025-06-27,Survation,2002,leader,Keir Starmer,Lab,33.0,48.0
+2025-06-27,Opinium,2050,leader,Keir Starmer,Lab,21.0,56.0
+2025-06-27,Survation,2002,leader,Kemi Badenoch,Con,31.0,31.0
+2025-06-27,Opinium,2050,leader,Kemi Badenoch,Con,16.0,40.0
+2025-06-27,Survation,2002,leader,Nigel Farage,Ref,39.0,41.0
+2025-06-27,Opinium,2050,leader,Nigel Farage,Ref,30.0,40.0
+2025-06-27,Survation,2002,party,Conservative,Con,36.0,39.0
+2025-06-27,Survation,2002,party,Green,Grn,31.0,30.0
+2025-06-27,Survation,2002,party,Labour,Lab,35.0,45.0
+2025-06-27,Survation,2002,party,Lib Dems,LD,33.0,26.0
+2025-06-27,Survation,2002,party,Reform,Ref,37.0,38.0
+2025-06-30,More in Common,2532,leader,Ed Davey,LD,21.0,27.0
+2025-06-30,More in Common,2532,leader,Keir Starmer,Lab,20.0,60.0
+2025-06-30,More in Common,2532,leader,Kemi Badenoch,Con,17.0,41.0
+2025-06-30,More in Common,2532,leader,Nigel Farage,Ref,31.0,39.0
+2025-06-30,More in Common,2532,party,Conservative,Con,15.0,51.0
+2025-06-30,More in Common,2532,party,Labour,Lab,22.0,55.0
+2025-07-02,Find Out Now,1950,leader,Ed Davey,LD,19.0,27.0
+2025-07-02,Find Out Now,1950,leader,Keir Starmer,Lab,9.0,65.0
+2025-07-02,Find Out Now,1950,leader,Kemi Badenoch,Con,9.0,46.0
+2025-07-02,Find Out Now,1950,leader,Nigel Farage,Ref,34.0,35.0
+2025-07-03,More in Common,1855,leader,Ed Davey,LD,17.0,23.0
+2025-07-03,More in Common,1855,leader,Keir Starmer,Lab,18.0,61.0
+2025-07-03,More in Common,1855,leader,Kemi Badenoch,Con,15.0,36.0
+2025-07-03,More in Common,1855,leader,Nigel Farage,Ref,31.0,37.0
+2025-07-03,More in Common,1855,party,Conservative,Con,17.0,43.0
+2025-07-03,More in Common,1855,party,Labour,Lab,16.0,59.0
+2025-07-06,Freshwater Strategy,1259,leader,Ed Davey,LD,27.0,25.0
+2025-07-06,Freshwater Strategy,1259,leader,Keir Starmer,Lab,23.0,61.0
+2025-07-06,Freshwater Strategy,1259,leader,Kemi Badenoch,Con,22.0,38.0
+2025-07-06,Freshwater Strategy,1259,leader,Nigel Farage,Ref,33.0,46.0
+2025-07-06,Freshwater Strategy,1259,party,Conservative,Con,26.0,50.0
+2025-07-06,Freshwater Strategy,1259,party,Green,Grn,29.0,30.0
+2025-07-06,Freshwater Strategy,1259,party,Labour,Lab,27.0,53.0
+2025-07-06,Freshwater Strategy,1259,party,Lib Dems,LD,30.0,31.0
+2025-07-06,Freshwater Strategy,1259,party,Reform,Ref,37.0,41.0
+2025-07-07,YouGov,1702,leader,Ed Davey,LD,29.0,25.0
+2025-07-07,More in Common,2084,leader,Ed Davey,LD,18.0,23.0
+2025-07-07,YouGov,1702,leader,Keir Starmer,Lab,19.0,69.0
+2025-07-07,More in Common,2084,leader,Keir Starmer,Lab,20.0,56.0
+2025-07-07,YouGov,1702,leader,Kemi Badenoch,Con,16.0,53.0
+2025-07-07,More in Common,2084,leader,Kemi Badenoch,Con,15.0,37.0
+2025-07-07,More in Common,2084,leader,Nigel Farage,Ref,30.0,39.0
+2025-07-07,More in Common,2084,party,Conservative,Con,13.0,49.0
+2025-07-07,More in Common,2084,party,Labour,Lab,19.0,56.0
+2025-07-11,Opinium,2052,leader,Ed Davey,LD,21.0,22.0
+2025-07-11,Opinium,2052,leader,Keir Starmer,Lab,18.0,60.0
+2025-07-11,Opinium,2052,leader,Kemi Badenoch,Con,18.0,37.0
+2025-07-11,Opinium,2052,leader,Nigel Farage,Ref,30.0,41.0
+2025-07-14,YouGov,2285,leader,Adrian Ramsay,Grn,4.0,14.0
+2025-07-14,YouGov,2285,leader,Carla Denyer,Grn,8.0,15.0
+2025-07-14,YouGov,2285,leader,Ed Davey,LD,27.0,33.0
+2025-07-14,Ipsos,1144,leader,Ed Davey,LD,22.0,34.0
+2025-07-14,More in Common,3026,leader,Ed Davey,LD,18.0,28.0
+2025-07-14,YouGov,2285,leader,Keir Starmer,Lab,23.0,67.0
+2025-07-14,Ipsos,1144,leader,Keir Starmer,Lab,21.0,55.0
+2025-07-14,More in Common,3026,leader,Keir Starmer,Lab,20.0,59.0
+2025-07-14,YouGov,2285,leader,Kemi Badenoch,Con,19.0,54.0
+2025-07-14,Ipsos,1144,leader,Kemi Badenoch,Con,17.0,47.0
+2025-07-14,More in Common,3026,leader,Kemi Badenoch,Con,17.0,41.0
+2025-07-14,YouGov,2285,leader,Nigel Farage,Ref,30.0,61.0
+2025-07-14,Ipsos,1144,leader,Nigel Farage,Ref,32.0,46.0
+2025-07-14,More in Common,3026,leader,Nigel Farage,Ref,30.0,39.0
+2025-07-14,YouGov,2285,party,Conservative,Con,21.0,69.0
+2025-07-14,Ipsos,1144,party,Conservative,Con,21.0,52.0
+2025-07-14,More in Common,3026,party,Conservative,Con,16.0,50.0
+2025-07-14,YouGov,2285,party,Green,Grn,40.0,40.0
+2025-07-14,Ipsos,1144,party,Green,Grn,26.0,35.0
+2025-07-14,YouGov,2285,party,Labour,Lab,26.0,65.0
+2025-07-14,Ipsos,1144,party,Labour,Lab,24.0,53.0
+2025-07-14,More in Common,3026,party,Labour,Lab,19.0,58.0
+2025-07-14,YouGov,2285,party,Lib Dems,LD,37.0,44.0
+2025-07-14,Ipsos,1144,party,Lib Dems,LD,24.0,35.0
+2025-07-14,YouGov,2285,party,Reform,Ref,32.0,57.0
+2025-07-14,Ipsos,1144,party,Reform,Ref,32.0,44.0
+2025-07-16,YouGov,2006,leader,Keir Starmer,Lab,24.0,68.0
+2025-07-20,More in Common,2153,leader,Ed Davey,LD,17.0,26.0
+2025-07-20,More in Common,2153,leader,Keir Starmer,Lab,19.0,62.0
+2025-07-20,More in Common,2153,leader,Kemi Badenoch,Con,17.0,38.0
+2025-07-20,More in Common,2153,leader,Nigel Farage,Ref,33.0,39.0
+2025-07-20,More in Common,2153,party,Conservative,Con,14.0,50.0
+2025-07-20,More in Common,2153,party,Labour,Lab,17.0,61.0
+2025-07-25,Opinium,2050,leader,Ed Davey,LD,21.0,23.0
+2025-07-25,Opinium,2050,leader,Keir Starmer,Lab,22.0,57.0
+2025-07-25,Opinium,2050,leader,Kemi Badenoch,Con,16.0,39.0
+2025-07-25,Opinium,2050,leader,Nigel Farage,Ref,33.0,40.0
+2025-07-28,More in Common,2040,leader,Ed Davey,LD,19.0,27.0
+2025-07-28,More in Common,2040,leader,Keir Starmer,Lab,20.0,61.0
+2025-07-28,More in Common,2040,leader,Kemi Badenoch,Con,15.0,43.0
+2025-07-28,More in Common,2040,leader,Nigel Farage,Ref,30.0,41.0
+2025-07-28,More in Common,2040,party,Conservative,Con,15.0,53.0
+2025-07-28,More in Common,2040,party,Labour,Lab,20.0,58.0
+2025-07-31,BMG Research,1528,leader,Ed Davey,LD,22.0,16.0
+2025-07-31,BMG Research,1528,leader,Keir Starmer,Lab,20.0,56.0
+2025-07-31,BMG Research,1528,leader,Kemi Badenoch,Con,21.0,29.0
+2025-07-31,BMG Research,1528,leader,Nigel Farage,Ref,36.0,30.0
+2025-08-03,Find Out Now,1884,leader,Ed Davey,LD,17.0,26.0
+2025-08-03,More in Common,2042,leader,Ed Davey,LD,18.0,26.0
+2025-08-03,Freshwater Strategy,1259,leader,Ed Davey,LD,23.0,27.0
+2025-08-03,Find Out Now,1884,leader,Keir Starmer,Lab,10.0,65.0
+2025-08-03,More in Common,2042,leader,Keir Starmer,Lab,19.0,62.0
+2025-08-03,Freshwater Strategy,1259,leader,Keir Starmer,Lab,23.0,60.0
+2025-08-03,Find Out Now,1884,leader,Kemi Badenoch,Con,8.0,48.0
+2025-08-03,More in Common,2042,leader,Kemi Badenoch,Con,17.0,41.0
+2025-08-03,Freshwater Strategy,1259,leader,Kemi Badenoch,Con,24.0,35.0
+2025-08-03,Find Out Now,1884,leader,Nigel Farage,Ref,35.0,35.0
+2025-08-03,More in Common,2042,leader,Nigel Farage,Ref,32.0,39.0
+2025-08-03,Freshwater Strategy,1259,leader,Nigel Farage,Ref,37.0,41.0
+2025-08-03,More in Common,2042,party,Conservative,Con,15.0,51.0
+2025-08-03,Freshwater Strategy,1259,party,Conservative,Con,27.0,47.0
+2025-08-03,Freshwater Strategy,1259,party,Green,Grn,30.0,31.0
+2025-08-03,More in Common,2042,party,Labour,Lab,17.0,62.0
+2025-08-03,Freshwater Strategy,1259,party,Labour,Lab,27.0,55.0
+2025-08-03,Freshwater Strategy,1259,party,Lib Dems,LD,28.0,31.0
+2025-08-03,Freshwater Strategy,1259,party,Reform,Ref,39.0,36.0
+2025-08-08,Opinium,2050,leader,Ed Davey,LD,22.0,22.0
+2025-08-08,Opinium,2050,leader,Keir Starmer,Lab,19.0,60.0
+2025-08-08,Opinium,2050,leader,Kemi Badenoch,Con,19.0,39.0
+2025-08-08,Opinium,2050,leader,Nigel Farage,Ref,32.0,41.0
+2025-08-11,YouGov,1744,leader,Ed Davey,LD,28.0,30.0
+2025-08-11,More in Common,2015,leader,Ed Davey,LD,19.0,28.0
+2025-08-11,YouGov,1744,leader,Keir Starmer,Lab,20.0,69.0
+2025-08-11,More in Common,2015,leader,Keir Starmer,Lab,20.0,59.0
+2025-08-11,YouGov,1744,leader,Kemi Badenoch,Con,16.0,56.0
+2025-08-11,More in Common,2015,leader,Kemi Badenoch,Con,18.0,39.0
+2025-08-11,More in Common,2015,leader,Nigel Farage,Ref,32.0,37.0
+2025-08-11,More in Common,2015,party,Conservative,Con,17.0,47.0
+2025-08-11,More in Common,2015,party,Labour,Lab,22.0,56.0
+2025-08-15,YouGov,2016,leader,Adrian Ramsay,Grn,5.0,13.0
+2025-08-15,YouGov,2016,leader,Carla Denyer,Grn,9.0,14.0
+2025-08-15,YouGov,2016,leader,Ed Davey,LD,30.0,33.0
+2025-08-15,YouGov,2016,leader,Keir Starmer,Lab,24.0,68.0
+2025-08-15,YouGov,2016,leader,Kemi Badenoch,Con,21.0,52.0
+2025-08-15,YouGov,2016,leader,Nigel Farage,Ref,32.0,61.0
+2025-08-15,YouGov,2016,party,Conservative,Con,26.0,65.0
+2025-08-15,YouGov,2016,party,Green,Grn,44.0,39.0
+2025-08-15,YouGov,2016,party,Labour,Lab,27.0,64.0
+2025-08-15,YouGov,2016,party,Lib Dems,LD,40.0,44.0
+2025-08-15,YouGov,2016,party,Reform,Ref,34.0,58.0
+2025-08-18,Ipsos,1135,leader,Ed Davey,LD,25.0,32.0
+2025-08-18,More in Common,2000,leader,Ed Davey,LD,20.0,27.0
+2025-08-18,Ipsos,1135,leader,Keir Starmer,Lab,22.0,54.0
+2025-08-18,More in Common,2000,leader,Keir Starmer,Lab,20.0,61.0
+2025-08-18,Ipsos,1135,leader,Kemi Badenoch,Con,20.0,47.0
+2025-08-18,More in Common,2000,leader,Kemi Badenoch,Con,18.0,41.0
+2025-08-18,Ipsos,1135,leader,Nigel Farage,Ref,31.0,47.0
+2025-08-18,More in Common,2000,leader,Nigel Farage,Ref,33.0,39.0
+2025-08-18,Ipsos,1135,party,Conservative,Con,21.0,51.0
+2025-08-18,Ipsos,1135,party,Green,Grn,30.0,33.0
+2025-08-18,Ipsos,1135,party,Labour,Lab,25.0,53.0
+2025-08-18,Ipsos,1135,party,Lib Dems,LD,25.0,33.0
+2025-08-18,Ipsos,1135,party,Reform,Ref,34.0,45.0
+2025-08-19,Focaldata,1500,leader,Ed Davey,LD,23.0,27.0
+2025-08-19,Focaldata,1500,leader,Keir Starmer,Lab,23.0,57.0
+2025-08-19,Focaldata,1500,leader,Kemi Badenoch,Con,23.0,36.0
+2025-08-19,Focaldata,1500,leader,Nigel Farage,Ref,34.0,41.0
+2025-08-22,Opinium,2050,leader,Ed Davey,LD,21.0,24.0
+2025-08-22,Opinium,2050,leader,Keir Starmer,Lab,19.0,60.0
+2025-08-22,Opinium,2050,leader,Kemi Badenoch,Con,17.0,40.0
+2025-08-22,Opinium,2050,leader,Nigel Farage,Ref,31.0,42.0
+2025-08-26,More in Common,2032,leader,Ed Davey,LD,21.0,25.0
+2025-08-26,YouGov,2192,leader,Keir Starmer,Lab,22.0,69.0
+2025-08-26,More in Common,2032,leader,Keir Starmer,Lab,19.0,61.0
+2025-08-26,More in Common,2032,leader,Kemi Badenoch,Con,18.0,39.0
+2025-08-26,More in Common,2032,leader,Nigel Farage,Ref,35.0,36.0
+2025-08-26,More in Common,2032,party,Conservative,Con,17.0,49.0
+2025-08-26,More in Common,2032,party,Labour,Lab,20.0,57.0
+2025-08-28,BMG Research,1504,leader,Ed Davey,LD,22.0,17.0
+2025-08-28,BMG Research,1504,leader,Keir Starmer,Lab,19.0,60.0
+2025-08-28,BMG Research,1504,leader,Kemi Badenoch,Con,19.0,28.0
+2025-08-28,BMG Research,1504,leader,Nigel Farage,Ref,37.0,32.0
+2025-08-31,Freshwater Strategy,1251,leader,Ed Davey,LD,24.0,27.0
+2025-08-31,Freshwater Strategy,1251,leader,Keir Starmer,Lab,21.0,62.0
+2025-08-31,Freshwater Strategy,1251,leader,Kemi Badenoch,Con,22.0,39.0
+2025-08-31,Freshwater Strategy,1251,leader,Nigel Farage,Ref,38.0,44.0
+2025-08-31,Freshwater Strategy,1251,party,Conservative,Con,26.0,49.0
+2025-08-31,Freshwater Strategy,1251,party,Green,Grn,33.0,28.0
+2025-08-31,Freshwater Strategy,1251,party,Labour,Lab,23.0,55.0
+2025-08-31,Freshwater Strategy,1251,party,Lib Dems,LD,29.0,35.0
+2025-08-31,Freshwater Strategy,1251,party,Reform,Ref,38.0,39.0
+2025-09-01,More in Common,2042,leader,Ed Davey,LD,18.0,28.0
+2025-09-01,More in Common,2042,leader,Keir Starmer,Lab,20.0,63.0
+2025-09-01,More in Common,2042,leader,Kemi Badenoch,Con,16.0,43.0
+2025-09-01,YouGov,2268,leader,Nigel Farage,Ref,48.0,30.0
+2025-09-01,More in Common,2042,leader,Nigel Farage,Ref,32.0,42.0
+2025-09-01,More in Common,2042,party,Conservative,Con,16.0,51.0
+2025-09-01,More in Common,2042,party,Labour,Lab,19.0,59.0
+2025-09-05,Opinium,2050,leader,Ed Davey,LD,21.0,23.0
+2025-09-05,Opinium,2050,leader,Keir Starmer,Lab,19.0,59.0
+2025-09-05,Opinium,2050,leader,Kemi Badenoch,Con,19.0,38.0
+2025-09-05,Opinium,2050,leader,Nigel Farage,Ref,33.0,40.0
+2025-09-06,Find Out Now,2343,leader,Ed Davey,LD,18.0,28.0
+2025-09-06,Find Out Now,2343,leader,Keir Starmer,Lab,10.0,67.0
+2025-09-06,Find Out Now,2343,leader,Kemi Badenoch,Con,8.0,50.0
+2025-09-06,Find Out Now,2343,leader,Nigel Farage,Ref,38.0,33.0
+2025-09-08,YouGov,1763,leader,Ed Davey,LD,29.0,28.0
+2025-09-08,More in Common,2106,leader,Ed Davey,LD,19.0,27.0
+2025-09-08,YouGov,1763,leader,Keir Starmer,Lab,18.0,73.0
+2025-09-08,More in Common,2106,leader,Keir Starmer,Lab,18.0,62.0
+2025-09-08,YouGov,1763,leader,Kemi Badenoch,Con,16.0,54.0
+2025-09-08,More in Common,2106,leader,Kemi Badenoch,Con,16.0,42.0
+2025-09-08,YouGov,2237,leader,Nigel Farage,Ref,28.0,63.0
+2025-09-08,More in Common,2106,leader,Nigel Farage,Ref,33.0,37.0
+2025-09-08,YouGov,2237,leader,Zack Polanski,Grn,12.0,22.0
+2025-09-08,More in Common,2106,party,Conservative,Con,14.0,51.0
+2025-09-08,More in Common,2106,party,Labour,Lab,18.0,63.0
+2025-09-09,Ipsos,2272,leader,Ed Davey,LD,23.0,27.0
+2025-09-09,Ipsos,2272,leader,Keir Starmer,Lab,21.0,54.0
+2025-09-09,Ipsos,2272,leader,Kemi Badenoch,Con,18.0,43.0
+2025-09-09,Ipsos,2272,leader,Nigel Farage,Ref,33.0,45.0
+2025-09-09,Ipsos,2272,leader,Zack Polanski,Grn,18.0,26.0
+2025-09-09,Ipsos,2272,party,Conservative,Con,20.0,50.0
+2025-09-09,Ipsos,2272,party,Green,Grn,27.0,30.0
+2025-09-09,Ipsos,2272,party,Labour,Lab,22.0,51.0
+2025-09-09,Ipsos,2272,party,Lib Dems,LD,24.0,31.0
+2025-09-09,Ipsos,2272,party,Reform,Ref,33.0,41.0
+2025-09-11,YouGov,2287,leader,Ed Davey,LD,27.0,33.0
+2025-09-11,YouGov,2287,leader,Keir Starmer,Lab,21.0,71.0
+2025-09-11,YouGov,2287,leader,Kemi Badenoch,Con,19.0,54.0
+2025-09-11,YouGov,2287,leader,Nigel Farage,Ref,30.0,61.0
+2025-09-11,YouGov,2287,leader,Zack Polanski,Grn,10.0,20.0
+2025-09-15,More in Common,2037,leader,Ed Davey,LD,19.0,29.0
+2025-09-15,Opinium,2011,leader,Ed Davey,LD,20.0,24.0
+2025-09-15,More in Common,2037,leader,Keir Starmer,Lab,17.0,63.0
+2025-09-15,Opinium,2011,leader,Keir Starmer,Lab,16.0,62.0
+2025-09-15,More in Common,2037,leader,Kemi Badenoch,Con,18.0,41.0
+2025-09-15,Opinium,2011,leader,Kemi Badenoch,Con,20.0,38.0
+2025-09-15,More in Common,2037,leader,Nigel Farage,Ref,31.0,39.0
+2025-09-15,Opinium,2011,leader,Nigel Farage,Ref,33.0,39.0
+2025-09-15,Opinium,2011,leader,Zack Polanski,Grn,16.0,21.0
+2025-09-15,More in Common,2037,party,Conservative,Con,18.0,49.0
+2025-09-15,More in Common,2037,party,Labour,Lab,18.0,61.0
+2025-09-17,Ipsos,1157,leader,Ed Davey,LD,23.0,38.0
+2025-09-17,YouGov,2245,leader,Keir Starmer,Lab,18.0,73.0
+2025-09-17,Ipsos,1157,leader,Keir Starmer,Lab,13.0,79.0
+2025-09-17,Ipsos,1157,leader,Kemi Badenoch,Con,14.0,61.0
+2025-09-17,Ipsos,1157,leader,Nigel Farage,Ref,34.0,53.0
+2025-09-19,Opinium,2050,leader,Ed Davey,LD,23.0,23.0
+2025-09-19,Opinium,2050,leader,Keir Starmer,Lab,18.0,60.0
+2025-09-19,Opinium,2050,leader,Kemi Badenoch,Con,18.0,40.0
+2025-09-19,Opinium,2050,leader,Nigel Farage,Ref,33.0,41.0
+2025-09-19,Opinium,2050,leader,Zack Polanski,Grn,18.0,19.0
+2025-09-22,More in Common,2055,leader,Ed Davey,LD,22.0,29.0
+2025-09-22,Savanta,2086,leader,Keir Starmer,Lab,16.0,61.0
+2025-09-22,More in Common,2055,leader,Keir Starmer,Lab,20.0,59.0
+2025-09-22,More in Common,2055,leader,Kemi Badenoch,Con,18.0,42.0
+2025-09-22,More in Common,2055,leader,Nigel Farage,Ref,33.0,41.0
+2025-09-22,More in Common,2055,party,Conservative,Con,16.0,51.0
+2025-09-22,More in Common,2055,party,Labour,Lab,19.0,58.0
+2025-09-25,Survation,2027,leader,Ed Davey,LD,27.0,28.0
+2025-09-25,Survation,2027,leader,Keir Starmer,Lab,27.0,51.0
+2025-09-25,Survation,2027,leader,Kemi Badenoch,Con,28.0,36.0
+2025-09-25,Survation,2027,leader,Nigel Farage,Ref,42.0,37.0
+2025-09-26,Opinium,2050,leader,Ed Davey,LD,27.0,24.0
+2025-09-26,Opinium,2050,leader,Keir Starmer,Lab,20.0,61.0
+2025-09-26,Opinium,2050,leader,Kemi Badenoch,Con,19.0,41.0
+2025-09-26,Opinium,2050,leader,Nigel Farage,Ref,35.0,40.0
+2025-09-26,Opinium,2050,leader,Zack Polanski,Grn,17.0,20.0
+2025-09-29,YouGov,2353,leader,Ed Davey,LD,29.0,33.0
+2025-09-29,More in Common,2012,leader,Ed Davey,LD,22.0,26.0
+2025-09-29,YouGov,2353,leader,Keir Starmer,Lab,23.0,70.0
+2025-09-29,More in Common,2012,leader,Keir Starmer,Lab,17.0,64.0
+2025-09-29,YouGov,2353,leader,Kemi Badenoch,Con,18.0,54.0
+2025-09-29,More in Common,2012,leader,Kemi Badenoch,Con,19.0,40.0
+2025-09-29,YouGov,2353,leader,Nigel Farage,Ref,31.0,62.0
+2025-09-29,More in Common,2012,leader,Nigel Farage,Ref,33.0,41.0
+2025-09-29,YouGov,2353,leader,Zack Polanski,Grn,10.0,20.0
+2025-09-29,More in Common,2012,party,Conservative,Con,17.0,49.0
+2025-09-29,More in Common,2012,party,Labour,Lab,17.0,61.0
+2025-10-01,Focaldata,2014,leader,Ed Davey,LD,21.0,28.0
+2025-10-01,Focaldata,2014,leader,Keir Starmer,Lab,19.0,59.0
+2025-10-01,Focaldata,2014,leader,Kemi Badenoch,Con,19.0,36.0
+2025-10-01,Focaldata,2014,leader,Nigel Farage,Ref,32.0,45.0
+2025-10-01,Focaldata,2014,leader,Zack Polanski,Grn,10.0,20.0
+2025-10-03,Find Out Now,2006,leader,Ed Davey,LD,18.0,33.0
+2025-10-03,Opinium,2050,leader,Ed Davey,LD,21.0,25.0
+2025-10-03,Find Out Now,2006,leader,Keir Starmer,Lab,10.0,68.0
+2025-10-03,Opinium,2050,leader,Keir Starmer,Lab,19.0,63.0
+2025-10-03,Find Out Now,2006,leader,Kemi Badenoch,Con,8.0,50.0
+2025-10-03,Opinium,2050,leader,Kemi Badenoch,Con,18.0,40.0
+2025-10-03,Find Out Now,2006,leader,Nigel Farage,Ref,36.0,38.0
+2025-10-03,Opinium,2050,leader,Nigel Farage,Ref,35.0,43.0
+2025-10-03,Opinium,2050,leader,Zack Polanski,Grn,18.0,19.0
+2025-10-05,Freshwater Strategy,1251,leader,Ed Davey,LD,23.0,24.0
+2025-10-05,Freshwater Strategy,1251,leader,Keir Starmer,Lab,22.0,63.0
+2025-10-05,Freshwater Strategy,1251,leader,Kemi Badenoch,Con,24.0,40.0
+2025-10-05,Freshwater Strategy,1251,leader,Nigel Farage,Ref,39.0,42.0
+2025-10-05,Freshwater Strategy,1251,party,Conservative,Con,25.0,51.0
+2025-10-05,Freshwater Strategy,1251,party,Green,Grn,32.0,29.0
+2025-10-05,Freshwater Strategy,1251,party,Labour,Lab,26.0,58.0
+2025-10-05,Freshwater Strategy,1251,party,Lib Dems,LD,28.0,31.0
+2025-10-05,Freshwater Strategy,1251,party,Reform,Ref,40.0,39.0
+2025-10-06,YouGov,1748,leader,Ed Davey,LD,31.0,32.0
+2025-10-06,More in Common,2003,leader,Ed Davey,LD,18.0,32.0
+2025-10-06,YouGov,1748,leader,Keir Starmer,Lab,18.0,72.0
+2025-10-06,More in Common,2003,leader,Keir Starmer,Lab,16.0,65.0
+2025-10-06,YouGov,1748,leader,Kemi Badenoch,Con,15.0,56.0
+2025-10-06,More in Common,2003,leader,Kemi Badenoch,Con,13.0,46.0
+2025-10-06,More in Common,2003,leader,Nigel Farage,Ref,32.0,42.0
+2025-10-06,More in Common,2003,party,Conservative,Con,14.0,55.0
+2025-10-06,More in Common,2003,party,Labour,Lab,14.0,67.0
+2025-10-10,Opinium,2015,leader,Ed Davey,LD,21.0,24.0
+2025-10-10,Opinium,2015,leader,Keir Starmer,Lab,19.0,61.0
+2025-10-10,Opinium,2015,leader,Kemi Badenoch,Con,23.0,37.0
+2025-10-10,Opinium,2015,leader,Nigel Farage,Ref,33.0,40.0
+2025-10-10,Opinium,2015,leader,Zack Polanski,Grn,19.0,21.0
+2025-10-13,YouGov,2086,leader,Ed Davey,LD,28.0,35.0
+2025-10-13,Ipsos,1141,leader,Ed Davey,LD,24.0,31.0
+2025-10-13,More in Common,2004,leader,Ed Davey,LD,20.0,27.0
+2025-10-13,YouGov,2086,leader,Keir Starmer,Lab,21.0,71.0
+2025-10-13,Ipsos,1141,leader,Keir Starmer,Lab,20.0,60.0
+2025-10-13,More in Common,2004,leader,Keir Starmer,Lab,19.0,63.0
+2025-10-13,YouGov,2086,leader,Kemi Badenoch,Con,21.0,54.0
+2025-10-13,Ipsos,1141,leader,Kemi Badenoch,Con,22.0,44.0
+2025-10-13,More in Common,2004,leader,Kemi Badenoch,Con,18.0,40.0
+2025-10-13,YouGov,2086,leader,Nigel Farage,Ref,28.0,64.0
+2025-10-13,Ipsos,1141,leader,Nigel Farage,Ref,36.0,45.0
+2025-10-13,More in Common,2004,leader,Nigel Farage,Ref,32.0,44.0
+2025-10-13,YouGov,2086,leader,Zack Polanski,Grn,17.0,26.0
+2025-10-13,Ipsos,1141,leader,Zack Polanski,Grn,21.0,29.0
+2025-10-13,YouGov,2086,party,Conservative,Con,27.0,66.0
+2025-10-13,Ipsos,1141,party,Conservative,Con,22.0,50.0
+2025-10-13,More in Common,2004,party,Conservative,Con,15.0,51.0
+2025-10-13,YouGov,2086,party,Green,Grn,40.0,42.0
+2025-10-13,Ipsos,1141,party,Green,Grn,27.0,33.0
+2025-10-13,YouGov,2086,party,Labour,Lab,26.0,67.0
+2025-10-13,Ipsos,1141,party,Labour,Lab,22.0,54.0
+2025-10-13,More in Common,2004,party,Labour,Lab,20.0,63.0
+2025-10-13,YouGov,2086,party,Lib Dems,LD,38.0,45.0
+2025-10-13,Ipsos,1141,party,Lib Dems,LD,23.0,33.0
+2025-10-13,YouGov,2086,party,Reform,Ref,31.0,60.0
+2025-10-13,Ipsos,1141,party,Reform,Ref,37.0,42.0
+2025-10-14,YouGov,2150,leader,Ed Davey,LD,29.0,33.0
+2025-10-14,YouGov,2150,leader,Keir Starmer,Lab,21.0,72.0
+2025-10-14,YouGov,2150,leader,Kemi Badenoch,Con,21.0,54.0
+2025-10-14,YouGov,2150,leader,Nigel Farage,Ref,30.0,63.0
+2025-10-14,YouGov,2150,leader,Zack Polanski,Grn,17.0,21.0
+2025-10-16,YouGov,2167,leader,Keir Starmer,Lab,20.0,72.0
+2025-10-17,Focaldata,2057,leader,Ed Davey,LD,21.0,25.0
+2025-10-17,Focaldata,2057,leader,Keir Starmer,Lab,22.0,58.0
+2025-10-17,Focaldata,2057,leader,Kemi Badenoch,Con,24.0,34.0
+2025-10-17,Focaldata,2057,leader,Nigel Farage,Ref,36.0,42.0
+2025-10-17,Focaldata,2057,leader,Zack Polanski,Grn,14.0,21.0
+2025-10-20,More in Common,2084,leader,Ed Davey,LD,18.0,26.0
+2025-10-20,More in Common,2084,leader,Keir Starmer,Lab,17.0,64.0
+2025-10-20,More in Common,2084,leader,Kemi Badenoch,Con,16.0,41.0
+2025-10-20,More in Common,2084,leader,Nigel Farage,Ref,31.0,45.0
+2025-10-20,More in Common,2084,party,Conservative,Con,13.0,55.0
+2025-10-20,More in Common,2084,party,Labour,Lab,17.0,62.0
+2025-10-24,Opinium,2030,leader,Ed Davey,LD,21.0,24.0
+2025-10-24,Opinium,2030,leader,Keir Starmer,Lab,18.0,62.0
+2025-10-24,Opinium,2030,leader,Kemi Badenoch,Con,21.0,38.0
+2025-10-24,Opinium,2030,leader,Nigel Farage,Ref,30.0,44.0
+2025-10-24,Opinium,2030,leader,Zack Polanski,Grn,20.0,22.0
+2025-10-27,More in Common,2030,leader,Ed Davey,LD,18.0,28.0
+2025-10-27,More in Common,2030,leader,Keir Starmer,Lab,17.0,64.0
+2025-10-27,More in Common,2030,leader,Kemi Badenoch,Con,16.0,40.0
+2025-10-27,More in Common,2030,leader,Nigel Farage,Ref,31.0,41.0
+2025-10-27,More in Common,2030,leader,Zack Polanski,Grn,14.0,21.0
+2025-10-27,More in Common,2030,party,Conservative,Con,15.0,50.0
+2025-10-27,More in Common,2030,party,Labour,Lab,16.0,66.0
+2025-10-29,YouGov,2136,leader,Kemi Badenoch,Con,23.0,42.0
+2025-11-03,YouGov,1752,leader,Ed Davey,LD,29.0,32.0
+2025-11-03,More in Common,2031,leader,Ed Davey,LD,17.0,31.0
+2025-11-03,YouGov,1752,leader,Keir Starmer,Lab,17.0,73.0
+2025-11-03,More in Common,2031,leader,Keir Starmer,Lab,17.0,65.0
+2025-11-03,YouGov,1752,leader,Kemi Badenoch,Con,20.0,53.0
+2025-11-03,More in Common,2031,leader,Kemi Badenoch,Con,16.0,42.0
+2025-11-03,More in Common,2031,leader,Nigel Farage,Ref,31.0,43.0
+2025-11-03,More in Common,2030,party,Conservative,Con,15.0,50.0
+2025-11-03,More in Common,2030,party,Labour,Lab,18.0,64.0
+2025-11-05,Ipsos,1148,leader,Ed Davey,LD,20.0,42.0
+2025-11-05,Ipsos,1148,leader,Keir Starmer,Lab,13.0,79.0
+2025-11-05,Ipsos,1148,leader,Kemi Badenoch,Con,17.0,58.0
+2025-11-05,Ipsos,1148,leader,Nigel Farage,Ref,31.0,52.0
+2025-11-05,Ipsos,1148,leader,Zack Polanski,Grn,24.0,32.0
+2025-11-07,Opinium,2050,leader,Ed Davey,LD,23.0,25.0
+2025-11-07,Find Out Now,1972,leader,Ed Davey,LD,19.0,30.0
+2025-11-07,Opinium,2050,leader,Keir Starmer,Lab,17.0,62.0
+2025-11-07,Find Out Now,1972,leader,Keir Starmer,Lab,8.0,70.0
+2025-11-07,Opinium,2050,leader,Kemi Badenoch,Con,21.0,38.0
+2025-11-07,Find Out Now,1972,leader,Kemi Badenoch,Con,12.0,48.0
+2025-11-07,Opinium,2050,leader,Nigel Farage,Ref,32.0,42.0
+2025-11-07,Find Out Now,1972,leader,Nigel Farage,Ref,34.0,38.0
+2025-11-07,Opinium,2050,leader,Zack Polanski,Grn,21.0,22.0
+2025-11-07,Find Out Now,1972,leader,Zack Polanski,Grn,19.0,24.0
+2025-11-09,Freshwater Strategy,1250,leader,Ed Davey,LD,23.0,26.0
+2025-11-09,Freshwater Strategy,1250,leader,Keir Starmer,Lab,20.0,65.0
+2025-11-09,Freshwater Strategy,1250,leader,Kemi Badenoch,Con,22.0,38.0
+2025-11-09,Freshwater Strategy,1250,leader,Nigel Farage,Ref,34.0,47.0
+2025-11-09,Freshwater Strategy,1250,leader,Zack Polanski,Grn,19.0,20.0
+2025-11-09,Freshwater Strategy,1250,party,Conservative,Con,27.0,47.0
+2025-11-09,Freshwater Strategy,1250,party,Green,Grn,37.0,26.0
+2025-11-09,Freshwater Strategy,1250,party,Labour,Lab,23.0,59.0
+2025-11-09,Freshwater Strategy,1250,party,Lib Dems,LD,30.0,32.0
+2025-11-09,Freshwater Strategy,1250,party,Reform,Ref,36.0,43.0
+2025-11-10,Ipsos,1133,leader,Ed Davey,LD,21.0,34.0
+2025-11-10,More in Common,2011,leader,Ed Davey,LD,19.0,29.0
+2025-11-10,Ipsos,1133,leader,Keir Starmer,Lab,19.0,61.0
+2025-11-10,More in Common,2011,leader,Keir Starmer,Lab,17.0,66.0
+2025-11-10,Ipsos,1133,leader,Kemi Badenoch,Con,18.0,52.0
+2025-11-10,More in Common,2011,leader,Kemi Badenoch,Con,18.0,43.0
+2025-11-10,Ipsos,1133,leader,Nigel Farage,Ref,30.0,51.0
+2025-11-10,More in Common,2011,leader,Nigel Farage,Ref,30.0,43.0
+2025-11-10,Ipsos,1133,leader,Zack Polanski,Grn,25.0,30.0
+2025-11-10,Ipsos,1133,party,Conservative,Con,20.0,53.0
+2025-11-10,More in Common,2011,party,Conservative,Con,15.0,52.0
+2025-11-10,Ipsos,1133,party,Green,Grn,31.0,33.0
+2025-11-10,Ipsos,1133,party,Labour,Lab,20.0,56.0
+2025-11-10,More in Common,2011,party,Labour,Lab,17.0,64.0
+2025-11-10,Ipsos,1133,party,Lib Dems,LD,24.0,34.0
+2025-11-10,Ipsos,1133,party,Reform,Ref,30.0,50.0
+2025-11-17,YouGov,2112,leader,Ed Davey,LD,25.0,34.0
+2025-11-17,More in Common,2052,leader,Ed Davey,LD,18.0,29.0
+2025-11-17,YouGov,2112,leader,Keir Starmer,Lab,19.0,73.0
+2025-11-17,More in Common,2052,leader,Keir Starmer,Lab,17.0,66.0
+2025-11-17,YouGov,2112,leader,Kemi Badenoch,Con,21.0,53.0
+2025-11-17,More in Common,2052,leader,Kemi Badenoch,Con,18.0,41.0
+2025-11-17,YouGov,2112,leader,Nigel Farage,Ref,30.0,62.0
+2025-11-17,More in Common,2052,leader,Nigel Farage,Ref,31.0,43.0
+2025-11-17,YouGov,2112,leader,Zack Polanski,Grn,20.0,22.0
+2025-11-17,More in Common,2052,party,Conservative,Con,16.0,50.0
+2025-11-17,More in Common,2052,party,Labour,Lab,17.0,64.0
+2025-11-18,YouGov,2138,leader,Keir Starmer,Lab,19.0,74.0
+2025-11-19,Opinium,2050,leader,Ed Davey,LD,23.0,26.0
+2025-11-19,Opinium,2050,leader,Keir Starmer,Lab,17.0,62.0
+2025-11-19,Opinium,2050,leader,Kemi Badenoch,Con,22.0,38.0
+2025-11-19,Opinium,2050,leader,Nigel Farage,Ref,33.0,43.0
+2025-11-19,Opinium,2050,leader,Zack Polanski,Grn,22.0,24.0
+2025-11-20,Survation,2082,leader,Ed Davey,LD,29.0,25.0
+2025-11-20,Survation,2082,leader,Keir Starmer,Lab,27.0,51.0
+2025-11-20,Survation,2082,leader,Kemi Badenoch,Con,32.0,33.0
+2025-11-20,Survation,2082,leader,Nigel Farage,Ref,38.0,38.0
+2025-11-20,Survation,2082,party,Conservative,Con,33.0,40.0
+2025-11-20,Survation,2082,party,Green,Grn,32.0,30.0
+2025-11-20,Survation,2082,party,Labour,Lab,30.0,48.0
+2025-11-20,Survation,2082,party,Lib Dems,LD,31.0,29.0
+2025-11-20,Survation,2082,party,Reform,Ref,40.0,35.0
+2025-11-21,Focaldata,1725,leader,Ed Davey,LD,18.0,28.0
+2025-11-21,Focaldata,1725,leader,Keir Starmer,Lab,17.0,64.0
+2025-11-21,Focaldata,1725,leader,Kemi Badenoch,Con,21.0,35.0
+2025-11-21,Focaldata,1725,leader,Nigel Farage,Ref,31.0,45.0
+2025-11-21,Focaldata,1725,leader,Zack Polanski,Grn,13.0,23.0
+2025-11-24,More in Common,2062,leader,Ed Davey,LD,17.0,31.0
+2025-11-24,More in Common,2062,leader,Keir Starmer,Lab,17.0,68.0
+2025-11-24,More in Common,2062,leader,Kemi Badenoch,Con,19.0,41.0
+2025-11-24,More in Common,2062,leader,Nigel Farage,Ref,33.0,42.0
+2025-11-24,More in Common,2062,party,Conservative,Con,17.0,51.0
+2025-11-24,More in Common,2062,party,Labour,Lab,16.0,65.0
+2025-11-27,BMG Research,1548,leader,Ed Davey,LD,21.0,26.0
+2025-11-27,BMG Research,1548,leader,Keir Starmer,Lab,18.0,63.0
+2025-11-27,BMG Research,1548,leader,Kemi Badenoch,Con,27.0,30.0
+2025-11-27,BMG Research,1548,leader,Nigel Farage,Ref,33.0,39.0
+2025-11-27,BMG Research,1548,leader,Zack Polanski,Grn,22.0,23.0
+2025-11-28,Focaldata,1343,leader,Ed Davey,LD,18.0,31.0
+2025-11-28,Opinium,2050,leader,Ed Davey,LD,22.0,25.0
+2025-11-28,Focaldata,1343,leader,Keir Starmer,Lab,18.0,63.0
+2025-11-28,Opinium,2050,leader,Keir Starmer,Lab,18.0,62.0
+2025-11-28,Focaldata,1343,leader,Kemi Badenoch,Con,22.0,37.0
+2025-11-28,Opinium,2050,leader,Kemi Badenoch,Con,24.0,37.0
+2025-11-28,Focaldata,1343,leader,Nigel Farage,Ref,31.0,47.0
+2025-11-28,Opinium,2050,leader,Nigel Farage,Ref,31.0,45.0
+2025-11-28,Focaldata,1343,leader,Zack Polanski,Grn,14.0,26.0
+2025-11-28,Opinium,2050,leader,Zack Polanski,Grn,22.0,22.0
+2025-11-30,Freshwater Strategy,1558,leader,Ed Davey,LD,23.0,28.0
+2025-11-30,Freshwater Strategy,1558,leader,Keir Starmer,Lab,18.0,66.0
+2025-11-30,Freshwater Strategy,1558,leader,Kemi Badenoch,Con,28.0,36.0
+2025-11-30,Freshwater Strategy,1558,leader,Nigel Farage,Ref,35.0,47.0
+2025-11-30,Freshwater Strategy,1558,leader,Zack Polanski,Grn,19.0,24.0
+2025-11-30,Freshwater Strategy,1558,party,Conservative,Con,30.0,48.0
+2025-11-30,Freshwater Strategy,1558,party,Green,Grn,34.0,32.0
+2025-11-30,Freshwater Strategy,1558,party,Labour,Lab,23.0,60.0
+2025-11-30,Freshwater Strategy,1558,party,Lib Dems,LD,31.0,31.0
+2025-11-30,Freshwater Strategy,1558,party,Reform,Ref,38.0,41.0
+2025-12-01,YouGov,1762,leader,Ed Davey,LD,29.0,32.0
+2025-12-01,More in Common,2114,leader,Ed Davey,LD,22.0,30.0
+2025-12-01,YouGov,1762,leader,Keir Starmer,Lab,15.0,76.0
+2025-12-01,More in Common,2114,leader,Keir Starmer,Lab,18.0,66.0
+2025-12-01,YouGov,1762,leader,Kemi Badenoch,Con,30.0,45.0
+2025-12-01,More in Common,2114,leader,Kemi Badenoch,Con,26.0,41.0
+2025-12-01,More in Common,2114,leader,Nigel Farage,Ref,32.0,43.0
+2025-12-01,More in Common,2114,party,Conservative,Con,21.0,49.0
+2025-12-01,More in Common,2114,party,Labour,Lab,17.0,65.0
+2025-12-02,Ipsos,1124,leader,Ed Davey,LD,24.0,32.0
+2025-12-02,Ipsos,1124,leader,Keir Starmer,Lab,17.0,61.0
+2025-12-02,Ipsos,1124,leader,Kemi Badenoch,Con,23.0,42.0
+2025-12-02,Ipsos,1124,leader,Nigel Farage,Ref,29.0,50.0
+2025-12-02,Ipsos,1124,leader,Zack Polanski,Grn,20.0,33.0
+2025-12-02,Ipsos,1124,party,Conservative,Con,21.0,50.0
+2025-12-02,Ipsos,1124,party,Green,Grn,27.0,37.0
+2025-12-02,Ipsos,1124,party,Labour,Lab,19.0,56.0
+2025-12-02,Ipsos,1124,party,Lib Dems,LD,24.0,36.0
+2025-12-02,Ipsos,1124,party,Reform,Ref,29.0,48.0
+2025-12-08,More in Common,2009,leader,Ed Davey,LD,18.0,29.0
+2025-12-08,More in Common,2009,leader,Keir Starmer,Lab,17.0,65.0
+2025-12-08,More in Common,2009,leader,Kemi Badenoch,Con,25.0,39.0
+2025-12-08,More in Common,2009,leader,Nigel Farage,Ref,31.0,43.0
+2025-12-08,More in Common,2009,party,Conservative,Con,19.0,46.0
+2025-12-08,More in Common,2009,party,Labour,Lab,15.0,65.0
+2025-12-12,Opinium,2053,leader,Ed Davey,LD,23.0,26.0
+2025-12-12,YouGov,2063,leader,Keir Starmer,Lab,17.0,76.0
+2025-12-12,Opinium,2053,leader,Keir Starmer,Lab,18.0,61.0
+2025-12-12,Opinium,2053,leader,Kemi Badenoch,Con,26.0,36.0
+2025-12-12,Opinium,2053,leader,Nigel Farage,Ref,31.0,43.0
+2025-12-15,YouGov,2084,leader,Ed Davey,LD,26.0,36.0
+2025-12-15,YouGov,2084,leader,Keir Starmer,Lab,18.0,72.0
+2025-12-15,YouGov,2084,leader,Kemi Badenoch,Con,26.0,52.0
+2025-12-15,YouGov,2084,leader,Nigel Farage,Ref,29.0,64.0
+2025-12-15,YouGov,2084,leader,Zack Polanski,Grn,23.0,29.0
+2025-12-16,More in Common,2037,leader,Ed Davey,LD,19.0,31.0
+2025-12-16,More in Common,2037,leader,Keir Starmer,Lab,17.0,65.0
+2025-12-16,More in Common,2037,leader,Kemi Badenoch,Con,23.0,38.0
+2025-12-16,More in Common,2037,leader,Nigel Farage,Ref,32.0,42.0
+2025-12-16,More in Common,2009,party,Conservative,Con,20.0,48.0
+2025-12-16,More in Common,2009,party,Labour,Lab,16.0,62.0
+2025-12-18,Deltapoll,1997,leader,Keir Starmer,Lab,24.0,70.0
+2025-12-18,Deltapoll,1997,leader,Kemi Badenoch,Con,36.0,45.0
+2025-12-18,Deltapoll,1997,leader,Nigel Farage,Ref,43.0,47.0
+2025-12-23,More in Common,2026,leader,Ed Davey,LD,20.0,30.0
+2025-12-23,More in Common,2026,leader,Keir Starmer,Lab,18.0,63.0
+2025-12-23,More in Common,2026,leader,Kemi Badenoch,Con,22.0,40.0
+2025-12-23,More in Common,2026,leader,Nigel Farage,Ref,30.0,44.0
+2025-12-23,More in Common,2026,party,Conservative,Con,19.0,48.0
+2025-12-23,More in Common,2026,party,Labour,Lab,20.0,62.0
+2025-12-29,YouGov,1744,leader,Ed Davey,LD,28.0,30.0
+2025-12-29,YouGov,1744,leader,Keir Starmer,Lab,15.0,73.0
+2025-12-29,YouGov,1744,leader,Kemi Badenoch,Con,28.0,44.0
+2026-01-05,More in Common,2021,leader,Ed Davey,LD,18.0,28.0
+2026-01-05,YouGov,2102,leader,Keir Starmer,Lab,18.0,74.0
+2026-01-05,More in Common,2016,leader,Keir Starmer,Lab,18.0,61.0
+2026-01-05,More in Common,2021,leader,Kemi Badenoch,Con,22.0,35.0
+2026-01-05,More in Common,2021,leader,Nigel Farage,Ref,31.0,41.0
+2026-01-05,More in Common,2021,party,Conservative,Con,18.0,42.0
+2026-01-05,More in Common,2021,party,Labour,Lab,18.0,62.0
+2026-01-09,Opinium,2050,leader,Ed Davey,LD,21.0,23.0
+2026-01-09,Opinium,2050,leader,Keir Starmer,Lab,17.0,63.0
+2026-01-09,Opinium,2050,leader,Kemi Badenoch,Con,25.0,36.0
+2026-01-09,Opinium,2050,leader,Nigel Farage,Ref,30.0,45.0
+2026-01-09,Opinium,2050,leader,Zack Polanski,Grn,21.0,24.0
+2026-01-11,Freshwater Strategy,1250,leader,Ed Davey,LD,23.0,25.0
+2026-01-11,Freshwater Strategy,1250,leader,Keir Starmer,Lab,21.0,65.0
+2026-01-11,Freshwater Strategy,1250,leader,Kemi Badenoch,Con,29.0,35.0
+2026-01-11,Freshwater Strategy,1250,leader,Nigel Farage,Ref,37.0,47.0
+2026-01-11,Freshwater Strategy,1250,leader,Zack Polanski,Grn,17.0,25.0
+2026-01-11,Freshwater Strategy,1250,party,Conservative,Con,33.0,45.0
+2026-01-11,Freshwater Strategy,1250,party,Green,Grn,31.0,33.0
+2026-01-11,Freshwater Strategy,1250,party,Labour,Lab,26.0,60.0
+2026-01-11,Freshwater Strategy,1250,party,Lib Dems,LD,30.0,33.0
+2026-01-11,Freshwater Strategy,1250,party,Reform,Ref,37.0,42.0
+2026-01-13,More in Common,2036,leader,Ed Davey,LD,19.0,31.0
+2026-01-13,More in Common,2036,leader,Keir Starmer,Lab,18.0,61.0
+2026-01-13,More in Common,2036,leader,Kemi Badenoch,Con,23.0,37.0
+2026-01-13,More in Common,2036,leader,Nigel Farage,Ref,31.0,42.0
+2026-01-13,More in Common,2036,leader,Zack Polanski,Grn,16.0,30.0
+2026-01-13,More in Common,2036,party,Conservative,Con,19.0,47.0
+2026-01-13,More in Common,2036,party,Labour,Lab,17.0,62.0
+2026-01-14,Survation,2006,leader,Keir Starmer,Lab,21.0,62.0
+2026-01-14,Survation,2006,leader,Kemi Badenoch,Con,37.0,32.0
+2026-01-14,Survation,2006,leader,Nigel Farage,Ref,44.0,33.0
+2026-01-14,Survation,2006,leader,Zack Polanski,Grn,31.0,25.0
+2026-01-16,YouGov,2046,leader,Ed Davey,LD,26.0,35.0
+2026-01-16,YouGov,2046,leader,Keir Starmer,Lab,18.0,75.0
+2026-01-16,YouGov,2046,leader,Kemi Badenoch,Con,25.0,51.0
+2026-01-16,YouGov,2046,leader,Nigel Farage,Ref,28.0,65.0
+2026-01-16,YouGov,2046,leader,Zack Polanski,Grn,20.0,27.0
+2026-01-18,Opinium,2047,leader,Ed Davey,LD,21.0,25.0
+2026-01-18,Opinium,2047,leader,Keir Starmer,Lab,18.0,61.0
+2026-01-18,Opinium,2047,leader,Kemi Badenoch,Con,25.0,34.0
+2026-01-18,Opinium,2047,leader,Nigel Farage,Ref,30.0,42.0
+2026-01-19,Ipsos,1138,leader,Ed Davey,LD,22.0,35.0
+2026-01-19,More in Common,2007,leader,Ed Davey,LD,18.0,28.0
+2026-01-19,Focaldata,1585,leader,Ed Davey,LD,16.0,27.0
+2026-01-19,Ipsos,1138,leader,Keir Starmer,Lab,17.0,59.0
+2026-01-19,More in Common,2007,leader,Keir Starmer,Lab,17.0,62.0
+2026-01-19,Focaldata,1585,leader,Keir Starmer,Lab,17.0,63.0
+2026-01-19,Ipsos,1138,leader,Kemi Badenoch,Con,21.0,48.0
+2026-01-19,More in Common,2007,leader,Kemi Badenoch,Con,23.0,35.0
+2026-01-19,Focaldata,1585,leader,Kemi Badenoch,Con,18.0,34.0
+2026-01-19,Ipsos,1138,leader,Nigel Farage,Ref,26.0,52.0
+2026-01-19,More in Common,2007,leader,Nigel Farage,Ref,29.0,42.0
+2026-01-19,Focaldata,1585,leader,Nigel Farage,Ref,29.0,49.0
+2026-01-19,Ipsos,1138,leader,Zack Polanski,Grn,20.0,35.0
+2026-01-19,Focaldata,1585,leader,Zack Polanski,Grn,13.0,21.0
+2026-01-19,Ipsos,1138,party,Conservative,Con,19.0,53.0
+2026-01-19,More in Common,2007,party,Conservative,Con,18.0,49.0
+2026-01-19,Ipsos,1138,party,Green,Grn,27.0,36.0
+2026-01-19,Ipsos,1138,party,Labour,Lab,21.0,57.0
+2026-01-19,More in Common,2007,party,Labour,Lab,17.0,60.0
+2026-01-19,Ipsos,1138,party,Lib Dems,LD,22.0,37.0
+2026-01-19,Ipsos,1138,party,Reform,Ref,27.0,51.0
+2026-01-23,Opinium,2050,leader,Ed Davey,LD,22.0,25.0
+2026-01-23,Opinium,2050,leader,Keir Starmer,Lab,19.0,60.0
+2026-01-23,Opinium,2050,leader,Kemi Badenoch,Con,25.0,37.0
+2026-01-23,Opinium,2050,leader,Nigel Farage,Ref,30.0,44.0
+2026-01-23,Opinium,2050,leader,Zack Polanski,Grn,19.0,26.0
+2026-01-25,More in Common,2016,leader,Ed Davey,LD,18.0,30.0
+2026-01-25,More in Common,2016,leader,Keir Starmer,Lab,20.0,61.0
+2026-01-25,More in Common,2016,leader,Kemi Badenoch,Con,23.0,37.0
+2026-01-25,More in Common,2016,leader,Nigel Farage,Ref,30.0,44.0
+2026-01-25,More in Common,2016,party,Conservative,Con,18.0,48.0
+2026-01-25,More in Common,2016,party,Labour,Lab,19.0,57.0
+2026-01-26,YouGov,1755,leader,Ed Davey,LD,29.0,30.0
+2026-01-26,YouGov,1755,leader,Keir Starmer,Lab,20.0,71.0
+2026-01-26,YouGov,1755,leader,Kemi Badenoch,Con,29.0,47.0
+2026-01-27,Ipsos,1104,leader,Ed Davey,LD,21.0,40.0
+2026-01-27,Ipsos,1104,leader,Keir Starmer,Lab,15.0,77.0
+2026-01-27,Ipsos,1104,leader,Kemi Badenoch,Con,22.0,53.0
+2026-01-27,Ipsos,1104,leader,Nigel Farage,Ref,28.0,55.0
+2026-01-27,Ipsos,1104,leader,Zack Polanski,Grn,22.0,33.0
+2026-01-29,BMG Research,1513,leader,Ed Davey,LD,19.0,25.0
+2026-01-29,BMG Research,1513,leader,Keir Starmer,Lab,15.0,64.0
+2026-01-29,BMG Research,1513,leader,Kemi Badenoch,Con,22.0,35.0
+2026-01-29,BMG Research,1513,leader,Nigel Farage,Ref,30.0,44.0
+2026-01-29,BMG Research,1513,leader,Zack Polanski,Grn,22.0,24.0
+2026-02-01,Freshwater Strategy,1250,leader,Ed Davey,LD,23.0,28.0
+2026-02-01,Freshwater Strategy,1250,leader,Keir Starmer,Lab,20.0,62.0
+2026-02-01,Freshwater Strategy,1250,leader,Kemi Badenoch,Con,24.0,38.0
+2026-02-01,Freshwater Strategy,1250,leader,Nigel Farage,Ref,33.0,49.0
+2026-02-01,Freshwater Strategy,1250,leader,Zack Polanski,Grn,18.0,29.0
+2026-02-01,Freshwater Strategy,1250,party,Conservative,Con,27.0,51.0
+2026-02-01,Freshwater Strategy,1250,party,Green,Grn,31.0,36.0
+2026-02-01,Freshwater Strategy,1250,party,Labour,Lab,23.0,57.0
+2026-02-01,Freshwater Strategy,1250,party,Lib Dems,LD,30.0,34.0
+2026-02-01,Freshwater Strategy,1250,party,Reform,Ref,35.0,46.0
+2026-02-02,More in Common,2005,leader,Ed Davey,LD,18.0,29.0
+2026-02-02,More in Common,2005,leader,Keir Starmer,Lab,19.0,64.0
+2026-02-02,More in Common,2005,leader,Kemi Badenoch,Con,24.0,35.0
+2026-02-02,More in Common,2005,leader,Nigel Farage,Ref,33.0,43.0
+2026-02-02,More in Common,2005,party,Conservative,Con,18.0,47.0
+2026-02-02,More in Common,2005,party,Labour,Lab,20.0,61.0
+2026-02-04,YouGov,2012,leader,Keir Starmer,Lab,21.0,71.0
+2026-02-06,Opinium,2054,leader,Ed Davey,LD,22.0,25.0
+2026-02-06,Opinium,2054,leader,Keir Starmer,Lab,17.0,61.0
+2026-02-06,Opinium,2054,leader,Kemi Badenoch,Con,26.0,35.0
+2026-02-06,Opinium,2054,leader,Nigel Farage,Ref,32.0,43.0
+2026-02-06,Opinium,2054,leader,Zack Polanski,Grn,21.0,24.0
+2026-02-10,Ipsos,1119,leader,Ed Davey,LD,21.0,31.0
+2026-02-10,More in Common,2035,leader,Ed Davey,LD,19.0,29.0
+2026-02-10,Ipsos,1119,leader,Keir Starmer,Lab,17.0,61.0
+2026-02-10,More in Common,2035,leader,Keir Starmer,Lab,16.0,67.0
+2026-02-10,Ipsos,1119,leader,Kemi Badenoch,Con,24.0,42.0
+2026-02-10,More in Common,2035,leader,Kemi Badenoch,Con,25.0,35.0
+2026-02-10,Ipsos,1119,leader,Nigel Farage,Ref,31.0,48.0
+2026-02-10,More in Common,2035,leader,Nigel Farage,Ref,30.0,43.0
+2026-02-10,Ipsos,1119,leader,Zack Polanski,Grn,24.0,32.0
+2026-02-10,Ipsos,1119,party,Conservative,Con,22.0,50.0
+2026-02-10,More in Common,2035,party,Conservative,Con,20.0,46.0
+2026-02-10,Ipsos,1119,party,Green,Grn,28.0,37.0
+2026-02-10,Ipsos,1119,party,Labour,Lab,20.0,56.0
+2026-02-10,More in Common,2035,party,Labour,Lab,15.0,66.0
+2026-02-10,Ipsos,1119,party,Lib Dems,LD,24.0,38.0
+2026-02-10,Ipsos,1119,party,Reform,Ref,32.0,47.0
+2026-02-11,YouGov,2088,leader,Ed Davey,LD,27.0,37.0
+2026-02-11,YouGov,2088,leader,Keir Starmer,Lab,22.0,69.0
+2026-02-11,YouGov,2088,leader,Kemi Badenoch,Con,27.0,50.0
+2026-02-11,YouGov,2088,leader,Nigel Farage,Ref,27.0,64.0
+2026-02-11,YouGov,2088,leader,Zack Polanski,Grn,22.0,30.0
+2026-02-17,More in Common,2108,leader,Ed Davey,LD,19.0,30.0
+2026-02-17,More in Common,2108,leader,Keir Starmer,Lab,20.0,63.0
+2026-02-17,More in Common,2108,leader,Kemi Badenoch,Con,25.0,37.0
+2026-02-17,More in Common,2108,leader,Nigel Farage,Ref,29.0,47.0
+2026-02-17,More in Common,2108,party,Conservative,Con,20.0,46.0
+2026-02-17,More in Common,2108,party,Labour,Lab,19.0,64.0
+2026-02-23,YouGov,1771,leader,Ed Davey,LD,30.0,29.0
+2026-02-23,More in Common,2015,leader,Ed Davey,LD,18.0,27.0
+2026-02-23,YouGov,1771,leader,Keir Starmer,Lab,18.0,73.0
+2026-02-23,More in Common,2015,leader,Keir Starmer,Lab,18.0,64.0
+2026-02-23,YouGov,1771,leader,Kemi Badenoch,Con,32.0,43.0
+2026-02-23,More in Common,2015,leader,Kemi Badenoch,Con,21.0,37.0
+2026-02-23,Lord Ashcroft Polls,5576,leader,Kemi Badenoch,Con,21.0,43.0
+2026-02-23,More in Common,2015,leader,Nigel Farage,Ref,28.0,44.0
+2026-02-23,More in Common,2015,party,Conservative,Con,17.0,46.0
+2026-02-23,More in Common,2015,party,Labour,Lab,18.0,60.0
+2026-02-24,Ipsos,2518,leader,Ed Davey,LD,26.0,42.0
+2026-02-24,Ipsos,2518,leader,Keir Starmer,Lab,22.0,61.0
+2026-02-24,Ipsos,2518,leader,Kemi Badenoch,Con,26.0,49.0
+2026-02-24,Ipsos,2518,leader,Nigel Farage,Ref,29.0,56.0
+2026-02-24,Ipsos,2518,leader,Zack Polanski,Grn,24.0,42.0
+2026-02-24,Ipsos,2518,party,Conservative,Con,26.0,56.0
+2026-02-24,Ipsos,2518,party,Green,Grn,28.0,47.0
+2026-02-24,Ipsos,2518,party,Labour,Lab,27.0,58.0
+2026-02-24,Ipsos,2518,party,Lib Dems,LD,25.0,48.0
+2026-02-24,Ipsos,2518,party,Reform,Ref,30.0,56.0
+2026-02-27,Opinium,2050,leader,Ed Davey,LD,21.0,26.0
+2026-02-27,Opinium,2050,leader,Keir Starmer,Lab,15.0,64.0
+2026-02-27,Opinium,2050,leader,Kemi Badenoch,Con,27.0,35.0
+2026-02-27,Opinium,2050,leader,Nigel Farage,Ref,31.0,44.0
+2026-02-27,Opinium,2050,leader,Zack Polanski,Grn,22.0,29.0
+2026-03-01,Freshwater Strategy,1221,leader,Ed Davey,LD,25.0,23.0
+2026-03-01,Freshwater Strategy,1221,leader,Keir Starmer,Lab,21.0,63.0
+2026-03-01,Freshwater Strategy,1221,leader,Kemi Badenoch,Con,29.0,33.0
+2026-03-01,Freshwater Strategy,1221,leader,Nigel Farage,Ref,32.0,51.0
+2026-03-01,Freshwater Strategy,1221,leader,Zack Polanski,Grn,22.0,27.0
+2026-03-01,Freshwater Strategy,1221,party,Conservative,Con,28.0,48.0
+2026-03-01,Freshwater Strategy,1221,party,Green,Grn,37.0,31.0
+2026-03-01,Freshwater Strategy,1221,party,Labour,Lab,25.0,57.0
+2026-03-01,Freshwater Strategy,1221,party,Lib Dems,LD,31.0,34.0
+2026-03-01,Freshwater Strategy,1221,party,Reform,Ref,34.0,45.0
+2026-03-02,More in Common,2010,leader,Ed Davey,LD,23.0,31.0
+2026-03-02,More in Common,2010,leader,Keir Starmer,Lab,20.0,68.0
+2026-03-02,More in Common,2010,leader,Kemi Badenoch,Con,29.0,39.0
+2026-03-02,More in Common,2010,leader,Nigel Farage,Ref,36.0,47.0
+2026-03-02,More in Common,2010,leader,Zack Polanski,Grn,27.0,33.0
+2026-03-02,More in Common,2010,party,Conservative,Con,22.0,51.0
+2026-03-02,More in Common,2010,party,Green,Grn,32.0,32.0
+2026-03-02,More in Common,2010,party,Labour,Lab,19.0,66.0
+2026-03-04,BMG Research,1503,leader,Ed Davey,LD,19.0,27.0
+2026-03-04,BMG Research,1503,leader,Keir Starmer,Lab,17.0,60.0
+2026-03-04,BMG Research,1503,leader,Kemi Badenoch,Con,25.0,32.0
+2026-03-04,BMG Research,1503,leader,Nigel Farage,Ref,28.0,42.0
+2026-03-04,BMG Research,1503,leader,Zack Polanski,Grn,21.0,31.0
+2026-03-05,Survation,1045,leader,Ed Davey,LD,28.0,26.0
+2026-03-05,Survation,1045,leader,Keir Starmer,Lab,27.0,52.0
+2026-03-05,Survation,1045,leader,Kemi Badenoch,Con,34.0,32.0
+2026-03-05,Survation,1045,leader,Nigel Farage,Ref,36.0,42.0
+2026-03-05,Survation,1045,leader,Zack Polanski,Grn,39.0,28.0
+2026-03-05,Survation,1045,party,Conservative,Con,34.0,42.0
+2026-03-05,Survation,1045,party,Green,Grn,33.0,32.0
+2026-03-05,Survation,1045,party,Labour,Lab,29.0,50.0
+2026-03-05,Survation,1045,party,Lib Dems,LD,30.0,29.0
+2026-03-05,Survation,1045,party,Reform,Ref,37.0,41.0
+2026-03-06,Opinium,2050,leader,Ed Davey,LD,22.0,26.0
+2026-03-06,Opinium,2050,leader,Keir Starmer,Lab,18.0,60.0
+2026-03-06,Opinium,2050,leader,Kemi Badenoch,Con,24.0,35.0
+2026-03-06,Opinium,2050,leader,Nigel Farage,Ref,28.0,46.0
+2026-03-06,Opinium,2050,leader,Zack Polanski,Grn,22.0,32.0
+2026-03-09,More in Common,2112,leader,Ed Davey,LD,18.0,29.0
+2026-03-09,More in Common,2112,leader,Keir Starmer,Lab,21.0,62.0
+2026-03-09,More in Common,2112,leader,Kemi Badenoch,Con,28.0,34.0
+2026-03-09,More in Common,2112,leader,Nigel Farage,Ref,32.0,45.0
+2026-03-09,More in Common,2112,leader,Zack Polanski,Grn,19.0,31.0
+2026-03-10,Focaldata,1086,leader,Ed Davey,LD,16.0,28.0
+2026-03-10,Focaldata,1086,leader,Keir Starmer,Lab,15.0,63.0
+2026-03-10,Focaldata,1086,leader,Kemi Badenoch,Con,22.0,36.0
+2026-03-10,Focaldata,1086,leader,Nigel Farage,Ref,28.0,45.0
+2026-03-10,Focaldata,1086,leader,Zack Polanski,Grn,14.0,32.0
+2026-03-11,Ipsos,1062,leader,Ed Davey,LD,21.0,43.0
+2026-03-11,Ipsos,1062,leader,Keir Starmer,Lab,19.0,72.0
+2026-03-11,Ipsos,1062,leader,Kemi Badenoch,Con,21.0,56.0
+2026-03-11,Ipsos,1062,leader,Nigel Farage,Ref,29.0,58.0
+2026-03-11,Ipsos,1062,leader,Zack Polanski,Grn,30.0,37.0
+2026-03-13,YouGov,2102,leader,Keir Starmer,Lab,20.0,73.0
+2026-03-16,More in Common,2402,leader,Ed Davey,LD,19.0,29.0
+2026-03-16,JL Partners,1527,leader,Keir Starmer,Lab,17.0,57.0
+2026-03-16,More in Common,2402,leader,Keir Starmer,Lab,19.0,64.0
+2026-03-16,More in Common,2402,leader,Kemi Badenoch,Con,27.0,35.0
+2026-03-16,More in Common,2402,leader,Nigel Farage,Ref,30.0,46.0
+2026-03-16,More in Common,2402,leader,Zack Polanski,Grn,18.0,31.0
+2026-03-19,YouGov,2134,leader,Ed Davey,LD,24.0,38.0
+2026-03-19,YouGov,2134,leader,Keir Starmer,Lab,22.0,70.0
+2026-03-19,YouGov,2134,leader,Kemi Badenoch,Con,27.0,52.0
+2026-03-19,YouGov,2134,leader,Nigel Farage,Ref,27.0,66.0
+2026-03-19,YouGov,2134,leader,Zack Polanski,Grn,22.0,36.0
+2026-03-20,Opinium,2050,leader,Ed Davey,LD,22.0,27.0
+2026-03-20,Opinium,2050,leader,Keir Starmer,Lab,20.0,58.0
+2026-03-20,Opinium,2050,leader,Kemi Badenoch,Con,27.0,36.0
+2026-03-20,Opinium,2050,leader,Nigel Farage,Ref,28.0,44.0
+2026-03-20,Opinium,2050,leader,Zack Polanski,Grn,23.0,32.0
+2026-03-23,YouGov,1815,leader,Ed Davey,LD,27.0,36.0
+2026-03-23,More in Common,2408,leader,Ed Davey,LD,18.0,29.0
+2026-03-23,YouGov,1815,leader,Keir Starmer,Lab,20.0,70.0
+2026-03-23,More in Common,2408,leader,Keir Starmer,Lab,20.0,62.0
+2026-03-23,YouGov,1815,leader,Kemi Badenoch,Con,29.0,48.0
+2026-03-23,More in Common,2408,leader,Kemi Badenoch,Con,27.0,36.0
+2026-03-23,More in Common,2408,leader,Nigel Farage,Ref,30.0,44.0
+2026-03-23,More in Common,2408,leader,Zack Polanski,Grn,19.0,34.0
+2026-03-24,Ipsos,2283,leader,Ed Davey,LD,21.0,35.0
+2026-03-24,Ipsos,2283,leader,Keir Starmer,Lab,17.0,59.0
+2026-03-24,Ipsos,2283,leader,Kemi Badenoch,Con,22.0,44.0
+2026-03-24,Ipsos,2283,leader,Nigel Farage,Ref,25.0,54.0
+2026-03-24,Ipsos,2283,leader,Rupert Lowe,Oth,15.0,34.0
+2026-03-24,Ipsos,2283,leader,Zack Polanski,Grn,23.0,37.0
+2026-03-24,Ipsos,2283,party,Conservative,Con,20.0,52.0
+2026-03-24,Ipsos,2283,party,Green,Grn,27.0,39.0
+2026-03-24,Ipsos,2283,party,Labour,Lab,19.0,54.0
+2026-03-24,Ipsos,2283,party,Lib Dems,LD,22.0,36.0
+2026-03-24,Ipsos,2283,party,Reform,Ref,25.0,53.0
+2026-03-26,BMG Research,1507,leader,Ed Davey,LD,18.0,27.0
+2026-03-26,BMG Research,1507,leader,Keir Starmer,Lab,17.0,63.0
+2026-03-26,BMG Research,1507,leader,Kemi Badenoch,Con,24.0,31.0
+2026-03-26,BMG Research,1507,leader,Nigel Farage,Ref,28.0,44.0
+2026-03-26,BMG Research,1507,leader,Zack Polanski,Grn,24.0,30.0
+2026-03-30,More in Common,2003,leader,Ed Davey,LD,18.0,29.0
+2026-03-30,More in Common,2003,leader,Keir Starmer,Lab,19.0,61.0
+2026-03-30,More in Common,2003,leader,Kemi Badenoch,Con,25.0,34.0
+2026-03-30,More in Common,2003,leader,Nigel Farage,Ref,29.0,46.0
+2026-03-30,More in Common,2003,leader,Zack Polanski,Grn,16.0,32.0
+2026-04-07,More in Common,2009,leader,Ed Davey,LD,18.0,29.0
+2026-04-07,More in Common,2009,leader,Keir Starmer,Lab,19.0,61.0
+2026-04-07,More in Common,2009,leader,Kemi Badenoch,Con,24.0,34.0
+2026-04-07,More in Common,2009,leader,Nigel Farage,Ref,30.0,44.0
+2026-04-07,More in Common,2009,leader,Zack Polanski,Grn,16.0,32.0
+2026-04-12,Freshwater Strategy,1250,leader,Ed Davey,LD,23.0,26.0
+2026-04-12,Freshwater Strategy,1250,leader,Keir Starmer,Lab,24.0,58.0
+2026-04-12,Freshwater Strategy,1250,leader,Kemi Badenoch,Con,29.0,34.0
+2026-04-12,Freshwater Strategy,1250,leader,Nigel Farage,Ref,31.0,48.0
+2026-04-12,Freshwater Strategy,1250,leader,Zack Polanski,Grn,22.0,30.0
+2026-04-12,Freshwater Strategy,1250,party,Conservative,Con,28.0,47.0
+2026-04-12,Freshwater Strategy,1250,party,Green,Grn,34.0,33.0
+2026-04-12,Freshwater Strategy,1250,party,Labour,Lab,25.0,51.0
+2026-04-12,Freshwater Strategy,1250,party,Lib Dems,LD,32.0,31.0
+2026-04-12,Freshwater Strategy,1250,party,Reform,Ref,35.0,43.0
+2026-04-13,More in Common,2011,leader,Ed Davey,LD,16.0,31.0
+2026-04-13,More in Common,2011,leader,Keir Starmer,Lab,18.0,61.0
+2026-04-13,More in Common,2011,leader,Kemi Badenoch,Con,23.0,36.0
+2026-04-13,More in Common,2011,leader,Nigel Farage,Ref,26.0,46.0
+2026-04-13,More in Common,2011,leader,Zack Polanski,Grn,16.0,35.0
+2026-04-13,More in Common,2011,party,Conservative,Con,18.0,45.0
+2026-04-13,More in Common,2011,party,Labour,Lab,16.0,59.0
+2026-04-15,YouGov,2151,leader,Ed Davey,LD,25.0,37.0
+2026-04-15,Ipsos,1044,leader,Ed Davey,LD,25.0,41.0
+2026-04-15,YouGov,2151,leader,Keir Starmer,Lab,24.0,68.0
+2026-04-15,Ipsos,1044,leader,Keir Starmer,Lab,18.0,74.0
+2026-04-15,YouGov,2151,leader,Kemi Badenoch,Con,26.0,51.0
+2026-04-15,Ipsos,1044,leader,Kemi Badenoch,Con,25.0,52.0
+2026-04-15,YouGov,2151,leader,Nigel Farage,Ref,26.0,67.0
+2026-04-15,Ipsos,1044,leader,Nigel Farage,Ref,29.0,59.0
+2026-04-15,YouGov,2151,leader,Rupert Lowe,Oth,16.0,25.0
+2026-04-15,YouGov,2151,leader,Zack Polanski,Grn,21.0,39.0
+2026-04-15,Ipsos,1044,leader,Zack Polanski,Grn,28.0,42.0
+2026-04-16,YouGov,2092,leader,Ed Davey,LD,26.0,36.0
+2026-04-16,YouGov,2092,leader,Keir Starmer,Lab,24.0,69.0
+2026-04-16,YouGov,2092,leader,Kemi Badenoch,Con,29.0,51.0
+2026-04-16,YouGov,2092,leader,Nigel Farage,Ref,25.0,68.0
+2026-04-16,YouGov,2092,leader,Rupert Lowe,Oth,17.0,26.0
+2026-04-16,YouGov,2092,leader,Zack Polanski,Grn,25.0,38.0
+2026-04-17,Opinium,2014,leader,Ed Davey,LD,21.0,26.0
+2026-04-17,Opinium,2014,leader,Keir Starmer,Lab,20.0,58.0
+2026-04-17,Opinium,2014,leader,Kemi Badenoch,Con,26.0,37.0
+2026-04-17,Opinium,2014,leader,Nigel Farage,Ref,27.0,47.0
+2026-04-17,Opinium,2014,leader,Zack Polanski,Grn,21.0,33.0
+2026-04-20,YouGov,1777,leader,Ed Davey,LD,29.0,35.0
+2026-04-20,More in Common,2235,leader,Ed Davey,LD,20.0,28.0
+2026-04-20,YouGov,1777,leader,Keir Starmer,Lab,22.0,69.0
+2026-04-20,More in Common,2235,leader,Keir Starmer,Lab,19.0,62.0
+2026-04-20,YouGov,1777,leader,Kemi Badenoch,Con,32.0,43.0
+2026-04-20,More in Common,2235,leader,Kemi Badenoch,Con,25.0,35.0
+2026-04-20,YouGov,1777,leader,Nigel Farage,Ref,36.0,47.0
+2026-04-20,More in Common,2235,leader,Nigel Farage,Ref,28.0,44.0
+2026-04-20,YouGov,1777,leader,Zack Polanski,Grn,34.0,35.0
+2026-04-20,More in Common,2235,leader,Zack Polanski,Grn,16.0,33.0
+2026-04-21,YouGov,2056,leader,Ed Davey,LD,30.0,33.0
+2026-04-21,Ipsos,2262,leader,Ed Davey,LD,21.0,34.0
+2026-04-21,YouGov,2056,leader,Keir Starmer,Lab,24.0,69.0
+2026-04-21,Ipsos,2262,leader,Keir Starmer,Lab,19.0,59.0
+2026-04-21,YouGov,2056,leader,Kemi Badenoch,Con,29.0,50.0
+2026-04-21,Ipsos,2262,leader,Kemi Badenoch,Con,24.0,42.0
+2026-04-21,YouGov,2056,leader,Nigel Farage,Ref,27.0,65.0
+2026-04-21,Ipsos,2262,leader,Nigel Farage,Ref,27.0,54.0
+2026-04-21,Ipsos,2262,leader,Rupert Lowe,Oth,18.0,33.0
+2026-04-21,YouGov,2056,leader,Zack Polanski,Grn,26.0,34.0
+2026-04-21,Ipsos,2262,leader,Zack Polanski,Grn,24.0,41.0
+2026-04-21,Ipsos,2262,party,Conservative,Con,22.0,49.0
+2026-04-21,Ipsos,2262,party,Green,Grn,28.0,40.0
+2026-04-21,Ipsos,2262,party,Labour,Lab,20.0,55.0
+2026-04-21,Ipsos,2262,party,Lib Dems,LD,22.0,37.0
+2026-04-21,Ipsos,2262,party,Reform,Ref,27.0,50.0
+2026-04-22,YouGov,2080,leader,Keir Starmer,Lab,10.0,58.0
+2026-04-24,YouGov,2076,leader,Ed Davey,LD,27.0,35.0
+2026-04-24,Opinium,2050,leader,Ed Davey,LD,22.0,26.0
+2026-04-24,YouGov,2076,leader,Keir Starmer,Lab,22.0,71.0
+2026-04-24,Opinium,2050,leader,Keir Starmer,Lab,18.0,62.0
+2026-04-24,YouGov,2076,leader,Kemi Badenoch,Con,30.0,51.0
+2026-04-24,Opinium,2050,leader,Kemi Badenoch,Con,29.0,35.0
+2026-04-24,YouGov,2076,leader,Nigel Farage,Ref,26.0,66.0
+2026-04-24,Opinium,2050,leader,Nigel Farage,Ref,28.0,46.0
+2026-04-24,YouGov,2076,leader,Rupert Lowe,Oth,17.0,24.0
+2026-04-24,YouGov,2076,leader,Zack Polanski,Grn,24.0,38.0
+2026-04-24,Opinium,2050,leader,Zack Polanski,Grn,24.0,33.0
+2026-04-27,YouGov,2113,leader,Ed Davey,LD,27.0,37.0
+2026-04-27,More in Common,2041,leader,Ed Davey,LD,20.0,30.0
+2026-04-27,YouGov,2113,leader,Keir Starmer,Lab,23.0,69.0
+2026-04-27,More in Common,2041,leader,Keir Starmer,Lab,19.0,64.0
+2026-04-27,YouGov,2113,leader,Kemi Badenoch,Con,32.0,48.0
+2026-04-27,More in Common,2041,leader,Kemi Badenoch,Con,29.0,34.0
+2026-04-27,YouGov,2113,leader,Nigel Farage,Ref,27.0,65.0
+2026-04-27,More in Common,2041,leader,Nigel Farage,Ref,29.0,43.0
+2026-04-27,YouGov,2113,leader,Rupert Lowe,Oth,16.0,26.0
+2026-04-27,YouGov,2113,leader,Zack Polanski,Grn,24.0,39.0
+2026-04-27,More in Common,2041,leader,Zack Polanski,Grn,19.0,33.0
+2026-04-29,YouGov,2063,leader,Ed Davey,LD,28.0,35.0
+2026-04-29,YouGov,2063,leader,Keir Starmer,Lab,22.0,69.0
+2026-04-29,YouGov,2063,leader,Kemi Badenoch,Con,30.0,50.0
+2026-04-29,YouGov,2063,leader,Nigel Farage,Ref,27.0,64.0
+2026-04-29,YouGov,2063,leader,Rupert Lowe,Oth,15.0,27.0
+2026-04-29,YouGov,2063,leader,Zack Polanski,Grn,24.0,39.0
+2026-04-30,BMG Research,1521,leader,Ed Davey,LD,18.0,26.0
+2026-04-30,BMG Research,1521,leader,Keir Starmer,Lab,16.0,65.0
+2026-04-30,BMG Research,1521,leader,Kemi Badenoch,Con,25.0,30.0
+2026-04-30,BMG Research,1521,leader,Nigel Farage,Ref,28.0,42.0
+2026-04-30,BMG Research,1521,leader,Zack Polanski,Grn,23.0,31.0
+2026-04-30,BMG Research,1521,party,Conservative,Con,13.0,51.0
+2026-04-30,BMG Research,1521,party,Green,Grn,15.0,45.0
+2026-04-30,BMG Research,1521,party,Labour,Lab,17.0,46.0
+2026-04-30,BMG Research,1521,party,Lib Dems,LD,9.0,59.0
+2026-04-30,BMG Research,1521,party,Reform,Ref,28.0,31.0
+2026-05-01,YouGov,2060,leader,Ed Davey,LD,28.0,37.0
+2026-05-01,Opinium,2051,leader,Ed Davey,LD,22.0,25.0
+2026-05-01,Deltapoll,3353,leader,Ed Davey,LD,33.0,41.0
+2026-05-01,YouGov,2060,leader,Keir Starmer,Lab,22.0,69.0
+2026-05-01,Opinium,2051,leader,Keir Starmer,Lab,18.0,62.0
+2026-05-01,Deltapoll,3353,leader,Keir Starmer,Lab,24.0,68.0
+2026-05-01,YouGov,2060,leader,Kemi Badenoch,Con,31.0,48.0
+2026-05-01,Opinium,2051,leader,Kemi Badenoch,Con,30.0,34.0
+2026-05-01,Deltapoll,3353,leader,Kemi Badenoch,Con,40.0,42.0
+2026-05-01,YouGov,2060,leader,Nigel Farage,Ref,27.0,65.0
+2026-05-01,Opinium,2051,leader,Nigel Farage,Ref,28.0,45.0
+2026-05-01,Deltapoll,3353,leader,Nigel Farage,Ref,42.0,45.0
+2026-05-01,YouGov,2060,leader,Rupert Lowe,Oth,18.0,25.0
+2026-05-01,YouGov,2060,leader,Zack Polanski,Grn,24.0,41.0
+2026-05-01,Opinium,2051,leader,Zack Polanski,Grn,22.0,35.0
+2026-05-01,Deltapoll,3353,leader,Zack Polanski,Grn,33.0,41.0
+2026-05-04,More in Common,2016,leader,Ed Davey,LD,18.0,30.0
+2026-05-04,More in Common,2016,leader,Keir Starmer,Lab,19.0,65.0
+2026-05-04,More in Common,2016,leader,Kemi Badenoch,Con,27.0,34.0
+2026-05-04,More in Common,2016,leader,Nigel Farage,Ref,29.0,45.0
+2026-05-04,More in Common,2016,leader,Zack Polanski,Grn,15.0,42.0
+2026-05-05,YouGov,2147,leader,Ed Davey,LD,25.0,39.0
+2026-05-05,YouGov,2147,leader,Keir Starmer,Lab,22.0,69.0
+2026-05-05,YouGov,2147,leader,Kemi Badenoch,Con,30.0,49.0
+2026-05-05,YouGov,2147,leader,Nigel Farage,Ref,27.0,66.0
+2026-05-05,YouGov,2147,leader,Rupert Lowe,Oth,17.0,25.0
+2026-05-05,YouGov,2147,leader,Zack Polanski,Grn,22.0,47.0
+2026-05-06,YouGov,2167,leader,Ed Davey,LD,25.0,37.0
+2026-05-06,YouGov,2167,leader,Keir Starmer,Lab,22.0,69.0
+2026-05-06,YouGov,2167,leader,Kemi Badenoch,Con,31.0,48.0
+2026-05-06,YouGov,2167,leader,Nigel Farage,Ref,26.0,67.0
+2026-05-06,YouGov,2167,leader,Rupert Lowe,Oth,17.0,26.0
+2026-05-06,YouGov,2167,leader,Zack Polanski,Grn,22.0,46.0
+2026-05-07,YouGov,2057,leader,Ed Davey,LD,26.0,37.0
+2026-05-07,YouGov,2057,leader,Keir Starmer,Lab,23.0,70.0
+2026-05-07,YouGov,2057,leader,Kemi Badenoch,Con,29.0,51.0
+2026-05-07,YouGov,2057,leader,Nigel Farage,Ref,26.0,67.0
+2026-05-07,YouGov,2057,leader,Rupert Lowe,Oth,16.0,28.0
+2026-05-07,YouGov,2057,leader,Zack Polanski,Grn,21.0,46.0
+2026-05-08,YouGov,2068,leader,Ed Davey,LD,26.0,38.0
+2026-05-08,Opinium,2050,leader,Ed Davey,LD,21.0,27.0
+2026-05-08,YouGov,2068,leader,Keir Starmer,Lab,22.0,71.0
+2026-05-08,Opinium,2050,leader,Keir Starmer,Lab,18.0,61.0
+2026-05-08,YouGov,2068,leader,Kemi Badenoch,Con,29.0,51.0
+2026-05-08,Opinium,2050,leader,Kemi Badenoch,Con,27.0,36.0
+2026-05-08,YouGov,2068,leader,Nigel Farage,Ref,26.0,66.0
+2026-05-08,Opinium,2050,leader,Nigel Farage,Ref,28.0,47.0
+2026-05-08,YouGov,2068,leader,Rupert Lowe,Oth,17.0,26.0
+2026-05-08,YouGov,2068,leader,Zack Polanski,Grn,24.0,46.0
+2026-05-08,Opinium,2050,leader,Zack Polanski,Grn,22.0,41.0
+2026-05-10,Freshwater Strategy,1243,party,Conservative,Con,33.0,43.0
+2026-05-10,Freshwater Strategy,1243,party,Green,Grn,34.0,38.0
+2026-05-10,Freshwater Strategy,1243,party,Labour,Lab,26.0,55.0
+2026-05-10,Freshwater Strategy,1243,party,Lib Dems,LD,33.0,29.0
+2026-05-10,Freshwater Strategy,1243,party,Reform,Ref,38.0,45.0
+2026-05-11,YouGov,2101,leader,Ed Davey,LD,28.0,36.0
+2026-05-11,Freshwater Strategy,1243,leader,Ed Davey,LD,28.0,22.0
+2026-05-11,YouGov,2101,leader,Keir Starmer,Lab,20.0,72.0
+2026-05-11,Freshwater Strategy,1243,leader,Keir Starmer,Lab,22.0,62.0
+2026-05-11,YouGov,2101,leader,Kemi Badenoch,Con,31.0,50.0
+2026-05-11,Freshwater Strategy,1243,leader,Kemi Badenoch,Con,34.0,30.0
+2026-05-11,YouGov,2101,leader,Nigel Farage,Ref,27.0,65.0
+2026-05-11,Freshwater Strategy,1243,leader,Nigel Farage,Ref,34.0,47.0
+2026-05-11,YouGov,2101,leader,Rupert Lowe,Oth,16.0,26.0
+2026-05-11,YouGov,2101,leader,Zack Polanski,Grn,23.0,48.0
+2026-05-11,Freshwater Strategy,1243,leader,Zack Polanski,Grn,20.0,37.0
+2026-05-12,More in Common,3070,leader,Ed Davey,LD,20.0,26.0
+2026-05-12,Ipsos,2191,leader,Ed Davey,LD,24.0,31.0
+2026-05-12,More in Common,3070,leader,Keir Starmer,Lab,19.0,65.0
+2026-05-12,Ipsos,2191,leader,Keir Starmer,Lab,20.0,58.0
+2026-05-12,More in Common,3070,leader,Kemi Badenoch,Con,27.0,34.0
+2026-05-12,Ipsos,2191,leader,Kemi Badenoch,Con,24.0,45.0
+2026-05-12,More in Common,3070,leader,Nigel Farage,Ref,32.0,42.0
+2026-05-12,Ipsos,2191,leader,Nigel Farage,Ref,28.0,55.0
+2026-05-12,Ipsos,2191,leader,Rupert Lowe,Oth,15.0,38.0
+2026-05-12,More in Common,3070,leader,Zack Polanski,Grn,18.0,40.0
+2026-05-12,Ipsos,2191,leader,Zack Polanski,Grn,23.0,44.0
+2026-05-12,Ipsos,2191,party,Conservative,Con,22.0,52.0
+2026-05-12,Ipsos,2191,party,Green,Grn,29.0,42.0
+2026-05-12,Ipsos,2191,party,Labour,Lab,22.0,54.0
+2026-05-12,Ipsos,2191,party,Lib Dems,LD,25.0,32.0
+2026-05-12,Ipsos,2191,party,Reform,Ref,29.0,53.0
+2026-05-13,YouGov,2078,leader,Ed Davey,LD,29.0,38.0
+2026-05-13,YouGov,2078,leader,Keir Starmer,Lab,23.0,69.0
+2026-05-13,YouGov,2078,leader,Kemi Badenoch,Con,31.0,48.0
+2026-05-13,YouGov,2078,leader,Nigel Farage,Ref,27.0,64.0
+2026-05-13,YouGov,2078,leader,Zack Polanski,Grn,23.0,50.0
+2026-05-18,YouGov,2122,leader,Ed Davey,LD,29.0,37.0
+2026-05-18,YouGov,2122,leader,Keir Starmer,Lab,24.0,67.0
+2026-05-18,YouGov,2122,leader,Kemi Badenoch,Con,30.0,51.0
+2026-05-18,YouGov,2122,leader,Nigel Farage,Ref,27.0,65.0
+2026-05-18,YouGov,2122,leader,Rupert Lowe,Oth,15.0,27.0
+2026-05-18,YouGov,2122,leader,Zack Polanski,Grn,23.0,49.0
+2026-05-19,More in Common,2599,leader,Ed Davey,LD,20.0,30.0
+2026-05-19,More in Common,2599,leader,Keir Starmer,Lab,18.0,64.0
+2026-05-19,More in Common,2599,leader,Kemi Badenoch,Con,28.0,34.0
+2026-05-19,More in Common,2599,leader,Nigel Farage,Ref,30.0,45.0
+2026-05-19,More in Common,2599,leader,Zack Polanski,Grn,16.0,45.0
+2026-05-20,Ipsos,1137,leader,Ed Davey,LD,23.0,41.0
+2026-05-20,YouGov,2095,leader,Keir Starmer,Lab,21.0,72.0
+2026-05-20,Ipsos,1137,leader,Keir Starmer,Lab,16.0,76.0
+2026-05-20,Ipsos,1137,leader,Kemi Badenoch,Con,28.0,48.0
+2026-05-20,Ipsos,1137,leader,Nigel Farage,Ref,27.0,57.0
+2026-05-20,Ipsos,1137,leader,Zack Polanski,Grn,21.0,49.0
+2026-05-22,YouGov,2060,leader,Ed Davey,LD,26.0,40.0
+2026-05-22,Opinium,2050,leader,Ed Davey,LD,22.0,24.0
+2026-05-22,YouGov,2060,leader,Keir Starmer,Lab,22.0,70.0
+2026-05-22,Opinium,2050,leader,Keir Starmer,Lab,18.0,61.0
+2026-05-22,YouGov,2060,leader,Kemi Badenoch,Con,31.0,49.0
+2026-05-22,Opinium,2050,leader,Kemi Badenoch,Con,28.0,34.0
+2026-05-22,YouGov,2060,leader,Nigel Farage,Ref,27.0,65.0
+2026-05-22,Opinium,2050,leader,Nigel Farage,Ref,28.0,47.0
+2026-05-22,YouGov,2060,leader,Rupert Lowe,Oth,15.0,28.0
+2026-05-22,YouGov,2060,leader,Zack Polanski,Grn,23.0,47.0
+2026-05-22,Opinium,2050,leader,Zack Polanski,Grn,21.0,39.0
+2026-05-25,More in Common,2111,leader,Ed Davey,LD,20.0,29.0
+2026-05-25,More in Common,2111,leader,Keir Starmer,Lab,17.0,65.0
+2026-05-25,More in Common,2111,leader,Kemi Badenoch,Con,28.0,34.0
+2026-05-25,More in Common,2111,leader,Nigel Farage,Ref,29.0,45.0
+2026-05-25,More in Common,2111,leader,Zack Polanski,Grn,16.0,42.0
+2026-05-28,BMG Research,1511,leader,Ed Davey,LD,17.0,28.0
+2026-05-28,BMG Research,1511,leader,Keir Starmer,Lab,19.0,56.0
+2026-05-28,BMG Research,1511,leader,Kemi Badenoch,Con,28.0,31.0
+2026-05-28,BMG Research,1511,leader,Nigel Farage,Ref,30.0,45.0
+2026-05-28,BMG Research,1511,leader,Zack Polanski,Grn,18.0,41.0
+2026-05-29,YouGov,2160,leader,Ed Davey,LD,26.0,39.0
+2026-05-29,YouGov,2160,leader,Keir Starmer,Lab,22.0,70.0
+2026-05-29,YouGov,2160,leader,Kemi Badenoch,Con,31.0,49.0
+2026-05-29,YouGov,2160,leader,Nigel Farage,Ref,26.0,64.0
+2026-05-29,YouGov,2160,leader,Rupert Lowe,Oth,16.0,31.0
+2026-05-29,YouGov,2160,leader,Zack Polanski,Grn,22.0,48.0
+2026-05-31,Freshwater Strategy,1237,leader,Ed Davey,LD,25.0,27.0
+2026-05-31,Freshwater Strategy,1237,leader,Keir Starmer,Lab,25.0,61.0
+2026-05-31,Freshwater Strategy,1237,leader,Kemi Badenoch,Con,34.0,33.0
+2026-05-31,Freshwater Strategy,1237,leader,Nigel Farage,Ref,32.0,50.0
+2026-05-31,Freshwater Strategy,1237,leader,Zack Polanski,Grn,19.0,42.0
+2026-05-31,Freshwater Strategy,1237,party,Conservative,Con,31.0,46.0
+2026-05-31,Freshwater Strategy,1237,party,Green,Grn,32.0,41.0
+2026-05-31,Freshwater Strategy,1237,party,Labour,Lab,28.0,54.0
+2026-05-31,Freshwater Strategy,1237,party,Lib Dems,LD,30.0,34.0
+2026-05-31,Freshwater Strategy,1237,party,Reform,Ref,36.0,47.0
+2026-06-01,More in Common,2211,leader,Ed Davey,LD,19.0,30.0
+2026-06-01,More in Common,2211,leader,Keir Starmer,Lab,19.0,63.0
+2026-06-01,More in Common,2211,leader,Kemi Badenoch,Con,28.0,32.0
+2026-06-01,More in Common,2211,leader,Nigel Farage,Ref,31.0,44.0
+2026-06-01,More in Common,2211,leader,Zack Polanski,Grn,17.0,42.0
+2026-06-04,YouGov,2065,leader,Ed Davey,LD,26.0,39.0
+2026-06-04,YouGov,2065,leader,Keir Starmer,Lab,21.0,70.0
+2026-06-04,YouGov,2065,leader,Kemi Badenoch,Con,30.0,51.0
+2026-06-04,YouGov,2065,leader,Nigel Farage,Ref,27.0,65.0
+2026-06-04,YouGov,2065,leader,Rupert Lowe,Oth,16.0,29.0
+2026-06-04,YouGov,2065,leader,Zack Polanski,Grn,22.0,47.0
+2026-06-05,Opinium,2050,leader,Ed Davey,LD,21.0,25.0
+2026-06-05,Opinium,2050,leader,Keir Starmer,Lab,18.0,61.0
+2026-06-05,Opinium,2050,leader,Kemi Badenoch,Con,29.0,33.0
+2026-06-05,Opinium,2050,leader,Nigel Farage,Ref,29.0,48.0
+2026-06-05,Opinium,2050,leader,Zack Polanski,Grn,21.0,39.0
+2026-06-08,YouGov,2038,leader,Ed Davey,LD,25.0,37.0
+2026-06-08,YouGov,2038,leader,Keir Starmer,Lab,23.0,68.0
+2026-06-08,YouGov,2038,leader,Kemi Badenoch,Con,30.0,47.0
+2026-06-08,YouGov,2038,leader,Nigel Farage,Ref,27.0,64.0
+2026-06-08,YouGov,2038,leader,Rupert Lowe,Oth,15.0,30.0
+2026-06-08,YouGov,2038,leader,Zack Polanski,Grn,22.0,44.0
+2026-06-09,Ipsos,2247,leader,Ed Davey,LD,22.0,32.0
+2026-06-09,More in Common,2087,leader,Ed Davey,LD,18.0,28.0
+2026-06-09,Ipsos,2247,leader,Keir Starmer,Lab,20.0,58.0
+2026-06-09,More in Common,2087,leader,Keir Starmer,Lab,17.0,64.0
+2026-06-09,Ipsos,2247,leader,Kemi Badenoch,Con,28.0,40.0
+2026-06-09,More in Common,2087,leader,Kemi Badenoch,Con,26.0,34.0
+2026-06-09,Ipsos,2247,leader,Nigel Farage,Ref,26.0,56.0
+2026-06-09,More in Common,2087,leader,Nigel Farage,Ref,29.0,49.0
+2026-06-09,Ipsos,2247,leader,Rupert Lowe,Oth,16.0,41.0
+2026-06-09,Ipsos,2247,leader,Zack Polanski,Grn,20.0,47.0
+2026-06-09,More in Common,2087,leader,Zack Polanski,Grn,15.0,40.0
+2026-06-09,Ipsos,2247,party,Conservative,Con,23.0,47.0
+2026-06-09,Ipsos,2247,party,Green,Grn,25.0,43.0
+2026-06-09,Ipsos,2247,party,Labour,Lab,21.0,53.0
+2026-06-09,Ipsos,2247,party,Lib Dems,LD,24.0,33.0
+2026-06-09,Ipsos,2247,party,Reform,Ref,27.0,53.0
+2026-06-10,YouGov,2102,leader,Keir Starmer,Lab,23.0,69.0
+2026-06-15,YouGov,2099,leader,Ed Davey,LD,26.0,38.0
+2026-06-15,More in Common,2097,leader,Ed Davey,LD,19.0,29.0
+2026-06-15,Survation,1003,leader,Ed Davey,LD,27.0,27.0
+2026-06-15,YouGov,2099,leader,Keir Starmer,Lab,24.0,69.0
+2026-06-15,More in Common,2097,leader,Keir Starmer,Lab,17.0,65.0
+2026-06-15,Survation,1003,leader,Keir Starmer,Lab,25.0,52.0
+2026-06-15,YouGov,2099,leader,Kemi Badenoch,Con,30.0,50.0
+2026-06-15,More in Common,2097,leader,Kemi Badenoch,Con,30.0,31.0
+2026-06-15,Survation,1003,leader,Kemi Badenoch,Con,39.0,29.0
+2026-06-15,YouGov,2099,leader,Nigel Farage,Ref,26.0,67.0
+2026-06-15,More in Common,2097,leader,Nigel Farage,Ref,30.0,44.0
+2026-06-15,Survation,1003,leader,Nigel Farage,Ref,36.0,44.0
+2026-06-15,YouGov,2099,leader,Rupert Lowe,Oth,16.0,31.0
+2026-06-15,YouGov,2099,leader,Zack Polanski,Grn,22.0,46.0
+2026-06-15,More in Common,2097,leader,Zack Polanski,Grn,16.0,41.0
+2026-06-15,Survation,1003,leader,Zack Polanski,Grn,22.0,39.0
+2026-06-19,Opinium,2050,leader,Ed Davey,LD,22.0,26.0
+2026-06-19,Opinium,2050,leader,Keir Starmer,Lab,19.0,61.0
+2026-06-19,Opinium,2050,leader,Kemi Badenoch,Con,28.0,32.0
+2026-06-19,Opinium,2050,leader,Nigel Farage,Ref,27.0,48.0
+2026-06-19,Opinium,2050,leader,Zack Polanski,Grn,22.0,38.0
+2026-06-22,YouGov,2110,leader,Ed Davey,LD,27.0,36.0
+2026-06-22,More in Common,2993,leader,Ed Davey,LD,21.0,27.0
+2026-06-22,YouGov,2110,leader,Keir Starmer,Lab,22.0,67.0
+2026-06-22,More in Common,2993,leader,Keir Starmer,Lab,18.0,63.0
+2026-06-22,YouGov,2110,leader,Kemi Badenoch,Con,31.0,46.0
+2026-06-22,More in Common,2993,leader,Kemi Badenoch,Con,30.0,31.0
+2026-06-22,YouGov,2110,leader,Nigel Farage,Ref,25.0,65.0
+2026-06-22,More in Common,2993,leader,Nigel Farage,Ref,29.0,45.0
+2026-06-22,YouGov,2110,leader,Rupert Lowe,Oth,16.0,36.0
+2026-06-22,YouGov,2110,leader,Zack Polanski,Grn,21.0,47.0
+2026-06-22,More in Common,2993,leader,Zack Polanski,Grn,18.0,38.0
+2026-06-24,BMG Research,1508,leader,Ed Davey,LD,18.0,29.0
+2026-06-24,BMG Research,1508,leader,Keir Starmer,Lab,17.0,61.0
+2026-06-24,Ipsos,1000,leader,Keir Starmer,Lab,20.0,57.0
+2026-06-24,BMG Research,1508,leader,Kemi Badenoch,Con,26.0,29.0
+2026-06-24,BMG Research,1508,leader,Nigel Farage,Ref,28.0,44.0
+2026-06-24,BMG Research,1508,leader,Zack Polanski,Grn,21.0,36.0
+2026-06-25,YouGov,2075,leader,Ed Davey,LD,27.0,39.0
+2026-06-25,YouGov,2075,leader,Keir Starmer,Lab,27.0,66.0
+2026-06-25,YouGov,2075,leader,Kemi Badenoch,Con,30.0,51.0
+2026-06-25,YouGov,2075,leader,Nigel Farage,Ref,26.0,66.0
+2026-06-25,YouGov,2075,leader,Zack Polanski,Grn,23.0,46.0
+2026-06-26,Opinium,2050,leader,Ed Davey,LD,20.0,25.0
+2026-06-26,Opinium,2050,leader,Keir Starmer,Lab,19.0,60.0
+2026-06-26,Opinium,2050,leader,Kemi Badenoch,Con,27.0,35.0
+2026-06-26,Opinium,2050,leader,Nigel Farage,Ref,26.0,49.0
+2026-06-26,Opinium,2050,leader,Zack Polanski,Grn,20.0,39.0
+2026-06-28,More in Common,2852,leader,Ed Davey,LD,22.0,29.0
+2026-06-28,More in Common,2852,leader,Keir Starmer,Lab,21.0,60.0
+2026-06-28,More in Common,2852,leader,Kemi Badenoch,Con,30.0,34.0
+2026-06-28,More in Common,2852,leader,Nigel Farage,Ref,27.0,52.0
+2026-06-28,More in Common,2852,leader,Zack Polanski,Grn,17.0,44.0
+2026-06-29,More in Common,2852,leader,Ed Davey,LD,21.0,28.0
+2026-06-29,Survation,2041,leader,Ed Davey,LD,24.0,25.0
+2026-06-29,Lord Ashcroft Polls,5064,leader,Ed Davey,LD,17.0,30.0
+2026-06-29,Public First,2013,leader,Keir Starmer,Lab,25.0,57.0
+2026-06-29,More in Common,2852,leader,Keir Starmer,Lab,19.0,63.0
+2026-06-29,Survation,2041,leader,Keir Starmer,Lab,21.0,53.0
+2026-06-29,Lord Ashcroft Polls,5064,leader,Keir Starmer,Lab,19.0,58.0
+2026-06-29,Public First,2013,leader,Kemi Badenoch,Con,35.0,33.0
+2026-06-29,More in Common,2852,leader,Kemi Badenoch,Con,31.0,32.0
+2026-06-29,Survation,2041,leader,Kemi Badenoch,Con,33.0,31.0
+2026-06-29,Lord Ashcroft Polls,5064,leader,Kemi Badenoch,Con,27.0,43.0
+2026-06-29,Public First,2013,leader,Nigel Farage,Ref,34.0,49.0
+2026-06-29,More in Common,2852,leader,Nigel Farage,Ref,29.0,46.0
+2026-06-29,Survation,2041,leader,Nigel Farage,Ref,33.0,42.0
+2026-06-29,Lord Ashcroft Polls,5064,leader,Nigel Farage,Ref,22.0,63.0
+2026-06-29,Public First,2013,leader,Rupert Lowe,Oth,20.0,32.0
+2026-06-29,Lord Ashcroft Polls,5064,leader,Rupert Lowe,Oth,12.0,32.0
+2026-06-29,Public First,2013,leader,Zack Polanski,Grn,24.0,40.0
+2026-06-29,More in Common,2852,leader,Zack Polanski,Grn,18.0,40.0
+2026-06-29,Survation,2041,leader,Zack Polanski,Grn,21.0,38.0
+2026-06-29,Lord Ashcroft Polls,5064,leader,Zack Polanski,Grn,19.0,42.0
+2026-06-29,YouGov,2207,party,Conservative,Con,29.0,62.0
+2026-06-29,Survation,2041,party,Conservative,Con,32.0,38.0
+2026-06-29,YouGov,2207,party,Green,Grn,36.0,52.0
+2026-06-29,Survation,2041,party,Green,Grn,26.0,40.0
+2026-06-29,YouGov,2207,party,Labour,Lab,28.0,63.0
+2026-06-29,Public First,2013,party,Labour,Lab,31.0,43.0
+2026-06-29,Survation,2041,party,Labour,Lab,28.0,47.0
+2026-06-29,YouGov,2207,party,Lib Dems,LD,34.0,48.0
+2026-06-29,Survation,2041,party,Lib Dems,LD,27.0,31.0
+2026-06-29,YouGov,2207,party,Reform,Ref,29.0,63.0
+2026-06-29,Survation,2041,party,Reform,Ref,34.0,43.0
+2026-06-30,Ipsos,1045,leader,Ed Davey,LD,19.0,44.0
+2026-06-30,Ipsos,1045,leader,Keir Starmer,Lab,17.0,76.0
+2026-06-30,Ipsos,1045,leader,Kemi Badenoch,Con,28.0,50.0
+2026-06-30,Ipsos,1045,leader,Nigel Farage,Ref,26.0,63.0
+2026-06-30,Ipsos,1045,leader,Zack Polanski,Grn,23.0,48.0
+2026-07-03,Opinium,2050,leader,Ed Davey,LD,22.0,27.0
+2026-07-03,Opinium,2050,leader,Keir Starmer,Lab,17.0,60.0
+2026-07-03,Opinium,2050,leader,Kemi Badenoch,Con,28.0,34.0
+2026-07-03,Opinium,2050,leader,Nigel Farage,Ref,28.0,47.0
+2026-07-03,Opinium,2050,leader,Zack Polanski,Grn,22.0,38.0
+2026-07-05,Freshwater Strategy,1240,leader,Ed Davey,LD,25.0,28.0
+2026-07-05,Freshwater Strategy,1240,leader,Keir Starmer,Lab,23.0,63.0
+2026-07-05,Freshwater Strategy,1240,leader,Kemi Badenoch,Con,38.0,32.0
+2026-07-05,Freshwater Strategy,1240,leader,Nigel Farage,Ref,37.0,48.0
+2026-07-05,Freshwater Strategy,1240,leader,Zack Polanski,Grn,21.0,41.0
+2026-07-05,Freshwater Strategy,1240,party,Conservative,Con,35.0,42.0
+2026-07-05,Freshwater Strategy,1240,party,Green,Grn,31.0,42.0
+2026-07-05,Freshwater Strategy,1240,party,Labour,Lab,27.0,54.0
+2026-07-05,Freshwater Strategy,1240,party,Lib Dems,LD,30.0,35.0
+2026-07-05,Freshwater Strategy,1240,party,Reform,Ref,38.0,46.0
+2026-07-06,More in Common,2119,leader,Ed Davey,LD,19.0,26.0
+2026-07-06,More in Common,2119,leader,Keir Starmer,Lab,21.0,60.0
+2026-07-06,More in Common,2119,leader,Kemi Badenoch,Con,30.0,31.0
+2026-07-06,More in Common,2119,leader,Nigel Farage,Ref,30.0,46.0
+2026-07-06,More in Common,2119,leader,Zack Polanski,Grn,17.0,38.0
+2026-07-09,Survation,2058,leader,Ed Davey,LD,38.0,40.0
+2026-07-09,Survation,2058,leader,Kemi Badenoch,Con,42.0,42.0
+2026-07-09,Survation,2058,leader,Nigel Farage,Ref,36.0,56.0
+2026-07-09,Survation,2058,leader,Zack Polanski,Grn,29.0,50.0
+2026-07-10,Opinium,2050,leader,Ed Davey,LD,21.0,26.0
+2026-07-10,Opinium,2050,leader,Keir Starmer,Lab,17.0,62.0
+2026-07-10,Opinium,2050,leader,Kemi Badenoch,Con,29.0,32.0
+2026-07-10,Opinium,2050,leader,Nigel Farage,Ref,26.0,52.0
+2026-07-10,Opinium,2050,leader,Zack Polanski,Grn,21.0,38.0
+2026-07-12,Convergent Opinion,2498,leader,Keir Starmer,Lab,24.0,69.0
+2026-07-12,Convergent Opinion,2498,leader,Kemi Badenoch,Con,37.0,42.0
+2026-07-12,Convergent Opinion,2498,leader,Nigel Farage,Ref,30.0,62.0
+2026-07-12,Convergent Opinion,2498,leader,Zack Polanski,Grn,22.0,49.0
+2026-07-13,YouGov,2104,leader,Ed Davey,LD,28.0,36.0
+2026-07-13,More in Common,2198,leader,Ed Davey,LD,20.0,26.0
+2026-07-13,YouGov,2104,leader,Keir Starmer,Lab,28.0,64.0
+2026-07-13,More in Common,2198,leader,Keir Starmer,Lab,19.0,62.0
+2026-07-13,YouGov,2104,leader,Kemi Badenoch,Con,30.0,50.0
+2026-07-13,More in Common,2198,leader,Kemi Badenoch,Con,32.0,28.0
+2026-07-13,YouGov,2104,leader,Nigel Farage,Ref,25.0,68.0
+2026-07-13,More in Common,2198,leader,Nigel Farage,Ref,26.0,50.0
+2026-07-13,YouGov,2104,leader,Zack Polanski,Grn,22.0,46.0
+2026-07-13,More in Common,2198,leader,Zack Polanski,Grn,19.0,37.0
+2026-07-14,Survation,2057,leader,Ed Davey,LD,25.0,28.0
+2026-07-14,Survation,2057,leader,Keir Starmer,Lab,22.0,55.0
+2026-07-14,Survation,2057,leader,Kemi Badenoch,Con,36.0,32.0
+2026-07-14,Survation,2057,leader,Nigel Farage,Ref,31.0,49.0
+2026-07-14,Survation,2057,leader,Zack Polanski,Grn,21.0,42.0
+2026-07-14,Survation,2057,party,Conservative,Con,34.0,40.0
+2026-07-14,Survation,2057,party,Green,Grn,29.0,41.0
+2026-07-14,Survation,2057,party,Labour,Lab,30.0,46.0
+2026-07-14,Survation,2057,party,Lib Dems,LD,28.0,35.0
+2026-07-14,Survation,2057,party,Reform,Ref,34.0,45.0
+2026-07-17,Opinium,2050,leader,Ed Davey,LD,23.0,25.0
+2026-07-17,Opinium,2050,leader,Keir Starmer,Lab,20.0,58.0
+2026-07-17,Opinium,2050,leader,Kemi Badenoch,Con,33.0,30.0
+2026-07-17,Opinium,2050,leader,Nigel Farage,Ref,26.0,52.0
+2026-07-17,Opinium,2050,leader,Zack Polanski,Grn,22.0,37.0
+2026-07-20,Deltapoll,2027,leader,Andy Burnham,Lab,38.0,29.0
+2026-07-20,Deltapoll,2027,leader,Keir Starmer,Lab,28.0,66.0
+2026-07-20,Deltapoll,2027,leader,Kemi Badenoch,Con,45.0,39.0
+2026-07-20,Deltapoll,2027,leader,Nigel Farage,Ref,40.0,52.0
+2026-07-21,YouGov,2081,leader,Andy Burnham,Lab,39.0,34.0
+2026-07-22,More in Common,3118,leader,Andy Burnham,Lab,29.0,16.0
+2026-07-22,YouGov,2063,leader,Andy Burnham,Lab,38.0,35.0
+2026-07-22,Ipsos,2255,leader,Andy Burnham,Lab,32.0,31.0
+2026-07-22,More in Common,3118,leader,Ed Davey,LD,21.0,26.0
+2026-07-22,YouGov,2063,leader,Ed Davey,LD,26.0,34.0
+2026-07-22,Ipsos,2255,leader,Ed Davey,LD,21.0,33.0
+2026-07-22,Ipsos,2255,leader,Keir Starmer,Lab,22.0,52.0
+2026-07-22,More in Common,3118,leader,Kemi Badenoch,Con,31.0,28.0
+2026-07-22,YouGov,2063,leader,Kemi Badenoch,Con,33.0,44.0
+2026-07-22,Ipsos,2255,leader,Kemi Badenoch,Con,29.0,40.0
+2026-07-22,More in Common,3118,leader,Nigel Farage,Ref,26.0,48.0
+2026-07-22,YouGov,2063,leader,Nigel Farage,Ref,22.0,68.0
+2026-07-22,Ipsos,2255,leader,Nigel Farage,Ref,25.0,57.0
+2026-07-22,Ipsos,2255,leader,Rupert Lowe,Oth,16.0,48.0
+2026-07-22,More in Common,3118,leader,Zack Polanski,Grn,17.0,39.0
+2026-07-22,YouGov,2063,leader,Zack Polanski,Grn,20.0,46.0
+2026-07-22,Ipsos,2255,leader,Zack Polanski,Grn,21.0,45.0
+2026-07-23,Ipsos,1050,leader,Andy Burnham,Lab,28.0,21.0
+2026-07-24,Survation,1021,leader,Andy Burnham,Lab,39.0,25.0
+2026-07-24,Survation,1021,leader,Ed Davey,LD,27.0,27.0
+2026-07-24,Survation,1021,leader,Kemi Badenoch,Con,33.0,30.0
+2026-07-24,Survation,1021,leader,Nigel Farage,Ref,34.0,43.0
+2026-07-24,Survation,1021,leader,Zack Polanski,Grn,21.0,38.0
+2026-07-24,Survation,1021,party,Conservative,Con,32.0,37.0
+2026-07-24,Survation,1021,party,Green,Grn,28.0,36.0
+2026-07-24,Survation,1021,party,Labour,Lab,36.0,39.0
+2026-07-24,Survation,1021,party,Lib Dems,LD,30.0,32.0
+2026-07-24,Survation,1021,party,Reform,Ref,34.0,40.0
+2026-07-27,YouGov,1778,leader,Andy Burnham,Lab,32.0,21.0
+2026-07-27,Public First,1995,leader,Andy Burnham,Lab,45.0,26.0
+2026-07-27,Deltapoll,2021,leader,Andy Burnham,Lab,42.0,24.0
+2026-07-27,YouGov,1778,leader,Ed Davey,LD,29.0,26.0
+2026-07-27,Public First,1995,leader,Ed Davey,LD,25.0,29.0
+2026-07-27,YouGov,1778,leader,Kemi Badenoch,Con,38.0,31.0
+2026-07-27,Public First,1995,leader,Kemi Badenoch,Con,37.0,32.0
+2026-07-27,Deltapoll,2021,leader,Kemi Badenoch,Con,44.0,37.0
+2026-07-27,YouGov,1778,leader,Nigel Farage,Ref,27.0,55.0
+2026-07-27,Public First,1995,leader,Nigel Farage,Ref,33.0,54.0
+2026-07-27,Deltapoll,2021,leader,Nigel Farage,Ref,37.0,54.0
+2026-07-27,YouGov,1778,leader,Zack Polanski,Grn,23.0,43.0
+2026-07-27,Public First,1995,leader,Zack Polanski,Grn,22.0,39.0
+2026-07-27,Survation,1012,party,Conservative,Con,37.0,37.0
+2026-07-27,Survation,1012,party,Green,Grn,29.0,39.0
+2026-07-27,Survation,1012,party,Labour,Lab,35.0,41.0
+2026-07-27,Survation,1012,party,Lib Dems,LD,30.0,34.0
+2026-07-27,Survation,1012,party,Reform,Ref,34.0,43.0
+2026-07-29,BMG Research,1559,leader,Andy Burnham,Lab,26.0,21.0
+2026-07-29,BMG Research,1559,leader,Ed Davey,LD,18.0,25.0
+2026-07-29,BMG Research,1559,leader,Kemi Badenoch,Con,27.0,28.0
+2026-07-29,BMG Research,1559,leader,Nigel Farage,Ref,23.0,49.0
+2026-07-29,BMG Research,1559,leader,Zack Polanski,Grn,18.0,40.0
+2026-07-31,Opinium,2050,leader,Andy Burnham,Lab,36.0,20.0
+2026-07-31,Opinium,2050,leader,Ed Davey,LD,24.0,23.0
+2026-07-31,Opinium,2050,leader,Kemi Badenoch,Con,31.0,30.0
+2026-07-31,Opinium,2050,leader,Nigel Farage,Ref,26.0,50.0
+2026-07-31,Opinium,2050,leader,Zack Polanski,Grn,20.0,40.0
+2026-07-31,YouGov,2027,party,Conservative,Con,30.0,63.0
+2026-07-31,YouGov,2027,party,Green,Grn,33.0,56.0
+2026-07-31,YouGov,2027,party,Labour,Lab,34.0,59.0
+2026-07-31,YouGov,2027,party,Lib Dems,LD,36.0,49.0
+2026-07-31,YouGov,2027,party,Reform,Ref,27.0,65.0
+2026-08-02,More in Common,3384,leader,Andy Burnham,Lab,38.0,18.0
+2026-08-02,More in Common,3384,leader,Ed Davey,LD,21.0,26.0
+2026-08-02,More in Common,3384,leader,Kemi Badenoch,Con,32.0,29.0
+2026-08-02,More in Common,3384,leader,Nigel Farage,Ref,26.0,51.0
+2026-08-02,More in Common,3384,leader,Zack Polanski,Grn,16.0,44.0
+2026-08-04,Ipsos,1033,leader,Andy Burnham,Lab,50.0,31.0
+2026-08-04,Ipsos,1033,leader,Ed Davey,LD,31.0,39.0
+2026-08-04,Ipsos,1033,leader,Kemi Badenoch,Con,33.0,47.0
+2026-08-04,Ipsos,1033,leader,Nigel Farage,Ref,24.0,65.0
+2026-08-04,Ipsos,1033,leader,Zack Polanski,Grn,22.0,53.0
+2026-08-04,Ipsos,1033,party,Conservative,Con,24.0,56.0
+2026-08-04,Ipsos,1033,party,Green,Grn,33.0,42.0
+2026-08-04,Ipsos,1033,party,Labour,Lab,30.0,51.0
+2026-08-04,Ipsos,1033,party,Lib Dems,LD,27.0,43.0
+2026-08-04,Ipsos,1033,party,Reform,Ref,26.0,62.0
+2026-08-06,YouGov,2108,leader,Andy Burnham,Lab,47.0,36.0
+2026-08-06,YouGov,2108,leader,Ed Davey,LD,27.0,37.0
+2026-08-06,YouGov,2108,leader,Kemi Badenoch,Con,35.0,46.0
+2026-08-06,YouGov,2108,leader,Nigel Farage,Ref,27.0,66.0
+2026-08-06,YouGov,2108,leader,Rupert Lowe,Oth,17.0,37.0
+2026-08-06,YouGov,2108,leader,Zack Polanski,Grn,19.0,50.0
+2026-08-07,Opinium,2050,leader,Andy Burnham,Lab,37.0,21.0
+2026-08-07,Opinium,2050,leader,Ed Davey,LD,20.0,24.0
+2026-08-07,Opinium,2050,leader,Kemi Badenoch,Con,27.0,32.0
+2026-08-07,Opinium,2050,leader,Nigel Farage,Ref,26.0,51.0
+2026-08-07,Opinium,2050,leader,Zack Polanski,Grn,19.0,42.0
+2026-08-10,More in Common,2128,leader,Andy Burnham,Lab,36.0,22.0
+2026-08-10,Freshwater Strategy,1248,leader,Andy Burnham,Lab,42.0,30.0
+2026-08-10,More in Common,2128,leader,Ed Davey,LD,19.0,27.0
+2026-08-10,Freshwater Strategy,1248,leader,Ed Davey,LD,24.0,28.0
+2026-08-10,More in Common,2128,leader,Kemi Badenoch,Con,30.0,29.0
+2026-08-10,Freshwater Strategy,1248,leader,Kemi Badenoch,Con,35.0,31.0
+2026-08-10,More in Common,2128,leader,Nigel Farage,Ref,24.0,51.0
+2026-08-10,Freshwater Strategy,1248,leader,Nigel Farage,Ref,31.0,52.0
+2026-08-10,More in Common,2128,leader,Zack Polanski,Grn,15.0,44.0
+2026-08-10,Freshwater Strategy,1248,leader,Zack Polanski,Grn,20.0,44.0
+2026-08-10,Freshwater Strategy,1248,party,Conservative,Con,33.0,44.0
+2026-08-10,Freshwater Strategy,1248,party,Green,Grn,30.0,42.0
+2026-08-10,Freshwater Strategy,1248,party,Labour,Lab,34.0,50.0
+2026-08-10,Freshwater Strategy,1248,party,Lib Dems,LD,30.0,36.0
+2026-08-10,Freshwater Strategy,1248,party,Reform,Ref,35.0,49.0
+2026-08-13,Find Out Now,2150,leader,Andy Burnham,Lab,29.0,29.0
+2026-08-13,Survation,2004,leader,Andy Burnham,Lab,46.0,27.0
+2026-08-13,Find Out Now,2150,leader,Ed Davey,LD,15.0,27.0
+2026-08-13,Find Out Now,2150,leader,Kemi Badenoch,Con,22.0,37.0
+2026-08-13,Survation,2004,leader,Kemi Badenoch,Con,37.0,35.0
+2026-08-13,Find Out Now,2150,leader,Nigel Farage,Ref,22.0,53.0
+2026-08-13,Survation,2004,leader,Nigel Farage,Ref,32.0,52.0
+2026-08-13,Find Out Now,2150,leader,Rupert Lowe,Oth,14.0,28.0
+2026-08-13,Find Out Now,2150,leader,Zack Polanski,Grn,16.0,39.0
+2026-08-14,YouGov,2101,leader,Andy Burnham,Lab,46.0,33.0
+2026-08-14,Opinium,2050,leader,Andy Burnham,Lab,35.0,24.0
+2026-08-14,YouGov,2101,leader,Ed Davey,LD,25.0,33.0
+2026-08-14,Opinium,2050,leader,Ed Davey,LD,19.0,25.0
+2026-08-14,YouGov,2101,leader,Kemi Badenoch,Con,31.0,47.0
+2026-08-14,Opinium,2050,leader,Kemi Badenoch,Con,26.0,31.0
+2026-08-14,YouGov,2101,leader,Nigel Farage,Ref,23.0,67.0
+2026-08-14,Opinium,2050,leader,Nigel Farage,Ref,25.0,53.0
+2026-08-14,YouGov,2101,leader,Zack Polanski,Grn,19.0,48.0
+2026-08-14,Opinium,2050,leader,Zack Polanski,Grn,18.0,42.0
+2026-08-17,More in Common,2055,leader,Andy Burnham,Lab,38.0,22.0
+2026-08-17,Public First,2007,leader,Andy Burnham,Lab,45.0,27.0
+2026-08-17,More in Common,2055,leader,Ed Davey,LD,20.0,28.0
+2026-08-17,Public First,2007,leader,Ed Davey,LD,27.0,29.0
+2026-08-17,More in Common,2055,leader,Kemi Badenoch,Con,33.0,30.0
+2026-08-17,Public First,2007,leader,Kemi Badenoch,Con,36.0,34.0
+2026-08-17,More in Common,2055,leader,Nigel Farage,Ref,28.0,48.0
+2026-08-17,Public First,2007,leader,Nigel Farage,Ref,33.0,48.0
+2026-08-17,More in Common,2055,leader,Zack Polanski,Grn,17.0,42.0
+2026-08-17,Public First,2007,leader,Zack Polanski,Grn,23.0,39.0
+2026-08-18,Survation,2013,leader,Andy Burnham,Lab,45.0,31.0
+2026-08-18,Survation,2013,leader,Ed Davey,LD,31.0,33.0
+2026-08-18,Survation,2013,leader,Kemi Badenoch,Con,41.0,35.0
+2026-08-18,Survation,2013,leader,Nigel Farage,Ref,33.0,51.0
+2026-08-18,Survation,2013,leader,Zack Polanski,Grn,26.0,45.0
+2026-08-20,YouGov,2380,leader,Andy Burnham,Lab,43.0,38.0
+2026-08-23,More in Common,2055,leader,Andy Burnham,Lab,39.0,27.0
+2026-08-23,More in Common,2055,leader,Ed Davey,LD,23.0,25.0
+2026-08-23,More in Common,2055,leader,Kemi Badenoch,Con,31.0,30.0
+2026-08-23,More in Common,2055,leader,Nigel Farage,Ref,27.0,50.0
+2026-08-23,More in Common,2055,leader,Rupert Lowe,Oth,17.0,26.0
+2026-08-23,More in Common,2055,leader,Zack Polanski,Grn,17.0,43.0
+2026-08-24,YouGov,1783,leader,Andy Burnham,Lab,43.0,31.0
+2026-08-24,Deltapoll,2032,leader,Andy Burnham,Lab,56.0,30.0
+2026-08-24,YouGov,1783,leader,Ed Davey,LD,28.0,31.0
+2026-08-24,YouGov,1783,leader,Kemi Badenoch,Con,36.0,36.0
+2026-08-24,Deltapoll,2032,leader,Kemi Badenoch,Con,48.0,35.0
+2026-08-24,YouGov,1783,leader,Nigel Farage,Ref,26.0,59.0
+2026-08-24,Deltapoll,2032,leader,Nigel Farage,Ref,38.0,54.0
+2026-08-24,YouGov,1783,leader,Zack Polanski,Grn,21.0,49.0
+2026-08-26,BMG Research,1579,leader,Andy Burnham,Lab,30.0,25.0
+2026-08-26,BMG Research,1579,leader,Ed Davey,LD,18.0,26.0
+2026-08-26,BMG Research,1579,leader,Kemi Badenoch,Con,27.0,27.0
+2026-08-26,BMG Research,1579,leader,Nigel Farage,Ref,26.0,46.0
+2026-08-26,BMG Research,1579,leader,Zack Polanski,Grn,17.0,39.0
+2026-08-27,Ipsos,2277,leader,Andy Burnham,Lab,40.0,27.0
+2026-08-27,Ipsos,2277,leader,Ed Davey,LD,23.0,29.0
+2026-08-27,Ipsos,2277,leader,Kemi Badenoch,Con,27.0,38.0
+2026-08-27,Ipsos,2277,leader,Nigel Farage,Ref,26.0,54.0
+2026-08-27,Ipsos,2277,leader,Rupert Lowe,Oth,17.0,46.0
+2026-08-27,Ipsos,2277,leader,Zack Polanski,Grn,19.0,44.0
+2026-08-27,Ipsos,2277,party,Conservative,Con,23.0,46.0
+2026-08-27,Ipsos,2277,party,Green,Grn,25.0,40.0
+2026-08-27,Ipsos,2277,party,Labour,Lab,30.0,40.0
+2026-08-27,Ipsos,2277,party,Lib Dems,LD,24.0,33.0
+2026-08-27,Ipsos,2277,party,Reform,Ref,27.0,52.0
+2026-08-28,Opinium,2003,leader,Andy Burnham,Lab,37.0,23.0
+2026-08-28,Opinium,2003,leader,Ed Davey,LD,18.0,26.0
+2026-08-28,Opinium,2003,leader,Kemi Badenoch,Con,28.0,31.0
+2026-08-28,Opinium,2003,leader,Nigel Farage,Ref,27.0,50.0
+2026-08-28,Opinium,2003,leader,Zack Polanski,Grn,20.0,41.0
+2026-08-31,More in Common,2522,leader,Andy Burnham,Lab,37.0,24.0
+2026-08-31,More in Common,2522,leader,Ed Davey,LD,20.0,25.0
+2026-08-31,More in Common,2522,leader,Kemi Badenoch,Con,30.0,29.0
+2026-08-31,More in Common,2522,leader,Nigel Farage,Ref,25.0,52.0
+2026-08-31,More in Common,2522,leader,Rupert Lowe,Oth,15.0,26.0
+2026-08-31,More in Common,2522,leader,Zack Polanski,Grn,15.0,43.0
+2026-09-03,Find Out Now,1500,leader,Andy Burnham,Lab,28.0,26.0
+2026-09-03,Find Out Now,1500,leader,Ed Davey,LD,15.0,29.0
+2026-09-03,Find Out Now,1500,leader,Kemi Badenoch,Con,26.0,30.0
+2026-09-03,Find Out Now,1500,leader,Nigel Farage,Ref,20.0,49.0
+2026-09-03,Find Out Now,1500,leader,Zack Polanski,Grn,15.0,41.0
+2026-09-04,Opinium,2050,leader,Andy Burnham,Lab,39.0,24.0
+2026-09-04,Opinium,2050,leader,Ed Davey,LD,21.0,26.0
+2026-09-04,Opinium,2050,leader,Kemi Badenoch,Con,29.0,31.0
+2026-09-04,Opinium,2050,leader,Nigel Farage,Ref,26.0,51.0
+2026-09-04,Opinium,2050,leader,Zack Polanski,Grn,19.0,41.0
+2026-09-06,More in Common,2130,leader,Andy Burnham,Lab,39.0,25.0
+2026-09-06,Freshwater Strategy,1249,leader,Andy Burnham,Lab,45.0,28.0
+2026-09-06,More in Common,2130,leader,Ed Davey,LD,22.0,25.0
+2026-09-06,Freshwater Strategy,1249,leader,Ed Davey,LD,26.0,23.0
+2026-09-06,More in Common,2130,leader,Kemi Badenoch,Con,33.0,29.0
+2026-09-06,Freshwater Strategy,1249,leader,Kemi Badenoch,Con,33.0,30.0
+2026-09-06,More in Common,2130,leader,Nigel Farage,Ref,26.0,52.0
+2026-09-06,Freshwater Strategy,1249,leader,Nigel Farage,Ref,29.0,52.0
+2026-09-06,More in Common,2130,leader,Rupert Lowe,Oth,17.0,24.0
+2026-09-06,More in Common,2130,leader,Zack Polanski,Grn,16.0,43.0
+2026-09-06,Freshwater Strategy,1249,leader,Zack Polanski,Grn,20.0,39.0
+2026-09-06,Freshwater Strategy,1249,party,Conservative,Con,34.0,45.0
+2026-09-06,Freshwater Strategy,1249,party,Green,Grn,31.0,38.0
+2026-09-06,Freshwater Strategy,1249,party,Labour,Lab,37.0,45.0
+2026-09-06,Freshwater Strategy,1249,party,Lib Dems,LD,30.0,33.0
+2026-09-06,Freshwater Strategy,1249,party,Reform,Ref,32.0,50.0
+2026-09-10,YouGov,2099,leader,Andy Burnham,Lab,46.0,39.0
+2026-09-10,Survation,2043,leader,Andy Burnham,Lab,43.0,28.0
+2026-09-10,YouGov,2099,leader,Ed Davey,LD,28.0,36.0
+2026-09-10,Survation,2043,leader,Ed Davey,LD,27.0,28.0
+2026-09-10,YouGov,2099,leader,Kemi Badenoch,Con,32.0,47.0
+2026-09-10,Survation,2043,leader,Kemi Badenoch,Con,37.0,29.0
+2026-09-10,YouGov,2099,leader,Nigel Farage,Ref,24.0,69.0
+2026-09-10,Survation,2043,leader,Nigel Farage,Ref,32.0,49.0
+2026-09-10,YouGov,2099,leader,Zack Polanski,Grn,19.0,48.0
+2026-09-10,Survation,2043,leader,Zack Polanski,Grn,21.0,41.0
+2026-09-10,Survation,2043,party,Conservative,Con,34.0,40.0
+2026-09-10,Survation,2043,party,Green,Grn,25.0,43.0
+2026-09-10,Survation,2043,party,Labour,Lab,35.0,43.0
+2026-09-10,Survation,2043,party,Lib Dems,LD,29.0,36.0
+2026-09-10,Survation,2043,party,Reform,Ref,32.0,49.0
+2026-09-11,Opinium,2050,leader,Andy Burnham,Lab,35.0,30.0
+2026-09-11,Opinium,2050,leader,Ed Davey,LD,21.0,24.0
+2026-09-11,Opinium,2050,leader,Kemi Badenoch,Con,31.0,31.0
+2026-09-11,Opinium,2050,leader,Nigel Farage,Ref,26.0,52.0
+2026-09-11,Find Out Now,5549,leader,Rupert Lowe,Oth,12.0,34.0
+2026-09-11,Opinium,2050,leader,Zack Polanski,Grn,18.0,41.0
+2026-09-14,Deltapoll,2056,leader,Andy Burnham,Lab,54.0,33.0
+2026-09-14,Deltapoll,2056,leader,Ed Davey,LD,38.0,38.0
+2026-09-14,Deltapoll,2056,leader,Kemi Badenoch,Con,44.0,39.0
+2026-09-14,Deltapoll,2056,leader,Nigel Farage,Ref,36.0,54.0
+2026-09-14,Deltapoll,2056,leader,Rupert Lowe,Oth,28.0,43.0
+2026-09-14,Deltapoll,2056,leader,Zack Polanski,Grn,32.0,45.0
+2026-09-15,Public First,2028,leader,Andy Burnham,Lab,46.0,31.0
+2026-09-15,More in Common,2038,leader,Andy Burnham,Lab,37.0,27.0
+2026-09-15,Ipsos,1031,leader,Andy Burnham,Lab,31.0,44.0
+2026-09-15,More in Common,2038,leader,Ed Davey,LD,18.0,28.0
+2026-09-15,Ipsos,1031,leader,Ed Davey,LD,23.0,40.0
+2026-09-15,Public First,2028,leader,Kemi Badenoch,Con,38.0,34.0
+2026-09-15,More in Common,2038,leader,Kemi Badenoch,Con,30.0,29.0
+2026-09-15,Ipsos,1031,leader,Kemi Badenoch,Con,28.0,46.0
+2026-09-15,Public First,2028,leader,Nigel Farage,Ref,34.0,53.0
+2026-09-15,More in Common,2038,leader,Nigel Farage,Ref,25.0,53.0
+2026-09-15,Ipsos,1031,leader,Nigel Farage,Ref,24.0,61.0
+2026-09-15,More in Common,2038,leader,Rupert Lowe,Oth,16.0,27.0
+2026-09-15,More in Common,2038,leader,Zack Polanski,Grn,14.0,43.0
+2026-09-15,Ipsos,1031,leader,Zack Polanski,Grn,18.0,50.0
+2026-09-18,Opinium,2050,leader,Andy Burnham,Lab,35.0,31.0
+2026-09-18,Opinium,2050,leader,Ed Davey,LD,19.0,27.0
+2026-09-18,Opinium,2050,leader,Kemi Badenoch,Con,27.0,33.0
+2026-09-18,Opinium,2050,leader,Nigel Farage,Ref,24.0,52.0
+2026-09-18,Opinium,2050,leader,Zack Polanski,Grn,20.0,43.0
+2026-09-21,YouGov,2042,leader,Andy Burnham,Lab,45.0,39.0
+2026-09-21,More in Common,2113,leader,Andy Burnham,Lab,38.0,28.0
+2026-09-21,YouGov,1782,leader,Ed Davey,LD,26.0,31.0
+2026-09-21,More in Common,2113,leader,Ed Davey,LD,20.0,27.0
+2026-09-21,YouGov,1782,leader,Kemi Badenoch,Con,36.0,35.0
+2026-09-21,More in Common,2113,leader,Kemi Badenoch,Con,33.0,31.0
+2026-09-21,YouGov,1782,leader,Nigel Farage,Ref,26.0,57.0
+2026-09-21,More in Common,2113,leader,Nigel Farage,Ref,25.0,52.0
+2026-09-21,More in Common,2113,leader,Rupert Lowe,Oth,16.0,27.0
+2026-09-21,YouGov,1782,leader,Zack Polanski,Grn,21.0,48.0
+2026-09-21,More in Common,2113,leader,Zack Polanski,Grn,16.0,43.0
+2026-09-23,Survation,1224,leader,Andy Burnham,Lab,45.0,29.0
+2026-09-23,Ipsos,2284,leader,Andy Burnham,Lab,39.0,32.0
+2026-09-23,Survation,1224,leader,Ed Davey,LD,28.0,27.0
+2026-09-23,Ipsos,2284,leader,Ed Davey,LD,23.0,30.0
+2026-09-23,Survation,1224,leader,Kemi Badenoch,Con,39.0,31.0
+2026-09-23,Ipsos,2284,leader,Kemi Badenoch,Con,28.0,40.0
+2026-09-23,Survation,1224,leader,Nigel Farage,Ref,32.0,50.0
+2026-09-23,Ipsos,2284,leader,Nigel Farage,Ref,22.0,58.0
+2026-09-23,Ipsos,2284,leader,Rupert Lowe,Oth,15.0,47.0
+2026-09-23,Survation,1224,leader,Zack Polanski,Grn,19.0,45.0
+2026-09-23,Ipsos,2284,leader,Zack Polanski,Grn,18.0,46.0
+2026-09-23,Survation,1224,party,Conservative,Con,35.0,41.0
+2026-09-23,Ipsos,2284,party,Conservative,Con,24.0,46.0
+2026-09-23,Survation,1224,party,Green,Grn,26.0,46.0
+2026-09-23,Ipsos,2284,party,Green,Grn,22.0,43.0
+2026-09-23,Survation,1224,party,Labour,Lab,38.0,45.0
+2026-09-23,Ipsos,2284,party,Labour,Lab,30.0,42.0
+2026-09-23,Survation,1224,party,Lib Dems,LD,27.0,38.0
+2026-09-23,Ipsos,2284,party,Lib Dems,LD,24.0,34.0
+2026-09-23,Survation,1224,party,Reform,Ref,34.0,48.0
+2026-09-23,Ipsos,2284,party,Reform,Ref,25.0,55.0
+2026-09-24,BMG Research,1515,leader,Andy Burnham,Lab,33.0,31.0
+2026-09-24,BMG Research,1515,leader,Ed Davey,LD,17.0,28.0
+2026-09-24,BMG Research,1515,leader,Kemi Badenoch,Con,28.0,26.0
+2026-09-24,BMG Research,1515,leader,Nigel Farage,Ref,25.0,48.0
+2026-09-24,BMG Research,1515,leader,Zack Polanski,Grn,17.0,39.0
+2026-09-25,Opinium,2050,leader,Andy Burnham,Lab,37.0,30.0
+2026-09-25,Opinium,2050,leader,Ed Davey,LD,22.0,26.0
+2026-09-25,Opinium,2050,leader,Kemi Badenoch,Con,29.0,32.0
+2026-09-25,Opinium,2050,leader,Nigel Farage,Ref,26.0,51.0
+2026-09-25,Opinium,2050,leader,Zack Polanski,Grn,17.0,41.0
+2026-09-28,Lord Ashcroft Polls,5039,leader,Andy Burnham,Lab,40.0,27.0
+2026-09-28,Lord Ashcroft Polls,5039,leader,Ed Davey,LD,13.0,27.0
+2026-09-28,Lord Ashcroft Polls,5039,leader,Kemi Badenoch,Con,28.0,30.0
+2026-09-28,Lord Ashcroft Polls,5039,leader,Nigel Farage,Ref,20.0,57.0
+2026-09-28,Lord Ashcroft Polls,5039,leader,Zack Polanski,Grn,14.0,41.0
+2026-09-28,Lord Ashcroft Polls,5039,party,Conservative,Con,24.0,54.0
+2026-09-28,Lord Ashcroft Polls,5039,party,Green,Grn,27.0,46.0
+2026-09-28,Lord Ashcroft Polls,5039,party,Labour,Lab,27.0,50.0
+2026-09-28,Lord Ashcroft Polls,5039,party,Lib Dems,LD,22.0,39.0
+2026-09-28,Lord Ashcroft Polls,5039,party,Reform,Ref,23.0,62.0
+2026-09-29,More in Common,2041,leader,Andy Burnham,Lab,39.0,28.0
+2026-09-29,More in Common,2041,leader,Ed Davey,LD,21.0,29.0
+2026-09-29,More in Common,2041,leader,Kemi Badenoch,Con,32.0,32.0
+2026-09-29,More in Common,2041,leader,Nigel Farage,Ref,28.0,52.0
+2026-09-29,More in Common,2041,leader,Rupert Lowe,Oth,17.0,28.0
+2026-09-29,More in Common,2041,leader,Zack Polanski,Grn,17.0,42.0
+2026-09-30,Convergent Opinion,3464,leader,Andy Burnham,Lab,52.0,45.0
+2026-10-02,Opinium,2050,leader,Andy Burnham,Lab,39.0,31.0
+2026-10-02,Opinium,2050,leader,Ed Davey,LD,22.0,28.0
+2026-10-02,Opinium,2050,leader,Kemi Badenoch,Con,31.0,32.0
+2026-10-02,Opinium,2050,leader,Nigel Farage,Ref,27.0,49.0
+2026-10-02,Opinium,2050,leader,Zack Polanski,Grn,18.0,40.0
+2026-10-05,More in Common,2041,leader,Andy Burnham,Lab,43.0,27.0
+2026-10-05,Survation,1974,leader,Andy Burnham,Lab,47.0,28.0
+2026-10-05,More in Common,2041,leader,Ed Davey,LD,19.0,30.0
+2026-10-05,Survation,1974,leader,Ed Davey,LD,27.0,29.0
+2026-10-05,More in Common,2041,leader,Kemi Badenoch,Con,33.0,31.0
+2026-10-05,Survation,1974,leader,Kemi Badenoch,Con,36.0,31.0
+2026-10-05,More in Common,2041,leader,Nigel Farage,Ref,28.0,52.0
+2026-10-05,Survation,1974,leader,Nigel Farage,Ref,34.0,49.0
+2026-10-05,More in Common,2041,leader,Rupert Lowe,Oth,15.0,30.0
+2026-10-05,More in Common,2041,leader,Zack Polanski,Grn,16.0,44.0
+2026-10-05,Survation,1974,leader,Zack Polanski,Grn,21.0,43.0
+2026-10-05,Survation,1974,party,Conservative,Con,35.0,42.0
+2026-10-05,Survation,1974,party,Green,Grn,26.0,46.0
+2026-10-05,Survation,1974,party,Labour,Lab,39.0,42.0
+2026-10-05,Survation,1974,party,Lib Dems,LD,28.0,38.0
+2026-10-05,Survation,1974,party,Reform,Ref,35.0,47.0
+2026-10-09,Opinium,2050,leader,Andy Burnham,Lab,39.0,31.0
+2026-10-09,Opinium,2050,leader,Ed Davey,LD,21.0,27.0
+2026-10-09,Opinium,2050,leader,Kemi Badenoch,Con,31.0,32.0
+2026-10-09,Opinium,2050,leader,Nigel Farage,Ref,25.0,51.0
+2026-10-09,Opinium,2050,leader,Zack Polanski,Grn,17.0,46.0
+2026-10-11,Freshwater Strategy,1235,leader,Andy Burnham,Lab,42.0,38.0
+2026-10-11,Freshwater Strategy,1235,leader,Ed Davey,LD,21.0,29.0
+2026-10-11,Freshwater Strategy,1235,leader,Kemi Badenoch,Con,35.0,34.0
+2026-10-11,Freshwater Strategy,1235,leader,Nigel Farage,Ref,30.0,54.0
+2026-10-11,Freshwater Strategy,1235,leader,Zack Polanski,Grn,18.0,48.0
+2026-10-11,Freshwater Strategy,1235,party,Conservative,Con,33.0,46.0
+2026-10-11,Freshwater Strategy,1235,party,Green,Grn,26.0,47.0
+2026-10-11,Freshwater Strategy,1235,party,Labour,Lab,35.0,47.0
+2026-10-11,Freshwater Strategy,1235,party,Lib Dems,LD,28.0,36.0
+2026-10-11,Freshwater Strategy,1235,party,Reform,Ref,32.0,50.0
+2026-10-12,More in Common,2101,leader,Andy Burnham,Lab,40.0,29.0
+2026-10-12,More in Common,2101,leader,Ed Davey,LD,19.0,30.0
+2026-10-12,More in Common,2101,leader,Kemi Badenoch,Con,35.0,30.0
+2026-10-12,More in Common,2101,leader,Nigel Farage,Ref,26.0,52.0
+2026-10-12,More in Common,2101,leader,Rupert Lowe,Oth,16.0,31.0
+2026-10-12,More in Common,2101,leader,Zack Polanski,Grn,16.0,50.0
+2026-10-13,Ipsos,2257,leader,Andy Burnham,Lab,39.0,31.0
+2026-10-13,Ipsos,2257,leader,Ed Davey,LD,19.0,34.0
+2026-10-13,Ipsos,2257,leader,Kemi Badenoch,Con,28.0,40.0
+2026-10-13,Ipsos,2257,leader,Nigel Farage,Ref,25.0,56.0
+2026-10-13,Ipsos,2257,leader,Rupert Lowe,Oth,16.0,47.0
+2026-10-13,Ipsos,2257,leader,Zack Polanski,Grn,16.0,52.0
+2026-10-13,Ipsos,2257,party,Conservative,Con,24.0,46.0
+2026-10-13,Ipsos,2257,party,Green,Grn,22.0,46.0
+2026-10-13,Ipsos,2257,party,Labour,Lab,31.0,40.0
+2026-10-13,Ipsos,2257,party,Lib Dems,LD,21.0,38.0
+2026-10-13,Ipsos,2257,party,Reform,Ref,26.0,54.0
+2026-10-16,YouGov,2071,leader,Andy Burnham,Lab,46.0,42.0
+2026-10-16,YouGov,2071,leader,Ed Davey,LD,24.0,40.0
+2026-10-16,YouGov,2071,leader,Kemi Badenoch,Con,33.0,48.0
+2026-10-16,YouGov,2071,leader,Nigel Farage,Ref,25.0,67.0
+2026-10-16,YouGov,2071,leader,Rupert Lowe,Oth,15.0,35.0
+2026-10-16,YouGov,2071,leader,Zack Polanski,Grn,19.0,56.0
+2026-10-19,More in Common,3069,leader,Andy Burnham,Lab,40.0,30.0
+2026-10-19,More in Common,3069,leader,Ed Davey,LD,18.0,29.0
+2026-10-19,More in Common,3069,leader,Kemi Badenoch,Con,34.0,29.0
+2026-10-19,More in Common,3069,leader,Nigel Farage,Ref,25.0,53.0
+2026-10-19,More in Common,3069,leader,Rupert Lowe,Oth,15.0,30.0
+2026-10-19,More in Common,3069,leader,Zack Polanski,Grn,14.0,49.0
+2026-10-23,Opinium,2050,leader,Andy Burnham,Lab,38.0,32.0
+2026-10-23,Opinium,2050,leader,Ed Davey,LD,19.0,27.0
+2026-10-23,Opinium,2050,leader,Kemi Badenoch,Con,31.0,31.0
+2026-10-23,Opinium,2050,leader,Nigel Farage,Ref,24.0,52.0
+2026-10-23,Opinium,2050,leader,Zack Polanski,Grn,16.0,47.0

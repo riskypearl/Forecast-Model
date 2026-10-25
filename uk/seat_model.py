@@ -31,6 +31,7 @@ import numpy as np
 from scipy.special import expit, logit
 
 import poll_average as pa
+import tactical as tactics
 
 # ---------------------------------------------------------------------------
 # ASSUMPTIONS - change them and re-run.
@@ -73,6 +74,12 @@ UNIFORM_SWING_PARTIES = ["Oth"]
 # must have been run). Out of sample on 2019 -> 2024 it called 509 of 631
 # seats right, against 480 for plain logistic swing.
 DEMOGRAPHIC_SWING = True
+
+# Tactical voting (tactical.py): voters of parties outside a seat's top two
+# switch to whichever of the two they mind less, driven by current leader
+# unfavourability. Calibrated on 2024, where it took the backtest from 509
+# to 543 of 631 seats right and Labour from 362 to 402 (actual 409).
+TACTICAL_VOTING = True
 
 # A seat's own error, in points, for a party on 25% there (smaller shares get
 # proportionally less, by sqrt(p * (1 - p))). None = measure it from
@@ -127,7 +134,7 @@ def fill_new_candidates(shares, rows):
 # Logistic swing
 # ---------------------------------------------------------------------------
 
-def logistic_swing(base, weights, targets, iterations=25, elasticity=None):
+def logistic_swing(base, weights, targets, iterations=25, elasticity=None, tactical=None):
     """
     base:       seats x parties, shares (rows add to 1; 0 = party not standing)
     weights:    seats, each seat's share of the national vote
@@ -135,6 +142,9 @@ def logistic_swing(base, weights, targets, iterations=25, elasticity=None):
     elasticity: seats x parties, optional - how strongly each seat responds
                 to its party's national shift (1 = like everywhere else;
                 from swing_regression.py). None = 1 everywhere.
+    tactical:   optional (dislike matrix, strength per sim) - see tactical.py.
+                Applied inside the loop, so the national totals still hit
+                the target after voters switch.
     Returns sims x seats x parties.
 
     Each party gets one shift per sim, added to every seat's logit (times
@@ -157,6 +167,8 @@ def logistic_swing(base, weights, targets, iterations=25, elasticity=None):
             additive = base[None, :, uniform] + shift[:, None, uniform]
             shares[:, :, uniform] = np.clip(additive, 0.001, None) * (base[None, :, uniform] > 0)
         shares /= shares.sum(axis=2, keepdims=True)
+        if tactical is not None:
+            shares = tactics.squeeze(shares, *tactical)
         achieved = np.einsum("i,sij->sj", weights, shares)
         step = logit(targets) - logit(achieved)
         step[:, uniform] = (targets - achieved)[:, uniform]
@@ -171,10 +183,10 @@ def uniform_swing(base, weights, targets):
     return shares / shares.sum(axis=2, keepdims=True)
 
 
-def swing(base, weights, targets, elasticity=None):
+def swing(base, weights, targets, elasticity=None, tactical=None):
     if SWING_UNIFORM_WEIGHT == 0:
-        return logistic_swing(base, weights, targets, elasticity=elasticity)
-    return ((1 - SWING_UNIFORM_WEIGHT) * logistic_swing(base, weights, targets, elasticity=elasticity)
+        return logistic_swing(base, weights, targets, elasticity=elasticity, tactical=tactical)
+    return ((1 - SWING_UNIFORM_WEIGHT) * logistic_swing(base, weights, targets, elasticity=elasticity, tactical=tactical)
             + SWING_UNIFORM_WEIGHT * uniform_swing(base, weights, targets))
 
 
@@ -221,7 +233,8 @@ def seat_error_sd():
 
     With DEMOGRAPHIC_SWING, the regression used here is fitted on the three
     earlier election pairs only, so 2024 is out of sample and the error isn't
-    flattered.
+    flattered. With TACTICAL_VOTING, 2024's tactical squeeze is included
+    (its strength was calibrated on 2024, so this part is in sample).
     """
     if SEAT_ERROR_SD is not None:
         return SEAT_ERROR_SD
@@ -229,8 +242,13 @@ def seat_error_sd():
         import swing_regression as sr
         pairs = [sr.load_pair(*p) for p in sr.PAIRS]
         latest = pairs[-1]
-        old, new = latest["old"], latest["new"]
-        predicted = sr.evaluate(latest, sr.fit(pairs[:-1]))[2]
+        old, new, weights = latest["old"], latest["new"], latest["weights"]
+        tactical = None
+        if TACTICAL_VOTING:
+            from datetime import date
+            tactical = (tactics.dislike_matrix(tactics.negatives(date(2024, 7, 4))), np.array([tactics.STRENGTH]))
+        predicted = logistic_swing(old, weights, (weights @ new)[None, :],
+                                   elasticity=sr.elasticity(latest["X"], sr.fit(pairs[:-1])), tactical=tactical)[0]
     else:
         old, new, weights = backtest_inputs()
         predicted = swing(old, weights, (weights @ new)[None, :])[0]
@@ -265,7 +283,7 @@ def national_draws(rng, average, field):
 # Run
 # ---------------------------------------------------------------------------
 
-def simulate(base, weights, average, field, seat_sd, rng, elasticity=None, chunk=1000):
+def simulate(base, weights, average, field, seat_sd, rng, elasticity=None, dislike=None, chunk=1000):
     """Returns (winner index per sim and seat, mean projected shares per seat)."""
     nationals = national_draws(rng, average, field)
     winners = np.empty((SIMULATIONS, base.shape[0]), dtype=np.int8)
@@ -273,7 +291,8 @@ def simulate(base, weights, average, field, seat_sd, rng, elasticity=None, chunk
     standing = base > 0
     for start in range(0, SIMULATIONS, chunk):
         targets = nationals[start:start + chunk]
-        swung = swing(base, weights, targets, elasticity)
+        tactical = None if dislike is None else (dislike, tactics.strength_draws(rng, len(targets)))
+        swung = swing(base, weights, targets, elasticity, tactical)
         noise = t_draws(rng, swung.shape) * seat_sd / 100 * size_scale(swung)
         noisy = np.clip(swung + noise, 0.0005, None) * standing[None, :, :]
         noisy /= noisy.sum(axis=2, keepdims=True)
@@ -317,7 +336,9 @@ def main():
 
     seat_sd = seat_error_sd()
     elasticity = seat_elasticity(seats, base)
-    winners, mean_shares = simulate(base, weights, average, field, seat_sd, rng, elasticity)
+    neg = tactics.negatives(pa.TODAY) if TACTICAL_VOTING else None
+    dislike = tactics.dislike_matrix(neg) if neg else None
+    winners, mean_shares = simulate(base, weights, average, field, seat_sd, rng, elasticity, dislike)
 
     # Seat probabilities and the per-seat file
     win_prob = np.stack([(winners == j).mean(axis=0) for j in range(len(PARTIES))], axis=1)
@@ -351,6 +372,9 @@ def main():
           f"(+ Speaker + {len(ni)} Northern Ireland, held fixed)")
     print(f"Swing: {'logistic + demographic elasticities' if elasticity is not None else 'logistic'}; "
           f"seat error SD, measured on 2019->2024: {seat_sd:.1f} points for a party on 25%")
+    if neg:
+        print(f"Tactical voting on (strength {tactics.STRENGTH}, varied by run). Leader negatives now: "
+              + ", ".join(f"{p} {100 * v:.0f}%" for p, v in neg.items() if p in ("Lab", "Con", "Ref", "LD", "Grn")))
     print(f"\n{'':6}{'vote':>6}{'seats':>7}{'90% range':>13}{'largest':>9}{'majority':>10}")
     for t in sorted(totals, key=lambda t: -t["mean"]):
         print(f"{t['party']:6}{t['vote_share']:6.1f}{t['median']:7d}{t['p5']:>7d}-{t['p95']:<5d}"

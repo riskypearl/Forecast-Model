@@ -9,7 +9,7 @@ AK-01,The New York Times/Siena University,2026-06-29,39.16,51.14,8.6,593,lv,
 AK-01,The Bullfinch Group,2026-07-16,32,46,0.0,546,lv,IND
 AK-01,Data for Progress,2026-08-04,37,47,4.0,605,lv,
 AK-01,GBAO,2026-08-05,42,46,12,500,lv,IND
-AK-01,Alaska Survey Research,2026-08-05,15.2,50.4,0.0,1371,lv,
+AK-01,Alaska Survey Research,2026-08-05,46.5,53.6,0.0,1371,lv,
 AK-01,Alaska Survey Research,2026-08-23,5.7,50.6,0.0,1872,lv,
 AK-01,The Bullfinch Group,2026-09-06,7.4,44.2,9.9,820,lv,IND
 AK-01,Fabrizio Ward/Impact Research,2026-09-11,43,57,0.0,800,lv,
@@ -36,14 +36,18 @@ CA-48,Blueprint Polling,2025-10-26,43,40,17,517,lv,DEM
 CA-48,Lake Research Partners,2026-07-14,48,46,6.0,500,lv,DEM
 CA-48,SurveyUSA,2026-09-01,45,42,13.0,522,lv,
 CA-48,SurveyUSA,2026-10-07,47,38,15.0,518,lv,
+CA-48,Tarrance Group,2026-10-20,47,44,9,410,lv,REP
 CO-03,Expedition Strategies,2026-01-12,39,48,13,400,lv,DEM
 CO-03,Ragnar Research Partners,2026-03-12,41,46,13.0,400,lv,REP
 CO-03,"Keating Research, Inc.",2026-07-23,45,46,9.0,500,lv,DEM
+CO-03,DCCC Targeting Team,2026-10-21,47,46,8.0,402,lv,DEM
 CO-04,Impact Research,2026-09-24,40,45,6.0,403,lv,OTH
 CO-05,Global Strategy Group,2025-11-03,40,43,13.0,450,lv,DEM
 CO-05,Global Strategy Group,2026-07-21,44,45,11.0,450,lv,DEM
 CO-05,Global Strategy Group,2026-10-18,44,44,12,500,lv,DEM
+CO-05,Public Policy Polling,2026-10-20,47,47,6,577,lv,DEM
 CO-08,McLaughlin & Associates,2026-09-17,46.6,47,6.4,400,lv,REP
+CT-05,OnMessage Inc.,2026-10-01,51,45,4.0,400,lv,REP
 FL-02,Patriot Polling,2026-07-26,39.1,58.5,2.4,922,lv,REP
 FL-07,Public Policy Polling,2026-05-21,41,39,20,570,rv,DEM
 FL-07,DCCC Targeting Team,2026-10-19,44,47,9,414,lv,DEM
@@ -81,9 +85,11 @@ IA-03,Change Research,2025-10-27,45,42,13.0,638,lv,DEM
 IA-03,Ragnar Research Partners,2026-03-14,42,48,10.0,400,lv,REP
 ID-01,SurveyUSA,2026-07-14,35,45,14.0,480,lv,IND
 ID-01,Change Research,2026-07-30,27,48,18.0,600,lv,IND
+ID-02,VoteNexus,2026-10-22,31,46,12.0,600,lv,IND
 IL-04,The Bullfinch Group,2026-08-03,34,15,37.0,653,rv,
 IN-05,Impact Research,2026-07-20,46,48,6,600,lv,DEM
 IN-05,Expedition Strategies,2026-10-04,47,48,5,600,lv,DEM
+KS-02,DCCC Targeting Team,2026-10-20,46,49,6.0,639,lv,DEM
 KY-06,Public Policy Polling,2026-04-25,36,37,27,675,rv,DEM
 KY-06,GQR,2026-06-28,39,42,19.0,600,lv,DEM
 KY-06,DCCC Targeting Team,2026-07-30,47,47,6.0,474,lv,DEM
@@ -199,6 +205,7 @@ NY-21,Public Policy Polling,2026-10-13,44,46,10,600,lv,DEM
 NY-23,Public Policy Polling,2026-09-23,35,52,13,626,lv,DEM
 OH-01,Quantus Insights,2026-08-24,47.9,44.6,5.1,509,lv,
 OH-01,Torchlight Strategies,2026-10-02,45.3,45.3,9.5,400,lv,REP
+OH-01,Quantus Insights,2026-10-21,47.6,43.9,2.3,561,lv,
 OH-07,GBAO,2026-06-20,43,44,13.0,500,lv,DEM
 OH-07,Tavern Research,2026-08-04,50,50,0.0,635,lv,
 OH-07,Bedrock Polling,2026-08-10,43,35,16.0,866,lv,DEM
@@ -245,6 +252,7 @@ TN-09,Hart Research Associates,2026-09-03,44,48,8,400,lv,DEM
 TX-02,Impact Research,2026-10-04,37,46,17,501,lv,DEM
 TX-09,Public Policy Polling,2026-09-19,39,45,16.0,560,rv,DEM
 TX-09,University of Houston Hobby School of Public Affairs,2026-10-07,42,48,10.0,677,lv,
+TX-09,DCCC Targeting Team,2026-10-22,47,48,5,490,lv,DEM
 TX-10,Change Research,2026-09-22,41,48,11.0,613,lv,DEM
 TX-15,Public Policy Polling,2025-09-11,38,41,21.0,533,rv,DEM
 TX-15,Applecart,2026-05-25,48,46,6.0,802,lv,DEM
