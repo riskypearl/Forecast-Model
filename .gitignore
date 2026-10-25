@@ -5,3 +5,6 @@ logs/
 data/electindex/
 data/downballot/
 data/silverbulletin/
+
+# Reference papers (author manuscripts; kept locally, not redistributed)
+papers/

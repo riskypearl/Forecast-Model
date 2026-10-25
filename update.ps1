@@ -30,7 +30,15 @@ Step "forecast" { & $python forecast.py }
 if (Test-Path "data\electindex\races.csv") {
     Step "house forecast" { & $python house_forecast.py }
 }
-Step "git add" { & $git add -A }
+# Only the files fetch_polls.py, forecast.py and house_forecast.py write - so
+# work in progress elsewhere in the repo (e.g. uk/) is never committed or
+# pushed by the schedule.
+$outputs = @(
+    "data/polls.csv", "data/candidates.csv", "data/gcb_polls.csv", "data/house_polls.csv",
+    "results.csv", "seat_distribution.csv", "house_results.csv", "house_seat_distribution.csv",
+    "history"
+)
+Step "git add" { & $git add -- $outputs }
 & $git diff --cached --quiet
 if ($LASTEXITCODE -eq 0) {
     "Nothing changed - no commit." | Out-File -Append -Encoding utf8 $log
