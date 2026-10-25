@@ -76,10 +76,9 @@ UNIFORM_SWING_PARTIES = ["Oth"]
 DEMOGRAPHIC_SWING = True
 
 # Tactical voting (tactical.py): voters of parties outside a seat's top two
-# switch to whichever of the two they mind less. Each simulation draws a
-# scenario - none, against the most disliked leaders, or anti-government -
-# because tested on past elections no single method beat "none" (see
-# tactical_test.py). False = no tactical voting at all.
+# switch to whichever of the two they'd sooner vote for, as measured in the
+# British Election Study - the only method that beat "no tactical voting"
+# on past elections (tactical_test.py). False = no tactical voting at all.
 TACTICAL_VOTING = True
 
 # A seat's own error, in points, for a party on 25% there (smaller shares get
@@ -234,8 +233,8 @@ def seat_error_sd():
 
     With DEMOGRAPHIC_SWING, the regression used here is fitted on the three
     earlier election pairs only, so 2024 is out of sample and the error isn't
-    flattered. With TACTICAL_VOTING, 2024's tactical squeeze is included
-    (its strength was calibrated on 2024, so this part is in sample).
+    flattered. With TACTICAL_VOTING, 2024's tactical squeeze is included,
+    using the BES wave before 2024 at BES_STRENGTH.
     """
     if SEAT_ERROR_SD is not None:
         return SEAT_ERROR_SD
@@ -246,8 +245,7 @@ def seat_error_sd():
         old, new, weights = latest["old"], latest["new"], latest["weights"]
         tactical = None
         if TACTICAL_VOTING:
-            from datetime import date
-            tactical = (tactics.dislike_matrix(tactics.negatives(date(2024, 7, 4))), np.array([tactics.STRENGTH]))
+            tactical = (tactics.bes_dislike("2024"), np.array([tactics.BES_STRENGTH]))
         predicted = logistic_swing(old, weights, (weights @ new)[None, :],
                                    elasticity=sr.elasticity(latest["X"], sr.fit(pairs[:-1])), tactical=tactical)[0]
     else:
@@ -346,7 +344,6 @@ def main():
 
     seat_sd = seat_error_sd()
     elasticity = seat_elasticity(seats, base)
-    neg = tactics.negatives(pa.TODAY) if TACTICAL_VOTING else None
     matrices = tactics.scenario_matrices(pa.TODAY) if TACTICAL_VOTING else None
     winners, mean_shares, scenarios = simulate(base, weights, average, field, seat_sd, rng, elasticity, matrices)
 
@@ -382,11 +379,10 @@ def main():
           f"(+ Speaker + {len(ni)} Northern Ireland, held fixed)")
     print(f"Swing: {'logistic + demographic elasticities' if elasticity is not None else 'logistic'}; "
           f"seat error SD, measured on 2019->2024: {seat_sd:.1f} points for a party on 25%")
-    if neg:
-        print("Tactical voting: one scenario per run - " + ", ".join(
-            f"{name} ({100 * chance:.0f}%, strength ~{strength:g})" for name, (chance, strength) in tactics.SCENARIOS.items()))
-        print("Leader negatives now: "
-              + ", ".join(f"{p} {100 * v:.0f}%" for p, v in neg.items() if p in ("Lab", "Con", "Ref", "LD", "Grn")))
+    if matrices is not None:
+        print("Tactical voting: " + ", ".join(
+            f"{name} ({100 * chance:.0f}% of runs, strength ~{strength:g}, varied by run)"
+            for name, (chance, strength) in tactics.SCENARIOS.items()))
     print(f"\n{'':6}{'vote':>6}{'seats':>7}{'90% range':>13}{'largest':>9}{'majority':>10}")
     for t in sorted(totals, key=lambda t: -t["mean"]):
         print(f"{t['party']:6}{t['vote_share']:6.1f}{t['median']:7d}{t['p5']:>7d}-{t['p95']:<5d}"

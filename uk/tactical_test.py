@@ -18,6 +18,10 @@ Methods:
   changed+ratings     both
   anti-government     voters outside the top two back whoever can beat the
                       governing party (Conservative in every pair here)
+  bes                 dislike measured in the British Election Study wave
+                      before each election: how unlikely each party's voters
+                      say they'd ever be to vote for each other party
+  changed+bes         bes, only in seats whose top two have changed
 
 Ratings only exist from December 2019, so the two ratings methods are tested
 on 2017->19 and 2019->24 only (each strength picked on the other).
@@ -40,8 +44,9 @@ ELECTION_DAY = {"2015": date(2015, 5, 7), "2017": date(2017, 6, 8),
                 "2019": date(2019, 12, 12), "2024": date(2024, 7, 4)}
 GOVERNMENT = {"2015": "Con", "2017": "Con", "2019": "Con", "2024": "Con", "next": "Lab"}
 EQUAL = 0.45
-METHODS = ["none", "affinity", "ratings", "changed", "changed+ratings", "anti-government"]
+METHODS = ["none", "affinity", "ratings", "changed", "changed+ratings", "anti-government", "bes", "changed+bes"]
 NEEDS_RATINGS = {"ratings", "changed+ratings"}
+BES_METHODS = {"bes", "changed+bes"}   # dislike measured in the BES (bes_tables.py), every election
 
 
 anti_government = t.anti_government
@@ -57,6 +62,8 @@ def method_inputs(method, base, election, as_of):
         dislike = t.dislike_matrix(t.negatives(as_of))
     elif method == "anti-government":
         dislike = anti_government(GOVERNMENT[election])
+    elif method in BES_METHODS:
+        dislike = t.bes_dislike(election)
     else:
         dislike = t.dislike_matrix({p: EQUAL for p in sm.PARTIES})
     changed = t.top_two(base) if method.startswith("changed") else None
@@ -153,6 +160,8 @@ def nowcast():
                 dislike = t.dislike_matrix(t.negatives(pa.TODAY))
             elif method == "anti-government":
                 dislike = anti_government(GOVERNMENT["next"])
+            elif method in BES_METHODS:
+                dislike = t.bes_dislike("now")
             else:
                 dislike = t.dislike_matrix({p: EQUAL for p in sm.PARTIES})
             changed = t.top_two(base) if method.startswith("changed") else None

@@ -5,13 +5,13 @@ In each seat, voters of the parties outside the top two can switch to
 whichever of the top two they mind less - a Lib Dem in a Labour-v-Reform
 seat backing Labour to stop Reform. How many switch depends on:
 
-  1. Dislike: how much party k's voters mind party m =
-         affinity[k][m] x share of voters with a negative view of m's leader.
-     Affinity (data/tactical_affinity.csv, edit it) is a judgement: how far
-     apart the two parties' voters are - 1 = opposite camps, 0.25 = near
-     neighbours. Leader unfavourability comes from data/favourability.csv
-     and moves with the polls, so the direction of tactical voting follows
-     whichever leaders are most disliked at the time.
+  1. Dislike: how much party k's voters mind party m, measured in the
+     British Election Study: 1 - (k's voters' average 0-10 "how likely are
+     you ever to vote for m") / 10, from the BES wave before each election
+     (bes_tables.py -> data/bes/ptv_tables.csv; wave 31, May-June 2026, for
+     the nowcast). An older version - an affinity judgement
+     (data/tactical_affinity.csv) x leader unfavourability
+     (data/favourability.csv) - is kept for comparison as "ratings".
   2. Preference gap: in a seat whose top two are a and b, a k voter's
      reason to switch is dislike(a) - dislike(b). If both are equally
      disliked, nobody bothers.
@@ -26,18 +26,14 @@ Votes are moved between parties within each seat; seat_model.py then
 re-solves the national swing, so the national totals still match the polls.
 Tactical voting changes where votes are, not how many each party gets.
 
-Scenarios. Tested on four past elections (tactical_test.py), no single
-method beat "no tactical voting" out of sample: 2024 needed a strong
-squeeze, earlier elections almost none, and the direction can flip. So the
-nowcast doesn't pick one. Each simulation draws a scenario (SCENARIOS):
-  none             no extra tactical voting beyond what's in the 2024 baseline
-  ratings          the squeeze above - against whichever leaders are most
-                   disliked now (currently Farage, so mostly anti-Reform)
-  anti-government  voters outside the top two back whoever can beat the
-                   governing party (Labour)
-each with its own strength, varied widely from run to run.
+Which method. tactical_test.py scores eight methods on four past elections,
+each with its strength picked on the other elections. Only the BES-measured
+squeeze beat "no tactical voting" (2,237 seats right vs 2,231), so the
+nowcast uses it alone (SCENARIOS), at strength 1.5, varied from run to run.
+The other methods - leader ratings, anti-government - can be put back into
+SCENARIOS, with chances, to mix them in again.
 
-Run it with:  python uk/tactical.py   (calibrates STRENGTH on 2019 notional -> 2024)
+Run it with:  python uk/tactical.py   (calibrates the ratings STRENGTH on 2019 notional -> 2024)
 """
 
 import csv
@@ -52,17 +48,21 @@ import numpy as np
 
 PARTIES = ["Lab", "Con", "Ref", "LD", "Grn", "SNP", "PC", "Oth"]
 
-# Overall strength (the share of a fully motivated voter's party that
-# switches when the race is level). Calibrated on 2024 - see main().
+# Overall strength for the "ratings" method (the share of a fully motivated
+# voter's party that switches when the race is level). Calibrated on 2024 -
+# see main().
 STRENGTH = 1.5
 
-# The nowcast's scenarios: name -> (chance, typical strength). Strengths are
-# the best fits on 2024 (tactical_test.py --nowcast); chances are a
-# judgement - equal, because past elections can't tell them apart.
+# BES squeeze strength. Held fixed across the four test elections, 1.5-3
+# gained 13-21 seats over "none" in total; 1.5 is the cautious end, and it
+# took the 2024 test from 509 to 528 seats right.
+BES_STRENGTH = 1.5
+
+# The nowcast's tactical methods: name -> (chance, typical strength). Each
+# simulation draws one. Possible names: "bes", "ratings", "anti-government",
+# "none". Currently BES alone.
 SCENARIOS = {
-    "none": (1 / 3, 0.0),
-    "ratings": (1 / 3, STRENGTH),
-    "anti-government": (1 / 3, 0.5),
+    "bes": (1.0, BES_STRENGTH),
 }
 GOVERNMENT = "Lab"
 
@@ -123,6 +123,36 @@ def dislike_matrix(neg):
     return load_affinity() * np.array([neg[m] for m in PARTIES])[None, :]
 
 
+# BES-measured dislike (bes_tables.py): 1 - (average 0-10 "how likely are you
+# ever to vote for m" among party k's intending voters) / 10. Pairs the BES
+# doesn't ask (SNP voters about Plaid, anything about "Other") get these.
+BES_MISSING = 0.9
+BES_OTHER = 0.8      # how much everyone minds an "Other" candidate (independents ...)
+
+# How willing each party's voters are to switch at all (1 = as the BES scores
+# say). Halving Reform's helped the 2024 test (528 -> 533 seats right) but
+# hurt 2015 (589 -> 583, UKIP voters did switch), so overall it was a wash
+# and it's left at 1. Lowering it gives Labour a few more seats, since in
+# Labour-v-Conservative seats Reform voters lean Conservative.
+WILLINGNESS = {"Ref": 1.0}
+
+
+def bes_dislike(election, path=os.path.join(HERE, "data", "bes", "ptv_tables.csv")):
+    """voters x target dislike measured in the BES wave before `election` ('2015' ... '2024', 'now')."""
+    d = np.full((len(PARTIES), len(PARTIES)), BES_MISSING)
+    with open(path, newline="", encoding="utf-8") as f:
+        for r in csv.DictReader(f):
+            if r["election"] == election:
+                d[PARTIES.index(r["voters"]), PARTIES.index(r["party"])] = 1 - float(r["mean_ptv"]) / 10
+    oth = PARTIES.index("Oth")
+    d[:, oth] = BES_OTHER
+    d[oth, :] = 0.0          # no data on Other voters' preferences: they don't switch
+    np.fill_diagonal(d, 0.0)
+    for party, willing in WILLINGNESS.items():
+        d[PARTIES.index(party), :] *= willing
+    return d
+
+
 def strength_draws(rng, n, strength=None):
     strength = STRENGTH if strength is None else strength
     return strength * np.exp(rng.normal(-STRENGTH_SD ** 2 / 2, STRENGTH_SD, size=n))
@@ -138,10 +168,17 @@ def anti_government(government=GOVERNMENT):
 
 
 def scenario_matrices(as_of):
-    """{scenario: dislike matrix} for the nowcast."""
-    return {"none": np.zeros((len(PARTIES), len(PARTIES))),
-            "ratings": dislike_matrix(negatives(as_of)),
-            "anti-government": anti_government()}
+    """{scenario: dislike matrix} for the nowcast, for each method in SCENARIOS."""
+    builders = {
+        "none": lambda: np.zeros((len(PARTIES), len(PARTIES))),
+        "bes": lambda: bes_dislike("now"),
+        "ratings": lambda: dislike_matrix(negatives(as_of)),
+        "anti-government": anti_government,
+    }
+    if "bes" in SCENARIOS and not os.path.exists(os.path.join(HERE, "data", "bes", "ptv_tables.csv")):
+        raise SystemExit("Tactical voting needs data/bes/ptv_tables.csv: download the BES panel and run "
+                         "python uk/bes_tables.py <panel .dta> (or set TACTICAL_VOTING = False in seat_model.py).")
+    return {name: builders[name]() for name in SCENARIOS}
 
 
 def scenario_draws(rng, n, matrices):
