@@ -7,6 +7,11 @@ average 0-10 "how likely are you ever to vote for <party>" score, by the
 party the respondent currently intends to vote for. Written to
 uk/data/bes/ptv_tables.csv (git-ignored, like the BES files themselves).
 
+Also uk/data/bes/second_choices_2021.csv: in May 2021 (wave 21) the panel
+asked people their actual supplementary-vote first and second choices for
+police and crime commissioner - who real SV second preferences go to, used
+by sv_transfer_test.py as a check on the Sussex mayor's second count.
+
 Input: the combined panel file (BES2024_W31_Panel_v31.05.dta - waves 1-31,
 3.8 GB). Download it yourself from britishelectionstudy.com (free; you agree
 to the BES terms, which don't allow redistributing the data) and pass its
@@ -45,6 +50,12 @@ VOTE = {"Labour": "Lab", "Conservative": "Con", "Liberal Democrat": "LD", "Green
         "Scottish National Party (SNP)": "SNP", "Plaid Cymru": "PC", "Brexit Party/Reform UK": "Ref"}
 UKIP_VOTE = {"United Kingdom Independence Party (UKIP)": "Ref"}
 
+SECOND = os.path.join(os.path.dirname(__file__), "data", "bes", "second_choices_2021.csv")
+SV_COLUMNS = ["pccVote1W21", "pccVote2W21", "wt_new_W21"]
+SV_VOTE = {"The Conservative candidate": "Con", "The Labour candidate": "Lab",
+           "The Liberal Democrat candidate": "LD", "The Green candidate": "Grn",
+           "The Reform UK candidate": "Ref", "Any other candidate": "Oth"}
+
 
 def score(series):
     """'Very unlikely' -> 0 ... 'Very likely' -> 10; "Don't know" -> missing."""
@@ -61,7 +72,7 @@ def read(path, chunk=4000):
     otherwise load them all (several GB) before picking these out, so it is
     read a few thousand respondents at a time.
     """
-    wanted = [c for wave, weight, ref in WAVES.values() for c in wave_columns(wave, weight, ref)]
+    wanted = [c for wave, weight, ref in WAVES.values() for c in wave_columns(wave, weight, ref)] + SV_COLUMNS
     parts = [block[wanted] for block in pd.read_stata(path, chunksize=chunk)]
     return pd.concat(parts, ignore_index=True)
 
@@ -94,6 +105,27 @@ def main(path):
         writer.writeheader()
         writer.writerows(rows)
     print(f"Saved {len(rows)} cells to {OUT}")
+    second_choices(panel)
+
+
+def second_choices(panel):
+    """Weighted share of each 2021 PCC first choice giving each second choice ('none' = no valid one)."""
+    d = panel[SV_COLUMNS].copy()
+    d["first"] = d["pccVote1W21"].astype(str).map(SV_VOTE)
+    d["second"] = d["pccVote2W21"].astype(str).map(SV_VOTE).fillna("none")
+    d = d[d["first"].notna()]
+    d["w"] = d["wt_new_W21"].fillna(1)
+    rows = []
+    for k, g in d.groupby("first"):
+        row = {"first": k, "respondents": len(g)}
+        for m in list(SV_VOTE.values()) + ["none"]:
+            row[m] = round(float(g["w"][g["second"] == m].sum() / g["w"].sum()), 4)
+        rows.append(row)
+    with open(SECOND, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+        writer.writeheader()
+        writer.writerows(rows)
+    print(f"Saved second choices of {len(d):,} PCC voters to {SECOND}")
 
 
 if __name__ == "__main__":

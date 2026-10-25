@@ -47,24 +47,32 @@ OUT = os.path.join(HERE, "data", "mayoral_adjustment.csv")
 # nothing about its local gap.
 SKIP_GAP = {(2024, "Ref")}
 
-# Sussex councils: (Wikipedia page, national PNS year, general election to compare with)
-SUSSEX_LOCAL = {
-    "West Sussex": [("2026 West Sussex County Council election", 2026, 2024),
-                    ("2021 West Sussex County Council election", 2021, 2019)],
-    "East Sussex": [("2026 East Sussex County Council election", 2026, 2024),
-                    ("2021 East Sussex County Council election", 2021, 2019)],
-    "Brighton and Hove": [("2023 Brighton and Hove City Council election", 2023, 2024),
-                          ("2019 Brighton and Hove City Council election", 2019, 2019)],
-}
-# 2010-2024 boundaries (for the 2019 general election), by council area
-OLD_SEATS = {
-    "West Sussex": ["Arundel and South Downs", "Bognor Regis and Littlehampton", "Chichester", "Crawley",
-                    "East Worthing and Shoreham", "Horsham", "Mid Sussex", "Worthing West"],
-    "East Sussex": ["Bexhill and Battle", "Eastbourne", "Hastings and Rye", "Lewes", "Wealden"],
-    "Brighton and Hove": ["Brighton, Kemptown", "Brighton, Pavilion", "Hove"],
-}
-COUNCIL_PARTY = {"Labour": "Lab", "Conservative": "Con", "Reform": "Ref", "Reform UK": "Ref",
-                 "Liberal Democrat": "LD", "Liberal Democrats": "LD", "Green": "Grn"}
+# Sussex council elections: (area level, area name as in the ONS lookup, Wikipedia page title, year).
+# The counties and the twelve district / borough councils each cover all of Sussex outside
+# Brighton & Hove, at different elections; Brighton & Hove is a unitary council.
+# Whole-council elections only: Adur, Crawley, Worthing and Hastings elect by thirds or halves,
+# so only some wards vote each time, and comparing that with the whole area's general
+# election is meaningless (Crawley 2019 came out Labour +28).
+DISTRICTS = {"Arun": "Arun District", "Chichester": "Chichester District", "Horsham": "Horsham District",
+             "Mid Sussex": "Mid Sussex District", "Eastbourne": "Eastbourne Borough",
+             "Lewes": "Lewes District", "Rother": "Rother District", "Wealden": "Wealden District"}
+SUSSEX_LOCAL = (
+    [("utla", c, f"{y} {c} County Council election", y) for c in ("West Sussex", "East Sussex") for y in (2021, 2026)]
+    + [("utla", "Brighton and Hove", f"{y} Brighton and Hove City Council election", y) for y in (2019, 2023)]
+    + [("lad", lad, f"{y} {name} Council election", y) for lad, name in DISTRICTS.items() for y in (2019, 2023)]
+)
+# General election each local election is compared with (both on today's boundaries)
+GE_FOR = {2019: "results_2019_notional.csv", 2021: "results_2019_notional.csv",
+          2023: "results_2024.csv", 2026: "results_2024.csv"}
+# Recent elections count for more: weight halves every this many years before 2026
+RECENCY_HALF_LIFE = 5
+
+
+def party_of(label):
+    """Council results label -> our party. UKIP was Reform's predecessor; 'Labour Co-op' is Labour."""
+    if "UK Independence" in label or label.strip() == "UKIP":
+        return "Ref"
+    return sv.party(label)
 
 
 def read(path):
@@ -135,35 +143,62 @@ def council_shares(page):
         for r in rows[1:]:
             if len(r) <= col or not r[col].replace(",", "").isdigit():
                 continue
-            votes[COUNCIL_PARTY.get(r[1].strip(), "Oth")] += int(r[col].replace(",", ""))
+            votes[party_of(r[1])] += int(r[col].replace(",", ""))
         if votes:
             total = sum(votes.values())
             return {p: 100 * votes[p] / total for p in PARTIES}, votes
     raise ValueError(f"No results table on {page}")
 
 
+def area_general_shares(filename, level, name):
+    """
+    General-election shares (%) and votes in a council area. Constituencies don't follow district
+    boundaries, so each constituency's votes are split evenly across its wards (ONS lookup) and
+    the wards in the area are added up.
+    """
+    rows = {r["ons_code"]: r for r in read(os.path.join(HERE, "data", filename))}
+    with open(mg.LOOKUP, newline="", encoding="utf-8-sig") as f:
+        wards = list(csv.DictReader(f))
+    per_seat = Counter(w["PCON24CD"] for w in wards)
+    votes = Counter()
+    for w in wards:
+        if (w["LAD24NM"] if level == "lad" else w["UTLA24NM"]) != name or w["PCON24CD"] not in rows:
+            continue
+        r, share = rows[w["PCON24CD"]], 1 / per_seat[w["PCON24CD"]]
+        for p in PARTIES + ["SNP", "PC", "Oth"]:
+            if p in PARTIES or p == "Oth":
+                votes[p] += share * int(r[f"{p}_votes"])
+            votes["all"] += share * int(r[f"{p}_votes"])
+    return {p: 100 * votes[p] / votes["all"] for p in PARTIES}, votes["all"]
+
+
 def sussex_local():
-    """{party: [(area, year, effect, weight)]}"""
+    """
+    {party: [(year, Sussex-wide effect that year, total weight)]}: for every Sussex council election,
+    (council share - national PNS) - (area GE share - national GE share), averaged over the areas
+    voting that year, weighted by their general-election votes.
+    """
     pns = {int(r["year"]): {p: float(r[p]) if r[p] else None for p in PARTIES}
            for r in read(os.path.join(HERE, "data", "pns.csv"))}
-    nat = {2024: general_shares("results_2024.csv")[0], 2019: general_shares("results_2019.csv")[0]}
-    new_seats = mg.constituencies({area: {"utlas": [area]} for area in SUSSEX_LOCAL})
-    out = {p: [] for p in PARTIES}
-    print("\nSussex's own local pattern: (council - national PNS) - (Sussex GE - national GE), points")
-    for area, elections in SUSSEX_LOCAL.items():
-        for page, pns_year, ge_year in elections:
+    nat = {f: general_shares(f)[0] for f in set(GE_FOR.values())}
+    by_year = {}
+    print("\nSussex's own local pattern: (council - national PNS) - (area GE - national GE), points")
+    for level, name, page, year in SUSSEX_LOCAL:
+        try:
             council, votes = council_shares(page)
-            if ge_year == 2024:
-                ge, weight = general_shares("results_2024.csv", codes=new_seats[area])
-            else:
-                ge, weight = general_shares("results_2019.csv", names=OLD_SEATS[area])
-            effects = {}
-            for p in PARTIES:
-                if pns[pns_year][p] is None or votes[p] == 0 or council[p] < 1:
-                    continue                      # not in the PNS that year, or (near enough) didn't stand
-                effects[p] = (council[p] - pns[pns_year][p]) - (ge[p] - nat[ge_year][p])
-                out[p].append((area, pns_year, effects[p], weight))
-            print(f"  {area:18} {pns_year}: " + "  ".join(f"{p} {e:+.1f}" for p, e in effects.items()))
+        except Exception as e:
+            print(f"  {name:18} {year}: no results ({str(e)[:50]})")
+            continue
+        ge, weight = area_general_shares(GE_FOR[year], level, name)
+        effects = {p: (council[p] - pns[year][p]) - (ge[p] - nat[GE_FOR[year]][p]) for p in PARTIES
+                   if pns[year][p] is not None and council[p] >= 1}      # in the PNS that year, and stood
+        for p, e in effects.items():
+            by_year.setdefault((p, year), []).append((e, weight))
+        print(f"  {name:18} {year}: " + "  ".join(f"{p} {e:+.1f}" for p, e in effects.items()))
+    out = {p: [] for p in PARTIES}
+    for (p, year), values in by_year.items():
+        out[p].append((year, float(np.average([e for e, _ in values], weights=[w for _, w in values])),
+                       sum(w for _, w in values)))
     return out
 
 
@@ -178,14 +213,15 @@ def main():
         g_mean, g_sd, _ = gap[p]
         r = [x[p] for x in residuals if p in x]
         m_mean, m_sd = float(np.mean(r)), float(np.std(r))
-        # Sussex: average of the two snapshots (each a vote-weighted average over the three areas)
-        snaps = {}
-        for area, year, effect, weight in local[p]:
-            snap = "recent" if year >= 2023 else "earlier"
-            snaps.setdefault(snap, []).append((effect, weight))
-        snap_means = [np.average([e for e, _ in v], weights=[w for _, w in v]) for v in snaps.values()]
-        s_mean = float(np.mean(snap_means)) if snap_means else 0.0
-        s_sd = float(abs(snap_means[0] - snap_means[1]) / 2) if len(snap_means) == 2 else 3.0
+        # Sussex: every election year's Sussex-wide effect, recent years weighted more; the spread
+        # between years is the uncertainty (one year only: 3 points)
+        years = sorted(local[p])
+        recency = np.array([0.5 ** ((2026 - y) / RECENCY_HALF_LIFE) for y, _, _ in years])
+        effects = np.array([e for _, e, _ in years])
+        s_mean = float(np.average(effects, weights=recency)) if len(years) else 0.0
+        s_sd = float(np.sqrt(np.average((effects - s_mean) ** 2, weights=recency))) if len(years) > 1 else 3.0
+        snaps = {str(y): e for y, e, _ in years}
+        snap_means = list(snaps.values())
         total = g_mean + m_mean + s_mean
         sd = float(np.sqrt(g_sd ** 2 + m_sd ** 2 + s_sd ** 2))
         rows.append({"party": p, "local_gap": round(g_mean, 2), "local_gap_sd": round(g_sd, 2),

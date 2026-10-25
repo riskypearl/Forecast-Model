@@ -55,6 +55,7 @@ NATIONAL_ERROR_SD = 2.5
 # 303 seats that had an "other" candidate in 2024.
 STANDS_EVERYWHERE = ["Lab", "Con", "Ref", "LD", "Grn", "Oth"]
 NEW_CANDIDATE_SHARE = 0.01
+REGIONAL_FILL = 0.8   # with fill_new_candidates(regional=True): this x the party's regional average
 
 # Swing: 0 = logistic, 1 = uniform (the same points change in every seat),
 # in between = a blend. On 2019 -> 2024, given the real national result,
@@ -120,14 +121,30 @@ def share_matrix(rows):
     return np.array([[float(r[f"{p}_share"]) for p in PARTIES] for r in rows])
 
 
-def fill_new_candidates(shares, rows):
-    """A main GB party with no 2024 candidate gets NEW_CANDIDATE_SHARE, taken proportionally from the others."""
+def fill_new_candidates(shares, rows, regional=False):
+    """
+    A main GB party with no 2024 candidate gets NEW_CANDIDATE_SHARE, taken proportionally from
+    the others. With regional=True it gets REGIONAL_FILL x its average share in the seats of the
+    same region where it did stand instead (used by the Sussex mayoral model: YouGov's MRP has
+    Reform at 12-16% in Sussex seats it didn't contest in 2024, where 1% barely grows). The
+    backtests and calibrations use the plain 1%, as they were tested.
+    """
     out = shares.copy()
+    regional_mean = {}
+    if regional:
+        for p in STANDS_EVERYWHERE:
+            j = PARTIES.index(p)
+            for region in {r["region"] for r in rows}:
+                stood = [shares[i, j] for i, r in enumerate(rows) if r["region"] == region and shares[i, j] > 0]
+                regional_mean[(p, region)] = float(np.mean(stood)) if stood else NEW_CANDIDATE_SHARE
     for i, r in enumerate(rows):
-        missing = [PARTIES.index(p) for p in STANDS_EVERYWHERE if out[i, PARTIES.index(p)] == 0]
+        missing = [p for p in STANDS_EVERYWHERE if out[i, PARTIES.index(p)] == 0]
         if missing:
-            out[i] *= 1 - NEW_CANDIDATE_SHARE * len(missing)
-            out[i, missing] = NEW_CANDIDATE_SHARE
+            fills = {p: (REGIONAL_FILL * regional_mean[(p, r["region"])] if regional else NEW_CANDIDATE_SHARE)
+                     for p in missing}
+            out[i] *= 1 - sum(fills.values())
+            for p, v in fills.items():
+                out[i, PARTIES.index(p)] = v
     return out
 
 

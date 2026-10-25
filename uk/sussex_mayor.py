@@ -77,10 +77,14 @@ DRIFT_WINDOW_DAYS = 21     # poll averages at each end of a historical stretch
 # (the first version) left 2021-22 independents outside their 90% range three
 # times in four.
 
-# Second choices, from the 2021-22 mayoral counts
+# Second choices, from the 2021-22 mayoral counts (sv_transfer_test.py). The split
+# that fits each count exactly ranges from 0.20 (Croydon 2022) to 1.00
+# (Cambridgeshire 2021); leaving each count out in turn, these rates get the final
+# share within 1.0 point on average - as do BES respondents' real 2021 second
+# choices, with no fitting at all.
 VOLUME = 1.01           # transfers reaching the finalists = YouGov-implied x this
 INDEPENDENT = 0.27      # share of independents' voters whose second choice reached a finalist
-SPLIT = (0.43, 1.0)     # lopsidedness of the split vs YouGov's, drawn per run
+SPLIT = (0.2, 1.0)      # lopsidedness of the split vs YouGov's, drawn per run
 
 # Mayoral areas whose residuals are left out of the draws: an incumbent mayor stood
 # again. No Sussex candidate is an incumbent mayor, so their personal votes (Burnham +21,
@@ -167,12 +171,37 @@ def drift_draws(rng, days, n):
     return out, len(changes)
 
 
+MRP_FILE = os.path.join(HERE, "data", "mrp", "yougov_mrp_2609.csv")   # YouGov MRP, Sept 2026, every GB seat
+MRP_WEIGHT = 0.5      # how much of the MRP-vs-model gap in Sussex to take: halfway between two models
+MRP_COLUMNS = {"Lab": "LabShare", "Con": "ConShare", "Ref": "ReformShare", "LD": "LibDemShare",
+               "Grn": "GreenShare", "SNP": "SNPShare", "PC": "PlaidShare"}
+
+
+def mrp_correction(gb, base, weights, elasticity, seats, seat_weights):
+    """
+    MRP_WEIGHT x (YouGov MRP's Sussex-wide shares - this model's, run at the MRP's own GB
+    totals), per party (fractions). An independent seat-level model as a check on where
+    Sussex sits relative to the country; in Sept 2026 it had Labour 1.8 points higher.
+    """
+    if not os.path.exists(MRP_FILE):
+        return np.zeros(len(PARTIES))
+    with open(MRP_FILE, newline="", encoding="utf-8-sig") as f:
+        mrp = {r["ons_id24"]: r for r in csv.DictReader(f)}
+    shares = np.array([[float(mrp[r["ons_code"]][MRP_COLUMNS[p]]) if p in MRP_COLUMNS
+                        else float(mrp[r["ons_code"]]["RestoreShare"]) + float(mrp[r["ons_code"]]["OthersShare"])
+                        for p in PARTIES] for r in gb])
+    shares /= shares.sum(axis=1, keepdims=True)
+    national = weights @ shares
+    ours = sm.swing(base, weights, national[None, :], elasticity)[0]
+    return MRP_WEIGHT * (seat_weights @ shares[seats] - seat_weights @ ours[seats])
+
+
 def first_choices(rng, to_election=True):
     """sims x parties Sussex-wide first-choice shares (rows add to 1), and the model's median before step 3."""
     rows, _ = sm.load_results("results_2024.csv")
     gb = [r for r in rows if r["speaker_seat"] != "1"]
     raw = sm.share_matrix(gb)
-    base = sm.fill_new_candidates(raw, gb)
+    base = sm.fill_new_candidates(raw, gb, regional=True)
     weights = np.array([float(r["valid_votes"]) for r in gb])
     weights /= weights.sum()
     field = np.array([weights[raw[:, j] > 0].sum() for j in range(len(PARTIES))])
@@ -196,6 +225,8 @@ def first_choices(rng, to_election=True):
     for start in range(0, SIMULATIONS, 1000):
         swung = sm.swing(base, weights, nationals[start:start + 1000], elasticity)[:, seats, :]
         first[start:start + 1000] = np.einsum("i,sij->sj", seat_weights, swung)
+    first = np.clip(first + mrp_correction(gb, base, weights, elasticity, seats, seat_weights)[None, :], 0.002, None)
+    first /= first.sum(axis=1, keepdims=True)
     model = np.median(first, axis=0)
 
     first += mayoral_shift(rng, SIMULATIONS) / 100

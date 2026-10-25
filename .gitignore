@@ -11,3 +11,6 @@ papers/
 
 # British Election Study panel files (licence: no redistribution)
 uk/data/bes/
+
+# YouGov MRP downloads (third-party data, kept locally)
+uk/data/mrp/
