@@ -120,7 +120,7 @@ IA,YouGov,2026-10-12,47,46,5,2245,lv,
 IA,New River Strategies/GS Strategy Group,2026-10-13,46,44,2.0,602,lv,
 IA,Trafalgar Group,2026-10-15,44.2,45.9,6.4,1094,lv,REP
 IA,co/efficient,2026-10-19,45,48,6.0,863,lv,
-IA,InsiderAdvantage,2026-10-22,49.3,46.8,3.9,1200,lv,
+IA,InsiderAdvantage,2026-10-22,45,47,8,1200,lv,
 ID,Public Policy Polling,2026-03-17,34,48,18,639,rv,IND
 ID,The Bullfinch Group,2026-06-01,36,40,24,774,rv,IND
 ID,Peak Insights,2026-06-07,15,55,15,500,lv,REP
@@ -128,6 +128,8 @@ ID,Change Research,2026-07-30,21,45,22.0,600,lv,IND
 ID,The Bullfinch Group,2026-08-07,38,33,29.0,608,lv,IND
 ID,Peak Insights,2026-08-13,18,52,18,500,lv,REP
 ID,Peak Insights,2026-09-30,24,49,16,500,lv,REP
+ID,Peak Insights,2026-10-15,27,54,10.0,500,lv,REP
+ID,VoteNexus,2026-10-22,43,49,8.0,700,lv,IND
 IL,Public Policy Polling,2026-10-01,49,36,15.0,569,rv,
 IL,ActiVote,2026-10-20,58.5,41.5,0.0,400,lv,
 KS,GQR,2026-04-27,45,49,6.0,500,lv,DEM
@@ -207,7 +209,7 @@ ME,YouGov,2026-10-01,50,50,0.0,1136,lv,
 ME,Marist University,2026-10-04,51,47,1.0,1505,rv,
 ME,The Washington Post/George Mason University Schar School of Policy and Government,2026-10-05,50,46,3.0,800,lv,
 ME,Suffolk University,2026-10-11,49,47,4.0,500,lv,
-ME,InsiderAdvantage,2026-10-14,49,47,4,1200,lv,
+ME,InsiderAdvantage,2026-10-14,49.3,46.8,3.9,1200,lv,
 ME,Beacon Research/Shaw & Company Research,2026-10-20,49,49,1.0,1514,lv,
 MI,"Glengariff Group, Inc.",2025-05-08,45.1,39.1,15.8,600,rv,
 MI,"Normington, Petts & Associates",2025-06-16,47,45,8.0,700,lv,DEM
@@ -280,6 +282,7 @@ MN,Trafalgar Group,2026-10-15,48.1,44.6,5.4,1079,lv,REP
 MS,Impact Research,2025-06-22,46,38,16.0,500,lv,DEM
 MS,Impact Research,2026-04-12,39,42,14.0,500,lv,DEM
 MS,Data for Progress,2026-08-15,41,47,12.0,1018,lv,DEM
+MS,Change Research,2026-10-22,40,43,9.0,842,lv,DEM
 MT,yes. every kid. foundation.,2026-01-26,19,43,20.0,500,rv,
 MT,American Pulse Research & Polling,2026-02-18,40,53.9,6.1,607,lv,
 MT,Change Research,2026-03-20,35.06,36.84,25.9,616,lv,IND
@@ -358,6 +361,7 @@ NE,YouGov,2026-10-03,48,47,4,1808,lv,
 NE,National Public Affairs,2026-10-05,46,49,6.0,800,lv,REP
 NE,National Public Affairs,2026-10-18,47,50,3.0,598,lv,REP
 NE,Impact Research,2026-10-20,48,50,2,600,lv,DEM
+NE,GBAO,2026-10-22,46,45,9,800,lv,IND
 NH,Praecones Analytica,2025-03-01,58.9,41.1,0.0,626,rv,
 NH,Quantus Insights,2025-03-19,44,53,3.0,650,rv,REP
 NH,1892 Polling,2025-09-04,45,43,12.0,500,lv,REP
