@@ -55,6 +55,7 @@ NATIONAL_ERROR_SD = 2.5
 # 303 seats that had an "other" candidate in 2024.
 STANDS_EVERYWHERE = ["Lab", "Con", "Ref", "LD", "Grn", "Oth"]
 NEW_CANDIDATE_SHARE = 0.01
+REGIONAL_FILL = 0.8   # with fill_new_candidates(regional=True): this x the party's regional average
 
 # Swing: 0 = logistic, 1 = uniform (the same points change in every seat),
 # in between = a blend. On 2019 -> 2024, given the real national result,
@@ -76,9 +77,10 @@ UNIFORM_SWING_PARTIES = ["Oth"]
 DEMOGRAPHIC_SWING = True
 
 # Tactical voting (tactical.py): voters of parties outside a seat's top two
-# switch to whichever of the two they mind less, driven by current leader
-# unfavourability. Calibrated on 2024, where it took the backtest from 509
-# to 543 of 631 seats right and Labour from 362 to 402 (actual 409).
+# switch to one of the two at the rates YouGov measured in September 2026
+# ("if only X and Y could win here, how would you vote?"); contests YouGov
+# didn't ask about use the BES squeeze, the only method that beat "no
+# tactical voting" on past elections. False = no tactical voting at all.
 TACTICAL_VOTING = True
 
 # A seat's own error, in points, for a party on 25% there (smaller shares get
@@ -119,14 +121,30 @@ def share_matrix(rows):
     return np.array([[float(r[f"{p}_share"]) for p in PARTIES] for r in rows])
 
 
-def fill_new_candidates(shares, rows):
-    """A main GB party with no 2024 candidate gets NEW_CANDIDATE_SHARE, taken proportionally from the others."""
+def fill_new_candidates(shares, rows, regional=False):
+    """
+    A main GB party with no 2024 candidate gets NEW_CANDIDATE_SHARE, taken proportionally from
+    the others. With regional=True it gets REGIONAL_FILL x its average share in the seats of the
+    same region where it did stand instead (used by the Sussex mayoral model: YouGov's MRP has
+    Reform at 12-16% in Sussex seats it didn't contest in 2024, where 1% barely grows). The
+    backtests and calibrations use the plain 1%, as they were tested.
+    """
     out = shares.copy()
+    regional_mean = {}
+    if regional:
+        for p in STANDS_EVERYWHERE:
+            j = PARTIES.index(p)
+            for region in {r["region"] for r in rows}:
+                stood = [shares[i, j] for i, r in enumerate(rows) if r["region"] == region and shares[i, j] > 0]
+                regional_mean[(p, region)] = float(np.mean(stood)) if stood else NEW_CANDIDATE_SHARE
     for i, r in enumerate(rows):
-        missing = [PARTIES.index(p) for p in STANDS_EVERYWHERE if out[i, PARTIES.index(p)] == 0]
+        missing = [p for p in STANDS_EVERYWHERE if out[i, PARTIES.index(p)] == 0]
         if missing:
-            out[i] *= 1 - NEW_CANDIDATE_SHARE * len(missing)
-            out[i, missing] = NEW_CANDIDATE_SHARE
+            fills = {p: (REGIONAL_FILL * regional_mean[(p, r["region"])] if regional else NEW_CANDIDATE_SHARE)
+                     for p in missing}
+            out[i] *= 1 - sum(fills.values())
+            for p, v in fills.items():
+                out[i, PARTIES.index(p)] = v
     return out
 
 
@@ -168,7 +186,7 @@ def logistic_swing(base, weights, targets, iterations=25, elasticity=None, tacti
             shares[:, :, uniform] = np.clip(additive, 0.001, None) * (base[None, :, uniform] > 0)
         shares /= shares.sum(axis=2, keepdims=True)
         if tactical is not None:
-            shares = tactics.squeeze(shares, *tactical)
+            shares = tactics.apply(shares, tactical)
         achieved = np.einsum("i,sij->sj", weights, shares)
         step = logit(targets) - logit(achieved)
         step[:, uniform] = (targets - achieved)[:, uniform]
@@ -233,8 +251,8 @@ def seat_error_sd():
 
     With DEMOGRAPHIC_SWING, the regression used here is fitted on the three
     earlier election pairs only, so 2024 is out of sample and the error isn't
-    flattered. With TACTICAL_VOTING, 2024's tactical squeeze is included
-    (its strength was calibrated on 2024, so this part is in sample).
+    flattered. With TACTICAL_VOTING, 2024's tactical squeeze is included,
+    using the BES wave before 2024 at BES_STRENGTH.
     """
     if SEAT_ERROR_SD is not None:
         return SEAT_ERROR_SD
@@ -245,8 +263,7 @@ def seat_error_sd():
         old, new, weights = latest["old"], latest["new"], latest["weights"]
         tactical = None
         if TACTICAL_VOTING:
-            from datetime import date
-            tactical = (tactics.dislike_matrix(tactics.negatives(date(2024, 7, 4))), np.array([tactics.STRENGTH]))
+            tactical = (tactics.bes_dislike("2024"), np.array([tactics.BES_STRENGTH]))
         predicted = logistic_swing(old, weights, (weights @ new)[None, :],
                                    elasticity=sr.elasticity(latest["X"], sr.fit(pairs[:-1])), tactical=tactical)[0]
     else:
@@ -283,22 +300,33 @@ def national_draws(rng, average, field):
 # Run
 # ---------------------------------------------------------------------------
 
-def simulate(base, weights, average, field, seat_sd, rng, elasticity=None, dislike=None, chunk=1000):
-    """Returns (winner index per sim and seat, mean projected shares per seat)."""
+def simulate(base, weights, average, field, seat_sd, rng, elasticity=None, matrices=None, chunk=1000):
+    """
+    Returns (winner index per sim and seat, mean projected shares per seat,
+    tactical scenario index per sim). matrices: {scenario: dislike matrix}
+    from tactical.scenario_matrices, or None for no tactical voting.
+    """
     nationals = national_draws(rng, average, field)
     winners = np.empty((SIMULATIONS, base.shape[0]), dtype=np.int8)
+    scenarios = np.zeros(SIMULATIONS, dtype=np.int8)
     share_sum = np.zeros_like(base)
     standing = base > 0
     for start in range(0, SIMULATIONS, chunk):
         targets = nationals[start:start + chunk]
-        tactical = None if dislike is None else (dislike, tactics.strength_draws(rng, len(targets)))
-        swung = swing(base, weights, targets, elasticity, tactical)
+        if matrices is None:
+            swung = swing(base, weights, targets, elasticity)
+        else:
+            # each scenario drawn in this chunk is swung separately
+            swung = np.empty((len(targets),) + base.shape)
+            for k, sims, tactical in tactics.scenario_draws(rng, len(targets), matrices):
+                scenarios[start + sims] = k
+                swung[sims] = swing(base, weights, targets[sims], elasticity, tactical)
         noise = t_draws(rng, swung.shape) * seat_sd / 100 * size_scale(swung)
         noisy = np.clip(swung + noise, 0.0005, None) * standing[None, :, :]
         noisy /= noisy.sum(axis=2, keepdims=True)
         winners[start:start + chunk] = noisy.argmax(axis=2)
         share_sum += noisy.sum(axis=0)
-    return winners, share_sum / SIMULATIONS
+    return winners, share_sum / SIMULATIONS, scenarios
 
 
 def rating(probs):
@@ -336,9 +364,8 @@ def main():
 
     seat_sd = seat_error_sd()
     elasticity = seat_elasticity(seats, base)
-    neg = tactics.negatives(pa.TODAY) if TACTICAL_VOTING else None
-    dislike = tactics.dislike_matrix(neg) if neg else None
-    winners, mean_shares = simulate(base, weights, average, field, seat_sd, rng, elasticity, dislike)
+    matrices = tactics.scenario_matrices(pa.TODAY) if TACTICAL_VOTING else None
+    winners, mean_shares, scenarios = simulate(base, weights, average, field, seat_sd, rng, elasticity, matrices)
 
     # Seat probabilities and the per-seat file
     win_prob = np.stack([(winners == j).mean(axis=0) for j in range(len(PARTIES))], axis=1)
@@ -372,15 +399,22 @@ def main():
           f"(+ Speaker + {len(ni)} Northern Ireland, held fixed)")
     print(f"Swing: {'logistic + demographic elasticities' if elasticity is not None else 'logistic'}; "
           f"seat error SD, measured on 2019->2024: {seat_sd:.1f} points for a party on 25%")
-    if neg:
-        print(f"Tactical voting on (strength {tactics.STRENGTH}, varied by run). Leader negatives now: "
-              + ", ".join(f"{p} {100 * v:.0f}%" for p, v in neg.items() if p in ("Lab", "Con", "Ref", "LD", "Grn")))
+    if matrices is not None:
+        print("Tactical voting: " + ", ".join(
+            f"{name} ({100 * spec[0]:.0f}% of runs, strength ~{spec[1]:g}, varied by run)"
+            for name, spec in tactics.SCENARIOS.items()))
     print(f"\n{'':6}{'vote':>6}{'seats':>7}{'90% range':>13}{'largest':>9}{'majority':>10}")
     for t in sorted(totals, key=lambda t: -t["mean"]):
         print(f"{t['party']:6}{t['vote_share']:6.1f}{t['median']:7d}{t['p5']:>7d}-{t['p95']:<5d}"
               f"{100 * t['largest_party']:8.0f}%{100 * t['majority']:9.0f}%")
     no_majority = 1 - sum(t["majority"] for t in totals)
     print(f"\nHung parliament: {100 * no_majority:.0f}%")
+    if matrices is not None:
+        print("\nMedian seats by tactical scenario:")
+        print(f"{'':17}" + "".join(f"{p:>5}" for p in PARTIES))
+        for k, name in enumerate(tactics.SCENARIOS):
+            mine = counts[scenarios == k]
+            print(f"{name:17}" + "".join(f"{int(np.median(mine[:, j])):5d}" for j in range(len(PARTIES))))
     ratings = {}
     for r in out:
         key = r["rating"].split()[0]

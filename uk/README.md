@@ -1,9 +1,22 @@
 # UK general election nowcast (in progress)
 
 A seat-by-seat nowcast for the next Westminster election, built with the same approach as the
-US Senate model: a de-biased polling average, then (to come) a swing model and correlated
-simulations. Methods are adapted from Hanretty, Lauderdale & Vivyan's electionforecast.co.uk
-model (papers in `papers/`), re-implemented rather than copied.
+US Senate model: a de-biased polling average, a swing model, tactical voting and simulations.
+Methods are adapted from Hanretty, Lauderdale & Vivyan's electionforecast.co.uk model (papers in
+`papers/`), re-implemented rather than copied.
+
+Full run, in order:
+
+```
+python uk/fetch_results.py        # election results
+python uk/fetch_census.py         # census
+python uk/fetch_polls.py          # voting-intention polls
+python uk/fetch_favourability.py  # leader ratings (tactical-voting comparison)
+python uk/fetch_projections.py    # published seat projections (benchmark)
+python uk/bes_tables.py <panel>   # British Election Study tables (tactical voting) - see stage 3b
+python uk/swing_regression.py     # fit the demographic swing
+python uk/seat_model.py           # the nowcast
+```
 
 ## Stage 1: data and polling average
 
@@ -66,8 +79,9 @@ Writes `data/seat_forecast.csv` (every GB seat: projected shares, win chances, r
 
 The stage 3 row is out of sample: its regression was fitted on 2010-2019 only.
 
-Each seat's own error (5.7 points for a party on 25%) is the robust spread of the swing's
-out-of-sample misses on 2024, measured on Lab, Con, LD, SNP and PC only. Reform's 2019 baseline
+Each seat's own error (5.5 points for a party on 25%) is the robust spread of the swing's
+out-of-sample misses on 2024, with 2024's tactical squeeze included (stage 3b), measured on Lab,
+Con, LD, SNP and PC only. Reform's 2019 baseline
 isn't clean (the Brexit Party stood aside in Conservative seats), and neither are the Greens'
 or Others'.
 
@@ -106,13 +120,307 @@ learned, roughly:
 
 The SNP and Plaid get almost no adjustment: too few seats to learn from.
 
-**Known gaps.** Labour is still undercounted in the 2024 test (362 vs 409). Anti-Conservative
-tactical voting doesn't scale with Labour's national shift, which barely moved in 2024, so
-elasticities can't capture it. A tactical-voting term (who the local challenger is) is the
-obvious next addition. Scottish seats have no census data, only the Scotland flag. Seat errors
-are independent, so seats can't miss together by region or seat type yet (stage 4). That makes
-the seat ranges too narrow, the main lesson from the 2015 model. The model also assumes 2024's
-independents stand again, which is why "Other" wins around 15 seats.
+Labour is still undercounted in the 2024 test (362 vs 409): anti-Conservative tactical voting
+doesn't scale with Labour's national shift, which barely moved in 2024. That's stage 3b.
+
+## Stage 3b: tactical voting
+
+```
+python uk/fetch_yougov_tactical.py     # YouGov two-horse-race tables -> data/yougov_tactical.csv (needs pypdf)
+python uk/bes_tables.py <panel .dta>   # BES "would you ever vote for" tables -> data/bes/ptv_tables.csv
+python uk/fetch_favourability.py       # leader / party ratings -> data/favourability.csv
+python uk/fetch_projections.py         # published MRPs -> data/seat_projections.csv
+python uk/tactical_test.py             # compare tactical methods on past elections
+python uk/tactical_test.py --nowcast   # today's seats under each method
+```
+
+**The squeeze** (`tactical.py`). In each seat, voters of the parties outside the top two can
+switch to one of the two. It is full strength when the top two are level, fades to nothing at a
+25-point lead, and runs inside the swing solve, so national totals still match the polls.
+
+**The nowcast uses YouGov's measured rates.** YouGov's tactical-voting study (15-22 September
+2026, 6,077 GB adults; earlier runs February 2025 and February 2026) asks: "imagine the only two
+parties with a chance of winning in your constituency were X and Y - how would you vote?", for
+ten pairings, by current vote. `fetch_yougov_tactical.py` reads the published tables into
+`data/yougov_tactical.csv`. In a seat whose top two are one of those pairings, the other parties'
+voters move at exactly those rates - to either party or to not voting. For example, Labour v
+Reform:
+
+| Current vote | Con | Lab | LD | Ref | Grn |
+|---|---|---|---|---|---|
+| would vote Labour | 18 | 97 | 68 | 0 | 63 |
+| would vote Reform | 37 | 1 | 5 | 98 | 2 |
+
+These rates already reflect Andy Burnham (leader from July 2026): between February and September
+Labour v Green seats went from Green 30-20 to Labour 27-21, and Labour v Reform from 35-31 to
+41-26. The ten pairings cover 538 of the 631 GB seats; the rest (mostly SNP and Plaid contests)
+use the BES squeeze below. Run-to-run, the rates are scaled by a log-normal factor (SD 0.3), for
+people following through on a hypothetical more or less than they say. YouGov's study has no
+pre-2024 equivalent, so unlike the methods below it can't be scored on a past election.
+
+**The BES squeeze, for the remaining seats and the backtests.** Who'd switch to whom, measured: the British Election Study Internet Panel
+asks everyone how likely they are ever to vote for each party (0-10). `bes_tables.py` averages
+that by current vote intention, from the wave before each election - 5 (2015), 12 (2017),
+18 (2019), 27 (2024; the campaign wave didn't ask it) and 31 (May-June 2026, for the nowcast).
+UKIP stands in for Reform up to 2017 and the Brexit Party in 2019. Now, for example:
+
+| Voters of / for | Lab | Con | Ref | LD | Grn |
+|---|---|---|---|---|---|
+| Lab | 8.3 | 1.5 | 0.5 | 5.0 | 4.2 |
+| Con | 1.4 | 8.6 | 2.9 | 2.5 | 1.1 |
+| Ref | 0.7 | 4.7 | 8.9 | 1.1 | 0.8 |
+| LD | 3.9 | 2.1 | 0.5 | 8.2 | 3.9 |
+| Grn | 3.9 | 0.9 | 0.2 | 4.1 | 8.8 |
+
+The BES files aren't in the repo (their terms don't allow redistributing them; `uk/data/bes/` is
+git-ignored). Download the combined panel (`BES2024_W31_Panel_v31.05.dta`, free, from
+britishelectionstudy.com) and run `bes_tables.py` on it before `seat_model.py`.
+
+**Tested against the alternatives.** `tactical_test.py` scores each method on four past
+elections, with its strength picked on the other three and tested on the held-out one (seats
+called right, national result given):
+
+| Method | 2010->15 | 2015->17 | 2017->19 | 2019->24 | Total |
+|---|---|---|---|---|---|
+| None | 586 | 556 | 580 | 509 | 2231 |
+| **BES** | **593** | 550 | 573 | 521 | **2237** |
+| BES, only in seats whose top two changed | 587 | 555 | 580 | 511 | 2233 |
+| Only in seats whose top two changed | 586 | 555 | 579 | 510 | 2230 |
+| Affinity only (judgement, everyone equally disliked) | 577 | 558 | 573 | 517 | 2225 |
+| Anti-government | 562 | 556 | 572 | 526 | 2216 |
+| Affinity x leader ratings | - | - | 574 | 524 | - |
+
+BES is the only method to beat "none" out of sample, by a little. Held at one fixed strength, 1.5-3
+gained 13-21 seats over "none" across the four elections, helping in the big-shift years (2015,
+2024) and costing a few in 2017 and 2019. It runs at 1.5 where YouGov has no pairing. Any of
+these methods can be mixed back into the nowcast through `SCENARIOS` in `tactical.py`.
+
+**Its weakness, and why the nowcast moved to YouGov**: BES wave 31 (May-June 2026) predates
+Burnham. An adjustment was tried (`burnham_adjustment.py`: shift each respondent's view of the
+Labour leader by YouGov's Starmer-to-Burnham change, and carry it into their Labour score) and
+backtested on the two leader changes in the BES panel (`leader_change_test.py`). It failed: the
+real change was 2.2x its prediction for May -> Johnson and 0.25x for Corbyn -> Starmer, so it
+isn't used.
+
+**What it does now** (25 Oct 2026, median seats, 10,000 runs):
+
+| | Lab | Con | Ref | LD | Grn |
+|---|---|---|---|---|---|
+| No tactical voting | 272 | 100 | 141 | 64 | 8 |
+| BES squeeze | 263 | 113 | 120 | 68 | 14 |
+| **YouGov rates (used)** | **273** | **134** | **81** | **75** | **18** |
+
+With YouGov's rates Reform loses ~60 seats, to the Conservatives (Labour, Lib Dem and Green
+voters backing them in Conservative-v-Reform seats) and to Labour and the Lib Dems. Reform's 90%
+range is 33-152. One assumption still holds Labour back: national totals are held to the polls,
+i.e. polls are assumed to already include tactical voting; if they don't, Labour gains more.
+
+For comparison, the published MRPs in `data/seat_projections.csv` (September-October 2026) have
+Labour at 241-353 and Reform at 84-153; Electoral Calculus's tactical versions have Reform at
+81-108, and More in Common's September tactical scenario 117.
+
+## Sussex & Brighton mayor (May 2028)
+
+```
+python uk/fetch_poll_history.py   # GB polls since 2010 + BBC projected national shares -> data/poll_history.csv, pns.csv
+python uk/local_gap.py            # local elections vs national polls, 2012-2026 -> data/local_gap.csv
+python uk/fetch_sv_results.py     # 2021-22 supplementary-vote counts (mayors + PCCs) -> data/sv_2021.csv
+python uk/mayor_vs_ge.py          # 2024 mayors vs GE; model backtest on the 2025 mayors
+python uk/mayoral_adjustment.py   # combine into the Sussex adjustment -> data/mayoral_adjustment.csv
+python uk/sv_transfer_test.py     # second-count methods on the 2021-22 counts, leave-one-out
+python uk/local_dropoff.py BES.dta  # BES wave 31: local gap = turnout drop-off + switching? (check)
+python uk/bourne_effect.py        # Katy Bourne's personal vote from her four Sussex PCC elections
+python uk/sussex_mayor.py         # method 1, general-election route: May 2028 (--today: if held today)
+python uk/sussex_mayor_local.py   # method 2, council route: if held today (--2028: May 2028)
+python uk/mayor_backtest.py       # method 1 on the 2021-22 supplementary-vote mayors
+```
+
+Two methods, run side by side because no past election is a clean stand-in for this one: the
+general election had real stakes but very different turnout; the councils and PCCs are local but
+low-stakes, and Reform wasn't on the PCC ballot.
+
+The first election for the new Sussex & Brighton mayoralty was moved from May 2026 to May 2028,
+and is expected to use the supplementary vote (a first and second choice; if no one has 50%,
+the top two go through and the others' second choices are added).
+
+**Method 1, general-election route** (`sussex_mayor.py`):
+
+1. **First choices**: the general-election model for Sussex's 17 constituencies, without
+   tactical voting (people can vote sincerely first under the supplementary vote).
+2. **Time to May 2028**: each run adds one real historical movement in the national polls over
+   the same 557 days (756 such stretches since 2010), centred on zero so past trends - UKIP's and
+   Reform's rises, the Conservative collapse - aren't carried forward, only their size.
+3. **Mayoral adjustment** (`mayoral_adjustment.py`), three measured parts:
+
+   | Points | Lab | Con | Ref | LD | Grn |
+   |---|---|---|---|---|---|
+   | National local gap: local elections vs polls, 2012-26 | -5.2 | -3.0 | +1.7 | +6.9 | +4.7 |
+   | Mayoral vs local: 2024-25 mayors after that year's gap | +2.4 | +3.7 | -2.3 | -3.3 | -4.7 |
+   | Sussex's own local pattern, councils 2019-2026 | -0.4 | -0.7 | +4.1 | -4.8 | +0.1 |
+   | **Total** | **-3.2** | **-0.1** | **+3.4** | **-1.2** | **+0.2** |
+
+   - Labour has run below its polls in local elections every year since 2012, in government and
+     in opposition alike; being in government or years into a term made no measurable difference
+     (`local_gap.py`, tested year by year), so each party's average gap is used. Labour's dire
+     2026 local result (projected share 17%) was mostly its polling at the time (19%).
+   - Area-wide mayoral races give back some of that and squeeze the Lib Dems and Greens.
+   - Sussex: (council share - national local share) - (Sussex GE share - national GE share),
+     each against the general election before it (2019 notional or 2024), for every Sussex-wide
+     set of results there is: the county councils (2021, 2026), Brighton & Hove (2019, 2023) and
+     the eight districts that elect all at once (Arun, Chichester, Horsham, Mid Sussex,
+     Eastbourne, Lewes, Rother, Wealden; 2019, 2023 - Adur, Crawley, Worthing and Hastings elect
+     by thirds, so one year is a third of the picture). Years are weighted by recency (half-life
+     5 years); the spread between years is the uncertainty. The Lib Dems' Sussex council vote is
+     high, but not as high as their 2024 general-election vote there (much of it tactical,
+     behind strong MPs): every year agrees (-3.8 to -6.1). Labour swings from -4.9 (2023) to
+     +2.8 (2026), so it averages near zero with a wide range.
+   - Each run draws the national gap and the Sussex pattern with their measured noise, and one
+     real 2024/25 mayoral area's residuals whole - candidate effects are lumpy and come at the
+     other parties' expense. Areas where an incumbent mayor stood are left out of the draws
+     (London, West Midlands, Greater Manchester, West Yorkshire, Liverpool City Region, South
+     Yorkshire, Tees Valley 2024; Doncaster 2025): no Sussex candidate is an incumbent mayor, and
+     their personal votes (Burnham +21, Houchen +22, Street +14, Rotheram +12 ...) would otherwise
+     inflate Labour and the Conservatives. That leaves 8 areas, averaging Labour -1.2,
+     Conservative +1.9, Reform -1.7, Lib Dem -1.5, Green -3.2 (the table's "mayoral vs local"
+     row is all 16).
+   - Independents and others likewise get one real 2024/25 area's shift per run
+     (`data/other_shifts.csv`): median +2 points, but up to +15 in one area in ten and +25 at
+     most (Jamie Driscoll, North East 2024).
+   - **Check against YouGov's MRP** (`data/mrp/yougov_mrp_2609.csv`, Sept 2026, 632 seats):
+     run at YouGov's own national figures, the model's 17 Sussex seats match the MRP's Sussex
+     total within a point for every party except Labour (MRP +1.8). Half of the gap is added
+     (Lab +1.0, Ref -0.5, LD -0.4 ...). The file is downloaded from YouGov into `uk/data/mrp/`
+     (git-ignored); without it this step is skipped. The MRP check also found the model gave Reform almost
+     nothing in seats where it didn't stand in 2024 (Brighton Kemptown, East Grinstead): a party
+     missing from a seat now starts from 0.8x its average share in the seats where it stood
+     (Sussex only; the backtests keep 1%).
+4. **Second count**: the others' voters transfer at YouGov's two-horse-race rates, calibrated on
+   the 9 mayoral counts of 2021-22 between two main parties (London, West Midlands, West
+   Yorkshire ...; `sv_transfer_test.py`). YouGov's rates predict **how many** second choices
+   reach the finalists almost exactly (1.01x), but real second choices **split** less
+   one-sidedly, by an amount that varies a lot from count to count: the split that fits each
+   exactly runs from 0.2x as lopsided as YouGov's answers (Croydon 2022) to 1.0x (Cambridgeshire
+   2021). Each run draws a value between 0.2 and 1.
+
+   | Final-round share, 2021-22 counts | Mayors (9): error | bias | PCCs (26): error | bias |
+   |---|---|---|---|---|
+   | YouGov rates, calibrated (each mayor left out of its own fit) | **1.0 pt** | -0.2 | 1.8 pt | -1.4 |
+   | YouGov rates, raw | 1.7 pt | +0.7 | 2.5 pt | -2.1 |
+   | BES ranked: real 2021 second choices, no fitting | **1.0 pt** | -0.9 | 1.4 pt | -0.8 |
+
+   The BES row is an independent check: in May 2021 (wave 21) the panel asked 11,600 people
+   their actual first and second choice for police commissioner (`bes_tables.py` ->
+   `data/bes/second_choices_2021.csv`), and that alone predicts the mayoral counts as well as the
+   calibrated YouGov rates. YouGov is kept because it is from 2026 (Reform voters were 180 of the
+   BES sample) and covers each pairing. PCC counts aren't used to calibrate: lower-profile races,
+   more independents, transfers ran further from both.
+
+**Katy Bourne's personal vote** (`bourne_effect.py`): in all four Sussex PCC elections she ran
+ahead of the typical Conservative PCC candidate (against each area's general-election
+Conservative share) by +2.6 (2012), +11.5 (2016), +2.8 (2021) and +4.7 (2024) - in the top third
+of 36 forces each time. The model adds +3.8 (the like-for-like 2021 and 2024 comparisons), with
+the spread of all four years as uncertainty (both methods).
+
+**Method 2, council route** (`sussex_mayor_local.py`): starts from how Sussex actually voted
+locally - the real votes in the May 2026 West Sussex and East Sussex county elections and the May
+2023 Brighton & Hove election, weighted by voters (Brighton's multi-member wards divided out), so
+local turnout is built in. Each area is moved by the national change since its election (polls in
+the 3 weeks before it vs now, logit scale, plus a polling miss); Reform in Brighton, which didn't
+stand in 2023, starts from its 2024 general-election share there. Then the same mayoral
+residuals (no incumbents), Bourne's personal vote, independents' shift and second count as
+method 1. Its weakness is the one raised about the 2026 county elections: little was at stake
+(councils due for abolition, an unpopular government), which can understate the mainstream
+parties - Labour especially. PCC results aren't used as a baseline because Reform didn't stand
+in 2021 or 2024; they're used for Bourne's personal vote and as a check on Labour (Labour's 2021
+and 2024 Sussex PCC shares, scaled to today's polls: 15-19%).
+
+**The forecast: the likely shape, with ranges** (from polls on 25 Oct 2026; 10,000 runs each)
+
+- Katy Bourne (Con) is the favourite under both methods and in every version tried.
+- Reform is likely to be at or near the top of the first round but usually loses the second
+  count, because second choices run heavily against it.
+- The race is mostly about who joins Reform in the final: Bourne, or less often the Lib Dems or
+  Labour.
+- The exact numbers are soft; the two methods disagree mainly on Bourne's first-round share
+  (about 4 points).
+
+| First round, if held today | Method 1 (GE route) | Method 2 (council route) |
+|---|---|---|
+| Con - Katy Bourne | 24.0% | 28.0% |
+| Ref - Paul Linehan | 23.9% | 22.0% |
+| LD - Ben Dempsey | 15.1% | 14.8% |
+| Lab - Caroline Baxter | 13.9% | 15.0% |
+| Grn - Rachel Millward | 13.5% | 11.2% |
+| Ind - Martin Webb and others | 6.5% | 5.9% |
+| **Most likely final, if held today** | Con v Ref (53% of runs): **Con 57 - Ref 43** | Con v Ref (62%): **Con 60 - Ref 40** |
+
+| Chance of winning | Method 1, today | Method 2, today | Method 1, May 2028 | Method 2, May 2028 |
+|---|---|---|---|---|
+| Con | 56% | 77% | **44%** | **60%** |
+| LD | 17% | 15% | 17% | 16% |
+| Ref | 14% | 4% | 21% | 12% |
+| Lab | 8% | 2% | 15% | 10% |
+| Ind | 3% | 3% | 2% | 2% |
+| Grn | 1% | 0% | 1% | 0% |
+
+The May 2028 columns add real historical poll movement over the 557 days to polling day
+(centred on zero). That assumes politics stays about as turbulent as 2010-2026 - roughly ten
+independent 18-month stretches, dominated by one-off shocks - so treat it as a rough guide to how
+much could change, not a measurement. Labour's first-round share comes out 14-15% under both
+methods now; Labour's 2021 and 2024 PCC shares, scaled to today's polls, give 15-19%.
+
+**Turnout drop-off** (`local_dropoff.py`, BES wave 31, 10,700 people asked about the May 2026
+locals): is the local gap different people turning out, or the same people voting differently?
+Modelling who votes (by vote intention, age and stated likelihood) and scaling it to a real 35%
+turnout, the drop-off alone moves shares by 1-2 points (Reform +1.9, Con +1.2, Lab -0.9); the
+rest is switching (Lab -2.8, LD +2.4). Together they miss the real 2026 gap (PNS minus polls)
+by 1.6 points per party, and Conservatives and Greens the wrong way, so the measured national
+gap stays in the model and this is a check. It does settle one question: a general-election
+model doesn't need a separate turnout drop-off for a mayoral race - it's a point or two, and
+the measured gap already contains it.
+
+**When the May 2027 results arrive** (likely the first elections to Sussex's new councils, with
+real stakes, and the first big test of Labour under Burnham at the ballot box):
+1. Swap method 2's baseline to the 2027 results, including Brighton & Hove's 2027 all-out election.
+2. Add 2027 to `data/pns.csv` and rerun `local_gap.py`: does Labour's local gap change under
+   Burnham?
+3. Re-run `mayoral_adjustment.py` with the 2027 Sussex council results as a third snapshot of
+   Sussex's own pattern.
+4. When the next BES wave comes out, rerun `local_dropoff.py` on it and check it against the
+   2027 projected national share.
+5. Re-run both methods and save the forecast with its date, to score against the real result
+   in May 2028.
+
+**Backtest** (`mayor_backtest.py`): the whole method run on the 14 mayoral elections of 2021-22
+that used the supplementary vote, with what was known on polling day (2019 baseline, polls in
+the 3 weeks before, demographic swing fitted on 2010-19, local gap from earlier years):
+
+| | Winners called | Main-party shares inside the 90% range | Independents / others inside |
+|---|---|---|---|
+| Combined-authority mayors (8 - the Sussex type) | **6 of 8** | **88%** | 4 of 4 |
+| All 14 (adds Salford, Doncaster, North Tyneside, Croydon, Newham, Tower Hamlets) | 9 of 14 | 84% | 8 of 10 |
+
+The two combined-authority misses were candidate-driven: Andy Street (West Midlands, 11 points
+above the model) and a strong Lib Dem in Cambridgeshire whose second choices carried Labour.
+The single-council misses were London-borough local politics (Croydon; Tower Hamlets, won by
+Lutfur Rahman's Aspire). The independents' range was widened after a first run left them inside
+it only 2 times in 10; the new range is measured on the 2024-25 mayors, so 2021-22 is a fair
+test of it. Not fully out of sample: the mayoral-vs-local residuals come from 2024-25, and the
+second-count calibration was fitted on these same contests - though leaving each count out of
+its own fit (`sv_transfer_test.py`) barely changes it (final-round share within 1.0 point on
+average). Bristol (wrong year scraped) and
+Tees Valley (two candidates) are left out; parties that didn't stand aren't scored.
+
+**Not included**: other candidates' personal votes, except as spread (they're unmeasured until
+the campaign), new parties that haven't declared (Restore Britain, Your Party), and turnout
+geography within method 1 (its Sussex-wide shares weight seats by 2024 general-election turnout).
+
+## Known gaps
+
+Scottish seats have no census data, only the Scotland flag, and the SNP comes out too high in
+the 2024 test (23 vs 9). Seat errors are independent apart from the tactical strength, so seats
+can't miss together by region or seat type yet (stage 4). The model also assumes 2024's
+independents stand again, which is why "Other" wins around 15-20 seats.
 
 ## Not covered yet
 

@@ -1,0 +1,106 @@
+kind,area,final,method,real_final_share,predicted_final_share,transfer_error,transfers,share_error,winner_right
+pcc,Avon and Somerset Police,Con v Lab,"YouGov, calibrated (leave one out)",52.4,50.6,11374.29,77129,-1.86,True
+pcc,Avon and Somerset Police,Con v Lab,"YouGov, raw",52.4,48.5,24654.72,77129,-3.97,False
+pcc,Avon and Somerset Police,Con v Lab,BES ranked (no fitting),52.4,52.1,4181.67,77129,-0.35,True
+pcc,Bedfordshire Police,Con v Lab,"YouGov, calibrated (leave one out)",54.1,52.1,4541.16,16200,-2.01,True
+pcc,Bedfordshire Police,Con v Lab,"YouGov, raw",54.1,51.3,6059.54,16200,-2.71,True
+pcc,Bedfordshire Police,Con v Lab,BES ranked (no fitting),54.1,53.2,2630.6,16200,-0.85,True
+pcc,Cambridgeshire Constabulary,Con v Lab,"YouGov, calibrated (leave one out)",52.7,53.4,7464.27,44901,0.71,True
+pcc,Cambridgeshire Constabulary,Con v Lab,"YouGov, raw",52.7,52.5,7464.27,44901,-0.28,True
+pcc,Cambridgeshire Constabulary,Con v Lab,BES ranked (no fitting),52.7,54.5,12664.96,44901,1.77,True
+pcc,Cheshire Constabulary,Con v Lab,"YouGov, calibrated (leave one out)",53.0,52.3,3630.38,28531,-0.69,True
+pcc,Cheshire Constabulary,Con v Lab,"YouGov, raw",53.0,51.7,5334.62,28531,-1.23,True
+pcc,Cheshire Constabulary,Con v Lab,BES ranked (no fitting),53.0,53.0,6636.15,28531,0.01,True
+pcc,Derbyshire Constabulary,Con v Lab,"YouGov, calibrated (leave one out)",56.0,55.5,3221.24,24729,-0.54,True
+pcc,Derbyshire Constabulary,Con v Lab,"YouGov, raw",56.0,55.2,4627.99,24729,-0.81,True
+pcc,Derbyshire Constabulary,Con v Lab,BES ranked (no fitting),56.0,56.0,5145.73,24729,-0.03,True
+pcc,Devon and Cornwall Police,Con v Lab,"YouGov, calibrated (leave one out)",65.2,61.3,28789.7,75129,-3.89,True
+pcc,Devon and Cornwall Police,Con v Lab,"YouGov, raw",65.2,59.5,44733.26,75129,-5.7,True
+pcc,Devon and Cornwall Police,Con v Lab,BES ranked (no fitting),65.2,62.4,22615.07,75129,-2.78,True
+pcc,Durham Constabulary,Lab v Con,"YouGov, calibrated (leave one out)",51.0,52.4,4270.16,17030,1.4,True
+pcc,Durham Constabulary,Lab v Con,"YouGov, raw",51.0,53.1,6300.88,17030,2.05,True
+pcc,Durham Constabulary,Lab v Con,BES ranked (no fitting),51.0,52.0,5352.29,17030,0.96,True
+pcc,Gloucestershire Constabulary,Con v LD,"YouGov, calibrated (leave one out)",60.4,59.6,2127.64,34825,-0.72,True
+pcc,Gloucestershire Constabulary,Con v LD,"YouGov, raw",60.4,58.2,6437.85,34825,-2.15,True
+pcc,Gloucestershire Constabulary,Con v LD,BES ranked (no fitting),60.4,62.8,7207.84,34825,2.45,True
+pcc,Hampshire Constabulary,Con v Lab,"YouGov, calibrated (leave one out)",68.2,65.1,33077.58,94245,-3.15,True
+pcc,Hampshire Constabulary,Con v Lab,"YouGov, raw",68.2,64.1,41967.78,94245,-4.15,True
+pcc,Hampshire Constabulary,Con v Lab,BES ranked (no fitting),68.2,66.8,18412.75,94245,-1.48,True
+pcc,Hertfordshire Constabulary,Con v LD,"YouGov, calibrated (leave one out)",55.3,56.0,6304.89,60933,0.73,True
+pcc,Hertfordshire Constabulary,Con v LD,"YouGov, raw",55.3,54.3,6906.55,60933,-1.05,True
+pcc,Hertfordshire Constabulary,Con v LD,BES ranked (no fitting),55.3,57.8,24193.67,60933,2.48,True
+pcc,Humberside Police,Con v Lab,"YouGov, calibrated (leave one out)",52.6,51.0,4961.4,17736,-1.63,True
+pcc,Humberside Police,Con v Lab,"YouGov, raw",52.6,50.2,7207.2,17736,-2.38,True
+pcc,Humberside Police,Con v Lab,BES ranked (no fitting),52.6,51.6,4821.47,17736,-1.06,True
+pcc,Lancashire Constabulary,Con v Lab,"YouGov, calibrated (leave one out)",51.3,51.1,3954.24,33319,-0.14,True
+pcc,Lancashire Constabulary,Con v Lab,"YouGov, raw",51.3,50.9,3954.24,33319,-0.34,True
+pcc,Lancashire Constabulary,Con v Lab,BES ranked (no fitting),51.3,51.6,6225.9,33319,0.35,True
+pcc,Leicestershire Police,Con v Lab,"YouGov, calibrated (leave one out)",57.0,55.9,6279.34,34627,-1.16,True
+pcc,Leicestershire Police,Con v Lab,"YouGov, raw",57.0,55.0,10322.38,34627,-2.04,True
+pcc,Leicestershire Police,Con v Lab,BES ranked (no fitting),57.0,56.6,11162.87,34627,-0.39,True
+pcc,Norfolk Constabulary,Con v Lab,"YouGov, calibrated (leave one out)",63.3,58.9,15519.7,34510,-4.37,True
+pcc,Norfolk Constabulary,Con v Lab,"YouGov, raw",63.3,57.4,21520.27,34510,-5.9,True
+pcc,Norfolk Constabulary,Con v Lab,BES ranked (no fitting),63.3,60.3,10823.28,34510,-3.03,True
+pcc,Northumbria Police,Lab v Con,"YouGov, calibrated (leave one out)",59.6,60.7,9444.61,48778,1.09,True
+pcc,Northumbria Police,Lab v Con,"YouGov, raw",59.6,61.3,9448.9,48778,1.67,True
+pcc,Northumbria Police,Lab v Con,BES ranked (no fitting),59.6,59.4,7507.65,48778,-0.19,True
+pcc,North Yorkshire Police,Con v Lab,"YouGov, calibrated (leave one out)",61.0,60.2,3638.56,22720,-0.85,True
+pcc,North Yorkshire Police,Con v Lab,"YouGov, raw",61.0,59.5,4955.74,22720,-1.55,True
+pcc,North Yorkshire Police,Con v Lab,BES ranked (no fitting),61.0,61.6,2654.44,22720,0.58,True
+pcc,Nottinghamshire Police,Con v Lab,"YouGov, calibrated (leave one out)",51.4,51.0,3666.96,19371,-0.37,True
+pcc,Nottinghamshire Police,Con v Lab,"YouGov, raw",51.4,50.6,4350.72,19371,-0.8,True
+pcc,Nottinghamshire Police,Con v Lab,BES ranked (no fitting),51.4,51.3,6372.34,19371,-0.06,True
+pcc,Surrey Police,Con v LD,"YouGov, calibrated (leave one out)",58.0,54.2,21957.99,85659,-3.77,True
+pcc,Surrey Police,Con v LD,"YouGov, raw",58.0,52.8,29259.65,85659,-5.26,True
+pcc,Surrey Police,Con v LD,BES ranked (no fitting),58.0,58.0,19811.27,85659,-0.07,True
+pcc,Sussex Police,Con v Lab,"YouGov, calibrated (leave one out)",65.6,61.5,28044.97,73810,-4.13,True
+pcc,Sussex Police,Con v Lab,"YouGov, raw",65.6,59.7,41805.29,73810,-5.92,True
+pcc,Sussex Police,Con v Lab,BES ranked (no fitting),65.6,62.8,19884.62,73810,-2.82,True
+pcc,Thames Valley Police,Con v Lab,"YouGov, calibrated (leave one out)",57.3,55.7,18791.52,104067,-1.61,True
+pcc,Thames Valley Police,Con v Lab,"YouGov, raw",57.3,54.7,29248.36,104067,-2.58,True
+pcc,Thames Valley Police,Con v Lab,BES ranked (no fitting),57.3,57.3,11915.68,104067,-0.03,True
+pcc,West Midlands Police,Lab v Con,"YouGov, calibrated (leave one out)",53.7,53.9,2440.67,45214,0.16,True
+pcc,West Midlands Police,Lab v Con,"YouGov, raw",53.7,54.0,3532.94,45214,0.33,True
+pcc,West Midlands Police,Lab v Con,BES ranked (no fitting),53.7,53.1,6400.78,45214,-0.57,True
+pcc,West Yorkshire Police,Lab v Con,"YouGov, calibrated (leave one out)",59.8,60.7,8798.46,82723,0.95,True
+pcc,West Yorkshire Police,Lab v Con,"YouGov, raw",59.8,61.6,17325.62,82723,1.78,True
+pcc,West Yorkshire Police,Lab v Con,BES ranked (no fitting),59.8,59.6,2564.12,82723,-0.21,True
+pcc,Wiltshire Police,Con v LD,"YouGov, calibrated (leave one out)",63.3,59.4,11032.88,38179,-3.86,True
+pcc,Wiltshire Police,Con v LD,"YouGov, raw",63.3,57.5,17358.17,38179,-5.79,True
+pcc,Wiltshire Police,Con v LD,BES ranked (no fitting),63.3,63.7,2374.17,38179,0.43,True
+pcc,Gwent Police,Lab v Con,"YouGov, calibrated (leave one out)",60.5,58.8,7707.44,25064,-1.66,True
+pcc,Gwent Police,Lab v Con,"YouGov, raw",60.5,59.1,7707.44,25064,-1.41,True
+pcc,Gwent Police,Lab v Con,BES ranked (no fitting),60.5,56.5,12471.84,25064,-3.99,True
+pcc,North Wales Police,Lab v Con,"YouGov, calibrated (leave one out)",52.1,49.1,13987.33,43252,-2.99,False
+pcc,North Wales Police,Lab v Con,"YouGov, raw",52.1,49.4,13987.33,43252,-2.71,False
+pcc,North Wales Police,Lab v Con,BES ranked (no fitting),52.1,46.2,21797.32,43252,-5.85,False
+pcc,South Wales Police,Lab v Con,"YouGov, calibrated (leave one out)",63.8,62.2,24786.25,73732,-1.59,True
+pcc,South Wales Police,Lab v Con,"YouGov, raw",63.8,62.5,24786.25,73732,-1.3,True
+pcc,South Wales Police,Lab v Con,BES ranked (no fitting),63.8,59.1,34681.85,73732,-4.71,True
+mayor,2021 London mayoral election,Lab v Con,"YouGov, calibrated (leave one out)",55.2,54.5,30459.71,276863,-0.69,True
+mayor,2021 London mayoral election,Lab v Con,"YouGov, raw",55.2,56.1,35656.84,276863,0.82,True
+mayor,2021 London mayoral election,Lab v Con,BES ranked (no fitting),55.2,54.1,46485.18,276863,-1.1,True
+mayor,2021 West Midlands mayoral election,Con v Lab,"YouGov, calibrated (leave one out)",54.0,53.4,7589.94,38968,-0.66,True
+mayor,2021 West Midlands mayoral election,Con v Lab,"YouGov, raw",54.0,52.9,12875.25,38968,-1.12,True
+mayor,2021 West Midlands mayoral election,Con v Lab,BES ranked (no fitting),54.0,53.6,5143.58,38968,-0.43,True
+mayor,2021 West Yorkshire mayoral election,Lab v Con,"YouGov, calibrated (leave one out)",59.8,60.7,8798.46,82723,0.95,True
+mayor,2021 West Yorkshire mayoral election,Lab v Con,"YouGov, raw",59.8,61.6,17325.62,82723,1.78,True
+mayor,2021 West Yorkshire mayoral election,Lab v Con,BES ranked (no fitting),59.8,59.6,2564.12,82723,-0.21,True
+mayor,2021 Cambridgeshire and Peterborough mayoral election,Lab v Con,"YouGov, calibrated (leave one out)",51.3,50.0,11296.9,52141,-1.35,False
+mayor,2021 Cambridgeshire and Peterborough mayoral election,Lab v Con,"YouGov, raw",51.3,51.3,11296.9,52141,0.04,True
+mayor,2021 Cambridgeshire and Peterborough mayoral election,Lab v Con,BES ranked (no fitting),51.3,48.9,18333.22,52141,-2.38,False
+mayor,2021 West of England mayoral election,Lab v Con,"YouGov, calibrated (leave one out)",59.5,60.3,5567.59,54022,0.83,True
+mayor,2021 West of England mayoral election,Lab v Con,"YouGov, raw",59.5,62.9,15588.03,54022,3.36,True
+mayor,2021 West of England mayoral election,Lab v Con,BES ranked (no fitting),59.5,60.1,3366.78,54022,0.56,True
+mayor,2022 South Yorkshire mayoral election,Lab v Con,"YouGov, calibrated (leave one out)",71.4,71.8,4593.54,45177,0.4,True
+mayor,2022 South Yorkshire mayoral election,Lab v Con,"YouGov, raw",71.4,73.5,10418.56,45177,2.06,True
+mayor,2022 South Yorkshire mayoral election,Lab v Con,BES ranked (no fitting),71.4,70.0,5414.06,45177,-1.49,True
+mayor,2021 Salford mayoral election,Lab v Con,"YouGov, calibrated (leave one out)",66.2,67.1,2003.42,6797,0.97,True
+mayor,2021 Salford mayoral election,Lab v Con,"YouGov, raw",66.2,67.8,2003.42,6797,1.62,True
+mayor,2021 Salford mayoral election,Lab v Con,BES ranked (no fitting),66.2,65.5,1070.99,6797,-0.69,True
+mayor,2021 Doncaster mayoral election,Lab v Con,"YouGov, calibrated (leave one out)",59.8,60.3,629.93,6602,0.57,True
+mayor,2021 Doncaster mayoral election,Lab v Con,"YouGov, raw",59.8,60.7,800.02,6602,0.89,True
+mayor,2021 Doncaster mayoral election,Lab v Con,BES ranked (no fitting),59.8,58.5,1194.55,6602,-1.32,True
+mayor,2022 Croydon mayoral election,Con v Lab,"YouGov, calibrated (leave one out)",50.4,48.0,3737.42,11870,-2.38,False
+mayor,2022 Croydon mayoral election,Con v Lab,"YouGov, raw",50.4,46.9,5473.89,11870,-3.47,False
+mayor,2022 Croydon mayoral election,Con v Lab,BES ranked (no fitting),50.4,49.6,2975.39,11870,-0.79,False

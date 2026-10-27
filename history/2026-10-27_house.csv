@@ -1,0 +1,436 @@
+district,democrat,republican,holder,lean,incumbency,fundamentals,poll_avg,num_polls,margin,dem_win_prob,rating
+AK-01,Bill Hill,Nick Begich III,REP,-13.29,-3.7,-2.64,-25.61,0.96,-16.99,0.006,Safe R
+AL-01,Clyde Jones,Jerry Carl,REP,-34.84,0.0,-25.78,,0.0,-25.78,0.005,Safe R
+AL-02,Shomari Figures,Rhett Marques,DEM,-13.05,3.7,-0.3,-2.16,0.02,-0.37,0.484,Toss-up
+AL-03,Lee McInnis,Mike Rogers,REP,-45.61,-3.7,-40.25,,0.0,-40.25,0.0,Safe R
+AL-04,Amanda Pusczek,Robert Aderholt,REP,-65.86,-3.7,-60.5,,0.0,-60.5,0.0,Safe R
+AL-05,Andrew Sneed,Dale Strong,REP,-29.4,-3.7,-24.04,,0.0,-24.04,0.008,Safe R
+AL-06,Maurice Mercer,Gary Palmer,REP,-34.92,-3.7,-29.56,,0.0,-29.56,0.003,Safe R
+AL-07,Terri Sewell,Ammie Akin,DEM,19.32,3.7,32.07,,0.0,32.07,0.998,Safe D
+AR-01,Terri Green,Rick Crawford,REP,-44.76,-3.7,-39.41,,0.0,-39.41,0.001,Safe R
+AR-02,Chris Jones,French Hill,REP,-15.56,-3.7,-10.21,-6.3,0.51,-8.33,0.087,Likely R
+AR-03,Robb Ryerse,Steve Womack,REP,-25.75,-3.7,-20.4,,0.0,-20.4,0.012,Safe R
+AR-04,James Russell,Bruce Westerman,REP,-39.12,-3.7,-33.77,,0.0,-33.77,0.001,Safe R
+AZ-01,Amish Shah,Jay Feely,REP,-2.27,0.0,8.8,3.28,0.12,7.77,0.866,Likely D
+AZ-02,Jonathan Nez,Eli Crane,REP,-13.41,-3.7,-3.95,-0.87,0.51,-2.47,0.337,Lean R
+AZ-03,Yassamin Ansari,(no Republican filed),DEM,43.43,3.7,56.18,,0.0,100,1.0,Safe D
+AZ-04,Greg Stanton,Zuhdi Jasser,DEM,7.27,3.7,18.0,,0.0,18.0,0.98,Safe D
+AZ-05,Elizabeth Lee,Mark Lamb,REP,-19.63,0.0,-10.57,,0.0,-10.57,0.087,Likely R
+AZ-06,JoAnna Mendoza,Juan Ciscomani,REP,-0.82,-3.7,5.79,1.58,0.0,5.79,0.783,Lean D
+AZ-07,Adelita Grijalva,Daniel Butierez,DEM,25.47,3.7,38.23,,0.0,38.23,0.999,Safe D
+AZ-08,Bernadette Greene-Placentia,Abraham Hamadeh,REP,-16.12,-3.7,-8.45,,0.0,-8.45,0.134,Likely R
+AZ-09,Danielle Sterbinsky,Paul Gosar,REP,-30.24,-3.7,-24.89,,0.0,-24.89,0.006,Safe R
+CA-01,Mike McGuire,James Gallagher,REP,13.95,-3.7,19.3,,0.0,19.3,0.983,Safe D
+CA-02,Jared Huffman,Robin Littau,DEM,26.32,3.7,39.08,,0.0,39.08,1.0,Safe D
+CA-03,Amerish Bera,Robb Tucker,DEM,11.31,3.7,24.06,,0.0,24.06,0.993,Safe D
+CA-04,Mike Thompson,(no Republican — top-two),DEM,16.78,3.7,29.53,,0.0,100,1.0,Safe D
+CA-05,Michael Masuda,Tom McClintock,REP,-19.74,-3.7,-14.38,,0.0,-14.38,0.042,Safe R
+CA-06,Richard Pan,Kevin Kiley,IND,9.75,-3.7,15.1,,0.0,15.1,0.964,Safe D
+CA-07,Mai Vang,(no Republican — top-two),DEM,15.13,0.0,24.19,,0.0,100,1.0,Safe D
+CA-08,John Garamendi,Rudy Recile,DEM,37.67,3.7,50.43,,0.0,50.43,1.0,Safe D
+CA-09,Josh Harder,John McBride,DEM,15.81,3.7,28.56,,0.0,28.56,0.997,Safe D
+CA-10,Mark DeSaulnier,Jeff Frese,DEM,35.98,3.7,48.73,,0.0,48.73,1.0,Safe D
+CA-11,Scott Wiener,(no Republican — top-two),DEM,72.54,0.0,81.59,,0.0,100,1.0,Safe D
+CA-12,Lateefah Simon,(no Republican — top-two),DEM,79.28,3.7,92.04,,0.0,100,1.0,Safe D
+CA-13,Adam Gray,Kevin Lincoln,DEM,5.38,3.7,18.13,,0.0,18.13,0.981,Safe D
+CA-14,Aisha Wahab,(no Republican — top-two),DEM,39.21,3.7,51.96,,0.0,100,1.0,Safe D
+CA-15,Kevin Mullin,Charles Hoelter,DEM,52.3,3.7,65.06,,0.0,65.06,1.0,Safe D
+CA-16,Sam Liccardo,Peter Sundin Soulé,DEM,51.42,3.7,64.17,,0.0,64.17,1.0,Safe D
+CA-17,Rohit Khanna,Ritesh Tandon,DEM,43.65,3.7,56.41,,0.0,56.41,1.0,Safe D
+CA-18,Zoe Lofgren,Shane Lewis,DEM,33.58,3.7,46.34,,0.0,46.34,1.0,Safe D
+CA-19,Jimmy Panetta,Peter Verbica,DEM,37.14,3.7,49.9,,0.0,49.9,1.0,Safe D
+CA-20,Sandra Van Scotter,Vince Fong,REP,-31.82,-3.7,-26.47,,0.0,-26.47,0.004,Safe R
+CA-21,Jim Costa,Kyle Kirkland,DEM,10.29,3.7,23.04,,0.0,23.04,0.993,Safe D
+CA-22,Randy Villegas,David Valadao,REP,3.45,-3.7,8.8,3.35,0.0,8.8,0.878,Likely D
+CA-23,Tessa Lynn Hodge,Jay Obernolte,REP,-18.24,-3.7,-12.88,,0.0,-12.88,0.061,Likely R
+CA-24,Salud Carbajal,Robert Smith,DEM,26.7,3.7,39.45,,0.0,39.45,0.999,Safe D
+CA-25,Raul Ruiz,Joe Males,DEM,8.92,3.7,21.67,,0.0,21.67,0.992,Safe D
+CA-26,Jacqui Irwin,Samuel Gallucci,DEM,17.57,0.0,26.62,,0.0,26.62,0.995,Safe D
+CA-27,George Whitesides,Jason Gibbs,DEM,12.7,3.7,25.45,,0.0,25.45,0.995,Safe D
+CA-28,Judy Chu,April Verlato,DEM,28.29,3.7,41.04,,0.0,41.04,1.0,Safe D
+CA-29,Luz Rivas,(no Republican — top-two),DEM,39.84,3.7,52.6,,0.0,100,1.0,Safe D
+CA-30,Laura Friedman,Scott Alan Meyers,DEM,43.3,3.7,56.05,,0.0,56.05,1.0,Safe D
+CA-31,Gilbert Cisneros,Eric Ching,DEM,16.38,3.7,29.14,,0.0,29.14,0.997,Safe D
+CA-32,Brad Sherman,Larry Thompson,DEM,28.41,3.7,41.16,,0.0,41.16,1.0,Safe D
+CA-33,Pete Aguilar,Stephanie Vargas,DEM,14.76,3.7,27.51,,0.0,27.51,0.997,Safe D
+CA-34,Jimmy Gomez,(no Republican — top-two),DEM,57.32,3.7,70.07,,0.0,100,1.0,Safe D
+CA-35,Norma Torres,Mike Cargile,DEM,12.59,3.7,25.34,,0.0,25.34,0.995,Safe D
+CA-36,Ted Lieu,Houston Brignano,DEM,41.9,3.7,54.66,,0.0,54.66,1.0,Safe D
+CA-37,Sydney Kamlager-Dove,(no Republican — top-two),DEM,66.32,3.7,79.07,,0.0,100,1.0,Safe D
+CA-38,Hilda Solis,Pedro Casas,DEM,17.46,0.0,26.52,,0.0,26.52,0.995,Safe D
+CA-39,Mark Takano,Steve Manos,DEM,14.48,3.7,27.24,,0.0,27.24,0.997,Safe D
+CA-40,(no Democrat — top-two),Ken Calvert,REP,-11.74,-3.7,-6.38,,0.0,-100,0.0,Safe R
+CA-41,Linda Sanchez,Mitch Clemmons,DEM,18.02,3.7,30.78,,0.0,30.78,0.998,Safe D
+CA-42,Robert Garcia,Brian Burley,DEM,15.26,3.7,28.02,,0.0,28.02,0.997,Safe D
+CA-43,Maxine Waters,Cristian Morales,DEM,55.23,3.7,67.99,,0.0,67.99,1.0,Safe D
+CA-44,Nanette Barragan,Genevieve Angel,DEM,42.0,3.7,54.75,,0.0,54.75,1.0,Safe D
+CA-45,Derek Tran,Chuong Vo,DEM,6.7,3.7,19.46,,0.0,19.46,0.984,Safe D
+CA-46,Lou Correa,David Pan,DEM,20.46,3.7,33.21,,0.0,33.21,0.999,Safe D
+CA-47,Dave Min,Jenny Rae Le Roux,DEM,11.79,3.7,24.54,,0.0,24.54,0.994,Safe D
+CA-48,Marni von Wilpert,Jim Desmond,REP,4.07,0.0,13.13,6.27,0.7,9.33,0.938,Likely D
+CA-49,Mike Levin,Armen Kurdian,DEM,12.99,3.7,25.75,,0.0,25.75,0.996,Safe D
+CA-50,Scott Peters,Steve Cohen,DEM,19.24,3.7,31.99,,0.0,31.99,0.998,Safe D
+CA-51,Sara Jacobs,Ricardo Cabrera,DEM,19.89,3.7,32.64,,0.0,32.64,0.998,Safe D
+CA-52,Juan Vargas,Jeff Belle,DEM,22.97,3.7,35.72,,0.0,35.72,0.999,Safe D
+CO-01,Melat Kiros,Christy Peterson,DEM,58.78,0.0,67.83,,0.0,67.83,1.0,Safe D
+CO-02,Joe Neguse,Kelley Dennison,DEM,40.51,3.7,53.27,,0.0,53.27,1.0,Safe D
+CO-03,Dwayne Romero,Jeff Hurd,REP,-9.95,-3.7,-1.38,-2.59,0.19,-1.69,0.396,Tilt R
+CO-04,Eileen Laubacher,Lauren Boebert,REP,-19.45,-3.7,-9.7,-6.72,0.11,-9.2,0.111,Likely R
+CO-05,Jessica Killin,Jeff Crank,REP,-10.49,-3.7,-8.54,0.21,0.46,-4.55,0.222,Lean R
+CO-06,Jason Crow,Jason Clark,DEM,20.79,3.7,33.54,,0.0,33.54,0.998,Safe D
+CO-07,Brittany Pettersen,Tim Bennett,DEM,14.52,3.7,24.33,,0.0,24.33,0.994,Safe D
+CO-08,Manny Rutinel,Gabe Evans,REP,-0.57,-3.7,3.06,2.08,0.04,3.0,0.666,Lean D
+CT-01,Luke Bronin,Amy Chai,DEM,24.43,0.0,33.48,,0.0,33.48,0.999,Safe D
+CT-02,Joe Courtney,George Austin,DEM,8.37,3.7,21.12,,0.0,21.12,0.991,Safe D
+CT-03,Rosa DeLauro,Christopher Lancia,DEM,15.5,3.7,28.25,,0.0,28.25,0.997,Safe D
+CT-04,Jim Himes,Michael Goldstein,DEM,25.41,3.7,38.16,,0.0,38.16,0.999,Safe D
+CT-05,Jahana Hayes,Chris Shea,DEM,6.66,3.7,16.02,6.63,0.13,14.16,0.969,Safe D
+DE-01,Sarah McBride,Donyale Hall,DEM,15.55,3.7,28.31,,0.0,28.31,0.997,Safe D
+FL-01,Gay Valimont,Jimmy Patronis,REP,-36.75,-3.7,-31.4,,0.0,-31.4,0.002,Safe R
+FL-02,Amanda Green,Austin Rogers,REP,-16.45,0.0,-7.4,-19.58,0.0,-7.48,0.164,Likely R
+FL-03,Seth Harp,Kat Cammack,REP,-19.43,-3.7,-14.08,,0.0,-14.08,0.045,Safe R
+FL-04,LaShonda Holloway,Aaron Bean,REP,-10.82,-3.7,-5.46,,0.0,-5.46,0.234,Lean R
+FL-05,Rachel Grage,John Rutherford,REP,-20.63,-3.7,-15.28,,0.0,-15.28,0.033,Safe R
+FL-06,Eric Yonce,Randy Fine,REP,-28.57,-3.7,-23.22,,0.0,-23.22,0.008,Safe R
+FL-07,Bale Dalton,Ryan Elijah,REP,-10.89,0.0,-1.83,-6.68,0.17,-2.99,0.327,Lean R
+FL-08,Jennifer Jenkins,Mike Haridopolos,REP,-15.09,-3.7,-9.73,-10.12,0.0,-9.73,0.109,Likely R
+FL-09,Darren Soto,Dan Green,DEM,-14.65,3.7,-1.9,-1.93,0.15,-1.9,0.387,Tilt R
+FL-10,Maxwell Frost,(no Republican filed),DEM,26.89,3.7,39.64,,0.0,100,1.0,Safe D
+FL-11,James Pericola,Joe Strada,REP,-14.37,0.0,-5.31,,0.0,-5.31,0.244,Lean R
+FL-12,Kimberly Overman,Gus Bilirakis,REP,-12.87,-3.7,-7.52,,0.0,-7.52,0.166,Likely R
+FL-13,Leela Gray,Anna Paulina Luna,REP,-12.03,-3.7,-6.67,0.85,0.26,-4.25,0.257,Lean R
+FL-14,Kathy Castor,Mike Beltran,DEM,-8.74,3.7,4.02,2.35,0.5,3.23,0.711,Lean D
+FL-15,Robert People,Laurel Lee,REP,-17.55,-3.7,-12.2,,0.0,-12.2,0.069,Likely R
+FL-16,Kelly Kirschner,Sydney Gruters,REP,-11.6,0.0,-2.55,-3.91,0.11,-2.78,0.347,Lean R
+FL-17,Matthew Montavon,Greg Steube,REP,-20.12,-3.7,-14.76,,0.0,-14.76,0.037,Safe R
+FL-18,Curtis Gibson,Scott Franklin,REP,-15.17,-3.7,-9.82,,0.0,-9.82,0.104,Likely R
+FL-19,Victor Arias,Jim Schwartzel,REP,-28.36,0.0,-19.3,,0.0,-19.3,0.016,Safe R
+FL-20,Debbie Wasserman Schultz,Brent Andersen,DEM,40.75,3.7,53.5,,0.0,53.5,1.0,Safe D
+FL-21,James Martin,Brian Mast,REP,-14.42,-3.7,-9.06,-9.54,0.05,-9.11,0.105,Likely R
+FL-22,Pia Dandiya,Casey Askar,DEM,-6.77,0.0,2.29,0.12,0.03,2.17,0.627,Tilt D
+FL-23,Lois Frankel,Deborah Adeimy,DEM,17.64,3.7,30.4,,0.0,30.4,0.998,Safe D
+FL-24,Oliver Gilbert,Mayonna Te Brown,DEM,44.76,0.0,53.82,,0.0,53.82,1.0,Safe D
+FL-25,Jared Moskowitz,Scott Singer,DEM,-4.96,3.7,7.79,2.42,0.53,5.16,0.806,Likely D
+FL-26,Nicole Locklin,Mario Diaz-Balart,REP,-12.39,-3.7,-7.03,,0.0,-7.03,0.185,Likely R
+FL-27,Eliott Rodriguez,Maria Salazar,REP,-9.54,-3.7,-4.19,-1.89,0.05,-4.0,0.292,Lean R
+FL-28,Phil Ehr,Carlos Gimenez,REP,-19.03,-3.7,-13.67,,0.0,-13.67,0.049,Safe R
+GA-01,Amanda Hollowell,Jim Kingston,REP,-15.43,0.0,-6.37,,0.0,-6.37,0.199,Likely R
+GA-02,Sanford Bishop,Matt Day,DEM,8.43,3.7,24.52,,0.0,24.52,0.994,Safe D
+GA-03,Maura Keller,Brian Jack,REP,-30.33,-3.7,-24.98,-6.06,0.09,-22.16,0.006,Safe R
+GA-04,Henry Johnson,James Duffie,DEM,54.43,3.7,67.18,,0.0,67.18,1.0,Safe D
+GA-05,Nikema Williams,John Salvesen,DEM,72.83,3.7,85.59,,0.0,85.59,1.0,Safe D
+GA-06,Lucy McBath,Kevin Martin,DEM,49.96,3.7,62.71,,0.0,62.71,1.0,Safe D
+GA-07,Tony Kozycki,Rich McCormick,REP,-22.31,-3.7,-16.96,0.4,0.13,-13.65,0.036,Safe R
+GA-08,Kelly Esti,Austin Scott,REP,-30.15,-3.7,-24.79,,0.0,-24.79,0.007,Safe R
+GA-09,Caitlyn Gegen,Andrew Clyde,REP,-34.47,-3.7,-29.11,,0.0,-29.11,0.004,Safe R
+GA-10,Pamela DeLancy,Houston Gaines,REP,-21.41,0.0,-12.36,,0.0,-12.36,0.063,Likely R
+GA-11,Chris Harden,John Cowan,REP,-23.84,0.0,-14.78,-4.18,0.03,-14.29,0.041,Safe R
+GA-12,Ceretta Smith,Rick Allen,REP,-13.3,-3.7,-7.95,,0.0,-7.95,0.153,Likely R
+GA-13,Jasmine Clark,Jonathan Chavez,DEM,41.58,0.0,50.64,,0.0,50.64,1.0,Safe D
+GA-14,Shawn Harris,Clay Fuller,REP,-37.75,-3.7,-32.4,,0.0,-32.4,0.003,Safe R
+HI-01,Ed Case,Adriel Lam,DEM,26.89,3.7,39.64,,0.0,39.64,1.0,Safe D
+HI-02,Jill Tokuda,Brenton Awa,DEM,24.61,3.7,37.36,,0.0,37.36,1.0,Safe D
+IA-01,Christina Bohannan,Mariannette Miller-Meeks,REP,-7.04,-3.7,6.38,8.12,0.0,6.39,0.796,Lean D
+IA-02,Lindsay James,Joe Mitchell,REP,-8.59,0.0,0.47,0.34,0.5,0.41,0.532,Toss-up
+IA-03,Sarah Trone Garriott,Zach Nunn,REP,-3.5,-3.7,2.28,-1.4,0.0,2.28,0.622,Tilt D
+IA-04,Dave Dawson,Chris McGowan,REP,-30.57,0.0,-21.51,,0.0,-21.51,0.01,Safe R
+ID-01,Kaylee Peterson,Russ Fulcher,REP,-44.65,-3.7,-39.29,-23.82,0.01,-38.97,0.001,Safe R
+ID-02,Elinor Gilbreath,Mike Simpson,REP,-26.84,-3.7,-21.48,-17.13,0.39,-19.67,0.005,Safe R
+IL-01,Jonathan Jackson,Christian Maxwell,DEM,35.63,3.7,48.39,,0.0,48.39,1.0,Safe D
+IL-02,Donna Miller,Michael Noack,DEM,35.77,0.0,44.83,,0.0,44.83,0.999,Safe D
+IL-03,Delia Ramirez,Angel Oakley,DEM,34.98,3.7,47.73,,0.0,47.73,1.0,Safe D
+IL-04,Patty Garcia,Lupe Castillo,DEM,34.06,0.0,43.12,37.83,0.01,43.06,1.0,Safe D
+IL-05,Mike Quigley,Tommy Hanson,DEM,38.49,3.7,51.25,,0.0,51.25,1.0,Safe D
+IL-06,Sean Casten,Niki Conforti,DEM,7.02,3.7,19.77,,0.0,19.77,0.984,Safe D
+IL-07,La Shawn Ford,Chad Koppie,DEM,68.67,0.0,77.73,,0.0,77.73,1.0,Safe D
+IL-08,Melissa Bean,Jennifer Davis,DEM,9.42,0.0,18.48,,0.0,18.48,0.982,Safe D
+IL-09,Daniel Biss,John Elleson,DEM,38.68,0.0,47.74,,0.0,47.74,1.0,Safe D
+IL-10,Brad Schneider,Carl Lambrecht,DEM,23.37,3.7,36.12,,0.0,36.12,0.999,Safe D
+IL-11,Bill Foster,Jeff Walter,DEM,12.46,3.7,25.21,,0.0,25.21,0.996,Safe D
+IL-12,Julie Fortier,Mike Bost,REP,-43.93,-3.7,-38.58,,0.0,-38.58,0.001,Safe R
+IL-13,Nikki Budzinski,Jeff Wilson,DEM,10.81,3.7,23.56,,0.0,23.56,0.993,Safe D
+IL-14,Lauren Underwood,James Marter,DEM,6.85,3.7,19.6,,0.0,19.6,0.987,Safe D
+IL-15,Jennifer Todd,Mary Miller,REP,-40.21,-3.7,-34.86,,0.0,-34.86,0.001,Safe R
+IL-16,Paul Nolley,Darin LaHood,REP,-22.93,-3.7,-17.57,,0.0,-17.57,0.022,Safe R
+IL-17,Eric Sorensen,Dillan Vancil,DEM,5.7,3.7,18.46,,0.0,18.46,0.982,Safe D
+IN-01,Frank Mrvan,Barb Regnitz,DEM,2.89,3.7,21.13,,0.0,21.13,0.989,Safe D
+IN-02,Jamee Decio,Rudy Yakym,REP,-26.06,-3.7,-20.71,,0.0,-20.71,0.014,Safe R
+IN-03,Kelly Thompson,Marlin Stutzman,REP,-31.7,-3.7,-26.35,,0.0,-26.35,0.004,Safe R
+IN-04,Drew Cox,Jim Baird,REP,-30.2,-3.7,-24.85,,0.0,-24.85,0.006,Safe R
+IN-05,J.D. Ford,Victoria Spartz,REP,-17.41,-3.7,-12.06,-3.44,0.51,-7.92,0.09,Likely R
+IN-06,Cynthia Wirth,Jefferson Shreve,REP,-33.35,-3.7,-28.0,,0.0,-28.0,0.003,Safe R
+IN-07,Andre Carson,Patrick McAuley,DEM,42.18,3.7,54.94,,0.0,54.94,1.0,Safe D
+IN-08,Mary Allen,Mark Messmer,REP,-35.76,-3.7,-30.41,,0.0,-30.41,0.002,Safe R
+IN-09,Brad Meyer,Erin Houchin,REP,-29.76,-3.7,-24.4,,0.0,-24.4,0.006,Safe R
+KS-01,Lauren Reinhold,Tracey Mann,REP,-31.75,-3.7,-26.39,,0.0,-26.39,0.003,Safe R
+KS-02,Don Coover,Derek Schmidt,REP,-19.32,-3.7,-13.97,-7.14,0.18,-12.27,0.044,Safe R
+KS-03,Sharice Davids,Eric Jenkins,DEM,3.65,3.7,18.63,,0.0,18.63,0.982,Safe D
+KS-04,Katy Tyndell,Ron Estes,REP,-23.71,-3.7,-18.35,,0.0,-18.35,0.02,Safe R
+KY-01,Drew Williams,James Comer,REP,-46.83,-3.7,-41.47,,0.0,-41.47,0.0,Safe R
+KY-02,Megan Wingfield,Brett Guthrie,REP,-40.93,-3.7,-35.58,,0.0,-35.58,0.001,Safe R
+KY-03,Morgan McGarvey,Maria Rodriguez,DEM,19.82,3.7,32.57,,0.0,32.57,0.998,Safe D
+KY-04,Melissa Strange,Ed Gallrein,REP,-35.71,0.0,-26.65,,0.0,-26.65,0.004,Safe R
+KY-05,Ned Pillersdorf,Harold Rogers,REP,-63.49,-3.7,-58.14,,0.0,-58.14,0.0,Safe R
+KY-06,Zach Dembo,Ralph Alvarado,REP,-14.69,0.0,-5.63,4.22,0.7,-0.16,0.489,Toss-up
+LA-01,Lauren Jewett,Steve Scalise,REP,-39.47,-3.7,-34.12,,0.0,-34.12,0.002,Safe R
+LA-02,Troy Carter,Peter Williams,DEM,49.97,3.7,62.72,,0.0,62.72,1.0,Safe D
+LA-03,John Day,Clay Higgins,REP,-35.62,-3.7,-30.26,,0.0,-30.26,0.003,Safe R
+LA-04,Matthew Gromlich,Mike Johnson,REP,-33.34,-3.7,-27.99,,0.0,-27.99,0.003,Safe R
+LA-05,Dan McKay,Michael Echols,REP,-32.97,0.0,-23.91,,0.0,-23.91,0.006,Safe R
+LA-06,"Lindsay ""Rubia"" Garcia",Blake Miguez,DEM,-32.49,0.0,-23.43,,0.0,-23.43,0.008,Safe R
+MA-01,Richard Neal,(no Republican filed),DEM,15.88,3.7,28.64,,0.0,100,1.0,Safe D
+MA-02,Jim McGovern,(no Republican filed),DEM,25.83,3.7,38.59,,0.0,100,1.0,Safe D
+MA-03,Lori Trahan,Gary Grossi,DEM,21.34,3.7,34.09,,0.0,34.09,0.999,Safe D
+MA-04,Jake Auchincloss,Thomas Stalcup,DEM,22.16,3.7,34.91,,0.0,34.91,0.999,Safe D
+MA-05,Katherine Clark,(no Republican filed),DEM,47.52,3.7,60.27,,0.0,100,1.0,Safe D
+MA-06,Daniel Koh,Micah Quinney Jones,DEM,22.37,0.0,31.42,,0.0,31.42,0.997,Safe D
+MA-07,Ayanna Pressley,(no Republican filed),DEM,67.53,3.7,80.28,,0.0,100,1.0,Safe D
+MA-08,Stephen Lynch,Robert Gerald Burke,DEM,28.93,3.7,41.69,,0.0,41.69,1.0,Safe D
+MA-09,Bill Keating,Robert MacAllister,DEM,12.41,3.7,26.56,,0.0,26.56,0.997,Safe D
+MD-01,Dan Schwartz,Andy Harris,REP,-17.25,-3.7,-11.9,-13.49,0.0,-11.9,0.071,Likely R
+MD-02,Johnny Olszewski,Dave Wallace,DEM,18.98,3.7,31.73,,0.0,31.73,0.998,Safe D
+MD-03,Sarah Elfreth,Berney Flowers,DEM,24.19,3.7,36.95,,0.0,36.95,0.999,Safe D
+MD-04,Glenn Ivey,George McDermott,DEM,77.67,3.7,90.43,,0.0,90.43,1.0,Safe D
+MD-05,Adrian Boafo,Chris Chaffee,DEM,34.08,0.0,43.14,,0.0,43.14,1.0,Safe D
+MD-06,April McClain Delaney,Robin Ficker,DEM,6.46,3.7,19.49,,0.0,19.49,0.983,Safe D
+MD-07,Kweisi Mfume,Scott Collier,DEM,61.56,3.7,74.31,,0.0,74.31,1.0,Safe D
+MD-08,Jamie Raskin,Cheryl Riley,DEM,59.4,3.7,72.16,,0.0,72.16,1.0,Safe D
+ME-01,Chellie Pingree,Ronald Russell,DEM,22.18,3.7,34.93,20.66,0.11,32.5,0.999,Safe D
+ME-02,Matthew Dunlap,Paul LePage,DEM,-8.97,0.0,0.09,0.72,0.25,0.29,0.526,Toss-up
+MI-01,Callie Barr,Jack Bergman,REP,-21.34,-3.7,-15.99,,0.0,-15.99,0.029,Safe R
+MI-02,Benjamin Ambrose,John Moolenaar,REP,-30.0,-3.7,-24.65,,0.0,-24.65,0.006,Safe R
+MI-03,Hillary Scholten,Terri DeBoer,DEM,7.65,3.7,21.87,,0.0,21.87,0.99,Safe D
+MI-04,Sean McCann,Bill Huizenga,REP,-5.51,-3.7,-1.87,-0.6,0.04,-1.79,0.4,Tilt R
+MI-05,Christian Vukasovich,Tim Walberg,REP,-26.71,-3.7,-21.36,,0.0,-21.36,0.011,Safe R
+MI-06,Debbie Dingell,Heather Smiley,DEM,24.47,3.7,37.22,,0.0,37.22,0.999,Safe D
+MI-07,William Lawrence,Tom Barrett,REP,-0.97,-3.7,2.71,5.42,0.51,4.01,0.756,Lean D
+MI-08,Kristen McDonald Rivet,Thomas J. Smith,DEM,-0.9,3.7,17.81,,0.0,17.81,0.976,Safe D
+MI-09,Ray Pooley,Lisa McClain,REP,-32.24,-3.7,-26.89,,0.0,-26.89,0.004,Safe R
+MI-10,Christina Hines,Michael Bouchard Jr.,REP,-5.45,0.0,3.6,1.0,0.01,3.57,0.684,Lean D
+MI-11,Jeremy Moss,Ethan Baker,DEM,17.09,0.0,26.15,,0.0,26.15,0.994,Safe D
+MI-12,Rashida Tlaib,James D. Hooper,DEM,42.14,3.7,54.89,,0.0,54.89,1.0,Safe D
+MI-13,Donavan McKinney,T.P. Nykoriak,DEM,44.63,0.0,53.69,,0.0,53.69,1.0,Safe D
+MN-01,Jake Johnson,Brad Finstad,REP,-11.8,-3.7,-6.45,-0.79,0.71,-3.3,0.277,Lean R
+MN-02,Matt Little,Eric Pratt,DEM,5.82,0.0,14.87,12.05,0.03,14.71,0.962,Safe D
+MN-03,Kelly Morrison,Tyler Bass,DEM,21.1,3.7,33.85,,0.0,33.85,0.999,Safe D
+MN-04,Betty McCollum,Paul Wikstrom,DEM,36.8,3.7,49.55,,0.0,49.55,1.0,Safe D
+MN-05,Ilhan Omar,John Nagel,DEM,63.62,3.7,76.38,,0.0,76.38,1.0,Safe D
+MN-06,Doug Chapin,Tom Emmer,REP,-19.99,-3.7,-14.64,,0.0,-14.64,0.043,Safe R
+MN-07,Erik Osberg,Michelle Fischbach,REP,-36.34,-3.7,-30.98,,0.0,-30.98,0.002,Safe R
+MN-08,Trina Swanson,Pete Stauber,REP,-13.8,-3.7,-8.44,,0.0,-8.44,0.141,Likely R
+MO-01,Wesley Bell,Paul Berry,DEM,58.41,3.7,71.17,,0.0,71.17,1.0,Safe D
+MO-02,Fred Wellman,Ann Wagner,REP,-8.59,-3.7,-3.62,1.83,0.86,-0.34,0.474,Toss-up
+MO-03,Bethany Mann,Bob Onder,REP,-27.28,-3.7,-21.92,,0.0,-21.92,0.009,Safe R
+MO-04,Jordan Herrera,Mark Alford,REP,-42.2,-3.7,-36.84,,0.0,-36.84,0.001,Safe R
+MO-05,Emanuel Cleaver,Rick Brattin,DEM,24.35,3.7,37.1,,0.0,37.1,0.999,Safe D
+MO-06,Josh Smead,Chris Stigall,REP,-38.98,0.0,-29.92,,0.0,-29.92,0.002,Safe R
+MO-07,Missi Hesketh,Eric Burlison,REP,-43.18,-3.7,-37.83,,0.0,-37.83,0.001,Safe R
+MO-08,Christopher Reichard,Jason Smith,REP,-53.73,-3.7,-48.38,,0.0,-48.38,0.0,Safe R
+MS-01,Cliff Johnson,Trent Kelly,REP,-36.2,-3.7,-30.85,,0.0,-30.85,0.002,Safe R
+MS-02,Bennie Thompson,Ron Eller,DEM,22.19,3.7,34.94,,0.0,34.94,0.999,Safe D
+MS-03,Michael Chiaradio,Michael Guest,REP,-28.39,-3.7,-23.03,,0.0,-23.03,0.009,Safe R
+MS-04,Jeffrey Hulum III,Mike Ezell,REP,-42.02,-3.7,-36.67,,0.0,-36.67,0.002,Safe R
+MT-01,Sam Forstag,Aaron Flint,REP,-10.98,0.0,-1.92,1.28,0.94,0.06,0.512,Toss-up
+MT-02,Brian Miller,Troy Downing,REP,-29.94,-3.7,-24.58,,0.0,-24.58,0.006,Safe R
+NC-01,Don Davis,Laurie Buckhout,DEM,-10.2,3.7,2.56,6.08,0.49,4.21,0.766,Lean D
+NC-02,Deborah Ross,Eugene Douglass,DEM,34.58,3.7,47.33,,0.0,47.33,1.0,Safe D
+NC-03,Raymond Smith Jr.,Greg Murphy,REP,-12.24,-3.7,-6.88,-5.13,0.0,-6.87,0.185,Likely R
+NC-04,Valerie Foushee,Max Ganorkar,DEM,46.27,3.7,59.03,,0.0,59.03,1.0,Safe D
+NC-05,Chuck Hubbard,Virginia Foxx,REP,-17.1,-3.7,-11.74,,0.0,-11.74,0.074,Likely R
+NC-06,Cyril Jefferson,Addison McDowell,REP,-17.27,-3.7,-11.91,,0.0,-11.91,0.074,Likely R
+NC-07,Kimberly Hardy,David Rouzer,REP,-13.28,-3.7,-7.93,-6.19,0.01,-7.89,0.154,Likely R
+NC-08,Colby Watson,Mark Harris,REP,-19.32,-3.7,-13.96,,0.0,-13.96,0.045,Safe R
+NC-09,Richard Ojeda,Richard Hudson,REP,-15.61,-3.7,-10.26,-4.8,0.31,-8.27,0.106,Likely R
+NC-10,Ashley Bell,Pat Harrigan,REP,-17.43,-3.7,-12.08,-11.88,0.0,-12.08,0.069,Likely R
+NC-11,Jamie Ager,Jennifer Balkcom,REP,-10.26,0.0,-1.2,9.29,0.53,3.94,0.757,Lean D
+NC-12,Alma Adams,Jack Codiga,DEM,47.99,3.7,60.75,,0.0,60.75,1.0,Safe D
+NC-13,Paul Barringer,Brad Knott,REP,-16.98,-3.7,-11.63,,0.0,-11.63,0.074,Likely R
+NC-14,LaKesha Womack,Tim Moore,REP,-15.78,-3.7,-10.43,-5.97,0.0,-10.43,0.094,Likely R
+ND-01,Trygve Hammer,Julie Fedorchak,REP,-36.88,-3.7,-31.52,,0.0,-31.52,0.002,Safe R
+NE-01,Christopher Backemeyer,Mike Flood,REP,-13.21,-3.7,-7.86,-0.87,0.3,-5.36,0.196,Likely R
+NE-02,Denise Powell,Brinker Harding,REP,4.65,0.0,13.7,7.36,0.2,11.98,0.951,Safe D
+NE-03,Becky Stille,Adrian Smith,REP,-54.16,-3.7,-48.81,,0.0,-48.81,0.0,Safe R
+NH-01,Stefany Shaheen,Anthony DiLorenzo,DEM,2.6,0.0,11.65,2.86,0.68,6.85,0.884,Likely D
+NH-02,Maggie Goodlander,Lily Williams,DEM,4.65,3.7,18.96,15.66,0.03,18.8,0.983,Safe D
+NJ-01,Donald Norcross,Damon Galdo,DEM,20.56,3.7,33.31,,0.0,33.31,0.999,Safe D
+NJ-02,Zack Mullock,Jeff Van Drew,REP,-11.24,-3.7,-5.89,-11.31,0.12,-6.88,0.165,Likely R
+NJ-03,Herb Conaway,Michael McGuire,DEM,9.34,3.7,22.66,,0.0,22.66,0.992,Safe D
+NJ-04,Rachel Peace,Chris Smith,REP,-29.25,-3.7,-23.89,,0.0,-23.89,0.006,Safe R
+NJ-05,Josh Gottheimer,Sean Kirrane,DEM,3.92,3.7,21.04,,0.0,21.04,0.988,Safe D
+NJ-06,Frank Pallone,Hillary Herzig,DEM,9.8,3.7,22.55,,0.0,22.55,0.992,Safe D
+NJ-07,Rebecca Bennett,Tom Kean Jr.,REP,-1.06,-3.7,1.89,5.55,0.05,2.23,0.625,Tilt D
+NJ-08,Rob Menendez,(no Republican filed),DEM,33.9,3.7,46.66,,0.0,100,1.0,Safe D
+NJ-09,Nelida Pou,Rosemary Pino,DEM,4.4,3.7,21.4,,0.0,21.4,0.991,Safe D
+NJ-10,LaMonica McIver,Carmen Bucco,DEM,52.74,3.7,65.5,,0.0,65.5,1.0,Safe D
+NJ-11,Analilia Mejia,Joe Hathaway,DEM,9.92,3.7,22.67,,0.0,22.67,0.992,Safe D
+NJ-12,Adam Hamawy,Gregg Mele,DEM,26.37,0.0,35.42,,0.0,35.42,0.999,Safe D
+NM-01,Melanie Stansbury,Ndidiamaka Okpareke,DEM,13.19,3.7,25.77,,0.0,25.77,0.995,Safe D
+NM-02,Gabriel Vasquez,Greg Cunningham,DEM,0.34,3.7,17.09,4.01,0.47,11.05,0.958,Safe D
+NM-03,Teresa Leger Fernandez,Martin Zamora,DEM,6.94,3.7,22.06,,0.0,22.06,0.991,Safe D
+NV-01,Dina Titus,Carrie Buck,DEM,4.21,3.7,18.15,,0.0,18.15,0.979,Safe D
+NV-02,Teresa Benitez-Thompson,David Flippo,REP,-13.61,0.0,-4.55,-2.25,0.23,-3.86,0.289,Lean R
+NV-03,Susie Lee,Marty O'Donnell,DEM,1.32,3.7,13.94,,0.0,13.94,0.954,Safe D
+NV-04,Steven Horsford,Cody Whipple,DEM,4.25,3.7,18.5,,0.0,18.5,0.979,Safe D
+NY-01,Christopher Gallant,Nick LaLota,REP,-8.56,-3.7,-3.37,-2.75,0.0,-3.37,0.322,Lean R
+NY-02,Patrick Halpin,Andrew Garbarino,REP,-11.42,-3.7,-6.06,,0.0,-6.06,0.208,Lean R
+NY-03,Tom Suozzi,Mike LiPetri,DEM,-0.46,3.7,17.58,,0.0,17.58,0.981,Safe D
+NY-04,Laura Gillen,Jeanine Driscoll,DEM,4.64,3.7,18.06,5.28,0.0,18.06,0.98,Safe D
+NY-05,Gregory Meeks,George Marsh,DEM,48.56,3.7,61.32,,0.0,61.32,1.0,Safe D
+NY-06,Grace Meng,Joseph Chou,DEM,13.33,3.7,26.09,,0.0,26.09,0.995,Safe D
+NY-07,Claire Valdez,Melvin Rivera,DEM,51.8,0.0,60.85,,0.0,60.85,1.0,Safe D
+NY-08,Hakeem Jeffries,Lewis Mizrahi,DEM,48.27,3.7,61.02,,0.0,61.02,1.0,Safe D
+NY-09,Yvette Clarke,Joel Anabilah-Azumah,DEM,45.02,3.7,57.77,,0.0,57.77,1.0,Safe D
+NY-10,Brad Lander,Jennifer Moore,DEM,64.85,0.0,73.91,,0.0,73.91,1.0,Safe D
+NY-11,Michael DeCillis,Nicole Malliotakis,REP,-20.42,-3.7,-15.06,,0.0,-15.06,0.041,Safe R
+NY-12,Micah Lasher,Caroline Shinkle,DEM,66.96,0.0,76.01,,0.0,76.01,1.0,Safe D
+NY-13,Darializa Avila Chevalier,Jomo Williams,DEM,65.64,0.0,74.7,,0.0,74.7,1.0,Safe D
+NY-14,Alexandria Ocasio-Cortez,Diamant Hysenaj,DEM,39.23,3.7,51.99,,0.0,51.99,1.0,Safe D
+NY-15,Ritchie Torres,Stylo Sapaskis,DEM,55.46,3.7,68.21,,0.0,68.21,1.0,Safe D
+NY-16,George Latimer,Joseph Cinquemani,DEM,36.43,3.7,49.18,,0.0,49.18,1.0,Safe D
+NY-17,Cait Conley,Mike Lawler,REP,2.99,-3.7,3.68,0.13,0.32,2.37,0.648,Tilt D
+NY-18,Pat Ryan,Jackie Auringer,DEM,4.4,3.7,22.02,18.55,0.09,21.53,0.991,Safe D
+NY-19,Josh Riley,Peter Oberacker,DEM,2.15,3.7,15.19,,0.0,15.19,0.963,Safe D
+NY-20,Paul Tonko,Ralph Ambrosio,DEM,15.27,3.7,28.03,,0.0,28.03,0.996,Safe D
+NY-21,Blake Gendebien,Anthony Constantino,REP,-19.71,0.0,-10.65,-1.99,0.71,-5.83,0.149,Likely R
+NY-22,John Mannion,Kailee Buller,DEM,8.42,3.7,22.13,,0.0,22.13,0.99,Safe D
+NY-23,Aaron Gies,Nick Langworthy,REP,-20.98,-3.7,-15.63,-18.4,0.07,-15.97,0.025,Safe R
+NY-24,Alissa Ellman,Claudia Tenney,REP,-22.85,-3.7,-17.49,,0.0,-17.49,0.023,Safe R
+NY-25,Joe Morelle,Virginia McIntyre,DEM,19.0,3.7,31.75,,0.0,31.75,0.999,Safe D
+NY-26,Timothy Kennedy,Dennis Hannon,DEM,20.7,3.7,33.45,,0.0,33.45,0.999,Safe D
+OH-01,Greg Landsman,Eric Conroy,DEM,-2.03,3.7,16.11,2.81,0.51,9.72,0.941,Likely D
+OH-02,Jennifer Mazzuckelli,David Taylor,REP,-41.64,-3.7,-36.28,,0.0,-36.28,0.001,Safe R
+OH-03,Joyce Beatty,Cleophus Dulaney,DEM,41.44,3.7,54.2,,0.0,54.2,1.0,Safe D
+OH-04,Joshua Kolasinski,Jim Jordan,REP,-42.4,-3.7,-37.04,,0.0,-37.04,0.001,Safe R
+OH-05,Brian Shaver,Bob Latta,REP,-23.08,-3.7,-17.73,,0.0,-17.73,0.022,Safe R
+OH-06,Elizabeth Kirtley,Michael Rulli,REP,-33.31,-3.7,-27.95,,0.0,-27.95,0.004,Safe R
+OH-07,Brian Poindexter,Max Miller,REP,-10.83,-3.7,-5.48,3.22,0.01,-5.26,0.233,Lean R
+OH-08,Vanessa Enoch,Warren Davidson,REP,-15.84,-3.7,-10.48,,0.0,-10.48,0.092,Likely R
+OH-09,Marcy Kaptur,Derek Merrin,DEM,-9.43,3.7,8.42,-3.54,0.05,7.45,0.849,Likely D
+OH-10,Kristina Knickerbocker,Mike Turner,REP,-7.43,-3.7,-2.08,-0.64,0.13,-1.8,0.386,Tilt R
+OH-11,Shontel Brown,Mike Kirchner,DEM,56.62,3.7,69.37,,0.0,69.37,1.0,Safe D
+OH-12,Jerrad Christian,Troy Balderson,REP,-30.14,-3.7,-24.79,,0.0,-24.79,0.006,Safe R
+OH-13,Emilia Sykes,Carey Coleman,DEM,4.12,3.7,16.13,,0.0,16.13,0.972,Safe D
+OH-14,Maria Jukic,David Joyce,REP,-19.5,-3.7,-14.15,,0.0,-14.15,0.043,Safe R
+OH-15,Don Leonard,Mike Carey,REP,-9.56,-3.7,-3.61,0.21,0.31,-2.21,0.361,Tilt R
+OK-01,John Croisant,Mark Tedford,REP,-22.39,0.0,-13.33,,0.0,-13.33,0.051,Likely R
+OK-02,Brandon Wade,Josh Brecheen,REP,-55.65,-3.7,-50.3,,0.0,-50.3,0.0,Safe R
+OK-03,Suzie Byrd,Frank Lucas,REP,-45.35,-3.7,-40.0,,0.0,-40.0,0.001,Safe R
+OK-04,Mitchell Jacob,Tom Cole,REP,-33.38,-3.7,-28.03,,0.0,-28.03,0.004,Safe R
+OK-05,Jena Nelson,Stephanie Bice,REP,-19.14,-3.7,-13.79,-7.76,0.04,-13.32,0.047,Safe R
+OR-01,Suzanne Bonamici,Barbara Kahl,DEM,39.37,3.7,52.13,,0.0,52.13,1.0,Safe D
+OR-02,Chris Beck,Cliff Bentz,REP,-27.45,-3.7,-22.1,,0.0,-22.1,0.009,Safe R
+OR-03,Maxine Dexter,Loran Ayles,DEM,47.94,3.7,60.7,,0.0,60.7,1.0,Safe D
+OR-04,Val Hoyle,Monique DeSpain,DEM,12.45,3.7,22.33,,0.0,22.33,0.991,Safe D
+OR-05,Janelle Bynum,Patti Adair,DEM,8.67,3.7,19.91,,0.0,19.91,0.986,Safe D
+OR-06,Andrea Salinas,David Russ,DEM,11.9,3.7,18.94,,0.0,18.94,0.983,Safe D
+PA-01,Bob Harvie,Brian Fitzpatrick,REP,1.28,-3.7,-2.12,-0.23,0.17,-1.66,0.406,Tilt R
+PA-02,Brendan Boyle,Jessica Arriaga,DEM,38.56,3.7,51.32,,0.0,51.32,1.0,Safe D
+PA-03,Chris Rabb,(no Republican filed),DEM,79.34,0.0,88.39,,0.0,100,1.0,Safe D
+PA-04,Madeleine Dean,Aurora Stuski,DEM,16.58,3.7,29.33,,0.0,29.33,0.998,Safe D
+PA-05,Mary Gay Scanlon,Nicholas Manganaro,DEM,29.8,3.7,42.56,,0.0,42.56,0.999,Safe D
+PA-06,Chrissy Houlahan,Marty Young,DEM,12.11,3.7,22.98,,0.0,22.98,0.992,Safe D
+PA-07,Bob Brooks,Ryan Mackenzie,REP,-2.38,-3.7,1.99,2.81,0.0,2.0,0.61,Tilt D
+PA-08,Paige Cognetti,Rob Bresnahan,REP,-7.41,-3.7,0.11,1.32,0.5,0.68,0.553,Tilt D
+PA-09,Rachel Wallace,Dan Meuser,REP,-38.12,-3.7,-32.76,,0.0,-32.76,0.002,Safe R
+PA-10,Janelle Stelson,Scott Perry,REP,-5.32,-3.7,5.19,3.38,1.25,3.96,0.779,Lean D
+PA-11,Nancy Mannion,Lloyd Smucker,REP,-21.8,-3.7,-16.45,,0.0,-16.45,0.03,Safe R
+PA-12,Summer Lee,James Hayes,DEM,19.57,3.7,27.96,,0.0,27.96,0.997,Safe D
+PA-13,Beth Farnham,John Joyce,REP,-45.88,-3.7,-40.53,,0.0,-40.53,0.001,Safe R
+PA-14,Alan Bradstock,Guy Reschenthaler,REP,-33.09,-3.7,-27.74,,0.0,-27.74,0.004,Safe R
+PA-15,Ray Bilger,Glenn Thompson,REP,-37.98,-3.7,-32.62,,0.0,-32.62,0.002,Safe R
+PA-16,Justin Wagner,Mike Kelly,REP,-22.46,-3.7,-17.1,,0.0,-17.1,0.023,Safe R
+PA-17,Chris Deluzio,Tony Guy,DEM,5.44,3.7,19.66,,0.0,19.66,0.985,Safe D
+RI-01,Gabriel Amo,Kellie Keenan,DEM,24.28,3.7,37.03,,0.0,37.03,0.999,Safe D
+RI-02,Seth Magaziner,Victor Mellor,DEM,8.42,3.7,21.17,14.67,0.63,17.74,0.995,Safe D
+SC-01,Nancy Lacore,Jenny Costa Honeycutt,REP,-12.51,0.0,-3.46,-0.29,0.54,-1.89,0.378,Tilt R
+SC-02,Zyon Khalifa,Joe Wilson,REP,-13.69,-3.7,-8.34,,0.0,-8.34,0.145,Likely R
+SC-03,Eunice Lehmacher,Sheri Biggs,REP,-42.16,-3.7,-36.8,,0.0,-36.8,0.001,Safe R
+SC-04,Courtney McClain,William Timmons,REP,-23.0,-3.7,-17.64,,0.0,-17.64,0.021,Safe R
+SC-05,Mallory Dittmer,Wes Climer,REP,-21.97,0.0,-12.92,,0.0,-12.92,0.054,Likely R
+SC-06,Jim Clyburn,John Peterson,DEM,25.76,3.7,38.51,,0.0,38.51,0.999,Safe D
+SC-07,John Vincent,Russell Fry,REP,-24.57,-3.7,-19.21,-7.74,0.0,-19.15,0.016,Safe R
+SD-01,Nikki Gronli,Marty Jackley,REP,-29.42,0.0,-20.37,-23.16,0.5,-21.69,0.002,Safe R
+TN-01,Kristi Burke,Diana Harshbarger,REP,-57.76,-3.7,-52.41,,0.0,-52.41,0.0,Safe R
+TN-02,Michaela Barnett,Tim Burchett,REP,-33.6,-3.7,-28.25,,0.0,-28.25,0.003,Safe R
+TN-03,Anna Golladay,Chuck Fleischmann,REP,-35.41,-3.7,-30.06,,0.0,-30.06,0.003,Safe R
+TN-04,Victoria Broderick,Scott DesJarlais,REP,-22.38,-3.7,-17.03,,0.0,-17.03,0.022,Safe R
+TN-05,Chaz Molder,Charlie Hatcher,REP,-20.47,0.0,-11.41,-7.93,0.09,-10.92,0.072,Likely R
+TN-06,Mike Croley,Johnny Garrett,REP,-25.42,0.0,-16.37,,0.0,-16.37,0.027,Safe R
+TN-07,Darden Copeland,Matt Van Epps,REP,-21.8,-3.7,-16.45,,0.0,-16.45,0.03,Safe R
+TN-08,Heidi Kuhn,David Kustoff,REP,-19.6,-3.7,-14.24,,0.0,-14.24,0.044,Safe R
+TN-09,Justin J. Pearson,Brent Taylor,DEM,-18.45,0.0,-9.4,-6.78,0.03,-9.25,0.112,Likely R
+TX-01,Yolanda Prince,Nathaniel Moran,REP,-48.61,-3.7,-43.25,,0.0,-43.25,0.0,Safe R
+TX-02,Shaun Finnie,Steve Toth,REP,-23.4,0.0,-14.35,-12.53,0.09,-14.09,0.035,Safe R
+TX-03,Evan Hunt,Keith Self,REP,-23.2,-3.7,-17.85,,0.0,-17.85,0.018,Safe R
+TX-04,Jason Pearce,Pat Fallon,REP,-24.05,-3.7,-18.7,,0.0,-18.7,0.016,Safe R
+TX-05,Chelsey Hockett,Lance Gooden,REP,-20.89,-3.7,-15.53,,0.0,-15.53,0.033,Safe R
+TX-06,Danny Minton,Jake Ellzey,REP,-22.97,-3.7,-17.62,,0.0,-17.62,0.023,Safe R
+TX-07,Lizzie Fletcher,Alexander Hale,DEM,26.36,3.7,39.11,,0.0,39.11,1.0,Safe D
+TX-08,Laura Jones,Jessica Steinmann,REP,-25.68,0.0,-16.62,,0.0,-16.62,0.026,Safe R
+TX-09,Leticia Gutierrez,Alex Mealer,DEM,-16.65,0.0,-7.6,-5.75,0.45,-6.77,0.137,Likely R
+TX-10,Caitlin Rourk,Chris Gober,REP,-21.34,0.0,-12.28,-9.45,0.04,-12.06,0.062,Likely R
+TX-11,Claire Reynolds,August Pfluger,REP,-34.03,-3.7,-28.67,,0.0,-28.67,0.004,Safe R
+TX-12,Heli Rodriguez Prilliman,Craig Goldman,REP,-22.98,-3.7,-17.62,,0.0,-17.62,0.021,Safe R
+TX-13,Mark Nair,Ronny Jackson,REP,-46.62,-3.7,-41.27,,0.0,-41.27,0.001,Safe R
+TX-14,Thurman Bartie,Randy Weber,REP,-24.03,-3.7,-18.68,,0.0,-18.68,0.017,Safe R
+TX-15,Bobby Pulido,Monica De La Cruz,REP,-12.72,-3.7,-7.36,5.61,0.53,-1.01,0.431,Tilt R
+TX-16,Veronica Escobar,Adam Bauman,DEM,22.33,3.7,35.08,,0.0,35.08,0.999,Safe D
+TX-17,Casey Shepard,Pete Sessions,REP,-20.81,-3.7,-15.45,,0.0,-15.45,0.033,Safe R
+TX-18,Christian Menefee,Ronald Whitfield,DEM,58.42,3.7,71.17,,0.0,71.17,1.0,Safe D
+TX-19,Kyle Rable,Tom Sell,REP,-50.99,0.0,-41.93,,0.0,-41.93,0.001,Safe R
+TX-20,Joaquin Castro,Edgardo Baez,DEM,32.16,3.7,44.92,,0.0,44.92,1.0,Safe D
+TX-21,Kristin Hook,Mark Teixeira,REP,-21.31,0.0,-12.26,,0.0,-12.26,0.064,Likely R
+TX-22,Marquette Greene-Scott,Trever Nehls,REP,-21.89,0.0,-12.84,,0.0,-12.84,0.059,Likely R
+TX-23,Katy Padilla Stout,Brandon Herrera,REP,-12.89,0.0,-3.84,-1.46,0.1,-3.45,0.319,Lean R
+TX-24,Kevin Burge,Beth Van Duyne,REP,-16.23,-3.7,-10.87,,0.0,-10.87,0.089,Likely R
+TX-25,Dione Sims,Roger Williams,REP,-22.45,-3.7,-17.1,,0.0,-17.1,0.023,Safe R
+TX-26,Steven Shook,Brandon Gill,REP,-23.57,-3.7,-18.22,,0.0,-18.22,0.021,Safe R
+TX-27,Tanya Lloyd,Michael Cloud,REP,-20.81,-3.7,-15.46,,0.0,-15.46,0.033,Safe R
+TX-28,Henry Cuellar,Tano Tijerina,DEM,-3.15,3.7,9.6,17.12,0.13,11.04,0.934,Likely D
+TX-29,Sylvia Garcia,Martha Fierro,DEM,34.68,3.7,47.44,,0.0,47.44,1.0,Safe D
+TX-30,Frederick Haynes III,Everett Jackson,DEM,50.4,0.0,59.45,,0.0,59.45,1.0,Safe D
+TX-31,Justin Early,John Carter,REP,-21.74,-3.7,-16.38,,0.0,-16.38,0.026,Safe R
+TX-32,Dan Barrios,Jace Yarbrough,DEM,-16.58,0.0,-7.52,,0.0,-7.52,0.167,Likely R
+TX-33,Colin Allred,Patrick Gillespie,DEM,36.56,0.0,45.61,,0.0,45.61,1.0,Safe D
+TX-34,Vicente Gonzalez,Eric Flores,DEM,-6.0,3.7,6.76,4.49,0.4,5.8,0.83,Likely D
+TX-35,Johnny Garcia,Carlos De La Cruz,DEM,-8.49,0.0,0.56,-0.32,0.66,0.08,0.509,Toss-up
+TX-36,Rhonda Hart,Brian Babin,REP,-23.61,-3.7,-18.25,,0.0,-18.25,0.018,Safe R
+TX-37,Greg Casar,Lauren Peña,DEM,59.18,3.7,71.93,,0.0,71.93,1.0,Safe D
+TX-38,Melissa McDonough,Jon Bonck,REP,-21.05,0.0,-12.0,,0.0,-12.0,0.068,Likely R
+UT-01,Ben McAdams,Riley Owen,REP,24.9,0.0,33.95,43.81,0.04,34.63,0.999,Safe D
+UT-02,Peter Crosby,Blake Moore,REP,-30.61,-3.7,-25.25,-7.31,0.08,-22.95,0.005,Safe R
+UT-03,Kent Udell,Celeste Maloy,REP,-42.83,-3.7,-37.47,-23.47,0.05,-36.26,0.001,Safe R
+UT-04,Jonny Larsen,Mike Kennedy,REP,-34.07,-3.7,-28.71,-11.78,0.06,-27.11,0.003,Safe R
+VA-01,Shannon Taylor,Rob Wittman,REP,-5.87,-3.7,-5.71,1.09,0.48,-2.56,0.328,Lean R
+VA-02,Elaine Luria,Jen Kiggans,REP,-0.11,-3.7,2.79,3.04,0.35,2.89,0.685,Lean D
+VA-03,Bobby Scott,Edwin Rivera,DEM,35.98,3.7,48.73,,0.0,48.73,1.0,Safe D
+VA-04,Jennifer McClellan,Robert Murray,DEM,33.86,3.7,46.62,,0.0,46.62,1.0,Safe D
+VA-05,Tom Perriello,John McGuire,REP,-11.51,-3.7,-6.15,2.64,0.05,-5.36,0.233,Lean R
+VA-06,Beth Macy,Ben Cline,REP,-24.17,-3.7,-18.82,-28.33,0.18,-21.25,0.005,Safe R
+VA-07,Eugene Vindman,Doug Ollivant,DEM,3.72,3.7,16.3,,0.0,16.3,0.972,Safe D
+VA-08,Don Beyer,Tony Sabio,DEM,52.45,3.7,65.21,,0.0,65.21,1.0,Safe D
+VA-09,Joy Powers,Morgan Griffith,REP,-43.84,-3.7,-38.48,,0.0,-38.48,0.001,Safe R
+VA-10,Suhas Subramanyam,Dave Beckwith,DEM,10.42,3.7,20.5,,0.0,20.5,0.988,Safe D
+VA-11,James Walkinshaw,Arthur Purves,DEM,36.69,3.7,49.45,,0.0,49.45,1.0,Safe D
+VT-01,Rebecca Balint,Gerald Malloy,DEM,33.42,3.7,46.18,31.72,0.21,42.14,1.0,Safe D
+WA-01,Suzan DelBene,Mary Silva,DEM,30.06,3.7,42.81,,0.0,42.81,1.0,Safe D
+WA-02,Rick Larsen,Edwin H. Feller,DEM,24.08,3.7,36.84,,0.0,36.84,0.999,Safe D
+WA-03,Marie Gluesenkamp Perez,John Braun,DEM,-3.76,3.7,9.0,-0.19,0.31,5.64,0.825,Likely D
+WA-04,John Duresky,Amanda McKinney,REP,-20.56,0.0,-11.5,,0.0,-11.5,0.076,Likely R
+WA-05,Carmela Conroy,Michael Baumgartner,REP,-11.12,-3.7,-5.76,-4.35,0.0,-5.76,0.232,Lean R
+WA-06,Emily Randall,Teresa Fox,DEM,19.16,3.7,31.92,,0.0,31.92,0.998,Safe D
+WA-07,Pramila Jayapal,Nirav Sheth,DEM,77.57,3.7,90.32,,0.0,90.32,1.0,Safe D
+WA-08,Kim Schrier,Spencer Meline,DEM,6.11,3.7,18.86,,0.0,18.86,0.983,Safe D
+WA-09,Adam Smith,Doug Basler,DEM,43.73,3.7,56.48,,0.0,56.48,1.0,Safe D
+WA-10,Marilyn Strickland,Chris D. Chung,DEM,18.38,3.7,31.14,,0.0,31.14,0.998,Safe D
+WI-01,Mitchell Berman,Bryan Steil,REP,-3.84,-3.7,0.08,-1.19,0.13,-0.16,0.491,Toss-up
+WI-02,Mark Pocan,(no Republican filed),DEM,41.15,3.7,53.9,,0.0,100,1.0,Safe D
+WI-03,Rebecca Cooke,Derrick Van Orden,REP,-6.67,-3.7,4.35,3.46,0.0,4.34,0.722,Lean D
+WI-04,Gwen Moore,Tim Rogers,DEM,52.87,3.7,65.63,,0.0,65.63,1.0,Safe D
+WI-05,Andrew Beck,Scott Fitzgerald,REP,-22.9,-3.7,-17.55,,0.0,-17.55,0.023,Safe R
+WI-06,Brad Smith,Glenn Grothman,REP,-16.51,-3.7,-11.16,-19.82,0.0,-11.16,0.081,Likely R
+WI-07,Fred Clark,Michael Alfonso,REP,-22.13,0.0,-13.08,,0.0,-13.08,0.058,Likely R
+WI-08,Rick Crosson,Tony Wied,REP,-16.31,-3.7,-9.75,,0.0,-9.75,0.105,Likely R
+WV-01,Vince George,Carol Miller,REP,-44.41,-3.7,-39.06,,0.0,-39.06,0.001,Safe R
+WV-02,Ace Parsi,Riley Moore,REP,-39.97,-3.7,-34.61,,0.0,-34.61,0.001,Safe R
+WY-01,Lisa Kinney,Chuck Gray,REP,-46.78,0.0,-37.73,,0.0,-37.73,0.001,Safe R
