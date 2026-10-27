@@ -89,6 +89,7 @@ ID-02,VoteNexus,2026-10-22,31,46,12.0,600,lv,IND
 IL-04,The Bullfinch Group,2026-08-03,34,15,37.0,653,rv,
 IN-05,Impact Research,2026-07-20,46,48,6,600,lv,DEM
 IN-05,Expedition Strategies,2026-10-04,47,48,5,600,lv,DEM
+IN-05,Quantus Insights,2026-10-22,44.6,47.4,4.7,634,lv,
 KS-02,DCCC Targeting Team,2026-10-20,46,49,6.0,639,lv,DEM
 KY-06,Public Policy Polling,2026-04-25,36,37,27,675,rv,DEM
 KY-06,GQR,2026-06-28,39,42,19.0,600,lv,DEM
@@ -235,6 +236,7 @@ PA-10,Public Policy Polling,2025-11-19,48,44,8,549,rv,OTH
 PA-10,"Normington, Petts & Associates",2026-04-23,51,45,4,400,rv,DEM
 PA-10,Franklin & Marshall College,2026-09-20,47,44,9.0,378,rv,
 PA-10,"Susquehanna Polling & Research, Inc.",2026-10-11,49,46,4.0,300,lv,
+PA-10,The New York Times/Siena University,2026-10-22,47.65,48.03,4.3,404,lv,
 RI-02,Embold Research,2026-10-08,52,39,9,600,lv,
 RI-02,Emerson College,2026-10-11,55.18,39.12,5.7,406,lv,
 SC-01,Public Policy Polling,2025-12-06,36,39,25,645,lv,DEM
@@ -244,7 +246,7 @@ SC-01,co/efficient,2026-10-01,40,46,10,837,lv,
 SC-01,Public Policy Polling,2026-10-22,47,45,8,770,lv,DEM
 SC-07,Blueprint Polling,2026-07-28,36.7,41.1,22.2,557,lv,DEM
 SD-01,Lake Research Partners,2026-08-30,43,47,10,500,lv,DEM
-SD-01,"Mason-Dixon Polling & Research, Inc.",2026-10-14,32,60,9.0,500,rv,
+SD-01,"Mason-Dixon Polling & Research, Inc.",2026-10-14,32,60,9.0,500,lv,
 TN-05,Impact Research,2026-05-13,41,47,12.0,558,lv,DEM
 TN-05,Impact Research,2026-08-24,40,48,11.0,500,lv,DEM
 TN-05,Impact Research,2026-10-01,41,46,13,552,lv,DEM
