@@ -1,0 +1,37 @@
+state,democrat,republican,holder,lean,incumbency,candidate,fundamentals,poll_avg,num_polls,poll_weight,margin,sd,dem_win_prob,rating
+AK,Jonathan Kreiss-Tomkins,Bernadette Wilson,REP,-12.56,0.0,0.0,-1.3,8.68,2.85,0.87,7.41,5.01,0.897,Likely D
+AL,Doug Jones,Tommy Tuberville,REP,-29.23,0.0,0.0,-14.64,-9.46,1.46,0.81,-10.44,5.24,0.045,Safe R
+AR,Fredrick Love,Sarah Huckabee Sanders,REP,-29.67,-5.0,3.12,-16.87,-19.11,0.54,0.65,-18.33,6.19,0.01,Safe R
+AZ,Katie Hobbs,Andy Biggs,DEM,-4.2,5.0,4.28,14.66,8.15,3.2,0.88,8.92,5.01,0.929,Likely D
+CA,Xavier Becerra,Steve Hilton,DEM,22.62,0.0,0.0,26.84,24.33,5.02,0.9,24.57,5.01,0.999,Safe D
+CO,Phil Weiser,Victor Marx,DEM,11.11,0.0,0.0,17.64,,0.0,0.0,17.64,10.0,0.956,Safe D
+CT,Ned Lamont,Ryan Fazio,DEM,15.57,5.0,-2.79,23.42,20.79,3.6,0.89,21.09,5.01,0.997,Safe D
+FL,David Jolly,Byron Donalds,REP,-10.34,0.0,0.0,0.47,-4.09,7.93,0.92,-3.73,5.01,0.251,Lean R
+GA,Keisha Lance Bottoms,Rick Jackson,REP,-1.83,0.0,0.0,7.28,0.96,3.57,0.89,1.67,5.01,0.617,Tilt D
+HI,Josh Green,Gary Cordery,DEM,24.78,5.0,1.27,34.84,,0.0,0.0,34.84,10.0,0.997,Safe D
+IA,Rob Sand,Zach Lahn,REP,-11.88,0.0,0.0,-0.76,7.23,7.5,0.92,6.59,5.01,0.873,Likely D
+ID,Terri Pickens,Brad Little,REP,-34.61,-5.0,1.3,-22.64,-20.33,0.45,0.61,-21.23,6.42,0.008,Safe R
+IL,JB Pritzker,Darren Bailey,DEM,12.58,5.0,-2.64,21.17,18.93,0.67,0.69,19.62,5.93,0.993,Safe D
+KS,Cindy Holscher,Ty Masterson,DEM,-16.04,0.0,0.0,-4.08,-5.13,3.09,0.88,-5.01,5.01,0.188,Likely R
+MA,Maura Healey,Mike Minogue,DEM,26.67,5.0,2.28,37.36,25.07,2.07,0.85,26.94,5.02,0.999,Safe D
+MD,Wes Moore,Dan Cox,DEM,29.36,5.0,7.74,44.97,31.32,0.37,0.57,37.22,6.67,1.0,Safe D
+ME,Hannah Pingree,Robert Charles,DEM,7.08,0.0,0.0,14.41,9.35,7.77,0.92,9.75,5.01,0.943,Likely D
+MI,Jocelyn Benson,John James,DEM,-0.43,0.0,0.0,8.4,8.2,8.58,0.92,8.21,5.01,0.919,Likely D
+MN,Amy Klobuchar,Lisa Demuth,DEM,4.7,0.0,0.0,12.5,12.78,3.96,0.89,12.75,5.01,0.979,Safe D
+NE,Lynne Walz,Jim Pillen,REP,-20.4,-5.0,1.94,-10.63,-3.84,3.07,0.88,-4.66,5.01,0.204,Lean R
+NH,Cinde Warmington,Kelly Ayotte,REP,3.55,-5.0,-4.31,2.27,-8.64,3.42,0.89,-7.39,5.01,0.106,Likely R
+NM,Deb Haaland,Gregg Hull,DEM,7.17,0.0,0.0,14.48,8.72,1.22,0.79,9.94,5.37,0.943,Likely D
+NV,Aaron Ford,Joe Lombardo,REP,-1.56,-5.0,-1.21,1.29,1.02,1.44,0.81,1.07,5.25,0.572,Tilt D
+NY,Kathy Hochul,Bruce Blakeman,DEM,15.26,5.0,-4.74,21.21,13.8,5.5,0.91,14.48,5.01,0.987,Safe D
+OH,Amy Acton,Vivek Ramaswamy,REP,-10.26,0.0,0.0,0.54,3.27,8.22,0.92,3.05,5.01,0.708,Lean D
+OK,Cyndi Munson,Mike Mazzei,REP,-34.06,0.0,0.0,-18.5,-5.11,0.2,0.42,-12.92,7.55,0.053,Likely R
+OR,Tina Kotek,Christine Drazan,DEM,14.53,5.0,-4.66,20.71,2.2,1.11,0.78,6.36,5.45,0.852,Likely D
+PA,Josh Shapiro,Stacy Garrity,DEM,-0.97,5.0,10.22,23.18,23.84,4.15,0.9,23.77,5.01,0.999,Safe D
+RI,Helena Foulkes,Aaron Guckian,DEM,15.31,0.0,0.0,20.99,32.51,1.3,0.8,30.16,5.32,1.0,Safe D
+SC,Jermaine Johnson,Alan Wilson,REP,-16.35,0.0,0.0,-4.34,-8.67,2.41,0.86,-8.07,5.01,0.086,Likely R
+SD,Dan Ahlers,Larry Rhoden,REP,-28.55,-5.0,0.0,-19.09,-17.96,1.43,0.81,-18.18,5.25,0.005,Safe R
+TN,Jerri Green,Marsha Blackburn,REP,-28.14,0.0,0.0,-13.77,-14.89,0.74,0.71,-14.57,5.83,0.019,Safe R
+TX,Gina Hinojosa,Greg Abbott,REP,-11.75,-5.0,3.93,-1.73,-2.4,15.39,0.93,-2.36,5.01,0.33,Lean R
+VT,Amanda Janoo,Phil Scott,REP,31.66,-5.0,-36.7,-7.63,-1.15,1.37,0.8,-2.42,5.28,0.336,Lean R
+WI,David Crowley,Tom Tiffany,DEM,-0.43,0.0,0.0,8.4,5.25,2.86,0.87,5.65,5.01,0.84,Likely D
+WY,Kenneth Casner,Eric Barlow,REP,-44.87,0.0,0.0,-27.15,,0.0,0.0,-27.15,10.0,0.009,Safe R

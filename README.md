@@ -49,6 +49,23 @@ Each run writes `results.csv`, a dated copy in `history/`, and a line in
 `update.ps1` does all of it (fetch, forecast, commit, push) and runs automatically every
 2 days until 2 November 2026 via Windows Task Scheduler.
 
+## Governor forecast
+
+`governor_forecast.py` forecasts all 36 governor races with the same machinery, refitted on every
+governor race since 2010 (`governor_backtest.py`; settings fitted on 2010-16, checked on 2018-24):
+
+- **Fundamentals** = 0.8 x presidential lean + national environment + incumbency (5) + half of each
+  candidate's record in earlier governor races. Governor races are less partisan than Senate races
+  (Phil Scott, Laura Kelly): fundamentals alone miss by ~9-10 points, vs ~6 for the Senate.
+- **Polls count for much more than in the Senate model** (weight 0.95 x n / (n + 0.25)): in the
+  backtest the heaviest poll weighting was best on both periods (average miss 7.6 -> 5.3 on
+  2010-16, 8.1 -> 4.6 on 2018-22, forecasts made the day before).
+- **Uncertainty 25% wider** than the Senate model's - governor misses measured 1.2-1.4x its size.
+- Ranked-choice polls (Alaska) use the final round; only polls of the actual 2026 matchup count.
+- Headline: governorships after the election, including the 14 not up (6 D, 8 R).
+
+`graphics/make_governor.py` draws the governor sheet.
+
 ## House forecast
 
 `house_forecast.py` forecasts all 435 districts with the same machinery: district lean
