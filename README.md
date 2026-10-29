@@ -54,7 +54,7 @@ Each run writes `results.csv`, a dated copy in `history/`, and a line in
 `governor_forecast.py` forecasts all 36 governor races with the same machinery, refitted on every
 governor race since 2010 (`governor_backtest.py`; settings fitted on 2010-16, checked on 2018-24):
 
-- **Fundamentals** = 0.8 x presidential lean + national environment + incumbency (5) + half of each
+- **Fundamentals** = 0.8 x presidential lean + national environment + incumbency (7.5) + half of each
   candidate's record in earlier governor races. Governor races are less partisan than Senate races
   (Phil Scott, Laura Kelly): fundamentals alone miss by ~9-10 points, vs ~6 for the Senate.
 - **Polls count for much more than in the Senate model** (weight 0.95 x n / (n + 0.25)): in the
@@ -225,6 +225,17 @@ partly). Lean beat the House-vote baseline (House votes are distorted by unconte
 Hawaii gave a -75 record), and unlike Senate races, governor blowouts still told us something.
 Full model with polls: 186 -> 188 winners right, Brier 0.055 -> 0.053. In 2026 it adds +2.2 to
 North Carolina (Roy Cooper ran 7.4 ahead of Democrats as governor in 2020).
+
+**Incumbency (re-checked):** Senate - fundamentals alone now fit a smaller bonus (best 2.5 on
+2018-24; the best year-by-year bonus fell from ~12 in 2008/2012 to 1-4.5 since 2016), but with
+polls in the full model 5 is still best on both periods (2020-22: 5.32 vs 5.49 at 3.5, 5.67 at
+2.5) - likely partly because polls underrate incumbents. Kept at 5. A smaller midterm bonus for
+the president's party's incumbents did worse. Governor - a bigger bonus helps once polls are in
+(2018-22: 4.43 at 7.5 vs 4.62 at 5), so the governor model uses 7.5.
+
+**Pollster lean correction:** removing house effects, or measuring them against quality-weighted
+polls instead of all other polls, changes the full-model backtest by 0.03 points or less. Pollster
+ratings set how much a poll counts; house effects shift which way it leans - separate jobs.
 
 **Generic-ballot bias:** final generic-ballot polls overstated Democrats in 5 of 6 cycles,
 by 3.2 points on average (2.4 in midterm years).

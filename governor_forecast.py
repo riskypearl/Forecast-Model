@@ -4,7 +4,7 @@
 Same machinery as the Senate model (forecast.py), with the settings refitted
 on every governor race since 2010 (governor_backtest.py):
   1. Fundamentals = 0.8 x presidential lean (governor races are less partisan
-     than Senate races) + national environment + incumbency (5 points)
+     than Senate races) + national environment + incumbency (7.5 points)
      + half of each candidate's record in earlier governor races
   2. Governor polls: undecided allocation, house effects, quality weighting,
      and much more weight than in the Senate model - in the backtest, leaning
@@ -30,7 +30,7 @@ import house_forecast as hf
 
 # Fitted on 2010-16 governor races, checked on 2018-24 (governor_backtest.py)
 LEAN_SCALE = 0.8
-INCUMBENCY_BONUS = 5.0
+INCUMBENCY_BONUS = 7.5      # 7.5 beat 5 on both periods once polls are in (governor_backtest.py)
 GOVERNOR_RECORD_SHRINK = 0.5
 POLL_MAX_WEIGHT = 0.95
 POLL_K = 0.25              # weight = max * n / (n + k), n = effective number of polls
