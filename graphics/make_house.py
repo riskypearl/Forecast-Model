@@ -113,8 +113,6 @@ def main():
     text(d, (bx, 246), "favoured to win", serif_big, INK, "ls")
     text(d, (bx, 286), "the House", serif_big, INK, "ls")
     tracked(d, (bx, 318), f"{control:.0%} CHANCE OF DEM CONTROL", mono_b, GRAPHITE, 1.4)
-    tracked(d, (L, 350), f"PROJECTED AVERAGE  ·  80% RANGE {lo}-{hi} DEM SEATS",
-            mono_sm, MUTED, 1.3)
 
     # --- 435 tiles, column by column, ordered Safe D -> Safe R ------------------------
     ordered = sorted(rows, key=lambda r: (RATING_ORDER.index(r["rating"]), -r["p"]))

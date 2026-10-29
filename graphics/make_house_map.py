@@ -74,8 +74,7 @@ def main():
     text(d, (bx, 190), "Democrats favoured", serif_big, BLUE, "ls")
     text(d, (bx, 230), "to win the House", serif_big, INK, "ls")
     tracked(d, (bx, 262), f"{control:.0%} CHANCE OF DEM CONTROL", mono_b, GRAPHITE, 1.4)
-    tracked(d, (L, 298), f"PROJECTED AVERAGE  ·  80% RANGE {lo}-{hi} DEM SEATS  ·  1 SQUARE = 1 DISTRICT",
-            mono_sm, MUTED, 1.1)
+    tracked(d, (L, 298), "1 SQUARE = 1 DISTRICT", mono_sm, MUTED, 1.1)
 
     # --- cartogram ----------------------------------------------------------------------
     shapes = {s: block_shape(len(v)) for s, v in by_state.items()}
