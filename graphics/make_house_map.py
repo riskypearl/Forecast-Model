@@ -127,7 +127,6 @@ def main():
     fy = H - 72
     rect(d, (L, fy - 26, R, fy - 25), INK)
     tracked(d, (L, fy), "WEIGHTED POLLS, FUNDAMENTALS AND CANDIDATE RECORDS", mono_sm, GRAPHITE, 1.2)
-    tracked(d, (R, fy), "@AFCWILL10 ON X", mono_sm, GRAPHITE, 1.2, anchor="r")
 
     img = img.resize((W, H), Image.LANCZOS)
     img.save("house_map.png")

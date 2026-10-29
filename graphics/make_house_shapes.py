@@ -182,7 +182,6 @@ def main():
     assert note_y + 24 < fy - 40
     rect(d, (L, fy - 26, R, fy - 25), INK)
     tracked(d, (L, fy), "WEIGHTED POLLS, FUNDAMENTALS AND CANDIDATE RECORDS", mono_sm, GRAPHITE, 1.2)
-    tracked(d, (R, fy), "@AFCWILL10 ON X", mono_sm, GRAPHITE, 1.2, anchor="r")
 
     img = img.resize((W, H), Image.LANCZOS)
     img.save(os.path.join(os.path.dirname(os.path.abspath(__file__)), "house_shapes.png"))
