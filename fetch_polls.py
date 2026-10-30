@@ -64,15 +64,13 @@ def pick_question(poll):
 
 def two_sides(answers):
     """
-    Return (dem_pct, rep_pct). Where there is no Democrat (e.g. Nebraska, where
-    independent Dan Osborn is the main challenger) the strongest non-Republican
-    candidate counts as the Dem side.
+    Return (dem_pct, rep_pct). The Dem side is the strongest non-Republican -
+    usually the Democrat, but an independent where they run ahead of the
+    Democrat or there is none (Dan Osborn in Nebraska, Seth Bodnar in Montana).
     """
     candidates = [a for a in answers if a["party"] != "NONE"]
     reps = [a["pct"] for a in candidates if a["party"] == "REP"]
-    dems = [a["pct"] for a in candidates if a["party"] == "DEM"]
-    if not dems:
-        dems = [a["pct"] for a in candidates if a["party"] != "REP"]
+    dems = [a["pct"] for a in candidates if a["party"] != "REP"]
     if not reps or not dems:
         return None
     return max(dems), max(reps)
@@ -82,7 +80,7 @@ def main_candidates(answers):
     """Names of the leading Dem-side and Republican candidates in one poll question."""
     candidates = [a for a in answers if a["party"] != "NONE" and "Generic" not in a["candidateName"]]
     reps = [a for a in candidates if a["party"] == "REP"]
-    dems = [a for a in candidates if a["party"] == "DEM"] or [a for a in candidates if a["party"] != "REP"]
+    dems = [a for a in candidates if a["party"] != "REP"]   # strongest non-Republican, as in two_sides
     if not reps or not dems:
         return None
     return max(dems, key=lambda a: a["pct"])["candidateName"], max(reps, key=lambda a: a["pct"])["candidateName"]

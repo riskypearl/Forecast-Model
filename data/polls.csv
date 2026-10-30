@@ -316,19 +316,19 @@ MT,Tavern Research,2026-05-18,44,56,0.0,607,lv,IND
 MT,Public Opinion Strategies,2026-06-11,25,44,7.0,500,lv,REP
 MT,Hart Research Associates,2026-06-24,43,49,8,800,lv,DEM
 MT,GrayHouse,2026-06-24,25,41,13.0,500,lv,
-MT,The Bullfinch Group,2026-07-16,22,36,17.0,793,lv,IND
+MT,The Bullfinch Group,2026-07-16,24,36,17.0,793,lv,IND
 MT,GQR,2026-07-26,50,44,6,500,lv,IND
 MT,Hart Research Associates,2026-08-04,38,52,10,800,lv,IND
-MT,Peak Insights,2026-08-25,19,44,12.0,600,lv,REP
-MT,Rutgers-Eagleton,2026-09-07,16,38,0.0,845,rv,
-MT,Aspect Strategic,2026-09-15,14,44,7.0,715,lv,IND
-MT,Quantus Insights,2026-09-15,24.4,45.3,2.5,625,lv,
-MT,American Pulse Research & Polling,2026-09-24,18.9,45.1,7.2,604,lv,
-MT,Concord Public Opinion Partners,2026-10-08,13,35,14,405,lv,DEM
-MT,Peak Insights,2026-10-12,12,44,10.0,500,lv,REP
-MT,Quantus Insights,2026-10-18,21.2,45.6,1.6,667,lv,
-MT,Montana State University Billings,2026-10-21,21,30,19,720,a,
-MT,Concord Public Opinion Partners,2026-10-23,10,38,11.0,410,lv,DEM
+MT,Peak Insights,2026-08-25,22,44,12.0,600,lv,REP
+MT,Rutgers-Eagleton,2026-09-07,30,38,0.0,845,rv,
+MT,Aspect Strategic,2026-09-15,32,44,7.0,715,lv,IND
+MT,Quantus Insights,2026-09-15,26.1,45.3,2.5,625,lv,
+MT,American Pulse Research & Polling,2026-09-24,26.1,45.1,7.2,604,lv,
+MT,Concord Public Opinion Partners,2026-10-08,37,35,14,405,lv,DEM
+MT,Peak Insights,2026-10-12,29,44,10.0,500,lv,REP
+MT,Quantus Insights,2026-10-18,29.4,45.6,1.6,667,lv,
+MT,Montana State University Billings,2026-10-21,26,30,19,720,a,
+MT,Concord Public Opinion Partners,2026-10-23,39,38,11.0,410,lv,DEM
 NC,Public Policy Polling,2025-03-05,47,43,10,662,rv,
 NC,Change Research,2025-04-04,48,45,5.0,867,lv,DEM
 NC,Victory Insights,2025-07-30,44.4,43.5,12.2,600,lv,
@@ -488,7 +488,7 @@ SC,The New York Times/Siena University,2026-10-26,47.76,48.47,3.3,707,lv,
 SD,Public Policy Polling,2025-07-31,28,41,31.0,552,rv,IND
 SD,Public Policy Polling,2025-11-14,31,44,25.0,814,rv,IND
 SD,Public Policy Polling,2026-02-18,32,49,19.0,685,rv,IND
-SD,Public Policy Polling,2026-05-30,18,43,16.0,726,rv,IND
+SD,Public Policy Polling,2026-05-30,23,43,16.0,726,rv,IND
 SD,Public Opinion Strategies,2026-07-09,33,56,11,500,lv,REP
 SD,Impact Research,2026-08-17,44,44,12.0,500,lv,IND
 SD,Lake Research Partners,2026-08-30,51,41,8,500,lv,DEM
