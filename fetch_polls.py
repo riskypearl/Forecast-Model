@@ -1,7 +1,8 @@
 """
-Download every 2026 Senate general-election poll into data/polls.csv, and
-every national generic-ballot poll ("Democrat or Republican for Congress?")
-into data/gcb_polls.csv - the generic ballot sets the national environment.
+Download every 2026 Senate general-election poll into data/polls.csv, every
+national generic-ballot poll ("Democrat or Republican for Congress?") into
+data/gcb_polls.csv - the generic ballot sets the national environment - and
+every governor poll into data/gov_polls.csv.
 
 Source: PollResults.org, which republishes the New York Times poll database
 under CC BY 4.0 (credit "Poll data from the New York Times" if you publish).
@@ -149,6 +150,43 @@ def main():
     print(f"Candidates: saved matchups for {len(matchups)} states.")
 
     save_generic_ballot()
+    save_governor_polls()
+
+
+def save_governor_polls():
+    """Every 2026 governor general-election poll into data/gov_polls.csv (same columns as polls.csv)."""
+    rows = []
+    for poll in fetch_all("governor"):
+        if poll["electionDate"] != ELECTION_DATE or poll["hypothetical"]:
+            continue
+        # Ranked-choice states (Alaska, Maine): use the final round where the poll has one,
+        # not a first round with the Republican vote split across several candidates.
+        final = [q for q in poll["questions"] if q["stage"] == "general"
+                 and q["answers"] and all(a["rankedChoiceFinal"] == "TRUE" for a in q["answers"])]
+        q = final[0] if final else pick_question(poll)
+        sides = two_sides(q["answers"]) if q else None
+        names = main_candidates(q["answers"]) if q else None
+        if not sides or not names:
+            continue
+        rows.append({
+            "state": poll["state"],
+            "pollster": poll["displayName"] or poll["pollster"],
+            "end_date": datetime.strptime(poll["endDate"], "%m/%d/%y").date().isoformat(),
+            "dem_pct": sides[0],
+            "rep_pct": sides[1],
+            "undecided": undecided_share(q["answers"]),
+            "sample_size": q["sampleSize"] or DEFAULT_SAMPLE_SIZE,
+            "population": q["population"],
+            "partisan": poll["partisan"],
+            "dem_name": names[0],
+            "rep_name": names[1],
+        })
+    rows.sort(key=lambda r: (r["state"], r["end_date"]))
+    with open("data/gov_polls.csv", "w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+        writer.writeheader()
+        writer.writerows(rows)
+    print(f"Governor: saved {len(rows)} polls across {len({r['state'] for r in rows})} states.")
 
 
 def save_generic_ballot():

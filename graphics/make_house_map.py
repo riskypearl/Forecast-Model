@@ -12,7 +12,7 @@ from collections import defaultdict
 
 from PIL import Image, ImageDraw
 
-from make_instagram import W, H, S, PAPER, INK, GRAPHITE, MUTED, BLUE, RED, font, text, tracked, rect
+from make_instagram import W, H, S, PAPER, INK, GRAPHITE, MUTED, BLUE, RED, font, digit_mid, text, tracked, rect
 from make_house import RATING_ORDER, RATING_COLOUR, DATE_LABEL, load, summary
 
 # (column, row) of each state on a geographic tile grid
@@ -66,15 +66,15 @@ def main():
     wr = d.textlength(rep_txt, font=numeral) / S
     text(d, (L - 4, base), dem_txt, numeral, BLUE, "ls")
     dx = L - 4 + wd + 14
-    rect(d, (dx, base - 63, dx + 28, base - 57), INK)
+    mid = digit_mid(d, numeral)
+    rect(d, (dx, base - mid - 3, dx + 28, base - mid + 3), INK)
     xr = dx + 28 + 14
     text(d, (xr, base), rep_txt, numeral, RED, "ls")
     bx = xr + wr + 36
     text(d, (bx, 190), "Democrats favoured", serif_big, BLUE, "ls")
     text(d, (bx, 230), "to win the House", serif_big, INK, "ls")
     tracked(d, (bx, 262), f"{control:.0%} CHANCE OF DEM CONTROL", mono_b, GRAPHITE, 1.4)
-    tracked(d, (L, 298), f"PROJECTED AVERAGE  ·  80% RANGE {lo}-{hi} DEM SEATS  ·  1 SQUARE = 1 DISTRICT",
-            mono_sm, MUTED, 1.1)
+    tracked(d, (L, 298), "1 SQUARE = 1 DISTRICT", mono_sm, MUTED, 1.1)
 
     # --- cartogram ----------------------------------------------------------------------
     shapes = {s: block_shape(len(v)) for s, v in by_state.items()}
@@ -96,6 +96,7 @@ def main():
     col_x = [x_off + (sum(col_w[:c]) + gap_units * c) * unit for c in range(ncols)]
     row_y = [map_top + (sum(row_h[:r]) + (gap_units + label_room) * r) * unit for r in range(nrows)]
 
+    content_bottom = map_top
     for s, districts in by_state.items():
         c, r = GRID[s]
         cols, rws = shapes[s]
@@ -108,10 +109,12 @@ def main():
             x0, y0 = bx0 + cc * unit, by0 + rr * unit
             rect(d, (x0, y0, x0 + unit - sq_gap, y0 + unit - sq_gap), RATING_COLOUR[dd["rating"]])
         tracked(d, (bx0 + (cols * unit - sq_gap) / 2 - 7, by0 + rws * unit + 12), s, label_f, GRAPHITE, 0.8)
+        content_bottom = max(content_bottom, by0 + rws * unit + 12)
 
     # --- legend ------------------------------------------------------------------------
     counts = {k: sum(x["rating"] == k for x in rows) for k in RATING_ORDER}
-    ly, lx = 1196, L
+    # straight under the map rather than down by the footer, so it survives Instagram's crop
+    ly, lx = content_bottom + 44, L
     for k in RATING_ORDER:
         label = f"{k.upper()} {counts[k]}"
         rect(d, (lx, ly - 10, lx + 10, ly), RATING_COLOUR[k])
@@ -122,8 +125,7 @@ def main():
 
     fy = H - 72
     rect(d, (L, fy - 26, R, fy - 25), INK)
-    tracked(d, (L, fy), "WEIGHTED POLLS + FUNDAMENTALS", mono_sm, GRAPHITE, 1.2)
-    tracked(d, (R, fy), "@AFCWILL10 ON X", mono_sm, GRAPHITE, 1.2, anchor="r")
+    tracked(d, (L, fy), "WEIGHTED POLLS, FUNDAMENTALS AND CANDIDATE RECORDS", mono_sm, GRAPHITE, 1.2)
 
     img = img.resize((W, H), Image.LANCZOS)
     img.save("house_map.png")

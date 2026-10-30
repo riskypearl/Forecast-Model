@@ -29,14 +29,15 @@ Step "fetch polls" { & $python fetch_polls.py }
 Step "forecast" { & $python forecast.py }
 if (Test-Path "data\electindex\races.csv") {
     Step "house forecast" { & $python house_forecast.py }
+    Step "governor forecast" { & $python governor_forecast.py }
 }
-# Only the files fetch_polls.py, forecast.py and house_forecast.py write - so
+# Only the files fetch_polls.py and the forecast scripts write - so
 # work in progress elsewhere in the repo (e.g. uk/) is never committed or
 # pushed by the schedule.
 $outputs = @(
-    "data/polls.csv", "data/candidates.csv", "data/gcb_polls.csv", "data/house_polls.csv",
+    "data/polls.csv", "data/candidates.csv", "data/gcb_polls.csv", "data/house_polls.csv", "data/gov_polls.csv",
     "results.csv", "seat_distribution.csv", "house_results.csv", "house_seat_distribution.csv",
-    "history"
+    "governor_results.csv", "governor_summary.csv", "history"
 )
 Step "git add" { & $git add -- $outputs }
 & $git diff --cached --quiet

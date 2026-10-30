@@ -15,8 +15,9 @@ probabilities and a chance of chamber control.
    candidate quality + a demographic adjustment (groups that swung hard in 2024 are
    assumed to partly swing back). Appointed incumbents get half the incumbency bonus.
    Candidate quality is calculated automatically from each 2026 candidate's competitive
-   Senate races in the last 12 years (the same method `backtest.py` tests); records outside
-   the Senate data (e.g. House, Attorney General) are entered by hand in `states.csv`.
+   Senate races in the last 12 years (the same method `backtest.py` tests), plus, as a
+   separate smaller adjustment, their governor races (`backtest_governor.py`); other records
+   (e.g. House, Attorney General) are entered by hand in `states.csv`.
    The national environment is a recency-weighted generic-ballot average: every pollster's
    lean is measured against reputable pollsters (rated 2.0+) and removed, and undecided
    voters are split evenly.
@@ -47,6 +48,23 @@ Each run writes `results.csv`, a dated copy in `history/`, and a line in
 
 `update.ps1` does all of it (fetch, forecast, commit, push) and runs automatically every
 2 days until 2 November 2026 via Windows Task Scheduler.
+
+## Governor forecast
+
+`governor_forecast.py` forecasts all 36 governor races with the same machinery, refitted on every
+governor race since 2010 (`governor_backtest.py`; settings fitted on 2010-16, checked on 2018-24):
+
+- **Fundamentals** = 0.8 x presidential lean + national environment + incumbency (7.5) + half of each
+  candidate's record in earlier governor races. Governor races are less partisan than Senate races
+  (Phil Scott, Laura Kelly): fundamentals alone miss by ~9-10 points, vs ~6 for the Senate.
+- **Polls count for much more than in the Senate model** (weight 0.95 x n / (n + 0.25)): in the
+  backtest the heaviest poll weighting was best on both periods (average miss 7.6 -> 5.3 on
+  2010-16, 8.1 -> 4.6 on 2018-22, forecasts made the day before).
+- **Uncertainty 25% wider** than the Senate model's - governor misses measured 1.2-1.4x its size.
+- Ranked-choice polls (Alaska) use the final round; only polls of the actual 2026 matchup count.
+- Headline: governorships after the election, including the 14 not up (6 D, 8 R).
+
+`graphics/make_governor.py` draws the governor sheet.
 
 ## House forecast
 
@@ -118,13 +136,24 @@ using FiveThirtyEight's historical polls.
 | 203 races, 2012-2022 | Avg miss | Winners right |
 |---|---|---|
 | Fundamentals only | 7.3 pts | 178 |
-| Full model | 6.2 pts | 186 (92%) |
+| Full model | 5.8 pts | 186 (92%) |
 
-**Calibration:** favourites given 80-95% won 31 of 36 races (32.1 expected); favourites
-given 95%+ won 131 of 132 (130.5 expected). Brier score 0.060. The model's probabilities are honest.
+**Calibration:** favourites given 80-95% won 31 of 35 races (31.5 expected); favourites
+given 95%+ won 133 of 134 (132.5 expected). Brier score 0.056. The model's probabilities are honest.
 
 **Poll weight:** relying more heavily on polls fitted 2012-2018 best but did *worse* on
 2020-2022, when polls missed badly. The model's hedge towards fundamentals was kept.
+
+**Old polls still count** (`backtest_poll_recency.py`): the polling average halves a poll's
+weight every 14 days, and that half-life used to set how much the polls count against the
+fundamentals too - so a race with no new polls for a few weeks drifted back to its
+fundamentals (Kansas, October 2026: polls tied, model R+5). The blend now uses a separate
+45-day half-life (`POLL_COUNT_HALF_LIFE_DAYS`). Tested with forecasts made 1, 7, 14, 21 and
+28 days out, it beat 14 days at every distance, on both 2012-18 and unseen 2020-22 (check
+years 5.46 -> 5.35 avg miss; day-before Brier 0.060 -> 0.056). Longer half-lives scored
+slightly better still, but FiveThirtyEight's polls only go back ~60 days, so that can't be
+trusted for a live race with polls from a year ago. The House model keeps 14 days (its
+backtest data isn't public, so the change is untested there).
 
 **Lean compression (tested, rejected):** scaling presidential lean down (e.g. Senate races
 follow 80% of it, for ticket-splitting) made predictions worse on unseen years. Modern
@@ -151,6 +180,63 @@ Senate results track presidential lean almost one-for-one - a sign of polarisati
   is actually slightly *more* Democratic than its presidential lean, so it doesn't explain
   Michigan Senate races running close.
 
+**State poll bias (tested, rejected)** (`backtest_state_bias.py`): correct each state's polls
+by how they missed in earlier cycles (final 3 weeks of Senate, President and Governor polls,
+1998 onwards), either the whole miss or only the part beyond that cycle's national miss, from
+all past cycles or only the same type (midterm/presidential), shrunk towards zero. Every
+variant was worse on unseen 2020-22 (5.45-5.50 vs 5.42 avg miss). State poll misses mostly
+don't repeat; the part that does is the national miss the simulation already covers. Texas
+for example: polls underrated Republicans in 2020 and 2022, but by about the national
+amount - relative to other states, Texas polls have if anything slightly underrated
+Democrats (+0.8 correction).
+
+**Statewide lean (tested, rejected)** (`backtest_statewide_lean.py`): blend each state's
+presidential lean with how it voted in recent governor and Senate races (vs the national
+environment, incumbency removed, current candidates left out), weight 0.1-0.5, 4/8/12-year
+windows. Every setting made the full model worse on unseen 2020-22 (5.40-7.04 vs 5.32 avg miss,
+forecasts 1 day out; same at 21 days). Ticket-splitting for governors doesn't carry over to
+Senate races: Kansas elected Laura Kelly twice but gave Marshall +11 and Moran +23.
+
+**How fast polls take over (tested, kept)** (`backtest_poll_weight.py`): poll weight is
+cap x n / (n + K). Over forecasts made 1-28 days out, letting polls take over sooner (K = 1-2,
+or a 0.95 cap) fitted 2012-18 much better (5.70-6.15 vs 6.54) but did no better on unseen
+2020-22 (5.33-5.51 vs 5.35) - the same pattern as before: the polls' good years make heavy
+poll weighting look better than it is. Kept at cap 0.85, K = 4 (now `POLL_WEIGHT_K`). Races
+where the polls and fundamentals disagree (Minnesota: polls D+3.5, fundamentals D+13) stay
+closer to the fundamentals than the polls.
+
+**Governor records (adopted)** (`backtest_governor.py`): does how far a Senate candidate ran
+ahead of their party in an earlier governor race predict their Senate result? Tested as its own
+adjustment with its own shrink, on every governor general election 2002-2024 (polled or not,
+odd years included), every combination: governor only / Senate + governor / governor only where
+there's no Senate record; "their party" measured by presidential lean + national environment or
+by the party's same-year House vote in the state; governor incumbency 0 / 2.5 / 5; with and
+without the within-15 rule. Fitted on 2008-16, checked on 2018-24 (25 Senate races have a
+governor record).
+
+| 2018-24, fundamentals only | Avg miss | Winners right |
+|---|---|---|
+| Senate record only (before) | 6.29 | 121/137 |
+| + governor record (lean baseline, any margin, no incumbency bonus, shrink 0.30) | 6.06 | 123/137 |
+
+10 of the 12 check-year races with a governor record got closer; still 0.14 better without
+Hogan (ran 44 ahead as governor, 13 ahead for Senate - governor records carry over only
+partly). Lean beat the House-vote baseline (House votes are distorted by uncontested seats -
+Hawaii gave a -75 record), and unlike Senate races, governor blowouts still told us something.
+Full model with polls: 186 -> 188 winners right, Brier 0.055 -> 0.053. In 2026 it adds +2.2 to
+North Carolina (Roy Cooper ran 7.4 ahead of Democrats as governor in 2020).
+
+**Incumbency (re-checked):** Senate - fundamentals alone now fit a smaller bonus (best 2.5 on
+2018-24; the best year-by-year bonus fell from ~12 in 2008/2012 to 1-4.5 since 2016), but with
+polls in the full model 5 is still best on both periods (2020-22: 5.32 vs 5.49 at 3.5, 5.67 at
+2.5) - likely partly because polls underrate incumbents. Kept at 5. A smaller midterm bonus for
+the president's party's incumbents did worse. Governor - a bigger bonus helps once polls are in
+(2018-22: 4.43 at 7.5 vs 4.62 at 5), so the governor model uses 7.5.
+
+**Pollster lean correction:** removing house effects, or measuring them against quality-weighted
+polls instead of all other polls, changes the full-model backtest by 0.03 points or less. Pollster
+ratings set how much a poll counts; house effects shift which way it leans - separate jobs.
+
 **Generic-ballot bias:** final generic-ballot polls overstated Democrats in 5 of 6 cycles,
 by 3.2 points on average (2.4 in midterm years).
 
@@ -163,4 +249,6 @@ by 3.2 points on average (2.4 in midterm years).
 - Presidential results: state results 2016-2024
 - Backtest: MIT Election Data + Science Lab, U.S. Senate, U.S. President and U.S. House 1976-2024 (CC0)
 - Historical polls: FiveThirtyEight `raw_polls.csv` (github.com/fivethirtyeight/data, CC BY 4.0)
+- Governor results 2002-2024: FiveThirtyEight `election_results_gubernatorial.csv`
+  (github.com/fivethirtyeight/election-results, CC BY 4.0)
 - Methodology inspired by the ElectIndex 2026 forecast's published methodology

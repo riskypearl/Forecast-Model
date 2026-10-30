@@ -60,8 +60,42 @@ def load_senate():
     return races, dem_seats, 100 - dem_seats, round(100 * float(timeline["dem_control_prob"])), label
 
 
+# Type style. "swiss" (Archivo) is the default; "ledger" is the original set. The others swap every font through
+# STYLES (file, variable-font axes, size factor) so all the graphics change together.
+# Choose with the GRAPHICS_STYLE environment variable.
+STYLE = os.environ.get("GRAPHICS_STYLE", "swiss")
+FRANKLIN, SERIF, ARCHIVO = "LibreFranklin-Variable.ttf", "SourceSerif4-Variable.ttf", "Archivo-Variable.ttf"
+STYLES = {
+    "newspaper": {   # Franklin Gothic labels, Source Serif names - US newspaper data desk
+        "GeistMono-Regular.ttf": (FRANKLIN, lambda sz: [400], 1.0),
+        "GeistMono-Bold.ttf": (FRANKLIN, lambda sz: [700], 1.0),
+        "InstrumentSans-Bold.ttf": (FRANKLIN, lambda sz: [700], 1.0),
+        "InstrumentSerif-Italic.ttf": (SERIF, lambda sz: [400, min(max(sz, 8), 60)], 0.82),
+        "BigShoulders-Bold.ttf": (FRANKLIN, lambda sz: [800], 0.72),
+    },
+    "swiss": {       # one family: Archivo, extra-condensed black for the big numbers
+        "GeistMono-Regular.ttf": (ARCHIVO, lambda sz: [400, 100], 1.0),
+        "GeistMono-Bold.ttf": (ARCHIVO, lambda sz: [700, 100], 1.0),
+        "InstrumentSans-Bold.ttf": (ARCHIVO, lambda sz: [700, 100], 1.0),
+        "InstrumentSerif-Italic.ttf": (ARCHIVO, lambda sz: [400, 100], 0.8),
+        "BigShoulders-Bold.ttf": (ARCHIVO, lambda sz: [900, 62], 0.95),
+    },
+}
+TRACKING_SCALE = {"ledger": 1.0}.get(STYLE, 0.35)   # proportional fonts need far less letter-spacing
+
+
 def font(name, size):
+    if STYLE in STYLES:
+        file, axes, scale = STYLES[STYLE][name]
+        f = ImageFont.truetype(os.path.join(FONTS, file), round(size * scale * S))
+        f.set_variation_by_axes(axes(size * scale))
+        return f
     return ImageFont.truetype(os.path.join(FONTS, name), size * S)
+
+
+def digit_mid(d, f):
+    """Height above the baseline of the middle of a digit - where the dash between numbers sits."""
+    return -d.textbbox((0, 0), "0", font=f, anchor="ls")[1] / S / 2
 
 
 def text(d, xy, s, f, fill, anchor="la"):
@@ -70,6 +104,7 @@ def text(d, xy, s, f, fill, anchor="la"):
 
 def tracked(d, xy, s, f, fill, tracking, anchor="l"):
     """Letter-spaced small caps. anchor l / r for the run's left or right edge."""
+    tracking *= TRACKING_SCALE
     widths = [d.textlength(c, font=f) for c in s]
     total = sum(widths) + tracking * S * (len(s) - 1)
     x = xy[0] * S if anchor == "l" else xy[0] * S - total
@@ -88,7 +123,14 @@ def rounded(d, box, r, fill=None, outline=None, width=1):
 
 
 def main():
-    RACES, DEM_SEATS, REP_SEATS, CONTROL, DATE_LABEL = load_senate()
+    races, dem_seats, rep_seats, control, date_label = load_senate()
+    draw(races, dem_seats, rep_seats, f"{control}% CHANCE OF DEM CONTROL", date_label,
+         "2026 U.S. SENATE FORECAST", "the Senate", "TIPPING POINT", "instagram_forecast.png")
+
+
+def draw(RACES, DEM_SEATS, REP_SEATS, control_line, DATE_LABEL, title, prize, split_label, filename):
+    """The forecast sheet: headline call, competitive races as diverging bars, footer.
+    split_label marks the line between the Democratic and Republican blocs (None = plain line)."""
     n_dem_rows = sum(r[2] == "D" for r in RACES)
     img = Image.new("RGB", (W * S, H * S), PAPER)
     d = ImageDraw.Draw(img)
@@ -104,7 +146,7 @@ def main():
     L, R = 72, W - 72
 
     # --- masthead ---------------------------------------------------------
-    tracked(d, (L, 96), "2026 U.S. SENATE FORECAST", mono_b, INK, 2.2)
+    tracked(d, (L, 96), title, mono_b, INK, 2.2)
     tracked(d, (R, 96), DATE_LABEL, mono, GRAPHITE, 1.6, anchor="r")
     rect(d, (L, 112, R, 113), INK)
 
@@ -116,15 +158,16 @@ def main():
     dash_w, dash_gap = 46, 22
     text(d, (x, base), str(DEM_SEATS), numeral, BLUE, "ls")
     dash_x = x + w52 + dash_gap
-    rect(d, (dash_x, base - 104, dash_x + dash_w, base - 96), INK)
+    mid = digit_mid(d, numeral)
+    rect(d, (dash_x, base - mid - 4, dash_x + dash_w, base - mid + 4), INK)
     x48 = dash_x + dash_w + dash_gap
     text(d, (x48, base), str(REP_SEATS), numeral, RED, "ls")
 
     right_block_x = x48 + w48 + 40
     text(d, (right_block_x, 226), "Democrats", serif_big, BLUE, "ls")
     text(d, (right_block_x, 268), "favoured to win", serif_big, INK, "ls")
-    text(d, (right_block_x, 310), "the Senate", serif_big, INK, "ls")
-    tracked(d, (right_block_x, 348), f"{CONTROL}% CHANCE OF DEM CONTROL", mono_b, GRAPHITE, 1.6)
+    text(d, (right_block_x, 310), prize, serif_big, INK, "ls")
+    tracked(d, (right_block_x, 348), control_line, mono_b, GRAPHITE, 1.6)
 
     # --- race ledger -----------------------------------------------------------
     head_y = 412
@@ -137,7 +180,7 @@ def main():
     half = 132                       # bar room either side of the axis
     scale = half / 11.0
     col_margin = R
-    row_h, y0 = 50, head_y + 52
+    row_h, y0 = min(50, 700 // max(len(RACES), 1)), head_y + 52   # 14 rows of 50 fit
     split_gap = 22
 
     for i, (state, name, party, margin, flip) in enumerate(RACES):
@@ -175,21 +218,21 @@ def main():
     rect(d, (axis - 0.5, first_mid, axis + 0.5, last_mid), INK)
     split_y = y0 + n_dem_rows * row_h + split_gap / 2
     rect(d, (L, split_y - 0.5, R, split_y + 0.5), INK)
-    label_w = tracked(d, (-1000, -1000), "TIPPING POINT", mono_sm, INK, 1.6)   # measure only
-    lx = axis - label_w / 2
-    rect(d, (lx - 12, split_y - 9, lx + label_w + 12, split_y + 9), PAPER)
-    tracked(d, (lx, split_y + 4.5), "TIPPING POINT", mono_sm, INK, 1.6)
+    if split_label:
+        label_w = tracked(d, (-1000, -1000), split_label, mono_sm, INK, 1.6)   # measure only
+        lx = axis - label_w / 2
+        rect(d, (lx - 12, split_y - 9, lx + label_w + 12, split_y + 9), PAPER)
+        tracked(d, (lx, split_y + 4.5), split_label, mono_sm, INK, 1.6)
 
     # --- footer ------------------------------------------------------------------
     fy = H - 72
     rect(d, (L, fy - 26, R, fy - 25), INK)
-    tracked(d, (L, fy), "WEIGHTED POLLS + FUNDAMENTALS", mono_sm, GRAPHITE, 1.2)
-    tracked(d, (R, fy), "@AFCWILL10 ON X", mono_sm, GRAPHITE, 1.2, anchor="r")
+    tracked(d, (L, fy), "WEIGHTED POLLS, FUNDAMENTALS AND CANDIDATE RECORDS", mono_sm, GRAPHITE, 1.2)
 
     img = img.resize((W, H), Image.LANCZOS)
-    out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "instagram_forecast.png")
+    out = os.path.join(os.path.dirname(os.path.abspath(__file__)), filename)
     img.save(out)
-    print("saved", out, "|", DATE_LABEL, "|", DEM_SEATS, "-", REP_SEATS, f"| {CONTROL}% |", len(RACES), "races")
+    print("saved", out, "|", DATE_LABEL, "|", DEM_SEATS, "-", REP_SEATS, "|", control_line, "|", len(RACES), "races")
 
 
 if __name__ == "__main__":

@@ -12,7 +12,7 @@ import os
 
 from PIL import Image, ImageChops, ImageDraw
 
-from make_instagram import W, H, S, PAPER, INK, GRAPHITE, MUTED, BLUE, RED, font, text, tracked, rect
+from make_instagram import W, H, S, PAPER, INK, GRAPHITE, MUTED, BLUE, RED, font, digit_mid, text, tracked, rect
 from make_house import RATING_ORDER, RATING_COLOUR, DATE_LABEL, load, summary
 
 DATA = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "electindex")
@@ -92,15 +92,14 @@ def main():
     wr = d.textlength(rep_txt, font=numeral) / S
     text(d, (L - 4, base), dem_txt, numeral, BLUE, "ls")
     dx = L - 4 + wd + 14
-    rect(d, (dx, base - 63, dx + 28, base - 57), INK)
+    mid = digit_mid(d, numeral)
+    rect(d, (dx, base - mid - 3, dx + 28, base - mid + 3), INK)
     xr = dx + 28 + 14
     text(d, (xr, base), rep_txt, numeral, RED, "ls")
     bx = xr + wr + 36
     text(d, (bx, 190), "Democrats favoured", serif_big, BLUE, "ls")
     text(d, (bx, 230), "to win the House", serif_big, INK, "ls")
     tracked(d, (bx, 262), f"{control:.0%} CHANCE OF DEM CONTROL", mono_b, GRAPHITE, 1.4)
-    tracked(d, (L, 298), f"PROJECTED AVERAGE  ·  80% RANGE {lo}-{hi} DEM SEATS",
-            mono_sm, MUTED, 1.1)
 
     # --- projections -------------------------------------------------------------------------
     lower48 = albers(37.5, 29.5, 45.5, -96)
@@ -180,8 +179,7 @@ def main():
     fy = H - 72
     assert note_y + 24 < fy - 40
     rect(d, (L, fy - 26, R, fy - 25), INK)
-    tracked(d, (L, fy), "WEIGHTED POLLS + FUNDAMENTALS", mono_sm, GRAPHITE, 1.2)
-    tracked(d, (R, fy), "@AFCWILL10 ON X", mono_sm, GRAPHITE, 1.2, anchor="r")
+    tracked(d, (L, fy), "WEIGHTED POLLS, FUNDAMENTALS AND CANDIDATE RECORDS", mono_sm, GRAPHITE, 1.2)
 
     img = img.resize((W, H), Image.LANCZOS)
     img.save(os.path.join(os.path.dirname(os.path.abspath(__file__)), "house_shapes.png"))
