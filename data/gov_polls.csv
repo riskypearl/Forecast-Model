@@ -10,6 +10,7 @@ AK,Alaska Survey Research,2026-10-03,54,46,0.0,1512,lv,,Jonathan Kreiss-Tomkins,
 AK,Data for Progress,2026-10-16,53,47,0.0,629,lv,,Jonathan Kreiss-Tomkins,Bernadette Wilson
 AK,Alaska Survey Research,2026-10-18,55,45,0.0,1568,lv,,Jonathan Kreiss-Tomkins,Bernadette Wilson
 AK,Alaska Survey Research,2026-10-25,53.4,46.6,0.0,1068,lv,,Jonathan Kreiss-Tomkins,Bernadette Wilson
+AK,The New York Times/Siena University,2026-10-30,54.1,45.9,0.0,549,lv,,Jonathan Kreiss-Tomkins,Bernadette Wilson
 AL,Cygnal Political,2025-11-13,34.1,52.6,13.3,605,lv,,Doug Jones,Tommy Tuberville
 AL,yes. every kid. foundation.,2026-07-11,41,49,11.0,601,lv,,Doug Jones,Tommy Tuberville
 AL,RMG Research,2026-09-25,37,50,9,800,rv,REP,Doug Jones,Tommy Tuberville
@@ -45,6 +46,7 @@ AZ,GrayHouse,2026-10-20,51,45,2.0,550,lv,REP,Katie Hobbs,Andy Biggs
 AZ,HighGround,2026-10-25,51.5,39.3,5.7,400,lv,,Katie Hobbs,Andy Biggs
 AZ,Kreate Strategies,2026-10-27,48.27,43.14,7.2,900,lv,REP,Katie Hobbs,Andy Biggs
 AZ,Noble Predictive Insights,2026-10-28,51,45,3.0,511,lv,,Katie Hobbs,Andy Biggs
+AZ,GrayHouse,2026-10-29,50,45,5,500,lv,REP,Katie Hobbs,Andy Biggs
 CA,University of California Berkeley Institute of Governmental Studies,2026-05-24,52,31,17.0,8578,rv,,Xavier Becerra,Steve Hilton
 CA,Kreate Strategies,2026-06-17,58,33,9,900,rv,,Xavier Becerra,Steve Hilton
 CA,Public Policy Institute of California,2026-07-06,61,36,2.0,1003,lv,,Xavier Becerra,Steve Hilton
@@ -62,6 +64,7 @@ CA,McLaughlin & Associates,2026-10-20,55,39.3,5.7,800,lv,,Xavier Becerra,Steve H
 CA,Public Policy Institute of California,2026-10-22,61,37,1.0,1086,lv,,Xavier Becerra,Steve Hilton
 CA,SurveyUSA,2026-10-24,54,32,14.0,799,lv,,Xavier Becerra,Steve Hilton
 CA,University of California Berkeley Institute of Governmental Studies,2026-10-25,61,34,5.0,1477,lv,,Xavier Becerra,Steve Hilton
+CA,ActiVote,2026-10-31,63.2,36.8,0.0,400,lv,,Xavier Becerra,Steve Hilton
 CT,OnMessage Inc.,2025-08-14,50,42,8.0,600,lv,REP,Ned Lamont,Erin Stewart
 CT,University of New Hampshire,2026-06-23,49,36,13,821,lv,,Ned Lamont,Ryan Fazio
 CT,GreatBlue Research,2026-07-26,48.8,34.3,16.9,600,lv,,Josh Elliott,Ryan Fazio
@@ -74,6 +77,7 @@ CT,YouGov,2026-10-07,57.2,34.1,8.5,600,lv,,Ned Lamont,Ryan Fazio
 CT,GreatBlue Research,2026-10-12,61.5,34.3,4.2,600,lv,,Ned Lamont,Ryan Fazio
 CT,Emerson College,2026-10-12,51.39,37.79,10.8,800,lv,,Ned Lamont,Ryan Fazio
 CT,Quinnipiac University,2026-10-12,58,38,4,1225,lv,,Ned Lamont,Ryan Fazio
+CT,University of New Hampshire,2026-10-31,54,41,4.0,811,lv,,Ned Lamont,Ryan Fazio
 FL,Targoz Market Research,2025-05-07,34,38,23.0,1153,rv,,Daniella Levine Cava,Byron Donalds
 FL,Victory Insights,2025-06-10,31.4,36.7,31.9,600,lv,,David Jolly,Byron Donalds
 FL,McLaughlin & Associates,2025-08-27,41,49,11.0,800,lv,,David Jolly,Byron Donalds
@@ -110,6 +114,11 @@ FL,Workbench Strategy,2026-10-22,48,46,6,800,lv,DEM,David Jolly,Byron Donalds
 FL,Echelon Insights,2026-10-23,44,50,5.0,515,lv,,David Jolly,Byron Donalds
 FL,The New York Times/Siena University,2026-10-25,44.43,48.36,7.0,813,lv,,David Jolly,Byron Donalds
 FL,St. Pete Polls,2026-10-27,45.5,47.8,3.5,916,lv,,David Jolly,Byron Donalds
+FL,The Political Matrix/The Listener Group,2026-10-28,38.8,40.3,20.9,500,lv,,David Jolly,Byron Donalds
+FL,InsiderAdvantage,2026-10-29,44.9,49,4.0,1200,lv,,David Jolly,Byron Donalds
+FL,Stetson University Center for Public Opinion Research,2026-10-30,45,51,3,858,lv,,David Jolly,Byron Donalds
+FL,Big Data Poll,2026-10-30,44.2,47.4,0.2,1067,lv,,David Jolly,Byron Donalds
+FL,ActiVote,2026-10-31,47.7,52.3,0.0,400,lv,,David Jolly,Byron Donalds
 GA,Echelon Insights,2026-04-09,46,44,10.0,407,lv,,Keisha Lance Bottoms,Brad Raffensperger
 GA,Concord Public Opinion Partners,2026-06-02,53,38,9.0,510,lv,DEM,Keisha Lance Bottoms,Rick Jackson
 GA,Beacon Research/Shaw & Company Research,2026-06-27,52,47,1.0,1002,rv,,Keisha Lance Bottoms,Rick Jackson
@@ -152,10 +161,13 @@ IA,New River Strategies/GS Strategy Group,2026-10-13,54,43,3.0,602,lv,,Rob Sand,
 IA,co/efficient,2026-10-19,49,45,6.0,863,lv,,Rob Sand,Zach Lahn
 IA,Echelon Insights,2026-10-23,50,46,4,403,lv,,Rob Sand,Zach Lahn
 IA,co/efficient,2026-10-28,50,45,5.0,1020,lv,,Rob Sand,Zach Lahn
+IA,YouGov,2026-10-29,53,46,1,2020,lv,,Rob Sand,Zach Lahn
+IA,The New York Times/Siena University,2026-11-01,51.3,43,5.7,705,lv,,Rob Sand,Zach Lahn
 ID,VoteNexus,2026-10-22,30,49,7.0,700,lv,IND,Terri Pickens,Brad Little
 IL,Victory Research,2025-11-24,54.3,34,11.7,1200,lv,,JB Pritzker,Darren Bailey
 IL,Public Policy Polling,2026-10-01,54,34,6.0,569,rv,,JB Pritzker,Darren Bailey
 IL,ActiVote,2026-10-22,58.7,41.3,0.0,400,lv,,JB Pritzker,Darren Bailey
+IL,ActiVote,2026-10-31,59,41,0.0,400,lv,,JB Pritzker,Darren Bailey
 KS,Global Strategy Group,2026-08-16,47,46,7,600,lv,DEM,Cindy Holscher,Ty Masterson
 KS,co/efficient,2026-09-10,43,51,6.0,915,lv,,Cindy Holscher,Ty Masterson
 KS,Global Strategy Group,2026-09-16,49,46,5,800,lv,DEM,Cindy Holscher,Ty Masterson
@@ -166,6 +178,8 @@ KS,Global Strategy Group,2026-10-21,47,47,6,600,lv,DEM,Cindy Holscher,Ty Masters
 KS,The Washington Post/George Mason University Schar School of Policy and Government,2026-10-26,51,45,1.0,801,lv,,Cindy Holscher,Ty Masterson
 KS,CNN/SSRS,2026-10-26,45,50,0.0,838,lv,,Cindy Holscher,Ty Masterson
 KS,Emerson College,2026-10-28,47.5,52.5,0.0,800,lv,,Cindy Holscher,Ty Masterson
+KS,YouGov,2026-10-29,49,50,1,2092,lv,,Cindy Holscher,Ty Masterson
+KS,The New York Times/Siena University,2026-11-01,47.8,47.4,4.6,736,lv,,Cindy Holscher,Ty Masterson
 MA,YouGov,2025-02-20,41,14,39.0,700,a,,Maura Healey,Peter Durant
 MA,Advantage Inc.,2025-09-25,46,31.33,22.7,750,lv,,Maura Healey,Brian Shortsleeve
 MA,YouGov,2025-10-29,51,26,16.0,800,a,,Maura Healey,Mike Minogue
@@ -180,6 +194,7 @@ MA,MassINC Polling Group,2026-09-22,54,32,8.0,800,lv,,Maura Healey,Mike Minogue
 MA,YouGov,2026-10-12,57,32,3.0,800,rv,,Maura Healey,Mike Minogue
 MA,UMass Lowell,2026-10-18,57,29,8.0,850,lv,,Maura Healey,Mike Minogue
 MA,Suffolk University,2026-10-18,58.6,36,3.4,500,lv,,Maura Healey,Mike Minogue
+MA,University of New Hampshire,2026-10-31,55,36,4.0,894,lv,,Maura Healey,Mike Minogue
 MD,OpinionWorks,2025-10-10,45,37,18,928,rv,,Wes Moore,Larry Hogan
 MD,Zenith Research,2026-08-03,58,31,9.0,800,lv,DEM,Wes Moore,Dan Cox
 MD,UMBC Institute of Politics,2026-09-27,51,24,15.0,776,lv,,Wes Moore,Dan Cox
@@ -202,6 +217,10 @@ ME,Beacon Research/Shaw & Company Research,2026-10-20,49,39,3,1514,lv,,Hannah Pi
 ME,Echelon Insights,2026-10-23,51,38,3.0,413,lv,,Hannah Pingree,Bobby Charles
 ME,Marist University,2026-10-25,44,44,6.0,1449,lv,,Hannah Pingree,Bobby Charles
 ME,CNN/SSRS,2026-10-26,53,39,0.0,783,lv,,Hannah Pingree,Bobby Charles
+ME,Data for Progress,2026-10-27,49,37,7,652,lv,,Hannah Pingree,Bobby Charles
+ME,YouGov,2026-10-29,53,45,0.0,1503,lv,,Hannah Pingree,Bobby Charles
+ME,University of New Hampshire,2026-10-31,51,40,1.0,1648,lv,,Hannah Pingree,Bobby Charles
+ME,The New York Times/Siena University,2026-11-01,54.8,39.8,5.0,714,lv,,Hannah Pingree,Bobby Charles
 MI,Mitchell Research & Communications,2025-03-13,37,34,13,688,lv,,Jocelyn Benson,John James
 MI,"Glengariff Group, Inc.",2025-05-08,36.2,26.3,12.7,600,rv,,Jocelyn Benson,Aric Nesbitt
 MI,Schoen Cooperman Research,2025-10-14,30,29,15.0,600,lv,IND,Jocelyn Benson,John James
@@ -240,8 +259,12 @@ MI,Marist University,2026-10-18,51,45,2.0,1185,lv,,Jocelyn Benson,John James
 MI,Michigan State University Institute for Public Policy and Social Research/YouGov,2026-10-19,53.3,40.9,5.9,836,lv,,Jocelyn Benson,John James
 MI,"Glengariff Group, Inc.",2026-10-22,51.4,44.5,4.1,600,lv,,Jocelyn Benson,John James
 MI,Michigan State University Office for Survey Research/Verasight,2026-10-23,51.4,41.2,0.0,1383,lv,,Jocelyn Benson,John James
+MI,Data for Progress,2026-10-25,52,43,3.0,622,lv,,Jocelyn Benson,John James
 MI,CNN/SSRS,2026-10-27,53,41,1.0,768,lv,,Jocelyn Benson,John James
 MI,Mitchell Research & Communications,2026-10-27,49,44,4.0,636,lv,,Jocelyn Benson,John James
+MI,YouGov,2026-10-29,52,46,1,2093,lv,,Jocelyn Benson,John James
+MI,Research Co.,2026-11-01,53,41,5.0,450,lv,,Jocelyn Benson,John James
+MI,The New York Times/Siena University,2026-11-01,51.8,39.4,8.3,1011,lv,,Jocelyn Benson,John James
 MN,SurveyUSA,2025-09-18,49,38,14.0,568,lv,,Tim Walz,Phillip Parrish
 MN,SurveyUSA,2026-01-30,50,30,20,575,rv,,Amy Klobuchar,Peggy Bennett
 MN,Emerson College,2026-02-08,52.8,30.9,7.1,1000,lv,,Amy Klobuchar,Mike Lindell
@@ -255,7 +278,9 @@ MN,Morning Consult,2026-10-07,48,39,9.0,1000,rv,,Amy Klobuchar,Lisa Demuth
 MN,SurveyUSA,2026-10-12,48,41,8.0,718,lv,,Amy Klobuchar,Lisa Demuth
 MN,Victory Insights,2026-10-22,50.1,43.1,4.4,1194,lv,REP,Amy Klobuchar,Lisa Demuth
 MN,The New York Times/Siena University,2026-10-26,55.92,37.88,6.0,752,lv,,Amy Klobuchar,Lisa Demuth
+MN,SurveyUSA,2026-10-28,51,39,8.0,714,lv,,Amy Klobuchar,Lisa Demuth
 MN,State Navigate,2026-10-28,52,42,3.0,806,lv,,Amy Klobuchar,Lisa Demuth
+MN,Research Co.,2026-11-01,53,40,6.0,450,lv,,Amy Klobuchar,Lisa Demuth
 NE,Public Policy Polling,2026-04-07,33,38,17.0,670,rv,DEM,Lynne Walz,Jim Pillen
 NE,Public Policy Polling,2026-09-02,31,32,17.0,559,rv,DEM,Lynne Walz,Jim Pillen
 NE,SurveyUSA,2026-09-13,35,43,9.0,503,lv,,Lynne Walz,Jim Pillen
@@ -268,6 +293,8 @@ NE,Concord Public Opinion Partners,2026-10-18,43,40,8.0,500,lv,DEM,Lynne Walz,Ji
 NE,Global Strategy Group,2026-10-18,39,40,11,800,lv,DEM,Lynne Walz,Jim Pillen
 NE,National Public Affairs,2026-10-18,41,47,4.0,598,lv,REP,Lynne Walz,Jim Pillen
 NE,Echelon Insights,2026-10-23,40,47,2.0,407,lv,,Lynne Walz,Jim Pillen
+NE,YouGov,2026-10-29,47,50,1,1979,lv,,Lynne Walz,Jim Pillen
+NE,The New York Times/Siena University,2026-10-29,39.57,53.09,6.7,809,lv,,Lynne Walz,Jim Pillen
 NH,University of New Hampshire,2026-01-19,39,50,10.0,2031,lv,,Jon Kiper,Kelly Ayotte
 NH,yes. every kid. foundation.,2026-01-29,37,47,14,563,lv,,Jon Kiper,Kelly Ayotte
 NH,St. Anselm,2026-03-18,39,46,15.0,1491,rv,,Cinde Warmington,Kelly Ayotte
@@ -284,6 +311,7 @@ NH,YouGov,2026-10-05,40,49,11.0,1520,lv,,Cinde Warmington,Kelly Ayotte
 NH,National Public Affairs,2026-10-12,38,54,5.0,600,lv,REP,Cinde Warmington,Kelly Ayotte
 NH,UMass Lowell,2026-10-19,42,48,7.0,600,lv,,Cinde Warmington,Kelly Ayotte
 NH,St. Anselm,2026-10-20,42,50,5.0,1672,lv,,Cinde Warmington,Kelly Ayotte
+NH,University of New Hampshire,2026-10-31,48,48,2,2026,lv,,Cinde Warmington,Kelly Ayotte
 NM,McLaughlin & Associates,2026-07-15,46,45,9.0,400,lv,REP,Deb Haaland,Gregg Hull
 NM,BSP Research,2026-08-07,41,24,28,800,rv,,Deb Haaland,Gregg Hull
 NM,Research & Polling Inc.,2026-08-28,49,43,8.0,516,lv,,Deb Haaland,Gregg Hull
@@ -302,6 +330,7 @@ NV,Emerson College,2026-09-08,44.16,42.05,11.4,680,lv,,Aaron Ford,Joe Lombardo
 NV,Noble Predictive Insights,2026-09-26,40,42,9.0,708,lv,,Aaron Ford,Joe Lombardo
 NV,Concord Public Opinion Partners,2026-09-30,42,43,8.0,565,lv,DEM,Aaron Ford,Joe Lombardo
 NV,Hart Research Associates/Public Opinion Strategies,2026-10-25,49,45,6,950,lv,DEM,Aaron Ford,Joe Lombardo
+NV,Noble Predictive Insights,2026-10-28,47,47,4.0,487,lv,,Aaron Ford,Joe Lombardo
 NY,Citizen Data,2025-02-10,46,38,0.0,1000,rv,,Kathy Hochul,Mike Lawler
 NY,GrayHouse,2025-04-24,44,36,20.0,600,rv,,Kathy Hochul,Blake Masters
 NY,Harper Polling,2025-05-09,50.1,38.8,11.1,600,lv,,Kathy Hochul,Elise Stefanik
@@ -336,6 +365,7 @@ NY,Quinnipiac University,2026-10-19,55,41,4.0,1167,lv,,Kathy Hochul,Bruce Blakem
 NY,Siena University,2026-10-22,54,40,6.0,807,lv,,Kathy Hochul,Bruce Blakeman
 NY,ActiVote,2026-10-23,59,41,0.0,400,lv,,Kathy Hochul,Bruce Blakeman
 NY,Marist University,2026-10-25,53,42,5,1448,lv,,Kathy Hochul,Bruce Blakeman
+NY,Research Co.,2026-11-01,52,43,5.0,450,lv,,Kathy Hochul,Bruce Blakeman
 OH,Public Policy Polling,2025-02-20,42,48,10,642,lv,DEM,Tim Ryan,Vivek Ramaswamy
 OH,Impact Research,2025-07-28,46,47,7.0,800,lv,DEM,Amy Acton,Vivek Ramaswamy
 OH,Emerson College,2025-08-19,39.4,48.7,11.9,1000,rv,,Amy Acton,Vivek Ramaswamy
@@ -369,7 +399,13 @@ OH,Beacon Research/Shaw & Company Research,2026-10-19,50,48,1.0,1592,lv,,Amy Act
 OH,ActiVote,2026-10-19,48.6,51.4,0.0,400,lv,,Amy Acton,Vivek Ramaswamy
 OH,Verasight,2026-10-20,46.2,45.4,6.4,531,lv,,Amy Acton,Vivek Ramaswamy
 OH,Echelon Insights,2026-10-23,45,47,3.0,508,lv,,Amy Acton,Vivek Ramaswamy
+OH,Concord Public Opinion Partners,2026-10-24,49,39,7,469,lv,DEM,Amy Acton,Vivek Ramaswamy
 OH,Suffolk University,2026-10-26,48,44,4.4,500,lv,,Amy Acton,Vivek Ramaswamy
+OH,YouGov,2026-10-29,52,46,0.0,2090,lv,,Amy Acton,Vivek Ramaswamy
+OH,InsiderAdvantage,2026-10-30,49.2,46.3,1.5,1200,lv,,Amy Acton,Vivek Ramaswamy
+OH,ActiVote,2026-10-31,50.8,49.2,0.0,400,lv,,Amy Acton,Vivek Ramaswamy
+OH,Research Co.,2026-11-01,48,42,9.0,450,lv,,Amy Acton,Vivek Ramaswamy
+OH,The New York Times/Siena University,2026-11-01,48.8,43.2,7.6,717,lv,,Amy Acton,Vivek Ramaswamy
 OK,Workbench Strategy,2026-10-13,45,49,6,600,lv,DEM,Cyndi Munson,Mike Mazzei
 OR,FM3 Research,2026-02-04,45,35,20.0,1065,lv,,Tina Kotek,Chris Dudley
 OR,Hoffman Research Group,2026-05-12,45,45,10,603,lv,REP,Tina Kotek,Christine Drazan
@@ -400,11 +436,13 @@ PA,Quinnipiac University,2026-10-05,59,34,5.0,1159,lv,,Josh Shapiro,Stacy Garrit
 PA,Bravo Group,2026-10-11,57.68,27.55,8.2,628,rv,,Josh Shapiro,Stacy Garrity
 PA,Franklin & Marshall College,2026-10-18,59,36,5,600,lv,,Josh Shapiro,Stacy Garrity
 PA,ActiVote,2026-10-21,61.5,38.5,0.0,400,lv,,Josh Shapiro,Stacy Garrity
+PA,Research Co.,2026-11-01,59,34,6.0,450,lv,,Josh Shapiro,Stacy Garrity
 RI,Opinion Diagnostics,2026-04-16,33,16,33,802,lv,IND,Helena Foulkes,Aaron Guckian
 RI,University of New Hampshire,2026-08-24,42,20,17.0,741,lv,,Helena Foulkes,Elaine Pelino
 RI,University of New Hampshire,2026-09-21,44,17,10.0,596,lv,,Helena Foulkes,Aaron Guckian
 RI,Embold Research,2026-10-08,39,17,15,815,lv,,Helena Foulkes,Aaron Guckian
 RI,Emerson College,2026-10-11,47.58,11.92,0.0,800,lv,,Helena Foulkes,Aaron Guckian
+RI,University of New Hampshire,2026-10-31,55,8,2.0,747,lv,,Helena Foulkes,Aaron Guckian
 SC,Public Policy Polling,2026-07-17,37,45,18,577,rv,DEM,Jermaine Johnson,Alan Wilson
 SC,Hart Research Associates,2026-08-15,41,48,11,600,lv,DEM,Jermaine Johnson,Alan Wilson
 SC,National Public Affairs,2026-10-16,41,51,7.0,604,lv,REP,Jermaine Johnson,Alan Wilson
@@ -474,16 +512,22 @@ TX,Verasight,2026-10-20,46.4,47.7,5.2,601,lv,,Gina Hinojosa,Greg Abbott
 TX,YouGov,2026-10-21,46,48,5.0,1000,rv,,Gina Hinojosa,Greg Abbott
 TX,ActiVote,2026-10-21,47.5,52.5,0.0,400,lv,,Gina Hinojosa,Greg Abbott
 TX,Barbara Jordan Public Policy Research and Survey Center,2026-10-25,47,50,1.0,2000,lv,,Gina Hinojosa,Greg Abbott
-TX,YouGov Blue,2026-10-26,49,46,5,1000,lv,,Gina Hinojosa,Greg Abbott
+TX,Data for Progress,2026-10-26,47,48,4.0,712,lv,,Gina Hinojosa,Greg Abbott
+TX,YouGov Blue,2026-10-26,49,46,3.0,1000,lv,,Gina Hinojosa,Greg Abbott
 TX,CNN/SSRS,2026-10-27,46,48,0.0,923,lv,,Gina Hinojosa,Greg Abbott
 TX,Quantus Insights,2026-10-28,46.3,51.6,1.0,1214,lv,,Gina Hinojosa,Greg Abbott
+TX,YouGov,2026-10-29,49,50,0.0,2141,lv,,Gina Hinojosa,Greg Abbott
 TX,ActiVote,2026-10-29,47.9,52.1,0.0,400,lv,,Gina Hinojosa,Greg Abbott
+TX,Kreate Strategies,2026-10-30,47,49,3.0,900,lv,,Gina Hinojosa,Greg Abbott
+TX,AtlasIntel,2026-11-01,49.2,47.6,1.2,1678,a,,Gina Hinojosa,Greg Abbott
+TX,The New York Times/Siena University,2026-11-01,48.1,46.6,5.2,1215,lv,,Gina Hinojosa,Greg Abbott
 VT,University of New Hampshire,2026-06-23,25,41,26.0,867,lv,,Aly Richards,Phil Scott
 VT,University of New Hampshire,2026-07-20,35,43,17.0,925,lv,,Aly Richards,Phil Scott
 VT,Braun Research,2026-09-21,34.43,43.73,15.9,732,lv,,Amanda Janoo,Phil Scott
 VT,University of New Hampshire,2026-09-21,49,43,6.0,829,lv,,Amanda Janoo,Phil Scott
 VT,State Navigate,2026-10-04,43,46,8.0,948,lv,,Amanda Janoo,Phil Scott
 VT,State Navigate,2026-10-25,46,49,3.0,1752,lv,,Amanda Janoo,Phil Scott
+VT,University of New Hampshire,2026-10-31,51,43,1.0,1164,lv,,Amanda Janoo,Phil Scott
 WI,Impact Research,2025-10-08,51,44,5.0,500,lv,DEM,Mandela Barnes,Tim Michels
 WI,TIPP Insights,2026-03-19,40.28,42.69,11.5,1168,lv,REP,Francesca Hong,Tom Tiffany
 WI,Marquette University Law School,2026-07-16,42,44,14.0,695,lv,,Kelda Roys,Tom Tiffany
@@ -497,3 +541,4 @@ WI,Z to A Research,2026-10-01,49,44,5.0,662,lv,DEM,David Crowley,Tom Tiffany
 WI,YouGov,2026-10-09,46,42,10,1715,rv,OTH,David Crowley,Tom Tiffany
 WI,Marquette University Law School,2026-10-22,53,46,1.0,668,lv,,David Crowley,Tom Tiffany
 WI,Wick,2026-10-23,47.7,44.6,7.7,1213,lv,REP,David Crowley,Tom Tiffany
+WI,Research Co.,2026-11-01,50,45,5.0,450,lv,,David Crowley,Tom Tiffany
