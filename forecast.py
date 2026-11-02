@@ -48,13 +48,17 @@ INCUMBENCY_BONUS = 5.0     # tested on the 2012-2022 backtest (2.5 did worse)
 APPOINTED_INCUMBENCY_BONUS = 2.5
 
 # Polls: more polls -> trust them more, up to this cap.
-MAX_POLL_WEIGHT = 0.85
-POLL_WEIGHT_K = 4          # effective polls needed to reach half the cap
+MAX_POLL_WEIGHT = 0.95     # 0.95 / 3 beat 0.85 / 4 on 2012-18 and matched it on 2020-22, better Brier
+POLL_WEIGHT_K = 3          # effective polls needed to reach half the cap
 POLL_HALF_LIFE_DAYS = 14   # a poll this old counts half as much as one from today
 # How fast old polls stop counting towards trusting the polls over the fundamentals.
 # Separate from the half-life above: a race with no new polls still has its old ones.
 POLL_COUNT_HALF_LIFE_DAYS = 45   # tested on backtest_poll_recency.py (14 did worse)
 HOUSE_EFFECT_SHRINK = 3    # bigger = more sceptical of house effects from few polls
+# Shift each pollster's state polls back towards the other polls of the race? Off: the
+# backtest can't tell on from off (within ~0.05 points), so pollsters are trusted as
+# rated. Applies to the Senate and governor models; the House model keeps its correction.
+HOUSE_EFFECT_CORRECTION = False
 
 # Polls paid for by a party-aligned group (DEM / REP sponsor) count for this much.
 # 1.0 = treat them like any other poll, 0 = ignore them completely.
@@ -540,7 +544,7 @@ def main():
 
     polls = load_csv("data/polls.csv")
     polls = allocate_undecided(polls, baselines)
-    effects = house_effects(polls)
+    effects = house_effects(polls) if HOUSE_EFFECT_CORRECTION else {}
     polls = debias(polls, effects)
 
     races = []

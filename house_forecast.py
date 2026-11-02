@@ -207,7 +207,8 @@ def main():
         d["margin"] = d["fundamentals"] if avg is None else (1 - w) * d["fundamentals"] + w * avg
         if d["fixed"]:
             d["margin"] = SAFE_MARGIN if d["fixed"] == "D" else -SAFE_MARGIN
-        d["sd"] = fc.state_error_sd(min(w, fc.MAX_POLL_WEIGHT))
+        # uncertainty as before the Senate cap rose to 0.95: full "polled" certainty at weight 0.85
+        d["sd"] = fc.state_error_sd(min(w / 0.85, 1.0) * fc.MAX_POLL_WEIGHT)
         d["local_sd"] = math.sqrt(max(d["sd"] ** 2 - fc.REGION_ERROR_SD ** 2, 1.0))
         d["dem_wins"] = 0
 

@@ -115,7 +115,7 @@ def run_cycle(cycle, polls_538, races, pres, national, weights):
     raw_by_race = defaultdict(list)
     for p in all_polls:
         raw_by_race[p["state"]].append(p)
-    polls = fc.debias(all_polls, fc.house_effects(all_polls))
+    polls = fc.debias(all_polls, fc.house_effects(all_polls) if fc.HOUSE_EFFECT_CORRECTION else {})
 
     results = []
     for r in cycle_races:

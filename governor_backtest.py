@@ -86,6 +86,7 @@ def governor_polls(polls_538, race):
 
 
 def run_polls(rows_by_cycle, polls_538, weights, params, days, cap, k):
+    saved = fc.MAX_POLL_WEIGHT, fc.POLL_WEIGHT_K
     fc.MAX_POLL_WEIGHT, fc.POLL_WEIGHT_K = cap, k
     out = []
     for cycle, rows in rows_by_cycle.items():
@@ -98,7 +99,7 @@ def run_polls(rows_by_cycle, polls_538, weights, params, days, cap, k):
             polls += [p for p in governor_polls(polls_538, r) if date.fromisoformat(p["end_date"]) <= as_of]
         base = {r["state"]: params["lean"] * r["lean"] + params["env"] * env for r in rows}
         polls = fc.allocate_undecided(polls, base)
-        polls = fc.debias(polls, fc.house_effects(polls))
+        polls = fc.debias(polls, fc.house_effects(polls) if fc.HOUSE_EFFECT_CORRECTION else {})
         for r in rows:
             fund = fundamentals({**r, "env": env}, params)
             avg, n = fc.polling_average([p for p in polls if p["state"] == r["state"]], weights, as_of=as_of)
@@ -107,7 +108,7 @@ def run_polls(rows_by_cycle, polls_538, weights, params, days, cap, k):
             out.append({**r, "model": model, "w": w, "polled": avg is not None,
                         "sd": math.sqrt(fc.state_error_sd(w, days_left=days) ** 2
                                         + fc.national_error_sd(days_left=days) ** 2)})
-    fc.MAX_POLL_WEIGHT, fc.POLL_WEIGHT_K = 0.85, 4
+    fc.MAX_POLL_WEIGHT, fc.POLL_WEIGHT_K = saved
     return out
 
 
