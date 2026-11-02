@@ -65,6 +65,8 @@ governor race since 2010 (`governor_backtest.py`; settings fitted on 2010-16, ch
 - Headline: governorships after the election, including the 14 not up (6 D, 8 R).
 
 `graphics/make_governor.py` draws the governor sheet.
+`graphics/make_state_map.py` draws Senate and governor maps with each state coloured by rating
+(state shapes: us-atlas 3.0.1, Census boundaries, ISC licence, in `data/us-atlas/`).
 
 ## House forecast
 
