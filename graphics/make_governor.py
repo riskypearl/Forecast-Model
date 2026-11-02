@@ -30,7 +30,7 @@ def load_governors():
     races.sort(key=lambda x: (x[2] == "R", -x[3] if x[2] == "D" else x[3]))
     dem = int(summary["called_dem"])
     run_date = date.fromisoformat(summary["date"])
-    label = f"{run_date.day} {run_date.strftime('%b').upper()} {run_date.year}  ·  {(ELECTION_DAY - run_date).days} DAYS OUT"
+    label = f"{run_date.day} {run_date.strftime('%b').upper()} {run_date.year}  ·  {(n := (ELECTION_DAY - run_date).days)} DAY{'S' if n != 1 else ''} OUT"
     return races, dem, 50 - dem, round(100 * float(summary["dem_majority_prob"])), label
 
 

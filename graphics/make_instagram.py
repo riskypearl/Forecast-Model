@@ -56,7 +56,7 @@ def load_senate():
     races.sort(key=lambda x: (x[2] == "R", -x[3] if x[2] == "D" else x[3]))
     dem_seats = SEATS_NOT_UP_D + sum(float(r["margin"]) > 0 for r in results)
     run_date = date.fromisoformat(timeline["date"])
-    label = f"{run_date.day} {run_date.strftime('%b').upper()} {run_date.year}  ·  {(ELECTION_DAY - run_date).days} DAYS OUT"
+    label = f"{run_date.day} {run_date.strftime('%b').upper()} {run_date.year}  ·  {(n := (ELECTION_DAY - run_date).days)} DAY{'S' if n != 1 else ''} OUT"
     return races, dem_seats, 100 - dem_seats, round(100 * float(timeline["dem_control_prob"])), label
 
 

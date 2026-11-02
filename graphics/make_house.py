@@ -19,7 +19,7 @@ def _date_label():
     from datetime import date as _date
     last = list(_csv.DictReader(open(os.path.join(ROOT, "history", "timeline.csv"))))[-1]["date"]
     d = _date.fromisoformat(last)
-    return f"{d.day} {d.strftime('%b').upper()} {d.year}  ·  {(_date(2026, 11, 3) - d).days} DAYS OUT"
+    return f"{d.day} {d.strftime('%b').upper()} {d.year}  ·  {(n := (_date(2026, 11, 3) - d).days)} DAY{'S' if n != 1 else ''} OUT"
 
 
 DATE_LABEL = _date_label()
