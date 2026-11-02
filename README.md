@@ -139,10 +139,10 @@ using FiveThirtyEight's historical polls.
 | 203 races, 2012-2022 | Avg miss | Winners right |
 |---|---|---|
 | Fundamentals only | 7.3 pts | 178 |
-| Full model | 5.7 pts | 190 (94%) |
+| Full model | 5.5 pts | 191 (94%) |
 
-**Calibration:** favourites given 80-95% won 32 of 36 races (32.0 expected); favourites
-given 95%+ won 135 of 136 (134.4 expected). Brier score 0.051. The model's probabilities are honest.
+**Calibration:** favourites given 80-95% won 32 of 37 races (33.0 expected); favourites
+given 95%+ won 136 of 136 (134.6 expected). Brier score 0.049. The model's probabilities are honest.
 
 **Poll weight:** relying more heavily on polls fitted 2012-2018 best but did *worse* on
 2020-2022, when polls missed badly. The model's hedge towards fundamentals was kept.
@@ -240,9 +240,11 @@ the president's party's incumbents did worse. Governor - a bigger bonus helps on
 polls instead of all other polls, changes the full-model backtest by 0.03 points or less. Pollster
 ratings set how much a poll counts; house effects shift which way it leans - separate jobs.
 
-**Final settings (2 Nov):** Senate poll weight raised to 0.95 x n / (n + 3) - better than
-0.85 / 4 on 2012-18 (5.74 vs 6.11), level on 2020-22 (5.33 vs 5.32), Brier 0.053 -> 0.051, 190 vs
-188 winners; closer to how Silver Bulletin leans on polls late. Pollster house-effect correction
+**Final settings (2 Nov):** Senate poll weight raised to 0.95 x n / (n + 2). Each step towards
+the polls improved 2012-18 and the overall Brier score but worsened 2020-22, when polls missed:
+0.85 / 4 -> 6.11 / 5.32 avg miss (2012-18 / 2020-22), 0.95 / 3 -> 5.80 / 5.36, 0.95 / 2 ->
+5.56 / 5.41, almost polls-only (1.0 / 0.25) -> 4.95 / 5.74. 0.95 / 2 was chosen as a middle
+ground (Brier 0.049, 191/203 winners), closer to how Silver Bulletin leans on polls late. Pollster house-effect correction
 switched off for the Senate and governor models (on vs off within ~0.05 points everywhere in the
 backtest), so polls are trusted as rated. The national generic-ballot average keeps its
 correction, and the House model keeps both its previous settings.

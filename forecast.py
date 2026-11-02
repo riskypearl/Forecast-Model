@@ -48,8 +48,8 @@ INCUMBENCY_BONUS = 5.0     # tested on the 2012-2022 backtest (2.5 did worse)
 APPOINTED_INCUMBENCY_BONUS = 2.5
 
 # Polls: more polls -> trust them more, up to this cap.
-MAX_POLL_WEIGHT = 0.95     # 0.95 / 3 beat 0.85 / 4 on 2012-18 and matched it on 2020-22, better Brier
-POLL_WEIGHT_K = 3          # effective polls needed to reach half the cap
+MAX_POLL_WEIGHT = 0.95     # heavier poll weight: better on 2012-18 and overall Brier, slightly
+POLL_WEIGHT_K = 2          # worse on 2020-22 (5.41 vs 5.36) - a chosen middle ground
 POLL_HALF_LIFE_DAYS = 14   # a poll this old counts half as much as one from today
 # How fast old polls stop counting towards trusting the polls over the fundamentals.
 # Separate from the half-life above: a race with no new polls still has its old ones.
