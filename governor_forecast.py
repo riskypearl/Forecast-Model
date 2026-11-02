@@ -106,7 +106,7 @@ def main():
     polls = [p for p in fc.load_csv_utf8("data/gov_polls.csv")
              if p["state"] in matchup and (last_name(p["dem_name"]), last_name(p["rep_name"])) == matchup[p["state"]]]
     polls = fc.allocate_undecided(polls, {r["state"]: LEAN_SCALE * r["lean"] + environment for r in races})
-    polls = fc.debias(polls, fc.house_effects(polls))
+    polls = fc.debias(polls, fc.house_effects(polls) if fc.HOUSE_EFFECT_CORRECTION else {})
 
     for r in races:
         avg, n = fc.polling_average([p for p in polls if p["state"] == r["state"]], weights)
