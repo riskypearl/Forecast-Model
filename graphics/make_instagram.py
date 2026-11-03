@@ -199,10 +199,11 @@ def draw(RACES, DEM_SEATS, REP_SEATS, control_line, DATE_LABEL, title, prize, sp
     text(d, (x48, base), str(REP_SEATS), numeral, RED, "ls")
 
     right_block_x = x48 + w48 + 40
-    text(d, (right_block_x, 226), "Democrats", serif_big, BLUE, "ls")
-    text(d, (right_block_x, 268), "favoured to win", serif_big, INK, "ls")
-    text(d, (right_block_x, 310), prize, serif_big, INK, "ls")
-    tracked(d, (right_block_x, 348), control_line, mono_b, GRAPHITE, 1.6)
+    if prize:   # None = headline numbers only (the governor sheet)
+        text(d, (right_block_x, 226), "Democrats", serif_big, BLUE, "ls")
+        text(d, (right_block_x, 268), "favoured to win", serif_big, INK, "ls")
+        text(d, (right_block_x, 310), prize, serif_big, INK, "ls")
+        tracked(d, (right_block_x, 348), control_line, mono_b, GRAPHITE, 1.6)
 
     # --- race ledger -----------------------------------------------------------
     head_y = 412

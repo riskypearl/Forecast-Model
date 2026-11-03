@@ -37,9 +37,8 @@ def load_governors():
 
 def main():
     races, dem, rep, majority, label = load_governors()
-    favoured = "Democrats" if dem >= 26 else "Republicans"
-    draw(races, dem, rep, f"{majority if dem >= 26 else 100 - majority}% CHANCE OF A {favoured[:3].upper()} MAJORITY",
-         label, "2026 U.S. GOVERNOR FORECAST", "most governorships", None, "governor_forecast.png")
+    draw(races, dem, rep, f"{majority}% CHANCE OF A DEM MAJORITY", label, "2026 U.S. GOVERNOR FORECAST",
+         None, None, "governor_forecast.png")   # headline numbers only, no "favoured" block
 
 
 if __name__ == "__main__":

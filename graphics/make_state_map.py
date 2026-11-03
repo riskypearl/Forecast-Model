@@ -83,9 +83,10 @@ def draw_map(title, ratings, dem, rep, words, control_line, label, filename, clo
     xr = dx + 28 + 14
     text(d, (xr, base), str(rep), numeral, RED, "ls")
     bx = xr + wr + 36
-    text(d, (bx, 190), words[0], serif_big, BLUE, "ls")
-    text(d, (bx, 230), words[1], serif_big, INK, "ls")
-    tracked(d, (bx, 262), control_line, mono_b, GRAPHITE, 1.4)
+    if words:   # None = headline numbers only (the governor map)
+        text(d, (bx, 190), words[0], serif_big, BLUE, "ls")
+        text(d, (bx, 230), words[1], serif_big, INK, "ls")
+        tracked(d, (bx, 262), control_line, mono_b, GRAPHITE, 1.4)
 
     # --- map, scaled to fit the width ---------------------------------------------------
     shapes = load_states()
@@ -160,8 +161,7 @@ def main():
     summary = list(csv.DictReader(open(os.path.join(ROOT, "governor_summary.csv"))))[-1]
     gdem = int(summary["called_dem"])
     draw_map("2026 U.S. GOVERNOR FORECAST", {s: r["rating"] for s, r in gov.items()}, gdem, 50 - gdem,
-             ("Democrats favoured", "for most governorships"),
-             f"{round(100 * float(summary['dem_majority_prob']))}% CHANCE OF A DEM MAJORITY",
+             None, None,
              date_label(date.fromisoformat(summary["date"])), "governor_map.png",
              closest(gov, lambda r: r["democrat"] if float(r["margin"]) > 0 else r["republican"]))
 
