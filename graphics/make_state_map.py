@@ -14,8 +14,8 @@ import os
 
 from PIL import Image, ImageDraw
 
-from make_instagram import (W, H, S, PAPER, INK, GRAPHITE, MUTED, BLUE, RED, ROOT, ELECTION_DAY,
-                            font, digit_mid, text, tracked, rect)
+from make_instagram import (W, H, S, PAPER, INK, GRAPHITE, MUTED, BLUE, RED, ROOT,
+                            font, digit_mid, text, tracked, rect, date_label)
 from make_house import RATING_ORDER, RATING_COLOUR
 from make_governor import EXTRA_NAMES
 from make_instagram import STATE_NAMES as _NAMES
@@ -59,11 +59,6 @@ def load_states():
         polys = [g["arcs"]] if g["type"] == "Polygon" else g["arcs"]
         out[FIPS[g["id"]]] = [ring(p[0]) for p in polys]   # outer rings; holes are other states
     return out
-
-
-def date_label(day):
-    n = (ELECTION_DAY - day).days
-    return f"{day.day} {day.strftime('%b').upper()} {day.year}  ·  {n} DAY{'S' if n != 1 else ''} OUT"
 
 
 def draw_map(title, ratings, dem, rep, words, control_line, label, filename, close):

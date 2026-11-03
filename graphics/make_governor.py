@@ -8,7 +8,7 @@ import csv
 import os
 from datetime import date
 
-from make_instagram import ROOT, ELECTION_DAY, STATE_NAMES, draw
+from make_instagram import ROOT, STATE_NAMES, date_label, draw
 
 COMPETITIVE = 8.0           # races within this many points go on the graphic
 EXTRA_NAMES = {"CA": "CALIFORNIA", "CT": "CONNECTICUT", "HI": "HAWAII", "MD": "MARYLAND", "NV": "NEVADA",
@@ -30,7 +30,7 @@ def load_governors():
     races.sort(key=lambda x: (x[2] == "R", -x[3] if x[2] == "D" else x[3]))
     dem = int(summary["called_dem"])
     run_date = date.fromisoformat(summary["date"])
-    label = f"{run_date.day} {run_date.strftime('%b').upper()} {run_date.year}  ·  {(n := (ELECTION_DAY - run_date).days)} DAY{'S' if n != 1 else ''} OUT"
+    label = date_label(run_date)
     return races, dem, 50 - dem, round(100 * float(summary["dem_majority_prob"])), label
 
 

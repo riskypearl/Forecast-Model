@@ -37,6 +37,13 @@ STATE_NAMES = {
 SHORT_NAMES = {"Darline Graham": "D. Graham"}   # avoid confusion with Lindsey Graham
 
 
+def date_label(day):
+    """'2 NOV 2026  ·  1 DAY OUT', or 'ELECTION DAY' on the day itself."""
+    n = (ELECTION_DAY - day).days
+    when = f"{n} DAY{'S' if n != 1 else ''} OUT" if n > 0 else "ELECTION DAY"
+    return f"{day.day} {day.strftime('%b').upper()} {day.year}  ·  {when}"
+
+
 def load_senate():
     """Competitive races, seat call, control chance and date - from the latest forecast run."""
     results = list(csv.DictReader(open(os.path.join(ROOT, "results.csv"))))
@@ -56,7 +63,7 @@ def load_senate():
     races.sort(key=lambda x: (x[2] == "R", -x[3] if x[2] == "D" else x[3]))
     dem_seats = SEATS_NOT_UP_D + sum(float(r["margin"]) > 0 for r in results)
     run_date = date.fromisoformat(timeline["date"])
-    label = f"{run_date.day} {run_date.strftime('%b').upper()} {run_date.year}  ·  {(n := (ELECTION_DAY - run_date).days)} DAY{'S' if n != 1 else ''} OUT"
+    label = date_label(run_date)
     return races, dem_seats, 100 - dem_seats, round(100 * float(timeline["dem_control_prob"])), label
 
 
