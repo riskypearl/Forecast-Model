@@ -122,6 +122,18 @@ def tracked(d, xy, s, f, fill, tracking, anchor="l"):
     return total / S
 
 
+BRAND = "SHOREHAM FORECASTS"
+
+
+def masthead(d, title, label, bold, regular):
+    """Top line of every graphic: brand, then what this is (e.g. '2026 U.S. SENATE'), date on the right."""
+    L, R = 72, W - 72
+    w = tracked(d, (L, 96), BRAND, bold, INK, 2.2)
+    tracked(d, (L + w + 8, 96), "·  " + title.removesuffix(" FORECAST"), regular, GRAPHITE, 2.0)
+    tracked(d, (R, 96), label, regular, GRAPHITE, 1.6, anchor="r")
+    rect(d, (L, 112, R, 113), INK)
+
+
 # Footer (rule, method, data credit) - off: the graphics are posted with the
 # credit "Poll data: The New York Times" in the caption instead.
 SHOW_FOOTER = False
@@ -171,9 +183,7 @@ def draw(RACES, DEM_SEATS, REP_SEATS, control_line, DATE_LABEL, title, prize, sp
     L, R = 72, W - 72
 
     # --- masthead ---------------------------------------------------------
-    tracked(d, (L, 96), title, mono_b, INK, 2.2)
-    tracked(d, (R, 96), DATE_LABEL, mono, GRAPHITE, 1.6, anchor="r")
-    rect(d, (L, 112, R, 113), INK)
+    masthead(d, title, DATE_LABEL, mono_b, mono)
 
     # --- verdict -------------------------------------------------------------
     base = 352

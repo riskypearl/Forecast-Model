@@ -15,7 +15,7 @@ import os
 from PIL import Image, ImageDraw
 
 from make_instagram import (W, H, S, PAPER, INK, GRAPHITE, MUTED, BLUE, RED, ROOT,
-                            font, digit_mid, text, tracked, rect, footer, date_label)
+                            font, digit_mid, text, tracked, rect, footer, masthead, date_label)
 from make_house import RATING_ORDER, RATING_COLOUR
 from make_governor import EXTRA_NAMES
 from make_instagram import STATE_NAMES as _NAMES
@@ -72,9 +72,7 @@ def draw_map(title, ratings, dem, rep, words, control_line, label, filename, clo
     numeral = font("BigShoulders-Bold.ttf", 150)
     L, R = 72, W - 72
 
-    tracked(d, (L, 96), title, mono_b, INK, 2.2)
-    tracked(d, (R, 96), label, mono, GRAPHITE, 1.6, anchor="r")
-    rect(d, (L, 112, R, 113), INK)
+    masthead(d, title, label, mono_b, mono)
     base = 262
     wd = d.textlength(str(dem), font=numeral) / S
     wr = d.textlength(str(rep), font=numeral) / S

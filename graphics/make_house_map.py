@@ -12,7 +12,7 @@ from collections import defaultdict
 
 from PIL import Image, ImageDraw
 
-from make_instagram import W, H, S, PAPER, INK, GRAPHITE, MUTED, BLUE, RED, font, digit_mid, text, tracked, rect, footer
+from make_instagram import W, H, S, PAPER, INK, GRAPHITE, MUTED, BLUE, RED, font, digit_mid, text, tracked, rect, footer, masthead
 from make_house import RATING_ORDER, RATING_COLOUR, DATE_LABEL, load, summary
 
 # (column, row) of each state on a geographic tile grid
@@ -57,9 +57,7 @@ def main():
     L, R = 72, W - 72
 
     # --- masthead + verdict --------------------------------------------------------
-    tracked(d, (L, 96), "2026 U.S. HOUSE FORECAST", mono_b, INK, 2.2)
-    tracked(d, (R, 96), DATE_LABEL, mono, GRAPHITE, 1.6, anchor="r")
-    rect(d, (L, 112, R, 113), INK)
+    masthead(d, "2026 U.S. HOUSE FORECAST", DATE_LABEL, mono_b, mono)
     base = 262
     dem_txt, rep_txt = str(dem_avg), str(435 - dem_avg)
     wd = d.textlength(dem_txt, font=numeral) / S

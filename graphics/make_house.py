@@ -10,7 +10,7 @@ import os
 from PIL import Image, ImageDraw
 
 from make_instagram import (W, H, S, PAPER, INK, GRAPHITE, MUTED, RULE, BLUE, RED, BLUE_TINT, RED_TINT,
-                            font, digit_mid, text, tracked, rect, footer, rounded)
+                            font, digit_mid, text, tracked, rect, footer, masthead, rounded)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 def _date_label():
@@ -92,9 +92,7 @@ def main():
     L, R = 72, W - 72
 
     # --- masthead ---------------------------------------------------------------
-    tracked(d, (L, 96), "2026 U.S. HOUSE FORECAST", mono_b, INK, 2.2)
-    tracked(d, (R, 96), DATE_LABEL, mono, GRAPHITE, 1.6, anchor="r")
-    rect(d, (L, 112, R, 113), INK)
+    masthead(d, "2026 U.S. HOUSE FORECAST", DATE_LABEL, mono_b, mono)
 
     # --- verdict -------------------------------------------------------------------
     base = 318
