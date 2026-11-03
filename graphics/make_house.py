@@ -10,7 +10,7 @@ import os
 from PIL import Image, ImageDraw
 
 from make_instagram import (W, H, S, PAPER, INK, GRAPHITE, MUTED, RULE, BLUE, RED, BLUE_TINT, RED_TINT,
-                            font, digit_mid, text, tracked, rect, rounded)
+                            font, digit_mid, text, tracked, rect, footer, rounded)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 def _date_label():
@@ -194,7 +194,7 @@ def main():
     fy = H - 72
     assert y < fy - 40, "content runs into footer"
     rect(d, (L, fy - 26, R, fy - 25), INK)
-    tracked(d, (L, fy), "WEIGHTED POLLS, FUNDAMENTALS AND CANDIDATE RECORDS", mono_sm, GRAPHITE, 1.2)
+    footer(d, fy, mono_sm)
 
     img = img.resize((W, H), Image.LANCZOS)
     out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "house_forecast.png")

@@ -59,7 +59,8 @@ def load_senate():
         party = "D" if m > 0 else "R"
         full = names.get(r["state"], {}).get("dem_candidate" if party == "D" else "rep_candidate", "")
         name = SHORT_NAMES.get(full, full.split()[-1] if full else "")
-        races.append((STATE_NAMES[r["state"]], name, party, abs(m), party != holders[r["state"]]))
+        chance = float(r["dem_win_prob"]) if party == "D" else 1 - float(r["dem_win_prob"])
+        races.append((STATE_NAMES[r["state"]], name, party, abs(m), party != holders[r["state"]], chance))
     races.sort(key=lambda x: (x[2] == "R", -x[3] if x[2] == "D" else x[3]))
     dem_seats = SEATS_NOT_UP_D + sum(float(r["margin"]) > 0 for r in results)
     run_date = date.fromisoformat(timeline["date"])
@@ -121,6 +122,17 @@ def tracked(d, xy, s, f, fill, tracking, anchor="l"):
     return total / S
 
 
+FOOTER_LEFT = "WEIGHTED POLLS, FUNDAMENTALS AND CANDIDATE RECORDS"
+FOOTER_RIGHT = "POLL DATA: THE NEW YORK TIMES"     # the NYT poll database's CC BY credit
+
+
+def footer(d, fy, f):
+    """Method on the left, data credit on the right - shared by every graphic."""
+    L, R = 72, W - 72
+    tracked(d, (L, fy), FOOTER_LEFT, f, GRAPHITE, 1.2)
+    tracked(d, (R, fy), FOOTER_RIGHT, f, GRAPHITE, 1.2, anchor="r")
+
+
 def rect(d, box, fill):
     d.rectangle([v * S for v in box], fill=fill)
 
@@ -180,17 +192,17 @@ def draw(RACES, DEM_SEATS, REP_SEATS, control_line, DATE_LABEL, title, prize, sp
     head_y = 412
     rect(d, (L, head_y, R, head_y + 1), INK)
     tracked(d, (L, head_y + 26), "COMPETITIVE RACES", mono_b, INK, 2.0)
-    tracked(d, (R, head_y + 26), "PROJECTED MARGIN", mono, GRAPHITE, 1.6, anchor="r")
-
     col_state, col_name = L, L + 232
-    axis = 690                       # centre of the diverging bars
-    half = 132                       # bar room either side of the axis
+    axis = 652                       # centre of the diverging bars
+    half = 116                       # bar room either side of the axis
     scale = half / 11.0
-    col_margin = R
+    col_chance, col_margin = R - 112, R
+    tracked(d, (col_chance, head_y + 26), "CHANCE", mono, GRAPHITE, 1.6, anchor="r")
+    tracked(d, (col_margin, head_y + 26), "MARGIN", mono, GRAPHITE, 1.6, anchor="r")
     row_h, y0 = min(50, 700 // max(len(RACES), 1)), head_y + 52   # 14 rows of 50 fit
     split_gap = 22
 
-    for i, (state, name, party, margin, flip) in enumerate(RACES):
+    for i, (state, name, party, margin, flip, chance) in enumerate(RACES):
         y = y0 + i * row_h + (split_gap if party == "R" else 0)
         colour = BLUE if party == "D" else RED
         tint = BLUE_TINT if party == "D" else RED_TINT
@@ -198,6 +210,10 @@ def draw(RACES, DEM_SEATS, REP_SEATS, control_line, DATE_LABEL, title, prize, sp
 
         tracked(d, (col_state, mid + 6), state, caps, INK, 1.2)
         text(d, (col_name, mid + 8), name, serif_i, GRAPHITE, "ls")
+        if flip:   # small tag straight after the candidate's name
+            fx = col_name + d.textlength(name, font=serif_i) / S + 12
+            rounded(d, (fx, mid - 10, fx + 42, mid + 10), 10, fill=tint)
+            text(d, (fx + 21, mid + 4.5), "FLIP", mono_sm, colour, "ms")
 
         # faint full-scale track, then the bar from the axis outward
         rect(d, (axis - half, mid - 1, axis + half, mid), RULE)
@@ -209,10 +225,7 @@ def draw(RACES, DEM_SEATS, REP_SEATS, control_line, DATE_LABEL, title, prize, sp
 
         label = f"{'D' if party == 'D' else 'R'}+{margin:.1f}"
         text(d, (col_margin, mid + 6), label, mono_b, colour, "rs")
-        if flip:
-            fx = col_margin - 92
-            rounded(d, (fx - 48, mid - 11, fx, mid + 11), 11, fill=tint)
-            text(d, (fx - 24, mid + 5), "FLIP", mono_sm, colour, "ms")
+        text(d, (col_chance, mid + 6), f"{round(100 * chance)}%", mono, GRAPHITE, "rs")
 
         if i < len(RACES) - 1:
             nxt = RACES[i + 1]
@@ -234,7 +247,7 @@ def draw(RACES, DEM_SEATS, REP_SEATS, control_line, DATE_LABEL, title, prize, sp
     # --- footer ------------------------------------------------------------------
     fy = H - 72
     rect(d, (L, fy - 26, R, fy - 25), INK)
-    tracked(d, (L, fy), "WEIGHTED POLLS, FUNDAMENTALS AND CANDIDATE RECORDS", mono_sm, GRAPHITE, 1.2)
+    footer(d, fy, mono_sm)
 
     img = img.resize((W, H), Image.LANCZOS)
     out = os.path.join(os.path.dirname(os.path.abspath(__file__)), filename)

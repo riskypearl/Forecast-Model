@@ -12,7 +12,7 @@ import os
 
 from PIL import Image, ImageChops, ImageDraw
 
-from make_instagram import W, H, S, PAPER, INK, GRAPHITE, MUTED, BLUE, RED, font, digit_mid, text, tracked, rect
+from make_instagram import W, H, S, PAPER, INK, GRAPHITE, MUTED, BLUE, RED, font, digit_mid, text, tracked, rect, footer
 from make_house import RATING_ORDER, RATING_COLOUR, DATE_LABEL, load, summary
 
 DATA = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "electindex")
@@ -179,7 +179,7 @@ def main():
     fy = H - 72
     assert note_y + 24 < fy - 40
     rect(d, (L, fy - 26, R, fy - 25), INK)
-    tracked(d, (L, fy), "WEIGHTED POLLS, FUNDAMENTALS AND CANDIDATE RECORDS", mono_sm, GRAPHITE, 1.2)
+    footer(d, fy, mono_sm)
 
     img = img.resize((W, H), Image.LANCZOS)
     img.save(os.path.join(os.path.dirname(os.path.abspath(__file__)), "house_shapes.png"))

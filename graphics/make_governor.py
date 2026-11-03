@@ -26,7 +26,8 @@ def load_governors():
         party = "D" if m > 0 else "R"
         name = (r["democrat"] if party == "D" else r["republican"]).split()[-1]
         holder = "D" if r["holder"] == "DEM" else "R"
-        races.append(({**STATE_NAMES, **EXTRA_NAMES}[r["state"]], name, party, abs(m), party != holder))
+        chance = float(r["dem_win_prob"]) if party == "D" else 1 - float(r["dem_win_prob"])
+        races.append(({**STATE_NAMES, **EXTRA_NAMES}[r["state"]], name, party, abs(m), party != holder, chance))
     races.sort(key=lambda x: (x[2] == "R", -x[3] if x[2] == "D" else x[3]))
     dem = int(summary["called_dem"])
     run_date = date.fromisoformat(summary["date"])

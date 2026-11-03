@@ -12,7 +12,7 @@ from collections import defaultdict
 
 from PIL import Image, ImageDraw
 
-from make_instagram import W, H, S, PAPER, INK, GRAPHITE, MUTED, BLUE, RED, font, digit_mid, text, tracked, rect
+from make_instagram import W, H, S, PAPER, INK, GRAPHITE, MUTED, BLUE, RED, font, digit_mid, text, tracked, rect, footer
 from make_house import RATING_ORDER, RATING_COLOUR, DATE_LABEL, load, summary
 
 # (column, row) of each state on a geographic tile grid
@@ -125,7 +125,7 @@ def main():
 
     fy = H - 72
     rect(d, (L, fy - 26, R, fy - 25), INK)
-    tracked(d, (L, fy), "WEIGHTED POLLS, FUNDAMENTALS AND CANDIDATE RECORDS", mono_sm, GRAPHITE, 1.2)
+    footer(d, fy, mono_sm)
 
     img = img.resize((W, H), Image.LANCZOS)
     img.save("house_map.png")

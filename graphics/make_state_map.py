@@ -15,7 +15,7 @@ import os
 from PIL import Image, ImageDraw
 
 from make_instagram import (W, H, S, PAPER, INK, GRAPHITE, MUTED, BLUE, RED, ROOT,
-                            font, digit_mid, text, tracked, rect, date_label)
+                            font, digit_mid, text, tracked, rect, footer, date_label)
 from make_house import RATING_ORDER, RATING_COLOUR
 from make_governor import EXTRA_NAMES
 from make_instagram import STATE_NAMES as _NAMES
@@ -133,7 +133,7 @@ def draw_map(title, ratings, dem, rep, words, control_line, label, filename, clo
 
     fy = H - 72
     rect(d, (L, fy - 26, R, fy - 25), INK)
-    tracked(d, (L, fy), "WEIGHTED POLLS, FUNDAMENTALS AND CANDIDATE RECORDS", mono_sm, GRAPHITE, 1.2)
+    footer(d, fy, mono_sm)
     img = img.resize((W, H), Image.LANCZOS)
     out = os.path.join(os.path.dirname(os.path.abspath(__file__)), filename)
     img.save(out)
