@@ -178,7 +178,6 @@ def main():
 
     fy = H - 72
     assert note_y + 24 < fy - 40
-    rect(d, (L, fy - 26, R, fy - 25), INK)
     footer(d, fy, mono_sm)
 
     img = img.resize((W, H), Image.LANCZOS)

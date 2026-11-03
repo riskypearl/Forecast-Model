@@ -193,7 +193,6 @@ def main():
     # --- footer ---------------------------------------------------------------------------
     fy = H - 72
     assert y < fy - 40, "content runs into footer"
-    rect(d, (L, fy - 26, R, fy - 25), INK)
     footer(d, fy, mono_sm)
 
     img = img.resize((W, H), Image.LANCZOS)

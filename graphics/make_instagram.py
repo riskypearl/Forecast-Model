@@ -122,13 +122,19 @@ def tracked(d, xy, s, f, fill, tracking, anchor="l"):
     return total / S
 
 
+# Footer (rule, method, data credit) - off: the graphics are posted with the
+# credit "Poll data: The New York Times" in the caption instead.
+SHOW_FOOTER = False
 FOOTER_LEFT = "WEIGHTED POLLS, FUNDAMENTALS AND CANDIDATE RECORDS"
 FOOTER_RIGHT = "POLL DATA: THE NEW YORK TIMES"     # the NYT poll database's CC BY credit
 
 
 def footer(d, fy, f):
-    """Method on the left, data credit on the right - shared by every graphic."""
+    """Rule, method on the left, data credit on the right - shared by every graphic."""
+    if not SHOW_FOOTER:
+        return
     L, R = 72, W - 72
+    rect(d, (L, fy - 26, R, fy - 25), INK)
     tracked(d, (L, fy), FOOTER_LEFT, f, GRAPHITE, 1.2)
     tracked(d, (R, fy), FOOTER_RIGHT, f, GRAPHITE, 1.2, anchor="r")
 
@@ -246,7 +252,6 @@ def draw(RACES, DEM_SEATS, REP_SEATS, control_line, DATE_LABEL, title, prize, sp
 
     # --- footer ------------------------------------------------------------------
     fy = H - 72
-    rect(d, (L, fy - 26, R, fy - 25), INK)
     footer(d, fy, mono_sm)
 
     img = img.resize((W, H), Image.LANCZOS)

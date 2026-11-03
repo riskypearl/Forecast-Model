@@ -132,7 +132,6 @@ def draw_map(title, ratings, dem, rep, words, control_line, label, filename, clo
              mono_b, colour if abs(m) >= 0.05 else INK, "rs")
 
     fy = H - 72
-    rect(d, (L, fy - 26, R, fy - 25), INK)
     footer(d, fy, mono_sm)
     img = img.resize((W, H), Image.LANCZOS)
     out = os.path.join(os.path.dirname(os.path.abspath(__file__)), filename)

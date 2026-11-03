@@ -124,7 +124,6 @@ def main():
     assert lx <= R
 
     fy = H - 72
-    rect(d, (L, fy - 26, R, fy - 25), INK)
     footer(d, fy, mono_sm)
 
     img = img.resize((W, H), Image.LANCZOS)
